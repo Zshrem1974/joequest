@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Logs & OS junk
+npm-debug.log*
+.DS_Store
+*.log
+
+# Editor folders
+.vscode/
+.idea/

@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JoeQuest — Boca Raton</title>
+  <style>
+    :root {
+      --bg: #f4ede3;
+      --paper: #fbf6ee;
+      --ink: #2a1d10;
+      --muted: #6b594a;
+      --line: #e3d7c2;
+      --accent: #6f3b1f;       /* espresso */
+      --accent-2: #b5814a;     /* crema */
+      --gold: #c89b3c;
+      --good: #2d6a4f;
+      --warn: #b08900;
+      --weak: #9e6b58;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- Header ---- */
+    header {
+      padding: 56px 24px 28px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #f7efe2 0%, var(--bg) 100%);
+    }
+    header h1 {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-weight: 600;
+      font-size: 44px;
+      letter-spacing: -0.5px;
+      margin: 0 0 6px;
+      color: var(--accent);
+    }
+    header .sub {
+      color: var(--muted);
+      font-size: 15px;
+      letter-spacing: 0.2px;
+    }
+    header .pill {
+      display: inline-block;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+
+    /* ---- Banner ---- */
+    #banner {
+      display: none;
+      max-width: 900px;
+      margin: 16px auto;
+      padding: 12px 16px;
+      background: #fff3cd;
+      border: 1px solid #e6c97a;
+      border-radius: 8px;
+      color: #6b5210;
+      font-size: 14px;
+    }
+
+    /* ---- Layout ---- */
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* ---- Café grid ---- */
+    #cafes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(58, 30, 10, 0.08);
+      border-color: var(--accent-2);
+    }
+    .card h3 {
+      margin: 0 0 4px;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.1px;
+    }
+    .card .addr {
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+      min-height: 32px;
+    }
+    .card .row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .stars { color: var(--gold); letter-spacing: 1px; font-size: 13px; }
+    .price { color: var(--accent); font-weight: 600; }
+
+    /* ---- Modal ---- */
+    .modal-bg {
+      position: fixed; inset: 0;
+      background: rgba(28, 16, 6, 0.55);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+      padding: 20px;
+    }
+    .modal-bg.open { display: flex; }
+    .modal {
+      background: var(--paper);
+      border-radius: 16px;
+      max-width: 560px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 28px 28px 24px;
+      box-shadow: 0 24px 60px rgba(28, 16, 6, 0.3);
+      position: relative;
+    }
+    .modal .close {
+      position: absolute;
+      top: 14px; right: 16px;
+      background: transparent;
+      border: none;
+      font-size: 22px;
+      color: var(--muted);
+      cursor: pointer;
+      line-height: 1;
+    }
+    .modal h2 {
+      font-family: "Georgia", serif;
+      font-weight: 600;
+      font-size: 26px;
+      margin: 0 0 4px;
+      color: var(--accent);
+      padding-right: 24px;
+    }
+    .modal .addr2 {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    .modal .stats {
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-bottom: 22px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .pick {
+      padding: 14px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+    .pick:last-child { border-bottom: none; }
+    .pick-label {
+      font-size: 11px;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .pick-name {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .pick-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .conf {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    .conf.high { background: #d8ebdf; color: var(--good); }
+    .conf.medium { background: #f6e8c4; color: var(--warn); }
+    .conf.low { background: #f3dccd; color: var(--weak); }
+    .conf.none { background: #eae0d2; color: var(--muted); }
+    .quote {
+      border-left: 3px solid var(--accent-2);
+      padding: 4px 0 4px 12px;
+      color: var(--ink);
+      font-style: italic;
+      font-size: 14px;
+      margin: 8px 0 6px;
+    }
+    .reason {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .empty {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    /* ---- States ---- */
+    .skeleton {
+      background: linear-gradient(90deg, var(--line) 25%, #efe4d0 50%, var(--line) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      border-radius: 6px;
+      height: 14px;
+      margin-bottom: 8px;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+    .loading-pick { padding: 16px 0; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 24px 16px 48px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☕ JoeQuest</h1>
+    <div class="sub">The one drink and one food worth ordering. At every café in town.</div>
+    <div class="pill" id="city-pill">Boca Raton, FL</div>
+  </header>
+
+  <div id="banner"></div>
+
+  <main>
+    <div class="meta">
+      <div id="count">Loading cafés…</div>
+      <div>Tap any café to see its picks</div>
+    </div>
+    <div id="cafes"></div>
+  </main>
+
+  <footer>
+    Picks generated from real Google reviews · Powered by Claude Opus 4.7
+  </footer>
+
+  <div class="modal-bg" id="modal-bg" role="dialog" aria-modal="true">
+    <div class="modal" id="modal">
+      <button class="close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script>
+    const $cafes = document.getElementById("cafes");
+    const $count = document.getElementById("count");
+    const $banner = document.getElementById("banner");
+    const $modalBg = document.getElementById("modal-bg");
+    const $modal = document.getElementById("modal");
+    const $modalBody = document.getElementById("modal-body");
+
+    // Stars renderer (★★★★★ with half-stars approximated)
+    function stars(r) {
+      if (!r) return "";
+      const full = Math.floor(r);
+      const half = r - full >= 0.5 ? 1 : 0;
+      return "★".repeat(full) + (half ? "⯨" : "") + "☆".repeat(5 - full - half);
+    }
+
+    function escapeHTML(s) {
+      return String(s).replace(/[&<>"']/g, c => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[c]));
+    }
+
+    async function init() {
+      // Check API key status first
+      try {
+        const status = await fetch("/api/status").then(r => r.json());
+        if (!status.google || !status.anthropic) {
+          $banner.style.display = "block";
+          $banner.textContent = "⚠️ Server is missing API keys (" +
+            [!status.google && "GOOGLE_PLACES_API_KEY", !status.anthropic && "ANTHROPIC_API_KEY"]
+              .filter(Boolean).join(" + ") +
+            "). Restart with the keys set.";
+        }
+      } catch {}
+
+      try {
+        const res = await fetch("/api/cafes").then(r => r.json());
+        if (res.error) throw new Error(res.error);
+        $count.textContent = `${res.count} cafés in ${res.city}, ranked`;
+        renderList(res.cafes);
+      } catch (e) {
+        $count.textContent = "";
+        $cafes.innerHTML = `<div class="empty">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
+      }
+    }
+
+    function renderList(cafes) {
+      $cafes.innerHTML = "";
+      cafes.forEach(c => {
+        const el = document.createElement("div");
+        el.className = "card";
+        el.innerHTML = `
+          <h3>${escapeHTML(c.name)}</h3>
+          <div class="addr">${escapeHTML(c.address || "")}</div>
+          <div class="row">
+            <span class="stars">${stars(c.rating)}</span>
+            <span>${c.rating ? c.rating.toFixed(1) : "—"}</span>
+            <span>·</span>
+            <span>${c.reviews.toLocaleString()} reviews</span>
+            <span style="margin-left:auto" class="price">${c.price || ""}</span>
+          </div>
+        `;
+        el.addEventListener("click", () => openCafe(c));
+        $cafes.appendChild(el);
+      });
+    }
+
+    async function openCafe(cafe) {
+      $modalBody.innerHTML = renderCafeShell(cafe) + renderLoading();
+      $modalBg.classList.add("open");
+
+      try {
+        const detail = await fetch(`/api/cafes/${encodeURIComponent(cafe.id)}`).then(r => r.json());
+        if (detail.error) throw new Error(detail.error);
+        $modalBody.innerHTML = renderCafeShell(detail) + renderPicks(detail.picks, detail.reviewsAnalysed, detail.cached);
+      } catch (e) {
+        $modalBody.innerHTML = renderCafeShell(cafe) +
+          `<div class="empty">Couldn't generate picks: ${escapeHTML(e.message)}</div>`;
+      }
+    }
+
+    function renderCafeShell(c) {
+      return `
+        <h2>${escapeHTML(c.name)}</h2>
+        <div class="addr2">${escapeHTML(c.address || "")}</div>
+        <div class="stats">
+          <span class="stars">${stars(c.rating)}</span>
+          ${c.rating ? c.rating.toFixed(1) : "—"}
+          · ${c.reviews.toLocaleString()} Google reviews
+          ${c.price ? `· ${escapeHTML(c.price)}` : ""}
+        </div>
+      `;
+    }
+
+    function renderLoading() {
+      return `
+        <div class="loading-pick">
+          <div class="pick-label">Drink to order</div>
+          <div class="skeleton" style="width:60%; height:22px;"></div>
+          <div class="skeleton" style="width:90%"></div>
+          <div class="skeleton" style="width:80%"></div>
+        </div>
+        <div class="loading-pick">
+          <div class="pick-label">Food to order</div>
+          <div class="skeleton" style="width:55%; height:22px;"></div>
+          <div class="skeleton" style="width:90%"></div>
+          <div class="skeleton" style="width:75%"></div>
+        </div>
+        <div style="text-align:center; color:var(--muted); font-size:12px; margin-top:8px;">
+          Reading reviews & generating picks…
+        </div>
+      `;
+    }
+
+    function renderPicks(picks, n, cached) {
+      const drink = picks?.drink || {};
+      const food = picks?.food || {};
+      const meta = `Analysed ${n || 0} review${n === 1 ? "" : "s"}${cached ? " · cached" : ""}`;
+      return `
+        ${renderPick("Drink to order", "☕", drink)}
+        ${renderPick("Food to order", "🥐", food)}
+        <div style="text-align:center; color:var(--muted); font-size:11px; margin-top:14px;">
+          ${meta}
+        </div>
+      `;
+    }
+
+    function renderPick(label, icon, p) {
+      if (!p || p.name == null || p.confidence === "none") {
+        return `
+          <div class="pick">
+            <div class="pick-label">${label}</div>
+            <div class="empty">Not enough review data yet. ${p?.reason ? escapeHTML(p.reason) : ""}</div>
+          </div>
+        `;
+      }
+      return `
+        <div class="pick">
+          <div class="pick-label">${label}</div>
+          <div class="pick-name">${icon} ${escapeHTML(p.name)}</div>
+          <div class="pick-meta">
+            <span class="conf ${p.confidence}">${p.confidence}</span>
+            ${p.mention_count || 0} mention${p.mention_count === 1 ? "" : "s"}
+          </div>
+          ${p.quote ? `<div class="quote">“${escapeHTML(p.quote)}”</div>` : ""}
+          ${p.reason ? `<div class="reason">${escapeHTML(p.reason)}</div>` : ""}
+        </div>
+      `;
+    }
+
+    // Modal close
+    document.querySelector(".modal .close").addEventListener("click", closeModal);
+    $modalBg.addEventListener("click", (e) => { if (e.target === $modalBg) closeModal(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+    function closeModal() { $modalBg.classList.remove("open"); }
+
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: joequest
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/status
+    envVars:
+      - key: GOOGLE_PLACES_API_KEY
+        sync: false   # Set this in the Render dashboard (Environment tab)
+      - key: ANTHROPIC_API_KEY
+        sync: false   # Set this in the Render dashboard (Environment tab)
