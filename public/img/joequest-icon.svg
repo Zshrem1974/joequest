@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="86" viewBox="0 0 64 86" role="img" aria-label="JoeQuest">
+  <path d="M32 4 C14 4 4 16 4 32 C4 52 32 82 32 82 C32 82 60 52 60 32 C60 16 50 4 32 4 Z" fill="#D98324"/>
+  <path d="M19 25 H43 a2 2 0 0 1 2 2 V37 a13 13 0 0 1 -26 0 V27 a2 2 0 0 1 2 -2 Z" fill="#FFF6EC"/>
+  <path d="M45 28 a6.5 6.5 0 0 1 0 13" fill="none" stroke="#FFF6EC" stroke-width="3.5" stroke-linecap="round"/>
+  <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#5E3E27"/>
+</svg>
