@@ -19,9 +19,9 @@ Engine / CLI: `test-offline.js`, `joequest-engine.js`, `scan-list.js`, `recurate
 Live app:
 - `server.js` (Express API: list, detail, photo proxy, favourites, taste, auth-config, status; snapshot loader)
 - `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label)
-- `public/index.html` (vanilla-JS UI, single page, **seven views**; loads `supabase-js` from CDN for browser-side auth)
+- `public/index.html` (vanilla-JS UI, single page, **nine views**; loads `supabase-js` from CDN for browser-side auth)
 - `public/img/` (brand SVGs: lockup, favicon, app icon, standalone pin; PNG: JoeQuester marker)
-- `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles. In-memory fallback for dev.)
+- `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles, user settings, offers, help messages. In-memory fallback for dev.)
 
 Snapshot pipeline:
 - `data/boca-snapshot.json` — 19 cafés + picks, with per-place `fetched_at` (66 KB)
@@ -105,8 +105,9 @@ engagement.**
 
 ## UI & brand state (what's actually shipped)
 
-The deployed app implements seven screens with the brand palette and
-Poppins / Inter typography.
+The deployed app implements nine screens with the brand palette and
+Poppins / Inter typography. **Every drawer item is now functional** —
+no more `alert()` placeholders.
 
 - **Discover** — header lockup, "Coffee Quest Begins" greeting, mini-map with
   brand pins + rating pills, ranked café card list with rank badges,
@@ -138,10 +139,32 @@ Poppins / Inter typography.
   strength, sweetness, adventurousness, **brewing method** (8 options each
   with a one-line description that appears when selected). Summary card +
   Edit affordance once saved.
-- **Slide-out drawer** — Profile *(wired)*, Coffee taste profile *(wired, AI
-  tag)*, Offers *(placeholder)*, Become a JQ partner *(wired)*, Settings
-  *(placeholder)*, Privacy & location *(placeholder)*, Help *(placeholder)*.
-  Header shows user email + initials when logged in.
+- **Settings** (Stage 3) — three sections:
+  - *Preferences* — units pill toggle (mi/km), notifications iOS-style
+    switch (placeholder for the notification system).
+  - *Location* — current `navigator.permissions` state as a coloured pill
+    (granted / ask each time / denied) + "Update my location" button that
+    re-runs the geolocation prompt.
+  - *Data* — destructive "Clear my data" with a `confirm()` step (wipes
+    favourites + taste profile + settings; account stays alive).
+  - Preferences auto-save on change. Account users go to Supabase;
+    logged-out users persist to `localStorage["jq.anonSettings"]`.
+- **Offers** (Stage 4) — list of branded partner-coupon cards. Each card has
+  the partner name, kind tag (Café offer / Brand offer), sample-vs-live
+  badge, title, description, terms, expiry, redemption count. **Codes are
+  hidden** until the user taps "Reveal code", which fires a server
+  roundtrip that bumps the redemption counter and returns the code in a
+  monospaced pill with a Copy button (Clipboard API). 3 sample offers
+  seeded by hand.
+- **Help** (Stage 4) — proper contact form: name + email + category pills
+  (Bug / Suggestion / Partner enquiry / Other) + message textarea. Hidden
+  honeypot input for basic spam triage; server validates email shape;
+  submissions land in `help_messages` with optional `user_id`. Success
+  state swaps the form for a thank-you card.
+- **Slide-out drawer** — every item now navigates to a real screen:
+  Profile, Coffee taste profile *(AI tag)*, Offers, Become a JQ partner,
+  Settings, Privacy & location (routes to Settings), Help. Header shows
+  user email + initials when logged in.
 - **Partner page** — two offer types (Café placement $49/mo, Brand offers
   from $250/campaign) + the coffee-only sponsorship policy box.
 
@@ -163,6 +186,20 @@ Anon-key + URL are public values (delivered via `/api/auth/config`).
 - `taste_profiles(user_id, roast, milk, strength, sweetness, adventurous,
   brewing, updated_at)` — single row per user, loose text columns so the
   quiz can evolve without migrations.
+- `user_settings(user_id, units, notifications, updated_at)` — single row
+  per user; preferences (Stage 3).
+
+**Shared tables (not per-user):**
+- `offers(id, partner_name, title, description, code, terms, kind,
+  starts_at, ends_at, active, sample, redemptions, created_at)` — public
+  SELECT on `active = true` via RLS, codes never returned by the list
+  endpoint, no INSERT/UPDATE policies (only the service-role writes).
+- `help_messages(id, user_id?, name, email, category, message,
+  created_at)` — RLS on, no public policies; only the service-role
+  inserts/reads. `user_id` references `auth.users(id) ON DELETE SET NULL`.
+- `cafe_picks(place_id, payload jsonb, fetched_at)` — legacy pick cache
+  from before the snapshot model; still works as a fallback under the
+  snapshot.
 
 **Taste-match seam:** `tasteMatch(drink, profile)` in `public/index.html` is
 the single matching surface. Conservative — generic picks ("Coffee") never
@@ -184,13 +221,11 @@ spend rate.
 
 ## NEXT STEPS — ordered, actionable
 
-**Drawer build sequence (4 stages, ordered by spec; Stages 1+2 shipped):**
+**Drawer build sequence (4 stages, ALL SHIPPED):**
 - ~~Stage 1 — Accounts (Supabase Auth, user-keyed favourites)~~ ✅
 - ~~Stage 2 — Coffee taste profile (6-question quiz, match-your-taste chips)~~ ✅
-- **Stage 3 — Settings** (units mi/km, location permission re-request,
-  notifications toggle placeholder, "clear my data" with confirm).
-- **Stage 4 — Offers** (partner-coupon table + reveal/copy tracking) and
-  **Help-as-a-form** (submissions to `help_messages` table).
+- ~~Stage 3 — Settings (units, location, notifications, clear-my-data)~~ ✅
+- ~~Stage 4 — Offers (with redemption tracking) + Help-as-a-form~~ ✅
 
 **General platform follow-ups:**
 1. **Restrict the Google API key (~10 min, security).** Cloud Console →
@@ -213,7 +248,7 @@ spend rate.
 6. **Multi-city snapshot matrix (when we add city #2).** See "Multi-city"
    section above.
 
-## Env vars (current, after Stages 1–2)
+## Env vars (current, after all four drawer stages)
 
 | Var | Required | Where |
 |---|---|---|
@@ -254,4 +289,8 @@ Deploy: push to GitHub repo → Render Blueprint reads `render.yaml` → set bot
 
 ---
 
-**Recommended immediate sequence:** (1) restrict the Google key, (2) extract the snapshot script, (3) wire Supabase for favourites. Then let real Boca usage decide step 5. Tell me which to start and I'll produce the exact code/diff.
+**Recommended immediate sequence:** (1) restrict the Google API key
+(security hygiene), (2) add the two GitHub Actions secrets so the monthly
+snapshot cron can run, (3) let real Boca usage decide between the
+`/quest` onboarding flow and the real-tile-map upgrade. Tell me which to
+start and I'll produce the exact code/diff.
