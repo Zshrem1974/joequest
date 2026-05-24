@@ -1,5 +1,80 @@
 # CHANGES
 
+## Stage 3 (Drawer) — Settings (units, location, notifications, clear-data)
+
+A real Settings page in the drawer with per-user preferences (Supabase when
+logged in, localStorage when logged out) and a destructive "clear my data"
+action.
+
+### What changed
+
+**Schema**
+- New `user_settings` table — one row per user, fields are loose (text /
+  bool) so it's easy to grow.
+  - `units` — `'mi'` or `'km'`
+  - `notifications` — bool placeholder (no notification system wired yet)
+- RLS scoped to `auth.uid() = user_id`.
+
+**Server**
+- `GET /api/settings` → `{ settings }` (auth required, returns defaults if
+  no row yet).
+- `PUT /api/settings` → upserts; whitelist coerces inputs (`units` to
+  `'mi'/'km'`, `notifications` to bool).
+- `POST /api/clear-data` → DELETEs the user's rows from `favourites`,
+  `taste_profiles`, and `user_settings`. Account stays alive.
+
+**db.js**
+- `getUserSettings(userId)` (returns defaults if no row).
+- `saveUserSettings(userId, settings)`.
+- `clearUserData(userId)` — wipes the three tables in parallel, returns
+  `{ favourites, taste, settings }` counts/flags.
+
+**UI**
+- New `view-settings` reachable from drawer → **Settings**. (The
+  **Privacy & location** drawer item also routes here, since location
+  permission lives in this page.)
+- Sections:
+  1. **Preferences** — Units pill toggle (mi/km), Notifications switch.
+  2. **Location** — current `navigator.permissions` status as a coloured
+     pill (granted / ask each time / denied), helper text shifts when
+     denied, "Update my location" button that calls `locateMe()`.
+  3. **Data** — destructive "Clear my data" button with a `confirm()` step.
+- Preferences save automatically on change (no submit button). Account
+  users hit the API; logged-out users persist to
+  `localStorage["jq.anonSettings"]`.
+- "Clear my data" works in both modes: anon mode clears the localStorage
+  keys; account mode hits `/api/clear-data` and resets local state to
+  defaults. Toast confirms what was cleared.
+
+### Setup SQL (Supabase → SQL Editor → Run)
+
+```sql
+create table if not exists user_settings (
+  user_id        uuid primary key references auth.users(id) on delete cascade,
+  units          text default 'mi',
+  notifications  boolean default false,
+  updated_at     timestamptz not null default now()
+);
+
+alter table user_settings enable row level security;
+
+create policy "settings_select_own"
+  on user_settings for select using (auth.uid() = user_id);
+
+create policy "settings_modify_own"
+  on user_settings for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+notify pgrst, 'reload schema';
+```
+
+### Render / env vars
+
+No new env vars.
+
+---
+
 ## Stage 2 (Drawer) — Coffee taste profile + match-your-taste signal
 
 A short 5-tap quiz the user fills in once. Stored per-user in Supabase. Used

@@ -42,6 +42,7 @@ import {
   listFavouritesForUser, addFavouriteForUser, removeFavouriteForUser,
   mergeAnonFavourites,
   getTasteProfile, saveTasteProfile,
+  getUserSettings, saveUserSettings, clearUserData,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -253,6 +254,40 @@ app.put("/api/taste", async (req, res) => {
     }
     const saved = await saveTasteProfile(user.id, clean);
     res.json({ ok: true, profile: saved });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// ---- settings (Stage 3) ---------------------------------------------------
+app.get("/api/settings", async (req, res) => {
+  try {
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to load your settings" });
+    res.json({ settings: await getUserSettings(user.id) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.put("/api/settings", async (req, res) => {
+  try {
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to save your settings" });
+    const body = req.body || {};
+    const clean = {
+      units: body.units === "km" ? "km" : "mi",
+      notifications: !!body.notifications,
+    };
+    const saved = await saveUserSettings(user.id, clean);
+    res.json({ ok: true, settings: saved });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Destructive: wipes favourites + taste profile + settings for the user.
+// The account itself stays alive (managed by Supabase Auth).
+app.post("/api/clear-data", async (req, res) => {
+  try {
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in first" });
+    const result = await clearUserData(user.id);
+    res.json({ ok: true, ...result });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

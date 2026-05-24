@@ -1198,6 +1198,97 @@
       font-weight: 600;
     }
 
+    /* ----- Settings ----- */
+    .settings-section {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .settings-section:last-of-type { border-bottom: none; }
+    .settings-h3 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+    .settings-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 0;
+    }
+    .settings-row + .settings-row { padding-top: 4px; }
+    .settings-label { flex: 1; min-width: 0; }
+    .settings-label .k {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--espresso);
+    }
+    .settings-label .hint {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-top: 2px;
+      line-height: 1.35;
+    }
+    .settings-row .taste-choices { flex-shrink: 0; }
+    .settings-row .taste-choices button { padding: 8px 14px; font-size: 13px; }
+
+    /* iOS-style switch */
+    .switch { position: relative; display: inline-block; flex-shrink: 0; cursor: pointer; }
+    .switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .switch-track {
+      display: inline-block;
+      width: 46px; height: 26px;
+      background: var(--line-strong);
+      border-radius: 13px;
+      position: relative;
+      transition: background 0.18s;
+    }
+    .switch-thumb {
+      position: absolute;
+      top: 3px; left: 3px;
+      width: 20px; height: 20px;
+      background: var(--cream);
+      border-radius: 50%;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.18s;
+    }
+    .switch input:checked + .switch-track { background: var(--mint); }
+    .switch input:checked + .switch-track .switch-thumb { transform: translateX(20px); }
+
+    /* Permission status pill */
+    .perm-pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: var(--r-pill);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: var(--line);
+      color: var(--muted);
+    }
+    .perm-pill.granted { background: rgba(59,125,90,0.15); color: var(--mint); }
+    .perm-pill.prompt  { background: rgba(232,163,23,0.20); color: #8a5e10; }
+    .perm-pill.denied  { background: rgba(195,74,54,0.15);  color: #9a3a2a; }
+
+    /* Destructive action */
+    .btn-danger {
+      width: 100%;
+      background: rgba(195,74,54,0.10);
+      color: #9a3a2a;
+      border: 1px solid rgba(195,74,54,0.35);
+      padding: 11px;
+      border-radius: var(--r-pill);
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.12s;
+    }
+    .btn-danger:hover { background: rgba(195,74,54,0.18); }
+
     /* Match-your-taste chip inside the pick-mini on cards */
     .match-tag {
       display: inline-flex;
@@ -1534,6 +1625,78 @@
     </main>
 
     <!-- ========================================================== -->
+    <!--  SETTINGS                                                   -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-settings">
+      <div style="padding: 14px 18px 0;">
+        <button class="back-btn" data-go="discover">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back
+        </button>
+      </div>
+
+      <div class="auth-card">
+        <h1 class="auth-title">Settings</h1>
+        <p class="auth-sub" id="settings-sub">Tweak how JoeQuest behaves for you.</p>
+
+        <!-- Preferences -->
+        <div class="settings-section">
+          <div class="settings-row">
+            <div class="settings-label">
+              <div class="k">Units</div>
+              <div class="hint">Distances and map labels.</div>
+            </div>
+            <div class="taste-choices" data-key="units" id="settings-units">
+              <button type="button" data-val="mi">mi</button>
+              <button type="button" data-val="km">km</button>
+            </div>
+          </div>
+
+          <div class="settings-row">
+            <div class="settings-label">
+              <div class="k">Notifications</div>
+              <div class="hint">Heads-up about new drink picks at saved cafés. Placeholder for now.</div>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="settings-notif">
+              <span class="switch-track"><span class="switch-thumb"></span></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="settings-section">
+          <h3 class="settings-h3">Location</h3>
+          <div class="settings-row">
+            <div class="settings-label">
+              <div class="k">Permission</div>
+              <div class="hint" id="settings-perm-hint">Used for the red "You" pin on the map.</div>
+            </div>
+            <span class="perm-pill" id="settings-perm-pill">unknown</span>
+          </div>
+          <button class="auth-secondary" id="settings-locate">Update my location</button>
+        </div>
+
+        <!-- Data -->
+        <div class="settings-section">
+          <h3 class="settings-h3">Data</h3>
+          <p class="hint" style="margin: 0 0 12px;">Clear your saved cafés, taste profile, and settings. Your account stays alive — you can keep using JoeQuest.</p>
+          <button class="btn-danger" id="settings-clear">Clear my data</button>
+        </div>
+
+        <div id="settings-savemsg" class="auth-hint" style="margin-top: 14px;">Changes save automatically.</div>
+      </div>
+
+      <div id="settings-gated" class="auth-card" hidden>
+        <h1 class="auth-title">Settings</h1>
+        <p class="auth-sub">Sign in first to save your settings to your account.</p>
+        <button class="auth-submit" data-go="profile">Go to sign in</button>
+      </div>
+    </main>
+
+    <!-- ========================================================== -->
     <!--  BOTTOM TAB BAR                                            -->
     <!-- ========================================================== -->
     <nav class="tab-bar" aria-label="Main">
@@ -1653,6 +1816,7 @@
       mapView: { zoom: 1, cx: 0.5, cy: 0.5 },     // viewBox-based zoom on the big map
       myLocation: { lat: 26.372, lng: -80.105 },  // default to Boca centre; geolocation overrides
       taste: null,                                // Stage 2: loaded after sign-in
+      settings: { units: "mi", notifications: false }, // Stage 3
     };
 
     // ---- DOM ----
@@ -1729,6 +1893,7 @@
       if (view === "map") renderMap();
       if (view === "profile") renderProfile();
       if (view === "taste") renderTaste();
+      if (view === "settings") renderSettings();
     }
 
     // ---- bootstrap ----
@@ -1761,6 +1926,7 @@
       bindEvents();
       bindAuthEvents();
       bindTasteEvents();
+      bindSettingsEvents();
     }
 
     // ---- auth init ----
@@ -1784,7 +1950,7 @@
         if (!wasLoggedIn && currentUser) {
           await mergeAnonSavesIntoAccount();
         }
-        await Promise.all([loadFavourites(), loadTasteProfile()]);
+        await Promise.all([loadFavourites(), loadTasteProfile(), loadSettings()]);
         renderProfile();
         renderDrawerHeader();
         // Re-render anything visible that depends on saved state or taste matches
@@ -1792,11 +1958,13 @@
         if (state.view === "discover") renderDiscover();
         if (state.view === "map") renderMap();
         if (state.view === "taste") renderTaste();
+        if (state.view === "settings") renderSettings();
       });
 
-      // Also load taste once on initial bootstrap (auth-state-change may not
-      // fire if there's no existing session and we haven't signed in yet).
-      if (currentUser) await loadTasteProfile();
+      // Also load taste + settings once on initial bootstrap (auth-state-change
+      // may not fire if there's no existing session yet).
+      if (currentUser) await Promise.all([loadTasteProfile(), loadSettings()]);
+      else await loadSettings(); // pick up anon localStorage settings
     }
 
     // ---- favourites: load + persist (account vs anon) ----
@@ -1828,6 +1996,154 @@
 
     function persistAnonSaves() {
       localStorage.setItem(ANON_SAVES_KEY, JSON.stringify([...state.saved]));
+    }
+
+    // ---- settings (Stage 3) ----
+    const ANON_SETTINGS_KEY = "jq.anonSettings";
+
+    async function loadSettings() {
+      let s = { units: "mi", notifications: false };
+      if (currentUser) {
+        try {
+          const r = await fetch("/api/settings", { headers: await authedHeaders() });
+          if (r.ok) {
+            const d = await r.json();
+            s = { ...s, ...(d.settings || {}) };
+          }
+        } catch {}
+      } else {
+        try {
+          const local = JSON.parse(localStorage.getItem(ANON_SETTINGS_KEY) || "{}");
+          s = { ...s, ...local };
+        } catch {}
+      }
+      state.settings = s;
+    }
+
+    async function saveSettings() {
+      if (currentUser) {
+        try {
+          await fetch("/api/settings", {
+            method: "PUT",
+            headers: await authedHeaders(),
+            body: JSON.stringify(state.settings),
+          });
+        } catch {}
+      } else {
+        localStorage.setItem(ANON_SETTINGS_KEY, JSON.stringify(state.settings));
+      }
+    }
+
+    async function queryGeoPermission() {
+      if (!navigator.permissions?.query) return "unknown";
+      try {
+        const s = await navigator.permissions.query({ name: "geolocation" });
+        return s.state; // 'granted' | 'prompt' | 'denied'
+      } catch { return "unknown"; }
+    }
+
+    async function renderSettings() {
+      const gated = document.getElementById("settings-gated");
+      const card = document.querySelector("#view-settings .auth-card:not([id])");
+      // Anon settings ARE allowed (saves to localStorage), so we don't gate
+      // the whole page — but show a hint that data won't sync across devices.
+      if (gated) gated.hidden = true;
+
+      // Units pills
+      const unitGroup = document.getElementById("settings-units");
+      $$("button", unitGroup).forEach((b) => {
+        b.classList.toggle("selected", b.dataset.val === state.settings.units);
+      });
+
+      // Notif toggle
+      document.getElementById("settings-notif").checked = !!state.settings.notifications;
+
+      // Permission status
+      const pill = document.getElementById("settings-perm-pill");
+      const hint = document.getElementById("settings-perm-hint");
+      const perm = await queryGeoPermission();
+      pill.className = "perm-pill " + (perm === "granted" || perm === "prompt" || perm === "denied" ? perm : "");
+      pill.textContent =
+        perm === "granted" ? "granted" :
+        perm === "denied"  ? "denied"  :
+        perm === "prompt"  ? "ask each time" :
+        "unknown";
+      hint.textContent =
+        perm === "denied"
+          ? "Location is blocked. Re-enable it in your browser site settings, then tap the button below."
+          : "Used for the red \"You\" pin on the map.";
+
+      // Anon-mode message
+      const sub = document.getElementById("settings-sub");
+      if (sub) sub.textContent = currentUser
+        ? "Saved to your account."
+        : "Saved on this device. Sign in to sync across devices.";
+    }
+
+    function bindSettingsEvents() {
+      const unitGroup = document.getElementById("settings-units");
+      if (unitGroup) {
+        unitGroup.addEventListener("click", (e) => {
+          const btn = e.target.closest("button");
+          if (!btn) return;
+          state.settings.units = btn.dataset.val;
+          $$("button", unitGroup).forEach((b) => b.classList.toggle("selected", b === btn));
+          saveSettings();
+        });
+      }
+
+      const notifEl = document.getElementById("settings-notif");
+      if (notifEl) {
+        notifEl.addEventListener("change", () => {
+          state.settings.notifications = !!notifEl.checked;
+          saveSettings();
+        });
+      }
+
+      document.getElementById("settings-locate")?.addEventListener("click", () => {
+        locateMe();
+        // re-render permission pill shortly after the prompt resolves
+        setTimeout(renderSettings, 800);
+      });
+
+      document.getElementById("settings-clear")?.addEventListener("click", async () => {
+        if (!currentUser) {
+          // Anon: just clear localStorage keys
+          if (!confirm("Clear your saved cafés and settings on this device?")) return;
+          localStorage.removeItem(ANON_SAVES_KEY);
+          localStorage.removeItem(ANON_SETTINGS_KEY);
+          state.saved.clear();
+          state.settings = { units: "mi", notifications: false };
+          renderSettings();
+          renderDiscover();
+          toast("Local data cleared.");
+          return;
+        }
+        const ok = confirm("This will delete your saved cafés, taste profile, and settings. Your account stays. Continue?");
+        if (!ok) return;
+        try {
+          const r = await fetch("/api/clear-data", {
+            method: "POST",
+            headers: await authedHeaders(),
+          });
+          if (!r.ok) {
+            const e = await r.json().catch(() => ({}));
+            throw new Error(e.error || r.statusText);
+          }
+          const d = await r.json();
+          state.saved.clear();
+          state.taste = null;
+          state.settings = { units: "mi", notifications: false };
+          renderSettings();
+          renderTaste();
+          if (state.view === "discover") renderDiscover();
+          if (state.view === "saved") renderSaved();
+          renderProfile();
+          toast(`Cleared ${d.favourites} café${d.favourites === 1 ? "" : "s"}, taste, and settings.`);
+        } catch (e) {
+          toast(`Couldn't clear data: ${e.message}`, "error");
+        }
+      });
     }
 
     // ---- taste profile (Stage 2) ----
@@ -2780,9 +3096,9 @@
           if (a === "partner") go("partner");
           else if (a === "profile") go("profile");
           else if (a === "taste") go("taste");
+          else if (a === "settings") go("settings");
+          else if (a === "privacy") go("settings");
           else if (a === "help") alert("Help & support — coming soon. Email zackwboca@gmail.com for now.");
-          else if (a === "settings") alert("Settings — coming soon.");
-          else if (a === "privacy") alert("Privacy & location — coming soon.");
           else if (a === "offers") alert("Offers near you — coming soon.");
           return;
         }

@@ -176,6 +176,79 @@ export async function mergeAnonFavourites(userId, placeIds) {
 }
 
 // ----------------------------------------------------------------------------
+// USER SETTINGS (Stage 3 — drawer → Settings)
+// ----------------------------------------------------------------------------
+//   units          'mi' or 'km'
+//   notifications  bool placeholder (no notification system wired yet)
+// Anonymous users persist in localStorage; this server-side path is only used
+// when there's an authenticated user.
+// ----------------------------------------------------------------------------
+const memSettings = new Map(); // user_id -> settings row
+
+const SETTINGS_DEFAULTS = { units: "mi", notifications: false };
+
+export async function getUserSettings(userId) {
+  if (!userId) return null;
+  if (supabase) {
+    const { data, error } = await supabase
+      .from("user_settings")
+      .select("units, notifications, updated_at")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (error) throw new Error(`Supabase getUserSettings: ${error.message}`);
+    return data || { ...SETTINGS_DEFAULTS };
+  }
+  return memSettings.get(userId) || { ...SETTINGS_DEFAULTS };
+}
+
+export async function saveUserSettings(userId, settings) {
+  if (!userId || !settings || typeof settings !== "object") return null;
+  const row = {
+    user_id: userId,
+    units: settings.units === "km" ? "km" : "mi",
+    notifications: !!settings.notifications,
+    updated_at: new Date().toISOString(),
+  };
+  if (supabase) {
+    const { data, error } = await supabase
+      .from("user_settings")
+      .upsert(row, { onConflict: "user_id" })
+      .select()
+      .maybeSingle();
+    if (error) throw new Error(`Supabase saveUserSettings: ${error.message}`);
+    return data;
+  }
+  memSettings.set(userId, row);
+  return row;
+}
+
+// Wipe everything we store about a user. Account stays alive — they can keep
+// using JoeQuest, just with a clean slate.
+export async function clearUserData(userId) {
+  if (!userId) return { favourites: 0, taste: false, settings: false };
+  if (supabase) {
+    const [favResult, tasteResult, settResult] = await Promise.all([
+      supabase.from("favourites").delete().eq("user_id", userId).select("place_id"),
+      supabase.from("taste_profiles").delete().eq("user_id", userId).select("user_id"),
+      supabase.from("user_settings").delete().eq("user_id", userId).select("user_id"),
+    ]);
+    if (favResult.error) throw new Error(`Supabase clearUserData favourites: ${favResult.error.message}`);
+    if (tasteResult.error) throw new Error(`Supabase clearUserData taste: ${tasteResult.error.message}`);
+    if (settResult.error) throw new Error(`Supabase clearUserData settings: ${settResult.error.message}`);
+    return {
+      favourites: favResult.data?.length ?? 0,
+      taste: (tasteResult.data?.length ?? 0) > 0,
+      settings: (settResult.data?.length ?? 0) > 0,
+    };
+  }
+  const favCount = memFavs.get(userId)?.size || 0;
+  memFavs.delete(userId);
+  const hadTaste = memTaste.delete(userId);
+  const hadSettings = memSettings.delete(userId);
+  return { favourites: favCount, taste: hadTaste, settings: hadSettings };
+}
+
+// ----------------------------------------------------------------------------
 // TASTE PROFILES (Stage 2 — drawer → Coffee taste profile)
 // ----------------------------------------------------------------------------
 // Five short answers per user. Stored flat in one row; the schema is loose
