@@ -124,14 +124,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 9:00 AM – 10:00 PM",
-        "Tuesday: 9:00 AM – 10:00 PM",
-        "Wednesday: 9:00 AM – 10:00 PM",
-        "Thursday: 9:00 AM – 10:00 PM",
-        "Friday: 9:00 AM – 10:00 PM",
-        "Saturday: 9:00 AM – 10:00 PM",
-        "Sunday: 9:00 AM – 7:00 PM"
-      ]
+        "Monday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Tuesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Wednesday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Thursday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 9:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20097:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJCcvR1Pbh2IgRc4bpE1pDCEQ",
@@ -251,14 +252,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 6:00 PM",
-        "Tuesday: 7:00 AM – 6:00 PM",
-        "Wednesday: 7:00 AM – 6:00 PM",
-        "Thursday: 7:00 AM – 6:00 PM",
-        "Friday: 7:00 AM – 6:00 PM",
-        "Saturday: 7:00 AM – 6:00 PM",
-        "Sunday: 7:00 AM – 6:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20096:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJaSnqwXXh2IgRgqnB_pH5aE8",
@@ -376,14 +378,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 11:00 AM – 12:00 AM",
-        "Tuesday: 11:00 AM – 12:00 AM",
-        "Wednesday: 11:00 AM – 12:00 AM",
-        "Thursday: 11:00 AM – 12:00 AM",
-        "Friday: 11:00 AM – 12:00 AM",
-        "Saturday: 11:00 AM – 12:00 AM",
-        "Sunday: 11:00 AM – 12:00 AM"
-      ]
+        "Monday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Tuesday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Wednesday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Thursday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Friday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Saturday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u200912:00\u202fAM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJf_20jATi2IgRitMRzhDZ2mw",
@@ -502,14 +505,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 5:00 PM",
-        "Tuesday: 7:00 AM – 5:00 PM",
-        "Wednesday: 7:00 AM – 5:00 PM",
-        "Thursday: 7:00 AM – 5:00 PM",
-        "Friday: 7:00 AM – 5:00 PM",
-        "Saturday: 8:00 AM – 5:00 PM",
-        "Sunday: 8:00 AM – 5:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJtdWNvVjj2IgRzWs79x6IHIA",
@@ -622,14 +626,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:30 AM – 4:00 PM",
-        "Tuesday: 7:30 AM – 4:00 PM",
-        "Wednesday: 7:30 AM – 4:00 PM",
-        "Thursday: 7:30 AM – 4:00 PM",
-        "Friday: 7:30 AM – 4:00 PM",
-        "Saturday: 8:00 AM – 4:00 PM",
-        "Sunday: 8:00 AM – 2:00 PM"
-      ]
+        "Monday: 7:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Tuesday: 7:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Wednesday: 7:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Thursday: 7:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Friday: 7:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20092:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJv3dY3j_h2IgRc1i6aiYU5q4",
@@ -742,14 +747,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 5:00 PM",
-        "Tuesday: 8:00 AM – 5:00 PM",
-        "Wednesday: 8:00 AM – 5:00 PM",
-        "Thursday: 8:00 AM – 5:00 PM",
-        "Friday: 8:00 AM – 5:00 PM",
-        "Saturday: 8:00 AM – 5:00 PM",
-        "Sunday: 9:00 AM – 2:00 PM"
-      ]
+        "Monday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20092:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJ99DBn7gf2YgRPO0T1720vQI",
@@ -836,14 +842,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 5:00 PM",
-        "Tuesday: 8:00 AM – 5:00 PM",
-        "Wednesday: 8:00 AM – 5:00 PM",
-        "Thursday: 8:00 AM – 5:00 PM",
-        "Friday: 8:00 AM – 5:00 PM",
+        "Monday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
         "Saturday: Closed",
         "Sunday: Closed"
-      ]
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJC9ykl6zj2IgRSpCaANux5Wo",
@@ -946,13 +953,14 @@
       ],
       "weekdayDescriptions": [
         "Monday: Closed",
-        "Tuesday: 8:30 AM – 4:00 PM",
-        "Wednesday: 8:30 AM – 4:00 PM",
-        "Thursday: 8:30 AM – 4:00 PM",
-        "Friday: 8:30 AM – 4:00 PM",
-        "Saturday: 8:30 AM – 4:30 AM",
-        "Sunday: 8:30 AM – 3:00 PM"
-      ]
+        "Tuesday: 8:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Wednesday: 8:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Thursday: 8:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Friday: 8:30\u202fAM\u2009\u2013\u20094:00\u202fPM",
+        "Saturday: 8:30\u202fAM\u2009\u2013\u20094:30\u202fAM",
+        "Sunday: 8:30\u202fAM\u2009\u2013\u20093:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJsRpXWwjh2IgRKW93jO6bWY4",
@@ -1063,14 +1071,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 6:00 PM",
-        "Tuesday: 6:00 AM – 6:00 PM",
-        "Wednesday: 8:00 AM – 6:00 PM",
-        "Thursday: 8:00 AM – 6:00 PM",
-        "Friday: 8:00 AM – 6:00 PM",
-        "Saturday: 8:00 AM – 10:00 PM",
-        "Sunday: 8:00 AM – 6:00 PM"
-      ]
+        "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Tuesday: 6:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJEU0c-T4Z2YgRCezhCft2CyE",
@@ -1185,14 +1194,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 8:00 PM",
-        "Tuesday: 7:00 AM – 8:00 PM",
-        "Wednesday: 7:00 AM – 8:00 PM",
-        "Thursday: 7:00 AM – 8:00 PM",
-        "Friday: 7:00 AM – 9:00 PM",
-        "Saturday: 7:00 AM – 9:00 PM",
-        "Sunday: 7:00 AM – 8:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJHSmlaxLh2IgRzyfVX_Im4ck",
@@ -1308,14 +1318,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 5:00 PM",
-        "Tuesday: 8:00 AM – 5:00 PM",
-        "Wednesday: 8:00 AM – 5:00 PM",
-        "Thursday: 8:00 AM – 5:00 PM",
-        "Friday: 8:00 AM – 5:00 PM",
-        "Saturday: 8:00 AM – 5:00 PM",
-        "Sunday: 9:00 AM – 3:00 PM"
-      ]
+        "Monday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Sunday: 9:00\u202fAM\u2009\u2013\u20093:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJ-wx9iYvh2IgRBRNg20QB_10",
@@ -1429,14 +1440,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 7:00 PM",
-        "Tuesday: 7:00 AM – 7:00 PM",
-        "Wednesday: 7:00 AM – 7:00 PM",
-        "Thursday: 7:00 AM – 7:00 PM",
-        "Friday: 7:00 AM – 7:00 PM",
-        "Saturday: 7:00 AM – 7:00 PM",
-        "Sunday: 7:00 AM – 7:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJ81Ar2sYZ2YgRllhJlMYB_dI",
@@ -1546,16 +1558,17 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 6:00 PM",
-        "Tuesday: 8:00 AM – 6:00 PM",
-        "Wednesday: 8:00 AM – 6:00 PM",
-        "Thursday: 8:00 AM – 6:00 PM",
-        "Friday: 8:00 AM – 6:00 PM",
-        "Saturday: 8:00 AM – 6:00 PM",
-        "Sunday: 8:00 AM – 6:00 PM"
+        "Monday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20096:00\u202fPM"
       ],
       "mapsUri": "https://maps.google.com/?cid=15203309869475649686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAb43m-t129VxzMo74wWTbMCI0_jr1f2faVej1IO6tLHCPx2850DmhCvAH1-e5hDKm9iqHGsVvrBf37ocvTIhg8Ib_s1mXFSEnXgx85QSTdr6tcZAYRPLmMJTYs8jdS-5muKHpKhD31UMZRewiIyHDSOblqNCNC5mvItYu-YJGMAESqwc5cpIey-trx8tNBaWn5cOGDJoYIoS29c-fM9rpYacemo8wElqUaMhKW5c_iKZYHLf5_8P8BR6oWWZGVDFEnP7qBPzzzYYqO9AnCIy3un6GwyimZM5FQUrH_JXEajDqmidwA&w=800"
+      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAb43m-t129VxzMo74wWTbMCI0_jr1f2faVej1IO6tLHCPx2850DmhCvAH1-e5hDKm9iqHGsVvrBf37ocvTIhg8Ib_s1mXFSEnXgx85QSTdr6tcZAYRPLmMJTYs8jdS-5muKHpKhD31UMZRewiIyHDSOblqNCNC5mvItYu-YJGMAESqwc5cpIey-trx8tNBaWn5cOGDJoYIoS29c-fM9rpYacemo8wElqUaMhKW5c_iKZYHLf5_8P8BR6oWWZGVDFEnP7qBPzzzYYqO9AnCIy3un6GwyimZM5FQUrH_JXEajDqmidwA&w=800",
+      "city": "boca-raton"
     },
     {
       "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
@@ -1666,14 +1679,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 10:00 AM – 7:00 PM",
-        "Tuesday: 10:00 AM – 7:00 PM",
-        "Wednesday: 10:00 AM – 7:00 PM",
-        "Thursday: 10:00 AM – 7:00 PM",
-        "Friday: 10:00 AM – 8:00 PM",
-        "Saturday: 10:00 AM – 8:00 PM",
-        "Sunday: 11:00 AM – 7:00 PM"
-      ]
+        "Monday: 10:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Tuesday: 10:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Wednesday: 10:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Thursday: 10:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Friday: 10:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Saturday: 10:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Sunday: 11:00\u202fAM\u2009\u2013\u20097:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJWenGD5bj2IgRk_IEOgUUy9Y",
@@ -1774,14 +1788,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:30 AM – 4:30 PM",
-        "Tuesday: 8:30 AM – 4:30 PM",
-        "Wednesday: 8:30 AM – 4:30 PM",
-        "Thursday: 8:30 AM – 4:30 PM",
-        "Friday: 8:30 AM – 4:30 PM",
-        "Saturday: 8:30 AM – 1:30 PM",
+        "Monday: 8:30\u202fAM\u2009\u2013\u20094:30\u202fPM",
+        "Tuesday: 8:30\u202fAM\u2009\u2013\u20094:30\u202fPM",
+        "Wednesday: 8:30\u202fAM\u2009\u2013\u20094:30\u202fPM",
+        "Thursday: 8:30\u202fAM\u2009\u2013\u20094:30\u202fPM",
+        "Friday: 8:30\u202fAM\u2009\u2013\u20094:30\u202fPM",
+        "Saturday: 8:30\u202fAM\u2009\u2013\u20091:30\u202fPM",
         "Sunday: Closed"
-      ]
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJR_ysn4jj2IgR2kCL-eY_vz8",
@@ -1892,14 +1907,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 8:00 PM",
-        "Tuesday: 7:00 AM – 8:00 PM",
-        "Wednesday: 7:00 AM – 8:00 PM",
-        "Thursday: 7:00 AM – 10:00 PM",
-        "Friday: 7:00 AM – 10:00 PM",
-        "Saturday: 7:00 AM – 10:00 PM",
-        "Sunday: 7:00 AM – 8:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u200910:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20098:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJE9bX5Ewf2YgR0MDqarmOc0k",
@@ -2010,14 +2026,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 7:00 PM",
-        "Tuesday: 7:00 AM – 7:00 PM",
-        "Wednesday: 7:00 AM – 7:00 PM",
-        "Thursday: 7:00 AM – 7:00 PM",
-        "Friday: 7:00 AM – 7:00 PM",
-        "Saturday: 7:00 AM – 7:00 PM",
-        "Sunday: 7:00 AM – 7:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM",
+        "Sunday: 7:00\u202fAM\u2009\u2013\u20097:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJI1et2rzj2IgRmmydvhcsL64",
@@ -2137,14 +2154,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 3:00 PM",
-        "Tuesday: 8:00 AM – 3:00 PM",
-        "Wednesday: 8:00 AM – 3:00 PM",
-        "Thursday: 8:00 AM – 3:00 PM",
-        "Friday: 8:00 AM – 3:00 PM",
-        "Saturday: 8:00 AM – 3:00 PM",
-        "Sunday: 8:00 AM – 3:00 PM"
-      ]
+        "Monday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "Tuesday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "Wednesday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "Thursday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "Friday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "Saturday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20093:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJ-_O-FgDj2IgR0Wr2kH0Rn1I",
@@ -2255,18 +2273,19 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 9:00 AM – 5:00 PM",
-        "Tuesday: 8:30 AM – 5:00 PM",
-        "Wednesday: 8:30 AM – 5:00 PM",
-        "Thursday: 8:30 AM – 5:00 PM",
-        "Friday: 8:30 AM – 5:00 PM",
-        "Saturday: 8:30 AM – 5:00 PM",
-        "Sunday: 8:30 AM – 5:00 PM"
-      ]
+        "Monday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Tuesday: 8:30\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Wednesday: 8:30\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Thursday: 8:30\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Friday: 8:30\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Saturday: 8:30\u202fAM\u2009\u2013\u20095:00\u202fPM",
+        "Sunday: 8:30\u202fAM\u2009\u2013\u20095:00\u202fPM"
+      ],
+      "city": "boca-raton"
     },
     {
       "id": "ChIJQ98zGMfj2IgRo5LU42SyiqQ",
-      "name": "Uptown Market & Café",
+      "name": "Uptown Market & Caf\u00e9",
       "address": "300 W Camino Real, Boca Raton, FL 33432, USA",
       "lat": 26.3414753,
       "lng": -80.0920165,
@@ -2373,14 +2392,15 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 9:00 PM",
-        "Tuesday: 7:00 AM – 9:00 PM",
-        "Wednesday: 7:00 AM – 9:00 PM",
-        "Thursday: 7:00 AM – 9:00 PM",
-        "Friday: 7:00 AM – 9:00 PM",
-        "Saturday: 7:00 AM – 9:00 PM",
-        "Sunday: 8:00 AM – 9:00 PM"
-      ]
+        "Monday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Tuesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Wednesday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Thursday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Friday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Saturday: 7:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+        "Sunday: 8:00\u202fAM\u2009\u2013\u20099:00\u202fPM"
+      ],
+      "city": "boca-raton"
     }
   ],
   "picks": {
@@ -2404,7 +2424,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "We had a wonderful lunch experience at La Boulangerie Boul’Mich today with my kids. From start to finish, everything was spot on. The food was absolutely delicious; my grilled cheese with tomato soup was pure comfort and perfectly done.\n\nEven though the restaurant was busy, we were seated quickly and the food arrived right on time. The menu offers a great variety, making it easy to find something everyone will enjoy.\n\nA big shout-out to Martha, our server, who was attentive, friendly, and consistently checked in to make sure we had everything we needed. Vivian, the manager, also stopped by to ensure everything came out well and that we were enjoying our experience, that level of care really makes a difference.\n\nIt’s clear this location has a fantastic team that works together to serve guests efficiently while still making you feel welcomed and cared for. We’ll definitely be back!"
+          "text": "We had a wonderful lunch experience at La Boulangerie Boul\u2019Mich today with my kids. From start to finish, everything was spot on. The food was absolutely delicious; my grilled cheese with tomato soup was pure comfort and perfectly done.\n\nEven though the restaurant was busy, we were seated quickly and the food arrived right on time. The menu offers a great variety, making it easy to find something everyone will enjoy.\n\nA big shout-out to Martha, our server, who was attentive, friendly, and consistently checked in to make sure we had everything we needed. Vivian, the manager, also stopped by to ensure everything came out well and that we were enjoying our experience, that level of care really makes a difference.\n\nIt\u2019s clear this location has a fantastic team that works together to serve guests efficiently while still making you feel welcomed and cared for. We\u2019ll definitely be back!"
         },
         {
           "rating": 5,
@@ -2438,15 +2458,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "I’ve been to Third Place too many times to count due to the excellent quality of service combined with their warm, welcoming atmosphere, and delicious food and coffee.\n\nI’ve tried many food items including most of their lattes, cold brew coffees, London fog, chocolate croissant, and pumpkin cheesecake loaf among many others, all of which are always amazing and quality-made to the customer’s specific order.\n\nThey have a multitude of milk options and milk alternatives if you’re looking for a great place to find average priced coffee with greater flavor and dairy-free menu options. Plus, their service is always efficient and welcoming. One of the best parts of going to Third Place is interacting with their employees!\n\nOverall, Third Place Coffee Lounge is probably one of my top three favorite local Boca places to get my caffeine fix. I highly recommend it to anyone looking to try out a coffee shop in Boca Raton!"
+          "text": "I\u2019ve been to Third Place too many times to count due to the excellent quality of service combined with their warm, welcoming atmosphere, and delicious food and coffee.\n\nI\u2019ve tried many food items including most of their lattes, cold brew coffees, London fog, chocolate croissant, and pumpkin cheesecake loaf among many others, all of which are always amazing and quality-made to the customer\u2019s specific order.\n\nThey have a multitude of milk options and milk alternatives if you\u2019re looking for a great place to find average priced coffee with greater flavor and dairy-free menu options. Plus, their service is always efficient and welcoming. One of the best parts of going to Third Place is interacting with their employees!\n\nOverall, Third Place Coffee Lounge is probably one of my top three favorite local Boca places to get my caffeine fix. I highly recommend it to anyone looking to try out a coffee shop in Boca Raton!"
         },
         {
           "rating": 5,
-          "text": "Stopped by the Coffee Shop and had a really good iced tea — super refreshing and well made. The space itself is large with plenty of room to work, which I really appreciated. They even offer a printer for a small fee, which is a great idea and very convenient.\nThe shop was a bit cold when I visited, and the food options were limited. Everything is pre-made, and at the time I was there, no food was available at all.\nOverall, it’s a great place to get some work done and enjoy a good drink.\n\nOH and they do host fun events like open mic, trivia, and bingo on certain days, which I think is pretty cool and I can’t wait to give the trivia or bingo a shot!!"
+          "text": "Stopped by the Coffee Shop and had a really good iced tea \u2014 super refreshing and well made. The space itself is large with plenty of room to work, which I really appreciated. They even offer a printer for a small fee, which is a great idea and very convenient.\nThe shop was a bit cold when I visited, and the food options were limited. Everything is pre-made, and at the time I was there, no food was available at all.\nOverall, it\u2019s a great place to get some work done and enjoy a good drink.\n\nOH and they do host fun events like open mic, trivia, and bingo on certain days, which I think is pretty cool and I can\u2019t wait to give the trivia or bingo a shot!!"
         },
         {
           "rating": 5,
-          "text": "Super cute and chill coffee shop. I’ve been checking out different places to find somewhere to focus and get some work done- Third Place was perfect! I have to return for actual coffee since it was too late in the day BUT the pastries were delicious and the spiced apple cider too (as you can see from the pictures!) I’ll be back soon!"
+          "text": "Super cute and chill coffee shop. I\u2019ve been checking out different places to find somewhere to focus and get some work done- Third Place was perfect! I have to return for actual coffee since it was too late in the day BUT the pastries were delicious and the spiced apple cider too (as you can see from the pictures!) I\u2019ll be back soon!"
         }
       ],
       "reviewsAnalysed": 5,
@@ -2472,15 +2492,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Don’t know where to start. The store it self super super super clean once you walk in you feel so relaxed. Super nice staffs. Food drink dessert everything is beyond amazing. They go above and beyond for their customers. And a big thank you for the Owner for having the best service and his workers as well. I highly recommend it. Loved the mojito and crepes especially  KUNAFAAAA."
+          "text": "Don\u2019t know where to start. The store it self super super super clean once you walk in you feel so relaxed. Super nice staffs. Food drink dessert everything is beyond amazing. They go above and beyond for their customers. And a big thank you for the Owner for having the best service and his workers as well. I highly recommend it. Loved the mojito and crepes especially  KUNAFAAAA."
         },
         {
           "rating": 5,
-          "text": "It’s an awesome. Amazing service plus customer service. When you walk in you’re so welcomed in. Feels so cozy  food and drinks are too good. I highly recommend this so much. 100% one of my favorite place I will be here if not everyday every other day.  It’s a must. Especially the owner such an amazing person."
+          "text": "It\u2019s an awesome. Amazing service plus customer service. When you walk in you\u2019re so welcomed in. Feels so cozy  food and drinks are too good. I highly recommend this so much. 100% one of my favorite place I will be here if not everyday every other day.  It\u2019s a must. Especially the owner such an amazing person."
         },
         {
           "rating": 5,
-          "text": "“TIKI in Fort Lauderdale is THE dessert spot everyone needs on their list! From the moment you step in, the aroma of freshly made kunafa and warm crepes hits you — it’s amazing. Their kunafa is insanely good: golden, crispy, perfectly sweet, and loaded with authentic Middle Eastern flavor that hits every time. The crepes are creative and delicious, and every dessert on the menu is beautifully presented and tastes even better than it looks. Friendly staff, great vibes, and honestly some of the best sweets I’ve had in Florida. Whether you’re a kunafa lover or just craving something sweet and unique, TIKI delivers big time! Highly recommend!” ⭐️⭐️⭐️⭐️⭐️"
+          "text": "\u201cTIKI in Fort Lauderdale is THE dessert spot everyone needs on their list! From the moment you step in, the aroma of freshly made kunafa and warm crepes hits you \u2014 it\u2019s amazing. Their kunafa is insanely good: golden, crispy, perfectly sweet, and loaded with authentic Middle Eastern flavor that hits every time. The crepes are creative and delicious, and every dessert on the menu is beautifully presented and tastes even better than it looks. Friendly staff, great vibes, and honestly some of the best sweets I\u2019ve had in Florida. Whether you\u2019re a kunafa lover or just craving something sweet and unique, TIKI delivers big time! Highly recommend!\u201d \u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"
         }
       ],
       "reviewsAnalysed": 5,
@@ -2510,7 +2530,7 @@
         },
         {
           "rating": 5,
-          "text": "I visit Florida several times a year, and every trip includes a dedicated stop in Boca specifically so I can visit The Seed. It’s one of my absolute favorite coffee and matcha shops in the country—easily top-tier.\n\nI first tried The Seed last summer at their Delray Beach location and loved their seasonal matcha (pretty sure it was piña colada). On this recent trip, I headed straight to the original Boca location and ordered a strawberry matcha within minutes of landing. It was just as amazing as I remembered.\n\nThe following morning, after a painfully heavy dinner the night before, I switched to coffee and asked for something strong. Cassie at the counter recommended a drink with four shots of espresso (I opted for three). It was excellent—and very effective. Let’s just say my digestion and my airport commute were both incredibly successful afterward.\n\nThe Seed is consistent, creative, friendly, and always delicious. It’s officially a must-visit stop for me every time I’m in Florida."
+          "text": "I visit Florida several times a year, and every trip includes a dedicated stop in Boca specifically so I can visit The Seed. It\u2019s one of my absolute favorite coffee and matcha shops in the country\u2014easily top-tier.\n\nI first tried The Seed last summer at their Delray Beach location and loved their seasonal matcha (pretty sure it was pi\u00f1a colada). On this recent trip, I headed straight to the original Boca location and ordered a strawberry matcha within minutes of landing. It was just as amazing as I remembered.\n\nThe following morning, after a painfully heavy dinner the night before, I switched to coffee and asked for something strong. Cassie at the counter recommended a drink with four shots of espresso (I opted for three). It was excellent\u2014and very effective. Let\u2019s just say my digestion and my airport commute were both incredibly successful afterward.\n\nThe Seed is consistent, creative, friendly, and always delicious. It\u2019s officially a must-visit stop for me every time I\u2019m in Florida."
         },
         {
           "rating": 5,
@@ -2532,7 +2552,7 @@
         "food": {
           "name": "Caesar wrap",
           "reason": "Mentioned across multiple 5-star reviews as a standout, called the 'BEST Caesar wrap in town' and a go-to order, including a buffalo variant.",
-          "quote": "The BEST Caesar wrap in town — literally I'm obsessed!!",
+          "quote": "The BEST Caesar wrap in town \u2014 literally I'm obsessed!!",
           "confidence": "high",
           "mention_count": 3
         }
@@ -2540,11 +2560,11 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "My FAVORITE coffee shop in Boca and of all time!!! Their menu is diverse with different drink and food options. Me and my boyfriend are frequent customers and always look forward to coming here. The chicken caesar wrap and an iced dolce vita is our go-to order. So good and so fresh! All the staff are friendly and personable. Service is quick and environment is homey and inviting! Can’t wait to be back!"
+          "text": "My FAVORITE coffee shop in Boca and of all time!!! Their menu is diverse with different drink and food options. Me and my boyfriend are frequent customers and always look forward to coming here. The chicken caesar wrap and an iced dolce vita is our go-to order. So good and so fresh! All the staff are friendly and personable. Service is quick and environment is homey and inviting! Can\u2019t wait to be back!"
         },
         {
           "rating": 5,
-          "text": "V1 just makes a consistently excellent cold bru and iced americano of my dreams. I love stopping at this local spot when I’m in the area. Adelyse the barista was so wonderful! From a certified coffee snob: one of my favorite local coffee spots in boca! LOVE! Never disappoints for a caffeine fix. Atmosphere is charming meets hipster…!"
+          "text": "V1 just makes a consistently excellent cold bru and iced americano of my dreams. I love stopping at this local spot when I\u2019m in the area. Adelyse the barista was so wonderful! From a certified coffee snob: one of my favorite local coffee spots in boca! LOVE! Never disappoints for a caffeine fix. Atmosphere is charming meets hipster\u2026!"
         },
         {
           "rating": 4,
@@ -2574,7 +2594,7 @@
       "reviewSample": [
         {
           "rating": 3,
-          "text": "I ordered a latte and a cappuccino, along with a pain au chocolat and a banana bread. The pastries were good, especially the pain au chocolat and the banana bread.\nThe cappuccino was not well executed: the milk was poorly textured and the foam was not correct, which affected the flavor. The latte was very bad, I do not recommend it.\nI also ordered the croissant without cucumber, but it came with cucumber anyway, which was disappointing.\nThe service was okay but could be more attentive and friendly.\nI also took home a Kenyan varietal that I haven’t tried yet—hopefully it lives up to expectations, as it looks promising.\nOverall, a decent experience, but there is room for improvement in execution and service"
+          "text": "I ordered a latte and a cappuccino, along with a pain au chocolat and a banana bread. The pastries were good, especially the pain au chocolat and the banana bread.\nThe cappuccino was not well executed: the milk was poorly textured and the foam was not correct, which affected the flavor. The latte was very bad, I do not recommend it.\nI also ordered the croissant without cucumber, but it came with cucumber anyway, which was disappointing.\nThe service was okay but could be more attentive and friendly.\nI also took home a Kenyan varietal that I haven\u2019t tried yet\u2014hopefully it lives up to expectations, as it looks promising.\nOverall, a decent experience, but there is room for improvement in execution and service"
         },
         {
           "rating": 5,
@@ -2627,7 +2647,7 @@
         "drink": {
           "name": "Espresso",
           "reason": "Praised as authentic Italian coffee; cappuccinos also enjoyed in another review.",
-          "quote": "the espresso is pure perfection—truly authentic Italian coffee",
+          "quote": "the espresso is pure perfection\u2014truly authentic Italian coffee",
           "confidence": "high",
           "mention_count": 2
         },
@@ -2646,11 +2666,11 @@
         },
         {
           "rating": 4,
-          "text": "Cute small place, food was very fresh and very good. Homemade breads and desserts. What else could you ask for. We ate every bite. They were under staffed Sunday afternoon before closing. We didn’t wait too long for the  food or anything it came prompt. But the server was average at best. If this place had a Charming or charismatic server it would have been a 5 star review!"
+          "text": "Cute small place, food was very fresh and very good. Homemade breads and desserts. What else could you ask for. We ate every bite. They were under staffed Sunday afternoon before closing. We didn\u2019t wait too long for the  food or anything it came prompt. But the server was average at best. If this place had a Charming or charismatic server it would have been a 5 star review!"
         },
         {
           "rating": 5,
-          "text": "⭐️⭐️⭐️⭐️⭐️ Truly Authentic Italian Gem!\nMercato Italiano is hands down the most authentic Italian experience you can find in Boca Raton. Whether you're stopping by for a quick bite or planning a larger event, this place excels on every level.\nThe owners are genuinely Italian, and you can tell immediately. It's a fantastic sign of authenticity when you see that the restaurant is frequently visited by Italian people themselves!\nYou absolutely must try their food! Their panini are built with high-quality, fresh ingredients and are irresistible—perfect for lunch or a snack. And the espresso is pure perfection—truly authentic Italian coffee that transports you straight to Rome. In fact, all their Italian food is phenomenal and clearly made with passion and tradition.\nBut our experience went beyond just a great meal:\n\nWe recently hosted our baby shower here, and the event was outstanding! The attention to detail, the quality of the food provided, and the service from the entire staff were impeccable. They went above and beyond to make our special day perfect.\n\nIf you are looking for real Italian food, atmosphere, and service, Mercato Italiano is a must-visit. Highly, highly recommend!\n\nThank you so much!"
+          "text": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f Truly Authentic Italian Gem!\nMercato Italiano is hands down the most authentic Italian experience you can find in Boca Raton. Whether you're stopping by for a quick bite or planning a larger event, this place excels on every level.\nThe owners are genuinely Italian, and you can tell immediately. It's a fantastic sign of authenticity when you see that the restaurant is frequently visited by Italian people themselves!\nYou absolutely must try their food! Their panini are built with high-quality, fresh ingredients and are irresistible\u2014perfect for lunch or a snack. And the espresso is pure perfection\u2014truly authentic Italian coffee that transports you straight to Rome. In fact, all their Italian food is phenomenal and clearly made with passion and tradition.\nBut our experience went beyond just a great meal:\n\nWe recently hosted our baby shower here, and the event was outstanding! The attention to detail, the quality of the food provided, and the service from the entire staff were impeccable. They went above and beyond to make our special day perfect.\n\nIf you are looking for real Italian food, atmosphere, and service, Mercato Italiano is a must-visit. Highly, highly recommend!\n\nThank you so much!"
         }
       ],
       "reviewsAnalysed": 5,
@@ -2676,11 +2696,11 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can’t wait to go back. The cappuccino was excellent!!"
+          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can\u2019t wait to go back. The cappuccino was excellent!!"
         },
         {
           "rating": 5,
-          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it’s hot coffee, cold brew, or espresso drinks, it’s always on point."
+          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it\u2019s hot coffee, cold brew, or espresso drinks, it\u2019s always on point."
         },
         {
           "rating": 5,
@@ -2710,15 +2730,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Wonderful ambiance, good coffee, fairly extensive menu. Very clean inside. Staff was respectful. My avocado toast came on a little wooden cutting board with their logo on it which I find clever. Regardless if you want a quick bite or to sit down read a book, get some work done or what have you, Carmela’s on glades is a win in my book"
+          "text": "Wonderful ambiance, good coffee, fairly extensive menu. Very clean inside. Staff was respectful. My avocado toast came on a little wooden cutting board with their logo on it which I find clever. Regardless if you want a quick bite or to sit down read a book, get some work done or what have you, Carmela\u2019s on glades is a win in my book"
         },
         {
           "rating": 5,
-          "text": "Pretty good coffee ☕️ served in a friendly atmosphere. They have plenty of good pastries to choose from and different coffee beverages that all look worth trying. Service was good, beverages came out quickly, and they have inside and outside seating options. During the weekend it can get a bit busy, but I still found them pretty quick. Shoutout to the matcha latte."
+          "text": "Pretty good coffee \u2615\ufe0f served in a friendly atmosphere. They have plenty of good pastries to choose from and different coffee beverages that all look worth trying. Service was good, beverages came out quickly, and they have inside and outside seating options. During the weekend it can get a bit busy, but I still found them pretty quick. Shoutout to the matcha latte."
         },
         {
           "rating": 4,
-          "text": "Great wifi, somewhat quiet outside in the morning if next door restaurant does not blast music. Service is good but must go to counter so if you sit outside they won’t bring you your food and it sits there getting cold.\nFood is extremely overpriced. Flatbread is literally a pita with stuff on top. Very small for almost $20. All in all the place is overpriced service is ok and food is ok.\nCoffee and flatbread $25 for one person."
+          "text": "Great wifi, somewhat quiet outside in the morning if next door restaurant does not blast music. Service is good but must go to counter so if you sit outside they won\u2019t bring you your food and it sits there getting cold.\nFood is extremely overpriced. Flatbread is literally a pita with stuff on top. Very small for almost $20. All in all the place is overpriced service is ok and food is ok.\nCoffee and flatbread $25 for one person."
         }
       ],
       "reviewsAnalysed": 5,
@@ -2778,7 +2798,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "It was our first time visiting and it’s such a welcoming environment! The staff was great with explaining the food on the menu. They had a variety of breakfast, lunch, and all kinds of coffees. I enjoyed their delray breakfast and their latte! It was my first time trying Arepas and it was absolutely delicious. I recommend stopping by!"
+          "text": "It was our first time visiting and it\u2019s such a welcoming environment! The staff was great with explaining the food on the menu. They had a variety of breakfast, lunch, and all kinds of coffees. I enjoyed their delray breakfast and their latte! It was my first time trying Arepas and it was absolutely delicious. I recommend stopping by!"
         },
         {
           "rating": 5,
@@ -2812,7 +2832,7 @@
       "reviewSample": [
         {
           "rating": 4,
-          "text": "I stopped by The Pots Cafe at 6000 Glades Rd in Boca Raton and really enjoyed the experience. The place has a relaxed, welcoming feel that makes it easy to slow down and enjoy your time. It’s a nice spot whether you’re meeting someone or just taking a break for yourself.\n\nThe food was fresh and comforting without trying too hard to impress. Everything tasted thoughtfully prepared, and the portions felt just right. I also appreciated how calm the atmosphere was—no rush, no noise overload, just a pleasant place to sit and enjoy a meal.\n\nService was friendly and genuine, which made the visit even better. Overall, The Pots Cafe felt like one of those neighborhood spots you’d come back to when you want something easy, warm, and familiar."
+          "text": "I stopped by The Pots Cafe at 6000 Glades Rd in Boca Raton and really enjoyed the experience. The place has a relaxed, welcoming feel that makes it easy to slow down and enjoy your time. It\u2019s a nice spot whether you\u2019re meeting someone or just taking a break for yourself.\n\nThe food was fresh and comforting without trying too hard to impress. Everything tasted thoughtfully prepared, and the portions felt just right. I also appreciated how calm the atmosphere was\u2014no rush, no noise overload, just a pleasant place to sit and enjoy a meal.\n\nService was friendly and genuine, which made the visit even better. Overall, The Pots Cafe felt like one of those neighborhood spots you\u2019d come back to when you want something easy, warm, and familiar."
         },
         {
           "rating": 5,
@@ -2850,11 +2870,11 @@
         },
         {
           "rating": 5,
-          "text": "Stopped by on Saturday morning while the car was getting some work done, they welcomed my dog. Penny offered a coffee and an excellent blueberry muffin. It was delicious. I’ll definitely come again (I meant we will come again)"
+          "text": "Stopped by on Saturday morning while the car was getting some work done, they welcomed my dog. Penny offered a coffee and an excellent blueberry muffin. It was delicious. I\u2019ll definitely come again (I meant we will come again)"
         },
         {
           "rating": 4,
-          "text": "Cute little place. Great friendly service. We didn't enjoy our mocha latte that much. Maybe it was just a bad pull but we didn't want to say anything, just to be polite. Don't let that keep you from trying this place though. There are so many others raving about the coffee. 😊"
+          "text": "Cute little place. Great friendly service. We didn't enjoy our mocha latte that much. Maybe it was just a bad pull but we didn't want to say anything, just to be polite. Don't let that keep you from trying this place though. There are so many others raving about the coffee. \ud83d\ude0a"
         }
       ],
       "reviewsAnalysed": 5,
@@ -2880,11 +2900,11 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "I’ve been coming here for years and have always loved my experience. The coffee and matchas are really high quality, and the syrup flavors are always delish. I have often spent time doing schoolwork/writing here because the atmosphere is so great. I even enjoy coming here for trivia, which is always a really fun time! Food options are always spectacular, too. 10/10 recommend, and the music always hits the spot!"
+          "text": "I\u2019ve been coming here for years and have always loved my experience. The coffee and matchas are really high quality, and the syrup flavors are always delish. I have often spent time doing schoolwork/writing here because the atmosphere is so great. I even enjoy coming here for trivia, which is always a really fun time! Food options are always spectacular, too. 10/10 recommend, and the music always hits the spot!"
         },
         {
           "rating": 5,
-          "text": "I always come here with my partner to sit and chat, we tend to order dirty chai lattes to which they never miss!\n\nVery well balance of a good dirty chai latte should be like, you can distinguish all flavors in the drink.\n\nTheir empanadas are the best, we get the Peruvian beef empanadas and even though they got raisins in them, it does not bother me one bit since it’s not overtaking the beef flavor.\n\nI very much appreciate this place for staying open for later hours for us latte coffee enthusiasts"
+          "text": "I always come here with my partner to sit and chat, we tend to order dirty chai lattes to which they never miss!\n\nVery well balance of a good dirty chai latte should be like, you can distinguish all flavors in the drink.\n\nTheir empanadas are the best, we get the Peruvian beef empanadas and even though they got raisins in them, it does not bother me one bit since it\u2019s not overtaking the beef flavor.\n\nI very much appreciate this place for staying open for later hours for us latte coffee enthusiasts"
         },
         {
           "rating": 5,
@@ -2914,15 +2934,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "The coffee is consistently smooth and flavorful (you can tell they care about quality), and their vanilla Latte  are always on point. I also love that they offer great pastries and light bites — everything feels thoughtfully curated, not just thrown together.\nWhat really stands out is the vibe: friendly staff, calm energy, and a space that makes you want to stay a little longer. It’s become one of my go-to spots for a peaceful coffee break or casual meet-ups.\nHighly recommend if you’re looking for great coffee, a comfortable environment, and reliable quality every visit. ☕️✨"
+          "text": "The coffee is consistently smooth and flavorful (you can tell they care about quality), and their vanilla Latte  are always on point. I also love that they offer great pastries and light bites \u2014 everything feels thoughtfully curated, not just thrown together.\nWhat really stands out is the vibe: friendly staff, calm energy, and a space that makes you want to stay a little longer. It\u2019s become one of my go-to spots for a peaceful coffee break or casual meet-ups.\nHighly recommend if you\u2019re looking for great coffee, a comfortable environment, and reliable quality every visit. \u2615\ufe0f\u2728"
         },
         {
           "rating": 2,
-          "text": "This place has lost its touch. I used to come here and get really nice coffees with strong shots of espresso but now my iced latte taste like milk. I got four shots that should send me through the roof instead I finish my coffee questioning on if I’ve even had one today. I’m putting my patronage of Foxtel coffee to bed."
+          "text": "This place has lost its touch. I used to come here and get really nice coffees with strong shots of espresso but now my iced latte taste like milk. I got four shots that should send me through the roof instead I finish my coffee questioning on if I\u2019ve even had one today. I\u2019m putting my patronage of Foxtel coffee to bed."
         },
         {
           "rating": 5,
-          "text": "This coffee shop offers a fantastic experience with quick service and minimal wait times, making it perfect for those on the go. The staff is incredibly welcoming and attentive, ensuring a smooth and enjoyable visit. Whether you’re grabbing a coffee to start your day or settling in for a relaxing break, the atmosphere is warm and inviting. The quality of the coffee is top-notch, with a great selection of brews to satisfy any preference. While parking can be tricky during peak hours, the efficient service and friendly environment make it well worth the visit."
+          "text": "This coffee shop offers a fantastic experience with quick service and minimal wait times, making it perfect for those on the go. The staff is incredibly welcoming and attentive, ensuring a smooth and enjoyable visit. Whether you\u2019re grabbing a coffee to start your day or settling in for a relaxing break, the atmosphere is warm and inviting. The quality of the coffee is top-notch, with a great selection of brews to satisfy any preference. While parking can be tricky during peak hours, the efficient service and friendly environment make it well worth the visit."
         }
       ],
       "reviewsAnalysed": 5,
@@ -2948,15 +2968,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "When I walked in I was greeted by Kylie’s warm welcome! The decoration is so so cute, simple and delicate. I was having trouble deciding what I wanted to drink to be ready for my day. Kylie guided me to try the Tiramisu latte! Thanks to her wonderful recommendation and sweet attitude she made my day! Thanks again!"
+          "text": "When I walked in I was greeted by Kylie\u2019s warm welcome! The decoration is so so cute, simple and delicate. I was having trouble deciding what I wanted to drink to be ready for my day. Kylie guided me to try the Tiramisu latte! Thanks to her wonderful recommendation and sweet attitude she made my day! Thanks again!"
         },
         {
           "rating": 5,
-          "text": "⭐️⭐️⭐️⭐️⭐️\n\nLong Story Short Coffee Shop is truly a hidden gem on Second St! The atmosphere is warm and welcoming, and the people there are genuinely pleasant.\n\nI had the nitro cold brew and it was incredibly smooth — rich, bold, and perfectly balanced. My husband ordered a cold foam drink (and he’s very particular about his coffee), and it absolutely met his standards. That alone says a lot!\n\nIf you’re looking for great coffee and kind service, this spot is definitely worth stopping by. We’ll be back."
+          "text": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\n\nLong Story Short Coffee Shop is truly a hidden gem on Second St! The atmosphere is warm and welcoming, and the people there are genuinely pleasant.\n\nI had the nitro cold brew and it was incredibly smooth \u2014 rich, bold, and perfectly balanced. My husband ordered a cold foam drink (and he\u2019s very particular about his coffee), and it absolutely met his standards. That alone says a lot!\n\nIf you\u2019re looking for great coffee and kind service, this spot is definitely worth stopping by. We\u2019ll be back."
         },
         {
           "rating": 2,
-          "text": "Lavender latte wasn’t great, took a while, and the woman working the register was noticeably bothered by asking what ingredients were in the coconut milk. “It’s literally just coconut,” she said. The ingredient list on the carton tells a different tale."
+          "text": "Lavender latte wasn\u2019t great, took a while, and the woman working the register was noticeably bothered by asking what ingredients were in the coconut milk. \u201cIt\u2019s literally just coconut,\u201d she said. The ingredient list on the carton tells a different tale."
         }
       ],
       "reviewsAnalysed": 5,
@@ -2982,7 +3002,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "This is a great place for breakfast or brunch/lunch if you’re looking for authentic Ecuadorian food in Boca Raton. The atmosphere is very cozy and welcoming—perfect for inviting someone to experience Ecuadorian cuisine and traditional desserts for the first time."
+          "text": "This is a great place for breakfast or brunch/lunch if you\u2019re looking for authentic Ecuadorian food in Boca Raton. The atmosphere is very cozy and welcoming\u2014perfect for inviting someone to experience Ecuadorian cuisine and traditional desserts for the first time."
         },
         {
           "rating": 5,
@@ -2990,7 +3010,7 @@
         },
         {
           "rating": 5,
-          "text": "This place is a mix of great food, excellent customer service and reasonable pricing. I recommend this place it never disappoints my recommendation are the Bolton Milotino with bistec for breakfast and my favorites for lunch would be: Bandera, encebollado and trío ceviche."
+          "text": "This place is a mix of great food, excellent customer service and reasonable pricing. I recommend this place it never disappoints my recommendation are the Bolton Milotino with bistec for breakfast and my favorites for lunch would be: Bandera, encebollado and tr\u00edo ceviche."
         }
       ],
       "reviewsAnalysed": 5,
@@ -3020,7 +3040,7 @@
         },
         {
           "rating": 5,
-          "text": "Can’t wait for you guys to open. You’ve done a beautiful job improving the site — it’s gorgeous. Please let us know when you will open! We live on the street and would love to support you during a soft launch. We’re so excited!"
+          "text": "Can\u2019t wait for you guys to open. You\u2019ve done a beautiful job improving the site \u2014 it\u2019s gorgeous. Please let us know when you will open! We live on the street and would love to support you during a soft launch. We\u2019re so excited!"
         },
         {
           "rating": 5,
@@ -3050,7 +3070,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Words cannot describe how exceptional the cafe is.\n\nUnique drinks, quality products and service that is top notch! The owners understand how important exceptional service is and they execute daily. It is obvious they put a lot of thought into what they serve. Very few cafes can offer this type of experience. Decor is a nice touch of elegance with a cozy atmosphere.\n\nDon’t miss out on this gem! Certainly now one of my favorites and my go to spots."
+          "text": "Words cannot describe how exceptional the cafe is.\n\nUnique drinks, quality products and service that is top notch! The owners understand how important exceptional service is and they execute daily. It is obvious they put a lot of thought into what they serve. Very few cafes can offer this type of experience. Decor is a nice touch of elegance with a cozy atmosphere.\n\nDon\u2019t miss out on this gem! Certainly now one of my favorites and my go to spots."
         },
         {
           "rating": 5,
@@ -3058,11 +3078,12 @@
         },
         {
           "rating": 5,
-          "text": "WOW! Honestly, I was waiting for a place like this to open. Has a twist & fused!!!\nI went first time with my regular latte, it was good. But coffee…\nThen I let the barista choose my coffee for me- WOW!!! I’m blown away!!!\nIt is delicious!! Fresh and the quality of the drinks are amazing!\nDefinitely coming back! A LOT!!!!"
+          "text": "WOW! Honestly, I was waiting for a place like this to open. Has a twist & fused!!!\nI went first time with my regular latte, it was good. But coffee\u2026\nThen I let the barista choose my coffee for me- WOW!!! I\u2019m blown away!!!\nIt is delicious!! Fresh and the quality of the drinks are amazing!\nDefinitely coming back! A LOT!!!!"
         }
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T08:19:14.706Z"
     }
-  }
+  },
+  "citySlug": "boca-raton"
 }

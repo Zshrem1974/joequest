@@ -31,10 +31,11 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import { Readable } from "node:stream";
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import {
   searchCafes, getReviews, getPicks, newAnthropic, PLACES_BASE, CITY,
 } from "./lib/data.js";
+import { CITIES, DEFAULT_CITY, cityBySlug } from "./lib/cities.js";
 import {
   dbReady, dbStatus, cachedCount,
   getCachedPick, setCachedPick,
@@ -60,18 +61,39 @@ const anthropic = ANTHROPIC_KEY ? newAnthropic(ANTHROPIC_KEY) : null;
 // ----------------------------------------------------------------------------
 // SNAPSHOT — primary data source, committed to the repo at data/boca-snapshot.json
 // ----------------------------------------------------------------------------
-const SNAPSHOT_PATH = path.join(__dirname, "data", "boca-snapshot.json");
-let snapshot = null;
-try {
-  if (existsSync(SNAPSHOT_PATH)) {
-    snapshot = JSON.parse(readFileSync(SNAPSHOT_PATH, "utf8"));
-    const cafeCount = snapshot.cafes?.length ?? 0;
-    const pickCount = Object.keys(snapshot.picks || {}).length;
-    console.log(`☕  Snapshot loaded: ${cafeCount} cafés, ${pickCount} picks (generated ${snapshot.generatedAt ?? "?"}).`);
+// Multi-city snapshot loader. Reads every data/<slug>.json whose slug matches
+// a known city in lib/cities.js, indexes by slug. Back-compat: also accepts
+// the legacy "boca-snapshot.json" filename.
+const DATA_DIR = path.join(__dirname, "data");
+const snapshots = new Map(); // slug -> snapshot object
+function loadSnapshots() {
+  let files = [];
+  try { files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json")); } catch {}
+  for (const file of files) {
+    // accept slug.json AND legacy boca-snapshot.json
+    const slug = file === "boca-snapshot.json" ? "boca-raton" : file.replace(/\.json$/, "");
+    if (!cityBySlug(slug)) continue;
+    try {
+      const obj = JSON.parse(readFileSync(path.join(DATA_DIR, file), "utf8"));
+      obj.citySlug = obj.citySlug || slug;
+      // ensure every cafe carries its city slug
+      (obj.cafes || []).forEach((c) => { c.city = c.city || slug; });
+      snapshots.set(slug, obj);
+      console.log(`☕  Snapshot[${slug}]: ${obj.cafes?.length ?? 0} cafés, ${Object.keys(obj.picks || {}).length} picks (gen ${obj.generatedAt ?? "?"})`);
+    } catch (e) {
+      console.log(`⚠️   Failed to load ${file}: ${e.message}`);
+    }
   }
-} catch (e) {
-  console.log(`⚠️   Failed to load snapshot: ${e.message}`);
-  snapshot = null;
+}
+loadSnapshots();
+
+// Back-compat alias — older code paths referenced `snapshot` (singular, Boca).
+const snapshot = snapshots.get("boca-raton") || null;
+function getSnapshotForCafe(cafeId) {
+  for (const s of snapshots.values()) {
+    if (s.picks?.[cafeId]) return s;
+  }
+  return null;
 }
 
 // ----------------------------------------------------------------------------
@@ -79,17 +101,32 @@ try {
 // ----------------------------------------------------------------------------
 let listCache = null; // short-TTL in-memory list cache for live fallback
 
-async function getCafeList() {
-  if (snapshot?.cafes?.length) return snapshot.cafes;
-  if (listCache && listCache.expires > Date.now()) return listCache.data;
-  const cafes = await searchCafes(GOOGLE_KEY);
-  listCache = { data: cafes, expires: Date.now() + LIST_CACHE_TTL_MS };
+// Returns ALL cafés from every snapshot we have, each tagged with `city` slug.
+function allCafesFromSnapshots() {
+  const out = [];
+  for (const [slug, s] of snapshots) {
+    for (const c of (s.cafes || [])) out.push({ ...c, city: c.city || slug });
+  }
+  return out;
+}
+// Resolve a city slug → its cafés. Falls back to the default city, then to
+// a live Places call. `slug` may be null/undefined.
+async function getCafeList(slug) {
+  // ?all=1
+  if (slug === "__all__") return allCafesFromSnapshots();
+  const wanted = slug ? (cityBySlug(slug) || DEFAULT_CITY) : DEFAULT_CITY;
+  const s = snapshots.get(wanted.slug);
+  if (s?.cafes?.length) return s.cafes;
+  if (listCache && listCache.slug === wanted.slug && listCache.expires > Date.now()) return listCache.data;
+  const cafes = await searchCafes(GOOGLE_KEY, wanted);
+  listCache = { slug: wanted.slug, data: cafes, expires: Date.now() + LIST_CACHE_TTL_MS };
   return cafes;
 }
 
 async function enrichCafe(cafe) {
-  // 1) Snapshot — instant, free.
-  const snap = snapshot?.picks?.[cafe.id];
+  // 1) Snapshot — instant, free. Look across ALL city snapshots.
+  const ownerSnap = getSnapshotForCafe(cafe.id);
+  const snap = ownerSnap?.picks?.[cafe.id];
   if (snap?.picks) return { ...cafe, ...snap, cached: true, source: "snapshot" };
 
   // 2) Per-place pick cache (Supabase or memory).
@@ -140,24 +177,57 @@ async function streamPhoto(req, res) {
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
+// List endpoint:
+//   /api/cafes                 → default city (Boca)
+//   /api/cafes?city=delray-beach
+//   /api/cafes?all=1           → all 6 cities flat, each cafe tagged with city
 app.get("/api/cafes", async (req, res) => {
   try {
-    const cafes = await getCafeList();
+    const all = req.query.all === "1" || req.query.all === "true";
+    const slug = all ? "__all__" : (typeof req.query.city === "string" ? req.query.city : null);
+    const cafes = await getCafeList(slug);
+    const cityCfg = all ? null : (cityBySlug(slug || "") || DEFAULT_CITY);
     res.json({
-      city: CITY,
+      city: cityCfg ? cityCfg.displayName : "All cities",
+      citySlug: cityCfg ? cityCfg.slug : "__all__",
       count: cafes.length,
       cafes,
-      generatedAt: snapshot?.generatedAt ?? null,
+      // generatedAt only meaningful when scoped to one city
+      generatedAt: cityCfg ? snapshots.get(cityCfg.slug)?.generatedAt ?? null : null,
     });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
 });
 
+// /api/cities — list of cities we have data for (for the dropdown)
+app.get("/api/cities", (req, res) => {
+  res.json({
+    cities: CITIES.map((c) => ({
+      slug: c.slug,
+      name: c.name,
+      displayName: c.displayName,
+      state: c.state,
+      center: c.center,
+      hasSnapshot: snapshots.has(c.slug),
+      cafeCount: snapshots.get(c.slug)?.cafes?.length ?? 0,
+    })),
+  });
+});
+
 app.get("/api/cafes/:id", async (req, res) => {
   try {
-    const list = await getCafeList();
-    const cafe = list.find((c) => c.id === req.params.id);
+    // Look across every snapshot first (id is globally unique = Google place_id)
+    let cafe = null;
+    for (const s of snapshots.values()) {
+      const found = (s.cafes || []).find((c) => c.id === req.params.id);
+      if (found) { cafe = found; break; }
+    }
+    if (!cafe) {
+      // Fallback: try the default-city live list
+      const list = await getCafeList(null);
+      cafe = list.find((c) => c.id === req.params.id);
+    }
     if (!cafe) return res.status(404).json({ error: "Café not found" });
     const enriched = await enrichCafe(cafe);
     res.json(enriched);
@@ -440,14 +510,12 @@ app.get("/api/status", async (req, res) => {
     cache: dbStatus(),
     cachedPicks: await cachedCount(),
     listCached: !!(listCache && listCache.expires > Date.now()),
-    snapshot: snapshot
-      ? {
-          loaded: true,
-          cafes: snapshot.cafes?.length ?? 0,
-          picks: Object.keys(snapshot.picks || {}).length,
-          generatedAt: snapshot.generatedAt ?? null,
-        }
-      : { loaded: false },
+    snapshots: Array.from(snapshots.entries()).map(([slug, s]) => ({
+      slug,
+      cafes: s.cafes?.length ?? 0,
+      picks: Object.keys(s.picks || {}).length,
+      generatedAt: s.generatedAt ?? null,
+    })),
   });
 });
 

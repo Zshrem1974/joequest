@@ -26,16 +26,24 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  searchCafes, getReviews, getPicks, newAnthropic, CITY,
+  searchCafes, getReviews, getPicks, newAnthropic,
 } from "../lib/data.js";
+import { CITIES, DEFAULT_CITY, cityBySlug } from "../lib/cities.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", "boca-snapshot.json");
 const TTL_DAYS = 90;
 const TTL_MS = TTL_DAYS * 24 * 60 * 60 * 1000;
 
 const FORCE = process.argv.includes("--force");
 const DRY = process.argv.includes("--dry-run");
+const cityArg = process.argv.find((a) => a.startsWith("--city="));
+const citySlug = cityArg ? cityArg.split("=")[1] : "boca-raton";
+const CITY_CFG = cityBySlug(citySlug);
+if (!CITY_CFG) {
+  console.error(`❌  Unknown city slug "${citySlug}". Known: ${CITIES.map((c) => c.slug).join(", ")}`);
+  process.exit(1);
+}
+const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", `${citySlug}.json`);
 
 function loadSnapshot() {
   if (!existsSync(SNAPSHOT_PATH)) return null;
@@ -65,12 +73,12 @@ async function main() {
   const existingPicks = existing?.picks || {};
   const fallbackDate = existing?.generatedAt;
 
-  console.log(`☕  JoeQuest snapshot refresh — ${CITY}`);
+  console.log(`☕  JoeQuest snapshot refresh — ${CITY_CFG.displayName}`);
   console.log(`   90-day rule: ${FORCE ? "BYPASSED (--force)" : "active"}${DRY ? " · DRY RUN" : ""}`);
   console.log("");
 
   console.log("→ Pulling fresh café list from Google Places…");
-  const cafes = await searchCafes(googleKey);
+  const cafes = await searchCafes(googleKey, CITY_CFG);
   console.log(`  Got ${cafes.length} cafés that pass filters (chains, types, bbox, address).`);
   console.log("");
 
@@ -128,7 +136,8 @@ async function main() {
 
   const snapshot = {
     version: 1,
-    city: CITY,
+    citySlug: CITY_CFG.slug,
+    city: CITY_CFG.displayName,
     generatedAt: new Date().toISOString(),
     count: cafes.length,
     cafes,
