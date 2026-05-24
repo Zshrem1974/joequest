@@ -307,13 +307,16 @@
     .cafe-card .stats .star { color: var(--star); font-size: 14px; }
     .cafe-card .stats .price { color: var(--espresso); font-weight: 600; }
 
-    /* Today's hours line on the card */
+    /* Today's hours line at the bottom of each card */
     .card-hours {
       font-size: 12.5px;
       color: var(--muted);
-      margin: 6px 0 0;
-      padding-top: 8px;
+      margin: 10px 0 0;
+      padding-top: 10px;
       border-top: 1px dashed var(--line);
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     .card-hours-k {
       color: var(--espresso);
@@ -3158,10 +3161,6 @@
               <span>${(c.reviews || 0).toLocaleString()} reviews</span>
               ${c.price ? `<span>·</span><span class="price">${escapeHTML(c.price)}</span>` : ""}
             </div>
-            ${(() => {
-              const tline = todaysHoursLine(c.weekdayDescriptions);
-              return tline ? `<div class="card-hours"><span class="card-hours-k">Today</span> ${escapeHTML(tline)}</div>` : "";
-            })()}
             <div class="picks-strip" data-picks-for="${c.id}">
               <div class="pick-mini${matchTag ? " matched" : ""}">
                 <div class="lbl">Drink${matchTag}</div>
@@ -3176,6 +3175,10 @@
                   : `<div class="placeholder"></div><div class="placeholder" style="width:65%; margin-top:6px;"></div>`}
               </div>
             </div>
+            ${(() => {
+              const tline = todaysHoursLine(c.weekdayDescriptions);
+              return tline ? `<div class="card-hours"><span class="card-hours-k">Today</span> ${escapeHTML(tline)}</div>` : "";
+            })()}
           </div>
         </article>
       `;
