@@ -24,9 +24,15 @@ Live app:
 - `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles, user settings, offers, help messages. In-memory fallback for dev.)
 
 Snapshot pipeline:
-- `data/boca-snapshot.json` — 19 cafés + picks, with per-place `fetched_at` (66 KB)
-- `scripts/snapshot.js` — refresh script with the 90-day rule, `--force` + `--dry-run`
+- `data/boca-snapshot.json` — café metadata + picks + **periods + weekdayDescriptions** + per-place `fetched_at`
+- `scripts/snapshot.js` — full refresh with the 90-day rule, `--force` + `--dry-run`
+- `scripts/refresh-hours.js` — cheap hours-only refresh (~$0.005 + per-place Details backfill), no Claude
+- `scripts/add-cafe.js` — manually add a single café that Google's top-20 search misses
 - `.github/workflows/snapshot.yml` — monthly cron + manual dispatch, opens a PR with the diff
+
+Admin / analytics:
+- `admin-views/admin.html` — gated dashboard (events, funnel, by-day, by-name, by-view)
+- `events` table in Supabase — privacy-light fire-and-forget analytics
 
 Deploy: `render.yaml`, `fly.toml`, `.gitignore`, `DEPLOY.md`, `CHANGES.md`.
 
@@ -111,10 +117,12 @@ no more `alert()` placeholders.
 
 - **Discover** — header lockup, "Coffee Quest Begins" greeting, mini-map with
   brand pins + rating pills, ranked café card list with rank badges,
-  open/closed status badges (with closing/opening time, e.g. "Open · Closes
-  10 PM"), heart-save, photo via the photo proxy, two-up Drink/Food strip on
-  each card. **Drink pick shows a mint `✓ your taste` chip** when it matches
-  the user's coffee taste profile (Stage 2 — honest, never fabricated).
+  **live-computed open/closed status** (from each café's `periods[]` +
+  current Boca time — accurate regardless of snapshot age, no Google live
+  call), heart-save, photo via the photo proxy, two-up Drink/Food strip,
+  **"Today: 8 AM – 9 PM" line** at the bottom of each card. **Drink pick
+  shows a mint `✓ your taste` chip** when it matches the user's coffee
+  taste profile (Stage 2 — honest, never fabricated).
 - **Map** — Google-Maps-style interaction:
   - viewBox-based zoom (1×–5×) with `+` / `−` controls
   - drag-to-pan once zoomed in
@@ -128,13 +136,17 @@ no more `alert()` placeholders.
   - legend below the map: Café · You · JoeQuesters
 - **Café detail bottom sheet** — hero photo, "AI read N reviews" banner,
   confidence-tinted Drink + Food cards (high = mint, medium = star-gold,
-  low = crema), reviewer quote, mention count, Open in Maps / Directions CTAs.
+  low = crema), reviewer quote, mention count, Open in Maps / Directions
+  CTAs, **full weekly hours table** at the bottom with today's row
+  highlighted in crema-orange.
 - **Saved** — favourites with empty state + nudge. Account-backed when
   signed in; localStorage when signed out; anon saves merge into the
   account on first sign-in.
-- **Profile** (Stage 1) — tabbed Sign in / Create account form, inline error
-  display. Signed-in state shows avatar (email initials), email, member-since,
-  saved-café count, View saved + Sign out.
+- **Profile** (Stage 1) — tabbed Sign in / Create account form, **Forgot
+  password?** link that fires `auth.resetPasswordForEmail`, dedicated
+  "Set a new password" form rendered on `PASSWORD_RECOVERY` events.
+  Signed-in state shows avatar, email, member-since, saved-café count,
+  View saved + Sign out.
 - **Coffee taste profile** (Stage 2) — 6-question pill quiz: roast, milk,
   strength, sweetness, adventurousness, **brewing method** (8 options each
   with a one-line description that appears when selected). Summary card +
@@ -201,6 +213,18 @@ Anon-key + URL are public values (delivered via `/api/auth/config`).
   from before the snapshot model; still works as a fallback under the
   snapshot.
 
+**Analytics tables (server-only RLS — service-role writes/reads):**
+- `events(id, client_id, user_id?, name, props jsonb, path, created_at)` —
+  fire-and-forget allow-listed events from the browser (`app_open`,
+  `view_change`, `cafe_open`, `pick_reveal`, `favourite_add/remove`,
+  `taste_profile_complete`, `offer_reveal`, `help_submit`, `signin`,
+  `signup`). No PII; the only identifiers are `client_id` (random
+  localStorage UUID) and the user's Supabase id. `POST /api/event`
+  returns 204 immediately.
+- Admin dashboard at `/admin?token=…` (gated by `ADMIN_TOKEN`) renders
+  funnel, by-day, by-name, by-view aggregates. Page lives **outside
+  `/public`** so the static handler can't serve it without the token.
+
 **Taste-match seam:** `tasteMatch(drink, profile)` in `public/index.html` is
 the single matching surface. Conservative — generic picks ("Coffee") never
 match; multi-axis (roast, strength, milk, sweetness, adventurousness,
@@ -257,6 +281,7 @@ spend rate.
 | `SUPABASE_URL` | Yes | Server **and** sent to browser via `/api/auth/config`. |
 | `SUPABASE_ANON_KEY` | Yes for auth | Sent to browser. Safe to expose. |
 | `SUPABASE_SERVICE_ROLE_KEY` | Yes | Server-only. Verifies JWTs + admin DB ops. |
+| `ADMIN_TOKEN` | Yes for `/admin` | Server-only. Gates the analytics dashboard + `/api/admin/stats`. |
 
 ## Still-open strategic questions
 
@@ -276,6 +301,12 @@ spend rate.
   step 5b above.
 - **JoeQuesters markers are simulated** — the purple smiley-cup pins are
   branded but their positions are seeded (no real user-location signal yet).
+- **Google's top-20 search misses good cafés.** The snapshot script feeds
+  off `places:searchText` which caps at 20. Cafés at the city edge can fall
+  off the list (e.g. Rosalia's Botanical Cafe in West Boca — added manually
+  via `scripts/add-cafe.js`). Structural fix queued: add a `MUST_INCLUDE`
+  list of place_ids to `scripts/snapshot.js` so curated picks survive
+  every refresh.
 - "You" pin uses real `navigator.geolocation` when the user grants permission,
   else defaults to Boca centre.
 - Single city (Boca) hardcoded — by design for MVP, see "Multi-city" above.
