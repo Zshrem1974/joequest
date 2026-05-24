@@ -63,6 +63,7 @@ create table if not exists taste_profiles (
   strength     text,
   sweetness    text,
   adventurous  text,
+  brewing      text,
   updated_at   timestamptz not null default now()
 );
 
@@ -76,6 +77,13 @@ create policy "taste_modify_own"
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
 
+notify pgrst, 'reload schema';
+```
+
+### Migration if you already created the table (Stage 2 was shipped first)
+
+```sql
+alter table taste_profiles add column if not exists brewing text;
 notify pgrst, 'reload schema';
 ```
 

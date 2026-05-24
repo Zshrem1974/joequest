@@ -194,7 +194,7 @@ export async function getTasteProfile(userId) {
   if (supabase) {
     const { data, error } = await supabase
       .from("taste_profiles")
-      .select("roast, milk, strength, sweetness, adventurous, updated_at")
+      .select("roast, milk, strength, sweetness, adventurous, brewing, updated_at")
       .eq("user_id", userId)
       .maybeSingle();
     if (error) throw new Error(`Supabase getTasteProfile: ${error.message}`);
@@ -212,6 +212,7 @@ export async function saveTasteProfile(userId, profile) {
     strength: profile.strength ?? null,
     sweetness: profile.sweetness ?? null,
     adventurous: profile.adventurous ?? null,
+    brewing: profile.brewing ?? null,
     updated_at: new Date().toISOString(),
   };
   if (supabase) {

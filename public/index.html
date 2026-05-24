@@ -1157,6 +1157,17 @@
       color: var(--cream);
       border-color: var(--espresso);
     }
+    .taste-desc {
+      margin: 8px 0 0;
+      padding: 8px 12px;
+      font-size: 12.5px;
+      color: var(--muted);
+      background: var(--oat);
+      border-radius: 10px;
+      min-height: 0;
+      transition: opacity 0.15s;
+    }
+    .taste-desc:empty { display: none; }
 
     .taste-summary-grid {
       display: grid;
@@ -1489,6 +1500,20 @@
               <button type="button" data-val="usual">My usual</button>
               <button type="button" data-val="surprise">Surprise me</button>
             </div>
+          </fieldset>
+          <fieldset>
+            <legend>Brewing method you love</legend>
+            <div class="taste-choices" data-key="brewing">
+              <button type="button" data-val="french_press" data-desc="Steeping grounds in hot water and plunging.">French Press</button>
+              <button type="button" data-val="pour_over"    data-desc="Pouring hot water over grounds through a filter.">Pour Over</button>
+              <button type="button" data-val="espresso"     data-desc="Forcing pressurized hot water through fine grounds.">Espresso</button>
+              <button type="button" data-val="cold_brew"    data-desc="Steeping grounds in cold water for hours.">Cold Brew</button>
+              <button type="button" data-val="moka"         data-desc="Stovetop brewing using steam pressure.">Moka Pot</button>
+              <button type="button" data-val="drip"         data-desc="Automatic electric kitchen brewer.">Drip Machine</button>
+              <button type="button" data-val="aeropress"    data-desc="Manual air-pressure plunger tool.">AeroPress</button>
+              <button type="button" data-val="turkish"      data-desc="Boiling ultra-fine grounds directly in water.">Turkish</button>
+            </div>
+            <p class="taste-desc" id="brewing-desc" aria-live="polite"></p>
           </fieldset>
 
           <button type="submit" class="auth-submit" id="taste-submit">Save taste profile</button>
@@ -1823,9 +1848,22 @@
       strength:    { mild: "Mild", balanced: "Balanced", strong: "Strong" },
       sweetness:   { none: "None", little: "A little", sweet: "Sweet" },
       adventurous: { usual: "My usual", surprise: "Surprise me" },
+      brewing:     {
+        french_press: "French Press", pour_over: "Pour Over",
+        espresso: "Espresso", cold_brew: "Cold Brew",
+        moka: "Moka Pot", drip: "Drip Machine",
+        aeropress: "AeroPress", turkish: "Turkish",
+      },
     };
-    const TASTE_KEYS = ["roast", "milk", "strength", "sweetness", "adventurous"];
+    const TASTE_KEYS = ["roast", "milk", "strength", "sweetness", "adventurous", "brewing"];
     let tastePending = {}; // selections while editing the quiz
+
+    function syncBrewingDesc() {
+      const desc = document.getElementById("brewing-desc");
+      if (!desc) return;
+      const sel = document.querySelector('#taste-quiz .taste-choices[data-key="brewing"] button.selected');
+      desc.textContent = sel?.dataset.desc || "";
+    }
 
     function renderTaste() {
       const gated = document.getElementById("taste-gated");
@@ -1860,6 +1898,7 @@
             b.classList.toggle("selected", tastePending[k] === b.dataset.val);
           });
         });
+        syncBrewingDesc();
         document.getElementById("taste-error").hidden = true;
       }
     }
@@ -1877,6 +1916,7 @@
         const k = group.dataset.key;
         tastePending[k] = btn.dataset.val;
         $$("button", group).forEach((b) => b.classList.toggle("selected", b === btn));
+        if (k === "brewing") syncBrewingDesc();
       });
 
       form.addEventListener("submit", async (e) => {
@@ -1932,6 +1972,7 @@
             b.classList.toggle("selected", tastePending[k] === b.dataset.val);
           });
         });
+        syncBrewingDesc();
       });
     }
 
@@ -1962,6 +2003,21 @@
       if (profile.sweetness === "sweet" && has(SWEET_NOTES)) reasons.push("sweet flavour");
       if (profile.sweetness === "none" && has(ESPRESSO_FORWARD) && !has(SWEET_NOTES)) reasons.push("no sugar");
       if (profile.adventurous === "surprise" && !has(STANDARD)) reasons.push("off the beaten path");
+
+      // Brewing-method match — only fires when the pick name *says* the method.
+      // (Most cafés don't, so this is sparse on purpose.)
+      const BREW_MAP = {
+        espresso:     /\b(espresso|cortado|ristretto|americano|macchiato|cubano)\b/i,
+        pour_over:    /\b(pour[- ]?over|chemex|v60|hario|filter coffee)\b/i,
+        cold_brew:    /\b(cold brew|nitro|cold[- ]?press|iced coffee)\b/i,
+        french_press: /\b(french press|press pot|cafeti[eè]re|plunger)\b/i,
+        moka:         /\b(moka|stovetop|italian espresso)\b/i,
+        drip:         /\b(drip|brewed coffee|house coffee|filter)\b/i,
+        aeropress:    /\baeropress\b/i,
+        turkish:      /\bturkish\b/i,
+      };
+      const brewRe = BREW_MAP[profile.brewing];
+      if (brewRe && has(brewRe)) reasons.push(`brewed your way (${(TASTE_LABELS.brewing[profile.brewing] || profile.brewing).toLowerCase()})`);
 
       if (reasons.length === 0) return null;
       return { score: reasons.length, reasons };

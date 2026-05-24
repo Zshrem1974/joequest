@@ -227,7 +227,7 @@ app.post("/api/favourites/merge", async (req, res) => {
 // ---- taste profile (Stage 2) ----------------------------------------------
 // Whitelist what the client can write; ignore anything else. Loose strings,
 // not enums — the quiz can evolve without a migration.
-const TASTE_FIELDS = ["roast", "milk", "strength", "sweetness", "adventurous"];
+const TASTE_FIELDS = ["roast", "milk", "strength", "sweetness", "adventurous", "brewing"];
 
 app.get("/api/taste", async (req, res) => {
   try {
