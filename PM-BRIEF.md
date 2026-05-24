@@ -325,9 +325,16 @@ spend rate.
   `scripts/add-cafe.js`). Structural fix queued: add a `MUST_INCLUDE` list
   of place_ids per city to `scripts/snapshot.js` so curated picks survive
   every refresh.
-- **`scripts/refresh-hours.js` and the monthly cron are still single-city.**
-  They default to `boca-raton`. Need a matrix update to run per-city
-  before the next 90-day refresh cycle.
+- **`scripts/refresh-hours.js` is still single-city** (defaults to
+  `boca-raton`). Lower-priority since it's an emergency tool — fix it
+  when convenient. ✅ The **monthly cron now runs all 6 cities** in one
+  combined PR per month.
+- **`MUST_INCLUDE` partially landed.** Each city in `lib/cities.js` now
+  has a `mustInclude: [...]` field; Boca is seeded with Espresso Joint
+  and Rosalia's place_ids. The **union logic in `scripts/snapshot.js`
+  is still TODO** — until it ships, those two cafés can still drop on
+  a fresh Boca refresh and need re-adding via `scripts/add-cafe.js`.
+  Picked up first next session.
 
 ## Sharing & deep linking
 
