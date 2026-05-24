@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Supabase JS (used only for browser-side auth: sign-in/up/out, session) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
   <style>
     /* ============================================================
        BRAND TOKENS
@@ -950,6 +953,148 @@
       padding: 6px 4px;
     }
 
+    /* ----- Auth / Profile view ----- */
+    .auth-card {
+      margin: 12px 18px 24px;
+      background: var(--cream);
+      border-radius: var(--r-card);
+      padding: 24px 22px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--line);
+    }
+    .auth-title {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: -0.3px;
+      margin: 0 0 6px;
+      color: var(--espresso);
+    }
+    .auth-sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 18px;
+    }
+    .auth-tabs {
+      display: flex;
+      gap: 4px;
+      background: var(--oat);
+      border-radius: var(--r-pill);
+      padding: 3px;
+      margin-bottom: 18px;
+    }
+    .auth-tab {
+      flex: 1;
+      padding: 8px 12px;
+      border: none;
+      background: transparent;
+      border-radius: var(--r-pill);
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 13px;
+      transition: background 0.12s, color 0.12s;
+    }
+    .auth-tab.active { background: var(--cream); color: var(--espresso); box-shadow: var(--shadow-sm); }
+    .auth-form { display: flex; flex-direction: column; gap: 12px; }
+    .auth-form label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .auth-form input {
+      font-family: var(--body);
+      font-size: 15px;
+      padding: 11px 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: 10px;
+      background: var(--cream);
+      color: var(--ink);
+      transition: border-color 0.12s;
+    }
+    .auth-form input:focus { outline: none; border-color: var(--crema); }
+    .auth-submit {
+      background: var(--espresso);
+      color: var(--cream);
+      border: none;
+      padding: 12px;
+      border-radius: var(--r-pill);
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 4px;
+      transition: background 0.12s;
+    }
+    .auth-submit:hover { background: var(--espresso-deep); }
+    .auth-submit:disabled { opacity: 0.6; cursor: progress; }
+    .auth-secondary {
+      background: var(--oat);
+      color: var(--espresso);
+      border: 1px solid var(--line-strong);
+      padding: 11px;
+      border-radius: var(--r-pill);
+      font-weight: 600;
+      font-size: 14px;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .auth-secondary:hover { background: var(--cream); }
+    .auth-error {
+      color: #9a3a2a;
+      background: rgba(195, 74, 54, 0.10);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+    .auth-hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+      line-height: 1.45;
+    }
+    .auth-avatar {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--crema), var(--crema-light));
+      color: var(--cream);
+      display: grid; place-items: center;
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 26px;
+      margin: 0 auto 14px;
+      box-shadow: var(--shadow-sm);
+    }
+    .auth-name {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--espresso);
+      text-align: center;
+      margin: 0 0 4px;
+    }
+    .profile-stats {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      margin: 14px 0 18px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .profile-stats strong {
+      display: block;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--espresso);
+    }
+
     /* Selection: warm crema, not the default blue */
     ::selection { background: rgba(217,131,36,0.25); color: var(--espresso-deep); }
 
@@ -1119,6 +1264,59 @@
     </main>
 
     <!-- ========================================================== -->
+    <!--  PROFILE / SIGN-IN                                         -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-profile">
+      <div style="padding: 14px 18px 0;">
+        <button class="back-btn" data-go="discover">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back
+        </button>
+      </div>
+
+      <!-- LOGGED-OUT STATE -->
+      <div id="profile-loggedout" class="auth-card">
+        <h1 class="auth-title">Welcome, Quester</h1>
+        <p class="auth-sub">Sign in to save cafés across devices and unlock your coffee taste profile.</p>
+
+        <div class="auth-tabs" role="tablist">
+          <button class="auth-tab active" data-auth-tab="signin" role="tab" aria-selected="true">Sign in</button>
+          <button class="auth-tab" data-auth-tab="signup" role="tab" aria-selected="false">Create account</button>
+        </div>
+
+        <form id="auth-form" class="auth-form" novalidate>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+          </label>
+          <label>Password
+            <input type="password" name="password" required minlength="8" autocomplete="current-password" placeholder="At least 8 characters">
+          </label>
+          <button type="submit" class="auth-submit" id="auth-submit">Sign in</button>
+          <div class="auth-error" id="auth-error" hidden></div>
+          <div class="auth-hint" id="auth-hint">Welcome back. We'll save your favourites to your account.</div>
+        </form>
+      </div>
+
+      <!-- LOGGED-IN STATE -->
+      <div id="profile-loggedin" class="auth-card" hidden>
+        <div class="auth-avatar" id="profile-avatar">JQ</div>
+        <h2 class="auth-name" id="profile-email">—</h2>
+        <p class="auth-sub" style="text-align: center;">
+          Member since <span id="profile-since">—</span>
+        </p>
+
+        <div class="profile-stats">
+          <div><strong id="profile-fav-count">0</strong><span>saved cafés</span></div>
+        </div>
+
+        <button class="auth-submit" data-go="saved">View saved cafés</button>
+        <button class="auth-secondary" id="auth-signout">Sign out</button>
+      </div>
+    </main>
+
+    <!-- ========================================================== -->
     <!--  BOTTOM TAB BAR                                            -->
     <!-- ========================================================== -->
     <nav class="tab-bar" aria-label="Main">
@@ -1206,18 +1404,25 @@
   <script>
     "use strict";
 
-    // ---- client id (anonymous, for favourites) ----
-    function getClientId() {
-      let id = localStorage.getItem("jq.clientId");
-      if (!id) {
-        id = (crypto.randomUUID?.() || ("c-" + Math.random().toString(36).slice(2) + Date.now().toString(36)))
-          .replace(/-/g, "").slice(0, 24);
-        localStorage.setItem("jq.clientId", id);
+    // ---- auth state ----
+    // The browser is responsible for: sign-in / sign-up / sign-out / session.
+    // The server is responsible for: verifying JWTs + scoping user data by user_id.
+    //
+    // Logged-OUT favourites live in localStorage["jq.anonSaves"] and merge into
+    // the user's account on first sign-in.
+    let supabaseClient = null;     // initialised once we fetch /api/auth/config
+    let currentUser = null;        // { id, email, ... } or null
+    const ANON_SAVES_KEY = "jq.anonSaves";
+
+    async function authedHeaders() {
+      const h = { "Content-Type": "application/json" };
+      if (supabaseClient) {
+        const { data } = await supabaseClient.auth.getSession();
+        const t = data?.session?.access_token;
+        if (t) h["Authorization"] = "Bearer " + t;
       }
-      return id;
+      return h;
     }
-    const CLIENT_ID = getClientId();
-    const apiHeaders = { "X-Client-Id": CLIENT_ID, "Content-Type": "application/json" };
 
     // ---- state ----
     const state = {
@@ -1289,6 +1494,7 @@
       window.scrollTo(0, 0);
       if (view === "saved") renderSaved();
       if (view === "map") renderMap();
+      if (view === "profile") renderProfile();
     }
 
     // ---- bootstrap ----
@@ -1302,14 +1508,8 @@
         }
       } catch {}
 
-      // Favourites
-      try {
-        const r = await fetch("/api/favourites", { headers: apiHeaders });
-        if (r.ok) {
-          const d = await r.json();
-          (d.favourites || []).forEach((id) => state.saved.add(id));
-        }
-      } catch {}
+      await initAuth();
+      await loadFavourites();
 
       // Cafés
       try {
@@ -1325,6 +1525,74 @@
 
       buildFilterBar();
       bindEvents();
+      bindAuthEvents();
+    }
+
+    // ---- auth init ----
+    async function initAuth() {
+      let cfg = {};
+      try { cfg = await fetch("/api/auth/config").then((r) => r.json()); } catch {}
+      if (!cfg.url || !cfg.anonKey || !window.supabase) {
+        // No auth configured — log out the UI permanently and keep anon-only saves.
+        currentUser = null;
+        return;
+      }
+      supabaseClient = window.supabase.createClient(cfg.url, cfg.anonKey, {
+        auth: { persistSession: true, autoRefreshToken: true },
+      });
+      const { data } = await supabaseClient.auth.getSession();
+      currentUser = data?.session?.user || null;
+
+      supabaseClient.auth.onAuthStateChange(async (event, session) => {
+        const wasLoggedIn = !!currentUser;
+        currentUser = session?.user || null;
+        if (!wasLoggedIn && currentUser) {
+          await mergeAnonSavesIntoAccount();
+        }
+        await loadFavourites();
+        renderProfile();
+        renderDrawerHeader();
+        // Re-render anything visible that depends on saved state
+        if (state.view === "saved") renderSaved();
+        if (state.view === "discover") renderDiscover();
+      });
+    }
+
+    // ---- favourites: load + persist (account vs anon) ----
+    async function loadFavourites() {
+      state.saved.clear();
+      if (currentUser) {
+        try {
+          const r = await fetch("/api/favourites", { headers: await authedHeaders() });
+          if (r.ok) {
+            const d = await r.json();
+            (d.favourites || []).forEach((id) => state.saved.add(id));
+          }
+        } catch {}
+      } else {
+        try {
+          const local = JSON.parse(localStorage.getItem(ANON_SAVES_KEY) || "[]");
+          local.forEach((id) => state.saved.add(id));
+        } catch {}
+      }
+    }
+
+    function persistAnonSaves() {
+      localStorage.setItem(ANON_SAVES_KEY, JSON.stringify([...state.saved]));
+    }
+
+    async function mergeAnonSavesIntoAccount() {
+      let local = [];
+      try { local = JSON.parse(localStorage.getItem(ANON_SAVES_KEY) || "[]"); } catch {}
+      if (!Array.isArray(local) || local.length === 0) return;
+      try {
+        const r = await fetch("/api/favourites/merge", {
+          method: "POST",
+          headers: await authedHeaders(),
+          body: JSON.stringify({ placeIds: local }),
+        });
+        if (r.ok) localStorage.removeItem(ANON_SAVES_KEY);
+      } catch {}
     }
 
     // ---- map rendering (placeholder canvas — uses real lat/lng on a stylized grid) ----
@@ -1762,12 +2030,131 @@
         const svg = b.querySelector("svg");
         if (svg) svg.setAttribute("fill", wasSaved ? "none" : "currentColor");
       });
-      try {
-        await fetch(`/api/favourites/${encodeURIComponent(id)}`, {
-          method: wasSaved ? "DELETE" : "POST",
-          headers: apiHeaders,
+      // Persist: account via API, anon via localStorage.
+      if (currentUser) {
+        try {
+          await fetch(`/api/favourites/${encodeURIComponent(id)}`, {
+            method: wasSaved ? "DELETE" : "POST",
+            headers: await authedHeaders(),
+          });
+        } catch {}
+      } else {
+        persistAnonSaves();
+      }
+      // Keep the profile fav-count fresh
+      const fc = document.getElementById("profile-fav-count");
+      if (fc) fc.textContent = String(state.saved.size);
+    }
+
+    // ---- profile + drawer header rendering ----
+    function initials(email) {
+      if (!email) return "JQ";
+      const u = email.split("@")[0];
+      return (u[0] || "J").toUpperCase() + (u[1] || "Q").toUpperCase();
+    }
+    function renderProfile() {
+      const out = document.getElementById("profile-loggedout");
+      const inn = document.getElementById("profile-loggedin");
+      if (!out || !inn) return;
+      if (currentUser) {
+        out.hidden = true;
+        inn.hidden = false;
+        document.getElementById("profile-avatar").textContent = initials(currentUser.email);
+        document.getElementById("profile-email").textContent = currentUser.email || "Signed in";
+        const since = currentUser.created_at ? new Date(currentUser.created_at) : null;
+        document.getElementById("profile-since").textContent = since
+          ? since.toLocaleDateString(undefined, { month: "short", year: "numeric" })
+          : "today";
+        document.getElementById("profile-fav-count").textContent = String(state.saved.size);
+      } else {
+        out.hidden = false;
+        inn.hidden = true;
+      }
+    }
+    function renderDrawerHeader() {
+      const drawer = document.getElementById("drawer");
+      if (!drawer) return;
+      const av = drawer.querySelector(".drawer-header .avatar");
+      const nm = drawer.querySelector(".drawer-header h3");
+      const sub = drawer.querySelector(".drawer-header p");
+      if (currentUser) {
+        if (av) av.textContent = initials(currentUser.email);
+        if (nm) nm.textContent = currentUser.email.split("@")[0];
+        if (sub) sub.textContent = currentUser.email + " · signed in";
+      } else {
+        if (av) av.textContent = "JQ";
+        if (nm) nm.textContent = "Welcome, Quester";
+        if (sub) sub.textContent = "Boca Raton, FL · explorer";
+      }
+    }
+
+    // ---- auth events (sign-in / sign-up / sign-out / tab switch) ----
+    function bindAuthEvents() {
+      const form = document.getElementById("auth-form");
+      const tabs = $$('[data-auth-tab]');
+      const submitBtn = document.getElementById("auth-submit");
+      const errEl = document.getElementById("auth-error");
+      const hintEl = document.getElementById("auth-hint");
+      let mode = "signin";
+
+      function showError(msg) {
+        errEl.textContent = msg;
+        errEl.hidden = false;
+      }
+      function clearError() { errEl.hidden = true; errEl.textContent = ""; }
+
+      function setMode(next) {
+        mode = next;
+        tabs.forEach((t) => {
+          const on = t.dataset.authTab === next;
+          t.classList.toggle("active", on);
+          t.setAttribute("aria-selected", on ? "true" : "false");
         });
-      } catch {}
+        submitBtn.textContent = next === "signup" ? "Create account" : "Sign in";
+        hintEl.textContent = next === "signup"
+          ? "8+ characters. We don't share your email."
+          : "Welcome back. We'll save your favourites to your account.";
+        form.password.setAttribute("autocomplete", next === "signup" ? "new-password" : "current-password");
+        clearError();
+      }
+
+      tabs.forEach((t) => t.addEventListener("click", () => setMode(t.dataset.authTab)));
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        clearError();
+        if (!supabaseClient) return showError("Sign-in isn't configured on this deployment yet.");
+        const email = form.email.value.trim();
+        const password = form.password.value;
+        if (!email || password.length < 8) return showError("Email + at least 8 characters required.");
+        submitBtn.disabled = true;
+        submitBtn.textContent = mode === "signup" ? "Creating…" : "Signing in…";
+        try {
+          const fn = mode === "signup" ? "signUp" : "signInWithPassword";
+          const { data, error } = await supabaseClient.auth[fn]({ email, password });
+          if (error) throw error;
+          if (mode === "signup" && !data?.session) {
+            // Email confirmation may be required — surface the message
+            showError("Account created. Check your inbox to confirm your email, then sign in.");
+            setMode("signin");
+          } else {
+            // onAuthStateChange handler picks up from here (merge + refresh)
+            form.reset();
+          }
+        } catch (err) {
+          showError(err?.message || "Couldn't sign you in.");
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = mode === "signup" ? "Create account" : "Sign in";
+        }
+      });
+
+      // Sign out
+      document.getElementById("auth-signout")?.addEventListener("click", async () => {
+        if (!supabaseClient) return;
+        try { await supabaseClient.auth.signOut(); } catch {}
+        // onAuthStateChange does the cleanup
+      });
     }
 
     // ---- map pan (drag) ----
@@ -1911,11 +2298,11 @@
           const a = item.dataset.action;
           closeDrawer();
           if (a === "partner") go("partner");
+          else if (a === "profile") go("profile");
           else if (a === "help") alert("Help & support — coming soon. Email zackwboca@gmail.com for now.");
           else if (a === "settings") alert("Settings — coming soon.");
           else if (a === "privacy") alert("Privacy & location — coming soon.");
           else if (a === "taste") alert("Your AI coffee taste profile is coming soon — we'll learn from your saves.");
-          else if (a === "profile") alert("Profile — coming soon.");
           else if (a === "offers") alert("Offers near you — coming soon.");
           return;
         }

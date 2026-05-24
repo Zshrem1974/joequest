@@ -1,5 +1,121 @@
 # CHANGES
 
+## Stage 1 (Drawer) — accounts (Supabase Auth) + user-keyed favourites
+
+This stage replaces the anonymous `client_id` favourites system with a real
+account model: email + password sign-in via Supabase Auth, JWT-protected
+favourites API, and a Profile page reachable from the drawer.
+
+### What changed
+
+**Auth model**
+- Browser uses `@supabase/supabase-js@2` (loaded via CDN) with the ANON KEY
+  to handle sign-up / sign-in / session. The session JWT is persisted in
+  `localStorage` by the supabase-js client (default behaviour).
+- Server verifies the JWT on every protected request via
+  `supabase.auth.getUser(jwt)` (uses the SERVICE-ROLE client internally; the
+  service-role key never leaves the server).
+- New `db.js` helpers: `verifyJwt`, `listFavouritesForUser`,
+  `addFavouriteForUser`, `removeFavouriteForUser`, `mergeAnonFavourites`.
+
+**Favourites migration (BREAKING)**
+- Dropped the `(client_id, place_id)` schema. Replaced with `(user_id, place_id)`
+  referencing `auth.users(id) ON DELETE CASCADE`.
+- Logged-OUT users save to `localStorage["jq.anonSaves"]` in the browser
+  (no server roundtrip).
+- On first sign-in, the client `POST`s any anon saves to
+  `POST /api/favourites/merge` which upserts them into the user's account
+  (best-effort; dupes ignored).
+- Routes `GET / POST / DELETE /api/favourites` now require a valid JWT.
+- Row-Level Security on `favourites` so a user can only see / mutate their
+  own rows. This is defence-in-depth — the server already scopes queries
+  by `user_id` from the verified JWT.
+
+**Profile page**
+- New `view-profile` reachable from drawer → Profile.
+- Logged-out state: email + password form, tabbed Sign in / Create account,
+  password autocomplete switches accordingly, inline error display.
+- Logged-in state: avatar (email initials), email, member-since, saved-café
+  count, "View saved" + "Sign out" CTAs.
+- Drawer header updates to show the user's email + signed-in status when
+  logged in.
+
+**New endpoints**
+- `GET /api/auth/config` → `{ url, anonKey }` (safe public values; the browser
+  uses these to spin up its own Supabase client).
+- `POST /api/favourites/merge` → upserts an array of place_ids into the
+  authenticated user's account. Used on first sign-in to absorb local saves.
+
+### New / updated env vars
+
+| Var | Required | Where |
+|---|---|---|
+| `SUPABASE_URL` | Yes | Server **and** sent to browser via `/api/auth/config`. |
+| `SUPABASE_ANON_KEY` | **NEW.** Yes for auth. | Sent to browser via `/api/auth/config`. Safe to expose. |
+| `SUPABASE_SERVICE_ROLE_KEY` | Yes | Server-only. Verifies JWTs + admin DB ops. |
+
+If `SUPABASE_ANON_KEY` is missing, the browser sees auth as "not configured"
+and only the anon-saves path works (no sign-in UI).
+
+### Supabase setup SQL (run once after creating the project)
+
+```sql
+-- The favourites schema from the previous stage is REPLACED.
+drop table if exists favourites;
+
+create table favourites (
+  user_id    uuid not null references auth.users(id) on delete cascade,
+  place_id   text not null,
+  created_at timestamptz not null default now(),
+  primary key (user_id, place_id)
+);
+create index favourites_user_idx on favourites(user_id);
+
+-- Row-level security: a user can only read / write their own rows.
+alter table favourites enable row level security;
+
+create policy "favourites_select_own"
+  on favourites for select using (auth.uid() = user_id);
+
+create policy "favourites_modify_own"
+  on favourites for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- The cafe_picks table from the previous stage is still useful as a
+-- fallback under the snapshot. Leave it alone if it already exists.
+```
+
+In **Supabase → Auth → Providers**, make sure **Email** is enabled (it is
+by default). If you want users to confirm their email before logging in,
+flip the "Confirm email" toggle (the UI handles that case — it tells the
+user to check their inbox).
+
+### What to set in Render
+
+Service → Environment → add:
+- `SUPABASE_URL`
+- `SUPABASE_ANON_KEY` *(NEW)*
+- `SUPABASE_SERVICE_ROLE_KEY`
+
+After saving, Render redeploys. `/api/status` should report
+`cache: "supabase"` and the Profile page in the drawer becomes functional.
+
+### Security notes
+
+- The browser only ever sees the **anon key**. That key is rate-limited and
+  restricted by RLS; it's safe to be public (this is Supabase's intended use).
+- The **service-role key** lives only on the server. It bypasses RLS so the
+  server can do admin ops, but every user-facing query still scopes by the
+  verified `user_id` from the JWT — RLS + server-side scoping = belt-and-braces.
+- JWTs are short-lived (1h by default) and refreshed automatically by
+  `supabase-js` from the refresh token in localStorage.
+- The merge endpoint is best-effort; we don't trust the client-supplied
+  place_id list to be exhaustive, just to be additive. Worst case: a few
+  cafés don't get carried across.
+
+---
+
 ## Stage 2 — backend hardening + Supabase persistence
 
 This stage took the deployed backend from "works but leaks" to production-grade

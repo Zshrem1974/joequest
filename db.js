@@ -1,17 +1,26 @@
 /*
- * db.js — Supabase-backed durable cache & favourites helper.
- * ----------------------------------------------------------
- * Tables (see CHANGES.md for the SQL to create them):
- *   - cafe_picks(place_id PK, payload jsonb, fetched_at timestamptz)
- *   - favourites(client_id, place_id, created_at)  (composite PK)
+ * db.js — Supabase-backed durable cache, auth-aware favourites, JWT verify.
+ * ------------------------------------------------------------------------
+ * Tables (see CHANGES.md for SQL):
+ *   - cafe_picks(place_id PK, payload jsonb, fetched_at timestamptz)  [legacy fallback]
+ *   - favourites(user_id, place_id, created_at)                       [Stage 1: user-keyed]
  *
- * Requires env vars:
- *   SUPABASE_URL                    (public)
- *   SUPABASE_SERVICE_ROLE_KEY       (server-only — never exposed to the browser)
+ * Auth model:
+ *   - Browser uses supabase-js with the ANON KEY → user gets a JWT in localStorage.
+ *   - Server uses the SERVICE-ROLE KEY for admin ops.
+ *   - For per-user reads/writes, we still scope by user_id in the query AND
+ *     RLS is enabled on the favourites table as defence-in-depth.
+ *   - JWTs are verified server-side via `supabase.auth.getUser(jwt)`.
  *
- * If the env vars are missing, this module exports an in-memory fallback so the
- * server still boots in dev. The fallback logs a loud warning at startup; in
- * production you want real Supabase so picks survive restarts / Render sleeps.
+ * Anonymous saves live in the browser's localStorage and merge into the user's
+ * account on first sign-in (no anon table on the server).
+ *
+ * Required env vars:
+ *   SUPABASE_URL                  (public; also served to browser via /api/auth/config)
+ *   SUPABASE_ANON_KEY             (public; served to browser via /api/auth/config)
+ *   SUPABASE_SERVICE_ROLE_KEY     (server-only — NEVER exposed to the browser)
+ *
+ * Without these, the module exports an in-memory fallback so dev still boots.
  */
 
 import { createClient } from "@supabase/supabase-js";
@@ -82,44 +91,86 @@ export async function cachedCount() {
   return memCache.size;
 }
 
-// ---- favourites (groundwork; routes wired in server.js) -------------------
-export async function listFavourites(clientId) {
-  if (!clientId) return [];
+// ----------------------------------------------------------------------------
+// AUTH — JWT verification (server side, using the service-role client)
+// ----------------------------------------------------------------------------
+export async function verifyJwt(jwt) {
+  if (!supabase || !jwt) return null;
+  try {
+    const { data, error } = await supabase.auth.getUser(jwt);
+    if (error || !data?.user) return null;
+    return data.user; // { id, email, created_at, ... }
+  } catch {
+    return null;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// FAVOURITES — user-keyed (Stage 1)
+// ----------------------------------------------------------------------------
+// Logged-in users: rows live in Supabase, scoped by user_id.
+// Logged-out users: saves live in localStorage in the browser (not this server).
+// Pre-Supabase fallback: in-memory map keyed by user_id, so dev still works.
+//
+// All queries also scope by user_id explicitly even though RLS enforces it,
+// because we're using the service-role key which bypasses RLS.
+// ----------------------------------------------------------------------------
+export async function listFavouritesForUser(userId) {
+  if (!userId) return [];
   if (supabase) {
     const { data, error } = await supabase
       .from("favourites")
       .select("place_id, created_at")
-      .eq("client_id", clientId)
+      .eq("user_id", userId)
       .order("created_at", { ascending: false });
-    if (error) throw new Error(`Supabase listFavourites: ${error.message}`);
+    if (error) throw new Error(`Supabase listFavouritesForUser: ${error.message}`);
     return (data || []).map((r) => r.place_id);
   }
-  return Array.from(memFavs.get(clientId) || []);
+  return Array.from(memFavs.get(userId) || []);
 }
 
-export async function addFavourite(clientId, placeId) {
-  if (!clientId || !placeId) return;
+export async function addFavouriteForUser(userId, placeId) {
+  if (!userId || !placeId) return;
   if (supabase) {
     const { error } = await supabase
       .from("favourites")
-      .upsert({ client_id: clientId, place_id: placeId });
-    if (error) throw new Error(`Supabase addFavourite: ${error.message}`);
+      .upsert({ user_id: userId, place_id: placeId }, { onConflict: "user_id,place_id" });
+    if (error) throw new Error(`Supabase addFavouriteForUser: ${error.message}`);
     return;
   }
-  if (!memFavs.has(clientId)) memFavs.set(clientId, new Set());
-  memFavs.get(clientId).add(placeId);
+  if (!memFavs.has(userId)) memFavs.set(userId, new Set());
+  memFavs.get(userId).add(placeId);
 }
 
-export async function removeFavourite(clientId, placeId) {
-  if (!clientId || !placeId) return;
+export async function removeFavouriteForUser(userId, placeId) {
+  if (!userId || !placeId) return;
   if (supabase) {
     const { error } = await supabase
       .from("favourites")
       .delete()
-      .eq("client_id", clientId)
+      .eq("user_id", userId)
       .eq("place_id", placeId);
-    if (error) throw new Error(`Supabase removeFavourite: ${error.message}`);
+    if (error) throw new Error(`Supabase removeFavouriteForUser: ${error.message}`);
     return;
   }
-  memFavs.get(clientId)?.delete(placeId);
+  memFavs.get(userId)?.delete(placeId);
+}
+
+// Bulk-upsert used when an anonymous user signs in and we move their
+// localStorage saves into their account. Duplicates are silently ignored
+// (the ON CONFLICT clause).
+export async function mergeAnonFavourites(userId, placeIds) {
+  if (!userId || !Array.isArray(placeIds) || placeIds.length === 0) return 0;
+  const rows = placeIds.map((place_id) => ({ user_id: userId, place_id }));
+  if (supabase) {
+    const { error } = await supabase
+      .from("favourites")
+      .upsert(rows, { onConflict: "user_id,place_id" });
+    if (error) throw new Error(`Supabase mergeAnonFavourites: ${error.message}`);
+    return placeIds.length;
+  }
+  if (!memFavs.has(userId)) memFavs.set(userId, new Set());
+  const set = memFavs.get(userId);
+  placeIds.forEach((p) => set.add(p));
+  return placeIds.length;
 }

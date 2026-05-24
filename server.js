@@ -38,7 +38,9 @@ import {
 import {
   dbReady, dbStatus, cachedCount,
   getCachedPick, setCachedPick,
-  listFavourites, addFavourite, removeFavourite,
+  verifyJwt,
+  listFavouritesForUser, addFavouriteForUser, removeFavouriteForUser,
+  mergeAnonFavourites,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -162,32 +164,62 @@ app.get("/api/cafes/:id", async (req, res) => {
 
 app.get("/api/photo", streamPhoto);
 
-// ---- favourites (anonymous client_id via X-Client-Id header) --------------
-function clientId(req) {
-  const id = (req.get("X-Client-Id") || "").trim();
-  return /^[A-Za-z0-9_-]{6,64}$/.test(id) ? id : null;
+// ---- auth config (safe public values for the browser) ---------------------
+// Browser uses these to spin up its own Supabase client (anon key + URL).
+// The service-role key NEVER leaves the server.
+app.get("/api/auth/config", (req, res) => {
+  res.json({
+    url: process.env.SUPABASE_URL || null,
+    anonKey: process.env.SUPABASE_ANON_KEY || null,
+  });
+});
+
+// ---- auth helper: extract & verify the user from the Authorization header --
+async function authedUser(req) {
+  const h = req.get("Authorization") || "";
+  if (!h.startsWith("Bearer ")) return null;
+  return await verifyJwt(h.slice(7).trim());
 }
+
+// ---- favourites (user-keyed, JWT-authed) ----------------------------------
+// All four routes require a logged-in user. Anonymous saves live in the
+// browser's localStorage and are merged in via POST /api/favourites/merge
+// on first sign-in.
 app.get("/api/favourites", async (req, res) => {
   try {
-    const id = clientId(req);
-    if (!id) return res.status(400).json({ error: "Missing or invalid X-Client-Id" });
-    res.json({ favourites: await listFavourites(id) });
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to view saved cafés" });
+    res.json({ favourites: await listFavouritesForUser(user.id) });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
+
 app.post("/api/favourites/:placeId", async (req, res) => {
   try {
-    const id = clientId(req);
-    if (!id) return res.status(400).json({ error: "Missing or invalid X-Client-Id" });
-    await addFavourite(id, req.params.placeId);
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to save cafés" });
+    await addFavouriteForUser(user.id, req.params.placeId);
     res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
+
 app.delete("/api/favourites/:placeId", async (req, res) => {
   try {
-    const id = clientId(req);
-    if (!id) return res.status(400).json({ error: "Missing or invalid X-Client-Id" });
-    await removeFavourite(id, req.params.placeId);
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to manage saved cafés" });
+    await removeFavouriteForUser(user.id, req.params.placeId);
     res.json({ ok: true });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// Move anonymous localStorage saves into the freshly-signed-in user's account.
+// Best-effort: dupes are ignored by the upsert.
+app.post("/api/favourites/merge", async (req, res) => {
+  try {
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in first" });
+    const placeIds = Array.isArray(req.body?.placeIds) ? req.body.placeIds : [];
+    const merged = await mergeAnonFavourites(user.id, placeIds);
+    res.json({ ok: true, merged });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
@@ -217,5 +249,8 @@ app.listen(PORT, () => {
   }
   if (!dbReady()) {
     console.log("ℹ️   Supabase not configured — favourites use in-memory fallback (lost on restart).");
+  }
+  if (!process.env.SUPABASE_ANON_KEY) {
+    console.log("ℹ️   SUPABASE_ANON_KEY not set — browser auth (sign-in/sign-up) will be disabled.");
   }
 });
