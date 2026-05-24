@@ -2387,7 +2387,9 @@
       $$(".city-select").forEach((sel) => {
         sel.innerHTML = options;
         sel.value = state.city;
-        sel.disabled = !!state.zipMode;
+        // Dropdown stays enabled even in ZIP mode — picking a city is the
+        // "last input wins" override that clears ZIP. See selectCity().
+        sel.disabled = false;
       });
       $$(".zip-clear").forEach((b) => { b.hidden = !state.zipMode; });
       const hintText = state.zipMode && state.zip
@@ -2444,12 +2446,22 @@
     }
 
     async function selectCity(slug) {
-      if (!slug || slug === state.city) return;
+      if (!slug) return;
       const c = state.cities.find((x) => x.slug === slug);
       if (!c || !c.hasSnapshot) return;
+      // No-op only when the user is already on this city AND no override is
+      // active. If ZIP or geolocation is set, re-picking the same city is a
+      // valid "clear overrides" action — last input wins.
+      if (slug === state.city && !state.zipMode && !state.origin) return;
+      // Last input wins: city overrides any prior ZIP / geolocation origin.
+      if (state.zipMode) { state.zipMode = false; state.zip = null; }
+      state.origin = null;
+      state.originSource = null;
+      $$(".zip-input").forEach((zi) => { zi.value = ""; });
       state.city = slug;
       localStorage.setItem(LAST_CITY_KEY, slug);
       await loadCafesForCity(slug);
+      renderCityDropdown();
       renderDiscover();
       renderMaps();
       // renderMaps only repaints the SVG canvases — the Map view's card list
@@ -4073,27 +4085,50 @@
         return;
       }
       navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          state.myLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-          // Stage B: also use this as the origin for "1.4 mi away" on cards
-          state.origin = { ...state.myLocation };
+        async (pos) => {
+          const lat = pos.coords.latitude, lng = pos.coords.longitude;
+          state.myLocation = { lat, lng };
+
+          // Last input wins: clear any ZIP override.
+          if (state.zipMode) { state.zipMode = false; state.zip = null; }
+          $$(".zip-input").forEach((zi) => { zi.value = ""; });
+
+          // Auto-switch to the nearest city we have data for, so the visible
+          // café list + map are local to the user (not the previously
+          // selected city). Skips the switch if already on the nearest.
+          const near = findNearestCity(lat, lng);
+          if (near && near.slug !== state.city) {
+            state.city = near.slug;
+            localStorage.setItem(LAST_CITY_KEY, near.slug);
+            await loadCafesForCity(near.slug);
+          }
+
+          // Geolocation origin overrides any prior ZIP origin.
+          state.origin = { lat, lng };
+          state.originSource = "geolocation";
           state.cafes = sortByDistance(state.cafes);
           state.filtered = sortByDistance(state.filtered);
-          if (state.view === "discover") renderDiscover();
+
           renderCityDropdown();
+          renderDiscover();
+          renderMaps();
+
+          // Center the big map on the user when we have a bbox to project
+          // into. NOTE: projectXY is still hardcoded to Boca's bbox (existing
+          // bug), so the user-pin will be off-canvas for non-Boca cities
+          // until that lands. Zoom + center logic below preserved as-is for
+          // Boca and degraded gracefully for other cities.
           const BOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
-          const inBoca =
-            state.myLocation.lat >= BOX.south && state.myLocation.lat <= BOX.north &&
-            state.myLocation.lng >= BOX.west && state.myLocation.lng <= BOX.east;
+          const inBoca = lat >= BOX.south && lat <= BOX.north && lng >= BOX.west && lng <= BOX.east;
           if (inBoca) {
-            state.mapView.cx = (state.myLocation.lng - BOX.west) / (BOX.east - BOX.west);
-            state.mapView.cy = 1 - (state.myLocation.lat - BOX.south) / (BOX.north - BOX.south);
+            state.mapView.cx = (lng - BOX.west) / (BOX.east - BOX.west);
+            state.mapView.cy = 1 - (lat - BOX.south) / (BOX.north - BOX.south);
             state.mapView.zoom = 2.5;
           } else {
             state.mapView = { zoom: 1, cx: 0.5, cy: 0.5 };
-            alert("You're outside Boca Raton — showing the city view. JoeQuest is Boca-only for now.");
           }
           go("map");
+          if (state.view === "map") renderMap();
           redrawBigMap();
         },
         (err) => alert("Couldn't get your location: " + err.message),
