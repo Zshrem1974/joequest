@@ -2,7 +2,7 @@
   "version": 1,
   "city": "Boca Raton, FL",
   "generatedAt": "2026-05-24T01:27:48Z",
-  "count": 19,
+  "count": 20,
   "cafes": [
     {
       "id": "ChIJT-BRL3cf2YgRAFPb0JSb8R8",
@@ -1437,6 +1437,125 @@
         "Saturday: 7:00 AM – 7:00 PM",
         "Sunday: 7:00 AM – 7:00 PM"
       ]
+    },
+    {
+      "id": "ChIJ81Ar2sYZ2YgRllhJlMYB_dI",
+      "name": "Rosalia's Botanical Cafe",
+      "address": "20423 FL-7 suite f9, Boca Raton, FL 33498, USA",
+      "lat": 26.371603999999998,
+      "lng": -80.2067604,
+      "rating": 4.9,
+      "reviews": 143,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 8:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15203309869475649686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAb43m-uUw0LqOJHuzENyDhj5yDq7RNfQh5rgnEDY45K3nF3SoWZBF1IfWp_ebL91BUvbNg8Gn7Fsl0i5vZNUq2YF9Vvf--5uoCQx2LDzAjVs9c2HGe4RM7kJK7AeaUtYQrv8eRz0-78jZZADE1ncdG4Y0dEUX3Ro3PdOgj_ytZ0CYFzr0BihwYoeT4nTlgaEbynw2BisGLd0AfF-pDowp3fFEcR-kwsVYaOCJKX12qoRzH_znFWWF-8CFXvof8tpwjjRZaAM-ufe_PdUVKsjxEkIUro7exmavb0O7oTDOJ9arVSATg&w=800"
     },
     {
       "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
@@ -2910,6 +3029,40 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
+    },
+    "ChIJ81Ar2sYZ2YgRllhJlMYB_dI": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "Pending Claude refresh.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": null,
+          "reason": "Pending Claude refresh.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Words cannot describe how exceptional the cafe is.\n\nUnique drinks, quality products and service that is top notch! The owners understand how important exceptional service is and they execute daily. It is obvious they put a lot of thought into what they serve. Very few cafes can offer this type of experience. Decor is a nice touch of elegance with a cozy atmosphere.\n\nDon’t miss out on this gem! Certainly now one of my favorites and my go to spots."
+        },
+        {
+          "rating": 5,
+          "text": "Love this spot! Great friendly service, beautiful atmosphere, and delicious drinks and food. Absolutely loved my little bouquet of flowers on my Peach Please smoothie! Highly recommend checking this place out!!!"
+        },
+        {
+          "rating": 5,
+          "text": "WOW! Honestly, I was waiting for a place like this to open. Has a twist & fused!!!\nI went first time with my regular latte, it was good. But coffee…\nThen I let the barista choose my coffee for me- WOW!!! I’m blown away!!!\nIt is delicious!! Fresh and the quality of the drinks are amazing!\nDefinitely coming back! A LOT!!!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T08:16:17.439Z"
     }
   }
 }
