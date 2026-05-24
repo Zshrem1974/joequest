@@ -11,10 +11,10 @@ A recommendation engine that reads a coffee shop's Google reviews and names the 
 - Hosted on Render (free tier, deployed via `render.yaml` blueprint).
 - Verified live: `/api/status` reports a `snapshots[]` array (one entry per
   city, all loaded from disk). `/api/cafes?city=<slug>` returns that
-  city's cafés; `/api/cafes?all=1` returns the flat union (89 cafés total).
+  city's cafés; `/api/cafes?all=1` returns the flat union (90 cafés total).
   `/api/cities` powers the dropdown. Warm response ~190 ms.
 
-Coverage: **89 cafés across 6 cities** (Boca 20, Delray 15, Boynton 11,
+Coverage: **90 cafés across 6 cities** (Boca 21, Delray 15, Boynton 11,
 Deerfield 9, Fort Lauderdale 18, Miami 16).
 
 ## Build artifacts (~/joequest/)
@@ -40,8 +40,9 @@ Snapshot pipeline (one file per city):
 - `scripts/add-cafe.js "<name>"` — manually add a single café that
   Google's top-20 search misses.
 - `.github/workflows/snapshot.yml` — monthly cron + manual dispatch.
-  (Currently still single-city; needs the city-matrix update — see
-  next-steps.)
+  Iterates all 6 cities serially and opens **one combined PR** with the
+  diff. `workflow_dispatch` gained a `city` input (leave blank to run
+  all; fill in a single slug to target one).
 
 Admin / analytics:
 - `admin-views/admin.html` — gated dashboard (events, funnel, by-day, by-name, by-view)
@@ -57,16 +58,18 @@ Deploy: `render.yaml`, `fly.toml`, `.gitignore`, `DEPLOY.md`, `CHANGES.md`.
 - Ranking: `rating² × log10(reviews)`.
 - Keys server-side ONLY. Never in browser, repo, or client.
 - **Data path (priority order):**
-  1. `data/boca-snapshot.json` — pre-baked file, instant, free.
+  1. `data/<city-slug>.json` — pre-baked per-city file, instant, free.
+     Server loads all 6 at startup into the `snapshots` map.
   2. Supabase / in-memory cache (per-`place_id` pick).
   3. Live Google Places + Claude call (only when both fall through).
 - Photo proxy at `/api/photo` keeps the Google key out of the browser.
 
 ## Snapshot model — the MVP refresh policy (LOCKED)
 
-The deployed app serves entirely from `data/boca-snapshot.json` (committed
-to the repo). This means **zero API cost per browse** — Render free-tier
-sleep doesn't matter, the snapshot survives every wake / redeploy.
+The deployed app serves entirely from the per-city `data/<slug>.json`
+files (committed to the repo, one per city). This means **zero API
+cost per browse** — Render free-tier sleep doesn't matter, the
+snapshots survive every wake / redeploy.
 
 ### The 90-day-per-café rule (locked decisions)
 
@@ -90,31 +93,43 @@ the JSON diff. A human reviews and merges.
 
 **Manual:**
 ```bash
-GOOGLE_PLACES_API_KEY=xxx ANTHROPIC_API_KEY=yyy node scripts/snapshot.js
-# --force   re-pull every café
-# --dry-run show what would change without writing
+GOOGLE_PLACES_API_KEY=xxx ANTHROPIC_API_KEY=yyy \
+  node scripts/snapshot.js --city=<slug>
+# --city=<slug>   defaults to boca-raton; valid: any slug in lib/cities.js
+# --force         re-pull every café (bypass 90-day rule)
+# --dry-run       print a plan + cost estimate, make no paid calls
 ```
+
+A `--dry-run` prints a per-city plan (reused vs. stale vs. new vs.
+MUST_INCLUDE) and a `$` estimate (`Claude × $0.04 + Places × $0.005`)
+before any paid call — so a real run's cost is predictable.
 
 Required repo secrets for the Action: `GOOGLE_PLACES_API_KEY`, `ANTHROPIC_API_KEY`.
 
 ### What the rule changes practically
 
 - **Adding a café:** new cafés that appear in Google's top-20 list get pulled on the next refresh — they have no `fetched_at`, so they're always considered stale.
+- **Pinning a café Google's search keeps dropping:** add its `place_id` to that city's `mustInclude: [...]` in `lib/cities.js`. Snapshot script unions it via Place Details before the 90-day loop, so it survives every refresh. (Used today for Espresso Joint + Rosalia's in Boca.)
 - **Removing a chain false-positive:** add to `EXCLUDE_NAMES` in `lib/data.js`, re-run snapshot, commit.
-- **Dropping a café that no longer passes filters** (closed, renamed to a chain, moved out of Boca): automatic — the script tracks `stats.dropped` and they're absent from the new snapshot.
-- **Editing a single café's picks** (e.g., reviewers got it wrong): hand-edit `data/boca-snapshot.json` — the schema is flat and obvious. Bump that café's `fetched_at` so the script doesn't immediately overwrite your edit.
+- **Dropping a café that no longer passes filters** (closed, renamed to a chain, moved out of the city): automatic — the script tracks `stats.dropped` and they're absent from the new snapshot.
+- **Editing a single café's picks** (e.g., reviewers got it wrong): hand-edit `data/<slug>.json` — the schema is flat and obvious. Bump that café's `fetched_at` so the script doesn't immediately overwrite your edit.
 
-## Multi-city — not yet, deliberately
+## Multi-city — shipped (6 South-Florida cities)
 
-When we add the second city the snapshot pattern generalizes:
+The snapshot pattern was generalized in the multi-city build:
 
-- `data/{city-slug}.json` per city.
+- `data/{city-slug}.json` per city (6 files, 90 cafés total).
 - Server reads all snapshots at startup, routes by `?city=` param.
-- The same GitHub Action runs per-city snapshots in a matrix.
+  `?all=1` returns the flat union for ZIP-mode sort-by-distance.
+- The GitHub Action runs all 6 cities serially in one job and opens a
+  combined PR (matrix would have produced 6 PRs — review fatigue).
+- Per-city configs (slug, bbox, center, addressRegex, searchQuery,
+  `mustInclude: [...]`) live in `lib/cities.js`. Adding city #7 = append
+  a row + run `node scripts/snapshot.js --city=<slug>` + commit.
 
-That design lives in the head; it's the *next-step* once we have demand. **Do
-not generalize until we know whether deep-Boca beats broad-anywhere on
-engagement.**
+**Adding more cities** is now a one-config-row change. The strategic
+question — *should* we expand beyond South Florida — is still open;
+the engineering blocker is gone.
 
 ## Locked product decisions
 
@@ -128,9 +143,16 @@ The deployed app implements nine screens with the brand palette and
 Poppins / Inter typography. **Every drawer item is now functional** —
 no more `alert()` placeholders.
 
-- **Discover** — header lockup, "Coffee Quest Begins" greeting, **city
-  dropdown + ZIP override** in the city-bar (geolocation > ZIP > last city
-  > Boca for first-timers; persisted via `localStorage["jq.lastCity"]`),
+- **Discover** — header lockup, "Your Coffee Quest Begins" greeting,
+  **city dropdown + ZIP override + Locate-me** in the city-bar. *Initial
+  load* uses geolocation > last city > Boca (first-timer default; persisted
+  via `localStorage["jq.lastCity"]`). At **runtime**, the three controls
+  follow a strict **last-input-wins** rule: picking a city clears any
+  active ZIP/location override; tapping Locate auto-switches the dropdown
+  to the nearest city we have data for and re-sorts by distance; typing a
+  ZIP overrides geolocation origin and sorts all 90 cafés across the 6
+  cities by distance from the ZIP centroid (city dropdown still selectable
+  — picking one clears ZIP).
   mini-map with brand pins + rating pills, ranked café card list with rank
   badges, **live-computed open/closed status** (from each café's
   `periods[]` + current ET time — accurate regardless of snapshot age, no
@@ -139,8 +161,10 @@ no more `alert()` placeholders.
   origin is set, using mi/km from Settings), **"Today: 8 AM – 9 PM" line**
   at the bottom of each card. **Drink pick shows a mint `✓ your taste`
   chip** when it matches the user's coffee taste profile (honest, never
-  fabricated). Typing a 5-digit ZIP disables the city dropdown and re-
-  sorts all 89 cafés across the 6 cities by distance from the ZIP centroid.
+  fabricated). Each card has both a **heart-save** and a **share** button
+  on the photo; share fires `navigator.share` on mobile, clipboard
+  fallback on desktop. See the "Sharing & deep linking" section below for
+  the payload + deep-link details.
 - **Map** — Google-Maps-style interaction:
   - viewBox-based zoom (1×–5×) with `+` / `−` controls
   - drag-to-pan once zoomed in
@@ -152,11 +176,12 @@ no more `alert()` placeholders.
   - filter chips: rating (cycles 4.0/4.5/4.8), open-now, price ($/$$/$$$),
     JoeQuesters (toggles the purple smiley-cup markers)
   - legend below the map: Café · You · JoeQuesters
-- **Café detail bottom sheet** — hero photo, "AI read N reviews" banner,
-  confidence-tinted Drink + Food cards (high = mint, medium = star-gold,
-  low = crema), reviewer quote, mention count, Open in Maps / Directions
-  CTAs, **full weekly hours table** at the bottom with today's row
-  highlighted in crema-orange.
+- **Café detail bottom sheet** — hero photo, café name + **share + heart
+  buttons** in the header, "AI read N reviews" banner, confidence-tinted
+  Drink + Food cards (high = mint, medium = star-gold, low = crema),
+  reviewer quote, mention count, Open in Maps / Directions CTAs, **full
+  weekly hours table** at the bottom with today's row highlighted in
+  crema-orange.
 - **Saved** — favourites with empty state + nudge. Account-backed when
   signed in; localStorage when signed out; anon saves merge into the
   account on first sign-in.
@@ -287,8 +312,14 @@ spend rate.
 5. **Aggregate beyond Google (1–2 wks, biggest moat lever).** Yelp /
    TripAdvisor / Reddit to break the ~5-review ceiling. Needs legal review
    (ToS) before building.
-6. **Multi-city snapshot matrix (when we add city #2).** See "Multi-city"
-   section above.
+6. **Fix `projectXY` for non-Boca cities (~1 hr).** The map view's
+   stylized SVG renderer is hardcoded to Boca's bbox. Pins for Delray /
+   Boynton / Deerfield / Fort Lauderdale / Miami currently render
+   off-canvas. Fix: pass the current city's bbox into `projectXY` (and
+   expose `bbox` from `/api/cities`). Surface area is small but touches
+   `renderMapInto`, `redrawBigMap`, and the locate-me zoom logic.
+7. **Multi-city snapshot matrix.** ✅ Already shipped — the monthly cron
+   iterates all 6 cities in `.github/workflows/snapshot.yml`.
 
 ## Env vars (current, after all four drawer stages)
 
@@ -321,20 +352,39 @@ spend rate.
   branded but their positions are seeded (no real user-location signal yet).
 - **Google's top-20 search misses good cafés.** The snapshot script feeds
   off `places:searchText` which caps at 20. Cafés at the city edge can fall
-  off the list (Rosalia's, Espresso Joint — both manually re-added via
-  `scripts/add-cafe.js`). Structural fix queued: add a `MUST_INCLUDE` list
-  of place_ids per city to `scripts/snapshot.js` so curated picks survive
-  every refresh.
-- **`scripts/refresh-hours.js` is still single-city** (defaults to
-  `boca-raton`). Lower-priority since it's an emergency tool — fix it
-  when convenient. ✅ The **monthly cron now runs all 6 cities** in one
-  combined PR per month.
-- **`MUST_INCLUDE` partially landed.** Each city in `lib/cities.js` now
-  has a `mustInclude: [...]` field; Boca is seeded with Espresso Joint
-  and Rosalia's place_ids. The **union logic in `scripts/snapshot.js`
-  is still TODO** — until it ships, those two cafés can still drop on
-  a fresh Boca refresh and need re-adding via `scripts/add-cafe.js`.
-  Picked up first next session.
+  off the list (Rosalia's, Espresso Joint). ✅ **Resolved** via
+  `MUST_INCLUDE` (see below).
+- ✅ **`scripts/refresh-hours.js` now accepts `--city=<slug>`** (defaults
+  to `boca-raton`, validates against `lib/cities.js`). Parity with
+  `scripts/snapshot.js`.
+- ✅ **The monthly cron runs all 6 cities** in one combined PR per month.
+- **Map projection is hardcoded to Boca.** `projectXY()` in
+  `public/index.html`'s map renderer uses Boca's bbox for all cities, so
+  the "you" pin and café pins for Delray/Boynton/Deerfield/Fort
+  Lauderdale/Miami render off-canvas on the stylized SVG map view. The
+  card list, dropdown, and `?city=` API path all work correctly across
+  cities — only the map's pixel projection is Boca-only. Queued.
+
+### Shipped this session: MUST_INCLUDE + dry-run cost + last-input-wins
+
+- ✅ **`MUST_INCLUDE` union logic shipped.** `scripts/snapshot.js` now
+  fetches any `city.mustInclude` ids absent from Google's top-20 search
+  via per-id Place Details before the 90-day loop. Boca's Espresso Joint
+  + Rosalia's are pinned indefinitely. Shared `mapPlaceToCafe` +
+  `fetchPlaceById` helpers live in `lib/data.js` and are reused by
+  `scripts/add-cafe.js`. To pin a new café: append its `place_id` to a
+  city's `mustInclude: [...]` array in `lib/cities.js` with a trailing
+  comment.
+- ✅ **`--dry-run` prints a pre-flight plan + cost estimate** (reused vs.
+  stale vs. new vs. mustInclude, plus `$ Claude × $0.04 + Places × $0.005`)
+  before any paid call — makes monthly-cron cost predictable.
+- ✅ **City / ZIP / Locate-me follow "last input wins"** at runtime.
+  Picking a city clears any active ZIP/location override; tapping Locate
+  auto-switches the dropdown to the nearest city with data; typing a ZIP
+  overrides geolocation origin. See the Discover bullet above for the
+  full rule.
+- ✅ **Map view bug fix:** changing city while on the Map screen now
+  updates the card list under the pins (was only updating the SVG).
 
 ## Sharing & deep linking
 
@@ -361,6 +411,8 @@ Deploy: push to GitHub repo → Render Blueprint reads `render.yaml` → set bot
 
 **Recommended immediate sequence:** (1) restrict the Google API key
 (security hygiene), (2) add the two GitHub Actions secrets so the monthly
-snapshot cron can run, (3) let real Boca usage decide between the
-`/quest` onboarding flow and the real-tile-map upgrade. Tell me which to
-start and I'll produce the exact code/diff.
+snapshot cron can run, (3) fix `projectXY` so the map view works for
+non-Boca cities (small, mechanical, unblocks the multi-city map
+experience), then (4) let real usage decide between the `/quest`
+onboarding flow and the real-tile-map upgrade. Tell me which to start
+and I'll produce the exact code/diff.
