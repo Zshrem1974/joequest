@@ -6,10 +6,18 @@ A recommendation engine that reads a coffee shop's Google reviews and tells you 
 
 ## Where the project is right now
 
-We have a **live MVP** running locally:
-- Web UI at `http://localhost:3000` — list of Boca cafés ranked by quality, click any card → drink + food picks with reviewer quotes
+We have a **live, deployed MVP**:
+- **Public URL: https://joequest.onrender.com**
+- **Source: https://github.com/Zshrem1974/joequest**
+- Hosted on Render (Free tier, deployed via `render.yaml` blueprint)
+- Web UI — list of Boca cafés ranked by quality, click any card → drink + food picks with reviewer quotes
 - Express API server with API keys held server-side (never exposed to the browser)
 - 7-day in-memory cache so picks aren't regenerated on every view (≈ $0 marginal cost after first hit)
+
+Verified live (response time ~190ms warm):
+- `GET /api/status` → `{"ok":true,"google":true,"anthropic":true}`
+- `GET /api/cafes` → 20 Boca cafés returned
+- `GET /api/cafes/:id` → AI picks generated on demand, cached 7 days
 
 ## Pathway we built (in ~/joequest/)
 
@@ -71,22 +79,31 @@ Now that we have a live demo, the open questions sharpen:
 
 ## How to run it
 
+**Production (already deployed):** https://joequest.onrender.com
+
+**Locally:**
 ```bash
 cd ~/joequest
 GOOGLE_PLACES_API_KEY=xxx ANTHROPIC_API_KEY=yyy node server.js
 # → open http://localhost:3000
 ```
 
-Server is already running in the dev environment. Code is plain ES modules + Express, no framework, no build step.
+**Deploy a new instance:** Push to a GitHub repo, connect it as a Render Blueprint
+(reads `render.yaml`), add the two API keys as env vars in Render's dashboard. Full
+guide in `DEPLOY.md`. Fly.io alternative also configured in `fly.toml`.
+
+Code is plain ES modules + Express, no framework, no build step.
 
 ## Suggested next concrete build steps (low → high effort)
 
-1. **Fix the chain/restaurant filter** — add a category-based filter using Places `types[]`, plus a richer blocklist. Half a day.
-2. **City-boundary enforcement** — use a Boca lat/lng bounding box on results. Half a day.
-3. **Persist the cache** — swap the in-memory Map for Supabase or Postgres so picks survive restart. One day.
-4. **City picker / generalization** — abstract `CITY = "Boca Raton, FL"` into a route param, add a landing page. Two days.
-5. **Onboarding "quest" flow** — single-page "tell us where you are, we'll send you to the best one" flow. Two days.
-6. **Aggregate beyond Google** — pull from Yelp/TripAdvisor/Reddit to break the 5-review ceiling. One to two weeks.
+1. **Restrict the Google API key** in Cloud Console → API restrictions: Places API only, HTTP referrer restriction to `joequest.onrender.com/*`. ~10 minutes. Do this first.
+2. **Fix the chain/restaurant filter** — add a category-based filter using Places `types[]`, plus a richer blocklist. (Pura Vida still slips through some scans.) Half a day.
+3. **City-boundary enforcement** — use a Boca lat/lng bounding box on results. Half a day.
+4. **Persist the cache** — swap the in-memory Map for Supabase or Postgres so picks survive Render free-tier sleeps + redeploys. One day.
+5. **Custom domain** — if you own `joequest.app` or similar, point it at Render via CNAME. Step 5 in `DEPLOY.md`. ~30 min + DNS propagation.
+6. **City picker / generalization** — abstract `CITY = "Boca Raton, FL"` into a route param, add a landing page. Two days.
+7. **Onboarding "quest" flow** — single-page "tell us where you are, we'll send you to the best one" flow. Two days.
+8. **Aggregate beyond Google** — pull from Yelp/TripAdvisor/Reddit to break the 5-review ceiling. One to two weeks.
 
 ---
 
