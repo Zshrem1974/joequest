@@ -1508,7 +1508,7 @@
       applyFilters();
       els.mapCount.textContent = `${state.filtered.length} of ${state.cafes.length}`;
       els.mapList.innerHTML = state.filtered.map((c, i) => cardHTML(c, null)).join("");
-      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, true);
+      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
     }
 
     function renderSaved() {
