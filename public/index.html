@@ -307,6 +307,65 @@
     .cafe-card .stats .star { color: var(--star); font-size: 14px; }
     .cafe-card .stats .price { color: var(--espresso); font-weight: 600; }
 
+    /* Today's hours line on the card */
+    .card-hours {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 6px 0 0;
+      padding-top: 8px;
+      border-top: 1px dashed var(--line);
+    }
+    .card-hours-k {
+      color: var(--espresso);
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      font-size: 10px;
+      margin-right: 6px;
+    }
+
+    /* Weekly hours block in the bottom sheet */
+    .hours-block { margin-top: 16px; }
+    .hours-h {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .hours-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 9px 14px;
+      font-size: 13.5px;
+      color: var(--ink);
+      border-top: 1px solid var(--line);
+    }
+    .hours-list li:first-child { border-top: none; }
+    .hours-list li .day { color: var(--muted); font-weight: 500; min-width: 90px; }
+    .hours-list li .range { font-variant-numeric: tabular-nums; }
+    .hours-list li.today {
+      background: rgba(217, 131, 36, 0.08);
+    }
+    .hours-list li.today .day {
+      color: var(--crema);
+      font-weight: 700;
+    }
+    .hours-list li.today .range {
+      color: var(--espresso);
+      font-weight: 600;
+    }
+
     /* Two-up pick strip on the card */
     .picks-strip {
       display: grid;
@@ -2130,14 +2189,117 @@
       const r = rating ?? 0;
       return `<span class="star">★</span> ${r ? r.toFixed(1) : "—"}`;
     }
-    function statusBadgeHTML(c) {
-      if (c.openNow === true) {
-        const when = c.hoursLabel && /closes/i.test(c.hoursLabel) ? c.hoursLabel : "";
-        return `<div class="status-badge open" title="${escapeHTML(c.hoursLabel || "")}">Open${when ? ` <span class="sep">·</span> <span class="when">${escapeHTML(when)}</span>` : ""}</div>`;
+
+    // ---- live hours computation (client-side, from periods[]) ----
+    // Mirrors server lib/data.js's hoursLabel logic so the open/closed
+    // status on cards is accurate no matter how old the snapshot is.
+    // All math is in Boca local time (America/New_York) via Intl.
+    function nowInBocaClient() {
+      const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/New_York",
+        weekday: "long", hour: "numeric", minute: "numeric", hour12: false,
+      }).formatToParts(new Date());
+      const dayName = parts.find((p) => p.type === "weekday").value;
+      const hour = parseInt(parts.find((p) => p.type === "hour").value, 10) || 0;
+      const minute = parseInt(parts.find((p) => p.type === "minute").value, 10) || 0;
+      const days = { Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6 };
+      return { dayIdx: days[dayName], dayName, minutes: hour * 60 + minute };
+    }
+    function fmtTimeClient(h, m) {
+      m = m || 0;
+      const ampm = h >= 12 ? "PM" : "AM";
+      const h12 = h % 12 || 12;
+      return m === 0 ? `${h12} ${ampm}` : `${h12}:${String(m).padStart(2, "0")} ${ampm}`;
+    }
+    function liveStatus(periods) {
+      if (!Array.isArray(periods) || !periods.length) return null;
+      const { dayIdx, minutes } = nowInBocaClient();
+      const nowMin = dayIdx * 1440 + minutes;
+      const events = [];
+      for (const p of periods) {
+        if (!p?.open) continue;
+        const o = p.open, c = p.close;
+        let open = (o.day || 0) * 1440 + (o.hour || 0) * 60 + (o.minute || 0);
+        let close;
+        if (!c) close = open + 7 * 1440;
+        else {
+          close = (c.day || 0) * 1440 + (c.hour || 0) * 60 + (c.minute || 0);
+          if (close <= open) close += 7 * 1440;
+        }
+        events.push({ open, close, p });
       }
-      if (c.openNow === false) {
-        const when = c.hoursLabel && /opens/i.test(c.hoursLabel) ? c.hoursLabel : "";
-        return `<div class="status-badge closed" title="${escapeHTML(c.hoursLabel || "")}">Closed${when ? ` <span class="sep">·</span> <span class="when">${escapeHTML(when)}</span>` : ""}</div>`;
+      if (!events.length) return null;
+      // Currently inside any period?
+      for (const e of events) {
+        for (const offset of [0, 7 * 1440]) {
+          const n = nowMin + offset;
+          if (n >= e.open && n < e.close) {
+            if (!e.p.close) return { open: true, label: "Open 24h" };
+            return { open: true, label: "Closes " + fmtTimeClient(e.p.close.hour || 0, e.p.close.minute || 0) };
+          }
+        }
+      }
+      // Next opening
+      let next = null;
+      for (const e of events) {
+        let openTime = e.open;
+        while (openTime < nowMin) openTime += 7 * 1440;
+        if (!next || openTime < next.open) next = { open: openTime, p: e.p };
+      }
+      if (!next) return { open: false, label: null };
+      const o = next.p.open;
+      const openDay = Math.floor((next.open % (7 * 1440)) / 1440);
+      const dayLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      const dayPart = openDay === dayIdx ? "" : " " + dayLabels[openDay];
+      return { open: false, label: "Opens " + fmtTimeClient(o.hour || 0, o.minute || 0) + dayPart };
+    }
+    function renderHoursBlock(c) {
+      const desc = c.weekdayDescriptions;
+      if (!Array.isArray(desc) || !desc.length) return "";
+      const { dayName } = nowInBocaClient();
+      return `
+        <div class="hours-block">
+          <div class="hours-h">Hours</div>
+          <ul class="hours-list">
+            ${desc.map((line) => {
+              const i = line.indexOf(":");
+              if (i < 0) return "";
+              const day = line.slice(0, i).trim();
+              const range = line.slice(i + 1).trim();
+              const isToday = day === dayName;
+              return `<li class="${isToday ? "today" : ""}">
+                <span class="day">${escapeHTML(day)}</span>
+                <span class="range">${escapeHTML(range)}</span>
+              </li>`;
+            }).join("")}
+          </ul>
+        </div>
+      `;
+    }
+    function todaysHoursLine(weekdayDescriptions) {
+      if (!Array.isArray(weekdayDescriptions) || !weekdayDescriptions.length) return null;
+      const { dayName } = nowInBocaClient();
+      for (const line of weekdayDescriptions) {
+        const i = line.indexOf(":");
+        if (i < 0) continue;
+        if (line.slice(0, i).trim() === dayName) {
+          return line.slice(i + 1).trim();
+        }
+      }
+      return null;
+    }
+    function statusBadgeHTML(c) {
+      // Prefer live computation from periods[] over the snapshot's stale fields.
+      const live = liveStatus(c.periods);
+      const openNow = live ? live.open : c.openNow;
+      const label   = live ? live.label : c.hoursLabel;
+      if (openNow === true) {
+        const when = label && /closes|24h/i.test(label) ? label : "";
+        return `<div class="status-badge open" title="${escapeHTML(label || "")}">Open${when ? ` <span class="sep">·</span> <span class="when">${escapeHTML(when)}</span>` : ""}</div>`;
+      }
+      if (openNow === false) {
+        const when = label && /opens/i.test(label) ? label : "";
+        return `<div class="status-badge closed" title="${escapeHTML(label || "")}">Closed${when ? ` <span class="sep">·</span> <span class="when">${escapeHTML(when)}</span>` : ""}</div>`;
       }
       return "";
     }
@@ -2996,6 +3158,10 @@
               <span>${(c.reviews || 0).toLocaleString()} reviews</span>
               ${c.price ? `<span>·</span><span class="price">${escapeHTML(c.price)}</span>` : ""}
             </div>
+            ${(() => {
+              const tline = todaysHoursLine(c.weekdayDescriptions);
+              return tline ? `<div class="card-hours"><span class="card-hours-k">Today</span> ${escapeHTML(tline)}</div>` : "";
+            })()}
             <div class="picks-strip" data-picks-for="${c.id}">
               <div class="pick-mini${matchTag ? " matched" : ""}">
                 <div class="lbl">Drink${matchTag}</div>
@@ -3161,6 +3327,8 @@
             ${c.price ? `<span>· <span class="price" style="color:var(--espresso); font-weight:600;">${escapeHTML(c.price)}</span></span>` : ""}
             ${c.openNow ? `<span>·</span><span class="open-now">● Open now</span>` : ""}
           </div>
+
+          ${renderHoursBlock(c)}
 
           <div id="sheet-picks">${cached ? renderSheetPicks(cached) : renderSheetLoading()}</div>
 
