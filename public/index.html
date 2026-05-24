@@ -399,6 +399,25 @@
     }
     .big-map .map-canvas { width: 100%; height: 100%; }
 
+    /* Map legend */
+    .map-legend {
+      display: flex;
+      gap: 18px;
+      padding: 14px 18px 4px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--ink);
+    }
+    .map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .map-legend .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .map-legend .dot.cafe    { background: var(--crema); }
+    .map-legend .dot.you     { background: #4A90E2; box-shadow: 0 0 0 3px rgba(74,144,226,0.18); }
+    .map-legend .dot.quester { background: var(--quester); box-shadow: 0 0 0 3px rgba(124,92,255,0.18); }
+
     /* Map pins */
     .pin {
       position: absolute;
@@ -942,6 +961,12 @@
         <svg class="map-canvas" id="big-map-svg" preserveAspectRatio="none"></svg>
       </div>
 
+      <div class="map-legend">
+        <span><i class="dot cafe"></i> Café</span>
+        <span><i class="dot you"></i> You</span>
+        <span><i class="dot quester"></i> JoeQuesters</span>
+      </div>
+
       <div class="section-head">
         <h2>Cafés on the map</h2>
         <div class="meta" id="map-count"></div>
@@ -1224,70 +1249,96 @@
     }
 
     function renderMaps() {
-      renderMapInto(els.miniMapSvg, state.cafes, 360, 150, false);
-      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, true);
+      renderMapInto(els.miniMapSvg, state.cafes, 360, 150, { detailed: false });
+      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
     }
 
-    function renderMapInto(svg, cafes, w, h, showQuesters) {
+    // Brand pin: matches /img/joequest-icon.svg. Tip is at local (32, 82).
+    const BRAND_PIN_PATHS = `
+      <path d="M 32 4 C 14 4 4 16 4 32 C 4 52 32 82 32 82 C 32 82 60 52 60 32 C 60 16 50 4 32 4 Z" fill="#D98324"/>
+      <path d="M 19 25 H 43 a 2 2 0 0 1 2 2 V 37 a 13 13 0 0 1 -26 0 V 27 a 2 2 0 0 1 2 -2 Z" fill="#FFF6EC"/>
+      <path d="M 45 28 a 6.5 6.5 0 0 1 0 13" fill="none" stroke="#FFF6EC" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#5E3E27"/>
+    `;
+
+    function pinSVG(x, y, scale, id, rating, withPill) {
+      const pill = withPill && rating
+        ? `<g transform="translate(${x - 22}, ${y + 3})">
+             <rect width="44" height="19" rx="9.5" fill="#FFF6EC" stroke="rgba(43,28,18,0.12)" stroke-width="1"/>
+             <text x="22" y="14" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700">
+               <tspan fill="#E8A317">★</tspan><tspan fill="#5E3E27">${rating.toFixed(1)}</tspan>
+             </text>
+           </g>`
+        : "";
+      return `
+        <g class="map-pin" data-id="${id}" style="cursor: pointer;">
+          <ellipse cx="${x}" cy="${y + 2}" rx="${Math.max(5, 14 * scale)}" ry="2" fill="rgba(43,28,18,0.22)"/>
+          <g transform="translate(${x - 32 * scale}, ${y - 82 * scale}) scale(${scale})">
+            ${BRAND_PIN_PATHS}
+          </g>
+          ${pill}
+        </g>
+      `;
+    }
+
+    function renderMapInto(svg, cafes, w, h, opts = {}) {
+      const { detailed = false } = opts;
       svg.innerHTML = "";
       svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
-      // background grid
+
+      // Stylized "map" background: warm grid + cream roads + faint park patch.
       const bg = `
         <defs>
-          <pattern id="grid-${w}" width="36" height="36" patternUnits="userSpaceOnUse">
-            <path d="M 36 0 L 0 0 0 36" fill="none" stroke="rgba(94,62,39,0.08)" stroke-width="1"/>
+          <pattern id="grid-${w}" width="${w / 4}" height="${h / 4}" patternUnits="userSpaceOnUse">
+            <rect width="${w / 4}" height="${h / 4}" fill="none"/>
+            <path d="M ${w / 4} 0 L 0 0 0 ${h / 4}" fill="none" stroke="rgba(94,62,39,0.10)" stroke-width="1.5"/>
           </pattern>
           <linearGradient id="bgg-${w}" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#F5E9DC"/>
-            <stop offset="100%" stop-color="#EAD9C0"/>
+            <stop offset="0%" stop-color="#EFE0CB"/>
+            <stop offset="100%" stop-color="#E5D3B7"/>
           </linearGradient>
         </defs>
         <rect width="${w}" height="${h}" fill="url(#bgg-${w})"/>
         <rect width="${w}" height="${h}" fill="url(#grid-${w})"/>
-        <!-- a "road" or two for warmth -->
-        <path d="M0 ${h*0.55} Q ${w*0.5} ${h*0.42} ${w} ${h*0.6}" stroke="rgba(94,62,39,0.12)" stroke-width="3" fill="none"/>
-        <path d="M${w*0.32} 0 L ${w*0.42} ${h}" stroke="rgba(94,62,39,0.08)" stroke-width="2" fill="none"/>
+        <rect x="${w * 0.78}" y="0" width="${w * 0.22}" height="${h * 0.55}" fill="rgba(59,125,90,0.10)"/>
+        <line x1="0" y1="${h * 0.5}" x2="${w}" y2="${h * 0.5}" stroke="#FFF6EC" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+        <line x1="${w * 0.42}" y1="0" x2="${w * 0.42}" y2="${h}" stroke="#FFF6EC" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+        <line x1="${w * 0.82}" y1="0" x2="${w * 0.82}" y2="${h}" stroke="#FFF6EC" stroke-width="4" stroke-linecap="round" opacity="0.70"/>
       `;
       svg.insertAdjacentHTML("beforeend", bg);
 
-      // For SVG-based pin we render as foreignObject HTML? Simpler: position absolute divs via container.
-      // We render pins as SVG circles + text for simplicity inside the SVG.
-      // Brand pin silhouette path (from joequest-icon.svg, 64×86 viewBox).
-      // Tip is at local (32, 82); head center ~ (32, 32); body extends from y=4 to y=82.
-      const PIN_PATH = "M 32 4 C 14 4 4 16 4 32 C 4 52 32 82 32 82 C 32 82 60 52 60 32 C 60 16 50 4 32 4 Z";
-      const PIN_SCALE = 0.34; // ≈ 27px tall on the map
+      // JoeQuesters dots (drawn under pins). Simulated positions on the detailed map only.
+      if (detailed && state.filters.questers) {
+        const positions = [
+          [0.30, 0.45], [0.18, 0.62], [0.60, 0.68], [0.74, 0.30],
+          [0.42, 0.78], [0.55, 0.18], [0.86, 0.62],
+        ];
+        positions.forEach(([fx, fy]) => {
+          const cx = fx * w, cy = fy * h;
+          svg.insertAdjacentHTML("beforeend", `
+            <circle cx="${cx}" cy="${cy}" r="7" fill="rgba(124,92,255,0.20)"/>
+            <circle cx="${cx}" cy="${cy}" r="4" fill="#7C5CFF" stroke="white" stroke-width="2"/>
+          `);
+        });
+      }
 
+      // "You" marker — simulated at the centre of Boca on the detailed map only.
+      if (detailed) {
+        const { x: yx, y: yy } = projectXY(26.372, -80.105, w, h);
+        svg.insertAdjacentHTML("beforeend", `
+          <circle cx="${yx}" cy="${yy}" r="16" fill="rgba(74,144,226,0.15)"/>
+          <circle cx="${yx}" cy="${yy}" r="10" fill="rgba(74,144,226,0.30)"/>
+          <circle cx="${yx}" cy="${yy}" r="6.5" fill="#4A90E2" stroke="white" stroke-width="2.5"/>
+        `);
+      }
+
+      // Café pins — brand mark with rating pill below (detailed only).
+      const scale = detailed ? 0.42 : 0.24;
       cafes.forEach((c) => {
         if (typeof c.lat !== "number" || typeof c.lng !== "number") return;
         const { x, y } = projectXY(c.lat, c.lng, w, h);
-        const rating = c.rating ?? 0;
-        const tier = rating >= 4.7 ? "#5E3E27" : rating >= 4.4 ? "#D98324" : "#F0A847";
-        // The pin's local tip is at (32, 82). After translate(x, y) + scale(s),
-        // we need to shift so (32, 82) lands at (x, y) — hence translate(-32*s, -82*s).
-        const s = PIN_SCALE;
-        svg.insertAdjacentHTML("beforeend", `
-          <g class="map-pin" data-id="${c.id}" style="cursor: pointer;">
-            <ellipse cx="${x}" cy="${y + 1.5}" rx="${6 * s * 1.6}" ry="1.6" fill="rgba(43,28,18,0.22)"/>
-            <g transform="translate(${x - 32 * s}, ${y - 82 * s}) scale(${s})">
-              <path d="${PIN_PATH}" fill="${tier}" stroke="#FFF6EC" stroke-width="${2 / s}" stroke-linejoin="round"/>
-              <text x="32" y="40" text-anchor="middle" fill="#FFF6EC" font-family="Inter, sans-serif" font-size="22" font-weight="700">${rating ? rating.toFixed(1) : "?"}</text>
-            </g>
-          </g>
-        `);
+        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, c.rating ?? 0, detailed));
       });
-
-      // Quester dots (simulated)
-      if (showQuesters && state.filters.questers) {
-        const seed = 7; let s = seed;
-        const rnd = () => (s = (s * 9301 + 49297) % 233280, s / 233280);
-        for (let i = 0; i < 9; i++) {
-          const cx = rnd() * w, cy = rnd() * h;
-          svg.insertAdjacentHTML("beforeend", `
-            <circle cx="${cx}" cy="${cy}" r="6" fill="rgba(124,92,255,0.18)"/>
-            <circle cx="${cx}" cy="${cy}" r="3" fill="#7C5CFF" stroke="white" stroke-width="1.5"/>
-          `);
-        }
-      }
     }
 
     // ---- card rendering ----
