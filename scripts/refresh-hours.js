@@ -20,7 +20,31 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { searchCafes } from "../lib/data.js";
+import { searchCafes, hoursLabel } from "../lib/data.js";
+
+const PLACES_BASE = "https://places.googleapis.com/v1";
+
+// Per-place Place-Details lookup. Used only for cafés that fell out of the
+// fresh top-20 search — so we still get accurate hours for ALL existing
+// snapshot rows. ~$0.017 per call (Places Details).
+async function fetchHoursForPlace(placeId, googleKey) {
+  const res = await fetch(`${PLACES_BASE}/places/${placeId}`, {
+    headers: {
+      "X-Goog-Api-Key": googleKey,
+      "X-Goog-FieldMask": "regularOpeningHours,currentOpeningHours",
+    },
+  });
+  if (!res.ok) return null;
+  const data = await res.json();
+  const h = data.regularOpeningHours ?? data.currentOpeningHours;
+  if (!h) return null;
+  return {
+    periods: h.periods ?? null,
+    weekdayDescriptions: h.weekdayDescriptions ?? null,
+    openNow: h.openNow ?? null,
+    hoursLabel: hoursLabel(h),
+  };
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", "boca-snapshot.json");
@@ -61,12 +85,25 @@ async function main() {
     };
   });
 
+  // Backfill: cafés that fell out of the search but exist as known place_ids.
+  // We hit Place Details for each so the snapshot stays complete.
+  let backfilled = 0;
+  for (const cafe of snapshot.cafes) {
+    if (cafe.periods && cafe.weekdayDescriptions) continue;
+    process.stdout.write(`  · ${cafe.name}  — backfilling hours via Place Details… `);
+    const h = await fetchHoursForPlace(cafe.id, googleKey);
+    if (!h) { console.log("✗ not found"); continue; }
+    cafe.periods = h.periods;
+    cafe.weekdayDescriptions = h.weekdayDescriptions;
+    cafe.openNow = h.openNow;
+    cafe.hoursLabel = h.hoursLabel;
+    backfilled++;
+    console.log("✓");
+  }
+
   writeFileSync(SNAPSHOT_PATH, JSON.stringify(snapshot, null, 2));
   console.log(`\n✓  Wrote ${SNAPSHOT_PATH}`);
-  console.log(`   Updated: ${updated}   Missing-from-fresh-results: ${missing}`);
-  if (missing > 0) {
-    console.log("   (Missing cafés keep their existing hours — they may have dropped out of Google's top-20.)");
-  }
+  console.log(`   Updated from search: ${updated}   Backfilled via Place Details: ${backfilled}`);
 }
 
 main().catch((e) => {

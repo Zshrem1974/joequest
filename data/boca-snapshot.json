@@ -33,10 +33,105 @@
         "service",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 9 AM",
       "mapsUri": "https://maps.google.com/?cid=2301791948024533760&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJT-BRL3cf2YgRAFPb0JSb8R8%2Fphotos%2FAb43m-uJQu5G_J5r8G9ovR9wo5NRPCSvp_PLxwXzi7ysXMegWCHALQKOSiZppYVNTl9c3jnA4WAVlgIcvv-8XKeYMqwihuK5_RAa0wk1T4xVOoy6ZGQTaMb3bXKAsoms8G4X31FMZYd_ReUR07wILY68Ow2htagUoYj6d4qg647uMul1DdGaUHgvaF-qEIaOR2dXSHPcHn9diw__9l5RQXN_v8f-_xkqXESZrbk_2RKCDdpiuSQvA9FiL_codZ5CXF6r0ZFn9B3NmLgOqMMZpawUesAiTI8RmUkmBe2mlbPvccEdew&w=800"
+      "photo": "/api/photo?name=places%2FChIJT-BRL3cf2YgRAFPb0JSb8R8%2Fphotos%2FAb43m-uJQu5G_J5r8G9ovR9wo5NRPCSvp_PLxwXzi7ysXMegWCHALQKOSiZppYVNTl9c3jnA4WAVlgIcvv-8XKeYMqwihuK5_RAa0wk1T4xVOoy6ZGQTaMb3bXKAsoms8G4X31FMZYd_ReUR07wILY68Ow2htagUoYj6d4qg647uMul1DdGaUHgvaF-qEIaOR2dXSHPcHn9diw__9l5RQXN_v8f-_xkqXESZrbk_2RKCDdpiuSQvA9FiL_codZ5CXF6r0ZFn9B3NmLgOqMMZpawUesAiTI8RmUkmBe2mlbPvccEdew&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 9:00 AM – 10:00 PM",
+        "Tuesday: 9:00 AM – 10:00 PM",
+        "Wednesday: 9:00 AM – 10:00 PM",
+        "Thursday: 9:00 AM – 10:00 PM",
+        "Friday: 9:00 AM – 10:00 PM",
+        "Saturday: 9:00 AM – 10:00 PM",
+        "Sunday: 9:00 AM – 7:00 PM"
+      ]
     },
     {
       "id": "ChIJCcvR1Pbh2IgRc4bpE1pDCEQ",
@@ -68,7 +163,7 @@
       "openNow": false,
       "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=4902242248552973939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAb43m-tIDegWGnRsH049fgPn8-UorCoKRnLrdr-imOxXcYjG9hrcNOL8-uXxpAhxxBtuTaut--XDw-0UervrGMhBGXeorJtnTLGvMlVpkr5iIYuQ8wuWQ-wtEd5nizSC-cMejhse1lWfv9Ndn-H404wMbboE8mUXSL_sqC14yuISggYkfwDhle2VQGFk0tKP6ccvFwvmrBLCP9ZVx7nkmJAXm6_BMj5RbECQnlK9y1f4xRMRNmP-wQxzymrsayTQNI2jtaCCq8Dut0AOKf3BybWFecbRv6O_xwmTC7FUrkRXiZ0&w=800",
+      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAb43m-sfWm7oikqmdV9FK8PnAB9Yqm4G6U7V2400m2Bk8NX2VqAeK9AK3eYBkI29lHUOCGvKIDvs7KIwkOdLoE07XNRtBmWnnaIMD9XMzc6pFnLIKe7-Q8cqBJcvDiO4kduPt6CBHdBuaqACpLwthylPlAhtpERxR9ezt24r50i4LRYwk1m0nzjIXx98dRPwwPQ40Tx_73YWh7Citg-Y-nmNBl54QyCZtKLNbYeHt66pEgJ8Mq4xGtC1_btZZL9_6i0OYDOpVS0OwpVvxL964rgNAI-GkJvBxGmyJ1FxgFYij1o&w=800",
       "periods": [
         {
           "open": {
@@ -193,7 +288,7 @@
       "openNow": false,
       "hoursLabel": "Opens 11 AM",
       "mapsUri": "https://maps.google.com/?cid=5722097732013894018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAb43m-tfhTyqj5YAUXggHl8oVAW_9jgIwRSlJlOjPSJkdNadJsRkb_cRuzXl99bwgX422fWgkhpVrM5Em8t3pr3EulAO9blXe6ShroZ4mF5HQ4DcDTaOtiEbB2kXMaIgepSFOkbMi47Mz_bSrvEvuNKTeV9w7vLZKspV0SfGhswAPcE02AG6UxPS-9Y7_7_VCWsJ4Mcn5aunu7DA7K2ps5f_dyvoY6bbCk3sL_akAOb3JSjluKkoJtD29H_OfGG-3_8DQLL3VoPySTP1GqSRfioYPZWBM5_GM-Nj5IVgSdrjSulcQ5LBs9zaXCpcJRjsS6_xhGtCzcHWC9bFsMMReg5qPV9-aa5y6ikMEndJbcpc2jxKejvh0kDiEwa_ZyFhmDyALXuKHg51PXqnz6eo2HOaPeB0WfsbCZKeVlvA6xDmZXvqDd7XX1n0CXUto17MV0Sy&w=800",
+      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAb43m-u1NjG4gvl-KFnU4zxvhHweYtyx1c_cZzvHol8iq8hryXbUMXBPA0SgCdd5lpuN2IIZfIEPK3Ju0CWY1mRZbBt2KLRUqXlxubaLZqM4IyLwYrzXnRAjIJpj-pSqRaRGldBtc3UzLZb5Mz1fx2gGbF0owcs5_iOIm2VteRTuzMU0wJyJjkCWJXj9ZG1GHIIM60hNFfpcxizcpMeA376zuIhJbrZIUXbxqDFyVsfTHdDajyCeetpswZ--FyFTbxyWKzpVcCH7GLep_JpkvH0GmvumiaVjHNednYYUSCHgyhb41I6Mb7CMqHn1mXO6FslkzdDCDWYM-Y_jGnwfnQaM9ppCsN2Y79FePnHQw8j3i4_x6UMRLw3mftxW0Ve4li7hyAOxHbRtiZw4eVyNygfdG5tc5mDRErgOZ5Qrd9xr1DvmW9f9floRbZtLMDD6xLS4&w=800",
       "periods": [
         {
           "open": {
@@ -317,9 +412,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Sun",
+      "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=7843820367219118986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJf_20jATi2IgRitMRzhDZ2mw%2Fphotos%2FAb43m-sVYm0ZSAfUHt1R7qrrF_DoXc66xtig6yoekYC8zTbq3JVtxkX-mHt8zbFwBdtE-2nuwBCrUtu5_tuOpmjjP396eSkvsyIaEPxgo-oGoBsK2KtEL08iM3qkxeOnaC-4On7wGPtCSn6MFvlGWRL6XabgEYsUG4xoBSah7ZbtgOWB0JX2MF1C5j0064luOLDzCmokLvDqMKZ1kV-HlKc8tL3bIQUocAWlCvxw2cX_VGwnrdSbFPDEWJ8CBjlvaPf7G6co_IPH160SxPX8ICsYEfn0isuaNOw32ypSPFKNJbxCYQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJf_20jATi2IgRitMRzhDZ2mw%2Fphotos%2FAb43m-sVYm0ZSAfUHt1R7qrrF_DoXc66xtig6yoekYC8zTbq3JVtxkX-mHt8zbFwBdtE-2nuwBCrUtu5_tuOpmjjP396eSkvsyIaEPxgo-oGoBsK2KtEL08iM3qkxeOnaC-4On7wGPtCSn6MFvlGWRL6XabgEYsUG4xoBSah7ZbtgOWB0JX2MF1C5j0064luOLDzCmokLvDqMKZ1kV-HlKc8tL3bIQUocAWlCvxw2cX_VGwnrdSbFPDEWJ8CBjlvaPf7G6co_IPH160SxPX8ICsYEfn0isuaNOw32ypSPFKNJbxCYQ&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ]
     },
     {
       "id": "ChIJtdWNvVjj2IgRzWs79x6IHIA",
@@ -344,7 +534,7 @@
       "openNow": false,
       "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=9231403002780937165&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAb43m-tlClS84W1KEGgIF1UGdg-vt03LdJqGvIVP17z85XrtmGcGX2AgIk0BwU5eYl7Oev2M8hLGLA7FvA0LonU1dNQR5JefQVkwrEpMZsqvgAFb-4IJjwe8Lz3Af-pLoaLbiBBzjD4P3B8JB0g4gFm8KCh8T5mVXqBAcUdS21fUobUfj51M98gGQ5PMqq6m9Ub4Z8nSR5FiYVZ4_w5wU_gGQ6Z51QAf707vR2JpQSLmlKoiJUYP5l--gfpGXiV8HKAeEcreZCJjW5hOc1SsX9eYeR2SJ8RmocVq0MBicFWoDQoJiw&w=800",
+      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAb43m-uVHumksKJw90gDniSlrTTAHf-_08MFgbyrFI-6VY2NV9Y7HK02WvxfGUlAWC6QZ6PEsGibkswc8_1YJhg90aLQaTAbeByNG6OIOMTJbMrdvrad7CTx5lIWTE6VkDIyKgIu_rh1EOF5O8QC9x266asBMaz0O3qtGwHxCLlxAHI9guvkis3qDcoE-AmMH1QBIeNewwBE9j75aevJJDGiMyZ3_1OjkSH7wuysu8KJAWRBKoiyiRO1j88Ze8tUWcyx2AhAI-kUT-dRPz3dzNc0qZCA8nQMOfph4d7TeYIxEsIY9w&w=800",
       "periods": [
         {
           "open": {
@@ -464,7 +654,7 @@
       "openNow": false,
       "hoursLabel": "Opens 9 AM",
       "mapsUri": "https://maps.google.com/?cid=12602782762474821747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAb43m-vdps1WfOqIaqN6agrNdb39lSAjF1RCZad8xOEySPe5GPDCRS3_hIzKdyPJIjm03WrAkeVDbbmxWd559KQARrdQ4p8LUSV_mY9V-e6lDjRlXb9Rq7drgohRov-Sd9frvetALv2W0pDtCgWrAV6q6l3twokb9nEpHqUs5y6ovKGsy2h-uZtyZnHSDsKz_6xx53eCXHjr6lOVvE-CjH4C8kItkf5fnvIDY3RiEgTQ-ODLDT97YxiThToUZSMl1hmjn5X6n2BKdiMvJqaV8rKVyVPrBHMClxYuyOa__fUwxaUUtg&w=800",
+      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAb43m-sgp4UvWn_Js2nZwDXJcFjR9ESz0T50NEzdgvmQo3VQADxc6Yj8NIHBTzaS9JpCgsRvmpV-jVBeJIs6KtWLA2LZ1k-h5TXpAKkR4IEasiA9iwPYbtzbJXaKtUW0ZH6TLW6aNiLVcF5KE3Y8HvfnKmhievu5bWeBQO-eXeLm34Eo_f5xbUYFWTwBxg3wUFCLaX7AjmUi2qMFto5-pS0ZlL2vnybyHnv8PchFA39pPdQzYkNMCLnPKIKODoPp5vNrdNeSXIkFoBwQYiTOhg0uI_HCqFeB9zcTTkK8wP-rtPuONg&w=800",
       "periods": [
         {
           "open": {
@@ -582,7 +772,7 @@
       "openNow": false,
       "hoursLabel": "Opens 8 AM Tue",
       "mapsUri": "https://maps.google.com/?cid=197512686124395836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAb43m-tDnsMCXIRLr-FUG61lr_TflrdtxbdWENrj_6_9WqJkA01z_QrcYazGWBHm2CUOcfHxvgPOd6z8kPBZFrHg3X6K1XuYIL6K4W-v6q1pU2_nhN-j-2QysdI11uM6KCgwXuopMGzzDqM6QUV2ggVqve21GB8fqLmAwOaG5YjrH5QUeW3RTN2Pqz8mlYau98o7Z318cM37qUXsr_AoAasP7PqYQqEpA2iDoAKFCOZIqewOL6bk7cnJRsuofdLzGi_JJWllXrkS8oUyXtzZNDBuADCbqn2f8iHNpw0BoHB7ELOrM8YhR4iszKVwt1bfhVnLzp1fobk0Qwxvey6YbKa9Vocf80eTKZK4JZtarMMLZdQ9IVEX0zFQc-f1tGo7wBoidOaFA1pTylpHkdlUQkRAGt9gfbRt4Hp4LcyPqNUhvS951w&w=800",
+      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAb43m-uRSHmsVDFVBJfeVre0myxuPuHTp8vpkKiufJCF1Dwdwh3bGVE6wMrn6GWXeIzeotxcd0Bq9wLJWojLnvSzNQZ_buba6CEJ6KZCZiY2p921V2TZf4eZdSf2fMaDOaZCMJMTSUZZlcXXWBnyv63gtGbwS_sn9R0mu5nexPKi55ya6P_19fFwMWdOnmTqPp2B77UFycB72e5qBid8cpjZcrxcS7fbI3BeMQRBIpT4GfSXap4rmy9WOFEiP4adCAnQPdKgRZiHrfo-yHgE04rRWFe4RVLrkUMB4w71ynMynhh_QAx6IevltBRjAogqyj1aYw_0ejQRKSUmAIMnOz1yC1TAv4YgT3O3HN8pQ3fE0H3pvGdxjlBOM8b7CkFKr0SO0Y6nvuKdUxGSn0hgurI4_8LY7yvHCiyFkQFrXB51RdVemg&w=800",
       "periods": [
         {
           "open": {
@@ -677,9 +867,92 @@
         "establishment"
       ],
       "openNow": true,
-      "hoursLabel": "Closes 4:30 AM",
+      "hoursLabel": "Opens 8:30 AM",
       "mapsUri": "https://maps.google.com/?cid=7702758291853185098&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJC9ykl6zj2IgRSpCaANux5Wo%2Fphotos%2FAb43m-tDRspBFEnBXKKbeTABHkL2EKccpE4jd853B_TEPXuoCqWuBFBzcjNM0rI51q_aMf2wWsMyRQyR6BHJNijkaAMACcXoax3-3J0mVO4UhrKXClw0AxIn_q1nsRRiCEbSHCt50F_NLgOV5w1vR38M1Wrz5POLdmvOmMs5H-8JSkLC11KVCGT_Lu1NZYz-AAEK-RHfwqmqyyZWCU9qXdV22cAJwWMtJ4S-I3tc44QMQr2AGgOkBUANhMiyczh0wYmWzhe3erXGtI4SaGoyMoSPEylSbR21zCwP10afCqFdtGjKnQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJC9ykl6zj2IgRSpCaANux5Wo%2Fphotos%2FAb43m-tDRspBFEnBXKKbeTABHkL2EKccpE4jd853B_TEPXuoCqWuBFBzcjNM0rI51q_aMf2wWsMyRQyR6BHJNijkaAMACcXoax3-3J0mVO4UhrKXClw0AxIn_q1nsRRiCEbSHCt50F_NLgOV5w1vR38M1Wrz5POLdmvOmMs5H-8JSkLC11KVCGT_Lu1NZYz-AAEK-RHfwqmqyyZWCU9qXdV22cAJwWMtJ4S-I3tc44QMQr2AGgOkBUANhMiyczh0wYmWzhe3erXGtI4SaGoyMoSPEylSbR21zCwP10afCqFdtGjKnQ&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 4,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 8:30 AM – 4:00 PM",
+        "Wednesday: 8:30 AM – 4:00 PM",
+        "Thursday: 8:30 AM – 4:00 PM",
+        "Friday: 8:30 AM – 4:00 PM",
+        "Saturday: 8:30 AM – 4:30 AM",
+        "Sunday: 8:30 AM – 3:00 PM"
+      ]
     },
     {
       "id": "ChIJsRpXWwjh2IgRKW93jO6bWY4",
@@ -702,7 +975,7 @@
       "openNow": false,
       "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=10257401075174174505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAb43m-vT_Mtgqrfb3xud-WXkrFKGUwWisDJMJ4uPF2u_d0KQgDU7ZzwVXLyMCAqo9cq0w_jKd_u-sqSAesTuFZkzJt4iIBoo2xUqtfquTrZhG1I2Q1-UO93yH__1tC5s6JEitufnl-lR7k-qdm4nPFa9DC1GQ_fKJcf7cXBKnStFcn76nhqGY7H0VZimGacXbdUAO-_NtBwxkCvw4xBK4UQgqqYAwUYtWm7khNUnLmr-upQgHnX_buYGizl85ZMDiPiGmirO0QbgYFR11cAKsO_mhBgLAuk_MmhUFkqAb73wFE0ZDBfjTU8pu6tyFGO0_r_jtUg4WSclFw4RxJTku_VWOn0Ufw4Ih6fdMH4scOeacNZqulPIOymWZ_6kJoVZAl_yS-lmSQIRvcyzMzz8sRydOKrIZlrVUapN8WghEh9k5jWggW2oPSJpJQATYNjAgw&w=800",
+      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAb43m-tdOBSYIsoTh99r3agpkog-58XeCuDOCQyFOTI5IX2rv4JHDNm5ESLgV_1AK77Zl8wtLo6T95JSUdkvFZcztIxsLxKW-RjBxxdMFZ5VnV9g3t5TVwpDtjW-8lURU58EPaqMu4ZEPJeGChiRWW-iVxs-JbL9hq6V50d5lNxV5QswAolkRr-iY7s3hhS-H7x_kDHvkjbKsLQ4cVw3FANwW3huuctj05eldd6_zDNAIEg7sGNTMn-YUJVUprVEpsC5TlY5Yl6W0qBZMBVivb9g6TBraE1eq1s9I6ZX--Dl9r94LlsXxozQIHYz6nx-696qKsh6qpdVPnXLd9JDmVSbfCnYmGGITx0RgtEPVaBYG_D_aD3JSCy8hwa4CDeOSOeL2GMgdQzZiNRxImz0d-oNva9BVoSaNCf_JXL7b9H1FtAwE1h7C6LHCKAHeVP7Fg&w=800",
       "periods": [
         {
           "open": {
@@ -824,7 +1097,7 @@
       "openNow": false,
       "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=2381127648570108937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAb43m-tG8P6qaKJFKfF8oOaGN31zwHm12mFruKZ6e51EDd_1AAQlxmj0U4Is_CLccpqw41O0U15EB0X5rlhfYfUFUHpz1M1PH27w09W9wwadYsSkDXj_amcDtxkDIJDKjNMdLO6KFOpK32IlpqV5E61Di-7qnQ8afi0m1N1iDjWvCTZewyZwluxdvUG4XRXIxxdiQBDfSgFVhlwNKWoI3rrnfAJAP0McDxpdvNNcx0PiUpEF183U03vG7sdg-WkSGGEn0DLXz5jigkOicDVY-m230lT3HgfcpHkSXUh5v3p1rYPAsq7Z0nzzXmQChgy_T680pDVAsW2KjEfTv9mfAv783pWYII1-p4rWaMxcC0cG1GUUbQhaq40F2m6dhYKkCxU6gIPKWUgxoRY4pRmECwO7oLUdjt3ZWIMssDrJO-5UeI4&w=800",
+      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAb43m-udAY8KbEoXHkfMxjWdHy0OoL-cLtjwpqaX3_8YgDjdrfeP7L0Z_MqvXNfbkviy7PJZ2KuA67IwZLIoFEB4SToCB-i90YOioom1cf8a4sXTKkKeuRn69xSNgvhVbYFdt1WvdVp-NRqdW6IG9G3qsfBmIfkUdeNLpy4w6uExEBMOw6SC5PmYdUAQBdmOMNQlMAhZO71AhPUkhw3hZSb4xTbpwvxstQ1ZuHQ0fJhM6MyTUYhVkl3ub70NGOubDpzaTjXndVUeLuZhboCTHuKQSs7I3B3i1k5vBaUTvn2dQIM3ZF6jRx4B_Qt6VDpPF41ASWa441gBWHMBO9HdeNBeOpZpTtZty6a7_KT6OQcah4ROsGVAcHcDxhzQUD6NIEoRBtKDSmZvnQ-n5NPGecFszfg1yNGM74TxEYr8qvC5WyY&w=800",
       "periods": [
         {
           "open": {
@@ -947,7 +1220,7 @@
       "openNow": false,
       "hoursLabel": "Opens 9 AM",
       "mapsUri": "https://maps.google.com/?cid=14546951093815158735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAb43m-sgesi2pnS71y6tnoCdqDvoDWNU6HW3zD7TpyIWfgqUUeX-LFTQzqeE64sAfebxIp3Nb5sEPJJCy1et-G33r1BNlHyZ3a9xd3FgTyHUR4TPws6Aigy4spgDmXPDznY3NblJwoljRdy4VSxjL3eap_eOJIThffdinsjiYHjUFg2L5Ei7bLRXC2pDLAxJednX0MRMzg-dfsAjuSzC8qqViScyELmq1BusZWT_hSSed8YrvKWlhB3C_Oouv7RrC5v-KZF_2eX7dsMyQnuoksjn2EC7eR3Aq4m5nsXEVZJiizbfJQ&w=800",
+      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAb43m-t4Hq3W7q4Ovsb_ssDIcCC4NqXUorcCYmm1bNu6Fz5H0u22Af-G_ecQ03iKi9uT9ESSBPVjlFp8cRGC7QWV8Q5iHqOAgqDYLALO3xHEFxcqREehA3ZzjDnVGeEb0PvU92h2timt5G5MTAI3gKFLWCylkQYkkTMtsaTIhdLZ3Kiguw23xsYW3LCnhRflF-NbmAmoTFRkuUsz739RfaNBZj-NUvHyDqh-icuu1AEAu88PvOPwVvef0y07t19_HWQlozS2y6sP8CT_29w_DCOk8UoDttEOK7uw1xaJOujTG0AGEg&w=800",
       "periods": [
         {
           "open": {
@@ -1068,7 +1341,7 @@
       "openNow": false,
       "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=6773133759838425861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAb43m-ukVWsjqewnWmLZUlotfF0GSUdeTj1wAaIX2WXVK6G2KHm_EOcJyt34pn2haFjuuMTq2pCpNhV4DO-nGgSWXiOgxuIte4_nfodsw0kGF9AJbZf22Tj9oTdHCtqIUKOxqbNoPD_-qMrHp8AC7MYAVRz6IbxO8dwgzv2kGvgV8bNhhF09ogr9a4jMvOapQ_NAUNPwQY3mGAzFCg-GqMXGLCSwjJUNgSWNoY50H1sWhJcQgM2eAnquyn-Bs8shlVKa4cOqJGrMB1xgJZG02rk5HFtbZWmXDkxk-cMi6sSyCbLpcQ&w=800",
+      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAb43m-t6Nc7k7avJxRitM2ktk5G2Y4MRbC8-cqnVvZFtYz3mi2BQFtRPR_Ym9GJbIlNdV_dhfqEysHSAhkjV0tIRQ98KDsjntEP-thptFPEzpbgufJUrsb_oo-DTIcg47OpmXLuTO6xU7JxV8HPZRYrviCxDdAoKxfw2v9KCtytc7lT2OqJ6o3-B9guTq7V-vjjPppme-w4xlZyY6HhNJWKTmBJwTNeSBpiUiiZohIcdolg-2wb70qlxFaHMDNWikdmlhI-PYYf3jRRupzTJ5Rk1s5-l5rY80zwReA5YC0YLklR-Ug&w=800",
       "periods": [
         {
           "open": {
@@ -1186,7 +1459,7 @@
       "openNow": false,
       "hoursLabel": "Opens 11 AM",
       "mapsUri": "https://maps.google.com/?cid=251151556470529797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAb43m-vGqjVL2ZYH2bH5Q_ckg0TBjSQbK67BrvUh-jnPZbijzGcdgaf4gLs2Ki13az0X3qXHLMuPSdB1ibo1FKxml7jUtrhfj1AsS8DME0ln5fOG_RbAXQPkcgb_Vj9dKf4dVSFxItWA0FZeFOSglgaeOHQ96gwGnx1gDPWvJ2iPiqRjv0dFygNQ6ORrF3GcmSTsb9ULI4rlhcIPyfxSqnswdgPg6ZtnI8mu0LkRwyQt7azAomNDESILfdJ2oB2ZTU8XpxHp3LKtljVBfU8a8D_NDLdCPHvnhVBiedmjceQo-zCSyPZu2YZH5xzQnaJFYnGGWwTECEWxBwVR1Ndz4UAs2FeHiNAMMVyI5uDMvj3oOekZtwf3sJjKRB2R9HIRU9CVQG_ypkuDJW_po4aXZrEU2TWhGr402VBHddnHmLFz9mD-qB0&w=800",
+      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAb43m-t3rAexGalMWTpxlgseWDZRwVVyrr2YM70urL5L99-d76Rq6nYcQ12eHsr8y_BfvRDlABGz0KOaq8KJ8nObzvUeRZnXHhi4cv9UxQIXE2G70sduJJa7MGc2VL1Y0SsSbuniy_7Yim_kIUuX4uKnt-hQ577NGKX7u6klFrYDyY0ZB_xrJ2DDiDE5uTLm3BAmXrkKfn9cTNSWcHTSnhjWfLEBTGOMU-83kR09SfbdCnYEimlK7ptuhqEipsohJP7AiIgO69UbCK0fkkpeafHaPAygsN_7gN9geOW4kKBohTgNURStpha52w7snqcQhwDy90lFC77vlJ-0vMuXrOV4E60JOqjOKQiUpF472oazza1bQPfvOQuWO4sm6DYEVVCn6BWvTXyOu7diew2lj03nv3tikTBDmNAOjBgj72FvejxR4ss&w=800",
       "periods": [
         {
           "open": {
@@ -1306,7 +1579,7 @@
       "openNow": false,
       "hoursLabel": "Opens 8:30 AM Mon",
       "mapsUri": "https://maps.google.com/?cid=15477486557069636243&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAb43m-tH799z6Q-_DMwRNmjlBH2DcOY2SPtVcWvJlc4hD1ph0FRexTSK0PxNGGzrZtzM4_eJDThlvowOzlxNPzX_zS6F_cU-SRP-yg9xbI8_Uf_1KOwL5-ZINPS89Rekd2cgewUmNIG7H9WLJGwlH1WeJQ1-uuMV7VRmlZD2r9jiF3RrLVhCrbEpaRq-BWpstFypI3romOWflMATWAXXZTJeEI5TEczRrhSehZ-ccFMh2WHTqLtZYzfcFJDjNaT30uuwTJ035LsoAQ6x2E5GzGZ1ePaj07za9WBMVvlMlk8Dq9UgwQ&w=800",
+      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAb43m-tn7p0aZ2ytgLGPgCNMHiiv2hz40WFr6qJbHEzjJv26tua8CEGtL-Jia5uEh83fCyD5GRRLbvDoe9sieIjVnv45e9-p8ASkyw2I9yVC-YJB973oG5izgm3T91VD_Hy-TflR-oCelGdECemVwCLjI6Dda-RynD0DiedDU5pPUoIpGRZvD_axQCpLwSzoXp6L7yCBp86s9O_5S7MucNgX2YoPMTNQjwB0BvpWiDgzBrRuqbNynMxpYPkAKgFhkP0L_3HMhOjar8ji7e4MNqnhwuu4oAilAo7D1RlJJ_LA1kJe1Q&w=800",
       "periods": [
         {
           "open": {
@@ -1412,7 +1685,7 @@
       "openNow": false,
       "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=4593460406202876122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAb43m-uNL14hLx6rhIJ-VX9ZaGjpUqna5siKiGLlFCoHyNvfngSSH7s9wWhgrnBppM0au7Vozx2cYRvVIX0fGkG8_D6pQiZKT2o64Vzv2t06CGGaAq1sG1tTSABiNzrqsQNDU98oo_ZVLV2OXt0kSauwdjiv4nyVDbIcE19WrgaQoeyh-Oy1rdasTeB_Y0sHVCJKRqC_0yGxV6W64BOZv4r9D_7_uPdDJMZEH9bX5NeREWR-tAup1qsbqtD6r5S7IAGnvgL2LP0bxCZxHVddOPyvH36qerWHZ9Uy5AKW_jpnQSo0GQ&w=800",
+      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAb43m-vhH7XAtzR63MgceNM5mqef68DLLUukP9nxZx9dTSUDP-8AxKgQPz7Y3SLwSzsqoD1kB56RPMnWXudOJd_7lqT7LiYHKCch4o6xC9nA6QR8_NKL5ZMKlo1Vvi1mBW5aGzvnjGLfF4KnVfTyjWqexmA3mTwz6EDZQvSbMYnkELK1y79l2wErZCa35XkihzpmDRrHgszN_74LTqCfQUb66-dDSqFZCrJVnzhft7kj62rBrT93xRC-ZrKlDnF9E_pG342bgL0xNaYo-ygSuAseMxIRmwd2YiBgfRSPbguRXP_2Rw&w=800",
       "periods": [
         {
           "open": {
@@ -1530,7 +1803,7 @@
       "openNow": false,
       "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=5292730914104328400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAb43m-uh2Qwl3BRGxLubs1lUB2WmQjBTmubxtOjusI0cTr8UTXDs7NSfoNtUJlrvP759tzuwPPBAKfKXrNnZEhZ6pgpuvvbijGTEdefYDgYRD7RADpHhV6Z-44UkcxMkDbBlUTcy8ntbMFJAfe-xNChIuwFJT5QlEYdR1m6WODwZ0gL-GwCcnaYoC5gvy_5HtYzfouoprOfTLH3_RHv_ncDpjlg4r46UIUOP7xEREKYkLqbmSKikEcB3mqiwxmwwYwVXdXat6mxORm9Ng2NYrpVd8RV4QisnPmjYFuBQk3wmFMzcHg&w=800",
+      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAb43m-uiHvcvFEmnt8qYDt0hf8RtWXrNigCG464tZMIp3KjZr52knSFmFNpIcgov4JPxjyFltl_bWtNZya2r3CjKGQhdiddCq5DOfBIV6fESKg6iaXHmllPsOg5a91PefH9bmsstexF74LQ_GhbvCNs0mv9Ezab-Z9KkXGW7IwkUSv3Et-GivSznaXlCYabo_umXADTasN1x3pFqyOP0FLpHuqYX_SEMQJa1addZZK6Hr_n8Iux3ZJiNoE5XG8UHNLbYoYgqywoPolKQu6NKezHWGd-vltFxuW20rIv21f6zootjBA&w=800",
       "periods": [
         {
           "open": {
@@ -1773,9 +2046,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 8:30 AM Sun",
+      "hoursLabel": "Opens 8:30 AM",
       "mapsUri": "https://maps.google.com/?cid=5953496463407737553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ-_O-FgDj2IgR0Wr2kH0Rn1I%2Fphotos%2FAb43m-u-3PkiY_rGFa1L_C9zjAlKyeyOPlNrPRGyzIgu1GCyQ6AkhC75j1Kcm554MNO5Bvl37Suho7Z_QPSCRMqiOenNC8Nw_Na6jiuntt2WGNrx4o_yGxAhAJ5ZHXhpNdI4LwrBcxctRk0BaatmSgeEzB2EfSa1nReZfpCpPI318jGaWFvwHfTfbYusB3lvYehNKEpdoNeM7rJIOtj7IDqYEgGMlccq6I1ujcBZeHY88yLwEqlft4FlGxOwDVO2PNPzAxMMFCfMqDHFWZ-Fo3icO-0fiTIVC6d9YlKVGZMSaZrqTijeTeBxoz74kow0inZBuJ_2ZmjS5q68F-qKscLnOdzGfUZlRvtU0984BUh3eSUTrOyY6N4EY5uMUOT28cJYeO8qp6pTAnmsZv5pjdsTCBtibx_EmFVPbb4YYK1bTdORgYaXXO72hhcDCwaeDmec&w=800"
+      "photo": "/api/photo?name=places%2FChIJ-_O-FgDj2IgR0Wr2kH0Rn1I%2Fphotos%2FAb43m-tznFiIpdUpO9nCUw0lPhIP-yvOD1JXuORtZ7C-1RWvkoHMl6px0d1iKWJsisGL_lAotVDu-MiaLzTRconVcts6nzXL5s9eNePg5tWI9L33TT7glE3iPU_5uhDRTMcawy3-6hSkvTOw-_NCRzB9ABi72Xa4BVgzZuqM0zpmqx4mopZkU6ma9PN7dV9nGnbOsgIJDs0hf09lkIhJB3COwA0-eoZbO9Bwd4TKF8iomwvAJ1oetni4-4q7dVqgq9OZjHGBeGrMhKr3c6j1FukQXE1ET5kjMFShtMSLJLiIWLVwUKP29awpW1uk0FqBGtRlVIi8snCuhDwW_lz8oCAgs-TFzml6Lk51RwjbxkkOiBNd57N0e9OfQ3jE0QtcNgIbh3m1Mxvw0M8eHNcGWRWJvNQl6cHdqOSZnC9pHv6-I-uOQukiW_PjmU3fpL15ILYc&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 9:00 AM – 5:00 PM",
+        "Tuesday: 8:30 AM – 5:00 PM",
+        "Wednesday: 8:30 AM – 5:00 PM",
+        "Thursday: 8:30 AM – 5:00 PM",
+        "Friday: 8:30 AM – 5:00 PM",
+        "Saturday: 8:30 AM – 5:00 PM",
+        "Sunday: 8:30 AM – 5:00 PM"
+      ]
     },
     {
       "id": "ChIJQ98zGMfj2IgRo5LU42SyiqQ",
@@ -1798,7 +2166,7 @@
       "openNow": false,
       "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=11856485115395084963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAb43m-tZZloubFrwXidNHOxwiIMraxan2QB40O7i0kw-5oCRWexGUzOCxa4zWDgXRGkb-cb0EhHlJJLYHTjBY4GhSxhw701roqUbODpeWtxaKfKhvzwWFUErxdBmqjgn4WuDBqlPa6ZZbF8n-BXeoPAPgyvfx56GiEQBxh0RgcUJpIQQH9hcEwsP8s5J5jhWAsgQnxqgwkQGlpkxUFmJIE5W-yrhkhK8WOVfDWFQRTlv_FEAmvdXS3DG5Vixi_huRH7Qt3g7Mkuspv6QbHRtGc5kD-YFtgAjqevaFljU2ofbjbqyrg&w=800",
+      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAb43m-tBeLwQJ-zasALj_RVBik3thVyoPxIBT8ZyVqygLaykkBgu0T0QV4E-8VQLXJ3NaIGL3Hj_M4RDUdCDlJmxgio1dJ9RpKvOo9bD9ixVD6IgvgXE6o9PEpeJ-m-TeTqB4tfrjVDZUS5RBYIXvH5QIlB5TFivM6bp_SL5iQtGogHg6pwjWdDFxQ3hlXvXbyMFsvsJ7L5lvDr2hOA9ttswccypAwboPgfTKC9u2FKix5gE_xqfOwuYmBSs81L2PgQ7tVL9WpV7qsXnUdzMJRgS8aLtRBt13IXZlMXx-52d9udDdQ&w=800",
       "periods": [
         {
           "open": {
