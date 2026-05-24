@@ -457,6 +457,7 @@ const EVENT_ALLOWLIST = new Set([
   "help_submit",
   "signin",
   "signup",
+  "share",
 ]);
 const CID_RE = /^[A-Za-z0-9_-]{6,64}$/;
 const PROPS_MAX_BYTES = 1024;
