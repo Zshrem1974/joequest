@@ -1286,12 +1286,15 @@
       <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#5E3E27"/>
     `;
 
-    function pinSVG(x, y, scale, id, rating, withPill) {
-      // Pill is wider + bolder so the star + rating stay legible on the map.
-      const pill = withPill && rating
-        ? `<g transform="translate(${x - 24}, ${y + 4})">
-             <rect width="48" height="21" rx="10.5" fill="#FFF6EC" stroke="rgba(43,28,18,0.18)" stroke-width="1"/>
-             <text x="24" y="15.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="700">
+    function pinSVG(x, y, scale, id, rating) {
+      // Pill scales with the pin so it works on both mini and full maps.
+      const pillW = 26 + scale * 46;          // big ≈ 50, mini ≈ 39
+      const pillH = 12 + scale * 17;          // big ≈ 21, mini ≈ 17
+      const pillFs = 6.5 + scale * 11.5;      // big ≈ 12.5, mini ≈ 9.7
+      const pill = rating
+        ? `<g transform="translate(${x - pillW / 2}, ${y + 3})">
+             <rect width="${pillW}" height="${pillH}" rx="${pillH / 2}" fill="#FFF6EC" stroke="rgba(43,28,18,0.18)" stroke-width="1"/>
+             <text x="${pillW / 2}" y="${pillH * 0.7}" text-anchor="middle" font-family="Inter, sans-serif" font-size="${pillFs}" font-weight="700">
                <tspan fill="#E8A317">★</tspan><tspan fill="#5E3E27" dx="2">${rating.toFixed(1)}</tspan>
              </text>
            </g>`
@@ -1363,7 +1366,7 @@
       cafes.forEach((c) => {
         if (typeof c.lat !== "number" || typeof c.lng !== "number") return;
         const { x, y } = projectXY(c.lat, c.lng, w, h);
-        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, c.rating ?? 0, detailed));
+        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, c.rating ?? 0));
       });
     }
 
