@@ -132,6 +132,65 @@ function priceToDollars(level) {
     PRICE_LEVEL_VERY_EXPENSIVE: "$$$$",
   }[level] || "$$";
 }
+
+// Compute a human-friendly "Closes 9 PM" or "Opens 8 AM Mon" label from the
+// Places opening hours object. Times are local to Boca (ET).
+function fmtTime(h, m) {
+  m = m || 0;
+  const ampm = h >= 12 ? "PM" : "AM";
+  const h12 = h % 12 || 12;
+  return m === 0 ? `${h12} ${ampm}` : `${h12}:${String(m).padStart(2, "0")} ${ampm}`;
+}
+function nowInBoca() {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    weekday: "long", hour: "numeric", minute: "numeric", hour12: false,
+  }).formatToParts(new Date());
+  const dayName = parts.find((p) => p.type === "weekday").value;
+  const hour = parseInt(parts.find((p) => p.type === "hour").value, 10) || 0;
+  const minute = parseInt(parts.find((p) => p.type === "minute").value, 10) || 0;
+  const days = { Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6 };
+  return { dayIdx: days[dayName], minutes: hour * 60 + minute };
+}
+function hoursLabel(hoursObj) {
+  const periods = hoursObj?.periods;
+  if (!periods?.length) return null;
+  const { dayIdx, minutes } = nowInBoca();
+  const nowMin = dayIdx * 1440 + minutes;
+
+  const events = periods
+    .map((p) => {
+      if (!p.open) return null;
+      const o = p.open, c = p.close;
+      let open = (o.day || 0) * 1440 + (o.hour || 0) * 60 + (o.minute || 0);
+      let close;
+      if (!c) close = open + 1440;
+      else {
+        close = (c.day || 0) * 1440 + (c.hour || 0) * 60 + (c.minute || 0);
+        if (close <= open) close += 7 * 1440;
+      }
+      // Roll past periods forward so we can pick "next" easily
+      while (close <= nowMin) { open += 7 * 1440; close += 7 * 1440; }
+      return { open, close, p };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.open - b.open);
+  if (!events.length) return null;
+
+  const cur = events.find((e) => nowMin >= e.open && nowMin < e.close);
+  if (cur) {
+    const c = cur.p.close;
+    if (!c) return "Open 24h";
+    return "Closes " + fmtTime(c.hour || 0, c.minute || 0);
+  }
+  const next = events.find((e) => e.open >= nowMin);
+  if (!next) return null;
+  const o = next.p.open;
+  const openDay = Math.floor((next.open % (7 * 1440)) / 1440);
+  const dayLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const dayPart = openDay === dayIdx ? "" : " " + dayLabels[openDay];
+  return "Opens " + fmtTime(o.hour || 0, o.minute || 0) + dayPart;
+}
 function score(c) {
   if (!c.rating || !c.reviews) return 0;
   return c.rating * c.rating * Math.log10(c.reviews + 1);
@@ -149,7 +208,8 @@ async function searchBocaCafes() {
         "places.id", "places.displayName", "places.formattedAddress",
         "places.location", "places.rating", "places.userRatingCount",
         "places.priceLevel", "places.types", "places.photos",
-        "places.regularOpeningHours", "places.googleMapsUri",
+        "places.regularOpeningHours", "places.currentOpeningHours",
+        "places.googleMapsUri",
       ].join(","),
     },
     body: JSON.stringify({ textQuery: `coffee shops in ${CITY}`, maxResultCount: 20 }),
@@ -174,7 +234,8 @@ async function searchBocaCafes() {
       reviews: p.userRatingCount ?? 0,
       price: priceToDollars(p.priceLevel),
       types: p.types || [],
-      openNow: p.regularOpeningHours?.openNow ?? null,
+      openNow: (p.currentOpeningHours ?? p.regularOpeningHours)?.openNow ?? null,
+      hoursLabel: hoursLabel(p.currentOpeningHours ?? p.regularOpeningHours),
       mapsUri: p.googleMapsUri || null,
       // photo[0]'s resource name → exposed via our proxy
       photo: p.photos?.[0]?.name ? `/api/photo?name=${encodeURIComponent(p.photos[0].name)}&w=800` : null,
