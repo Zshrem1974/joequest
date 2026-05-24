@@ -299,6 +299,87 @@ export function memEventsSnapshot() {
   return memEvents.slice();
 }
 
+// Compute the aggregates the admin view needs.
+// For MVP volume we just fetch the rows and tally in JS. At scale this
+// becomes a SQL view or RPC.
+export async function computeEventStats({ days = 7 } = {}) {
+  const sinceIso = new Date(Date.now() - days * 86400000).toISOString();
+
+  let rows = [];
+  let totalAllTime = 0;
+
+  if (supabase) {
+    // Total all-time (cheap COUNT)
+    const { count } = await supabase
+      .from("events")
+      .select("id", { count: "exact", head: true });
+    totalAllTime = count ?? 0;
+
+    // Recent window rows (capped to last 5000 to avoid runaway)
+    const { data, error } = await supabase
+      .from("events")
+      .select("client_id, name, path, created_at")
+      .gte("created_at", sinceIso)
+      .order("created_at", { ascending: false })
+      .limit(5000);
+    if (error) throw new Error(`Supabase computeEventStats: ${error.message}`);
+    rows = data || [];
+  } else {
+    rows = memEvents.filter((e) => e.created_at >= sinceIso);
+    totalAllTime = memEvents.length;
+  }
+
+  // Tallies
+  const uniqClients = new Set();
+  const byName = {};
+  const byDay = {};
+  const byPath = {};
+  // Funnel — unique clients hitting each step at least once in the window
+  const funnelClients = {
+    app_open: new Set(),
+    cafe_open: new Set(),
+    pick_reveal: new Set(),
+    favourite_add: new Set(),
+  };
+
+  for (const r of rows) {
+    uniqClients.add(r.client_id);
+    byName[r.name] = (byName[r.name] || 0) + 1;
+    if (r.path) byPath[r.path] = (byPath[r.path] || 0) + 1;
+    const day = (r.created_at || "").slice(0, 10);
+    if (day) byDay[day] = (byDay[day] || 0) + 1;
+    if (funnelClients[r.name]) funnelClients[r.name].add(r.client_id);
+  }
+
+  // Fill missing days with 0
+  const dayKeys = [];
+  for (let i = days - 1; i >= 0; i--) {
+    const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+    dayKeys.push(d);
+    if (!(d in byDay)) byDay[d] = 0;
+  }
+
+  const funnel = {
+    app_open: funnelClients.app_open.size,
+    cafe_open: funnelClients.cafe_open.size,
+    pick_reveal: funnelClients.pick_reveal.size,
+    favourite_add: funnelClients.favourite_add.size,
+  };
+
+  return {
+    windowDays: days,
+    totalAllTime,
+    totalInWindow: rows.length,
+    uniqueClients: uniqClients.size,
+    byName,
+    byPath,
+    byDay,
+    dayKeys,
+    funnel,
+    generatedAt: new Date().toISOString(),
+  };
+}
+
 // ----------------------------------------------------------------------------
 // HELP MESSAGES (Stage 4 — drawer → Help form)
 // ----------------------------------------------------------------------------

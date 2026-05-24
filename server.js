@@ -44,7 +44,7 @@ import {
   getTasteProfile, saveTasteProfile,
   getUserSettings, saveUserSettings, clearUserData,
   listActiveOffers, revealOffer, saveHelpMessage,
-  saveEvent,
+  saveEvent, computeEventStats,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -356,6 +356,41 @@ const EVENT_ALLOWLIST = new Set([
 ]);
 const CID_RE = /^[A-Za-z0-9_-]{6,64}$/;
 const PROPS_MAX_BYTES = 1024;
+
+// ---- admin gate + admin stats (Instrumentation Stage 2) -------------------
+// Simple shared-secret gate via the ADMIN_TOKEN env var. Header takes priority,
+// query string is the fallback so you can open /admin?token=… in a browser.
+function adminAllowed(req) {
+  const expected = process.env.ADMIN_TOKEN;
+  if (!expected) return false;
+  const got = req.get("X-Admin-Token") || req.query?.token || "";
+  if (typeof got !== "string" || got.length === 0) return false;
+  // Constant-time-ish compare. Strings of different length always reject.
+  if (got.length !== expected.length) return false;
+  let diff = 0;
+  for (let i = 0; i < expected.length; i++) diff |= got.charCodeAt(i) ^ expected.charCodeAt(i);
+  return diff === 0;
+}
+
+app.get("/api/admin/stats", async (req, res) => {
+  if (!adminAllowed(req)) return res.status(401).json({ error: "Unauthorized" });
+  try {
+    const days = Math.max(1, Math.min(30, parseInt(req.query?.days, 10) || 7));
+    res.json(await computeEventStats({ days }));
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// /admin — render the dashboard page. The file lives OUTSIDE /public so the
+// static middleware can't accidentally serve it without the token.
+app.get("/admin", (req, res) => {
+  if (!adminAllowed(req)) {
+    return res
+      .status(401)
+      .type("text/plain")
+      .send("Unauthorized.\n\nAppend ?token=YOUR_ADMIN_TOKEN to the URL.");
+  }
+  res.sendFile(path.join(__dirname, "admin-views", "admin.html"));
+});
 
 app.post("/api/event", async (req, res) => {
   // Acknowledge immediately so the browser never waits on us.

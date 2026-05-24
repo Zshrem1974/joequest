@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JoeQuest — admin</title>
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --espresso: #5E3E27;
+      --espresso-deep: #2B1C12;
+      --crema: #D98324;
+      --crema-light: #F0A847;
+      --oat: #F5E9DC;
+      --cream: #FFF6EC;
+      --mint: #3B7D5A;
+      --line: rgba(94, 62, 39, 0.14);
+      --muted: rgba(94, 62, 39, 0.6);
+      --display: "Poppins", -apple-system, system-ui, sans-serif;
+      --body: "Inter", -apple-system, system-ui, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--oat);
+      color: var(--espresso);
+      font-family: var(--body);
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 24px 80px;
+    }
+
+    header.top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    header.top h1 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 26px;
+      color: var(--espresso);
+      letter-spacing: -0.3px;
+      margin: 0;
+    }
+    header.top .sub { color: var(--muted); font-size: 13px; }
+    header.top .controls { display: flex; align-items: center; gap: 12px; }
+    header.top select, header.top button {
+      background: var(--cream);
+      color: var(--espresso);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    header.top button:hover { background: var(--oat); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .stat {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 2px rgba(43,28,18,0.04);
+    }
+    .stat .v {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 32px;
+      color: var(--espresso);
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .stat .k {
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    section {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+    section h2 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 200px 1fr 60px;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 0;
+      font-size: 13px;
+    }
+    .bar-row .label { color: var(--espresso); font-weight: 500; }
+    .bar-row .label code { font-family: var(--mono); font-size: 12px; }
+    .bar-row .track {
+      height: 14px;
+      background: var(--oat);
+      border-radius: 7px;
+      overflow: hidden;
+      position: relative;
+    }
+    .bar-row .fill {
+      height: 100%;
+      background: var(--crema);
+      border-radius: 7px;
+      min-width: 2px;
+      transition: width 0.2s ease;
+    }
+    .bar-row .fill.funnel { background: var(--espresso); }
+    .bar-row .fill.path   { background: var(--mint); }
+    .bar-row .n {
+      text-align: right;
+      color: var(--espresso);
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+    }
+
+    .empty { color: var(--muted); font-style: italic; padding: 8px 0; }
+    .err {
+      background: rgba(195,74,54,0.10);
+      color: #9a3a2a;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin: 14px 0;
+    }
+    .footer {
+      margin-top: 28px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    .footer code { font-family: var(--mono); font-size: 11.5px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <h1>JoeQuest · admin</h1>
+        <div class="sub" id="generated">—</div>
+      </div>
+      <div class="controls">
+        <label for="window" class="sub">Window</label>
+        <select id="window" aria-label="Time window">
+          <option value="1">1 day</option>
+          <option value="7" selected>7 days</option>
+          <option value="14">14 days</option>
+          <option value="30">30 days</option>
+        </select>
+        <button id="refresh">Refresh</button>
+      </div>
+    </header>
+
+    <div id="err" class="err" hidden></div>
+
+    <div class="grid">
+      <div class="stat"><div class="v" id="stat-all">—</div><div class="k">events · all time</div></div>
+      <div class="stat"><div class="v" id="stat-window">—</div><div class="k">events · window</div></div>
+      <div class="stat"><div class="v" id="stat-unique">—</div><div class="k">unique visitors</div></div>
+      <div class="stat"><div class="v" id="stat-funnel-conv">—</div><div class="k">app_open → favourite</div></div>
+    </div>
+
+    <section>
+      <h2>Funnel (window)</h2>
+      <div id="funnel-rows"></div>
+    </section>
+
+    <section>
+      <h2>Events by day</h2>
+      <div id="day-rows"></div>
+    </section>
+
+    <section>
+      <h2>Events by name</h2>
+      <div id="name-rows"></div>
+    </section>
+
+    <section>
+      <h2>Events by view (path)</h2>
+      <div id="path-rows"></div>
+    </section>
+
+    <div class="footer">
+      JoeQuest admin · token in URL only · no PII collected · <code>events</code> table on Supabase
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const token = params.get("token");
+
+    const fmt = (n) => (n == null ? "—" : n.toLocaleString());
+    const $ = (id) => document.getElementById(id);
+
+    function bar(label, value, max, kind = "crema") {
+      const pct = max > 0 ? Math.max(0, Math.round((value / max) * 100)) : 0;
+      const safeLabel = String(label).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+      return `
+        <div class="bar-row">
+          <div class="label"><code>${safeLabel}</code></div>
+          <div class="track"><div class="fill ${kind}" style="width:${pct}%"></div></div>
+          <div class="n">${fmt(value)}</div>
+        </div>
+      `;
+    }
+
+    async function load() {
+      $("err").hidden = true;
+      const days = $("window").value;
+      const url = `/api/admin/stats?days=${encodeURIComponent(days)}&token=${encodeURIComponent(token || "")}`;
+      let s;
+      try {
+        const r = await fetch(url);
+        if (!r.ok) {
+          const j = await r.json().catch(() => ({}));
+          throw new Error(j.error || ("HTTP " + r.status));
+        }
+        s = await r.json();
+      } catch (e) {
+        $("err").hidden = false;
+        $("err").textContent = "Couldn't load stats: " + e.message;
+        return;
+      }
+
+      $("generated").textContent = "Generated " + new Date(s.generatedAt).toLocaleString() + " · last " + s.windowDays + " day" + (s.windowDays === 1 ? "" : "s");
+      $("stat-all").textContent = fmt(s.totalAllTime);
+      $("stat-window").textContent = fmt(s.totalInWindow);
+      $("stat-unique").textContent = fmt(s.uniqueClients);
+
+      // Funnel
+      const order = ["app_open", "cafe_open", "pick_reveal", "favourite_add"];
+      const fmax = Math.max(1, ...order.map(k => s.funnel?.[k] ?? 0));
+      $("funnel-rows").innerHTML = order.map(k => bar(k, s.funnel?.[k] ?? 0, fmax, "funnel")).join("");
+      const conv = (s.funnel?.app_open || 0) > 0
+        ? Math.round(((s.funnel?.favourite_add || 0) / s.funnel.app_open) * 100) + "%"
+        : "—";
+      $("stat-funnel-conv").textContent = conv;
+
+      // Days
+      const dayKeys = s.dayKeys || Object.keys(s.byDay || {}).sort();
+      const dmax = Math.max(1, ...dayKeys.map(d => s.byDay?.[d] ?? 0));
+      $("day-rows").innerHTML = dayKeys.length
+        ? dayKeys.map(d => bar(d, s.byDay?.[d] ?? 0, dmax)).join("")
+        : `<div class="empty">No events in window.</div>`;
+
+      // Names (sorted desc)
+      const names = Object.entries(s.byName || {}).sort((a, b) => b[1] - a[1]);
+      const nmax = Math.max(1, ...names.map(([, v]) => v));
+      $("name-rows").innerHTML = names.length
+        ? names.map(([k, v]) => bar(k, v, nmax)).join("")
+        : `<div class="empty">No events in window.</div>`;
+
+      // Paths
+      const paths = Object.entries(s.byPath || {}).sort((a, b) => b[1] - a[1]);
+      const pmax = Math.max(1, ...paths.map(([, v]) => v));
+      $("path-rows").innerHTML = paths.length
+        ? paths.map(([k, v]) => bar(k, v, pmax, "path")).join("")
+        : `<div class="empty">No path data yet.</div>`;
+    }
+
+    document.getElementById("refresh").addEventListener("click", load);
+    document.getElementById("window").addEventListener("change", load);
+    load();
+  </script>
+</body>
+</html>

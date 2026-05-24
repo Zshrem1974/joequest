@@ -87,6 +87,56 @@ alter table events enable row level security;
 notify pgrst, 'reload schema';
 ```
 
+### Stage 2 — minimal admin view (`/admin`)
+
+A read-only stats page gated by a shared secret. Built for *us* to skim
+during user-testing — not a product, not user-facing.
+
+**Server**
+- `GET /api/admin/stats?days=N` (default N=7) returns aggregates:
+  `totalAllTime`, `totalInWindow`, `uniqueClients`, `byName` (count per
+  event), `byPath` (count per view), `byDay` (count per ISO day, with
+  empty days filled), `funnel` (unique-client counts for the four key
+  steps), plus a `generatedAt` timestamp.
+- `GET /admin` serves `admin-views/admin.html`. The file lives **outside
+  `/public/`** so the static handler can't serve it without the token —
+  the only path to it goes through the gate.
+- Gate: `adminAllowed(req)` checks `ADMIN_TOKEN` env var against either
+  `X-Admin-Token` header or `?token=…` query param, with a constant-
+  time-ish string compare.
+
+**Client**
+- Bare HTML page in JoeQuest palette (Poppins display, Inter body), four
+  stat cards (all-time, window, unique visitors, funnel conversion),
+  four bar-chart sections (funnel, by day, by name, by view). No charting
+  library — bars are `width: %` div fills.
+- Window selector (1 / 7 / 14 / 30 days) and refresh button.
+- Reads `?token=` from the URL and forwards it to `/api/admin/stats`.
+
+**db.js**
+- `computeEventStats({ days })` — fetches up to 5,000 most-recent rows in
+  the window (cheap COUNT(*) for the all-time number), tallies in JS.
+  At meaningful scale this becomes a Postgres view or `rpc()` — left as
+  a comment in the source.
+
+### How to open the admin view
+
+1. Set `ADMIN_TOKEN` in Render → Environment → Add env var. Pick a long
+   random string (e.g. `openssl rand -hex 32`). Save → Render redeploys.
+2. In your browser: `https://joequest.onrender.com/admin?token=YOUR_TOKEN`
+3. Bookmark that URL with the token included. **Don't paste it in chat or
+   commit it to the repo.** The token is the only thing standing between
+   the public internet and your stats.
+
+### Required env var (NEW)
+
+| Var | Required | Where |
+|---|---|---|
+| `ADMIN_TOKEN` | Yes (for admin view) | Server only. Long random secret. |
+
+If `ADMIN_TOKEN` is unset, `/admin` and `/api/admin/stats` both reject
+every request with 401.
+
 ### What this will tell us once Boca users hit the site
 
 Funnel: `app_open` → `cafe_open` → `pick_reveal` → `favourite_add`.

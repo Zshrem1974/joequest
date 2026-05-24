@@ -2152,7 +2152,7 @@
           els.banner.textContent = "⚠️  Server is missing API keys: " +
             [!status.google && "GOOGLE_PLACES_API_KEY", !status.anthropic && "ANTHROPIC_API_KEY"].filter(Boolean).join(" + ");
         }
-      } catch {}
+      } catch (e) { console.warn("status check:", e); }
 
       await initAuth();
       await loadFavourites();
@@ -2180,7 +2180,7 @@
     // ---- auth init ----
     async function initAuth() {
       let cfg = {};
-      try { cfg = await fetch("/api/auth/config").then((r) => r.json()); } catch {}
+      try { cfg = await fetch("/api/auth/config").then((r) => r.json()); } catch (e) { console.warn("auth config:", e); }
       if (!cfg.url || !cfg.anonKey || !window.supabase) {
         // No auth configured — log out the UI permanently and keep anon-only saves.
         currentUser = null;
@@ -2413,7 +2413,7 @@
             const d = await r.json();
             s = { ...s, ...(d.settings || {}) };
           }
-        } catch {}
+        } catch (e) { console.warn("loadSettings:", e); }
       } else {
         try {
           const local = JSON.parse(localStorage.getItem(ANON_SETTINGS_KEY) || "{}");
@@ -2431,7 +2431,7 @@
             headers: await authedHeaders(),
             body: JSON.stringify(state.settings),
           });
-        } catch {}
+        } catch (e) { console.warn("saveSettings:", e); }
       } else {
         localStorage.setItem(ANON_SETTINGS_KEY, JSON.stringify(state.settings));
       }
@@ -2559,7 +2559,7 @@
           const d = await r.json();
           state.taste = d.profile || null;
         }
-      } catch {}
+      } catch (e) { console.warn("loadTasteProfile:", e); }
     }
     const TASTE_LABELS = {
       roast:       { light: "Light", medium: "Medium", dark: "Dark" },
@@ -2999,10 +2999,16 @@
 
     async function prefetchPicks(id) {
       if (state.pickCache.has(id)) return;
+      let data;
       try {
         const headers = await authedHeaders();
-        const data = await fetch("/api/cafes/" + encodeURIComponent(id), { headers }).then((r) => r.json());
-        if (data.error) return;
+        data = await fetch("/api/cafes/" + encodeURIComponent(id), { headers }).then((r) => r.json());
+      } catch (e) {
+        console.warn("prefetchPicks:", id, e);
+        return;
+      }
+      try {
+        if (data.error) { console.warn("prefetchPicks api error:", id, data.error); return; }
         state.pickCache.set(id, data);
         // refresh any visible card strip
         $$(`[data-picks-for="${id}"]`).forEach((el) => {
@@ -3023,7 +3029,7 @@
             </div>
           `;
         });
-      } catch {}
+      } catch (e) { console.warn("prefetchPicks render:", id, e); }
     }
 
     // ---- filters (Map view) ----
