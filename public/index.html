@@ -3000,7 +3000,8 @@
     async function prefetchPicks(id) {
       if (state.pickCache.has(id)) return;
       try {
-        const data = await fetch("/api/cafes/" + encodeURIComponent(id), { headers: apiHeaders }).then((r) => r.json());
+        const headers = await authedHeaders();
+        const data = await fetch("/api/cafes/" + encodeURIComponent(id), { headers }).then((r) => r.json());
         if (data.error) return;
         state.pickCache.set(id, data);
         // refresh any visible card strip
