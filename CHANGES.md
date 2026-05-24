@@ -1,5 +1,50 @@
 # CHANGES
 
+## UI: last-input-wins for city/ZIP/Location + share-on-sheet + copy tweaks
+
+### City / ZIP / Location now follow a single "last input wins" rule
+
+The three location-ish controls in the city-bar (city dropdown, ZIP
+input, Location button) were previously additive — Location set the
+distance origin but kept the old city; ZIP disabled the dropdown
+entirely. They each now cleanly override the others, matching real
+user intent.
+
+| Last action | What clears | What stays |
+|---|---|---|
+| **Pick city** | ZIP mode + ZIP value + origin (geolocation **or** ZIP) | Selected city is the only filter; distance lines disappear |
+| **Tap Location** | ZIP mode + ZIP value | Auto-switches dropdown to the nearest city we have data for; origin = your position; cards re-sort by distance |
+| **Type ZIP** | Geolocation origin (overwritten by ZIP centroid) | ZIP mode active; all 6 cities' cafés listed, sorted by distance from ZIP |
+
+Code: `selectCity()`, `locateMe()`, and `renderCityDropdown()` in
+`public/index.html`. `applyZip()` already overrode geolocation origin
+via direct reassignment so it didn't need a change.
+
+**Pre-existing follow-up not addressed here:** `projectXY()` in the map
+renderer is still hardcoded to Boca's bbox, so the "you" pin and café
+pins for non-Boca cities will be off-canvas on the stylized SVG map
+view. The card list, dropdown, and `?city=` API path all work correctly
+across cities — only the map's pixel projection is Boca-only.
+
+### Bug fix: Map view's café list now updates when city changes
+
+`selectCity()` called `renderMaps()` (plural — repaints the mini + big
+map SVG canvases) but never `renderMap()` (singular — owner of the
+Map view's card list, count, and filter state). Switching city while
+on the Map screen swapped the pins but left the previous city's cards
+rendered underneath. Mirrors the pattern already used by the ZIP
+override handler.
+
+### Share button on the detail sheet + greeting copy tweak
+
+* Bottom-sheet header now shows the share button alongside the heart
+  (wrapped in a small flex group so they sit next to each other tidy).
+  Click delegation already routes `[data-share]` to `shareCafe`, so no
+  JS changes were needed.
+* Greeting copy: "Coffee Quest Begins" → "**Your** Coffee Quest Begins".
+
+---
+
 ## Snapshot ops: MUST_INCLUDE shipped + --city parity + dry-run cost summary
 
 Three small changes that harden the monthly cron and make ops repeatable.
