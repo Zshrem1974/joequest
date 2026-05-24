@@ -953,6 +953,30 @@
       padding: 6px 4px;
     }
 
+    /* ----- Toast (bottom snackbar) ----- */
+    .toast {
+      position: fixed;
+      bottom: calc(var(--tab-h) + 16px);
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      max-width: calc(var(--app-max) - 36px);
+      width: max-content;
+      background: var(--espresso-deep);
+      color: var(--cream);
+      padding: 12px 18px;
+      border-radius: var(--r-pill);
+      font-size: 13px;
+      font-weight: 500;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s, transform 0.2s;
+      z-index: 100;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+    .toast.error { background: #9a3a2a; }
+
     /* ----- Auth / Profile view ----- */
     .auth-card {
       margin: 12px 18px 24px;
@@ -1460,6 +1484,21 @@
       scrim: $("#scrim"),
     };
 
+    function toast(message, kind = "info") {
+      let el = document.getElementById("toast");
+      if (!el) {
+        el = document.createElement("div");
+        el.id = "toast";
+        el.className = "toast";
+        document.body.appendChild(el);
+      }
+      el.textContent = message;
+      el.classList.toggle("error", kind === "error");
+      el.classList.add("show");
+      clearTimeout(el._t);
+      el._t = setTimeout(() => el.classList.remove("show"), 3500);
+    }
+
     function escapeHTML(s) {
       return String(s ?? "").replace(/[&<>"']/g, (c) => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
@@ -1567,8 +1606,16 @@
           if (r.ok) {
             const d = await r.json();
             (d.favourites || []).forEach((id) => state.saved.add(id));
+          } else {
+            let err = "";
+            try { err = (await r.json()).error || ""; } catch {}
+            console.warn("loadFavourites", r.status, err);
+            if (r.status === 401) toast("Your session expired — sign in again.", "error");
+            else toast(`Couldn't load saves: ${err || r.statusText}`, "error");
           }
-        } catch {}
+        } catch (e) {
+          toast(`Network error: ${e.message}`, "error");
+        }
       } else {
         try {
           const local = JSON.parse(localStorage.getItem(ANON_SAVES_KEY) || "[]");
@@ -1591,8 +1638,19 @@
           headers: await authedHeaders(),
           body: JSON.stringify({ placeIds: local }),
         });
-        if (r.ok) localStorage.removeItem(ANON_SAVES_KEY);
-      } catch {}
+        if (r.ok) {
+          localStorage.removeItem(ANON_SAVES_KEY);
+          const d = await r.json().catch(() => ({}));
+          if (d.merged > 0) toast(`Saved ${d.merged} café${d.merged === 1 ? "" : "s"} to your account.`);
+        } else {
+          let err = "";
+          try { err = (await r.json()).error || ""; } catch {}
+          console.warn("mergeAnonSavesIntoAccount", r.status, err);
+          toast(`Couldn't merge local saves: ${err || r.statusText}`, "error");
+        }
+      } catch (e) {
+        console.warn("mergeAnonSavesIntoAccount error", e);
+      }
     }
 
     // ---- map rendering (placeholder canvas — uses real lat/lng on a stylized grid) ----
@@ -2020,28 +2078,45 @@
     }
 
     // ---- favourite toggle ----
+    function applyHeart(id, isSaved) {
+      $$(`[data-fav="${id}"]`).forEach((b) => {
+        b.classList.toggle("saved", isSaved);
+        b.setAttribute("aria-label", isSaved ? "Unsave" : "Save");
+        const svg = b.querySelector("svg");
+        if (svg) svg.setAttribute("fill", isSaved ? "currentColor" : "none");
+      });
+    }
     async function toggleFavourite(id, btn) {
       const wasSaved = state.saved.has(id);
+      const willBeSaved = !wasSaved;
       if (wasSaved) state.saved.delete(id); else state.saved.add(id);
-      // optimistic UI
-      $$(`[data-fav="${id}"]`).forEach((b) => {
-        b.classList.toggle("saved", !wasSaved);
-        b.setAttribute("aria-label", wasSaved ? "Save" : "Unsave");
-        const svg = b.querySelector("svg");
-        if (svg) svg.setAttribute("fill", wasSaved ? "none" : "currentColor");
-      });
-      // Persist: account via API, anon via localStorage.
+      applyHeart(id, willBeSaved);
+
       if (currentUser) {
         try {
-          await fetch(`/api/favourites/${encodeURIComponent(id)}`, {
+          const r = await fetch(`/api/favourites/${encodeURIComponent(id)}`, {
             method: wasSaved ? "DELETE" : "POST",
             headers: await authedHeaders(),
           });
-        } catch {}
+          if (!r.ok) {
+            // Revert optimistic update
+            if (wasSaved) state.saved.add(id); else state.saved.delete(id);
+            applyHeart(id, wasSaved);
+            let err = "";
+            try { err = (await r.json()).error || ""; } catch {}
+            console.warn("toggleFavourite", r.status, err);
+            if (r.status === 401) toast("Sign in to save cafés to your account.", "error");
+            else toast(`Couldn't save: ${err || r.statusText}`, "error");
+          }
+        } catch (e) {
+          if (wasSaved) state.saved.add(id); else state.saved.delete(id);
+          applyHeart(id, wasSaved);
+          toast(`Network error: ${e.message}`, "error");
+        }
       } else {
         persistAnonSaves();
       }
-      // Keep the profile fav-count fresh
+
       const fc = document.getElementById("profile-fav-count");
       if (fc) fc.textContent = String(state.saved.size);
     }
