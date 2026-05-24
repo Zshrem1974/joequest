@@ -1066,6 +1066,18 @@
       margin-top: 10px;
     }
     .auth-secondary:hover { background: var(--cream); }
+    .forgot-link {
+      align-self: flex-end;
+      background: none;
+      border: none;
+      color: var(--crema);
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 2px 0;
+      margin-top: -6px;
+      cursor: pointer;
+    }
+    .forgot-link:hover { text-decoration: underline; }
     .auth-error {
       color: #9a3a2a;
       background: rgba(195, 74, 54, 0.10);
@@ -1613,9 +1625,25 @@
           <label>Password
             <input type="password" name="password" required minlength="8" autocomplete="current-password" placeholder="At least 8 characters">
           </label>
+          <button type="button" class="forgot-link" id="auth-forgot" hidden>Forgot password?</button>
           <button type="submit" class="auth-submit" id="auth-submit">Sign in</button>
           <div class="auth-error" id="auth-error" hidden></div>
           <div class="auth-hint" id="auth-hint">Welcome back. We'll save your favourites to your account.</div>
+        </form>
+      </div>
+
+      <!-- RECOVERY: set a new password after clicking the email link -->
+      <div id="profile-recovery" class="auth-card" hidden>
+        <h1 class="auth-title">Set a new password</h1>
+        <p class="auth-sub">You're in via the recovery link. Pick a new password and you're done.</p>
+
+        <form id="recovery-form" class="auth-form" novalidate>
+          <label>New password
+            <input type="password" name="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters">
+          </label>
+          <button type="submit" class="auth-submit" id="recovery-submit">Save new password</button>
+          <div class="auth-error" id="recovery-error" hidden></div>
+          <div class="auth-hint">After this, you'll be signed in with the new password.</div>
         </form>
       </div>
 
@@ -2052,6 +2080,7 @@
       myLocation: { lat: 26.372, lng: -80.105 },  // default to Boca centre; geolocation overrides
       taste: null,                                // Stage 2: loaded after sign-in
       settings: { units: "mi", notifications: false }, // Stage 3
+      recoveryMode: false,                        // true after a PASSWORD_RECOVERY auth event
     };
 
     // ---- DOM ----
@@ -2193,6 +2222,15 @@
       currentUser = data?.session?.user || null;
 
       supabaseClient.auth.onAuthStateChange(async (event, session) => {
+        if (event === "PASSWORD_RECOVERY") {
+          // User just clicked a reset-password email link. Show the
+          // "set new password" form, gate everything else behind it.
+          state.recoveryMode = true;
+          currentUser = session?.user || null;
+          go("profile");
+          renderProfile();
+          return;
+        }
         const wasLoggedIn = !!currentUser;
         currentUser = session?.user || null;
         if (!wasLoggedIn && currentUser) {
@@ -3272,7 +3310,16 @@
     function renderProfile() {
       const out = document.getElementById("profile-loggedout");
       const inn = document.getElementById("profile-loggedin");
-      if (!out || !inn) return;
+      const rec = document.getElementById("profile-recovery");
+      if (!out || !inn || !rec) return;
+
+      // Recovery overrides everything — user must set a new password first.
+      if (state.recoveryMode) {
+        out.hidden = true; inn.hidden = true; rec.hidden = false;
+        return;
+      }
+      rec.hidden = true;
+
       if (currentUser) {
         out.hidden = true;
         inn.hidden = false;
@@ -3332,8 +3379,15 @@
           ? "8+ characters. We don't share your email."
           : "Welcome back. We'll save your favourites to your account.";
         form.password.setAttribute("autocomplete", next === "signup" ? "new-password" : "current-password");
+        // Forgot-password link only makes sense in sign-in mode.
+        const forgot = document.getElementById("auth-forgot");
+        if (forgot) forgot.hidden = next !== "signin";
         clearError();
       }
+
+      // Initial visibility: signin mode is the default.
+      const forgotInit = document.getElementById("auth-forgot");
+      if (forgotInit) forgotInit.hidden = false;
 
       tabs.forEach((t) => t.addEventListener("click", () => setMode(t.dataset.authTab)));
 
@@ -3373,6 +3427,64 @@
         if (!supabaseClient) return;
         try { await supabaseClient.auth.signOut(); } catch {}
         // onAuthStateChange does the cleanup
+      });
+
+      // Forgot password → send reset email
+      document.getElementById("auth-forgot")?.addEventListener("click", async () => {
+        if (!supabaseClient) return showError("Sign-in isn't configured on this deployment.");
+        const email = form.email.value.trim();
+        if (!email) {
+          showError("Enter your email above first, then tap Forgot password.");
+          form.email.focus();
+          return;
+        }
+        clearError();
+        try {
+          const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
+            redirectTo: window.location.origin,
+          });
+          if (error) throw error;
+          toast(`Reset link sent to ${email}. Check your inbox.`);
+        } catch (err) {
+          showError(err?.message || "Couldn't send reset email.");
+        }
+      });
+
+      // Recovery form — set a new password after clicking the email link
+      const recForm = document.getElementById("recovery-form");
+      recForm?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const errEl = document.getElementById("recovery-error");
+        const submitBtn = document.getElementById("recovery-submit");
+        errEl.hidden = true;
+        const pwd = recForm.password.value;
+        if (!pwd || pwd.length < 8) {
+          errEl.textContent = "Password must be at least 8 characters.";
+          errEl.hidden = false;
+          return;
+        }
+        if (!supabaseClient) {
+          errEl.textContent = "Auth isn't configured.";
+          errEl.hidden = false;
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Saving…";
+        try {
+          const { error } = await supabaseClient.auth.updateUser({ password: pwd });
+          if (error) throw error;
+          state.recoveryMode = false;
+          recForm.reset();
+          toast("Password updated. You're signed in.");
+          renderProfile();
+          renderDrawerHeader();
+        } catch (err) {
+          errEl.textContent = err?.message || "Couldn't update password.";
+          errEl.hidden = false;
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Save new password";
+        }
       });
     }
 
