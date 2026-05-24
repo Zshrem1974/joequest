@@ -1119,6 +1119,91 @@
       color: var(--espresso);
     }
 
+    /* ----- Taste quiz ----- */
+    .taste-form fieldset {
+      border: none;
+      padding: 0;
+      margin: 0 0 14px;
+    }
+    .taste-form legend {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+      padding: 0;
+    }
+    .taste-choices {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .taste-choices button {
+      flex: 1 1 auto;
+      min-width: 0;
+      padding: 10px 14px;
+      border: 1px solid var(--line-strong);
+      background: var(--cream);
+      color: var(--espresso);
+      border-radius: var(--r-pill);
+      font-weight: 600;
+      font-size: 13px;
+      transition: background 0.12s, border-color 0.12s, color 0.12s;
+    }
+    .taste-choices button:hover { background: var(--oat); }
+    .taste-choices button.selected {
+      background: var(--espresso);
+      color: var(--cream);
+      border-color: var(--espresso);
+    }
+
+    .taste-summary-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin: 14px 0 18px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .taste-summary-grid .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 14px;
+      padding: 4px 0;
+    }
+    .taste-summary-grid .row .k {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .taste-summary-grid .row .v {
+      font-family: var(--display);
+      color: var(--espresso);
+      font-weight: 600;
+    }
+
+    /* Match-your-taste chip inside the pick-mini on cards */
+    .match-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      margin-left: 4px;
+      background: rgba(59,125,90,0.16);
+      color: var(--mint);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 1px 6px;
+      border-radius: 999px;
+      vertical-align: middle;
+    }
+    .pick-mini.matched { box-shadow: inset 0 0 0 1px rgba(59,125,90,0.25); }
+
     /* Selection: warm crema, not the default blue */
     ::selection { background: rgba(217,131,36,0.25); color: var(--espresso-deep); }
 
@@ -1341,6 +1426,89 @@
     </main>
 
     <!-- ========================================================== -->
+    <!--  COFFEE TASTE PROFILE                                      -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-taste">
+      <div style="padding: 14px 18px 0;">
+        <button class="back-btn" data-go="discover">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back
+        </button>
+      </div>
+
+      <!-- LOGGED-OUT GATE -->
+      <div id="taste-gated" class="auth-card" hidden>
+        <h1 class="auth-title">☕ Your coffee taste</h1>
+        <p class="auth-sub">Sign in first so we can save your taste profile to your account.</p>
+        <button class="auth-submit" data-go="profile">Go to sign in</button>
+      </div>
+
+      <!-- QUIZ -->
+      <div id="taste-quiz" class="auth-card" hidden>
+        <h1 class="auth-title">☕ Your coffee taste</h1>
+        <p class="auth-sub">Five quick taps. We'll flag drinks that match — never invent matches.</p>
+
+        <form id="taste-form" class="taste-form">
+          <fieldset>
+            <legend>Roast</legend>
+            <div class="taste-choices" data-key="roast">
+              <button type="button" data-val="light">Light</button>
+              <button type="button" data-val="medium">Medium</button>
+              <button type="button" data-val="dark">Dark</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Milk</legend>
+            <div class="taste-choices" data-key="milk">
+              <button type="button" data-val="black">Black</button>
+              <button type="button" data-val="milk">With milk</button>
+              <button type="button" data-val="plant">Plant</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Strength</legend>
+            <div class="taste-choices" data-key="strength">
+              <button type="button" data-val="mild">Mild</button>
+              <button type="button" data-val="balanced">Balanced</button>
+              <button type="button" data-val="strong">Strong</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Sweetness</legend>
+            <div class="taste-choices" data-key="sweetness">
+              <button type="button" data-val="none">None</button>
+              <button type="button" data-val="little">A little</button>
+              <button type="button" data-val="sweet">Sweet</button>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Adventurousness</legend>
+            <div class="taste-choices" data-key="adventurous">
+              <button type="button" data-val="usual">My usual</button>
+              <button type="button" data-val="surprise">Surprise me</button>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="auth-submit" id="taste-submit">Save taste profile</button>
+          <div class="auth-error" id="taste-error" hidden></div>
+          <div class="auth-hint">We use this for a subtle "matches your taste" hint on cards. Doesn't change ranking.</div>
+        </form>
+      </div>
+
+      <!-- SUMMARY (existing profile) -->
+      <div id="taste-summary" class="auth-card" hidden>
+        <h1 class="auth-title">☕ Your coffee taste</h1>
+        <p class="auth-sub" id="taste-updated">—</p>
+
+        <div class="taste-summary-grid" id="taste-summary-grid"></div>
+
+        <button class="auth-submit" id="taste-edit">Edit profile</button>
+      </div>
+    </main>
+
+    <!-- ========================================================== -->
     <!--  BOTTOM TAB BAR                                            -->
     <!-- ========================================================== -->
     <nav class="tab-bar" aria-label="Main">
@@ -1459,6 +1627,7 @@
       pickCache: new Map(), // id → picks payload
       mapView: { zoom: 1, cx: 0.5, cy: 0.5 },     // viewBox-based zoom on the big map
       myLocation: { lat: 26.372, lng: -80.105 },  // default to Boca centre; geolocation overrides
+      taste: null,                                // Stage 2: loaded after sign-in
     };
 
     // ---- DOM ----
@@ -1534,6 +1703,7 @@
       if (view === "saved") renderSaved();
       if (view === "map") renderMap();
       if (view === "profile") renderProfile();
+      if (view === "taste") renderTaste();
     }
 
     // ---- bootstrap ----
@@ -1565,6 +1735,7 @@
       buildFilterBar();
       bindEvents();
       bindAuthEvents();
+      bindTasteEvents();
     }
 
     // ---- auth init ----
@@ -1588,13 +1759,19 @@
         if (!wasLoggedIn && currentUser) {
           await mergeAnonSavesIntoAccount();
         }
-        await loadFavourites();
+        await Promise.all([loadFavourites(), loadTasteProfile()]);
         renderProfile();
         renderDrawerHeader();
-        // Re-render anything visible that depends on saved state
+        // Re-render anything visible that depends on saved state or taste matches
         if (state.view === "saved") renderSaved();
         if (state.view === "discover") renderDiscover();
+        if (state.view === "map") renderMap();
+        if (state.view === "taste") renderTaste();
       });
+
+      // Also load taste once on initial bootstrap (auth-state-change may not
+      // fire if there's no existing session and we haven't signed in yet).
+      if (currentUser) await loadTasteProfile();
     }
 
     // ---- favourites: load + persist (account vs anon) ----
@@ -1626,6 +1803,168 @@
 
     function persistAnonSaves() {
       localStorage.setItem(ANON_SAVES_KEY, JSON.stringify([...state.saved]));
+    }
+
+    // ---- taste profile (Stage 2) ----
+    async function loadTasteProfile() {
+      state.taste = null;
+      if (!currentUser) return;
+      try {
+        const r = await fetch("/api/taste", { headers: await authedHeaders() });
+        if (r.ok) {
+          const d = await r.json();
+          state.taste = d.profile || null;
+        }
+      } catch {}
+    }
+    const TASTE_LABELS = {
+      roast:       { light: "Light", medium: "Medium", dark: "Dark" },
+      milk:        { black: "Black", milk: "With milk", plant: "Plant" },
+      strength:    { mild: "Mild", balanced: "Balanced", strong: "Strong" },
+      sweetness:   { none: "None", little: "A little", sweet: "Sweet" },
+      adventurous: { usual: "My usual", surprise: "Surprise me" },
+    };
+    const TASTE_KEYS = ["roast", "milk", "strength", "sweetness", "adventurous"];
+    let tastePending = {}; // selections while editing the quiz
+
+    function renderTaste() {
+      const gated = document.getElementById("taste-gated");
+      const quiz = document.getElementById("taste-quiz");
+      const summary = document.getElementById("taste-summary");
+      if (!gated || !quiz || !summary) return;
+
+      if (!currentUser) {
+        gated.hidden = false; quiz.hidden = true; summary.hidden = true;
+        return;
+      }
+      gated.hidden = true;
+
+      const hasProfile = state.taste && TASTE_KEYS.some((k) => state.taste[k]);
+      if (hasProfile) {
+        summary.hidden = false; quiz.hidden = true;
+        const grid = document.getElementById("taste-summary-grid");
+        grid.innerHTML = TASTE_KEYS.map((k) => {
+          const v = state.taste[k];
+          const label = v ? (TASTE_LABELS[k]?.[v] || v) : "—";
+          return `<div class="row"><span class="k">${k}</span><span class="v">${escapeHTML(label)}</span></div>`;
+        }).join("");
+        const up = state.taste.updated_at ? new Date(state.taste.updated_at) : null;
+        document.getElementById("taste-updated").textContent =
+          up ? `Last updated ${up.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" })}` : "Saved.";
+      } else {
+        summary.hidden = true; quiz.hidden = false;
+        tastePending = state.taste ? { ...state.taste } : {};
+        $$(".taste-choices", quiz).forEach((group) => {
+          const k = group.dataset.key;
+          $$("button", group).forEach((b) => {
+            b.classList.toggle("selected", tastePending[k] === b.dataset.val);
+          });
+        });
+        document.getElementById("taste-error").hidden = true;
+      }
+    }
+
+    function bindTasteEvents() {
+      const quiz = document.getElementById("taste-quiz");
+      const form = document.getElementById("taste-form");
+      if (!quiz || !form) return;
+
+      // Pill choice clicks
+      quiz.addEventListener("click", (e) => {
+        const btn = e.target.closest(".taste-choices button");
+        if (!btn) return;
+        const group = btn.closest(".taste-choices");
+        const k = group.dataset.key;
+        tastePending[k] = btn.dataset.val;
+        $$("button", group).forEach((b) => b.classList.toggle("selected", b === btn));
+      });
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const err = document.getElementById("taste-error");
+        err.hidden = true;
+        const submitBtn = document.getElementById("taste-submit");
+        const filled = TASTE_KEYS.filter((k) => tastePending[k]).length;
+        if (filled < 3) {
+          err.textContent = "Pick at least 3 answers so we can match drinks meaningfully.";
+          err.hidden = false;
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Saving…";
+        try {
+          const r = await fetch("/api/taste", {
+            method: "PUT",
+            headers: await authedHeaders(),
+            body: JSON.stringify(tastePending),
+          });
+          if (!r.ok) {
+            const e2 = await r.json().catch(() => ({}));
+            throw new Error(e2.error || r.statusText);
+          }
+          const d = await r.json();
+          state.taste = d.profile || tastePending;
+          toast("Taste profile saved.");
+          renderTaste();
+          // Re-render anything that uses taste matching
+          if (state.view === "discover") renderDiscover();
+          if (state.view === "map") renderMap();
+          if (state.view === "saved") renderSaved();
+        } catch (e2) {
+          err.textContent = e2.message || "Couldn't save profile.";
+          err.hidden = false;
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Save taste profile";
+        }
+      });
+
+      // Edit (from summary)
+      document.getElementById("taste-edit").addEventListener("click", () => {
+        // Show the quiz with current values pre-selected
+        const summary = document.getElementById("taste-summary");
+        const quizEl = document.getElementById("taste-quiz");
+        summary.hidden = true; quizEl.hidden = false;
+        tastePending = state.taste ? { ...state.taste } : {};
+        $$(".taste-choices", quizEl).forEach((group) => {
+          const k = group.dataset.key;
+          $$("button", group).forEach((b) => {
+            b.classList.toggle("selected", tastePending[k] === b.dataset.val);
+          });
+        });
+      });
+    }
+
+    // Match a drink-pick name against the user's taste profile. Returns
+    // { score, reason } when at least one signal aligns; null otherwise.
+    // CONSERVATIVE — generic picks ("Coffee") never match. Reasons are short
+    // strings we could surface as tooltip text.
+    //
+    // Seam: this is the only matching surface for now. A richer model
+    // (LLM-driven, multi-axis scoring, drink taxonomy) plugs in here.
+    function tasteMatch(drink, profile) {
+      if (!profile || !drink?.name) return null;
+      const n = drink.name.toLowerCase().trim();
+      if (!n || n === "coffee" || n === "house coffee" || n === "drink") return null;
+
+      const has = (re) => re.test(n);
+      const ESPRESSO_FORWARD = /\b(espresso|cortado|ristretto|cubano|americano|red eye|moka|macchiato)\b/i;
+      const MILKY            = /\b(latte|cappuccino|flat white|cortado|macchiato|mocha|chai)\b/i;
+      const SWEET_NOTES      = /\b(vanilla|honey|caramel|cookie|tiramisu|sweet|syrup|sugar|maple|hazelnut|mocha|cinnamon|cookie butter)\b/i;
+      const LIGHT_BREW       = /\b(pour over|pour-over|filter|chemex|v60|drip|geisha|single origin)\b/i;
+      const STANDARD         = /\b(latte|cappuccino|coffee|espresso|cortado|americano|drip|macchiato|matcha|flat white)\b/i;
+
+      const reasons = [];
+      if ((profile.roast === "dark" || profile.strength === "strong") && has(ESPRESSO_FORWARD)) reasons.push("bold & espresso-forward");
+      if (profile.roast === "light" && has(LIGHT_BREW)) reasons.push("light-roast brew");
+      if ((profile.milk === "milk" || profile.milk === "plant") && has(MILKY)) reasons.push("milk-based");
+      if (profile.milk === "black" && has(ESPRESSO_FORWARD) && !has(MILKY) && !has(SWEET_NOTES)) reasons.push("served black");
+      if (profile.sweetness === "sweet" && has(SWEET_NOTES)) reasons.push("sweet flavour");
+      if (profile.sweetness === "none" && has(ESPRESSO_FORWARD) && !has(SWEET_NOTES)) reasons.push("no sugar");
+      if (profile.adventurous === "surprise" && !has(STANDARD)) reasons.push("off the beaten path");
+
+      if (reasons.length === 0) return null;
+      return { score: reasons.length, reasons };
     }
 
     async function mergeAnonSavesIntoAccount() {
@@ -1812,6 +2151,12 @@
       const picksReady = !!cached;
       const drink = cached?.picks?.drink;
       const food = cached?.picks?.food;
+      // Stage 2: taste match indicator. Honest — only fires when the user has
+      // a profile AND the pick name lights up a real signal.
+      const match = state.taste ? tasteMatch(drink, state.taste) : null;
+      const matchTag = match
+        ? ` <span class="match-tag" title="${escapeHTML(match.reasons.join(" · "))}">✓ your taste</span>`
+        : "";
 
       const photoHTML = c.photo
         ? `<img loading="lazy" src="${escapeHTML(c.photo)}" alt="" onerror="this.parentNode.innerHTML='<div class=&quot;photo-fallback&quot;>☕</div>'"/>`
@@ -1838,8 +2183,8 @@
               ${c.price ? `<span>·</span><span class="price">${escapeHTML(c.price)}</span>` : ""}
             </div>
             <div class="picks-strip" data-picks-for="${c.id}">
-              <div class="pick-mini">
-                <div class="lbl">Drink</div>
+              <div class="pick-mini${matchTag ? " matched" : ""}">
+                <div class="lbl">Drink${matchTag}</div>
                 ${picksReady
                   ? `<div class="val">${drink?.name ? escapeHTML(drink.name) : "—"}</div>`
                   : `<div class="placeholder"></div><div class="placeholder" style="width:70%; margin-top:6px;"></div>`}
@@ -1884,16 +2229,20 @@
         state.pickCache.set(id, data);
         // refresh any visible card strip
         $$(`[data-picks-for="${id}"]`).forEach((el) => {
-          const drink = data.picks?.drink?.name;
-          const food = data.picks?.food?.name;
+          const drink = data.picks?.drink;
+          const food = data.picks?.food;
+          const match = state.taste ? tasteMatch(drink, state.taste) : null;
+          const matchTag = match
+            ? ` <span class="match-tag" title="${escapeHTML(match.reasons.join(" · "))}">✓ your taste</span>`
+            : "";
           el.innerHTML = `
-            <div class="pick-mini">
-              <div class="lbl">Drink</div>
-              <div class="val">${drink ? escapeHTML(drink) : "—"}</div>
+            <div class="pick-mini${matchTag ? " matched" : ""}">
+              <div class="lbl">Drink${matchTag}</div>
+              <div class="val">${drink?.name ? escapeHTML(drink.name) : "—"}</div>
             </div>
             <div class="pick-mini is-food">
               <div class="lbl">Food</div>
-              <div class="val">${food ? escapeHTML(food) : "—"}</div>
+              <div class="val">${food?.name ? escapeHTML(food.name) : "—"}</div>
             </div>
           `;
         });
@@ -2374,10 +2723,10 @@
           closeDrawer();
           if (a === "partner") go("partner");
           else if (a === "profile") go("profile");
+          else if (a === "taste") go("taste");
           else if (a === "help") alert("Help & support — coming soon. Email zackwboca@gmail.com for now.");
           else if (a === "settings") alert("Settings — coming soon.");
           else if (a === "privacy") alert("Privacy & location — coming soon.");
-          else if (a === "taste") alert("Your AI coffee taste profile is coming soon — we'll learn from your saves.");
           else if (a === "offers") alert("Offers near you — coming soon.");
           return;
         }

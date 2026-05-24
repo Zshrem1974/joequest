@@ -41,6 +41,7 @@ import {
   verifyJwt,
   listFavouritesForUser, addFavouriteForUser, removeFavouriteForUser,
   mergeAnonFavourites,
+  getTasteProfile, saveTasteProfile,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -220,6 +221,38 @@ app.post("/api/favourites/merge", async (req, res) => {
     const placeIds = Array.isArray(req.body?.placeIds) ? req.body.placeIds : [];
     const merged = await mergeAnonFavourites(user.id, placeIds);
     res.json({ ok: true, merged });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// ---- taste profile (Stage 2) ----------------------------------------------
+// Whitelist what the client can write; ignore anything else. Loose strings,
+// not enums — the quiz can evolve without a migration.
+const TASTE_FIELDS = ["roast", "milk", "strength", "sweetness", "adventurous"];
+
+app.get("/api/taste", async (req, res) => {
+  try {
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to see your taste profile" });
+    res.json({ profile: await getTasteProfile(user.id) });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.put("/api/taste", async (req, res) => {
+  try {
+    const user = await authedUser(req);
+    if (!user) return res.status(401).json({ error: "Sign in to save your taste profile" });
+    const body = req.body || {};
+    const clean = {};
+    for (const k of TASTE_FIELDS) {
+      if (typeof body[k] === "string" && body[k].length > 0 && body[k].length <= 32) {
+        clean[k] = body[k];
+      }
+    }
+    if (Object.keys(clean).length === 0) {
+      return res.status(400).json({ error: "Empty profile" });
+    }
+    const saved = await saveTasteProfile(user.id, clean);
+    res.json({ ok: true, profile: saved });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 

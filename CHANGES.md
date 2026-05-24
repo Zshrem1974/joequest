@@ -1,5 +1,102 @@
 # CHANGES
 
+## Stage 2 (Drawer) — Coffee taste profile + match-your-taste signal
+
+A short 5-tap quiz the user fills in once. Stored per-user in Supabase. Used
+as a *light* honest signal on café cards — never overrides ranking, never
+fabricates a match.
+
+### What changed
+
+**Schema**
+- New `taste_profiles` table, one row per user, fields are loose text so the
+  quiz can evolve without migrations:
+  - `roast` (light / medium / dark)
+  - `milk` (black / milk / plant)
+  - `strength` (mild / balanced / strong)
+  - `sweetness` (none / little / sweet)
+  - `adventurous` (usual / surprise)
+- Row-level security so each user reads/writes only their own row.
+
+**Server**
+- New endpoints:
+  - `GET  /api/taste` → `{ profile }` for the authenticated user.
+  - `PUT  /api/taste` → upserts the user's profile; whitelist filters the body
+    so the client can't sneak fields into the row.
+- Both require `Authorization: Bearer <jwt>` (same auth as Stage 1).
+
+**db.js**
+- `getTasteProfile(userId)` and `saveTasteProfile(userId, profile)` —
+  Supabase-backed with in-memory fallback for dev.
+
+**UI**
+- New `view-taste` reachable from drawer → **Coffee taste profile**.
+- Logged-out gate: prompt to sign in.
+- Logged-in:
+  - No profile yet → quiz with 5 pill rows. Saving needs at least 3 answers.
+  - Has profile → summary card showing the saved values + Edit button.
+- Drawer item `taste` now navigates instead of `alert()`.
+
+**Match-your-taste signal**
+- New `tasteMatch(drink, profile)` function applies a conservative keyword
+  heuristic against the pick name (`espresso` / `cortado` → dark+strong+black,
+  `latte` / `cappuccino` → milky, `vanilla` / `caramel` → sweet, etc.).
+- Returns `null` for generic picks like "Coffee" and any case where no
+  signal aligns. **Never fabricates.**
+- When a match fires, a small mint `✓ your taste` chip appears next to the
+  Drink label on the café card; the pick-mini gets a faint mint inset border.
+- Ranking is untouched — this is purely a visual hint.
+
+**Seam for richer personalization (left intentionally)**
+- `tasteMatch()` is the single matching surface. A future LLM-driven matcher
+  (e.g. "given this user's taste vector + this pick + Wikipedia entry for the
+  drink, does it match?") plugs in there. The data shape (`{ score, reasons }`)
+  is what callers expect.
+
+### Setup SQL (run once in Supabase → SQL Editor)
+
+```sql
+create table if not exists taste_profiles (
+  user_id      uuid primary key references auth.users(id) on delete cascade,
+  roast        text,
+  milk         text,
+  strength     text,
+  sweetness    text,
+  adventurous  text,
+  updated_at   timestamptz not null default now()
+);
+
+alter table taste_profiles enable row level security;
+
+create policy "taste_select_own"
+  on taste_profiles for select using (auth.uid() = user_id);
+
+create policy "taste_modify_own"
+  on taste_profiles for all
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+notify pgrst, 'reload schema';
+```
+
+### Render / env vars
+
+No new env vars. Uses the same `SUPABASE_URL`, `SUPABASE_ANON_KEY`,
+`SUPABASE_SERVICE_ROLE_KEY` from Stage 1.
+
+### Verification
+
+1. Sign in (Stage 1).
+2. Drawer → **Coffee taste profile**.
+3. Tap one option per row, hit **Save taste profile** → toast "Taste profile saved."
+4. Discover or Saved view → cards whose Drink pick aligns (e.g. Cafe Louis's
+   "Espresso drinks" with a "dark + strong + black" taste) show
+   `✓ your taste` next to "Drink".
+5. Drawer → **Coffee taste profile** again → summary view → **Edit** lets you
+   re-take the quiz with current values pre-selected.
+
+---
+
 ## Stage 1 (Drawer) — accounts (Supabase Auth) + user-keyed favourites
 
 This stage replaces the anonymous `client_id` favourites system with a real

@@ -174,3 +174,55 @@ export async function mergeAnonFavourites(userId, placeIds) {
   placeIds.forEach((p) => set.add(p));
   return placeIds.length;
 }
+
+// ----------------------------------------------------------------------------
+// TASTE PROFILES (Stage 2 — drawer → Coffee taste profile)
+// ----------------------------------------------------------------------------
+// Five short answers per user. Stored flat in one row; the schema is loose
+// (plain text columns) so we can evolve the quiz without migrations.
+//
+//   roast       light / medium / dark
+//   milk        black / milk / plant
+//   strength    mild / balanced / strong
+//   sweetness   none / little / sweet
+//   adventurous usual / surprise
+// ----------------------------------------------------------------------------
+const memTaste = new Map();   // user_id -> profile object
+
+export async function getTasteProfile(userId) {
+  if (!userId) return null;
+  if (supabase) {
+    const { data, error } = await supabase
+      .from("taste_profiles")
+      .select("roast, milk, strength, sweetness, adventurous, updated_at")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (error) throw new Error(`Supabase getTasteProfile: ${error.message}`);
+    return data || null;
+  }
+  return memTaste.get(userId) || null;
+}
+
+export async function saveTasteProfile(userId, profile) {
+  if (!userId || !profile || typeof profile !== "object") return null;
+  const row = {
+    user_id: userId,
+    roast: profile.roast ?? null,
+    milk: profile.milk ?? null,
+    strength: profile.strength ?? null,
+    sweetness: profile.sweetness ?? null,
+    adventurous: profile.adventurous ?? null,
+    updated_at: new Date().toISOString(),
+  };
+  if (supabase) {
+    const { data, error } = await supabase
+      .from("taste_profiles")
+      .upsert(row, { onConflict: "user_id" })
+      .select()
+      .maybeSingle();
+    if (error) throw new Error(`Supabase saveTasteProfile: ${error.message}`);
+    return data;
+  }
+  memTaste.set(userId, row);
+  return row;
+}
