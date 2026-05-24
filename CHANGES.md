@@ -1,5 +1,71 @@
 # CHANGES
 
+## Snapshot ops: MUST_INCLUDE shipped + --city parity + dry-run cost summary
+
+Three small changes that harden the monthly cron and make ops repeatable.
+
+### MUST_INCLUDE per-city (shipped)
+
+`scripts/snapshot.js` now unions `city.mustInclude` ids that are absent
+from Google's top-20 text search via a per-id **Place Details** call,
+*before* the 90-day loop runs. The per-café clock still applies — fresh
+entries are reused, stale ones get re-pulled. Boca's two curated cafés
+(**Espresso Joint** + **Rosalia's Botanical Cafe**) no longer need
+manual re-adding via `scripts/add-cafe.js` after a Google rotation
+drops them.
+
+**How to add a place_id to a city's `mustInclude` list:**
+
+1. Find the Google `place_id` (easiest: run `node scripts/add-cafe.js
+   "Café Name" --city=<slug>` once — the script logs the place's id in
+   its first response).
+2. Open `lib/cities.js`, find the city entry, append the id to
+   `mustInclude: [...]` with a trailing `// Café Name` comment.
+3. Commit. The next monthly cron (or any `node scripts/snapshot.js
+   --city=<slug>` run) will fetch it via Place Details and keep it in
+   the snapshot indefinitely.
+
+**To drop one:** delete the line from `mustInclude`. The café will still
+be picked up by the next refresh if Google's search returns it, and
+silently dropped if not.
+
+DRY refactor that came with this: extracted `mapPlaceToCafe(place,
+city)` + `fetchPlaceById(id, key, city)` into `lib/data.js`. Both
+`searchCafes` and `scripts/add-cafe.js` now use the shared mapper, so
+the snapshot field shape is defined in one place.
+
+`--dry-run` honours the no-paid-calls rule — it logs missing
+mustInclude ids as "would fetch via Place Details in real run" instead
+of actually calling the API.
+
+### `scripts/refresh-hours.js` — `--city=<slug>` flag
+
+Brings the cheap hours-only patch script to parity with `snapshot.js`.
+Defaults to `boca-raton`, validates the slug against `lib/cities.js`'s
+`CITIES` export, exits with the known-list on unknown slugs. Snapshot
+path resolves to `data/<slug>.json`, and the underlying Google search
+uses the right per-city text query + bbox.
+
+### `--dry-run` now prints a pre-flight plan + cost estimate
+
+Before the per-café loop runs (where the Claude + Places-Details calls
+happen), the script now prints a per-city plan:
+
+```
+Plan for Boca Raton, FL:
+  Reused (fresh, <90d):     18
+  Stale (≥90d, re-pull):    1
+  New cafés (from search):  0
+  MUST_INCLUDE:             would add 2
+  Estimated cost: ~$0.22  (3 Claude × $0.04 + 21 Places × $0.005)
+```
+
+Lets a `--dry-run` show exactly what a real refresh would spend
+*without* making any new paid calls itself. Same plan section prints
+in a real run too — just without "would add" framing.
+
+---
+
 ## Refresh pipeline: monthly cron now refreshes ALL 6 cities
 
 **Correctness fix.** The monthly GitHub Action previously defaulted to Boca
@@ -34,16 +100,13 @@ slug list is hardcoded in the workflow's run-step. A comment in the
 file points back to `lib/cities.js` as the real source. **When you add
 a new city, update both.**
 
-### MUST_INCLUDE per-city (queued)
+### MUST_INCLUDE per-city (scaffolding — shipped in next session)
 
-`lib/cities.js` has the new `mustInclude: [...]` field on Boca-Raton
+`lib/cities.js` got the new `mustInclude: [...]` field on Boca-Raton,
 seeded with the place_ids for Espresso Joint and Rosalia's Botanical
 Cafe — both have dropped out of Google's rotating top-20 before. The
-union logic in `scripts/snapshot.js` (Place Details lookup for any
-listed id missing from the fresh search results) is **not yet
-implemented**; until it lands, those two cafés can still drop on a
-fresh refresh and need re-adding via `scripts/add-cafe.js`. **TODO**
-for the next session.
+union logic in `scripts/snapshot.js` landed in the **next** session;
+see the top-of-file "Snapshot ops" entry.
 
 ---
 
