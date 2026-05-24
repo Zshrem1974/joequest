@@ -25,6 +25,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import { Readable } from "node:stream";
 import Anthropic from "@anthropic-ai/sdk";
 import {
   dbReady, dbStatus, cachedCount,
@@ -253,7 +254,7 @@ async function streamPhoto(req, res) {
 
   res.set("Content-Type", upstream.headers.get("content-type") || "image/jpeg");
   res.set("Cache-Control", "public, max-age=604800"); // 7d browser cache
-  upstream.body.pipe(res);
+  Readable.fromWeb(upstream.body).pipe(res);
 }
 
 // ============================================================================
