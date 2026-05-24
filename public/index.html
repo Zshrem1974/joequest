@@ -1988,6 +1988,57 @@
       return h;
     }
 
+    // ---- analytics (Instrumentation Stage 1) ----
+    // Fire-and-forget event tracking. Never blocks, never throws, never logs.
+    // No PII: only the anon client_id (or the user's Supabase id) and a
+    // small allow-listed props blob.
+    const CID_KEY = "jq.cid";
+    function getCID() {
+      let id = localStorage.getItem(CID_KEY);
+      if (!id) {
+        id = (crypto.randomUUID?.() || ("c-" + Math.random().toString(36).slice(2) + Date.now().toString(36)))
+          .replace(/-/g, "").slice(0, 32);
+        localStorage.setItem(CID_KEY, id);
+      }
+      return id;
+    }
+    const CID = getCID();
+    async function track(name, props) {
+      try {
+        const payload = {
+          name,
+          props: props || null,
+          client_id: CID,
+          path: state.view || null,
+        };
+        // Authenticated users: fetch+keepalive so we can send the JWT header.
+        if (currentUser && supabaseClient) {
+          const headers = await authedHeaders();
+          fetch("/api/event", {
+            method: "POST",
+            headers,
+            body: JSON.stringify(payload),
+            keepalive: true,
+          }).catch(() => {});
+          return;
+        }
+        // Anon users: prefer sendBeacon (true fire-and-forget, survives unload).
+        const body = JSON.stringify(payload);
+        if (navigator.sendBeacon) {
+          const blob = new Blob([body], { type: "application/json" });
+          if (navigator.sendBeacon("/api/event", blob)) return;
+        }
+        fetch("/api/event", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body,
+          keepalive: true,
+        }).catch(() => {});
+      } catch {
+        // Analytics must never break the UI.
+      }
+    }
+
     // ---- state ----
     const state = {
       view: "discover",
@@ -2064,6 +2115,7 @@
 
     // ---- navigation ----
     function go(view) {
+      const prev = state.view;
       state.view = view;
       $$(".view").forEach((el) => el.classList.toggle("active", el.id === "view-" + view));
       $$(".tab").forEach((t) => {
@@ -2080,10 +2132,19 @@
       if (view === "settings") renderSettings();
       if (view === "offers") loadAndRenderOffers();
       if (view === "help") renderHelp();
+      if (view !== prev) track("view_change", { to: view });
     }
 
     // ---- bootstrap ----
     async function init() {
+      // app_open fires once per session (browser session, not auth session)
+      try {
+        if (!sessionStorage.getItem("jq.opened")) {
+          track("app_open");
+          sessionStorage.setItem("jq.opened", "1");
+        }
+      } catch {}
+
       try {
         const status = await fetch("/api/status").then((r) => r.json());
         if (!status.google || !status.anthropic) {
@@ -2246,6 +2307,7 @@
         slot.innerHTML = `
           <div class="code-box">${escapeHTML(code)}<button class="copy-btn" data-copy="${escapeHTML(code)}">Copy</button></div>
         `;
+        track("offer_reveal", { offer_id: id });
       } catch (e) {
         btn.disabled = false;
         btn.textContent = "Reveal code";
@@ -2326,6 +2388,7 @@
           document.getElementById("help-card").hidden = true;
           document.getElementById("help-thanks").hidden = false;
           form.reset();
+          track("help_submit", { category: helpCategory });
         } catch (e) {
           errEl.textContent = e.message;
           errEl.hidden = false;
@@ -2601,6 +2664,7 @@
           const d = await r.json();
           state.taste = d.profile || tastePending;
           toast("Taste profile saved.");
+          track("taste_profile_complete");
           renderTaste();
           // Re-render anything that uses taste matching
           if (state.view === "discover") renderDiscover();
@@ -3026,6 +3090,8 @@
       const c = state.cafes.find((x) => x.id === id);
       if (!c) return;
       state.currentCafe = c;
+      const rank = state.cafes.indexOf(c) + 1;
+      track("cafe_open", { place_id: c.id, rank });
 
       const isSaved = state.saved.has(c.id);
       const cached = state.pickCache.get(c.id);
@@ -3063,11 +3129,18 @@
       els.scrim.classList.add("open");
       document.body.style.overflow = "hidden";
 
-      if (!cached) prefetchPicks(id).then(() => {
-        const slot = $("#sheet-picks");
-        const data = state.pickCache.get(id);
-        if (slot && data) slot.innerHTML = renderSheetPicks(data);
-      });
+      if (cached) {
+        track("pick_reveal", { place_id: c.id });
+      } else {
+        prefetchPicks(id).then(() => {
+          const slot = $("#sheet-picks");
+          const data = state.pickCache.get(id);
+          if (slot && data) {
+            slot.innerHTML = renderSheetPicks(data);
+            track("pick_reveal", { place_id: c.id });
+          }
+        });
+      }
     }
     function closeSheet() {
       els.sheet.classList.remove("open");
@@ -3152,6 +3225,7 @@
       const willBeSaved = !wasSaved;
       if (wasSaved) state.saved.delete(id); else state.saved.add(id);
       applyHeart(id, willBeSaved);
+      track(wasSaved ? "favourite_remove" : "favourite_add", { place_id: id });
 
       if (currentUser) {
         try {
@@ -3273,9 +3347,11 @@
             // Email confirmation may be required — surface the message
             showError("Account created. Check your inbox to confirm your email, then sign in.");
             setMode("signin");
+            track("signup", { confirmed: false });
           } else {
             // onAuthStateChange handler picks up from here (merge + refresh)
             form.reset();
+            track(mode === "signup" ? "signup" : "signin", { confirmed: true });
           }
         } catch (err) {
           showError(err?.message || "Couldn't sign you in.");

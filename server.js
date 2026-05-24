@@ -44,6 +44,7 @@ import {
   getTasteProfile, saveTasteProfile,
   getUserSettings, saveUserSettings, clearUserData,
   listActiveOffers, revealOffer, saveHelpMessage,
+  saveEvent,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -335,6 +336,65 @@ app.post("/api/help", async (req, res) => {
     });
     res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// ---- events (Instrumentation Stage 1) -------------------------------------
+// Allow-list keeps the schema small and PII-clean. Anything outside this set
+// is dropped on the floor. Never throws to the client.
+const EVENT_ALLOWLIST = new Set([
+  "app_open",
+  "view_change",
+  "cafe_open",
+  "pick_reveal",
+  "favourite_add",
+  "favourite_remove",
+  "taste_profile_complete",
+  "offer_reveal",
+  "help_submit",
+  "signin",
+  "signup",
+]);
+const CID_RE = /^[A-Za-z0-9_-]{6,64}$/;
+const PROPS_MAX_BYTES = 1024;
+
+app.post("/api/event", async (req, res) => {
+  // Acknowledge immediately so the browser never waits on us.
+  res.status(204).end();
+  try {
+    const b = req.body || {};
+    const name = String(b.name || "").trim();
+    if (!EVENT_ALLOWLIST.has(name)) return;
+
+    const client_id = String(b.client_id || "").trim();
+    if (!CID_RE.test(client_id)) return;
+
+    const path = b.path ? String(b.path).trim().slice(0, 64) : null;
+
+    let props = null;
+    if (b.props && typeof b.props === "object" && !Array.isArray(b.props)) {
+      let s;
+      try { s = JSON.stringify(b.props); } catch { return; }
+      if (s.length > PROPS_MAX_BYTES) return; // silently drop oversized
+      props = b.props;
+    }
+
+    // JWT path (header). sendBeacon can also embed a token in the body
+    // because it can't set custom headers — accept that as a fallback.
+    let user = await authedUser(req);
+    if (!user && typeof b.token === "string" && b.token.length > 20) {
+      user = await verifyJwt(b.token);
+    }
+
+    await saveEvent({
+      client_id,
+      user_id: user?.id || null,
+      name,
+      props,
+      path,
+    });
+  } catch {
+    // Swallow — analytics must not break the UI, and we've already 204'd.
+  }
 });
 
 app.get("/api/status", async (req, res) => {

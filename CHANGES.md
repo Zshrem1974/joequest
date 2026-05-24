@@ -1,5 +1,104 @@
 # CHANGES
 
+## Instrumentation Stage 1 — Event capture (user-testing analytics)
+
+Lightweight self-hosted event tracking so we can see what real Boca users
+do without a third-party analytics stack. Privacy-light: no PII in events,
+no fingerprinting, no third-party trackers; one anonymous client_id in
+localStorage and the user's existing Supabase id (never their email).
+
+### What changed
+
+**Schema** — new `events` table.
+- `id` bigserial PK
+- `client_id` — anon localStorage id (`jq.cid`)
+- `user_id` — nullable FK to `auth.users(id) ON DELETE SET NULL`
+- `name` — event name (allow-listed server-side)
+- `props` — small `jsonb` payload (server caps at 1 KB)
+- `path` — which of the nine views was active
+- `created_at` — timestamp
+- RLS on, **no policies** — only the service-role writes/reads.
+
+**Server**
+- `POST /api/event` — accepts `{ name, props, client_id, path }` + optional
+  `Authorization: Bearer <jwt>` (or `token` in body for `sendBeacon`).
+  Allow-lists the event name, validates the client_id shape (6–64 url-safe
+  chars), caps `props` JSON to 1 KB, swallows all errors. **Returns 204
+  immediately** before doing the DB write — analytics never slows the UI.
+- `db.js → saveEvent({ client_id, user_id, name, props, path })`
+  service-role insert with an in-memory dev fallback (capped at 2000 rows).
+
+**Client**
+- New `track(name, props)` helper in `public/index.html`:
+  - lazily creates/reads `localStorage["jq.cid"]`
+  - includes the current `state.view` as `path`
+  - **logged-in users:** `fetch` with `keepalive: true` so the JWT
+    `Authorization` header rides along
+  - **logged-out users:** `navigator.sendBeacon` first, falling back to
+    `fetch+keepalive`. (sendBeacon can't set headers, so logged-out
+    events never carry a user_id — that's the intended trade-off.)
+  - completely silent on failure
+- Event hooks placed at:
+  - `app_open` — once per browser session (sessionStorage guard) in `init()`
+  - `view_change` (`{ to }`) — inside `go()` when the view actually changes
+  - `cafe_open` (`{ place_id, rank }`) — top of `openSheet()`
+  - `pick_reveal` (`{ place_id }`) — once per sheet open after picks render
+  - `favourite_add` / `favourite_remove` (`{ place_id }`) — in `toggleFavourite()`
+  - `taste_profile_complete` — after a successful `PUT /api/taste`
+  - `offer_reveal` (`{ offer_id }`) — after a successful reveal+counter bump
+  - `help_submit` (`{ category }`) — after a successful help-form POST
+  - `signin` / `signup` (`{ confirmed }`) — in the auth-form success branches
+
+The allow-list lives in `server.js`:
+
+```js
+const EVENT_ALLOWLIST = new Set([
+  "app_open", "view_change", "cafe_open", "pick_reveal",
+  "favourite_add", "favourite_remove",
+  "taste_profile_complete", "offer_reveal", "help_submit",
+  "signin", "signup",
+]);
+```
+
+**Explicitly NOT captured:** review text, reviewer names, café-review
+contents, user emails, help-form message bodies, precise lat/lng,
+geolocation coordinates, IP addresses (Render's behind a load balancer; we
+don't log them and Supabase doesn't either by default).
+
+### Setup SQL (Supabase → SQL Editor → Run)
+
+```sql
+create table if not exists events (
+  id         bigserial primary key,
+  client_id  text not null,
+  user_id    uuid references auth.users(id) on delete set null,
+  name       text not null,
+  props      jsonb,
+  path       text,
+  created_at timestamptz not null default now()
+);
+create index if not exists events_created_idx on events (created_at desc);
+create index if not exists events_name_idx    on events (name);
+create index if not exists events_client_idx  on events (client_id);
+
+alter table events enable row level security;
+-- No policies — service-role only.
+
+notify pgrst, 'reload schema';
+```
+
+### What this will tell us once Boca users hit the site
+
+Funnel: `app_open` → `cafe_open` → `pick_reveal` → `favourite_add`.
+That's the value chain: did they show up? Did they tap a café? Did they
+see the AI picks? Did they save anything they'd come back for? Each drop-
+off step points at a specific bit of UX to investigate. We'll also see
+which screens (`view_change`) people return to and whether the taste
+profile and offers screens get any traction — both are bets we can prune
+or double down on. The admin view in Stage 2 surfaces these aggregates.
+
+---
+
 ## Stage 4 (Drawer) — Offers + Help-as-a-form
 
 Two independent additions:

@@ -266,6 +266,40 @@ export async function revealOffer(offerId) {
 }
 
 // ----------------------------------------------------------------------------
+// EVENTS (Instrumentation Stage 1 — fire-and-forget analytics)
+// ----------------------------------------------------------------------------
+// Server is the only writer. Service-role client, no RLS policies (admin-only
+// reads via the gated /api/admin/stats endpoint). Failure is non-blocking —
+// we never throw to the client; analytics must not break the UI.
+// ----------------------------------------------------------------------------
+const memEvents = []; // dev fallback when Supabase isn't configured
+const MEM_EVENTS_CAP = 2000;
+
+export async function saveEvent(event) {
+  if (!event || !event.name) return;
+  const row = {
+    client_id: event.client_id,
+    user_id: event.user_id || null,
+    name: event.name,
+    props: event.props || null,
+    path: event.path || null,
+  };
+  if (supabase) {
+    const { error } = await supabase.from("events").insert(row);
+    if (error) console.warn("saveEvent:", error.message);
+    return;
+  }
+  memEvents.push({ ...row, created_at: new Date().toISOString() });
+  if (memEvents.length > MEM_EVENTS_CAP) memEvents.shift();
+}
+
+// Read helpers used by Stage 2's admin endpoint. Exposed here so the dev
+// in-memory fallback path stays self-contained.
+export function memEventsSnapshot() {
+  return memEvents.slice();
+}
+
+// ----------------------------------------------------------------------------
 // HELP MESSAGES (Stage 4 — drawer → Help form)
 // ----------------------------------------------------------------------------
 export async function saveHelpMessage(msg) {
