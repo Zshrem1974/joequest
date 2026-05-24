@@ -388,6 +388,8 @@
       border-color: var(--espresso);
     }
     .chip svg { width: 14px; height: 14px; }
+    .chip img { height: 16px; width: auto; display: inline-block; vertical-align: -3px; }
+    .chip-quester { padding-left: 10px; }
     .filter-summary {
       padding: 10px 18px 4px;
       display: flex; justify-content: space-between;
@@ -464,7 +466,13 @@
     }
     .map-legend .dot.cafe    { background: var(--crema); }
     .map-legend .dot.you     { background: #D9483A; box-shadow: 0 0 0 3px rgba(217,72,58,0.18); }
-    .map-legend .dot.quester { background: var(--quester); box-shadow: 0 0 0 3px rgba(124,92,255,0.18); }
+    .map-legend .dot.quester {
+      background: url("/img/joequester-marker.png") no-repeat center / contain;
+      width: 14px;
+      height: 18px;
+      border-radius: 0;
+      box-shadow: none;
+    }
 
     /* Map pins */
     .pin {
@@ -1404,17 +1412,23 @@
       `;
       svg.insertAdjacentHTML("beforeend", bg);
 
-      // JoeQuesters dots (drawn under pins). Simulated positions on the detailed map only.
+      // JoeQuesters markers (drawn under café pins). Uses the branded purple
+      // smiley-cup pin PNG. Tip of the marker lands on the simulated coord.
       if (detailed && state.filters.questers) {
         const positions = [
           [0.30, 0.45], [0.18, 0.62], [0.60, 0.68], [0.74, 0.30],
           [0.42, 0.78], [0.55, 0.18], [0.86, 0.62],
         ];
+        const mw = 22, mh = 30;   // aspect ≈ 256:344 from joequester-marker.png
         positions.forEach(([fx, fy]) => {
           const cx = fx * w, cy = fy * h;
           svg.insertAdjacentHTML("beforeend", `
-            <circle cx="${cx}" cy="${cy}" r="7" fill="rgba(124,92,255,0.20)"/>
-            <circle cx="${cx}" cy="${cy}" r="4" fill="#7C5CFF" stroke="white" stroke-width="2"/>
+            <ellipse cx="${cx}" cy="${cy + 1}" rx="6" ry="1.8" fill="rgba(43,28,18,0.22)"/>
+            <image href="/img/joequester-marker.png"
+              x="${cx - mw / 2}" y="${cy - mh}"
+              width="${mw}" height="${mh}"
+              preserveAspectRatio="xMidYMid meet"
+              style="pointer-events: none;"/>
           `);
         });
       }
@@ -1547,7 +1561,7 @@
         <button class="chip" data-chip="rating">★ Rating <span data-chip-val="rating"></span></button>
         <button class="chip" data-chip="open">Open now</button>
         <button class="chip" data-chip="price">Price <span data-chip-val="price"></span></button>
-        <button class="chip" data-chip="questers">JoeQuesters near me</button>
+        <button class="chip chip-quester" data-chip="questers"><img src="/img/joequester-marker.png" alt="" aria-hidden="true"> JoeQuesters near me</button>
       `;
       els.filterBar.addEventListener("click", (e) => {
         const btn = e.target.closest(".chip");
