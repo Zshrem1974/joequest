@@ -307,6 +307,55 @@
     .cafe-card .stats .star { color: var(--star); font-size: 14px; }
     .cafe-card .stats .price { color: var(--espresso); font-weight: 600; }
 
+    /* City selector + origin hint in the Discover greeting */
+    .city-bar {
+      display: flex; align-items: center; gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .city-bar-k {
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      color: var(--muted);
+    }
+    .city-select {
+      appearance: none;
+      -webkit-appearance: none;
+      background: var(--cream);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-pill);
+      padding: 8px 30px 8px 14px;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--espresso);
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5L6 6L11 1.5' stroke='%235E3E27' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+    }
+    .city-bar-hint {
+      font-size: 12px;
+      color: var(--mint);
+      font-weight: 500;
+    }
+
+    /* "1.4 mi away" line on each card, between stats and the picks strip */
+    .card-distance {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--mint);
+      margin: 4px 0 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-distance::before {
+      content: "📍";
+      font-size: 11px;
+      filter: grayscale(0.2);
+    }
+
     /* Today's hours line at the bottom of each card */
     .card-hours {
       font-size: 12.5px;
@@ -1532,6 +1581,11 @@
       <div class="greeting">
         <h1>Coffee Quest Begins</h1>
         <p id="greeting-sub">One drink, one bite, per café. Hand-picked from real reviews.</p>
+        <div class="city-bar">
+          <label for="city-select" class="city-bar-k">City</label>
+          <select id="city-select" class="city-select" aria-label="Choose city"></select>
+          <span class="city-bar-hint" id="origin-hint" hidden></span>
+        </div>
       </div>
 
       <div class="mini-map" id="mini-map" role="button" aria-label="Open full map">
@@ -2143,6 +2197,9 @@
       taste: null,                                // Stage 2: loaded after sign-in
       settings: { units: "mi", notifications: false }, // Stage 3
       recoveryMode: false,                        // true after a PASSWORD_RECOVERY auth event
+      cities: [],                                 // Stage B: from /api/cities
+      city: "boca-raton",                         // active city slug
+      origin: null,                               // { lat, lng } when we have a user location
     };
 
     // ---- DOM ----
@@ -2191,6 +2248,116 @@
     function star(rating) {
       const r = rating ?? 0;
       return `<span class="star">★</span> ${r ? r.toFixed(1) : "—"}`;
+    }
+
+    // ---- multi-city + distance (Stage B) ----
+    const LAST_CITY_KEY = "jq.lastCity";
+
+    function haversine(lat1, lng1, lat2, lng2, useKm = false) {
+      const R = useKm ? 6371 : 3959;
+      const r = (d) => (d * Math.PI) / 180;
+      const dLat = r(lat2 - lat1), dLng = r(lng2 - lng1);
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos(r(lat1)) * Math.cos(r(lat2)) * Math.sin(dLng / 2) ** 2;
+      return 2 * R * Math.asin(Math.sqrt(a));
+    }
+    function distanceFromOrigin(cafe) {
+      if (!state.origin || typeof cafe?.lat !== "number" || typeof cafe?.lng !== "number") return null;
+      const useKm = state.settings?.units === "km";
+      const d = haversine(state.origin.lat, state.origin.lng, cafe.lat, cafe.lng, useKm);
+      const unit = useKm ? "km" : "mi";
+      if (d < 0.1) return "< 0.1 " + unit;
+      return d.toFixed(1) + " " + unit + " away";
+    }
+    function sortByDistance(list) {
+      if (!state.origin) return list;
+      return list.slice().sort((a, b) => {
+        const da = haversine(state.origin.lat, state.origin.lng, a.lat, a.lng);
+        const db = haversine(state.origin.lat, state.origin.lng, b.lat, b.lng);
+        return da - db;
+      });
+    }
+    function findNearestCity(lat, lng) {
+      let best = null, bestD = Infinity;
+      for (const c of state.cities) {
+        if (!c.hasSnapshot) continue; // only suggest cities we actually have data for
+        const d = (c.center.lat - lat) ** 2 + (c.center.lng - lng) ** 2;
+        if (d < bestD) { bestD = d; best = c; }
+      }
+      return best;
+    }
+
+    async function loadCities() {
+      try {
+        const r = await fetch("/api/cities");
+        if (!r.ok) return;
+        const d = await r.json();
+        state.cities = d.cities || [];
+      } catch (e) { console.warn("loadCities:", e); }
+    }
+
+    async function pickInitialCity() {
+      // 1) silent geolocation if already granted
+      try {
+        if (navigator.permissions?.query && navigator.geolocation) {
+          const s = await navigator.permissions.query({ name: "geolocation" });
+          if (s?.state === "granted") {
+            const pos = await new Promise((res, rej) => {
+              navigator.geolocation.getCurrentPosition(res, rej, { timeout: 4000, maximumAge: 300000 });
+            });
+            state.origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+            const near = findNearestCity(state.origin.lat, state.origin.lng);
+            if (near) return near.slug;
+          }
+        }
+      } catch {}
+      // 2) last selected
+      const last = localStorage.getItem(LAST_CITY_KEY);
+      if (last && state.cities.find((c) => c.slug === last)) return last;
+      // 3) default
+      return "boca-raton";
+    }
+
+    function renderCityDropdown() {
+      const sel = document.getElementById("city-select");
+      if (!sel) return;
+      sel.innerHTML = state.cities.map((c) => {
+        const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
+        return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
+      }).join("");
+
+      const hint = document.getElementById("origin-hint");
+      if (hint) {
+        if (state.origin) {
+          hint.hidden = false;
+          hint.textContent = "📍 sorting by distance from you";
+        } else {
+          hint.hidden = true;
+        }
+      }
+    }
+
+    async function selectCity(slug) {
+      if (!slug || slug === state.city) return;
+      const c = state.cities.find((x) => x.slug === slug);
+      if (!c || !c.hasSnapshot) return;
+      state.city = slug;
+      localStorage.setItem(LAST_CITY_KEY, slug);
+      await loadCafesForCity(slug);
+      renderDiscover();
+      renderMaps();
+      track("view_change", { to: "discover", city: slug }); // light reuse — not a new event
+    }
+
+    async function loadCafesForCity(slug) {
+      try {
+        const r = await fetch(`/api/cafes?city=${encodeURIComponent(slug)}`);
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        const d = await r.json();
+        state.cafes = sortByDistance(d.cafes || []);
+        state.filtered = state.cafes;
+      } catch (e) {
+        console.warn("loadCafesForCity:", e);
+      }
     }
 
     // ---- live hours computation (client-side, from periods[]) ----
@@ -2351,12 +2518,12 @@
       await initAuth();
       await loadFavourites();
 
-      // Cafés
+      // Cities first, then pick the initial city and load its cafés.
+      await loadCities();
+      state.city = await pickInitialCity();
+      renderCityDropdown();
       try {
-        const data = await fetch("/api/cafes").then((r) => r.json());
-        if (data.error) throw new Error(data.error);
-        state.cafes = data.cafes;
-        state.filtered = data.cafes;
+        await loadCafesForCity(state.city);
         renderDiscover();
         renderMaps();
       } catch (e) {
@@ -3161,6 +3328,10 @@
               <span>${(c.reviews || 0).toLocaleString()} reviews</span>
               ${c.price ? `<span>·</span><span class="price">${escapeHTML(c.price)}</span>` : ""}
             </div>
+            ${(() => {
+              const d = distanceFromOrigin(c);
+              return d ? `<div class="card-distance">${escapeHTML(d)}</div>` : "";
+            })()}
             <div class="picks-strip" data-picks-for="${c.id}">
               <div class="pick-mini${matchTag ? " matched" : ""}">
                 <div class="lbl">Drink${matchTag}</div>
@@ -3717,6 +3888,12 @@
       navigator.geolocation.getCurrentPosition(
         (pos) => {
           state.myLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+          // Stage B: also use this as the origin for "1.4 mi away" on cards
+          state.origin = { ...state.myLocation };
+          state.cafes = sortByDistance(state.cafes);
+          state.filtered = sortByDistance(state.filtered);
+          if (state.view === "discover") renderDiscover();
+          renderCityDropdown();
           const BOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
           const inBoca =
             state.myLocation.lat >= BOX.south && state.myLocation.lat <= BOX.north &&
@@ -3749,6 +3926,9 @@
 
       // mini-map → go to map
       $("#mini-map").addEventListener("click", () => go("map"));
+
+      // city dropdown
+      $("#city-select")?.addEventListener("change", (e) => selectCity(e.target.value));
 
       // filter clear
       els.filterClear.addEventListener("click", () => {
