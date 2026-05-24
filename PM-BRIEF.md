@@ -321,10 +321,24 @@ spend rate.
   branded but their positions are seeded (no real user-location signal yet).
 - **Google's top-20 search misses good cafés.** The snapshot script feeds
   off `places:searchText` which caps at 20. Cafés at the city edge can fall
-  off the list (e.g. Rosalia's Botanical Cafe in West Boca — added manually
-  via `scripts/add-cafe.js`). Structural fix queued: add a `MUST_INCLUDE`
-  list of place_ids to `scripts/snapshot.js` so curated picks survive
+  off the list (Rosalia's, Espresso Joint — both manually re-added via
+  `scripts/add-cafe.js`). Structural fix queued: add a `MUST_INCLUDE` list
+  of place_ids per city to `scripts/snapshot.js` so curated picks survive
   every refresh.
+- **`scripts/refresh-hours.js` and the monthly cron are still single-city.**
+  They default to `boca-raton`. Need a matrix update to run per-city
+  before the next 90-day refresh cycle.
+
+## Sharing & deep linking
+
+Every café card has a **share button** on the photo (next to the heart).
+Tap → `navigator.share` on mobile (native share sheet), clipboard fallback
+on desktop ("Link copied" toast). Payload is `"Try the <drink> + <food> at
+<name> — JoeQuest"` plus `<origin>/?cafe=<id>`.
+
+**Deep links** — `?cafe=<id>` on load opens that café's sheet. If the linked
+café lives in a different city than the user's current one, the app calls
+`selectCity()` first, then opens the sheet after the snapshot loads.
 - "You" pin uses real `navigator.geolocation` when the user grants permission,
   else defaults to Boca centre.
 - Single city (Boca) hardcoded — by design for MVP, see "Multi-city" above.

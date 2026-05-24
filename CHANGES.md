@@ -1,5 +1,100 @@
 # CHANGES
 
+## Multi-city (Stages A → D) + share + deep links + Espresso Joint refill
+
+Expanded coverage from Boca-only to **6 South-Florida cities**: Boca Raton,
+Delray Beach, Boynton Beach, Deerfield Beach, Fort Lauderdale, Miami.
+**89 cafés total.** Added per-card share + deep links.
+
+### A — backend plumbing
+- New **`lib/cities.js`** holds the 6 city configs (slug, displayName, bbox,
+  centroid, addressRegex, searchQuery) + `cityBySlug()` + `nearestCity()`
+  + generic `inBoxBy()` helpers.
+- **`lib/data.js`** `searchCafes(googleKey, city)` is now city-parameterized
+  (defaults to Boca for back-compat). City slug stamped on each cafe row.
+- **`server.js`** loads every `data/<slug>.json` whose slug matches a known
+  city (also accepts legacy `boca-snapshot.json`).
+- New endpoints:
+  - `GET /api/cafes?city=<slug>` — that city's cafés
+  - `GET /api/cafes?all=1` — every city flat, tagged with `city`
+  - `GET /api/cities` — list for the dropdown (slug, displayName,
+    hasSnapshot, cafeCount)
+  - `GET /api/zip/:zip` — resolves a 5-digit US zip → `{lat,lng}` via one
+    Places text search (~$0.005)
+- `/api/status` now reports a `snapshots[]` array (was a single object).
+- Renamed `data/boca-snapshot.json` → `data/boca-raton.json` (with the
+  legacy filename still accepted by the server).
+
+### B — UI: city dropdown, geolocation, distance
+- New city-bar in the Discover greeting: dropdown (cities without a snapshot
+  show "coming soon" + disabled) + origin hint.
+- Boot logic: silent geolocation (only if already permitted) → pick nearest
+  of the 6 cities → fall back to `localStorage["jq.lastCity"]` → Boca. No
+  permission prompt on first visit.
+- **"📍 N.N mi/km away"** line under each card's stats row when an origin
+  is set. Uses mi/km from Settings.
+- Cafés client-side re-sorted by distance whenever an origin exists.
+- Locating yourself on the map (Locate-me button) also sets the
+  Discover-card origin.
+
+### C — zipcode override
+- New ZIP input pill next to the city dropdown. 5 digits auto-fires
+  `applyZip(zip)`:
+  - Sets origin to that zip's centroid
+  - Fetches `/api/cafes?all=1`
+  - Sorts the combined list by distance from the zip
+  - **City dropdown is disabled** while a zip is active
+  - Hint flips to `📮 ZIP 33432 · sorting all cities by distance`
+- `×` clear button resets to city-mode and reloads the active city.
+- `Enter` to confirm, `Esc` to clear. Origin source is tracked (zip vs
+  geolocation) so clearing the zip only drops origin when zip set it.
+- **Map view gets its own city-bar** above the filter chips, mirroring the
+  Discover bar. Both bars stay in sync via class-based selectors.
+
+### D — data (one-time backfill, ~$3 in API)
+- Ran `node scripts/snapshot.js --city=<slug>` for the 5 new cities:
+  - `data/delray-beach.json` — 15 cafés
+  - `data/boynton-beach.json` — 11 cafés
+  - `data/deerfield-beach.json` — 9 cafés
+  - `data/fort-lauderdale.json` — 18 cafés
+  - `data/miami.json` — 16 cafés
+- Each row has full hours data (periods + weekdayDescriptions) so the
+  client computes open/closed live.
+
+### Espresso Joint refill
+- `scripts/add-cafe.js` refactored to be city-aware (`--city=<slug>`,
+  defaults to `boca-raton`; uses city's bbox + addressRegex; stamps city
+  slug on the row).
+- Re-added **Espresso Joint** to Boca (it dropped out of Google's rotating
+  top-20 search). Picks: Whipped Honey Latte (high) + Breakfast Croissant
+  (medium). Boca now at **21 cafés**.
+
+### Share button + deep links
+- **Every café card** has a share button on the photo, left of the heart.
+  Tap → `navigator.share` on mobile (native share sheet), clipboard fallback
+  on desktop with a "Link copied" toast.
+- Payload: `"Try the <drink> + <food> at <name> — JoeQuest"` plus
+  `<origin>/?cafe=<id>` deep link.
+- `?cafe=<id>` on page load auto-opens that café's bottom sheet.
+  Cross-city: if the linked café lives in another city, the app switches
+  via `selectCity()` first, then opens the sheet.
+- `"share"` added to the events allow-list so the funnel can include
+  share intents.
+
+### Required env vars (unchanged)
+Same `GOOGLE_PLACES_API_KEY`, `ANTHROPIC_API_KEY`, `SUPABASE_*`, `ADMIN_TOKEN`.
+
+### Known structural debt
+- Google's `places:searchText` caps at 20 per query — well-rated cafés at the
+  edge of a city can drop out of the top-20. We have `scripts/add-cafe.js`
+  as a per-place workaround. **TODO:** add a `MUST_INCLUDE` list of
+  place_ids per city to `scripts/snapshot.js` so curated picks survive
+  every refresh.
+- `scripts/refresh-hours.js` and the monthly snapshot Action still use the
+  legacy single-city path. Both need `--city=<slug>` matrix updates.
+
+---
+
 ## Instrumentation Stage 1 — Event capture (user-testing analytics)
 
 Lightweight self-hosted event tracking so we can see what real Boca users
