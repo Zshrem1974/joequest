@@ -120,6 +120,41 @@ async function main() {
     if (!newIds.has(oldId)) stats.dropped++;
   }
 
+  // Pre-flight plan + cost — runs BEFORE any Claude/getReviews calls so a
+  // dry-run shows exactly what a real run would spend. In dry-run mode the
+  // Place Details fetches for mustInclude are skipped, so we surface those
+  // ids separately as "would add" rather than rolling them into the count.
+  const plan = { fresh: 0, stale: 0, newCafes: 0 };
+  for (const cafe of cafes) {
+    const old = existingPicks[cafe.id];
+    const a = ageMs(old, fallbackDate);
+    const wasNew = !old;
+    const isStale = a >= TTL_MS;
+    if (wasNew) plan.newCafes++;
+    else if (FORCE || isStale) plan.stale++;
+    else plan.fresh++;
+  }
+  // In dry-run, missing mustInclude ids aren't in `cafes` but would each
+  // cost one Claude pick (new café) plus one Place Details call.
+  const wouldFetchMustInclude = DRY ? missingMustInclude.length : 0;
+  const toPull = plan.stale + plan.newCafes + wouldFetchMustInclude;
+  const placesCalls = cafes.length + wouldFetchMustInclude;
+  const est = (toPull * 0.04 + placesCalls * 0.005).toFixed(2);
+
+  console.log(`Plan for ${CITY_CFG.displayName}:`);
+  console.log(`  Reused (fresh, <90d):     ${plan.fresh}`);
+  console.log(`  Stale (≥90d, re-pull):    ${plan.stale}`);
+  console.log(`  New cafés (from search):  ${plan.newCafes}`);
+  if (mustIncludeAdded || wouldFetchMustInclude) {
+    const m = DRY
+      ? `would add ${wouldFetchMustInclude}`
+      : `${mustIncludeAdded} added`;
+    console.log(`  MUST_INCLUDE:             ${m}`);
+  }
+  if (stats.dropped) console.log(`  Dropped from list:        ${stats.dropped}`);
+  console.log(`  Estimated cost: ~$${est}  (${toPull} Claude × $0.04 + ${placesCalls} Places × $0.005)`);
+  console.log("");
+
   for (const cafe of cafes) {
     const old = existingPicks[cafe.id];
     const a = ageMs(old, fallbackDate);
