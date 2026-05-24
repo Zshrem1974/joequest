@@ -238,6 +238,40 @@ app.get("/api/cafes/:id", async (req, res) => {
 
 app.get("/api/photo", streamPhoto);
 
+// ---- zipcode → lat/lng (Stage C) ------------------------------------------
+// Resolve a US 5-digit zip to its centroid via Google Places text search.
+// Cheap: one Places call, ~$0.005. Used by the zipcode override UI to set the
+// distance-sort origin without requiring browser geolocation permission.
+app.get("/api/zip/:zip", async (req, res) => {
+  if (!GOOGLE_KEY) return res.status(503).json({ error: "Server missing GOOGLE_PLACES_API_KEY" });
+  const zip = String(req.params.zip || "").trim();
+  if (!/^\d{5}$/.test(zip)) return res.status(400).json({ error: "5-digit ZIP required" });
+  try {
+    const r = await fetch(`${PLACES_BASE}/places:searchText`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Goog-Api-Key": GOOGLE_KEY,
+        "X-Goog-FieldMask": "places.location,places.formattedAddress,places.displayName,places.types",
+      },
+      body: JSON.stringify({ textQuery: `ZIP ${zip} USA`, maxResultCount: 1 }),
+    });
+    if (!r.ok) throw new Error(`Places ${r.status}: ${await r.text()}`);
+    const d = await r.json();
+    const p = d.places?.[0];
+    if (!p?.location) return res.status(404).json({ error: "ZIP not found" });
+    res.json({
+      zip,
+      lat: p.location.latitude,
+      lng: p.location.longitude,
+      address: p.formattedAddress || null,
+      name: p.displayName?.text || null,
+    });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // ---- auth config (safe public values for the browser) ---------------------
 // Browser uses these to spin up its own Supabase client (anon key + URL).
 // The service-role key NEVER leaves the server.

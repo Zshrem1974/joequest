@@ -339,6 +339,34 @@
       color: var(--mint);
       font-weight: 500;
     }
+    .city-select:disabled { opacity: 0.5; cursor: not-allowed; }
+    .zip-wrap { position: relative; display: inline-flex; align-items: center; }
+    .zip-input {
+      width: 96px;
+      padding: 8px 28px 8px 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-pill);
+      background: var(--cream);
+      color: var(--espresso);
+      font-family: var(--body);
+      font-weight: 600;
+      font-size: 14px;
+      font-variant-numeric: tabular-nums;
+    }
+    .zip-input:focus { outline: none; border-color: var(--crema); }
+    .zip-clear {
+      position: absolute;
+      right: 8px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: none;
+      background: var(--line-strong);
+      color: var(--cream);
+      font-size: 13px;
+      line-height: 16px;
+      cursor: pointer;
+      padding: 0;
+    }
 
     /* "1.4 mi away" line on each card, between stats and the picks strip */
     .card-distance {
@@ -1584,6 +1612,11 @@
         <div class="city-bar">
           <label for="city-select" class="city-bar-k">City</label>
           <select id="city-select" class="city-select" aria-label="Choose city"></select>
+          <div class="zip-wrap">
+            <input type="text" inputmode="numeric" pattern="\d*" maxlength="5"
+              id="zip-input" class="zip-input" placeholder="or ZIP" aria-label="ZIP code overrides city">
+            <button class="zip-clear" id="zip-clear" hidden aria-label="Clear ZIP">×</button>
+          </div>
           <span class="city-bar-hint" id="origin-hint" hidden></span>
         </div>
       </div>
@@ -2200,6 +2233,9 @@
       cities: [],                                 // Stage B: from /api/cities
       city: "boca-raton",                         // active city slug
       origin: null,                               // { lat, lng } when we have a user location
+      originSource: null,                         // "zip" | "geolocation" | null
+      zipMode: false,                             // Stage C: true while a zip override is active
+      zip: null,                                  // current 5-digit zip
     };
 
     // ---- DOM ----
@@ -2324,16 +2360,65 @@
         const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
         return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
       }).join("");
+      sel.disabled = !!state.zipMode;
+
+      const clearBtn = document.getElementById("zip-clear");
+      if (clearBtn) clearBtn.hidden = !state.zipMode;
 
       const hint = document.getElementById("origin-hint");
       if (hint) {
-        if (state.origin) {
+        if (state.zipMode && state.zip) {
+          hint.hidden = false;
+          hint.textContent = `📮 ZIP ${state.zip} · sorting all cities by distance`;
+        } else if (state.origin) {
           hint.hidden = false;
           hint.textContent = "📍 sorting by distance from you";
         } else {
           hint.hidden = true;
         }
       }
+    }
+
+    async function applyZip(zip) {
+      if (!/^\d{5}$/.test(zip)) return;
+      try {
+        const r = await fetch(`/api/zip/${zip}`);
+        if (!r.ok) {
+          const e = await r.json().catch(() => ({}));
+          toast(`ZIP lookup failed: ${e.error || r.statusText}`, "error");
+          return;
+        }
+        const d = await r.json();
+        state.zipMode = true;
+        state.zip = d.zip;
+        state.origin = { lat: d.lat, lng: d.lng };
+        state.originSource = "zip";
+
+        const all = await fetch("/api/cafes?all=1").then((r) => r.json());
+        state.cafes = sortByDistance(all.cafes || []);
+        state.filtered = state.cafes;
+
+        renderCityDropdown();
+        renderDiscover();
+        toast(`Sorting ${state.cafes.length} cafés by distance from ${zip}.`);
+      } catch (e) {
+        toast(`ZIP error: ${e.message}`, "error");
+      }
+    }
+
+    function clearZip() {
+      state.zipMode = false;
+      state.zip = null;
+      if (state.originSource === "zip") {
+        state.origin = null;
+        state.originSource = null;
+      }
+      const zi = document.getElementById("zip-input");
+      if (zi) zi.value = "";
+      loadCafesForCity(state.city).then(() => {
+        renderCityDropdown();
+        renderDiscover();
+      });
     }
 
     async function selectCity(slug) {
@@ -3929,6 +4014,19 @@
 
       // city dropdown
       $("#city-select")?.addEventListener("change", (e) => selectCity(e.target.value));
+
+      // zipcode override (Stage C)
+      const zipInput = $("#zip-input");
+      zipInput?.addEventListener("input", () => {
+        // Strip non-digits, fire when exactly 5
+        zipInput.value = zipInput.value.replace(/\D/g, "").slice(0, 5);
+        if (zipInput.value.length === 5) applyZip(zipInput.value);
+      });
+      zipInput?.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && /^\d{5}$/.test(zipInput.value)) applyZip(zipInput.value);
+        if (e.key === "Escape") { zipInput.value = ""; clearZip(); }
+      });
+      $("#zip-clear")?.addEventListener("click", clearZip);
 
       // filter clear
       els.filterClear.addEventListener("click", () => {
