@@ -17,11 +17,11 @@ A recommendation engine that reads a coffee shop's Google reviews and names the 
 
 Engine / CLI: `test-offline.js`, `joequest-engine.js`, `scan-list.js`, `recurate.js`.
 Live app:
-- `server.js` (Express API: list, detail, photo proxy, favourites, status; snapshot loader)
+- `server.js` (Express API: list, detail, photo proxy, favourites, taste, auth-config, status; snapshot loader)
 - `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label)
-- `public/index.html` (vanilla-JS UI, single page, six views)
+- `public/index.html` (vanilla-JS UI, single page, **seven views**; loads `supabase-js` from CDN for browser-side auth)
 - `public/img/` (brand SVGs: lockup, favicon, app icon, standalone pin; PNG: JoeQuester marker)
-- `db.js` (Supabase or in-memory fallback for favourites & per-place cache)
+- `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles. In-memory fallback for dev.)
 
 Snapshot pipeline:
 - `data/boca-snapshot.json` — 19 cafés + picks, with per-place `fetched_at` (66 KB)
@@ -105,14 +105,15 @@ engagement.**
 
 ## UI & brand state (what's actually shipped)
 
-The deployed app implements all six screens from the spec, with the brand
-palette and Poppins/Inter typography.
+The deployed app implements seven screens with the brand palette and
+Poppins / Inter typography.
 
 - **Discover** — header lockup, "Coffee Quest Begins" greeting, mini-map with
   brand pins + rating pills, ranked café card list with rank badges,
   open/closed status badges (with closing/opening time, e.g. "Open · Closes
   10 PM"), heart-save, photo via the photo proxy, two-up Drink/Food strip on
-  each card.
+  each card. **Drink pick shows a mint `✓ your taste` chip** when it matches
+  the user's coffee taste profile (Stage 2 — honest, never fabricated).
 - **Map** — Google-Maps-style interaction:
   - viewBox-based zoom (1×–5×) with `+` / `−` controls
   - drag-to-pan once zoomed in
@@ -127,9 +128,20 @@ palette and Poppins/Inter typography.
 - **Café detail bottom sheet** — hero photo, "AI read N reviews" banner,
   confidence-tinted Drink + Food cards (high = mint, medium = star-gold,
   low = crema), reviewer quote, mention count, Open in Maps / Directions CTAs.
-- **Saved** — favourites with empty state + nudge.
-- **Slide-out drawer** — Profile, Coffee taste profile (AI tag), Offers,
-  Become a JQ partner, Settings, Privacy & location, Help.
+- **Saved** — favourites with empty state + nudge. Account-backed when
+  signed in; localStorage when signed out; anon saves merge into the
+  account on first sign-in.
+- **Profile** (Stage 1) — tabbed Sign in / Create account form, inline error
+  display. Signed-in state shows avatar (email initials), email, member-since,
+  saved-café count, View saved + Sign out.
+- **Coffee taste profile** (Stage 2) — 6-question pill quiz: roast, milk,
+  strength, sweetness, adventurousness, **brewing method** (8 options each
+  with a one-line description that appears when selected). Summary card +
+  Edit affordance once saved.
+- **Slide-out drawer** — Profile *(wired)*, Coffee taste profile *(wired, AI
+  tag)*, Offers *(placeholder)*, Become a JQ partner *(wired)*, Settings
+  *(placeholder)*, Privacy & location *(placeholder)*, Help *(placeholder)*.
+  Header shows user email + initials when logged in.
 - **Partner page** — two offer types (Café placement $49/mo, Brand offers
   from $250/campaign) + the coffee-only sponsorship policy box.
 
@@ -137,6 +149,26 @@ Brand assets: `joequest-lockup.svg` in the header, `favicon.svg` in the tab,
 `joequest-app-icon.svg` for iOS install, `joequest-icon.svg` paths used for
 the café and "You" map pins (orange + red), `joequester-marker.png` for the
 purple JoeQuesters markers and the filter chip icon.
+
+## Accounts, taste profile & data privacy
+
+**Auth (Stage 1):** Supabase Auth with email + password. Browser holds the
+JWT via `supabase-js`'s localStorage; server verifies via the service-role
+client's `auth.getUser(jwt)`. Service-role key never leaves the server.
+Anon-key + URL are public values (delivered via `/api/auth/config`).
+
+**Per-user tables (all RLS-protected on `auth.uid() = user_id`):**
+- `favourites(user_id, place_id, created_at)` — composite PK, FK to
+  `auth.users(id) ON DELETE CASCADE`.
+- `taste_profiles(user_id, roast, milk, strength, sweetness, adventurous,
+  brewing, updated_at)` — single row per user, loose text columns so the
+  quiz can evolve without migrations.
+
+**Taste-match seam:** `tasteMatch(drink, profile)` in `public/index.html` is
+the single matching surface. Conservative — generic picks ("Coffee") never
+match; multi-axis (roast, strength, milk, sweetness, adventurousness,
+brewing); never overrides ranking. **Future LLM-driven personalization
+plugs in there as a drop-in replacement.**
 
 ## Cost shape (current)
 
@@ -152,26 +184,44 @@ spend rate.
 
 ## NEXT STEPS — ordered, actionable
 
-1. **Restrict the Google API key (DO FIRST, ~10 min, security).** Cloud Console
-   → Credentials → the key → API restrictions: Places API (New) only.
-   Application restrictions: HTTP referrers → `joequest.onrender.com/*`.
-   Set a Google Cloud budget alert too. (Snapshot saves cost but the key is
-   still public on the wire — a leak is still a leak.)
+**Drawer build sequence (4 stages, ordered by spec; Stages 1+2 shipped):**
+- ~~Stage 1 — Accounts (Supabase Auth, user-keyed favourites)~~ ✅
+- ~~Stage 2 — Coffee taste profile (6-question quiz, match-your-taste chips)~~ ✅
+- **Stage 3 — Settings** (units mi/km, location permission re-request,
+  notifications toggle placeholder, "clear my data" with confirm).
+- **Stage 4 — Offers** (partner-coupon table + reveal/copy tracking) and
+  **Help-as-a-form** (submissions to `help_messages` table).
+
+**General platform follow-ups:**
+1. **Restrict the Google API key (~10 min, security).** Cloud Console →
+   Credentials → API restrictions: Places API (New) only. Application
+   restrictions: HTTP referrers → `joequest.onrender.com/*`. Set a budget
+   alert.
 2. **Add GitHub Actions secrets (~5 min).** Repo → Settings → Secrets and
-   variables → Actions → add `GOOGLE_PLACES_API_KEY` and `ANTHROPIC_API_KEY`.
-   Without these the monthly cron will fail.
-3. **Persist favourites to Supabase (~1 day).** Pick cache is now redundant
-   because of the snapshot, but the `favourites` table is still in-memory.
-   Connect Supabase (set `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` in
-   Render's env), run the SQL in `CHANGES.md`. After that, saves survive
-   the free-tier sleep.
-4. **Custom domain (optional, ~30 min + DNS).** If you own `joequest.app`,
+   variables → Actions → `GOOGLE_PLACES_API_KEY`, `ANTHROPIC_API_KEY`.
+   Without these the monthly snapshot cron will fail.
+3. **Custom domain (optional, ~30 min + DNS).** If you own `joequest.app`,
    CNAME → Render. Step 5 in `DEPLOY.md`.
-5. **Fork — decide from real usage, not now:**
-   a. `/quest` onboarding flow — "where are you → the one best café + its pick." Stronger 5-second hook than a list. ~2 days.
-   b. Real map plotting — replace placeholder positions with true lat/lng on a tile layer (Maps JS or Mapbox). Cost/complexity higher.
-6. **Aggregate beyond Google (1–2 wks, biggest moat lever).** Yelp / TripAdvisor / Reddit to break the ~5-review ceiling. Needs legal review (ToS) before building.
-7. **Multi-city snapshot matrix (when we add city #2).** See "Multi-city" section above.
+4. **Fork — decide from real usage, not now:**
+   a. `/quest` onboarding flow — "where are you → the one best café + its
+      pick." Stronger 5-second hook than a list. ~2 days.
+   b. Real map plotting — replace placeholder positions with true lat/lng on
+      a tile layer (Maps JS or Mapbox). Cost/complexity higher.
+5. **Aggregate beyond Google (1–2 wks, biggest moat lever).** Yelp /
+   TripAdvisor / Reddit to break the ~5-review ceiling. Needs legal review
+   (ToS) before building.
+6. **Multi-city snapshot matrix (when we add city #2).** See "Multi-city"
+   section above.
+
+## Env vars (current, after Stages 1–2)
+
+| Var | Required | Where |
+|---|---|---|
+| `GOOGLE_PLACES_API_KEY` | Yes | Server. Snapshot script + photo proxy + live fallback. |
+| `ANTHROPIC_API_KEY` | Yes | Server. Snapshot script + live fallback. |
+| `SUPABASE_URL` | Yes | Server **and** sent to browser via `/api/auth/config`. |
+| `SUPABASE_ANON_KEY` | Yes for auth | Sent to browser. Safe to expose. |
+| `SUPABASE_SERVICE_ROLE_KEY` | Yes | Server-only. Verifies JWTs + admin DB ops. |
 
 ## Still-open strategic questions
 
