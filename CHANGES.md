@@ -1,5 +1,120 @@
 # CHANGES
 
+## Stage 4 (Drawer) — Offers + Help-as-a-form
+
+Two independent additions:
+
+- **Offers** — partner coupons. Codes are hidden until the user explicitly
+  "Reveals" them, which logs an intent signal (redemption counter +1) on
+  the server. No partner portal — offers seeded by hand.
+- **Help** — drawer Help item now opens a real contact form. Submissions
+  land in a Supabase table you can read whenever.
+
+### What changed
+
+**Schema**
+- New `offers` table with title / description / code / terms / kind / dates /
+  redemption counter / `sample` flag.
+- New `help_messages` table — submissions saved with optional `user_id`,
+  category enum, honeypot field for spam triage.
+- Both have RLS enabled: `offers` is public-read on `active = true`;
+  `help_messages` has NO policies (only the service role writes/reads it).
+
+**Server**
+- `GET /api/offers` — public list of active, non-expired offers. The `code`
+  column is **never returned** in the list.
+- `POST /api/offers/:id/redeem` — returns `{ code, redemptions }` and bumps
+  the counter. Non-atomic by design (low traffic, count is a signal not a
+  billing source). Real affiliate attribution will need partner-side
+  confirmation later — left as a comment in `db.js`.
+- `POST /api/help` — form submission endpoint. Honeypot accepted-silently
+  on spam; basic email regex check; user_id captured if a JWT is present.
+
+**db.js**
+- `listActiveOffers()`, `revealOffer(offerId)`, `saveHelpMessage(msg)`.
+
+**UI**
+- New `view-offers` reachable from drawer → **Offers near you**. Each offer
+  card shows partner badge + sample/live tag + title + description + terms +
+  expiry. "Reveal code" button → server roundtrip → code appears in a
+  monospaced pill with a Copy button (uses the Clipboard API).
+- New `view-help` reachable from drawer → **Help**. Form has name + email +
+  category pills (Bug / Suggestion / Partner enquiry / Other) + message
+  textarea + hidden honeypot. Success state replaces the form on submit
+  with a thank-you card and "Send another" / "Back" buttons.
+
+### Setup SQL (Supabase → SQL Editor → Run)
+
+```sql
+-- Offers
+create table if not exists offers (
+  id            uuid primary key default gen_random_uuid(),
+  partner_name  text not null,
+  title         text not null,
+  description   text,
+  code          text,
+  terms         text,
+  kind          text not null check (kind in ('cafe','brand')),
+  starts_at     timestamptz,
+  ends_at       timestamptz,
+  active        boolean not null default true,
+  sample        boolean not null default false,
+  redemptions   integer not null default 0,
+  created_at    timestamptz not null default now()
+);
+alter table offers enable row level security;
+create policy "offers_public_read"
+  on offers for select using (active = true);
+
+-- Help messages
+create table if not exists help_messages (
+  id          uuid primary key default gen_random_uuid(),
+  user_id     uuid references auth.users(id) on delete set null,
+  name        text not null,
+  email       text not null,
+  category    text not null check (category in ('bug','suggestion','partner','other')),
+  message     text not null,
+  created_at  timestamptz not null default now()
+);
+alter table help_messages enable row level security;
+-- No public policies — only service-role can read/write.
+
+notify pgrst, 'reload schema';
+```
+
+### Seed: 3 sample offers (clearly labelled, easy to delete)
+
+```sql
+insert into offers (partner_name, title, description, code, terms, kind, ends_at, sample)
+values
+  ('Carmela Coffee', 'Buy 1, get 1 cortado — weekday mornings',
+   'Double up before 10 AM. Tip your barista with the saving.',
+   'DEMO-CORTADO-BOGO',
+   'Weekdays only, before 10 AM. One redemption per visit.',
+   'cafe', now() + interval '60 days', true),
+  ('Tiki Coffee & Desserts', '10% off any pastry',
+   'Kunafa is calling.', 'DEMO-TIKI10',
+   'Show this code at checkout. Cannot combine with other offers.',
+   'cafe', now() + interval '60 days', true),
+  ('Roastery House', '20% off whole-bean orders',
+   'Stock the home brew kit.', 'DEMO-BEANS20',
+   'Online only. One use per customer.',
+   'brand', now() + interval '90 days', true);
+```
+
+**To add a real offer later, run this with the right values:**
+
+```sql
+insert into offers (partner_name, title, description, code, terms, kind, ends_at)
+values ('<partner>', '<title>', '<desc>', '<code>', '<terms>', 'cafe', '2026-12-31');
+```
+
+### Render / env vars
+
+No new env vars.
+
+---
+
 ## Stage 3 (Drawer) — Settings (units, location, notifications, clear-data)
 
 A real Settings page in the drawer with per-user preferences (Supabase when

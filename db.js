@@ -222,6 +222,68 @@ export async function saveUserSettings(userId, settings) {
   return row;
 }
 
+// ----------------------------------------------------------------------------
+// OFFERS (Stage 4 — partner coupons; manual seed, no admin portal)
+// ----------------------------------------------------------------------------
+// Codes are PRIVATE — never returned from listActiveOffers(). Browser must
+// hit POST /api/offers/:id/redeem to reveal a code, which also increments
+// the redemption counter (intent signal, not actual usage).
+// ----------------------------------------------------------------------------
+export async function listActiveOffers() {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("offers")
+    .select("id, partner_name, title, description, terms, kind, starts_at, ends_at, active, sample, redemptions, created_at")
+    .eq("active", true)
+    .order("created_at", { ascending: false });
+  if (error) throw new Error(`Supabase listActiveOffers: ${error.message}`);
+  // Filter expired offers client-server side too
+  const now = Date.now();
+  return (data || []).filter((o) => !o.ends_at || new Date(o.ends_at).getTime() > now);
+}
+
+// Reveal an offer's code and bump its redemption counter. Non-atomic by
+// design (low traffic, count is a signal not a billing source).
+export async function revealOffer(offerId) {
+  if (!supabase || !offerId) return null;
+  const { data: row, error: ge } = await supabase
+    .from("offers")
+    .select("id, code, active, ends_at, redemptions")
+    .eq("id", offerId)
+    .maybeSingle();
+  if (ge) throw new Error(`Supabase revealOffer get: ${ge.message}`);
+  if (!row || !row.active) return null;
+  if (row.ends_at && new Date(row.ends_at).getTime() < Date.now()) return null;
+
+  // Bump count (best-effort; we still return the code if this fails).
+  const { error: ue } = await supabase
+    .from("offers")
+    .update({ redemptions: (row.redemptions ?? 0) + 1 })
+    .eq("id", offerId);
+  if (ue) console.warn("revealOffer count update failed:", ue.message);
+
+  return { code: row.code, redemptions: (row.redemptions ?? 0) + 1 };
+}
+
+// ----------------------------------------------------------------------------
+// HELP MESSAGES (Stage 4 — drawer → Help form)
+// ----------------------------------------------------------------------------
+export async function saveHelpMessage(msg) {
+  if (!msg) return null;
+  if (supabase) {
+    const { data, error } = await supabase
+      .from("help_messages")
+      .insert(msg)
+      .select()
+      .maybeSingle();
+    if (error) throw new Error(`Supabase saveHelpMessage: ${error.message}`);
+    return data;
+  }
+  // Dev fallback — log to console.
+  console.log("[help-message]", msg);
+  return { ok: true };
+}
+
 // Wipe everything we store about a user. Account stays alive — they can keep
 // using JoeQuest, just with a clean slate.
 export async function clearUserData(userId) {

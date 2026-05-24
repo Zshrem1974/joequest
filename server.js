@@ -43,6 +43,7 @@ import {
   mergeAnonFavourites,
   getTasteProfile, saveTasteProfile,
   getUserSettings, saveUserSettings, clearUserData,
+  listActiveOffers, revealOffer, saveHelpMessage,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -288,6 +289,51 @@ app.post("/api/clear-data", async (req, res) => {
     if (!user) return res.status(401).json({ error: "Sign in first" });
     const result = await clearUserData(user.id);
     res.json({ ok: true, ...result });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// ---- offers (Stage 4) -----------------------------------------------------
+// Public list (no auth needed). Codes are stripped — clients must explicitly
+// reveal an offer to see the code, which also bumps the redemption counter.
+app.get("/api/offers", async (req, res) => {
+  try {
+    res.json({ offers: await listActiveOffers() });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.post("/api/offers/:id/redeem", async (req, res) => {
+  try {
+    const result = await revealOffer(req.params.id);
+    if (!result) return res.status(404).json({ error: "Offer not found or expired" });
+    res.json(result);
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+// ---- help / contact form (Stage 4) ----------------------------------------
+const HELP_CATEGORIES = ["bug", "suggestion", "partner", "other"];
+app.post("/api/help", async (req, res) => {
+  try {
+    const body = req.body || {};
+    // Honeypot: spam bots fill hidden fields. Accept silently to avoid hints.
+    if (typeof body.honeypot === "string" && body.honeypot.length > 0) {
+      return res.json({ ok: true });
+    }
+    const user = await authedUser(req);
+    const name = String(body.name || "").trim().slice(0, 80);
+    const email = String(body.email || "").trim().slice(0, 200);
+    const category = HELP_CATEGORIES.includes(body.category) ? body.category : "other";
+    const message = String(body.message || "").trim().slice(0, 4000);
+    if (!name || !email || !message) {
+      return res.status(400).json({ error: "Name, email, and message are required." });
+    }
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      return res.status(400).json({ error: "Please enter a valid email." });
+    }
+    await saveHelpMessage({
+      user_id: user?.id || null,
+      name, email, category, message,
+    });
+    res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
