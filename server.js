@@ -26,6 +26,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import { Readable } from "node:stream";
+import { readFileSync, existsSync } from "node:fs";
 import Anthropic from "@anthropic-ai/sdk";
 import {
   dbReady, dbStatus, cachedCount,
@@ -45,6 +46,23 @@ const CITY = "Boca Raton, FL";
 const LIST_CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour (cheap to refetch)
 
 const anthropic = ANTHROPIC_KEY ? new Anthropic({ apiKey: ANTHROPIC_KEY }) : null;
+
+// ----------------------------------------------------------------------------
+// SNAPSHOT — pre-baked Boca data committed to the repo. When present, serves
+// everything from disk with zero Google/Claude calls. Refresh by re-running
+// scripts/snapshot-boca.js (or by curl + write) and committing the file.
+// ----------------------------------------------------------------------------
+const SNAPSHOT_PATH = path.join(__dirname, "data", "boca-snapshot.json");
+let snapshot = null;
+try {
+  if (existsSync(SNAPSHOT_PATH)) {
+    snapshot = JSON.parse(readFileSync(SNAPSHOT_PATH, "utf8"));
+    console.log(`☕  Snapshot loaded: ${snapshot.cafes?.length ?? 0} cafés, ${Object.keys(snapshot.picks || {}).length} picks (generated ${snapshot.generatedAt ?? "?"}).`);
+  }
+} catch (e) {
+  console.log(`⚠️   Failed to load snapshot: ${e.message}`);
+  snapshot = null;
+}
 
 // ============================================================================
 // DATA QUALITY FILTERS
@@ -197,6 +215,9 @@ function score(c) {
 }
 
 async function searchBocaCafes() {
+  // Prefer the on-disk snapshot — zero API cost, zero latency.
+  if (snapshot?.cafes?.length) return snapshot.cafes;
+
   if (listCache && listCache.expires > Date.now()) return listCache.data;
 
   const res = await fetch(`${PLACES_BASE}/places:searchText`, {
@@ -284,9 +305,15 @@ async function getPicks(name, reviews) {
 }
 
 async function enrichCafe(cafe) {
+  // 1) Snapshot pick — instant, free.
+  const snap = snapshot?.picks?.[cafe.id];
+  if (snap?.picks) return { ...cafe, ...snap, cached: true, source: "snapshot" };
+
+  // 2) Supabase / memory-fallback cache.
   const cached = await getCachedPick(cafe.id);
   if (cached) return { ...cafe, ...cached, cached: true };
 
+  // 3) Cold path — pull reviews + ask Claude.
   const reviews = await getReviews(cafe.id);
   const picks = await getPicks(cafe.name, reviews);
   const payload = { picks, reviewSample: reviews.slice(0, 3), reviewsAnalysed: reviews.length };
@@ -389,6 +416,14 @@ app.get("/api/status", async (req, res) => {
     cache: dbStatus(),
     cachedPicks: await cachedCount(),
     listCached: !!(listCache && listCache.expires > Date.now()),
+    snapshot: snapshot
+      ? {
+          loaded: true,
+          cafes: snapshot.cafes?.length ?? 0,
+          picks: Object.keys(snapshot.picks || {}).length,
+          generatedAt: snapshot.generatedAt ?? null,
+        }
+      : { loaded: false },
   });
 });
 

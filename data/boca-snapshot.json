@@ -1,0 +1,1139 @@
+{
+  "version": 1,
+  "city": "Boca Raton, FL",
+  "generatedAt": "2026-05-24T01:27:48Z",
+  "count": 19,
+  "cafes": [
+    {
+      "id": "ChIJT-BRL3cf2YgRAFPb0JSb8R8",
+      "name": "La Boulangerie Boul'Mich",
+      "address": "6000 Glades Rd Suite 1048-A, Boca Raton, FL 33431, USA",
+      "lat": 26.365143,
+      "lng": -80.1311281,
+      "rating": 4.7,
+      "reviews": 2979,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "wine_bar",
+        "catering_service",
+        "latin_american_restaurant",
+        "brunch_restaurant",
+        "french_restaurant",
+        "breakfast_restaurant",
+        "bakery",
+        "food_delivery",
+        "coffee_shop",
+        "bar",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "mapsUri": "https://maps.google.com/?cid=2301791948024533760&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJT-BRL3cf2YgRAFPb0JSb8R8%2Fphotos%2FAb43m-uJQu5G_J5r8G9ovR9wo5NRPCSvp_PLxwXzi7ysXMegWCHALQKOSiZppYVNTl9c3jnA4WAVlgIcvv-8XKeYMqwihuK5_RAa0wk1T4xVOoy6ZGQTaMb3bXKAsoms8G4X31FMZYd_ReUR07wILY68Ow2htagUoYj6d4qg647uMul1DdGaUHgvaF-qEIaOR2dXSHPcHn9diw__9l5RQXN_v8f-_xkqXESZrbk_2RKCDdpiuSQvA9FiL_codZ5CXF6r0ZFn9B3NmLgOqMMZpawUesAiTI8RmUkmBe2mlbPvccEdew&w=800"
+    },
+    {
+      "id": "ChIJCcvR1Pbh2IgRc4bpE1pDCEQ",
+      "name": "Third Place Coffee Lounge",
+      "address": "325 NE Spanish River Blvd, Boca Raton, FL 33431, USA",
+      "lat": 26.386841500000003,
+      "lng": -80.0804472,
+      "rating": 4.9,
+      "reviews": 407,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "internet_cafe",
+        "bakery",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "tea_house",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=4902242248552973939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAb43m-tPzeZdyuLsSIloG6tewbWwpvCc97fgPjwTKyggggfsFfuqbhAV_hCy-H6kAPu5Wg50RQtckjDj6qBJct8EHFCYLr-hfuvaTtQpvm9Ko41zMC4ammaGCid1XbzltljYacucxO0sRF20N044ycmZL-vZHiXloE0aCZR4_yTBlvNfcQhEazTuGZucR3cerh0gndAWS1VsrtkgWRibjT0A55QEFTpFmX0PmaVPpLuEpegBiq28uclJ5fm6_ABlQhgjlz8-Vh_Uwd1nOLN_ONN9UVMQ0SHz8Qx4KPRE1iUCdEQ&w=800"
+    },
+    {
+      "id": "ChIJaSnqwXXh2IgRgqnB_pH5aE8",
+      "name": "Tiki Coffee and Desserts",
+      "address": "1501 NW 2nd Ave #4, Boca Raton, FL 33432, USA",
+      "lat": 26.364570900000004,
+      "lng": -80.0904218,
+      "rating": 5,
+      "reviews": 252,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "brunch_restaurant",
+        "ice_cream_shop",
+        "dessert_restaurant",
+        "meal_takeaway",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 12 AM",
+      "mapsUri": "https://maps.google.com/?cid=5722097732013894018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAb43m-sSgjorjzOwxBgnb9LJV2dPx59zexmKz6mB9SvbMNmQLHr9kNUDwgwWmeqk3_B2cxQ-QsuCgW96Tl9aLaIBHMMZQR9Z4uBI9bbTJnJUDPzY1P5diG99U7QCRUmUE0pIeq7d6t1npW1CrSZKdyzxiNX4KJ_ASFT7OpOA-LPQMi8U-xtfgbn4BjJ6yu3M28Q1qruQW2rNC5sNOjrusgV1qTZOSplfY_GUVA_IzlfFfyE19lOReoC0CBAvYarr7Nf316HsuyzZW1zCbYucE5M6gZDtIQLQ3cxnGwoIe187dulBTlwpLOTUeY6l2xLZer8VyGcTLcTnqA5UnPH3Sg1PjIWVQGUEREJ3tpXQpp70a-JnL8s6RYpJRo1zqr8x3T0nqG9VMGkfDFsdMSo4xImjWnfYMVd9v3OXLvOdPL18O39d09a_3fJ3mOeI6co4-FpP&w=800"
+    },
+    {
+      "id": "ChIJf_20jATi2IgRitMRzhDZ2mw",
+      "name": "the seed. Coffee + Juice Bar",
+      "address": "199 W Palmetto Park Rd E, Boca Raton, FL 33432, USA",
+      "lat": 26.350844,
+      "lng": -80.0892075,
+      "rating": 4.5,
+      "reviews": 912,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "acai_shop",
+        "internet_cafe",
+        "bakery",
+        "brazilian_restaurant",
+        "juice_shop",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=7843820367219118986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJf_20jATi2IgRitMRzhDZ2mw%2Fphotos%2FAb43m-sVYm0ZSAfUHt1R7qrrF_DoXc66xtig6yoekYC8zTbq3JVtxkX-mHt8zbFwBdtE-2nuwBCrUtu5_tuOpmjjP396eSkvsyIaEPxgo-oGoBsK2KtEL08iM3qkxeOnaC-4On7wGPtCSn6MFvlGWRL6XabgEYsUG4xoBSah7ZbtgOWB0JX2MF1C5j0064luOLDzCmokLvDqMKZ1kV-HlKc8tL3bIQUocAWlCvxw2cX_VGwnrdSbFPDEWJ8CBjlvaPf7G6co_IPH160SxPX8ICsYEfn0isuaNOw32ypSPFKNJbxCYQ&w=800"
+    },
+    {
+      "id": "ChIJtdWNvVjj2IgRzWs79x6IHIA",
+      "name": "VI Coffee Bar",
+      "address": "1159 S Federal Hwy, Boca Raton, FL 33432, USA",
+      "lat": 26.3395205,
+      "lng": -80.08660239999999,
+      "rating": 4.8,
+      "reviews": 355,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=9231403002780937165&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAb43m-sdW2CpOl8YvG2WWEJIzGNDqtjqA0HsfG04LpEdCMgvNuNoRWBaN65HZjA7bfzOqNs9jejkHOA5QBZxFU3Pwl_OgP3SV0ErOZ2rLzYy5Z82HswBxVqy63I8j2QICGD_XpbNZF1ske-MvMqxhteIknjRXVZmaEVIa7XVwoJNGaVFs6LNmVC_rVFC0N5Y9j6EfRuZZ0XXGEg5jEDHYAYVTx3jNmfQW-ZsIcpIAlRsCPVkGIPqTFte7H-kWtxLP66tha5F3txaGhVaKRwoyMxiY0aW1P7f6IoO1gxpJuTEmYUpEA&w=800"
+    },
+    {
+      "id": "ChIJv3dY3j_h2IgRc1i6aiYU5q4",
+      "name": "Mane Coffee",
+      "address": "500 NE Spanish River Blvd Suite 7, Boca Raton, FL 33431, USA",
+      "lat": 26.385472699999998,
+      "lng": -80.077721,
+      "rating": 4.7,
+      "reviews": 427,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 9 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=12602782762474821747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAb43m-sLiqR_ZZTxMAqAqNXA6k8Yjw0I5NAR_TVWkLLVUF5t_u7oyvQlfkgO_Xn6lylVwDAtVovBy-UspTcybs4o67qXNaJ4Q0SUeixJuDIL_bOLqEaZKUFEiZWt--xW6Y-zKZ9XuGKgGWeRbtz3QtJdg_3Q4CAthiuDu_iQQI853FBOfXwBraEO2jk5cjg2kFXlA-vbx1SMcg1Wo6uAUVb100cx5MBLwo1zRv1815GGYCQProM1vr7nqmM9q3DHgpwItK2It3oWj8is5VQO6_4SQLCfevTl9nwEa3xPVnWcy5tRoA&w=800"
+    },
+    {
+      "id": "ChIJ99DBn7gf2YgRPO0T1720vQI",
+      "name": "Carmela Coffee - BRiC",
+      "address": "4800 T-Rex Ave Suite # 150, Boca Raton, FL 33431, USA",
+      "lat": 26.3901452,
+      "lng": -80.1077121,
+      "rating": 4.9,
+      "reviews": 238,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Tue",
+      "mapsUri": "https://maps.google.com/?cid=197512686124395836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAb43m-s32gLPHRAUFnen2g6LrvOSFkE8bV5btrdflqCnd1Wgvxdqo2gjs62o90blENNjd_WoTc45YjlUPLMuw0yA11WSD7uXLorDeXF-4uI6ycB7Nj4jxkMPJnxGJFwoYytdRVgye1n-4tIUjWqJIwdhzArBP6GqmWhgQv_prf9xljpL4i4pdUBQCTbwAkbEjHe4ZWfDeUM-kf6NzBwe3J3VV9z8PkoZjvikuTBT2h2S4UaKsocMnY6xcOUrdL8s9_fLP2k6RXhsZMJspZIE4RpuLXJZQyOA0DrXlnQJqOO6o7GkjszYeh4bLJHAhx8gWN9zzbSR16l4Smgk558mqyaCrZe_XePkLsWh3TMUAhoF4L418UHtqDSjxfK5spEshrjqsHmfVPVSUDhk7jK9fLDTFc-QZE1UlpnEEFS9Jw4WD0ZHMQ&w=800"
+    },
+    {
+      "id": "ChIJC9ykl6zj2IgRSpCaANux5Wo",
+      "name": "Mercato Italiano Boca Raton",
+      "address": "501 SE Mizner Blvd #80, Boca Raton, FL 33432, USA",
+      "lat": 26.345889399999997,
+      "lng": -80.08542249999999,
+      "rating": 5,
+      "reviews": 181,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "liquor_store",
+        "deli",
+        "grocery_store",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 4:30 AM",
+      "mapsUri": "https://maps.google.com/?cid=7702758291853185098&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJC9ykl6zj2IgRSpCaANux5Wo%2Fphotos%2FAb43m-tDRspBFEnBXKKbeTABHkL2EKccpE4jd853B_TEPXuoCqWuBFBzcjNM0rI51q_aMf2wWsMyRQyR6BHJNijkaAMACcXoax3-3J0mVO4UhrKXClw0AxIn_q1nsRRiCEbSHCt50F_NLgOV5w1vR38M1Wrz5POLdmvOmMs5H-8JSkLC11KVCGT_Lu1NZYz-AAEK-RHfwqmqyyZWCU9qXdV22cAJwWMtJ4S-I3tc44QMQr2AGgOkBUANhMiyczh0wYmWzhe3erXGtI4SaGoyMoSPEylSbR21zCwP10afCqFdtGjKnQ&w=800"
+    },
+    {
+      "id": "ChIJsRpXWwjh2IgRKW93jO6bWY4",
+      "name": "Cafe Louis Coffee & Espresso Bar Boca Raton",
+      "address": "3581 N Federal Hwy, Boca Raton, FL 33431, USA",
+      "lat": 26.382519499999997,
+      "lng": -80.0769894,
+      "rating": 5,
+      "reviews": 175,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "mapsUri": "https://maps.google.com/?cid=10257401075174174505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAb43m-u-60lhBkhljCG8IcZNyxDizFAr6nmF20YN6c6W08WnMAUMQLudttQ7WCm0J-EvmNvVai67jlRXneqYwGNNICU-Q8ZmGcI4GGbpcIMoiv75i32-euq_D8BnLFTkVArzaRTlFQk0_e4A5Mgpm2M1r-KkU_rksLbj852uJnSvr7E7EElXkhbE14mAkGGCvEHOAdeoUlrj1Bfrffj6MQnt3UPeu2Fkr0d25acQOHyeDx0SAlTAEVDCLNsMSaN0EQho6QRfErw-p-TgVxy-PaLGedfPlj1MyV4UCXfsBNPzDtkVHEEZc3DE36cvrmWG_qN-i7W5oHR7tSXgmKv6YxQxXOkDSWBY3VF5IHC7-Xi3NKbLA29eKjmgyqlgKgj6o0EzwPmlDkF7h4bsVkwpPKlQyozsOWQkj4LFdviqg1OcKTXK-K7MfgDQZ5mKsFlyIA&w=800"
+    },
+    {
+      "id": "ChIJEU0c-T4Z2YgRCezhCft2CyE",
+      "name": "Carmela Coffee - Uptown Boca",
+      "address": "9658 Glades Rd #205, Boca Raton, FL 33434, USA",
+      "lat": 26.366421499999998,
+      "lng": -80.19780349999999,
+      "rating": 4.6,
+      "reviews": 428,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "bakery",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=2381127648570108937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAb43m-sEwjThNGKS8WzMN2j8l1r1gI83A1THgfKVIq7foeXm_vyA9eJsmfCwQFnEyn35Jd6KY3a2cBbGMTvrYajf5l3IGji-14K8VyDWvytBp0DexsxDnVALc28rTIPg7cZHY8RDor2ard5iURn8ZVfuZV7kT-g-Ksfy6UxnS_51h78XDV-w4NaS_A5xFoQpCPUA_nH6c71HmbN1ur6UeQHwJtBK3UjgB5tuZZYiUs8k93rweRbjYdBi-l7sFG2Y-xmyvK2B4k55UbHvlORo7Ll1-BsivBApjZ814Lk906k_YUCPP5XIGEobwH3FwO4-PT2GJk3nx6nf0oCwDUjFFixhZSEfraq1rf90JpZJYa2c1cxU36FG7jCDLOe2vfjQXNOBsTmv0kDr3B61NiX3-d1B3oWPIXBFZjiRdm-4yykCA-s&w=800"
+    },
+    {
+      "id": "ChIJHSmlaxLh2IgRzyfVX_Im4ck",
+      "name": "Carmela Coffee - East Boca",
+      "address": "3200 N Federal Hwy #106, Boca Raton, FL 33431, USA",
+      "lat": 26.3803209,
+      "lng": -80.0760093,
+      "rating": 4.6,
+      "reviews": 422,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "bakery",
+        "cafe",
+        "tea_house",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 9 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=14546951093815158735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAb43m-sWTqoADo7qtrYlmBbypXd2qTRe1GESJX4zkufPgxNCYxO7mbVy45z6fPtTG2ft6ig6pDhiAnkvgUHoqcvRyKHGintF3OfrSl9dQl5gxdr6cdJyQwPvGp-g2ofYwzox3hkvaLiPw7HHMcI4gduVRywNp_Zvnj2tVC1L3XeYM7TNxjakwpENmAqRGv1NnBDtUADJllOuVo_KZDGak4aDxfUssELBgLQYDwqmuoN541FDko33ALNCUP682NA1lU5jBLue7rvH8OAAwoxHrDSx3tArZ67e34gGxq0u-yIuTCfBAw&w=800"
+    },
+    {
+      "id": "ChIJ-wx9iYvh2IgRBRNg20QB_10",
+      "name": "Colombian Coffee House",
+      "address": "495 NE 20th St, Boca Raton, FL 33431, USA",
+      "lat": 26.368561699999997,
+      "lng": -80.0784683,
+      "rating": 4.6,
+      "reviews": 290,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "colombian_restaurant",
+        "cafe",
+        "wholesaler",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=6773133759838425861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAb43m-u1ni-7qgGkDW6QYzTPe4bMm9K2SUKNZN-SncylPEfiHWlCeiieQbIc1ip3IuZA8xzpl_kMHPQPULWrhx4efHWez4FsbWlhG-hQ7SLfOxnrXzHSieh41zSSAeiwHi3C7NM8iR-49q7Zvjrwek90UMQB_GW9PyDG6LJxRCNW-1Ul3TL-ZXUzBVAkgctrcW4YhSkrG2E9oa9lYhSjfZCrNN05TCa_iiNSNMb3nWlR7x7NtcQMkXQfl7B6dSbamZqrQgaQVHRHEjfJ8005Z7TY_hRZylYOd0Ht9sjzMkrqXBbUoQ&w=800"
+    },
+    {
+      "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
+      "name": "The Pots Cafe",
+      "address": "6000 Glades Rd, Boca Raton, FL 33431, USA",
+      "lat": 26.366045399999997,
+      "lng": -80.1348276,
+      "rating": 4.7,
+      "reviews": 169,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 11 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=251151556470529797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAb43m-sVQszfFonvaS3uNoRkO6w0TT9EN4ZB3_9luF6-8YGlWO2h87VlOlrkA1hIe5zfi-O9sU4MqPbQA6cPhEwFuYo-autHLsvPOkioVPrlebqydygEVPaVGfESzGrTPYhahYoOwn3c3tIsbsuOMsIzI5OegVq1UuA3as0yZCBZTZRforwh3ASWLkPGkQqah4SIG9Gc1FzkPgrSPQvjbXcymgnEUL7WZ-9fwex7QxyJlywZ4-iYAx17uQ6N-F4seCs6lvxo1fl-643HMbbfRI2Ik4-srLKI4mS4A6gppizNr1t9EByyc4xaJIQ8vqq4Erje7UWnxRUOY1b2UJRn9-KF7-9ujoOcYGjgjYJlimsE4idO68kxi27l4tlTA5h_sQGlZwTch3h3QLHai9hsB7sELZXCRyaxIFERb_JA87j64PZ3yTQ&w=800"
+    },
+    {
+      "id": "ChIJWenGD5bj2IgRk_IEOgUUy9Y",
+      "name": "Belladukes",
+      "address": "Streetside, 155 E Boca Raton Rd Unit 313, Boca Raton, FL 33432, USA",
+      "lat": 26.351635899999998,
+      "lng": -80.08443749999999,
+      "rating": 4.8,
+      "reviews": 99,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "market",
+        "gift_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8:30 AM Mon",
+      "mapsUri": "https://maps.google.com/?cid=15477486557069636243&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAb43m-taLkejdNHwTW6tsr_uT5Rw4wzaLBG-t4vlBcn2oij9NOPl8hBqk981LMtJtNljvs2-GfCI8aZQaxp8GCwgCf2gyZdUcfzCD8iWbJ7MZqZt2inCmQGtFi7-ML2eotipG73M5YixnSuF8BKcApPeqzRLWNlFFsYhkNawvI2y3LGYdp9jBgqZWaTLhCFKFFW7ZQ-erwEsQyHZHCCyrWABF8nujd0HP1UFxaS_tFiRF4cH1w12U4G2Qk6vtoe6Te8hXpF6bVTlF9Q_AAXD6tCaxDcAmujcG0-o7GNeLj74lybxuQ&w=800"
+    },
+    {
+      "id": "ChIJR_ysn4jj2IgR2kCL-eY_vz8",
+      "name": "Subculture Coffee Mizner",
+      "address": "437 Plaza Real, Boca Raton, FL 33432, USA",
+      "lat": 26.355596199999997,
+      "lng": -80.0857171,
+      "rating": 4.3,
+      "reviews": 213,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "mapsUri": "https://maps.google.com/?cid=4593460406202876122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAb43m-ucMLtuGvP2d4kk3qEJ3Rnfm0BnZIlE6s7TBO2Gbe2BuBQ7bN1yKq1BZJg7HfmcxQZmwa2V7wE3KKAgmy2Azx-ir4xF8RF057zVdno04xgz-_TrfmttYoplS82ZMM_04ZqJA5ztV732AGyP2ax7-ELIue3Qz2bJ8eQdjQ6G_KJ1Pv4D_3WvkEHi94bw2BruxAUGyxxQrHt5Pha_o0j0iJjtbSKczUPd5VPeF8RpUbVISedehiRgCZx0eQdO6u-jXOHISCKN_zoIlNyq7WJ4Wygr252l38pNa_Y9EuiBwmtW3Q&w=800"
+    },
+    {
+      "id": "ChIJE9bX5Ewf2YgR0MDqarmOc0k",
+      "name": "Foxtail Coffee - West Boca",
+      "address": "8170 Glades Rd Unit K3, Boca Raton, FL 33434, USA",
+      "lat": 26.3674665,
+      "lng": -80.1737728,
+      "rating": 4.3,
+      "reviews": 183,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=5292730914104328400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAb43m-skl7x8qmvsUqjOaaihnE-QD1y5aS59jmQKuSI708q1gdOc0p_KuEgLxSFlMCQuUB6RTszjIou7783JvKOSFp-JsNZdF3JgGR7q22krXRnq6-haKlIk7C99mttvjPrRQZpTiMFaWwLhQ93GkHLYqP0JAYLPLlaHJ7ti5FypcOwX1f-1us-EpCXP3Bb8A74w9R9oEPTczSsnrQ21Wvr-DZ9ONX0_jrmURXjd1-S6BBCITkN0WG4aWVlqlUkVo3xihSWbmsm3oDc937CbpTWI2zAVRUJVhio7lmqY0lw2lchgnw&w=800"
+    },
+    {
+      "id": "ChIJI1et2rzj2IgRmmydvhcsL64",
+      "name": "Long Story Short Cafe",
+      "address": "132 NE 2nd St, Boca Raton, FL 33432, USA",
+      "lat": 26.3520155,
+      "lng": -80.084757,
+      "rating": 4.3,
+      "reviews": 158,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "health_food_store",
+        "acai_shop",
+        "breakfast_restaurant",
+        "sandwich_shop",
+        "brazilian_restaurant",
+        "gift_shop",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "service",
+        "health",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=12551299166998719642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJI1et2rzj2IgRmmydvhcsL64%2Fphotos%2FAb43m-ulRjuAg8mG0WEHxlU5eDKePO4LkVZ-FC8obY4kY6tbSwNiigsYqP5AT_Ybbs1w3d0wSbUyzDTJyumyVORVtx9ivjl1So0OGNevKcH3rIviwQdrU00nrKREm4wZagyGkE3Hhn1zBAx_ZpffXCD7KR-Akz269781PgIl0QUDl6aHOIvohR5V5TtYyL8ehEv8EEt1UdqQC_Zgq6K8WdHlonfwln5D5rzYxb7UyL0aKDv3xGcLyi_iQNTEpA0KB0DAiQud-21aKZPTnCiyMjoF5Jn17ES8J4w6q_wcIX4wONRCMMnHDZJUW4JAJUYjVVTQgJzBRPrCEgGrQmhIhdyKA6AwatZkFBau4Gek9OPCj3EErcNvoyFckeBNZP6-02j6tISy000Jg9YgRT2GY2LRF9BbVJKT9t6lPpmzLaUP7vk&w=800"
+    },
+    {
+      "id": "ChIJ-_O-FgDj2IgR0Wr2kH0Rn1I",
+      "name": "Milotino",
+      "address": "281 N Dixie Hwy, Boca Raton, FL 33432, USA",
+      "lat": 26.3532429,
+      "lng": -80.08693,
+      "rating": 4.8,
+      "reviews": 55,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8:30 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=5953496463407737553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-_O-FgDj2IgR0Wr2kH0Rn1I%2Fphotos%2FAb43m-u-3PkiY_rGFa1L_C9zjAlKyeyOPlNrPRGyzIgu1GCyQ6AkhC75j1Kcm554MNO5Bvl37Suho7Z_QPSCRMqiOenNC8Nw_Na6jiuntt2WGNrx4o_yGxAhAJ5ZHXhpNdI4LwrBcxctRk0BaatmSgeEzB2EfSa1nReZfpCpPI318jGaWFvwHfTfbYusB3lvYehNKEpdoNeM7rJIOtj7IDqYEgGMlccq6I1ujcBZeHY88yLwEqlft4FlGxOwDVO2PNPzAxMMFCfMqDHFWZ-Fo3icO-0fiTIVC6d9YlKVGZMSaZrqTijeTeBxoz74kow0inZBuJ_2ZmjS5q68F-qKscLnOdzGfUZlRvtU0984BUh3eSUTrOyY6N4EY5uMUOT28cJYeO8qp6pTAnmsZv5pjdsTCBtibx_EmFVPbb4YYK1bTdORgYaXXO72hhcDCwaeDmec&w=800"
+    },
+    {
+      "id": "ChIJQ98zGMfj2IgRo5LU42SyiqQ",
+      "name": "Uptown Market & Caf\u00e9",
+      "address": "300 W Camino Real, Boca Raton, FL 33432, USA",
+      "lat": 26.3414753,
+      "lng": -80.0920165,
+      "rating": 4.8,
+      "reviews": 30,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Sun",
+      "mapsUri": "https://maps.google.com/?cid=11856485115395084963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAb43m-t_4YysWKJ75ODydohYyojJR3K_TWhCfq6AYvlrSVAjuYRhQzww7_cg8tvrBT4rgyvewhrqtT2umIBRbOhqBCg5sEeqxmOI-TqSMv6VO2ukN_vUjcdI8uV1rBcp8BlyYCy4Hc4VXGAoFEfy-J-hQaHP9XkOY3P-lZPFEXlodzXkDUS_3gqLhhA3ZTRxrDPni1GqEtSwNdcin_dLHFwKJGmBOK2DkqCbfQkhKLSNHtc56e0r0I0bEX0sv2Pud0QcxW0SgBnm92Ha33RH-Gv1fWqiFs8VX2xKepPpuuwgoJ2dbA&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJT-BRL3cf2YgRAFPb0JSb8R8": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Only generic mention of 'great coffee' in one review; no specific drink named.",
+          "quote": "a full bakery, great coffee, and a ton of food options",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Grilled cheese with tomato soup",
+          "reason": "Specifically praised in a 5-star review as 'pure comfort and perfectly done,' and tomato soup is recommended again alongside the French dip in another 5-star review.",
+          "quote": "grilled cheese with tomato soup was pure comfort and perfectly done",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "We had a wonderful lunch experience at La Boulangerie Boul\u2019Mich today with my kids. From start to finish, everything was spot on. The food was absolutely delicious; my grilled cheese with tomato soup was pure comfort and perfectly done.\n\nEven though the restaurant was busy, we were seated quickly and the food arrived right on time. The menu offers a great variety, making it easy to find something everyone will enjoy.\n\nA big shout-out to Martha, our server, who was attentive, friendly, and consistently checked in to make sure we had everything we needed. Vivian, the manager, also stopped by to ensure everything came out well and that we were enjoying our experience, that level of care really makes a difference.\n\nIt\u2019s clear this location has a fantastic team that works together to serve guests efficiently while still making you feel welcomed and cared for. We\u2019ll definitely be back!"
+        },
+        {
+          "rating": 5,
+          "text": "Vivian is the kindest manager. She has the best people skills, and is warm and friendly to all of her customers. The food is top notch because of Vivian, she ensures that all the food is high quality before being served, she comes around to all the tables to make sure customers are satisfied and I would highly recommend the French dip sandwich and the cheese and tomato soup. Vivian thank you for being so wonderful! I will return with my friends and family! Gabi was our server, and she had excellent suggestions and was very attentive to all of our needs! Thank you!"
+        },
+        {
+          "rating": 5,
+          "text": "Very cute cafe to hang out and have a bite to eat. I came first thing in the morning so it was very chill. The waiters were very nice and attentive. My waiter Anderson was nice with the best attitude. I will definitely be coming back with friends and family."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJCcvR1Pbh2IgRc4bpE1pDCEQ": {
+      "picks": {
+        "drink": {
+          "name": "Spiced Apple Cider",
+          "reason": "Mentioned positively in multiple reviews as delicious, with both hot and regular versions praised.",
+          "quote": "the spiced apple cider too",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Pastries",
+          "reason": "Pastries (chocolate croissant, spicy pork & pineapple pastry, general pastries) received consistent praise across multiple reviews.",
+          "quote": "the pastries were delicious",
+          "confidence": "medium",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I\u2019ve been to Third Place too many times to count due to the excellent quality of service combined with their warm, welcoming atmosphere, and delicious food and coffee.\n\nI\u2019ve tried many food items including most of their lattes, cold brew coffees, London fog, chocolate croissant, and pumpkin cheesecake loaf among many others, all of which are always amazing and quality-made to the customer\u2019s specific order.\n\nThey have a multitude of milk options and milk alternatives if you\u2019re looking for a great place to find average priced coffee with greater flavor and dairy-free menu options. Plus, their service is always efficient and welcoming. One of the best parts of going to Third Place is interacting with their employees!\n\nOverall, Third Place Coffee Lounge is probably one of my top three favorite local Boca places to get my caffeine fix. I highly recommend it to anyone looking to try out a coffee shop in Boca Raton!"
+        },
+        {
+          "rating": 5,
+          "text": "Stopped by the Coffee Shop and had a really good iced tea \u2014 super refreshing and well made. The space itself is large with plenty of room to work, which I really appreciated. They even offer a printer for a small fee, which is a great idea and very convenient.\nThe shop was a bit cold when I visited, and the food options were limited. Everything is pre-made, and at the time I was there, no food was available at all.\nOverall, it\u2019s a great place to get some work done and enjoy a good drink.\n\nOH and they do host fun events like open mic, trivia, and bingo on certain days, which I think is pretty cool and I can\u2019t wait to give the trivia or bingo a shot!!"
+        },
+        {
+          "rating": 5,
+          "text": "Super cute and chill coffee shop. I\u2019ve been checking out different places to find somewhere to focus and get some work done- Third Place was perfect! I have to return for actual coffee since it was too late in the day BUT the pastries were delicious and the spiced apple cider too (as you can see from the pictures!) I\u2019ll be back soon!"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJaSnqwXXh2IgRgqnB_pH5aE8": {
+      "picks": {
+        "drink": {
+          "name": "Mojito",
+          "reason": "Specifically named in multiple reviews as refreshing and on point.",
+          "quote": "their mojito is refreshing and on point",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Kunafa",
+          "reason": "Repeatedly singled out across reviews as the standout dessert, described as golden, crispy, and perfectly sweet.",
+          "quote": "Their kunafa is insanely good: golden, crispy, perfectly sweet",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Don\u2019t know where to start. The store it self super super super clean once you walk in you feel so relaxed. Super nice staffs. Food drink dessert everything is beyond amazing. They go above and beyond for their customers. And a big thank you for the Owner for having the best service and his workers as well. I highly recommend it. Loved the mojito and crepes especially  KUNAFAAAA."
+        },
+        {
+          "rating": 5,
+          "text": "It\u2019s an awesome. Amazing service plus customer service. When you walk in you\u2019re so welcomed in. Feels so cozy  food and drinks are too good. I highly recommend this so much. 100% one of my favorite place I will be here if not everyday every other day.  It\u2019s a must. Especially the owner such an amazing person."
+        },
+        {
+          "rating": 5,
+          "text": "\u201cTIKI in Fort Lauderdale is THE dessert spot everyone needs on their list! From the moment you step in, the aroma of freshly made kunafa and warm crepes hits you \u2014 it\u2019s amazing. Their kunafa is insanely good: golden, crispy, perfectly sweet, and loaded with authentic Middle Eastern flavor that hits every time. The crepes are creative and delicious, and every dessert on the menu is beautifully presented and tastes even better than it looks. Friendly staff, great vibes, and honestly some of the best sweets I\u2019ve had in Florida. Whether you\u2019re a kunafa lover or just craving something sweet and unique, TIKI delivers big time! Highly recommend!\u201d \u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJf_20jATi2IgRitMRzhDZ2mw": {
+      "picks": {
+        "drink": {
+          "name": "Strawberry Matcha",
+          "reason": "Specifically praised in a 5-star review by a repeat visitor; matcha is a signature offering. Strawberry latte also got positive mention.",
+          "quote": "ordered a strawberry matcha... just as amazing as I remembered",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Bagel Bomb",
+          "reason": "Multiple reviewers across different flavors (Everything, Pistachio, Key Lime) rave about the bagel bombs, calling them 'THE BOMB' and 'absolutely delicious.'",
+          "quote": "The bagels were the bomb! Perfect amount of cream cheese",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "This was my first visit to 'The Seed Coffee + Juice Bar' it was FANTASTIC!\n\nI ordered the 'Red Velvet Latte' and the 'Everything Bagel Bomb' my boyfriend ordered the 'Cinamon Honey Latte' and the 'Pistachio Bomb' and they were THE BOMB!\n\nThe coffee was really good and the bagels were the bomb! They had the perfect amount of cream cheese and the bread was a light, fluffy, flaky, dough.\n\nLove the ambiance, the service was nothing special I would say. Maybe it's because we entered early on a Sunday morning, but it was fine."
+        },
+        {
+          "rating": 5,
+          "text": "I visit Florida several times a year, and every trip includes a dedicated stop in Boca specifically so I can visit The Seed. It\u2019s one of my absolute favorite coffee and matcha shops in the country\u2014easily top-tier.\n\nI first tried The Seed last summer at their Delray Beach location and loved their seasonal matcha (pretty sure it was pi\u00f1a colada). On this recent trip, I headed straight to the original Boca location and ordered a strawberry matcha within minutes of landing. It was just as amazing as I remembered.\n\nThe following morning, after a painfully heavy dinner the night before, I switched to coffee and asked for something strong. Cassie at the counter recommended a drink with four shots of espresso (I opted for three). It was excellent\u2014and very effective. Let\u2019s just say my digestion and my airport commute were both incredibly successful afterward.\n\nThe Seed is consistent, creative, friendly, and always delicious. It\u2019s officially a must-visit stop for me every time I\u2019m in Florida."
+        },
+        {
+          "rating": 5,
+          "text": "Excellent spot for remote workers! Fast WiFi, plenty of outlets, and very comfortable seating. The food is delicious and the overall environment is just lovely. 10/10 would recommend if you need to get some work done in a great atmosphere."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJtdWNvVjj2IgRzWs79x6IHIA": {
+      "picks": {
+        "drink": {
+          "name": "Iced Dolce Vita",
+          "reason": "Named as a go-to order in a 5-star review; matcha and cold brew also praised but dolce vita has specific enthusiastic mention. Multiple drinks praised but no single one dominates.",
+          "quote": "chicken caesar wrap and an iced dolce vita is our go-to order",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Caesar wrap",
+          "reason": "Mentioned across multiple 5-star reviews as a standout, called the 'BEST Caesar wrap in town' and a go-to order, including a buffalo variant.",
+          "quote": "The BEST Caesar wrap in town \u2014 literally I'm obsessed!!",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "My FAVORITE coffee shop in Boca and of all time!!! Their menu is diverse with different drink and food options. Me and my boyfriend are frequent customers and always look forward to coming here. The chicken caesar wrap and an iced dolce vita is our go-to order. So good and so fresh! All the staff are friendly and personable. Service is quick and environment is homey and inviting! Can\u2019t wait to be back!"
+        },
+        {
+          "rating": 5,
+          "text": "V1 just makes a consistently excellent cold bru and iced americano of my dreams. I love stopping at this local spot when I\u2019m in the area. Adelyse the barista was so wonderful! From a certified coffee snob: one of my favorite local coffee spots in boca! LOVE! Never disappoints for a caffeine fix. Atmosphere is charming meets hipster\u2026!"
+        },
+        {
+          "rating": 4,
+          "text": "I enjoyed my drink at VI Coffee Bar.\n\nI did not enjoy the people. It's very noisy and the people are stuck up.\n\nIt was like being in a Yoga Studio filled with milled-aged women all wearing Lululemon and Alo workout clothes.\n\nParking here is free, but good luck finding a spot. The parking lot is very small and completely full.\n\nThe service here was great! Everyone is very nice and friendly and they make amazing drinks. I ordered the holiday S'mores coffee and it really was tasty.\n\nI probably wouldn't come here again cause it was out of the way, but I'm glad I tried it.\n\nAlso if you're trying to get some work done here, good luck because the music is pretty loud."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJv3dY3j_h2IgRc1i6aiYU5q4": {
+      "picks": {
+        "drink": {
+          "name": "Pandana Banana Matcha",
+          "reason": "Singled out with the most specific, enthusiastic praise in a 5-star review; other drink mentions are either generic or negative (latte criticized in 3-star review).",
+          "quote": "might be one of the best matcha drinks I've ever had",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pain au chocolat",
+          "reason": "Specifically called out as good in the only review with detailed food commentary; banana bread was praised alongside but pain au chocolat was named first as especially good.",
+          "quote": "The pastries were good, especially the pain au chocolat",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 3,
+          "text": "I ordered a latte and a cappuccino, along with a pain au chocolat and a banana bread. The pastries were good, especially the pain au chocolat and the banana bread.\nThe cappuccino was not well executed: the milk was poorly textured and the foam was not correct, which affected the flavor. The latte was very bad, I do not recommend it.\nI also ordered the croissant without cucumber, but it came with cucumber anyway, which was disappointing.\nThe service was okay but could be more attentive and friendly.\nI also took home a Kenyan varietal that I haven\u2019t tried yet\u2014hopefully it lives up to expectations, as it looks promising.\nOverall, a decent experience, but there is room for improvement in execution and service"
+        },
+        {
+          "rating": 5,
+          "text": "Drove from North Miami Beach to see the highly recommended South Florida staple to no disappointment. Offering a wide and interesting selection of coffee and tea from pourovers to seasonal drinks, Mane can be enjoyed in any way you please with a friendly staff and owner to guide those unsure. Baked goods, sandwiches, and toasts sweeten (or savor) the deal along with retail goodies to take a little piece of the minds behind Mane home with you. See you again soon."
+        },
+        {
+          "rating": 5,
+          "text": "Great and wide coffee selection! Tried the Ethiopian pour over. My wife a latte super well balanced. Well attended. Unique coffee concept. Super recommended 10/10"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJ99DBn7gf2YgRPO0T1720vQI": {
+      "picks": {
+        "drink": {
+          "name": "Cortado",
+          "reason": "Specifically praised as a 'masterpiece' by the barista Sophia in a 5-star review. Other reviews mention custom espresso coffees being perfect, supporting the espresso-based pick.",
+          "quote": "Her Cortado is a true masterpiece, crafted with skill and care",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Nutella strawberry croissant",
+          "reason": "Directly named and enthusiastically praised in a 5-star review as a regular order. Other food items (salad, ciabatta) are mentioned but the croissant has the most vivid endorsement.",
+          "quote": "Nutella strawberry croissant drizzled with chocolate syrup and powdered sugar! Its delicious!!",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The food is amazing. I normally get my Nutella strawberry croissant drizzled with chocolate syrup and powdered sugar! Its delicious!! i love stopping by the cafe because everyone is super nice... Especially Sophie!!! Every morning she greets me \"Millie Bobby Brown Jr\" lol and it makes my day . She is super nice and hilarious.. the energy level in the cafe is insane!!! Highly recommend!! A++++ service"
+        },
+        {
+          "rating": 5,
+          "text": "Sophia @ BRIC location and the team are absolutely incredible! The best service, fresh pastries, coffee, and great assortment of breakfast and lunch items that are always customizable! Service always with a smile and love going in there daily for a treat!"
+        },
+        {
+          "rating": 5,
+          "text": "The service here is truly the best. Sophia somehow knows everyone in the building by name and always makes sure every order is perfect and delicious. Going downstairs for my coffee is genuinely the highlight of my day, she makes the whole experience feel personal and welcoming. Highly recommend!"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJC9ykl6zj2IgRSpCaANux5Wo": {
+      "picks": {
+        "drink": {
+          "name": "Espresso",
+          "reason": "Praised as authentic Italian coffee; cappuccinos also enjoyed in another review.",
+          "quote": "the espresso is pure perfection\u2014truly authentic Italian coffee",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Panini / Italian sandwiches",
+          "reason": "Multiple reviewers rave about the authentic Italian sandwiches, citing fresh high-quality ingredients and standout options like U Sicilianu and chicken cutlet.",
+          "quote": "The sandwiches were pure works of art",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is such an amazing cafe. The lady who owns this place was so friendly, nice and warm. The food was also great. We ate cannolis, a piece of chocolate and orange cakes, and drank cappuccinos. The ambience was great too. We would definitely come back here, especially to eat some pizza that smelled delicious just as we were leaving."
+        },
+        {
+          "rating": 4,
+          "text": "Cute small place, food was very fresh and very good. Homemade breads and desserts. What else could you ask for. We ate every bite. They were under staffed Sunday afternoon before closing. We didn\u2019t wait too long for the  food or anything it came prompt. But the server was average at best. If this place had a Charming or charismatic server it would have been a 5 star review!"
+        },
+        {
+          "rating": 5,
+          "text": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f Truly Authentic Italian Gem!\nMercato Italiano is hands down the most authentic Italian experience you can find in Boca Raton. Whether you're stopping by for a quick bite or planning a larger event, this place excels on every level.\nThe owners are genuinely Italian, and you can tell immediately. It's a fantastic sign of authenticity when you see that the restaurant is frequently visited by Italian people themselves!\nYou absolutely must try their food! Their panini are built with high-quality, fresh ingredients and are irresistible\u2014perfect for lunch or a snack. And the espresso is pure perfection\u2014truly authentic Italian coffee that transports you straight to Rome. In fact, all their Italian food is phenomenal and clearly made with passion and tradition.\nBut our experience went beyond just a great meal:\n\nWe recently hosted our baby shower here, and the event was outstanding! The attention to detail, the quality of the food provided, and the service from the entire staff were impeccable. They went above and beyond to make our special day perfect.\n\nIf you are looking for real Italian food, atmosphere, and service, Mercato Italiano is a must-visit. Highly, highly recommend!\n\nThank you so much!"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJsRpXWwjh2IgRKW93jO6bWY4": {
+      "picks": {
+        "drink": {
+          "name": "Espresso drinks",
+          "reason": "Multiple reviewers specifically praise the espresso drinks as 'top tier' and 'perfectly brewed,' with cappuccino and lattes also called out positively.",
+          "quote": "The espresso drinks are top tier",
+          "confidence": "high",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Fresh pastries and quiche",
+          "reason": "Only one reviewer names specific food, but they call out the pastries and quiche directly as standouts.",
+          "quote": "the food is just as good, especially the fresh pastries and quiche",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can\u2019t wait to go back. The cappuccino was excellent!!"
+        },
+        {
+          "rating": 5,
+          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it\u2019s hot coffee, cold brew, or espresso drinks, it\u2019s always on point."
+        },
+        {
+          "rating": 5,
+          "text": "First time trying this spot! Loved the ice latte, the decor is stunning, beautiful LV coffee table, highly recommend.. will be coming back!"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJEU0c-T4Z2YgRCezhCft2CyE": {
+      "picks": {
+        "drink": {
+          "name": "Matcha latte",
+          "reason": "Specifically shouted out in a 5-star review; other coffee mentions are generic.",
+          "quote": "Shoutout to the matcha latte",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Avocado toast",
+          "reason": "Praised in detail across two 5-star reviews, called some of the best and freshest out there.",
+          "quote": "Some of the best, freshest avocado toast out there",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Wonderful ambiance, good coffee, fairly extensive menu. Very clean inside. Staff was respectful. My avocado toast came on a little wooden cutting board with their logo on it which I find clever. Regardless if you want a quick bite or to sit down read a book, get some work done or what have you, Carmela\u2019s on glades is a win in my book"
+        },
+        {
+          "rating": 5,
+          "text": "Pretty good coffee \u2615\ufe0f served in a friendly atmosphere. They have plenty of good pastries to choose from and different coffee beverages that all look worth trying. Service was good, beverages came out quickly, and they have inside and outside seating options. During the weekend it can get a bit busy, but I still found them pretty quick. Shoutout to the matcha latte."
+        },
+        {
+          "rating": 4,
+          "text": "Great wifi, somewhat quiet outside in the morning if next door restaurant does not blast music. Service is good but must go to counter so if you sit outside they won\u2019t bring you your food and it sits there getting cold.\nFood is extremely overpriced. Flatbread is literally a pita with stuff on top. Very small for almost $20. All in all the place is overpriced service is ok and food is ok.\nCoffee and flatbread $25 for one person."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJHSmlaxLh2IgRzyfVX_Im4ck": {
+      "picks": {
+        "drink": {
+          "name": "Iced latte",
+          "reason": "Iced lattes/iced coffee receive multiple specific mentions across high-star reviews, including a praised lavender white mocha iced coffee.",
+          "quote": "the iced lattes are always so good",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Shakshuka",
+          "reason": "Shakshuka is specifically named and praised in two separate 5-star reviews, with one reviewer ordering it twice.",
+          "quote": "It was delicious, plenty of feta",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Loved my sandwich which was a culinary delight in taste & presentation, ambience, soft positive vibe music selection that I forgot to take pic of my delicious turkey sandwich and banana bread with my delicious Colombian coffee. Sipping now on my tropical coconut lemonade. #MustGo @ #Carmelas in #BocaRaton #Florida."
+        },
+        {
+          "rating": 5,
+          "text": "Really loved it here! The iced coffee and classic shakshuka were both great. Vegan milk options available such as almond and oat. There is a good amount of seating as well."
+        },
+        {
+          "rating": 5,
+          "text": "Had the Shakshukah for my second time. It was delicious, plenty of feta, heated and ready for me to eat up. Came with a side of 2 pieces of bread (sourdough?). Also, had a hot, vanilla latte that was also delicious with a great flavor profile."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJ-wx9iYvh2IgRBRNg20QB_10": {
+      "picks": {
+        "drink": {
+          "name": "Farm Coffee",
+          "reason": "Singled out in a 5-star review as a must-try with unique flavor worth visiting for alone. Latte options also praised but Farm Coffee got the strongest specific endorsement.",
+          "quote": "MUST try the Farm Coffee, super unique flavor",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Arepas",
+          "reason": "Multiple food items mentioned positively (arepas, empanadas, BST croissant), but arepas got enthusiastic praise in a 5-star review and represent the shop's Colombian identity. Empanadas were noted as small. Pan de bono had mixed reviews (cold in one, warm and enjoyed in another).",
+          "quote": "first time trying Arepas and it was absolutely delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "It was our first time visiting and it\u2019s such a welcoming environment! The staff was great with explaining the food on the menu. They had a variety of breakfast, lunch, and all kinds of coffees. I enjoyed their delray breakfast and their latte! It was my first time trying Arepas and it was absolutely delicious. I recommend stopping by!"
+        },
+        {
+          "rating": 5,
+          "text": "Absolutely amazing new coffee shop!! MUST try the Farm Coffee, super unique flavor and definitely worth it to come here for that alone. Huge plus that the food is also delicious!! Empanadas are small but pack BIG flavor. The BST on a croissant was also a great option, definitely add the eggs!!\n\nOverall I loved it and will definitely be back again soon!!"
+        },
+        {
+          "rating": 1,
+          "text": "I wish there was a zero start. Very bad service. There was no type of acknowledgement when we entered. The table was dirty. We ordered drinks and pan de bono. Pan de bono was cold and hard. Very bad. Coffee was cold. Hot chocolate was cold. The only good thing was the iced coffee. The steak and carne asada had no flavor, and it was COLD. LIKE IT CAME FROM THE FREEZER. It was so hard to try and cut it to eat it. I end up leaving the whole thing....\nI really don't know what to think. I feel like it was money wasted.... The girls were so rude ... Won't be coming back ... HORRIBLE HORRIBLE SERVICE...."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJ8XzvSw0f2YgRBV82jAJFfAM": {
+      "picks": {
+        "drink": {
+          "name": "Cappuccino",
+          "reason": "Specifically named in a 5-star review and enjoyed by two people; espresso/coffee also praised elsewhere.",
+          "quote": "I got a cappuccino and the fig & goat cheese croissant sandwich",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Fig & goat cheese croissant sandwich",
+          "reason": "Directly named and called delicious in a 5-star review; most specific food praise in the set.",
+          "quote": "the fig & goat cheese croissant sandwich, which was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "I stopped by The Pots Cafe at 6000 Glades Rd in Boca Raton and really enjoyed the experience. The place has a relaxed, welcoming feel that makes it easy to slow down and enjoy your time. It\u2019s a nice spot whether you\u2019re meeting someone or just taking a break for yourself.\n\nThe food was fresh and comforting without trying too hard to impress. Everything tasted thoughtfully prepared, and the portions felt just right. I also appreciated how calm the atmosphere was\u2014no rush, no noise overload, just a pleasant place to sit and enjoy a meal.\n\nService was friendly and genuine, which made the visit even better. Overall, The Pots Cafe felt like one of those neighborhood spots you\u2019d come back to when you want something easy, warm, and familiar."
+        },
+        {
+          "rating": 5,
+          "text": "Really nice place , loved the music they were playing and the area is very relaxing surrounded by greenery. All the servers were nice and attentive. I got a cappuccino and the fig & goat cheese croissant sandwich, which was delicious I opted for the chips instead of the salad. My husband also got a cappuccino but he got the chocolate crossaint . I really liked this place I would come back."
+        },
+        {
+          "rating": 5,
+          "text": "Have stopped for you morning coffee and crumpets?  If not you need to stop by the always fantastic value of The Pots in Town & Country.  The service is always very good with a nice laid back approach and an amazing ambiance.  I really enjoy their coffee, I am an espresso person and they make a good one.  All types of treats too.  Stop by listen to some interesting music and enjoy a cup before you shop."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJWenGD5bj2IgRk_IEOgUUy9Y": {
+      "picks": {
+        "drink": {
+          "name": "Iced latte",
+          "reason": "Specifically praised in a 5-star review as possibly the best in Boca, with other lattes/flat whites also well-received.",
+          "quote": "The coffee here is amazing, dare I say the best in Boca",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Blueberry muffin",
+          "reason": "Explicitly called excellent and delicious in a 5-star review; other food mentions (quiche) were more general.",
+          "quote": "an excellent blueberry muffin. It was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Three of us grabbed coffees to go at Belladukes. The Art Show was in Sanborn Square so the placed was packed!!! I loved my flat white coffee. My friends had a latte and a cappuccino  & were impressed.\nThis gourmet shop packs quite a punch with delightful desserts and stunning candles and dog beds!!! Literally, you can spend some time just browsing their merchandise ! Great find & I hope to be back soon !"
+        },
+        {
+          "rating": 5,
+          "text": "Stopped by on Saturday morning while the car was getting some work done, they welcomed my dog. Penny offered a coffee and an excellent blueberry muffin. It was delicious. I\u2019ll definitely come again (I meant we will come again)"
+        },
+        {
+          "rating": 4,
+          "text": "Cute little place. Great friendly service. We didn't enjoy our mocha latte that much. Maybe it was just a bad pull but we didn't want to say anything, just to be polite. Don't let that keep you from trying this place though. There are so many others raving about the coffee. \ud83d\ude0a"
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJR_ysn4jj2IgR2kCL-eY_vz8": {
+      "picks": {
+        "drink": {
+          "name": "Dirty chai latte",
+          "reason": "Specifically praised for perfect balance and distinguishable flavors; other reviews mention great coffee generally.",
+          "quote": "Very well balance of a good dirty chai latte",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Peruvian beef empanadas",
+          "reason": "Empanadas named in multiple reviews as delicious, with the Peruvian beef variety specifically highlighted.",
+          "quote": "Their empanadas are the best",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I\u2019ve been coming here for years and have always loved my experience. The coffee and matchas are really high quality, and the syrup flavors are always delish. I have often spent time doing schoolwork/writing here because the atmosphere is so great. I even enjoy coming here for trivia, which is always a really fun time! Food options are always spectacular, too. 10/10 recommend, and the music always hits the spot!"
+        },
+        {
+          "rating": 5,
+          "text": "I always come here with my partner to sit and chat, we tend to order dirty chai lattes to which they never miss!\n\nVery well balance of a good dirty chai latte should be like, you can distinguish all flavors in the drink.\n\nTheir empanadas are the best, we get the Peruvian beef empanadas and even though they got raisins in them, it does not bother me one bit since it\u2019s not overtaking the beef flavor.\n\nI very much appreciate this place for staying open for later hours for us latte coffee enthusiasts"
+        },
+        {
+          "rating": 5,
+          "text": "Great place to come to study or catch up with friends. The empanadas are delicious!!! They offer a wide variety of pastry options. I enjoy the outdoor seating. Could definitely use some new tables out there though, and it does tend to get a bit chilly inside."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJE9bX5Ewf2YgR0MDqarmOc0k": {
+      "picks": {
+        "drink": {
+          "name": "Vanilla Latte",
+          "reason": "Specifically praised in a 5-star review; other named drinks (cappuccino, matcha, espresso) each appear once, but vanilla latte gets direct enthusiastic callout.",
+          "quote": "their vanilla Latte are always on point",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "Only a vague mention of 'great pastries and light bites' with no specific item named.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The coffee is consistently smooth and flavorful (you can tell they care about quality), and their vanilla Latte  are always on point. I also love that they offer great pastries and light bites \u2014 everything feels thoughtfully curated, not just thrown together.\nWhat really stands out is the vibe: friendly staff, calm energy, and a space that makes you want to stay a little longer. It\u2019s become one of my go-to spots for a peaceful coffee break or casual meet-ups.\nHighly recommend if you\u2019re looking for great coffee, a comfortable environment, and reliable quality every visit. \u2615\ufe0f\u2728"
+        },
+        {
+          "rating": 2,
+          "text": "This place has lost its touch. I used to come here and get really nice coffees with strong shots of espresso but now my iced latte taste like milk. I got four shots that should send me through the roof instead I finish my coffee questioning on if I\u2019ve even had one today. I\u2019m putting my patronage of Foxtel coffee to bed."
+        },
+        {
+          "rating": 5,
+          "text": "This coffee shop offers a fantastic experience with quick service and minimal wait times, making it perfect for those on the go. The staff is incredibly welcoming and attentive, ensuring a smooth and enjoyable visit. Whether you\u2019re grabbing a coffee to start your day or settling in for a relaxing break, the atmosphere is warm and inviting. The quality of the coffee is top-notch, with a great selection of brews to satisfy any preference. While parking can be tricky during peak hours, the efficient service and friendly environment make it well worth the visit."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJI1et2rzj2IgRmmydvhcsL64": {
+      "picks": {
+        "drink": {
+          "name": "Tiramisu latte",
+          "reason": "Specifically recommended by staff and praised in a 5-star review; cold foam lattes also highly praised across multiple reviews but no single named drink dominates.",
+          "quote": "Kylie guided me to try the Tiramisu latte!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Turkey sandwich",
+          "reason": "The only named food item in the reviews, described positively in a 5-star review.",
+          "quote": "the turkey sandwich was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "When I walked in I was greeted by Kylie\u2019s warm welcome! The decoration is so so cute, simple and delicate. I was having trouble deciding what I wanted to drink to be ready for my day. Kylie guided me to try the Tiramisu latte! Thanks to her wonderful recommendation and sweet attitude she made my day! Thanks again!"
+        },
+        {
+          "rating": 5,
+          "text": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\n\nLong Story Short Coffee Shop is truly a hidden gem on Second St! The atmosphere is warm and welcoming, and the people there are genuinely pleasant.\n\nI had the nitro cold brew and it was incredibly smooth \u2014 rich, bold, and perfectly balanced. My husband ordered a cold foam drink (and he\u2019s very particular about his coffee), and it absolutely met his standards. That alone says a lot!\n\nIf you\u2019re looking for great coffee and kind service, this spot is definitely worth stopping by. We\u2019ll be back."
+        },
+        {
+          "rating": 2,
+          "text": "Lavender latte wasn\u2019t great, took a while, and the woman working the register was noticeably bothered by asking what ingredients were in the coconut milk. \u201cIt\u2019s literally just coconut,\u201d she said. The ingredient list on the carton tells a different tale."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJ-_O-FgDj2IgR0Wr2kH0Rn1I": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks mentioned in any review.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Bolon Milotino with bistec",
+          "reason": "Specifically named and praised in multiple 5-star reviews as a breakfast recommendation.",
+          "quote": "Bolon Milotino with bistec for breakfast",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is a great place for breakfast or brunch/lunch if you\u2019re looking for authentic Ecuadorian food in Boca Raton. The atmosphere is very cozy and welcoming\u2014perfect for inviting someone to experience Ecuadorian cuisine and traditional desserts for the first time."
+        },
+        {
+          "rating": 5,
+          "text": "So excited to find this place- very few restaurants with good Ecuadorian food specially in palm beach area. My first time here and i loved the food! Prices are very reasonable. Small place and fills up quickly! So worth the wait!! I had the Milotino breakfast- Bolon with beef bistek. Yum!"
+        },
+        {
+          "rating": 5,
+          "text": "This place is a mix of great food, excellent customer service and reasonable pricing. I recommend this place it never disappoints my recommendation are the Bolton Milotino with bistec for breakfast and my favorites for lunch would be: Bandera, encebollado and tr\u00edo ceviche."
+        }
+      ],
+      "reviewsAnalysed": 5
+    },
+    "ChIJQ98zGMfj2IgRo5LU42SyiqQ": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Latte is the only specific drink named, mentioned positively in two separate reviews alongside food orders.",
+          "quote": "a delicious turkey wrap and latte for lunch",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Omelette",
+          "reason": "The omelette is specifically named in two reviews and described as 'most delicious,' making it the strongest food pick over the wrap or sandwich.",
+          "quote": "had the most delicious omelette",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I'm super sure this place will be a great success for the city. I'm counting the days now"
+        },
+        {
+          "rating": 5,
+          "text": "Can\u2019t wait for you guys to open. You\u2019ve done a beautiful job improving the site \u2014 it\u2019s gorgeous. Please let us know when you will open! We live on the street and would love to support you during a soft launch. We\u2019re so excited!"
+        },
+        {
+          "rating": 5,
+          "text": "So glad they finally opened in our neighborhood.  Beautiful market, healthy snacks and food, and great coffee!  The staff are super friendly. Picked up a delicious turkey wrap and latte for lunch. Visited again!  Picked up a delicious omelette, wrap, and a tuna sandwich.  Delish. Today is their grand opening and they have added more items.  Everything is delicious and healthy and very unique as well."
+        }
+      ],
+      "reviewsAnalysed": 5
+    }
+  }
+}
