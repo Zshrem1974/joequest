@@ -16,9 +16,18 @@ A recommendation engine that reads a coffee shop's Google reviews and names the 
 ## Build artifacts (~/joequest/)
 
 Engine / CLI: `test-offline.js`, `joequest-engine.js`, `scan-list.js`, `recurate.js`.
-Live app: `server.js` (Express API + photo proxy + snapshot loader),
-`public/index.html` (UI), `db.js` (Supabase / in-memory cache).
-Data: `data/boca-snapshot.json` — pre-baked 19 cafés + their picks (66 KB).
+Live app:
+- `server.js` (Express API: list, detail, photo proxy, favourites, status; snapshot loader)
+- `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label)
+- `public/index.html` (vanilla-JS UI, single page, six views)
+- `public/img/` (brand SVGs: lockup, favicon, app icon, standalone pin; PNG: JoeQuester marker)
+- `db.js` (Supabase or in-memory fallback for favourites & per-place cache)
+
+Snapshot pipeline:
+- `data/boca-snapshot.json` — 19 cafés + picks, with per-place `fetched_at` (66 KB)
+- `scripts/snapshot.js` — refresh script with the 90-day rule, `--force` + `--dry-run`
+- `.github/workflows/snapshot.yml` — monthly cron + manual dispatch, opens a PR with the diff
+
 Deploy: `render.yaml`, `fly.toml`, `.gitignore`, `DEPLOY.md`, `CHANGES.md`.
 
 ## Architecture (load-bearing)
@@ -92,7 +101,42 @@ engagement.**
 
 - **Surface/user:** mobile-web for locals & tourists. The verdict ("go here, order this") is the differentiator vs. a directory.
 - **Moat:** curation taste for now (deep-on-Boca). Community / multi-source review aggregation are stronger but phase-2 — revisit deliberately, don't drift.
-- **Data freshness for MVP:** manual snapshot refresh, no schedule, no auto-discovery. Cheaper to operate, easier to QA, no overnight bill surprises.
+- **Data freshness for MVP:** per-café 90-day clock, scheduled monthly refresh via GitHub Action with PR review. (Documented in the snapshot model section above.)
+
+## UI & brand state (what's actually shipped)
+
+The deployed app implements all six screens from the spec, with the brand
+palette and Poppins/Inter typography.
+
+- **Discover** — header lockup, "Best coffee in Boca" greeting, mini-map with
+  brand pins + rating pills, ranked café card list with rank badges,
+  open/closed status badges (with closing/opening time, e.g. "Open · Closes
+  10 PM"), heart-save, photo via the photo proxy, two-up Drink/Food strip on
+  each card.
+- **Map** — Google-Maps-style interaction:
+  - viewBox-based zoom (1×–5×) with `+` / `−` controls
+  - drag-to-pan once zoomed in
+  - **pins keep a constant pixel size** as the map zooms (counter-scaled
+    against viewBox zoom)
+  - **red JQ-shaped "You" pin** at the user's lat/lng (geolocation; defaults
+    to Boca centre)
+  - locate-me button that pans + zooms to your position
+  - filter chips: rating (cycles 4.0/4.5/4.8), open-now, price ($/$$/$$$),
+    JoeQuesters (toggles the purple smiley-cup markers)
+  - legend below the map: Café · You · JoeQuesters
+- **Café detail bottom sheet** — hero photo, "AI read N reviews" banner,
+  confidence-tinted Drink + Food cards (high = mint, medium = star-gold,
+  low = crema), reviewer quote, mention count, Open in Maps / Directions CTAs.
+- **Saved** — favourites with empty state + nudge.
+- **Slide-out drawer** — Profile, Coffee taste profile (AI tag), Offers,
+  Become a JQ partner, Settings, Privacy & location, Help.
+- **Partner page** — two offer types (Café placement $49/mo, Brand offers
+  from $250/campaign) + the coffee-only sponsorship policy box.
+
+Brand assets: `joequest-lockup.svg` in the header, `favicon.svg` in the tab,
+`joequest-app-icon.svg` for iOS install, `joequest-icon.svg` paths used for
+the café and "You" map pins (orange + red), `joequester-marker.png` for the
+purple JoeQuesters markers and the filter chip icon.
 
 ## Cost shape (current)
 
@@ -141,10 +185,14 @@ spend rate.
 - Google's ~5-review input cap (thin sample; caps mention counts on picks).
 - "High confidence" can fire on ~2 mentions (rubric weights specificity).
 - No reviewer attribution / source links shown to users yet.
-- **Map is a stylized canvas, not a tile map.** Pin positions ARE accurate
-  (real lat/lng projected into a Boca bounding box), but there's no street-
-  level imagery. Real-map upgrade is step 5b above.
-- "JoeQuesters near me" dots are simulated (no real user-location layer).
+- **Map is a stylized SVG canvas, not a tile map.** Pin positions ARE accurate
+  (real lat/lng projected into a Boca bounding box) and zoom/pan now work
+  Google-Maps-style, but there's no street-level imagery. Real-map upgrade is
+  step 5b above.
+- **JoeQuesters markers are simulated** — the purple smiley-cup pins are
+  branded but their positions are seeded (no real user-location signal yet).
+- "You" pin uses real `navigator.geolocation` when the user grants permission,
+  else defaults to Boca centre.
 - Single city (Boca) hardcoded — by design for MVP, see "Multi-city" above.
 
 ## Run / deploy
