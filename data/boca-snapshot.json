@@ -1451,10 +1451,10 @@
         "cafe",
         "coffee_shop",
         "food_store",
-        "store",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
+        "store",
         "establishment"
       ],
       "openNow": false,
@@ -1555,7 +1555,7 @@
         "Sunday: 8:00 AM – 6:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=15203309869475649686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAb43m-uUw0LqOJHuzENyDhj5yDq7RNfQh5rgnEDY45K3nF3SoWZBF1IfWp_ebL91BUvbNg8Gn7Fsl0i5vZNUq2YF9Vvf--5uoCQx2LDzAjVs9c2HGe4RM7kJK7AeaUtYQrv8eRz0-78jZZADE1ncdG4Y0dEUX3Ro3PdOgj_ytZ0CYFzr0BihwYoeT4nTlgaEbynw2BisGLd0AfF-pDowp3fFEcR-kwsVYaOCJKX12qoRzH_znFWWF-8CFXvof8tpwjjRZaAM-ufe_PdUVKsjxEkIUro7exmavb0O7oTDOJ9arVSATg&w=800"
+      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAb43m-t129VxzMo74wWTbMCI0_jr1f2faVej1IO6tLHCPx2850DmhCvAH1-e5hDKm9iqHGsVvrBf37ocvTIhg8Ib_s1mXFSEnXgx85QSTdr6tcZAYRPLmMJTYs8jdS-5muKHpKhD31UMZRewiIyHDSOblqNCNC5mvItYu-YJGMAESqwc5cpIey-trx8tNBaWn5cOGDJoYIoS29c-fM9rpYacemo8wElqUaMhKW5c_iKZYHLf5_8P8BR6oWWZGVDFEnP7qBPzzzYYqO9AnCIy3un6GwyimZM5FQUrH_JXEajDqmidwA&w=800"
     },
     {
       "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
@@ -3033,18 +3033,18 @@
     "ChIJ81Ar2sYZ2YgRllhJlMYB_dI": {
       "picks": {
         "drink": {
-          "name": null,
-          "reason": "Pending Claude refresh.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
+          "name": "Peach Please smoothie",
+          "reason": "Specifically named with delight; other drink mentions are generic.",
+          "quote": "loved my little bouquet of flowers on my Peach Please smoothie",
+          "confidence": "medium",
+          "mention_count": 1
         },
         "food": {
-          "name": null,
-          "reason": "Pending Claude refresh.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
+          "name": "Triple berry crumble cake",
+          "reason": "Received the most enthusiastic, specific praise in a 5-star review.",
+          "quote": "out of body experience when eating the triple berry crumble cake",
+          "confidence": "high",
+          "mention_count": 1
         }
       },
       "reviewSample": [
@@ -3062,7 +3062,7 @@
         }
       ],
       "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T08:16:17.439Z"
+      "fetched_at": "2026-05-24T08:19:14.706Z"
     }
   }
 }
