@@ -2452,6 +2452,10 @@
       await loadCafesForCity(slug);
       renderDiscover();
       renderMaps();
+      // renderMaps only repaints the SVG canvases — the Map view's card list
+      // + count come from renderMap(). Without this, switching city on the
+      // map screen leaves the old city's list rendered under the new pins.
+      if (state.view === "map") renderMap();
       track("view_change", { to: "discover", city: slug }); // light reuse — not a new event
     }
 
