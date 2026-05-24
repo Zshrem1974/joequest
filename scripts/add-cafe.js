@@ -22,8 +22,9 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   PLACES_BASE,
-  isRealCafe, typesAreCafe, priceToDollars, hoursLabel, score,
+  isRealCafe, typesAreCafe, score,
   getReviews, getPicks, newAnthropic,
+  mapPlaceToCafe,
 } from "../lib/data.js";
 import { CITIES, cityBySlug } from "../lib/cities.js";
 
@@ -96,27 +97,7 @@ async function main() {
     console.log("⚠️   Filter failure — adding anyway because you asked. Tweak filters if this is consistent.");
   }
 
-  const h = place.regularOpeningHours ?? place.currentOpeningHours;
-  const cafe = {
-    city: CITY_CFG.slug,
-    id: place.id,
-    name: place.displayName?.text || "Unknown",
-    address: place.formattedAddress || "",
-    lat: place.location?.latitude,
-    lng: place.location?.longitude,
-    rating: place.rating ?? null,
-    reviews: place.userRatingCount ?? 0,
-    price: priceToDollars(place.priceLevel),
-    types: place.types || [],
-    openNow: h?.openNow ?? null,
-    hoursLabel: hoursLabel(h),
-    periods: h?.periods ?? null,
-    weekdayDescriptions: h?.weekdayDescriptions ?? null,
-    mapsUri: place.googleMapsUri || null,
-    photo: place.photos?.[0]?.name
-      ? `/api/photo?name=${encodeURIComponent(place.photos[0].name)}&w=800`
-      : null,
-  };
+  const cafe = mapPlaceToCafe(place, CITY_CFG);
 
   console.log(`\nFetching reviews + generating Claude picks…`);
   const reviews = await getReviews(cafe.id, googleKey);

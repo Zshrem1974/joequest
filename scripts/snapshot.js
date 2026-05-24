@@ -26,7 +26,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  searchCafes, getReviews, getPicks, newAnthropic,
+  searchCafes, getReviews, getPicks, newAnthropic, fetchPlaceById, score,
 } from "../lib/data.js";
 import { CITIES, DEFAULT_CITY, cityBySlug } from "../lib/cities.js";
 
@@ -80,10 +80,39 @@ async function main() {
   console.log("→ Pulling fresh café list from Google Places…");
   const cafes = await searchCafes(googleKey, CITY_CFG);
   console.log(`  Got ${cafes.length} cafés that pass filters (chains, types, bbox, address).`);
+
+  // MUST_INCLUDE union — curated cafés that Google's rotating top-20 search
+  // sometimes drops. We fetch each missing id via Place Details and append
+  // them before the 90-day loop, so the per-café clock still applies (fresh
+  // entries are reused, stale ones get re-pulled).
+  const returnedIds = new Set(cafes.map((c) => c.id));
+  const mustInclude = CITY_CFG.mustInclude || [];
+  const missingMustInclude = mustInclude.filter((id) => !returnedIds.has(id));
+  let mustIncludeAdded = 0;
+  if (missingMustInclude.length) {
+    console.log(`→ MUST_INCLUDE: ${missingMustInclude.length} curated café(s) missing from search…`);
+    for (const id of missingMustInclude) {
+      if (DRY) {
+        console.log(`  · ${id}  (would fetch via Place Details in real run)`);
+        continue;
+      }
+      process.stdout.write(`  · ${id}  fetching… `);
+      try {
+        const cafe = await fetchPlaceById(id, googleKey, CITY_CFG);
+        if (!cafe) { console.log("✗ not found"); continue; }
+        cafes.push(cafe);
+        mustIncludeAdded++;
+        console.log(`✓ ${cafe.name}`);
+      } catch (e) {
+        console.log(`✗ ${e.message}`);
+      }
+    }
+    if (mustIncludeAdded) cafes.sort((a, b) => score(b) - score(a));
+  }
   console.log("");
 
   const picks = {};
-  const stats = { fresh: 0, reused: 0, newCafes: 0, dropped: 0 };
+  const stats = { fresh: 0, reused: 0, newCafes: 0, dropped: 0, mustIncludeAdded };
 
   // Track cafés that have left the list (closed / no longer pass filters)
   const newIds = new Set(cafes.map((c) => c.id));
@@ -155,6 +184,7 @@ async function main() {
   console.log(`Summary:`);
   console.log(`  Freshly pulled: ${stats.fresh}  (${stats.newCafes} new cafés)`);
   console.log(`  Reused (still fresh): ${stats.reused}`);
+  if (stats.mustIncludeAdded) console.log(`  MUST_INCLUDE added via Place Details: ${stats.mustIncludeAdded}`);
   if (stats.dropped) console.log(`  Dropped from list: ${stats.dropped}`);
   if (stats.fresh > 0) {
     const cost = (stats.fresh * 0.04 + cafes.length * 0.005).toFixed(2);
