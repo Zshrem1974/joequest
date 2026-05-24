@@ -2,449 +2,1648 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#5E3E27" />
   <title>JoeQuest — Boca Raton</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
+    /* ============================================================
+       BRAND TOKENS
+       ============================================================ */
     :root {
-      --bg: #f4ede3;
-      --paper: #fbf6ee;
-      --ink: #2a1d10;
-      --muted: #6b594a;
-      --line: #e3d7c2;
-      --accent: #6f3b1f;       /* espresso */
-      --accent-2: #b5814a;     /* crema */
-      --gold: #c89b3c;
-      --good: #2d6a4f;
-      --warn: #b08900;
-      --weak: #9e6b58;
+      --espresso: #5E3E27;
+      --espresso-deep: #2B1C12;
+      --crema: #D98324;
+      --crema-light: #F0A847;
+      --oat: #F5E9DC;
+      --cream: #FFF6EC;
+      --mint: #3B7D5A;
+      --star: #E8A317;
+      --quester: #7C5CFF;
+
+      --ink: var(--espresso);
+      --muted: rgba(94, 62, 39, 0.62);
+      --line: rgba(94, 62, 39, 0.12);
+      --line-strong: rgba(94, 62, 39, 0.22);
+      --shadow-sm: 0 1px 2px rgba(43, 28, 18, 0.04), 0 2px 8px rgba(43, 28, 18, 0.05);
+      --shadow-md: 0 6px 20px rgba(43, 28, 18, 0.10);
+      --shadow-lg: 0 16px 40px rgba(43, 28, 18, 0.22);
+
+      --r-card: 18px;
+      --r-pill: 20px;
+
+      --app-max: 480px;
+      --tab-h: 64px;
+      --header-h: 56px;
+
+      --display: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
     }
+
+    /* ============================================================
+       BASE
+       ============================================================ */
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
+    html, body { margin: 0; padding: 0; height: 100%; }
     body {
-      background: var(--bg);
+      background: var(--espresso-deep);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ---- Header ---- */
-    header {
-      padding: 56px 24px 28px;
-      text-align: center;
-      border-bottom: 1px solid var(--line);
-      background: linear-gradient(180deg, #f7efe2 0%, var(--bg) 100%);
-    }
-    header h1 {
-      font-family: "Georgia", "Times New Roman", serif;
-      font-weight: 600;
-      font-size: 44px;
-      letter-spacing: -0.5px;
-      margin: 0 0 6px;
-      color: var(--accent);
-    }
-    header .sub {
-      color: var(--muted);
+      font-family: var(--body);
       font-size: 15px;
-      letter-spacing: 0.2px;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
     }
-    header .pill {
-      display: inline-block;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 4px 12px;
-      font-size: 12px;
-      color: var(--muted);
-      margin-top: 14px;
+    button { font-family: inherit; cursor: pointer; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* App shell — phone-first, centered on desktop */
+    #app {
+      max-width: var(--app-max);
+      margin: 0 auto;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background: var(--oat);
+      position: relative;
+      box-shadow: 0 0 60px rgba(0,0,0,0.25);
+      overflow-x: hidden;
     }
 
-    /* ---- Banner ---- */
-    #banner {
-      display: none;
-      max-width: 900px;
-      margin: 16px auto;
-      padding: 12px 16px;
-      background: #fff3cd;
-      border: 1px solid #e6c97a;
-      border-radius: 8px;
-      color: #6b5210;
+    /* ============================================================
+       HEADER
+       ============================================================ */
+    .app-header {
+      height: var(--header-h);
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--cream);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 30;
+    }
+    .icon-btn {
+      width: 40px; height: 40px;
+      border: none;
+      background: transparent;
+      border-radius: 12px;
+      display: grid; place-items: center;
+      color: var(--ink);
+      transition: background 0.12s;
+    }
+    .icon-btn:hover, .icon-btn:focus-visible { background: var(--line); outline: none; }
+    .icon-btn svg { width: 22px; height: 22px; }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex: 1;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.2px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .logo svg { width: 30px; height: 30px; flex-shrink: 0; }
+    .logo .joe   { color: var(--espresso); }
+    .logo .quest { color: var(--crema); }
+
+    /* ============================================================
+       VIEWS
+       ============================================================ */
+    .view { display: none; padding-bottom: calc(var(--tab-h) + 16px); }
+    .view.active { display: block; }
+
+    .greeting {
+      padding: 18px 18px 8px;
+    }
+    .greeting h1 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.2;
+      margin: 0 0 4px;
+      color: var(--espresso);
+      letter-spacing: -0.3px;
+    }
+    .greeting p {
+      margin: 0;
+      color: var(--muted);
       font-size: 14px;
     }
 
-    /* ---- Layout ---- */
-    main {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 28px 20px 64px;
+    /* ----- Mini-map (Discover) ----- */
+    .mini-map {
+      margin: 14px 18px 6px;
+      height: 150px;
+      border-radius: var(--r-card);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
     }
-    .meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 18px;
-      color: var(--muted);
-      font-size: 13px;
+    .mini-map .map-canvas { width: 100%; height: 100%; }
+    .mini-map .open-map {
+      position: absolute;
+      right: 10px; bottom: 10px;
+      background: var(--cream);
+      border-radius: var(--r-pill);
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--espresso);
+      box-shadow: var(--shadow-sm);
     }
 
-    /* ---- Café grid ---- */
-    #cafes {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
+    /* ----- Café list ----- */
+    .section-head {
+      padding: 14px 18px 6px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
     }
-    .card {
-      background: var(--paper);
+    .section-head h2 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.1px;
+      margin: 0;
+      color: var(--espresso);
+    }
+    .section-head .meta { color: var(--muted); font-size: 12px; }
+
+    .cafe-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 6px 18px 4px;
+    }
+    .cafe-card {
+      background: var(--cream);
+      border-radius: var(--r-card);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
       border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 18px 18px 16px;
       cursor: pointer;
-      transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+      transition: transform 0.12s, box-shadow 0.12s;
       position: relative;
     }
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 22px rgba(58, 30, 10, 0.08);
-      border-color: var(--accent-2);
+    .cafe-card:active { transform: scale(0.99); }
+    .cafe-card:hover { box-shadow: var(--shadow-md); }
+
+    .cafe-card .photo-wrap {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: var(--oat);
+      overflow: hidden;
     }
-    .card h3 {
-      margin: 0 0 4px;
-      font-size: 17px;
+    .cafe-card .photo-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .cafe-card .photo-fallback {
+      position: absolute; inset: 0;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--oat), var(--cream));
+      color: var(--crema);
+      font-family: var(--display);
+      font-size: 38px;
+    }
+
+    .rank-badge {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: var(--espresso-deep);
+      color: var(--cream);
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      display: grid; place-items: center;
+      font-weight: 700;
+      font-size: 13px;
+      box-shadow: var(--shadow-sm);
+    }
+    .open-badge {
+      position: absolute;
+      top: 10px; right: 10px;
+      background: rgba(255, 246, 236, 0.95);
+      color: var(--mint);
+      padding: 4px 10px;
+      border-radius: var(--r-pill);
+      font-size: 11px;
       font-weight: 600;
-      color: var(--ink);
+      display: flex; align-items: center; gap: 4px;
+      backdrop-filter: blur(6px);
+    }
+    .open-badge::before {
+      content: "";
+      width: 6px; height: 6px;
+      background: var(--mint);
+      border-radius: 50%;
+    }
+
+    .heart-btn {
+      position: absolute;
+      bottom: 12px; right: 12px;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: rgba(255,246,236, 0.92);
+      backdrop-filter: blur(6px);
+      border: none;
+      display: grid; place-items: center;
+      color: var(--espresso);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.15s, background 0.15s;
+    }
+    .heart-btn:hover { transform: scale(1.08); }
+    .heart-btn.saved { color: var(--crema); }
+    .heart-btn.saved svg { fill: var(--crema); }
+    .heart-btn svg { width: 18px; height: 18px; }
+
+    .cafe-card .body { padding: 12px 14px 14px; }
+    .cafe-card h3 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 17px;
+      margin: 0 0 4px;
+      color: var(--espresso);
+      line-height: 1.2;
       letter-spacing: -0.1px;
     }
-    .card .addr {
+    .cafe-card .stats {
       color: var(--muted);
-      font-size: 12.5px;
-      line-height: 1.35;
+      font-size: 13px;
       margin-bottom: 10px;
-      min-height: 32px;
+      display: flex; align-items: center; gap: 6px;
     }
-    .card .row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .stars { color: var(--gold); letter-spacing: 1px; font-size: 13px; }
-    .price { color: var(--accent); font-weight: 600; }
+    .cafe-card .stats .star { color: var(--star); font-size: 14px; }
+    .cafe-card .stats .price { color: var(--espresso); font-weight: 600; }
 
-    /* ---- Modal ---- */
-    .modal-bg {
-      position: fixed; inset: 0;
-      background: rgba(28, 16, 6, 0.55);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 50;
-      padding: 20px;
+    /* Two-up pick strip on the card */
+    .picks-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 8px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--line);
     }
-    .modal-bg.open { display: flex; }
-    .modal {
-      background: var(--paper);
-      border-radius: 16px;
-      max-width: 560px;
-      width: 100%;
-      max-height: 88vh;
-      overflow-y: auto;
-      padding: 28px 28px 24px;
-      box-shadow: 0 24px 60px rgba(28, 16, 6, 0.3);
-      position: relative;
+    .pick-mini {
+      background: var(--oat);
+      border-radius: 12px;
+      padding: 8px 10px;
+      min-height: 50px;
     }
-    .modal .close {
-      position: absolute;
-      top: 14px; right: 16px;
-      background: transparent;
-      border: none;
-      font-size: 22px;
-      color: var(--muted);
-      cursor: pointer;
-      line-height: 1;
-    }
-    .modal h2 {
-      font-family: "Georgia", serif;
+    .pick-mini .lbl {
+      font-size: 10px;
       font-weight: 600;
-      font-size: 26px;
-      margin: 0 0 4px;
-      color: var(--accent);
-      padding-right: 24px;
-    }
-    .modal .addr2 {
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 6px;
-    }
-    .modal .stats {
-      color: var(--muted);
-      font-size: 12.5px;
-      margin-bottom: 22px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .pick {
-      padding: 14px 0;
-      border-bottom: 1px dashed var(--line);
-    }
-    .pick:last-child { border-bottom: none; }
-    .pick-label {
-      font-size: 11px;
-      letter-spacing: 1.4px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 6px;
+      margin-bottom: 2px;
     }
-    .pick-name {
-      font-size: 22px;
+    .pick-mini .val {
       font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 4px;
-      line-height: 1.2;
+      font-size: 13px;
+      color: var(--espresso);
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
-    .pick-meta {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 10px;
+    .pick-mini.is-food { background: rgba(59, 125, 90, 0.08); }
+    .pick-mini.is-food .lbl { color: var(--mint); }
+    .pick-mini .placeholder {
+      height: 12px;
+      background: var(--line);
+      border-radius: 6px;
+      animation: shimmer 1.4s infinite;
+      background: linear-gradient(90deg, var(--line) 25%, rgba(94,62,39,0.06) 50%, var(--line) 75%);
+      background-size: 200% 100%;
     }
-    .conf {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: 11px;
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ============================================================
+       MAP VIEW
+       ============================================================ */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      padding: 12px 18px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      background: var(--cream);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: var(--header-h);
+      z-index: 20;
+    }
+    .filter-bar::-webkit-scrollbar { display: none; }
+    .chip {
+      flex-shrink: 0;
+      background: var(--oat);
+      border: 1px solid var(--line);
+      border-radius: var(--r-pill);
+      padding: 8px 14px;
+      font-size: 13px;
       font-weight: 600;
-      margin-right: 6px;
-      vertical-align: middle;
+      color: var(--espresso);
+      display: flex; align-items: center; gap: 6px;
+      transition: background 0.12s, border-color 0.12s;
     }
-    .conf.high { background: #d8ebdf; color: var(--good); }
-    .conf.medium { background: #f6e8c4; color: var(--warn); }
-    .conf.low { background: #f3dccd; color: var(--weak); }
-    .conf.none { background: #eae0d2; color: var(--muted); }
-    .quote {
-      border-left: 3px solid var(--accent-2);
-      padding: 4px 0 4px 12px;
-      color: var(--ink);
-      font-style: italic;
-      font-size: 14px;
-      margin: 8px 0 6px;
+    .chip:hover, .chip:focus-visible { border-color: var(--line-strong); outline: none; }
+    .chip.active {
+      background: var(--espresso);
+      color: var(--cream);
+      border-color: var(--espresso);
     }
-    .reason {
+    .chip svg { width: 14px; height: 14px; }
+    .filter-summary {
+      padding: 10px 18px 4px;
+      display: flex; justify-content: space-between;
       font-size: 13px;
       color: var(--muted);
     }
-    .empty {
+    .filter-summary .clear {
+      color: var(--crema);
+      font-weight: 600;
+      background: none;
+      border: none;
+      font-size: 13px;
+      padding: 0;
+    }
+
+    .big-map {
+      margin: 0 18px;
+      height: 340px;
+      border-radius: var(--r-card);
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+    .big-map .map-canvas { width: 100%; height: 100%; }
+
+    /* Map pins */
+    .pin {
+      position: absolute;
+      transform: translate(-50%, -100%);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+    .pin .pin-bubble {
+      background: var(--crema);
+      color: white;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: var(--r-pill);
+      box-shadow: var(--shadow-sm);
+      display: flex; align-items: center; gap: 3px;
+      border: 2px solid var(--cream);
+    }
+    .pin.high .pin-bubble { background: var(--espresso); }
+    .pin.mid .pin-bubble { background: var(--crema-light); color: var(--espresso-deep); }
+    .pin .pin-tail {
+      width: 0; height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--crema);
+      margin: 0 auto;
+    }
+    .pin.high .pin-tail { border-top-color: var(--espresso); }
+    .pin.mid .pin-tail { border-top-color: var(--crema-light); }
+    .quester-dot {
+      position: absolute;
+      width: 8px; height: 8px;
+      background: var(--quester);
+      border: 2px solid white;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.15);
+    }
+
+    /* ============================================================
+       SAVED VIEW
+       ============================================================ */
+    .saved-empty {
+      padding: 60px 32px;
+      text-align: center;
       color: var(--muted);
-      font-style: italic;
+    }
+    .saved-empty .icon {
+      font-size: 44px;
+      margin-bottom: 12px;
+      color: var(--crema);
+    }
+    .saved-empty h3 {
+      font-family: var(--display);
+      font-weight: 600;
+      color: var(--espresso);
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+    .saved-empty p { margin: 0 0 16px; font-size: 14px; }
+    .saved-empty button {
+      background: var(--espresso);
+      color: var(--cream);
+      border: none;
+      padding: 12px 22px;
+      border-radius: var(--r-pill);
+      font-weight: 600;
       font-size: 14px;
     }
 
-    /* ---- States ---- */
+    /* ============================================================
+       PARTNER VIEW
+       ============================================================ */
+    .partner-hero {
+      padding: 28px 22px 18px;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--oat) 100%);
+    }
+    .partner-hero h1 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 26px;
+      letter-spacing: -0.4px;
+      color: var(--espresso);
+      margin: 0 0 6px;
+    }
+    .partner-hero p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+    .offer-card {
+      margin: 16px 18px;
+      background: var(--cream);
+      border-radius: var(--r-card);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--line);
+    }
+    .offer-card .tag {
+      display: inline-block;
+      background: var(--crema);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .offer-card.brand .tag { background: var(--espresso); }
+    .offer-card h3 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 19px;
+      color: var(--espresso);
+      margin: 0 0 6px;
+    }
+    .offer-card p { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+    .offer-card .price {
+      font-family: var(--display);
+      color: var(--espresso);
+      font-weight: 600;
+      font-size: 17px;
+    }
+    .offer-card .price small { color: var(--muted); font-size: 13px; font-weight: 400; }
+    .offer-card ul { margin: 10px 0 16px; padding-left: 18px; color: var(--ink); font-size: 14px; }
+    .offer-card ul li { margin-bottom: 4px; }
+    .offer-card .cta {
+      width: 100%;
+      background: var(--espresso);
+      color: var(--cream);
+      border: none;
+      padding: 12px;
+      border-radius: var(--r-pill);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .policy-box {
+      margin: 8px 18px 18px;
+      background: rgba(217, 131, 36, 0.08);
+      border: 1px dashed var(--crema);
+      border-radius: 14px;
+      padding: 16px 18px;
+      color: var(--espresso);
+      font-size: 13px;
+    }
+    .policy-box strong { font-family: var(--display); color: var(--crema); }
+
+    /* ============================================================
+       BOTTOM TAB BAR
+       ============================================================ */
+    .tab-bar {
+      position: fixed;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: var(--app-max);
+      height: var(--tab-h);
+      background: var(--cream);
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      padding-bottom: env(safe-area-inset-bottom);
+      z-index: 25;
+    }
+    .tab {
+      flex: 1;
+      border: none;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      color: var(--muted);
+      padding: 8px 4px;
+      font-size: 11px;
+      font-weight: 600;
+      transition: color 0.15s;
+    }
+    .tab svg { width: 22px; height: 22px; }
+    .tab.active { color: var(--espresso); }
+    .tab.active svg { color: var(--crema); }
+
+    /* ============================================================
+       DRAWER (slide-out menu)
+       ============================================================ */
+    .scrim {
+      position: fixed; inset: 0;
+      background: rgba(43, 28, 18, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      z-index: 40;
+    }
+    .scrim.open { opacity: 1; pointer-events: auto; }
+
+    .drawer {
+      position: fixed;
+      top: 0; bottom: 0; left: 0;
+      width: 86%;
+      max-width: 360px;
+      background: var(--cream);
+      transform: translateX(-100%);
+      transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1);
+      z-index: 50;
+      overflow-y: auto;
+      box-shadow: var(--shadow-lg);
+    }
+    .drawer.open { transform: translateX(0); }
+    .drawer-header {
+      padding: 24px 22px 18px;
+      background: linear-gradient(135deg, var(--espresso) 0%, var(--espresso-deep) 100%);
+      color: var(--cream);
+    }
+    .drawer-header .avatar {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--crema);
+      display: grid; place-items: center;
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--cream);
+      margin-bottom: 12px;
+    }
+    .drawer-header h3 {
+      font-family: var(--display);
+      font-weight: 600;
+      margin: 0 0 2px;
+      font-size: 18px;
+    }
+    .drawer-header p {
+      font-size: 13px;
+      opacity: 0.7;
+      margin: 0;
+    }
+    .drawer-section { padding: 12px 0; border-top: 1px solid var(--line); }
+    .drawer-section:first-of-type { border-top: none; }
+    .drawer-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 22px;
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: var(--espresso);
+      font-size: 15px;
+      font-weight: 500;
+      text-align: left;
+      transition: background 0.1s;
+    }
+    .drawer-item:hover, .drawer-item:focus-visible {
+      background: var(--oat);
+      outline: none;
+    }
+    .drawer-item svg { width: 20px; height: 20px; color: var(--muted); flex-shrink: 0; }
+    .drawer-item .ai-tag {
+      margin-left: auto;
+      font-size: 10px;
+      font-weight: 700;
+      background: var(--crema);
+      color: white;
+      padding: 2px 6px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ============================================================
+       BOTTOM SHEET (café detail)
+       ============================================================ */
+    .sheet {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%) translateY(100%);
+      bottom: 0;
+      width: 100%;
+      max-width: var(--app-max);
+      background: var(--cream);
+      border-radius: 24px 24px 0 0;
+      max-height: 92dvh;
+      overflow-y: auto;
+      transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+      z-index: 60;
+      box-shadow: var(--shadow-lg);
+    }
+    .sheet.open { transform: translateX(-50%) translateY(0); }
+    .sheet-handle {
+      width: 40px; height: 4px;
+      background: var(--line-strong);
+      border-radius: 2px;
+      margin: 10px auto 0;
+    }
+    .sheet-photo {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: var(--oat);
+    }
+    .sheet-body { padding: 18px 22px 28px; }
+    .sheet-body h2 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 24px;
+      margin: 0 0 4px;
+      letter-spacing: -0.3px;
+      color: var(--espresso);
+    }
+    .sheet-body .addr {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .sheet-body .stats {
+      font-size: 14px;
+      color: var(--muted);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .sheet-body .stats .star { color: var(--star); }
+    .sheet-body .stats .open-now { color: var(--mint); font-weight: 600; }
+    .ai-banner {
+      margin-top: 16px;
+      background: rgba(217, 131, 36, 0.10);
+      border-radius: 12px;
+      padding: 10px 14px;
+      color: var(--espresso);
+      font-size: 13px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .ai-banner .dot {
+      width: 8px; height: 8px;
+      background: var(--crema);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .pick-card {
+      margin-top: 14px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: var(--r-card);
+      padding: 16px;
+    }
+    .pick-card.food { border-color: rgba(59,125,90,0.25); background: rgba(59,125,90,0.04); }
+    .pick-card .pick-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .pick-card .lbl {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .pick-card.food .lbl { color: var(--mint); }
+    .pick-card .name {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--espresso);
+      margin: 0 0 6px;
+      letter-spacing: -0.2px;
+      line-height: 1.2;
+    }
+    .pick-card .reason { color: var(--ink); font-size: 14px; margin: 0 0 10px; }
+    .pick-card .quote {
+      border-left: 3px solid var(--crema);
+      padding: 4px 0 4px 12px;
+      color: var(--espresso);
+      font-style: italic;
+      font-size: 13px;
+      margin: 0 0 8px;
+    }
+    .pick-card.food .quote { border-left-color: var(--mint); }
+    .pick-card .meta {
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .conf-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: var(--r-pill);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .conf-badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; }
+    .conf-badge.high   { background: rgba(59,125,90,0.15);  color: var(--mint);  }
+    .conf-badge.high::before   { background: var(--mint); }
+    .conf-badge.medium { background: rgba(232,163,23,0.20); color: #8a5e10; }
+    .conf-badge.medium::before { background: var(--star); }
+    .conf-badge.low    { background: rgba(217,131,36,0.15); color: var(--crema); }
+    .conf-badge.low::before    { background: var(--crema); }
+    .conf-badge.none   { background: var(--line); color: var(--muted); }
+    .conf-badge.none::before   { background: var(--muted); }
+
+    .empty-pick {
+      color: var(--muted);
+      font-size: 14px;
+      font-style: italic;
+      padding: 8px 0 4px;
+    }
+
+    .sheet-cta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .sheet-cta a {
+      padding: 12px;
+      border-radius: var(--r-pill);
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      background: var(--oat);
+      color: var(--espresso);
+      border: 1px solid var(--line);
+    }
+    .sheet-cta a.primary { background: var(--espresso); color: var(--cream); border-color: var(--espresso); }
+
+    /* Skeleton blocks */
     .skeleton {
-      background: linear-gradient(90deg, var(--line) 25%, #efe4d0 50%, var(--line) 75%);
+      background: linear-gradient(90deg, var(--line) 25%, rgba(94,62,39,0.06) 50%, var(--line) 75%);
       background-size: 200% 100%;
       animation: shimmer 1.4s infinite;
       border-radius: 6px;
       height: 14px;
       margin-bottom: 8px;
     }
-    @keyframes shimmer {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
-    .loading-pick { padding: 16px 0; }
 
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 12px;
-      padding: 24px 16px 48px;
+    /* ============================================================
+       MISC
+       ============================================================ */
+    .banner {
+      display: none;
+      margin: 12px 18px 0;
+      padding: 12px 14px;
+      background: rgba(232,163,23,0.16);
+      border: 1px solid rgba(232,163,23,0.4);
+      border-radius: 12px;
+      color: #6b5210;
+      font-size: 13px;
+    }
+    .banner.show { display: block; }
+
+    .back-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: transparent;
+      border: none;
+      color: var(--espresso);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 4px;
+    }
+
+    /* Selection: warm crema, not the default blue */
+    ::selection { background: rgba(217,131,36,0.25); color: var(--espresso-deep); }
+
+    /* Focus rings */
+    :focus-visible { outline: 2px solid var(--crema); outline-offset: 2px; }
+
+    @media (max-width: 360px) {
+      .greeting h1 { font-size: 22px; }
+      .cafe-card h3 { font-size: 16px; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>☕ JoeQuest</h1>
-    <div class="sub">The one drink and one food worth ordering. At every café in town.</div>
-    <div class="pill" id="city-pill">Boca Raton, FL</div>
-  </header>
+  <div id="app" role="application" aria-label="JoeQuest">
 
-  <div id="banner"></div>
+    <!-- ========================================================== -->
+    <!--  HEADER                                                    -->
+    <!-- ========================================================== -->
+    <header class="app-header">
+      <button class="icon-btn" id="menu-btn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+          <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+        </svg>
+      </button>
+      <div class="logo" id="logo-home">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <!-- map pin -->
+          <path d="M20 4C12 4 6 10 6 17.5C6 26 20 38 20 38C20 38 34 26 34 17.5C34 10 28 4 20 4Z"
+                fill="#D98324" />
+          <!-- coffee cup -->
+          <path d="M12 13H26C26 13 26.5 22 22 24H16C11.5 22 12 13 12 13Z" fill="#FFF6EC"/>
+          <path d="M26 14.5C28.5 14.5 28.5 19.5 26 19.5" stroke="#FFF6EC" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <!-- bean accent -->
+          <ellipse cx="19" cy="17.5" rx="2.4" ry="3" fill="#5E3E27" transform="rotate(20 19 17.5)"/>
+        </svg>
+        <span><span class="joe">Joe</span><span class="quest">Quest</span></span>
+      </div>
+      <button class="icon-btn" id="header-saved" aria-label="Saved cafés">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </button>
+    </header>
 
-  <main>
-    <div class="meta">
-      <div id="count">Loading cafés…</div>
-      <div>Tap any café to see its picks</div>
+    <div id="banner" class="banner" role="alert"></div>
+
+    <!-- ========================================================== -->
+    <!--  DISCOVER                                                  -->
+    <!-- ========================================================== -->
+    <main class="view active" id="view-discover">
+      <div class="greeting">
+        <h1>Best coffee in Boca</h1>
+        <p id="greeting-sub">One drink, one bite, per café. Hand-picked from real reviews.</p>
+      </div>
+
+      <div class="mini-map" id="mini-map" role="button" aria-label="Open full map">
+        <svg class="map-canvas" id="mini-map-svg" preserveAspectRatio="none"></svg>
+        <div class="open-map">View map →</div>
+      </div>
+
+      <div class="section-head">
+        <h2>Top-ranked cafés</h2>
+        <div class="meta" id="discover-count">…</div>
+      </div>
+      <div class="cafe-list" id="discover-list"></div>
+    </main>
+
+    <!-- ========================================================== -->
+    <!--  MAP                                                       -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-map">
+      <div class="filter-bar" id="filter-bar"></div>
+
+      <div class="filter-summary">
+        <span id="filter-count">Showing all</span>
+        <button class="clear" id="filter-clear" hidden>Clear all</button>
+      </div>
+
+      <div class="big-map" id="big-map">
+        <svg class="map-canvas" id="big-map-svg" preserveAspectRatio="none"></svg>
+      </div>
+
+      <div class="section-head">
+        <h2>Cafés on the map</h2>
+        <div class="meta" id="map-count"></div>
+      </div>
+      <div class="cafe-list" id="map-list"></div>
+    </main>
+
+    <!-- ========================================================== -->
+    <!--  SAVED                                                     -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-saved">
+      <div class="greeting">
+        <h1>Your saved cafés</h1>
+        <p>Heart any café to keep it here for later.</p>
+      </div>
+      <div id="saved-list" class="cafe-list"></div>
+      <div id="saved-empty" class="saved-empty" hidden>
+        <div class="icon">♡</div>
+        <h3>No saves yet</h3>
+        <p>Tap the heart on any café to save it for later — your next quest starts here.</p>
+        <button data-go="discover">Browse cafés</button>
+      </div>
+    </main>
+
+    <!-- ========================================================== -->
+    <!--  PARTNER                                                   -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-partner">
+      <div style="padding: 14px 18px 0;">
+        <button class="back-btn" data-go="discover">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back
+        </button>
+      </div>
+
+      <div class="partner-hero">
+        <h1>Become a JQ partner</h1>
+        <p>Two ways to be seen by Boca's most curious coffee drinkers.</p>
+      </div>
+
+      <div class="offer-card">
+        <span class="tag">Café placement</span>
+        <h3>Featured café slot</h3>
+        <p>A boosted card on Discover + a "JQ partner" badge on your detail sheet.</p>
+        <div class="price">$49 <small>/ month</small></div>
+        <ul>
+          <li>Featured slot in the top 3 cards on Discover</li>
+          <li>Verified partner badge on your café detail</li>
+          <li>Performance dashboard (views, saves, click-throughs)</li>
+          <li>Pause or cancel anytime</li>
+        </ul>
+        <button class="cta">Apply for placement</button>
+      </div>
+
+      <div class="offer-card brand">
+        <span class="tag">Brand offers</span>
+        <h3>Coffee brand sponsorship</h3>
+        <p>Surface a single beans, brewing-gear, or roastery offer in-app to engaged drinkers.</p>
+        <div class="price">From $250 <small>/ campaign</small></div>
+        <ul>
+          <li>One sponsored "Try this" card per week</li>
+          <li>Geo-targeted to the city of your choice</li>
+          <li>Strict editorial review — coffee-only, no junk</li>
+        </ul>
+        <button class="cta">Talk to us</button>
+      </div>
+
+      <div class="policy-box">
+        <strong>Our policy:</strong> JoeQuest only carries coffee-related sponsorships.
+        Soda, energy drinks, alcohol, food delivery, and unrelated brands stay off the
+        app — period. Sponsored placements never override our AI picks; reviewers'
+        words are the source of truth.
+      </div>
+    </main>
+
+    <!-- ========================================================== -->
+    <!--  BOTTOM TAB BAR                                            -->
+    <!-- ========================================================== -->
+    <nav class="tab-bar" aria-label="Main">
+      <button class="tab active" data-tab="discover" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/><path d="M14.5 9.5L11 13l-2-2-2.5 5 5-2.5 2-2 3.5-3.5z"/>
+        </svg>
+        Discover
+      </button>
+      <button class="tab" data-tab="map">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+          <line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/>
+        </svg>
+        Map
+      </button>
+      <button class="tab" data-tab="saved">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        Saved
+      </button>
+    </nav>
+
+    <!-- ========================================================== -->
+    <!--  DRAWER (slide-out menu)                                   -->
+    <!-- ========================================================== -->
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <div class="avatar">JQ</div>
+        <h3>Welcome, Quester</h3>
+        <p>Boca Raton, FL · explorer</p>
+      </div>
+      <div class="drawer-section">
+        <button class="drawer-item" data-action="profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg>
+          Profile
+        </button>
+        <button class="drawer-item" data-action="taste">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v6m0 0a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6 14a6 6 0 0 1-12 0"/></svg>
+          Coffee taste profile
+          <span class="ai-tag">AI</span>
+        </button>
+        <button class="drawer-item" data-action="offers">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><circle cx="16" cy="14" r="2"/></svg>
+          Offers near you
+        </button>
+      </div>
+      <div class="drawer-section">
+        <button class="drawer-item" data-action="partner">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 22 12 19 17 22 15.79 13.88"/></svg>
+          Become a JQ partner
+        </button>
+      </div>
+      <div class="drawer-section">
+        <button class="drawer-item" data-action="settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Settings
+        </button>
+        <button class="drawer-item" data-action="privacy">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Privacy & location
+        </button>
+        <button class="drawer-item" data-action="help">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          Help
+        </button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <!-- ========================================================== -->
+    <!--  BOTTOM SHEET                                              -->
+    <!-- ========================================================== -->
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <div class="sheet-handle"></div>
+      <div id="sheet-content"></div>
     </div>
-    <div id="cafes"></div>
-  </main>
 
-  <footer>
-    Picks generated from real Google reviews · Powered by Claude Opus 4.7
-  </footer>
-
-  <div class="modal-bg" id="modal-bg" role="dialog" aria-modal="true">
-    <div class="modal" id="modal">
-      <button class="close" aria-label="Close">×</button>
-      <div id="modal-body"></div>
-    </div>
   </div>
 
+  <!-- ============================================================ -->
+  <!--  APP LOGIC                                                   -->
+  <!-- ============================================================ -->
   <script>
-    const $cafes = document.getElementById("cafes");
-    const $count = document.getElementById("count");
-    const $banner = document.getElementById("banner");
-    const $modalBg = document.getElementById("modal-bg");
-    const $modal = document.getElementById("modal");
-    const $modalBody = document.getElementById("modal-body");
+    "use strict";
 
-    // Stars renderer (★★★★★ with half-stars approximated)
-    function stars(r) {
-      if (!r) return "";
-      const full = Math.floor(r);
-      const half = r - full >= 0.5 ? 1 : 0;
-      return "★".repeat(full) + (half ? "⯨" : "") + "☆".repeat(5 - full - half);
+    // ---- client id (anonymous, for favourites) ----
+    function getClientId() {
+      let id = localStorage.getItem("jq.clientId");
+      if (!id) {
+        id = (crypto.randomUUID?.() || ("c-" + Math.random().toString(36).slice(2) + Date.now().toString(36)))
+          .replace(/-/g, "").slice(0, 24);
+        localStorage.setItem("jq.clientId", id);
+      }
+      return id;
     }
+    const CLIENT_ID = getClientId();
+    const apiHeaders = { "X-Client-Id": CLIENT_ID, "Content-Type": "application/json" };
+
+    // ---- state ----
+    const state = {
+      view: "discover",
+      cafes: [],
+      filtered: [],
+      filters: { rating: 0, openOnly: false, prices: new Set(), questers: false },
+      saved: new Set(),
+      currentCafe: null,
+      pickCache: new Map(), // id → picks payload
+    };
+
+    // ---- DOM ----
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+    const els = {
+      banner: $("#banner"),
+      discoverList: $("#discover-list"),
+      discoverCount: $("#discover-count"),
+      mapList: $("#map-list"),
+      mapCount: $("#map-count"),
+      savedList: $("#saved-list"),
+      savedEmpty: $("#saved-empty"),
+      filterBar: $("#filter-bar"),
+      filterCount: $("#filter-count"),
+      filterClear: $("#filter-clear"),
+      miniMapSvg: $("#mini-map-svg"),
+      bigMapSvg: $("#big-map-svg"),
+      sheet: $("#sheet"),
+      sheetContent: $("#sheet-content"),
+      drawer: $("#drawer"),
+      scrim: $("#scrim"),
+    };
 
     function escapeHTML(s) {
-      return String(s).replace(/[&<>"']/g, c => ({
+      return String(s ?? "").replace(/[&<>"']/g, (c) => ({
         "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
       }[c]));
     }
+    function star(rating) {
+      const r = rating ?? 0;
+      return `<span class="star">★</span> ${r ? r.toFixed(1) : "—"}`;
+    }
 
+    // ---- navigation ----
+    function go(view) {
+      state.view = view;
+      $$(".view").forEach((el) => el.classList.toggle("active", el.id === "view-" + view));
+      $$(".tab").forEach((t) => {
+        const isActive = t.dataset.tab === view;
+        t.classList.toggle("active", isActive);
+        if (isActive) t.setAttribute("aria-current", "page");
+        else t.removeAttribute("aria-current");
+      });
+      window.scrollTo(0, 0);
+      if (view === "saved") renderSaved();
+      if (view === "map") renderMap();
+    }
+
+    // ---- bootstrap ----
     async function init() {
-      // Check API key status first
       try {
-        const status = await fetch("/api/status").then(r => r.json());
+        const status = await fetch("/api/status").then((r) => r.json());
         if (!status.google || !status.anthropic) {
-          $banner.style.display = "block";
-          $banner.textContent = "⚠️ Server is missing API keys (" +
-            [!status.google && "GOOGLE_PLACES_API_KEY", !status.anthropic && "ANTHROPIC_API_KEY"]
-              .filter(Boolean).join(" + ") +
-            "). Restart with the keys set.";
+          els.banner.classList.add("show");
+          els.banner.textContent = "⚠️  Server is missing API keys: " +
+            [!status.google && "GOOGLE_PLACES_API_KEY", !status.anthropic && "ANTHROPIC_API_KEY"].filter(Boolean).join(" + ");
         }
       } catch {}
 
+      // Favourites
       try {
-        const res = await fetch("/api/cafes").then(r => r.json());
-        if (res.error) throw new Error(res.error);
-        $count.textContent = `${res.count} cafés in ${res.city}, ranked`;
-        renderList(res.cafes);
+        const r = await fetch("/api/favourites", { headers: apiHeaders });
+        if (r.ok) {
+          const d = await r.json();
+          (d.favourites || []).forEach((id) => state.saved.add(id));
+        }
+      } catch {}
+
+      // Cafés
+      try {
+        const data = await fetch("/api/cafes").then((r) => r.json());
+        if (data.error) throw new Error(data.error);
+        state.cafes = data.cafes;
+        state.filtered = data.cafes;
+        renderDiscover();
+        renderMaps();
       } catch (e) {
-        $count.textContent = "";
-        $cafes.innerHTML = `<div class="empty">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
+        els.discoverList.innerHTML = `<div style="padding:40px 18px; text-align:center; color: var(--muted);">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
+      }
+
+      buildFilterBar();
+      bindEvents();
+    }
+
+    // ---- map rendering (placeholder canvas — uses real lat/lng on a stylized grid) ----
+    const BOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
+    function projectXY(lat, lng, w, h) {
+      const x = ((lng - BOX.west) / (BOX.east - BOX.west)) * w;
+      const y = (1 - (lat - BOX.south) / (BOX.north - BOX.south)) * h;
+      return { x, y };
+    }
+
+    function renderMaps() {
+      renderMapInto(els.miniMapSvg, state.cafes, 360, 150, false);
+      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, true);
+    }
+
+    function renderMapInto(svg, cafes, w, h, showQuesters) {
+      svg.innerHTML = "";
+      svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+      // background grid
+      const bg = `
+        <defs>
+          <pattern id="grid-${w}" width="36" height="36" patternUnits="userSpaceOnUse">
+            <path d="M 36 0 L 0 0 0 36" fill="none" stroke="rgba(94,62,39,0.08)" stroke-width="1"/>
+          </pattern>
+          <linearGradient id="bgg-${w}" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F5E9DC"/>
+            <stop offset="100%" stop-color="#EAD9C0"/>
+          </linearGradient>
+        </defs>
+        <rect width="${w}" height="${h}" fill="url(#bgg-${w})"/>
+        <rect width="${w}" height="${h}" fill="url(#grid-${w})"/>
+        <!-- a "road" or two for warmth -->
+        <path d="M0 ${h*0.55} Q ${w*0.5} ${h*0.42} ${w} ${h*0.6}" stroke="rgba(94,62,39,0.12)" stroke-width="3" fill="none"/>
+        <path d="M${w*0.32} 0 L ${w*0.42} ${h}" stroke="rgba(94,62,39,0.08)" stroke-width="2" fill="none"/>
+      `;
+      svg.insertAdjacentHTML("beforeend", bg);
+
+      // For SVG-based pin we render as foreignObject HTML? Simpler: position absolute divs via container.
+      // We render pins as SVG circles + text for simplicity inside the SVG.
+      cafes.forEach((c) => {
+        if (typeof c.lat !== "number" || typeof c.lng !== "number") return;
+        const { x, y } = projectXY(c.lat, c.lng, w, h);
+        const rating = c.rating ?? 0;
+        const tier = rating >= 4.7 ? "#5E3E27" : rating >= 4.4 ? "#D98324" : "#F0A847";
+        svg.insertAdjacentHTML("beforeend", `
+          <g class="map-pin" data-id="${c.id}" style="cursor: pointer;">
+            <rect x="${x - 18}" y="${y - 22}" width="36" height="18" rx="9" fill="${tier}" stroke="#FFF6EC" stroke-width="2"/>
+            <text x="${x}" y="${y - 9}" text-anchor="middle" fill="#FFF6EC" font-family="Inter, sans-serif" font-size="10" font-weight="700">★ ${rating ? rating.toFixed(1) : "—"}</text>
+            <path d="M ${x - 4} ${y - 4} L ${x} ${y} L ${x + 4} ${y - 4} Z" fill="${tier}"/>
+          </g>
+        `);
+      });
+
+      // Quester dots (simulated)
+      if (showQuesters && state.filters.questers) {
+        const seed = 7; let s = seed;
+        const rnd = () => (s = (s * 9301 + 49297) % 233280, s / 233280);
+        for (let i = 0; i < 9; i++) {
+          const cx = rnd() * w, cy = rnd() * h;
+          svg.insertAdjacentHTML("beforeend", `
+            <circle cx="${cx}" cy="${cy}" r="6" fill="rgba(124,92,255,0.18)"/>
+            <circle cx="${cx}" cy="${cy}" r="3" fill="#7C5CFF" stroke="white" stroke-width="1.5"/>
+          `);
+        }
       }
     }
 
-    function renderList(cafes) {
-      $cafes.innerHTML = "";
-      cafes.forEach(c => {
-        const el = document.createElement("div");
-        el.className = "card";
-        el.innerHTML = `
-          <h3>${escapeHTML(c.name)}</h3>
-          <div class="addr">${escapeHTML(c.address || "")}</div>
-          <div class="row">
-            <span class="stars">${stars(c.rating)}</span>
-            <span>${c.rating ? c.rating.toFixed(1) : "—"}</span>
-            <span>·</span>
-            <span>${c.reviews.toLocaleString()} reviews</span>
-            <span style="margin-left:auto" class="price">${c.price || ""}</span>
+    // ---- card rendering ----
+    function cardHTML(c, rank) {
+      const isSaved = state.saved.has(c.id);
+      const cached = state.pickCache.get(c.id);
+      const picksReady = !!cached;
+      const drink = cached?.picks?.drink;
+      const food = cached?.picks?.food;
+
+      const photoHTML = c.photo
+        ? `<img loading="lazy" src="${escapeHTML(c.photo)}" alt="" onerror="this.parentNode.innerHTML='<div class=&quot;photo-fallback&quot;>☕</div>'"/>`
+        : `<div class="photo-fallback">☕</div>`;
+
+      return `
+        <article class="cafe-card" data-id="${c.id}" tabindex="0">
+          <div class="photo-wrap">
+            ${photoHTML}
+            ${rank ? `<div class="rank-badge" aria-label="Rank ${rank}">${rank}</div>` : ""}
+            ${c.openNow ? `<div class="open-badge">Open</div>` : ""}
+            <button class="heart-btn ${isSaved ? "saved" : ""}" data-fav="${c.id}" aria-label="${isSaved ? "Unsave" : "Save"}">
+              <svg viewBox="0 0 24 24" fill="${isSaved ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </button>
           </div>
-        `;
-        el.addEventListener("click", () => openCafe(c));
-        $cafes.appendChild(el);
+          <div class="body">
+            <h3>${escapeHTML(c.name)}</h3>
+            <div class="stats">
+              ${star(c.rating)}
+              <span>·</span>
+              <span>${(c.reviews || 0).toLocaleString()} reviews</span>
+              ${c.price ? `<span>·</span><span class="price">${escapeHTML(c.price)}</span>` : ""}
+            </div>
+            <div class="picks-strip" data-picks-for="${c.id}">
+              <div class="pick-mini">
+                <div class="lbl">Drink</div>
+                ${picksReady
+                  ? `<div class="val">${drink?.name ? escapeHTML(drink.name) : "—"}</div>`
+                  : `<div class="placeholder"></div><div class="placeholder" style="width:70%; margin-top:6px;"></div>`}
+              </div>
+              <div class="pick-mini is-food">
+                <div class="lbl">Food</div>
+                ${picksReady
+                  ? `<div class="val">${food?.name ? escapeHTML(food.name) : "—"}</div>`
+                  : `<div class="placeholder"></div><div class="placeholder" style="width:65%; margin-top:6px;"></div>`}
+              </div>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderDiscover() {
+      els.discoverCount.textContent = `${state.cafes.length} cafés · ranked`;
+      els.discoverList.innerHTML = state.cafes.map((c, i) => cardHTML(c, i + 1)).join("");
+      // Eagerly fetch picks for first 4 to populate the strip
+      state.cafes.slice(0, 4).forEach((c) => prefetchPicks(c.id));
+    }
+
+    function renderMap() {
+      applyFilters();
+      els.mapCount.textContent = `${state.filtered.length} of ${state.cafes.length}`;
+      els.mapList.innerHTML = state.filtered.map((c, i) => cardHTML(c, null)).join("");
+      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, true);
+    }
+
+    function renderSaved() {
+      const list = state.cafes.filter((c) => state.saved.has(c.id));
+      els.savedEmpty.hidden = list.length > 0;
+      els.savedList.innerHTML = list.map((c, i) => cardHTML(c, null)).join("");
+    }
+
+    async function prefetchPicks(id) {
+      if (state.pickCache.has(id)) return;
+      try {
+        const data = await fetch("/api/cafes/" + encodeURIComponent(id), { headers: apiHeaders }).then((r) => r.json());
+        if (data.error) return;
+        state.pickCache.set(id, data);
+        // refresh any visible card strip
+        $$(`[data-picks-for="${id}"]`).forEach((el) => {
+          const drink = data.picks?.drink?.name;
+          const food = data.picks?.food?.name;
+          el.innerHTML = `
+            <div class="pick-mini">
+              <div class="lbl">Drink</div>
+              <div class="val">${drink ? escapeHTML(drink) : "—"}</div>
+            </div>
+            <div class="pick-mini is-food">
+              <div class="lbl">Food</div>
+              <div class="val">${food ? escapeHTML(food) : "—"}</div>
+            </div>
+          `;
+        });
+      } catch {}
+    }
+
+    // ---- filters (Map view) ----
+    function buildFilterBar() {
+      els.filterBar.innerHTML = `
+        <button class="chip" data-chip="rating">★ Rating <span data-chip-val="rating"></span></button>
+        <button class="chip" data-chip="open">Open now</button>
+        <button class="chip" data-chip="price">Price <span data-chip-val="price"></span></button>
+        <button class="chip" data-chip="questers">JoeQuesters near me</button>
+      `;
+      els.filterBar.addEventListener("click", (e) => {
+        const btn = e.target.closest(".chip");
+        if (!btn) return;
+        const k = btn.dataset.chip;
+        if (k === "rating") cycleRating();
+        else if (k === "open") toggleFilter("openOnly");
+        else if (k === "price") cyclePrice();
+        else if (k === "questers") toggleFilter("questers");
+        refreshFilterBar();
+        renderMap();
       });
     }
-
-    async function openCafe(cafe) {
-      $modalBody.innerHTML = renderCafeShell(cafe) + renderLoading();
-      $modalBg.classList.add("open");
-
-      try {
-        const detail = await fetch(`/api/cafes/${encodeURIComponent(cafe.id)}`).then(r => r.json());
-        if (detail.error) throw new Error(detail.error);
-        $modalBody.innerHTML = renderCafeShell(detail) + renderPicks(detail.picks, detail.reviewsAnalysed, detail.cached);
-      } catch (e) {
-        $modalBody.innerHTML = renderCafeShell(cafe) +
-          `<div class="empty">Couldn't generate picks: ${escapeHTML(e.message)}</div>`;
-      }
+    function cycleRating() {
+      const order = [0, 4.0, 4.5, 4.8];
+      state.filters.rating = order[(order.indexOf(state.filters.rating) + 1) % order.length];
+    }
+    function cyclePrice() {
+      const prices = ["$", "$$", "$$$"];
+      // cycle: none → $ → $/$$ → $/$$/$$$ → none
+      const n = state.filters.prices.size;
+      if (n >= 3) state.filters.prices = new Set();
+      else state.filters.prices = new Set(prices.slice(0, n + 1));
+    }
+    function toggleFilter(k) { state.filters[k] = !state.filters[k]; }
+    function refreshFilterBar() {
+      const f = state.filters;
+      $$(".chip", els.filterBar).forEach((c) => {
+        const k = c.dataset.chip;
+        let on = false;
+        if (k === "rating") { on = f.rating > 0; $("[data-chip-val=rating]", c).textContent = f.rating > 0 ? ` ${f.rating}+` : ""; }
+        else if (k === "open") on = f.openOnly;
+        else if (k === "price") { on = f.prices.size > 0; $("[data-chip-val=price]", c).textContent = f.prices.size > 0 ? ` ${[...f.prices].join("/")}` : ""; }
+        else if (k === "questers") on = f.questers;
+        c.classList.toggle("active", on);
+      });
+      const any = f.rating > 0 || f.openOnly || f.prices.size > 0 || f.questers;
+      els.filterClear.hidden = !any;
+    }
+    function applyFilters() {
+      const f = state.filters;
+      state.filtered = state.cafes.filter((c) => {
+        if (f.rating > 0 && (c.rating ?? 0) < f.rating) return false;
+        if (f.openOnly && !c.openNow) return false;
+        if (f.prices.size > 0 && !f.prices.has(c.price)) return false;
+        return true;
+      });
+      els.filterCount.textContent =
+        state.filtered.length === state.cafes.length
+          ? `Showing all ${state.cafes.length}`
+          : `Showing ${state.filtered.length} of ${state.cafes.length}`;
     }
 
-    function renderCafeShell(c) {
+    // ---- bottom sheet (café detail) ----
+    function openSheet(id) {
+      const c = state.cafes.find((x) => x.id === id);
+      if (!c) return;
+      state.currentCafe = c;
+
+      const isSaved = state.saved.has(c.id);
+      const cached = state.pickCache.get(c.id);
+
+      const photo = c.photo
+        ? `<img class="sheet-photo" src="${escapeHTML(c.photo)}" alt="">`
+        : `<div class="sheet-photo photo-fallback" style="position:relative;">☕</div>`;
+
+      els.sheetContent.innerHTML = `
+        ${photo}
+        <div class="sheet-body">
+          <div style="display:flex; justify-content: space-between; align-items: flex-start; gap: 12px;">
+            <h2 id="sheet-title">${escapeHTML(c.name)}</h2>
+            <button class="heart-btn ${isSaved ? "saved" : ""}" data-fav="${c.id}" style="position:relative; right:0; bottom:0;" aria-label="${isSaved ? "Unsave" : "Save"}">
+              <svg viewBox="0 0 24 24" fill="${isSaved ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="addr">${escapeHTML(c.address || "")}</div>
+          <div class="stats">
+            ${star(c.rating)}
+            <span>· ${(c.reviews || 0).toLocaleString()} reviews</span>
+            ${c.price ? `<span>· <span class="price" style="color:var(--espresso); font-weight:600;">${escapeHTML(c.price)}</span></span>` : ""}
+            ${c.openNow ? `<span>·</span><span class="open-now">● Open now</span>` : ""}
+          </div>
+
+          <div id="sheet-picks">${cached ? renderSheetPicks(cached) : renderSheetLoading()}</div>
+
+          <div class="sheet-cta">
+            ${c.mapsUri ? `<a href="${escapeHTML(c.mapsUri)}" target="_blank" rel="noopener">Open in Maps</a>` : ""}
+            <a class="primary" href="${escapeHTML(c.mapsUri || "#")}" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      `;
+      els.sheet.classList.add("open");
+      els.scrim.classList.add("open");
+      document.body.style.overflow = "hidden";
+
+      if (!cached) prefetchPicks(id).then(() => {
+        const slot = $("#sheet-picks");
+        const data = state.pickCache.get(id);
+        if (slot && data) slot.innerHTML = renderSheetPicks(data);
+      });
+    }
+    function closeSheet() {
+      els.sheet.classList.remove("open");
+      els.scrim.classList.remove("open");
+      document.body.style.overflow = "";
+      state.currentCafe = null;
+    }
+    function renderSheetLoading() {
       return `
-        <h2>${escapeHTML(c.name)}</h2>
-        <div class="addr2">${escapeHTML(c.address || "")}</div>
-        <div class="stats">
-          <span class="stars">${stars(c.rating)}</span>
-          ${c.rating ? c.rating.toFixed(1) : "—"}
-          · ${c.reviews.toLocaleString()} Google reviews
-          ${c.price ? `· ${escapeHTML(c.price)}` : ""}
+        <div class="ai-banner"><span class="dot"></span> JoeQuest is reading reviews…</div>
+        <div class="pick-card">
+          <div class="pick-head"><div class="lbl">Drink to order</div></div>
+          <div class="skeleton" style="height:24px; width:60%;"></div>
+          <div class="skeleton" style="width:90%;"></div>
+          <div class="skeleton" style="width:80%;"></div>
+        </div>
+        <div class="pick-card food">
+          <div class="pick-head"><div class="lbl">Food to order</div></div>
+          <div class="skeleton" style="height:24px; width:55%;"></div>
+          <div class="skeleton" style="width:88%;"></div>
+          <div class="skeleton" style="width:70%;"></div>
         </div>
       `;
     }
-
-    function renderLoading() {
+    function renderSheetPicks(data) {
+      const { picks, reviewsAnalysed } = data;
       return `
-        <div class="loading-pick">
-          <div class="pick-label">Drink to order</div>
-          <div class="skeleton" style="width:60%; height:22px;"></div>
-          <div class="skeleton" style="width:90%"></div>
-          <div class="skeleton" style="width:80%"></div>
-        </div>
-        <div class="loading-pick">
-          <div class="pick-label">Food to order</div>
-          <div class="skeleton" style="width:55%; height:22px;"></div>
-          <div class="skeleton" style="width:90%"></div>
-          <div class="skeleton" style="width:75%"></div>
-        </div>
-        <div style="text-align:center; color:var(--muted); font-size:12px; margin-top:8px;">
-          Reading reviews & generating picks…
-        </div>
+        <div class="ai-banner"><span class="dot"></span> AI read ${reviewsAnalysed || 0} review${reviewsAnalysed === 1 ? "" : "s"} to find these</div>
+        ${renderOnePick("Drink to order", picks?.drink, false)}
+        ${renderOnePick("Food to order", picks?.food, true)}
       `;
     }
-
-    function renderPicks(picks, n, cached) {
-      const drink = picks?.drink || {};
-      const food = picks?.food || {};
-      const meta = `Analysed ${n || 0} review${n === 1 ? "" : "s"}${cached ? " · cached" : ""}`;
-      return `
-        ${renderPick("Drink to order", "☕", drink)}
-        ${renderPick("Food to order", "🥐", food)}
-        <div style="text-align:center; color:var(--muted); font-size:11px; margin-top:14px;">
-          ${meta}
-        </div>
-      `;
-    }
-
-    function renderPick(label, icon, p) {
+    function renderOnePick(label, p, isFood) {
+      const cls = isFood ? "pick-card food" : "pick-card";
       if (!p || p.name == null || p.confidence === "none") {
         return `
-          <div class="pick">
-            <div class="pick-label">${label}</div>
-            <div class="empty">Not enough review data yet. ${p?.reason ? escapeHTML(p.reason) : ""}</div>
+          <div class="${cls}">
+            <div class="pick-head"><div class="lbl">${label}</div></div>
+            <div class="empty-pick">Not enough review data to recommend yet.</div>
           </div>
         `;
       }
       return `
-        <div class="pick">
-          <div class="pick-label">${label}</div>
-          <div class="pick-name">${icon} ${escapeHTML(p.name)}</div>
-          <div class="pick-meta">
-            <span class="conf ${p.confidence}">${p.confidence}</span>
-            ${p.mention_count || 0} mention${p.mention_count === 1 ? "" : "s"}
+        <div class="${cls}">
+          <div class="pick-head">
+            <div class="lbl">${label}</div>
+            <span class="conf-badge ${p.confidence}">${p.confidence}</span>
           </div>
-          ${p.quote ? `<div class="quote">“${escapeHTML(p.quote)}”</div>` : ""}
-          ${p.reason ? `<div class="reason">${escapeHTML(p.reason)}</div>` : ""}
+          <h3 class="name">${escapeHTML(p.name)}</h3>
+          ${p.reason ? `<p class="reason">${escapeHTML(p.reason)}</p>` : ""}
+          ${p.quote ? `<div class="quote">"${escapeHTML(p.quote)}"</div>` : ""}
+          <div class="meta">Based on ${p.mention_count || 0} mention${p.mention_count === 1 ? "" : "s"} in the reviews</div>
         </div>
       `;
     }
 
-    // Modal close
-    document.querySelector(".modal .close").addEventListener("click", closeModal);
-    $modalBg.addEventListener("click", (e) => { if (e.target === $modalBg) closeModal(); });
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
-    function closeModal() { $modalBg.classList.remove("open"); }
+    // ---- drawer ----
+    function openDrawer() {
+      els.drawer.classList.add("open");
+      els.scrim.classList.add("open");
+      els.drawer.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+    function closeDrawer() {
+      els.drawer.classList.remove("open");
+      els.scrim.classList.remove("open");
+      els.drawer.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    // ---- favourite toggle ----
+    async function toggleFavourite(id, btn) {
+      const wasSaved = state.saved.has(id);
+      if (wasSaved) state.saved.delete(id); else state.saved.add(id);
+      // optimistic UI
+      $$(`[data-fav="${id}"]`).forEach((b) => {
+        b.classList.toggle("saved", !wasSaved);
+        b.setAttribute("aria-label", wasSaved ? "Save" : "Unsave");
+        const svg = b.querySelector("svg");
+        if (svg) svg.setAttribute("fill", wasSaved ? "none" : "currentColor");
+      });
+      try {
+        await fetch(`/api/favourites/${encodeURIComponent(id)}`, {
+          method: wasSaved ? "DELETE" : "POST",
+          headers: apiHeaders,
+        });
+      } catch {}
+    }
+
+    // ---- events ----
+    function bindEvents() {
+      // tabs
+      $$(".tab").forEach((t) => t.addEventListener("click", () => go(t.dataset.tab)));
+
+      // header
+      $("#menu-btn").addEventListener("click", openDrawer);
+      $("#header-saved").addEventListener("click", () => go("saved"));
+      $("#logo-home").addEventListener("click", () => go("discover"));
+
+      // mini-map → go to map
+      $("#mini-map").addEventListener("click", () => go("map"));
+
+      // filter clear
+      els.filterClear.addEventListener("click", () => {
+        state.filters = { rating: 0, openOnly: false, prices: new Set(), questers: false };
+        refreshFilterBar();
+        renderMap();
+      });
+
+      // global click delegation
+      document.addEventListener("click", (e) => {
+        // heart
+        const heart = e.target.closest("[data-fav]");
+        if (heart) {
+          e.stopPropagation();
+          toggleFavourite(heart.dataset.fav, heart);
+          return;
+        }
+        // open sheet
+        const card = e.target.closest(".cafe-card");
+        if (card) {
+          openSheet(card.dataset.id);
+          return;
+        }
+        // map pin
+        const pin = e.target.closest(".map-pin");
+        if (pin) {
+          openSheet(pin.dataset.id);
+          return;
+        }
+        // drawer items
+        const item = e.target.closest(".drawer-item");
+        if (item) {
+          const a = item.dataset.action;
+          closeDrawer();
+          if (a === "partner") go("partner");
+          else if (a === "help") alert("Help & support — coming soon. Email zackwboca@gmail.com for now.");
+          else if (a === "settings") alert("Settings — coming soon.");
+          else if (a === "privacy") alert("Privacy & location — coming soon.");
+          else if (a === "taste") alert("Your AI coffee taste profile is coming soon — we'll learn from your saves.");
+          else if (a === "profile") alert("Profile — coming soon.");
+          else if (a === "offers") alert("Offers near you — coming soon.");
+          return;
+        }
+        // generic data-go
+        const goBtn = e.target.closest("[data-go]");
+        if (goBtn) { go(goBtn.dataset.go); return; }
+      });
+
+      // close sheet/drawer on scrim or escape
+      els.scrim.addEventListener("click", () => { closeSheet(); closeDrawer(); });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") { closeSheet(); closeDrawer(); }
+      });
+    }
 
     init();
   </script>
