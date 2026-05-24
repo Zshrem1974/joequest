@@ -66,9 +66,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 7 AM Sun",
+      "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=4902242248552973939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAb43m-tPzeZdyuLsSIloG6tewbWwpvCc97fgPjwTKyggggfsFfuqbhAV_hCy-H6kAPu5Wg50RQtckjDj6qBJct8EHFCYLr-hfuvaTtQpvm9Ko41zMC4ammaGCid1XbzltljYacucxO0sRF20N044ycmZL-vZHiXloE0aCZR4_yTBlvNfcQhEazTuGZucR3cerh0gndAWS1VsrtkgWRibjT0A55QEFTpFmX0PmaVPpLuEpegBiq28uclJ5fm6_ABlQhgjlz8-Vh_Uwd1nOLN_ONN9UVMQ0SHz8Qx4KPRE1iUCdEQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAb43m-tIDegWGnRsH049fgPn8-UorCoKRnLrdr-imOxXcYjG9hrcNOL8-uXxpAhxxBtuTaut--XDw-0UervrGMhBGXeorJtnTLGvMlVpkr5iIYuQ8wuWQ-wtEd5nizSC-cMejhse1lWfv9Ndn-H404wMbboE8mUXSL_sqC14yuISggYkfwDhle2VQGFk0tKP6ccvFwvmrBLCP9ZVx7nkmJAXm6_BMj5RbECQnlK9y1f4xRMRNmP-wQxzymrsayTQNI2jtaCCq8Dut0AOKf3BybWFecbRv6O_xwmTC7FUrkRXiZ0&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 7:00 AM – 6:00 PM",
+        "Sunday: 7:00 AM – 6:00 PM"
+      ]
     },
     {
       "id": "ChIJaSnqwXXh2IgRgqnB_pH5aE8",
@@ -95,10 +190,105 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 12 AM",
+      "openNow": false,
+      "hoursLabel": "Opens 11 AM",
       "mapsUri": "https://maps.google.com/?cid=5722097732013894018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAb43m-sSgjorjzOwxBgnb9LJV2dPx59zexmKz6mB9SvbMNmQLHr9kNUDwgwWmeqk3_B2cxQ-QsuCgW96Tl9aLaIBHMMZQR9Z4uBI9bbTJnJUDPzY1P5diG99U7QCRUmUE0pIeq7d6t1npW1CrSZKdyzxiNX4KJ_ASFT7OpOA-LPQMi8U-xtfgbn4BjJ6yu3M28Q1qruQW2rNC5sNOjrusgV1qTZOSplfY_GUVA_IzlfFfyE19lOReoC0CBAvYarr7Nf316HsuyzZW1zCbYucE5M6gZDtIQLQ3cxnGwoIe187dulBTlwpLOTUeY6l2xLZer8VyGcTLcTnqA5UnPH3Sg1PjIWVQGUEREJ3tpXQpp70a-JnL8s6RYpJRo1zqr8x3T0nqG9VMGkfDFsdMSo4xImjWnfYMVd9v3OXLvOdPL18O39d09a_3fJ3mOeI6co4-FpP&w=800"
+      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAb43m-tfhTyqj5YAUXggHl8oVAW_9jgIwRSlJlOjPSJkdNadJsRkb_cRuzXl99bwgX422fWgkhpVrM5Em8t3pr3EulAO9blXe6ShroZ4mF5HQ4DcDTaOtiEbB2kXMaIgepSFOkbMi47Mz_bSrvEvuNKTeV9w7vLZKspV0SfGhswAPcE02AG6UxPS-9Y7_7_VCWsJ4Mcn5aunu7DA7K2ps5f_dyvoY6bbCk3sL_akAOb3JSjluKkoJtD29H_OfGG-3_8DQLL3VoPySTP1GqSRfioYPZWBM5_GM-Nj5IVgSdrjSulcQ5LBs9zaXCpcJRjsS6_xhGtCzcHWC9bFsMMReg5qPV9-aa5y6ikMEndJbcpc2jxKejvh0kDiEwa_ZyFhmDyALXuKHg51PXqnz6eo2HOaPeB0WfsbCZKeVlvA6xDmZXvqDd7XX1n0CXUto17MV0Sy&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:00 AM – 12:00 AM",
+        "Tuesday: 11:00 AM – 12:00 AM",
+        "Wednesday: 11:00 AM – 12:00 AM",
+        "Thursday: 11:00 AM – 12:00 AM",
+        "Friday: 11:00 AM – 12:00 AM",
+        "Saturday: 11:00 AM – 12:00 AM",
+        "Sunday: 11:00 AM – 12:00 AM"
+      ]
     },
     {
       "id": "ChIJf_20jATi2IgRitMRzhDZ2mw",
@@ -152,9 +342,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Sun",
+      "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=9231403002780937165&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAb43m-sdW2CpOl8YvG2WWEJIzGNDqtjqA0HsfG04LpEdCMgvNuNoRWBaN65HZjA7bfzOqNs9jejkHOA5QBZxFU3Pwl_OgP3SV0ErOZ2rLzYy5Z82HswBxVqy63I8j2QICGD_XpbNZF1ske-MvMqxhteIknjRXVZmaEVIa7XVwoJNGaVFs6LNmVC_rVFC0N5Y9j6EfRuZZ0XXGEg5jEDHYAYVTx3jNmfQW-ZsIcpIAlRsCPVkGIPqTFte7H-kWtxLP66tha5F3txaGhVaKRwoyMxiY0aW1P7f6IoO1gxpJuTEmYUpEA&w=800"
+      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAb43m-tlClS84W1KEGgIF1UGdg-vt03LdJqGvIVP17z85XrtmGcGX2AgIk0BwU5eYl7Oev2M8hLGLA7FvA0LonU1dNQR5JefQVkwrEpMZsqvgAFb-4IJjwe8Lz3Af-pLoaLbiBBzjD4P3B8JB0g4gFm8KCh8T5mVXqBAcUdS21fUobUfj51M98gGQ5PMqq6m9Ub4Z8nSR5FiYVZ4_w5wU_gGQ6Z51QAf707vR2JpQSLmlKoiJUYP5l--gfpGXiV8HKAeEcreZCJjW5hOc1SsX9eYeR2SJ8RmocVq0MBicFWoDQoJiw&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 4:00 PM",
+        "Tuesday: 7:30 AM – 4:00 PM",
+        "Wednesday: 7:30 AM – 4:00 PM",
+        "Thursday: 7:30 AM – 4:00 PM",
+        "Friday: 7:30 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 2:00 PM"
+      ]
     },
     {
       "id": "ChIJv3dY3j_h2IgRc1i6aiYU5q4",
@@ -177,9 +462,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 9 AM Sun",
+      "hoursLabel": "Opens 9 AM",
       "mapsUri": "https://maps.google.com/?cid=12602782762474821747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAb43m-sLiqR_ZZTxMAqAqNXA6k8Yjw0I5NAR_TVWkLLVUF5t_u7oyvQlfkgO_Xn6lylVwDAtVovBy-UspTcybs4o67qXNaJ4Q0SUeixJuDIL_bOLqEaZKUFEiZWt--xW6Y-zKZ9XuGKgGWeRbtz3QtJdg_3Q4CAthiuDu_iQQI853FBOfXwBraEO2jk5cjg2kFXlA-vbx1SMcg1Wo6uAUVb100cx5MBLwo1zRv1815GGYCQProM1vr7nqmM9q3DHgpwItK2It3oWj8is5VQO6_4SQLCfevTl9nwEa3xPVnWcy5tRoA&w=800"
+      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAb43m-vdps1WfOqIaqN6agrNdb39lSAjF1RCZad8xOEySPe5GPDCRS3_hIzKdyPJIjm03WrAkeVDbbmxWd559KQARrdQ4p8LUSV_mY9V-e6lDjRlXb9Rq7drgohRov-Sd9frvetALv2W0pDtCgWrAV6q6l3twokb9nEpHqUs5y6ovKGsy2h-uZtyZnHSDsKz_6xx53eCXHjr6lOVvE-CjH4C8kItkf5fnvIDY3RiEgTQ-ODLDT97YxiThToUZSMl1hmjn5X6n2BKdiMvJqaV8rKVyVPrBHMClxYuyOa__fUwxaUUtg&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 9:00 AM – 2:00 PM"
+      ]
     },
     {
       "id": "ChIJ99DBn7gf2YgRPO0T1720vQI",
@@ -202,7 +582,78 @@
       "openNow": false,
       "hoursLabel": "Opens 8 AM Tue",
       "mapsUri": "https://maps.google.com/?cid=197512686124395836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAb43m-s32gLPHRAUFnen2g6LrvOSFkE8bV5btrdflqCnd1Wgvxdqo2gjs62o90blENNjd_WoTc45YjlUPLMuw0yA11WSD7uXLorDeXF-4uI6ycB7Nj4jxkMPJnxGJFwoYytdRVgye1n-4tIUjWqJIwdhzArBP6GqmWhgQv_prf9xljpL4i4pdUBQCTbwAkbEjHe4ZWfDeUM-kf6NzBwe3J3VV9z8PkoZjvikuTBT2h2S4UaKsocMnY6xcOUrdL8s9_fLP2k6RXhsZMJspZIE4RpuLXJZQyOA0DrXlnQJqOO6o7GkjszYeh4bLJHAhx8gWN9zzbSR16l4Smgk558mqyaCrZe_XePkLsWh3TMUAhoF4L418UHtqDSjxfK5spEshrjqsHmfVPVSUDhk7jK9fLDTFc-QZE1UlpnEEFS9Jw4WD0ZHMQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAb43m-tDnsMCXIRLr-FUG61lr_TflrdtxbdWENrj_6_9WqJkA01z_QrcYazGWBHm2CUOcfHxvgPOd6z8kPBZFrHg3X6K1XuYIL6K4W-v6q1pU2_nhN-j-2QysdI11uM6KCgwXuopMGzzDqM6QUV2ggVqve21GB8fqLmAwOaG5YjrH5QUeW3RTN2Pqz8mlYau98o7Z318cM37qUXsr_AoAasP7PqYQqEpA2iDoAKFCOZIqewOL6bk7cnJRsuofdLzGi_JJWllXrkS8oUyXtzZNDBuADCbqn2f8iHNpw0BoHB7ELOrM8YhR4iszKVwt1bfhVnLzp1fobk0Qwxvey6YbKa9Vocf80eTKZK4JZtarMMLZdQ9IVEX0zFQc-f1tGo7wBoidOaFA1pTylpHkdlUQkRAGt9gfbRt4Hp4LcyPqNUhvS951w&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
     },
     {
       "id": "ChIJC9ykl6zj2IgRSpCaANux5Wo",
@@ -248,10 +699,105 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=10257401075174174505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAb43m-u-60lhBkhljCG8IcZNyxDizFAr6nmF20YN6c6W08WnMAUMQLudttQ7WCm0J-EvmNvVai67jlRXneqYwGNNICU-Q8ZmGcI4GGbpcIMoiv75i32-euq_D8BnLFTkVArzaRTlFQk0_e4A5Mgpm2M1r-KkU_rksLbj852uJnSvr7E7EElXkhbE14mAkGGCvEHOAdeoUlrj1Bfrffj6MQnt3UPeu2Fkr0d25acQOHyeDx0SAlTAEVDCLNsMSaN0EQho6QRfErw-p-TgVxy-PaLGedfPlj1MyV4UCXfsBNPzDtkVHEEZc3DE36cvrmWG_qN-i7W5oHR7tSXgmKv6YxQxXOkDSWBY3VF5IHC7-Xi3NKbLA29eKjmgyqlgKgj6o0EzwPmlDkF7h4bsVkwpPKlQyozsOWQkj4LFdviqg1OcKTXK-K7MfgDQZ5mKsFlyIA&w=800"
+      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAb43m-vT_Mtgqrfb3xud-WXkrFKGUwWisDJMJ4uPF2u_d0KQgDU7ZzwVXLyMCAqo9cq0w_jKd_u-sqSAesTuFZkzJt4iIBoo2xUqtfquTrZhG1I2Q1-UO93yH__1tC5s6JEitufnl-lR7k-qdm4nPFa9DC1GQ_fKJcf7cXBKnStFcn76nhqGY7H0VZimGacXbdUAO-_NtBwxkCvw4xBK4UQgqqYAwUYtWm7khNUnLmr-upQgHnX_buYGizl85ZMDiPiGmirO0QbgYFR11cAKsO_mhBgLAuk_MmhUFkqAb73wFE0ZDBfjTU8pu6tyFGO0_r_jtUg4WSclFw4RxJTku_VWOn0Ufw4Ih6fdMH4scOeacNZqulPIOymWZ_6kJoVZAl_yS-lmSQIRvcyzMzz8sRydOKrIZlrVUapN8WghEh9k5jWggW2oPSJpJQATYNjAgw&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 6:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 10:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ]
     },
     {
       "id": "ChIJEU0c-T4Z2YgRCezhCft2CyE",
@@ -276,9 +822,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 7 AM Sun",
+      "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=2381127648570108937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAb43m-sEwjThNGKS8WzMN2j8l1r1gI83A1THgfKVIq7foeXm_vyA9eJsmfCwQFnEyn35Jd6KY3a2cBbGMTvrYajf5l3IGji-14K8VyDWvytBp0DexsxDnVALc28rTIPg7cZHY8RDor2ard5iURn8ZVfuZV7kT-g-Ksfy6UxnS_51h78XDV-w4NaS_A5xFoQpCPUA_nH6c71HmbN1ur6UeQHwJtBK3UjgB5tuZZYiUs8k93rweRbjYdBi-l7sFG2Y-xmyvK2B4k55UbHvlORo7Ll1-BsivBApjZ814Lk906k_YUCPP5XIGEobwH3FwO4-PT2GJk3nx6nf0oCwDUjFFixhZSEfraq1rf90JpZJYa2c1cxU36FG7jCDLOe2vfjQXNOBsTmv0kDr3B61NiX3-d1B3oWPIXBFZjiRdm-4yykCA-s&w=800"
+      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAb43m-tG8P6qaKJFKfF8oOaGN31zwHm12mFruKZ6e51EDd_1AAQlxmj0U4Is_CLccpqw41O0U15EB0X5rlhfYfUFUHpz1M1PH27w09W9wwadYsSkDXj_amcDtxkDIJDKjNMdLO6KFOpK32IlpqV5E61Di-7qnQ8afi0m1N1iDjWvCTZewyZwluxdvUG4XRXIxxdiQBDfSgFVhlwNKWoI3rrnfAJAP0McDxpdvNNcx0PiUpEF183U03vG7sdg-WkSGGEn0DLXz5jigkOicDVY-m230lT3HgfcpHkSXUh5v3p1rYPAsq7Z0nzzXmQChgy_T680pDVAsW2KjEfTv9mfAv783pWYII1-p4rWaMxcC0cG1GUUbQhaq40F2m6dhYKkCxU6gIPKWUgxoRY4pRmECwO7oLUdjt3ZWIMssDrJO-5UeI4&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 9:00 PM",
+        "Saturday: 7:00 AM – 9:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ]
     },
     {
       "id": "ChIJHSmlaxLh2IgRzyfVX_Im4ck",
@@ -304,9 +945,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 9 AM Sun",
+      "hoursLabel": "Opens 9 AM",
       "mapsUri": "https://maps.google.com/?cid=14546951093815158735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAb43m-sWTqoADo7qtrYlmBbypXd2qTRe1GESJX4zkufPgxNCYxO7mbVy45z6fPtTG2ft6ig6pDhiAnkvgUHoqcvRyKHGintF3OfrSl9dQl5gxdr6cdJyQwPvGp-g2ofYwzox3hkvaLiPw7HHMcI4gduVRywNp_Zvnj2tVC1L3XeYM7TNxjakwpENmAqRGv1NnBDtUADJllOuVo_KZDGak4aDxfUssELBgLQYDwqmuoN541FDko33ALNCUP682NA1lU5jBLue7rvH8OAAwoxHrDSx3tArZ67e34gGxq0u-yIuTCfBAw&w=800"
+      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAb43m-sgesi2pnS71y6tnoCdqDvoDWNU6HW3zD7TpyIWfgqUUeX-LFTQzqeE64sAfebxIp3Nb5sEPJJCy1et-G33r1BNlHyZ3a9xd3FgTyHUR4TPws6Aigy4spgDmXPDznY3NblJwoljRdy4VSxjL3eap_eOJIThffdinsjiYHjUFg2L5Ei7bLRXC2pDLAxJednX0MRMzg-dfsAjuSzC8qqViScyELmq1BusZWT_hSSed8YrvKWlhB3C_Oouv7RrC5v-KZF_2eX7dsMyQnuoksjn2EC7eR3Aq4m5nsXEVZJiizbfJQ&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 9:00 AM – 3:00 PM"
+      ]
     },
     {
       "id": "ChIJ-wx9iYvh2IgRBRNg20QB_10",
@@ -330,9 +1066,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 7 AM Sun",
+      "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=6773133759838425861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAb43m-u1ni-7qgGkDW6QYzTPe4bMm9K2SUKNZN-SncylPEfiHWlCeiieQbIc1ip3IuZA8xzpl_kMHPQPULWrhx4efHWez4FsbWlhG-hQ7SLfOxnrXzHSieh41zSSAeiwHi3C7NM8iR-49q7Zvjrwek90UMQB_GW9PyDG6LJxRCNW-1Ul3TL-ZXUzBVAkgctrcW4YhSkrG2E9oa9lYhSjfZCrNN05TCa_iiNSNMb3nWlR7x7NtcQMkXQfl7B6dSbamZqrQgaQVHRHEjfJ8005Z7TY_hRZylYOd0Ht9sjzMkrqXBbUoQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAb43m-ukVWsjqewnWmLZUlotfF0GSUdeTj1wAaIX2WXVK6G2KHm_EOcJyt34pn2haFjuuMTq2pCpNhV4DO-nGgSWXiOgxuIte4_nfodsw0kGF9AJbZf22Tj9oTdHCtqIUKOxqbNoPD_-qMrHp8AC7MYAVRz6IbxO8dwgzv2kGvgV8bNhhF09ogr9a4jMvOapQ_NAUNPwQY3mGAzFCg-GqMXGLCSwjJUNgSWNoY50H1sWhJcQgM2eAnquyn-Bs8shlVKa4cOqJGrMB1xgJZG02rk5HFtbZWmXDkxk-cMi6sSyCbLpcQ&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ]
     },
     {
       "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
@@ -353,9 +1184,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 11 AM Sun",
+      "hoursLabel": "Opens 11 AM",
       "mapsUri": "https://maps.google.com/?cid=251151556470529797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAb43m-sVQszfFonvaS3uNoRkO6w0TT9EN4ZB3_9luF6-8YGlWO2h87VlOlrkA1hIe5zfi-O9sU4MqPbQA6cPhEwFuYo-autHLsvPOkioVPrlebqydygEVPaVGfESzGrTPYhahYoOwn3c3tIsbsuOMsIzI5OegVq1UuA3as0yZCBZTZRforwh3ASWLkPGkQqah4SIG9Gc1FzkPgrSPQvjbXcymgnEUL7WZ-9fwex7QxyJlywZ4-iYAx17uQ6N-F4seCs6lvxo1fl-643HMbbfRI2Ik4-srLKI4mS4A6gppizNr1t9EByyc4xaJIQ8vqq4Erje7UWnxRUOY1b2UJRn9-KF7-9ujoOcYGjgjYJlimsE4idO68kxi27l4tlTA5h_sQGlZwTch3h3QLHai9hsB7sELZXCRyaxIFERb_JA87j64PZ3yTQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAb43m-vGqjVL2ZYH2bH5Q_ckg0TBjSQbK67BrvUh-jnPZbijzGcdgaf4gLs2Ki13az0X3qXHLMuPSdB1ibo1FKxml7jUtrhfj1AsS8DME0ln5fOG_RbAXQPkcgb_Vj9dKf4dVSFxItWA0FZeFOSglgaeOHQ96gwGnx1gDPWvJ2iPiqRjv0dFygNQ6ORrF3GcmSTsb9ULI4rlhcIPyfxSqnswdgPg6ZtnI8mu0LkRwyQt7azAomNDESILfdJ2oB2ZTU8XpxHp3LKtljVBfU8a8D_NDLdCPHvnhVBiedmjceQo-zCSyPZu2YZH5xzQnaJFYnGGWwTECEWxBwVR1Ndz4UAs2FeHiNAMMVyI5uDMvj3oOekZtwf3sJjKRB2R9HIRU9CVQG_ypkuDJW_po4aXZrEU2TWhGr402VBHddnHmLFz9mD-qB0&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 10:00 AM – 7:00 PM",
+        "Tuesday: 10:00 AM – 7:00 PM",
+        "Wednesday: 10:00 AM – 7:00 PM",
+        "Thursday: 10:00 AM – 7:00 PM",
+        "Friday: 10:00 AM – 8:00 PM",
+        "Saturday: 10:00 AM – 8:00 PM",
+        "Sunday: 11:00 AM – 7:00 PM"
+      ]
     },
     {
       "id": "ChIJWenGD5bj2IgRk_IEOgUUy9Y",
@@ -380,7 +1306,90 @@
       "openNow": false,
       "hoursLabel": "Opens 8:30 AM Mon",
       "mapsUri": "https://maps.google.com/?cid=15477486557069636243&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAb43m-taLkejdNHwTW6tsr_uT5Rw4wzaLBG-t4vlBcn2oij9NOPl8hBqk981LMtJtNljvs2-GfCI8aZQaxp8GCwgCf2gyZdUcfzCD8iWbJ7MZqZt2inCmQGtFi7-ML2eotipG73M5YixnSuF8BKcApPeqzRLWNlFFsYhkNawvI2y3LGYdp9jBgqZWaTLhCFKFFW7ZQ-erwEsQyHZHCCyrWABF8nujd0HP1UFxaS_tFiRF4cH1w12U4G2Qk6vtoe6Te8hXpF6bVTlF9Q_AAXD6tCaxDcAmujcG0-o7GNeLj74lybxuQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAb43m-tH799z6Q-_DMwRNmjlBH2DcOY2SPtVcWvJlc4hD1ph0FRexTSK0PxNGGzrZtzM4_eJDThlvowOzlxNPzX_zS6F_cU-SRP-yg9xbI8_Uf_1KOwL5-ZINPS89Rekd2cgewUmNIG7H9WLJGwlH1WeJQ1-uuMV7VRmlZD2r9jiF3RrLVhCrbEpaRq-BWpstFypI3romOWflMATWAXXZTJeEI5TEczRrhSehZ-ccFMh2WHTqLtZYzfcFJDjNaT30uuwTJ035LsoAQ6x2E5GzGZ1ePaj07za9WBMVvlMlk8Dq9UgwQ&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 13,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:30 AM – 4:30 PM",
+        "Tuesday: 8:30 AM – 4:30 PM",
+        "Wednesday: 8:30 AM – 4:30 PM",
+        "Thursday: 8:30 AM – 4:30 PM",
+        "Friday: 8:30 AM – 4:30 PM",
+        "Saturday: 8:30 AM – 1:30 PM",
+        "Sunday: Closed"
+      ]
     },
     {
       "id": "ChIJR_ysn4jj2IgR2kCL-eY_vz8",
@@ -400,10 +1409,105 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=4593460406202876122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAb43m-ucMLtuGvP2d4kk3qEJ3Rnfm0BnZIlE6s7TBO2Gbe2BuBQ7bN1yKq1BZJg7HfmcxQZmwa2V7wE3KKAgmy2Azx-ir4xF8RF057zVdno04xgz-_TrfmttYoplS82ZMM_04ZqJA5ztV732AGyP2ax7-ELIue3Qz2bJ8eQdjQ6G_KJ1Pv4D_3WvkEHi94bw2BruxAUGyxxQrHt5Pha_o0j0iJjtbSKczUPd5VPeF8RpUbVISedehiRgCZx0eQdO6u-jXOHISCKN_zoIlNyq7WJ4Wygr252l38pNa_Y9EuiBwmtW3Q&w=800"
+      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAb43m-uNL14hLx6rhIJ-VX9ZaGjpUqna5siKiGLlFCoHyNvfngSSH7s9wWhgrnBppM0au7Vozx2cYRvVIX0fGkG8_D6pQiZKT2o64Vzv2t06CGGaAq1sG1tTSABiNzrqsQNDU98oo_ZVLV2OXt0kSauwdjiv4nyVDbIcE19WrgaQoeyh-Oy1rdasTeB_Y0sHVCJKRqC_0yGxV6W64BOZv4r9D_7_uPdDJMZEH9bX5NeREWR-tAup1qsbqtD6r5S7IAGnvgL2LP0bxCZxHVddOPyvH36qerWHZ9Uy5AKW_jpnQSo0GQ&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 10:00 PM",
+        "Friday: 7:00 AM – 10:00 PM",
+        "Saturday: 7:00 AM – 10:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ]
     },
     {
       "id": "ChIJE9bX5Ewf2YgR0MDqarmOc0k",
@@ -424,9 +1528,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 7 AM Sun",
+      "hoursLabel": "Opens 7 AM",
       "mapsUri": "https://maps.google.com/?cid=5292730914104328400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAb43m-skl7x8qmvsUqjOaaihnE-QD1y5aS59jmQKuSI708q1gdOc0p_KuEgLxSFlMCQuUB6RTszjIou7783JvKOSFp-JsNZdF3JgGR7q22krXRnq6-haKlIk7C99mttvjPrRQZpTiMFaWwLhQ93GkHLYqP0JAYLPLlaHJ7ti5FypcOwX1f-1us-EpCXP3Bb8A74w9R9oEPTczSsnrQ21Wvr-DZ9ONX0_jrmURXjd1-S6BBCITkN0WG4aWVlqlUkVo3xihSWbmsm3oDc937CbpTWI2zAVRUJVhio7lmqY0lw2lchgnw&w=800"
+      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAb43m-uh2Qwl3BRGxLubs1lUB2WmQjBTmubxtOjusI0cTr8UTXDs7NSfoNtUJlrvP759tzuwPPBAKfKXrNnZEhZ6pgpuvvbijGTEdefYDgYRD7RADpHhV6Z-44UkcxMkDbBlUTcy8ntbMFJAfe-xNChIuwFJT5QlEYdR1m6WODwZ0gL-GwCcnaYoC5gvy_5HtYzfouoprOfTLH3_RHv_ncDpjlg4r46UIUOP7xEREKYkLqbmSKikEcB3mqiwxmwwYwVXdXat6mxORm9Ng2NYrpVd8RV4QisnPmjYFuBQk3wmFMzcHg&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ]
     },
     {
       "id": "ChIJI1et2rzj2IgRmmydvhcsL64",
@@ -456,9 +1655,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Sun",
+      "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=12551299166998719642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJI1et2rzj2IgRmmydvhcsL64%2Fphotos%2FAb43m-ulRjuAg8mG0WEHxlU5eDKePO4LkVZ-FC8obY4kY6tbSwNiigsYqP5AT_Ybbs1w3d0wSbUyzDTJyumyVORVtx9ivjl1So0OGNevKcH3rIviwQdrU00nrKREm4wZagyGkE3Hhn1zBAx_ZpffXCD7KR-Akz269781PgIl0QUDl6aHOIvohR5V5TtYyL8ehEv8EEt1UdqQC_Zgq6K8WdHlonfwln5D5rzYxb7UyL0aKDv3xGcLyi_iQNTEpA0KB0DAiQud-21aKZPTnCiyMjoF5Jn17ES8J4w6q_wcIX4wONRCMMnHDZJUW4JAJUYjVVTQgJzBRPrCEgGrQmhIhdyKA6AwatZkFBau4Gek9OPCj3EErcNvoyFckeBNZP6-02j6tISy000Jg9YgRT2GY2LRF9BbVJKT9t6lPpmzLaUP7vk&w=800"
+      "photo": "/api/photo?name=places%2FChIJI1et2rzj2IgRmmydvhcsL64%2Fphotos%2FAb43m-tAYnWYQ8to_S5O5Phw-HkUDxhkdVFPFg7eeNnG0O4ngPHuy7af27trQX1kWMS6HMGiWnb16TRvWV1u93v5f1BWt1ECOkhbL8MwTgS2hicmD0abBzjBmWiLDKvIdOhwpd7HFYPwnQ7u9nA_mC9xSPpI4uK7iV12Rygxvo4tzOGDjp4BKbzwFZFyc5sZT2rcAVMzL_YOYKP4GZTFU6Q7C_3Z8emD_mXenxV0wWDx4agYo0WAIU5j19ivImNs9unXyzVhfEUr3XtSBSP4uiFqEZ4-41Eff4ycuM3DFNQ9KfwWkwH-Yct3KcO9ENGSvG41vuY3MYndHeDv9rA2UM-VYuQMefBRW-JolLYh0c0BQJnDCf1K_5OWCdl651-a3PGfdN8SGAxX0EJvAA3-o3pqhL1axKTanjOzprSAFD-Yu-c&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 3:00 PM",
+        "Tuesday: 8:00 AM – 3:00 PM",
+        "Wednesday: 8:00 AM – 3:00 PM",
+        "Thursday: 8:00 AM – 3:00 PM",
+        "Friday: 8:00 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ]
     },
     {
       "id": "ChIJ-_O-FgDj2IgR0Wr2kH0Rn1I",
@@ -485,7 +1779,7 @@
     },
     {
       "id": "ChIJQ98zGMfj2IgRo5LU42SyiqQ",
-      "name": "Uptown Market & Caf\u00e9",
+      "name": "Uptown Market & Café",
       "address": "300 W Camino Real, Boca Raton, FL 33432, USA",
       "lat": 26.3414753,
       "lng": -80.0920165,
@@ -502,9 +1796,104 @@
         "establishment"
       ],
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Sun",
+      "hoursLabel": "Opens 8 AM",
       "mapsUri": "https://maps.google.com/?cid=11856485115395084963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAb43m-t_4YysWKJ75ODydohYyojJR3K_TWhCfq6AYvlrSVAjuYRhQzww7_cg8tvrBT4rgyvewhrqtT2umIBRbOhqBCg5sEeqxmOI-TqSMv6VO2ukN_vUjcdI8uV1rBcp8BlyYCy4Hc4VXGAoFEfy-J-hQaHP9XkOY3P-lZPFEXlodzXkDUS_3gqLhhA3ZTRxrDPni1GqEtSwNdcin_dLHFwKJGmBOK2DkqCbfQkhKLSNHtc56e0r0I0bEX0sv2Pud0QcxW0SgBnm92Ha33RH-Gv1fWqiFs8VX2xKepPpuuwgoJ2dbA&w=800"
+      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAb43m-tZZloubFrwXidNHOxwiIMraxan2QB40O7i0kw-5oCRWexGUzOCxa4zWDgXRGkb-cb0EhHlJJLYHTjBY4GhSxhw701roqUbODpeWtxaKfKhvzwWFUErxdBmqjgn4WuDBqlPa6ZZbF8n-BXeoPAPgyvfx56GiEQBxh0RgcUJpIQQH9hcEwsP8s5J5jhWAsgQnxqgwkQGlpkxUFmJIE5W-yrhkhK8WOVfDWFQRTlv_FEAmvdXS3DG5Vixi_huRH7Qt3g7Mkuspv6QbHRtGc5kD-YFtgAjqevaFljU2ofbjbqyrg&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 9:00 PM",
+        "Tuesday: 7:00 AM – 9:00 PM",
+        "Wednesday: 7:00 AM – 9:00 PM",
+        "Thursday: 7:00 AM – 9:00 PM",
+        "Friday: 7:00 AM – 9:00 PM",
+        "Saturday: 7:00 AM – 9:00 PM",
+        "Sunday: 8:00 AM – 9:00 PM"
+      ]
     }
   ],
   "picks": {
@@ -528,7 +1917,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "We had a wonderful lunch experience at La Boulangerie Boul\u2019Mich today with my kids. From start to finish, everything was spot on. The food was absolutely delicious; my grilled cheese with tomato soup was pure comfort and perfectly done.\n\nEven though the restaurant was busy, we were seated quickly and the food arrived right on time. The menu offers a great variety, making it easy to find something everyone will enjoy.\n\nA big shout-out to Martha, our server, who was attentive, friendly, and consistently checked in to make sure we had everything we needed. Vivian, the manager, also stopped by to ensure everything came out well and that we were enjoying our experience, that level of care really makes a difference.\n\nIt\u2019s clear this location has a fantastic team that works together to serve guests efficiently while still making you feel welcomed and cared for. We\u2019ll definitely be back!"
+          "text": "We had a wonderful lunch experience at La Boulangerie Boul’Mich today with my kids. From start to finish, everything was spot on. The food was absolutely delicious; my grilled cheese with tomato soup was pure comfort and perfectly done.\n\nEven though the restaurant was busy, we were seated quickly and the food arrived right on time. The menu offers a great variety, making it easy to find something everyone will enjoy.\n\nA big shout-out to Martha, our server, who was attentive, friendly, and consistently checked in to make sure we had everything we needed. Vivian, the manager, also stopped by to ensure everything came out well and that we were enjoying our experience, that level of care really makes a difference.\n\nIt’s clear this location has a fantastic team that works together to serve guests efficiently while still making you feel welcomed and cared for. We’ll definitely be back!"
         },
         {
           "rating": 5,
@@ -562,15 +1951,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "I\u2019ve been to Third Place too many times to count due to the excellent quality of service combined with their warm, welcoming atmosphere, and delicious food and coffee.\n\nI\u2019ve tried many food items including most of their lattes, cold brew coffees, London fog, chocolate croissant, and pumpkin cheesecake loaf among many others, all of which are always amazing and quality-made to the customer\u2019s specific order.\n\nThey have a multitude of milk options and milk alternatives if you\u2019re looking for a great place to find average priced coffee with greater flavor and dairy-free menu options. Plus, their service is always efficient and welcoming. One of the best parts of going to Third Place is interacting with their employees!\n\nOverall, Third Place Coffee Lounge is probably one of my top three favorite local Boca places to get my caffeine fix. I highly recommend it to anyone looking to try out a coffee shop in Boca Raton!"
+          "text": "I’ve been to Third Place too many times to count due to the excellent quality of service combined with their warm, welcoming atmosphere, and delicious food and coffee.\n\nI’ve tried many food items including most of their lattes, cold brew coffees, London fog, chocolate croissant, and pumpkin cheesecake loaf among many others, all of which are always amazing and quality-made to the customer’s specific order.\n\nThey have a multitude of milk options and milk alternatives if you’re looking for a great place to find average priced coffee with greater flavor and dairy-free menu options. Plus, their service is always efficient and welcoming. One of the best parts of going to Third Place is interacting with their employees!\n\nOverall, Third Place Coffee Lounge is probably one of my top three favorite local Boca places to get my caffeine fix. I highly recommend it to anyone looking to try out a coffee shop in Boca Raton!"
         },
         {
           "rating": 5,
-          "text": "Stopped by the Coffee Shop and had a really good iced tea \u2014 super refreshing and well made. The space itself is large with plenty of room to work, which I really appreciated. They even offer a printer for a small fee, which is a great idea and very convenient.\nThe shop was a bit cold when I visited, and the food options were limited. Everything is pre-made, and at the time I was there, no food was available at all.\nOverall, it\u2019s a great place to get some work done and enjoy a good drink.\n\nOH and they do host fun events like open mic, trivia, and bingo on certain days, which I think is pretty cool and I can\u2019t wait to give the trivia or bingo a shot!!"
+          "text": "Stopped by the Coffee Shop and had a really good iced tea — super refreshing and well made. The space itself is large with plenty of room to work, which I really appreciated. They even offer a printer for a small fee, which is a great idea and very convenient.\nThe shop was a bit cold when I visited, and the food options were limited. Everything is pre-made, and at the time I was there, no food was available at all.\nOverall, it’s a great place to get some work done and enjoy a good drink.\n\nOH and they do host fun events like open mic, trivia, and bingo on certain days, which I think is pretty cool and I can’t wait to give the trivia or bingo a shot!!"
         },
         {
           "rating": 5,
-          "text": "Super cute and chill coffee shop. I\u2019ve been checking out different places to find somewhere to focus and get some work done- Third Place was perfect! I have to return for actual coffee since it was too late in the day BUT the pastries were delicious and the spiced apple cider too (as you can see from the pictures!) I\u2019ll be back soon!"
+          "text": "Super cute and chill coffee shop. I’ve been checking out different places to find somewhere to focus and get some work done- Third Place was perfect! I have to return for actual coffee since it was too late in the day BUT the pastries were delicious and the spiced apple cider too (as you can see from the pictures!) I’ll be back soon!"
         }
       ],
       "reviewsAnalysed": 5,
@@ -596,15 +1985,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Don\u2019t know where to start. The store it self super super super clean once you walk in you feel so relaxed. Super nice staffs. Food drink dessert everything is beyond amazing. They go above and beyond for their customers. And a big thank you for the Owner for having the best service and his workers as well. I highly recommend it. Loved the mojito and crepes especially  KUNAFAAAA."
+          "text": "Don’t know where to start. The store it self super super super clean once you walk in you feel so relaxed. Super nice staffs. Food drink dessert everything is beyond amazing. They go above and beyond for their customers. And a big thank you for the Owner for having the best service and his workers as well. I highly recommend it. Loved the mojito and crepes especially  KUNAFAAAA."
         },
         {
           "rating": 5,
-          "text": "It\u2019s an awesome. Amazing service plus customer service. When you walk in you\u2019re so welcomed in. Feels so cozy  food and drinks are too good. I highly recommend this so much. 100% one of my favorite place I will be here if not everyday every other day.  It\u2019s a must. Especially the owner such an amazing person."
+          "text": "It’s an awesome. Amazing service plus customer service. When you walk in you’re so welcomed in. Feels so cozy  food and drinks are too good. I highly recommend this so much. 100% one of my favorite place I will be here if not everyday every other day.  It’s a must. Especially the owner such an amazing person."
         },
         {
           "rating": 5,
-          "text": "\u201cTIKI in Fort Lauderdale is THE dessert spot everyone needs on their list! From the moment you step in, the aroma of freshly made kunafa and warm crepes hits you \u2014 it\u2019s amazing. Their kunafa is insanely good: golden, crispy, perfectly sweet, and loaded with authentic Middle Eastern flavor that hits every time. The crepes are creative and delicious, and every dessert on the menu is beautifully presented and tastes even better than it looks. Friendly staff, great vibes, and honestly some of the best sweets I\u2019ve had in Florida. Whether you\u2019re a kunafa lover or just craving something sweet and unique, TIKI delivers big time! Highly recommend!\u201d \u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f"
+          "text": "“TIKI in Fort Lauderdale is THE dessert spot everyone needs on their list! From the moment you step in, the aroma of freshly made kunafa and warm crepes hits you — it’s amazing. Their kunafa is insanely good: golden, crispy, perfectly sweet, and loaded with authentic Middle Eastern flavor that hits every time. The crepes are creative and delicious, and every dessert on the menu is beautifully presented and tastes even better than it looks. Friendly staff, great vibes, and honestly some of the best sweets I’ve had in Florida. Whether you’re a kunafa lover or just craving something sweet and unique, TIKI delivers big time! Highly recommend!” ⭐️⭐️⭐️⭐️⭐️"
         }
       ],
       "reviewsAnalysed": 5,
@@ -634,7 +2023,7 @@
         },
         {
           "rating": 5,
-          "text": "I visit Florida several times a year, and every trip includes a dedicated stop in Boca specifically so I can visit The Seed. It\u2019s one of my absolute favorite coffee and matcha shops in the country\u2014easily top-tier.\n\nI first tried The Seed last summer at their Delray Beach location and loved their seasonal matcha (pretty sure it was pi\u00f1a colada). On this recent trip, I headed straight to the original Boca location and ordered a strawberry matcha within minutes of landing. It was just as amazing as I remembered.\n\nThe following morning, after a painfully heavy dinner the night before, I switched to coffee and asked for something strong. Cassie at the counter recommended a drink with four shots of espresso (I opted for three). It was excellent\u2014and very effective. Let\u2019s just say my digestion and my airport commute were both incredibly successful afterward.\n\nThe Seed is consistent, creative, friendly, and always delicious. It\u2019s officially a must-visit stop for me every time I\u2019m in Florida."
+          "text": "I visit Florida several times a year, and every trip includes a dedicated stop in Boca specifically so I can visit The Seed. It’s one of my absolute favorite coffee and matcha shops in the country—easily top-tier.\n\nI first tried The Seed last summer at their Delray Beach location and loved their seasonal matcha (pretty sure it was piña colada). On this recent trip, I headed straight to the original Boca location and ordered a strawberry matcha within minutes of landing. It was just as amazing as I remembered.\n\nThe following morning, after a painfully heavy dinner the night before, I switched to coffee and asked for something strong. Cassie at the counter recommended a drink with four shots of espresso (I opted for three). It was excellent—and very effective. Let’s just say my digestion and my airport commute were both incredibly successful afterward.\n\nThe Seed is consistent, creative, friendly, and always delicious. It’s officially a must-visit stop for me every time I’m in Florida."
         },
         {
           "rating": 5,
@@ -656,7 +2045,7 @@
         "food": {
           "name": "Caesar wrap",
           "reason": "Mentioned across multiple 5-star reviews as a standout, called the 'BEST Caesar wrap in town' and a go-to order, including a buffalo variant.",
-          "quote": "The BEST Caesar wrap in town \u2014 literally I'm obsessed!!",
+          "quote": "The BEST Caesar wrap in town — literally I'm obsessed!!",
           "confidence": "high",
           "mention_count": 3
         }
@@ -664,11 +2053,11 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "My FAVORITE coffee shop in Boca and of all time!!! Their menu is diverse with different drink and food options. Me and my boyfriend are frequent customers and always look forward to coming here. The chicken caesar wrap and an iced dolce vita is our go-to order. So good and so fresh! All the staff are friendly and personable. Service is quick and environment is homey and inviting! Can\u2019t wait to be back!"
+          "text": "My FAVORITE coffee shop in Boca and of all time!!! Their menu is diverse with different drink and food options. Me and my boyfriend are frequent customers and always look forward to coming here. The chicken caesar wrap and an iced dolce vita is our go-to order. So good and so fresh! All the staff are friendly and personable. Service is quick and environment is homey and inviting! Can’t wait to be back!"
         },
         {
           "rating": 5,
-          "text": "V1 just makes a consistently excellent cold bru and iced americano of my dreams. I love stopping at this local spot when I\u2019m in the area. Adelyse the barista was so wonderful! From a certified coffee snob: one of my favorite local coffee spots in boca! LOVE! Never disappoints for a caffeine fix. Atmosphere is charming meets hipster\u2026!"
+          "text": "V1 just makes a consistently excellent cold bru and iced americano of my dreams. I love stopping at this local spot when I’m in the area. Adelyse the barista was so wonderful! From a certified coffee snob: one of my favorite local coffee spots in boca! LOVE! Never disappoints for a caffeine fix. Atmosphere is charming meets hipster…!"
         },
         {
           "rating": 4,
@@ -698,7 +2087,7 @@
       "reviewSample": [
         {
           "rating": 3,
-          "text": "I ordered a latte and a cappuccino, along with a pain au chocolat and a banana bread. The pastries were good, especially the pain au chocolat and the banana bread.\nThe cappuccino was not well executed: the milk was poorly textured and the foam was not correct, which affected the flavor. The latte was very bad, I do not recommend it.\nI also ordered the croissant without cucumber, but it came with cucumber anyway, which was disappointing.\nThe service was okay but could be more attentive and friendly.\nI also took home a Kenyan varietal that I haven\u2019t tried yet\u2014hopefully it lives up to expectations, as it looks promising.\nOverall, a decent experience, but there is room for improvement in execution and service"
+          "text": "I ordered a latte and a cappuccino, along with a pain au chocolat and a banana bread. The pastries were good, especially the pain au chocolat and the banana bread.\nThe cappuccino was not well executed: the milk was poorly textured and the foam was not correct, which affected the flavor. The latte was very bad, I do not recommend it.\nI also ordered the croissant without cucumber, but it came with cucumber anyway, which was disappointing.\nThe service was okay but could be more attentive and friendly.\nI also took home a Kenyan varietal that I haven’t tried yet—hopefully it lives up to expectations, as it looks promising.\nOverall, a decent experience, but there is room for improvement in execution and service"
         },
         {
           "rating": 5,
@@ -751,7 +2140,7 @@
         "drink": {
           "name": "Espresso",
           "reason": "Praised as authentic Italian coffee; cappuccinos also enjoyed in another review.",
-          "quote": "the espresso is pure perfection\u2014truly authentic Italian coffee",
+          "quote": "the espresso is pure perfection—truly authentic Italian coffee",
           "confidence": "high",
           "mention_count": 2
         },
@@ -770,11 +2159,11 @@
         },
         {
           "rating": 4,
-          "text": "Cute small place, food was very fresh and very good. Homemade breads and desserts. What else could you ask for. We ate every bite. They were under staffed Sunday afternoon before closing. We didn\u2019t wait too long for the  food or anything it came prompt. But the server was average at best. If this place had a Charming or charismatic server it would have been a 5 star review!"
+          "text": "Cute small place, food was very fresh and very good. Homemade breads and desserts. What else could you ask for. We ate every bite. They were under staffed Sunday afternoon before closing. We didn’t wait too long for the  food or anything it came prompt. But the server was average at best. If this place had a Charming or charismatic server it would have been a 5 star review!"
         },
         {
           "rating": 5,
-          "text": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f Truly Authentic Italian Gem!\nMercato Italiano is hands down the most authentic Italian experience you can find in Boca Raton. Whether you're stopping by for a quick bite or planning a larger event, this place excels on every level.\nThe owners are genuinely Italian, and you can tell immediately. It's a fantastic sign of authenticity when you see that the restaurant is frequently visited by Italian people themselves!\nYou absolutely must try their food! Their panini are built with high-quality, fresh ingredients and are irresistible\u2014perfect for lunch or a snack. And the espresso is pure perfection\u2014truly authentic Italian coffee that transports you straight to Rome. In fact, all their Italian food is phenomenal and clearly made with passion and tradition.\nBut our experience went beyond just a great meal:\n\nWe recently hosted our baby shower here, and the event was outstanding! The attention to detail, the quality of the food provided, and the service from the entire staff were impeccable. They went above and beyond to make our special day perfect.\n\nIf you are looking for real Italian food, atmosphere, and service, Mercato Italiano is a must-visit. Highly, highly recommend!\n\nThank you so much!"
+          "text": "⭐️⭐️⭐️⭐️⭐️ Truly Authentic Italian Gem!\nMercato Italiano is hands down the most authentic Italian experience you can find in Boca Raton. Whether you're stopping by for a quick bite or planning a larger event, this place excels on every level.\nThe owners are genuinely Italian, and you can tell immediately. It's a fantastic sign of authenticity when you see that the restaurant is frequently visited by Italian people themselves!\nYou absolutely must try their food! Their panini are built with high-quality, fresh ingredients and are irresistible—perfect for lunch or a snack. And the espresso is pure perfection—truly authentic Italian coffee that transports you straight to Rome. In fact, all their Italian food is phenomenal and clearly made with passion and tradition.\nBut our experience went beyond just a great meal:\n\nWe recently hosted our baby shower here, and the event was outstanding! The attention to detail, the quality of the food provided, and the service from the entire staff were impeccable. They went above and beyond to make our special day perfect.\n\nIf you are looking for real Italian food, atmosphere, and service, Mercato Italiano is a must-visit. Highly, highly recommend!\n\nThank you so much!"
         }
       ],
       "reviewsAnalysed": 5,
@@ -800,11 +2189,11 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can\u2019t wait to go back. The cappuccino was excellent!!"
+          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can’t wait to go back. The cappuccino was excellent!!"
         },
         {
           "rating": 5,
-          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it\u2019s hot coffee, cold brew, or espresso drinks, it\u2019s always on point."
+          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it’s hot coffee, cold brew, or espresso drinks, it’s always on point."
         },
         {
           "rating": 5,
@@ -834,15 +2223,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Wonderful ambiance, good coffee, fairly extensive menu. Very clean inside. Staff was respectful. My avocado toast came on a little wooden cutting board with their logo on it which I find clever. Regardless if you want a quick bite or to sit down read a book, get some work done or what have you, Carmela\u2019s on glades is a win in my book"
+          "text": "Wonderful ambiance, good coffee, fairly extensive menu. Very clean inside. Staff was respectful. My avocado toast came on a little wooden cutting board with their logo on it which I find clever. Regardless if you want a quick bite or to sit down read a book, get some work done or what have you, Carmela’s on glades is a win in my book"
         },
         {
           "rating": 5,
-          "text": "Pretty good coffee \u2615\ufe0f served in a friendly atmosphere. They have plenty of good pastries to choose from and different coffee beverages that all look worth trying. Service was good, beverages came out quickly, and they have inside and outside seating options. During the weekend it can get a bit busy, but I still found them pretty quick. Shoutout to the matcha latte."
+          "text": "Pretty good coffee ☕️ served in a friendly atmosphere. They have plenty of good pastries to choose from and different coffee beverages that all look worth trying. Service was good, beverages came out quickly, and they have inside and outside seating options. During the weekend it can get a bit busy, but I still found them pretty quick. Shoutout to the matcha latte."
         },
         {
           "rating": 4,
-          "text": "Great wifi, somewhat quiet outside in the morning if next door restaurant does not blast music. Service is good but must go to counter so if you sit outside they won\u2019t bring you your food and it sits there getting cold.\nFood is extremely overpriced. Flatbread is literally a pita with stuff on top. Very small for almost $20. All in all the place is overpriced service is ok and food is ok.\nCoffee and flatbread $25 for one person."
+          "text": "Great wifi, somewhat quiet outside in the morning if next door restaurant does not blast music. Service is good but must go to counter so if you sit outside they won’t bring you your food and it sits there getting cold.\nFood is extremely overpriced. Flatbread is literally a pita with stuff on top. Very small for almost $20. All in all the place is overpriced service is ok and food is ok.\nCoffee and flatbread $25 for one person."
         }
       ],
       "reviewsAnalysed": 5,
@@ -902,7 +2291,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "It was our first time visiting and it\u2019s such a welcoming environment! The staff was great with explaining the food on the menu. They had a variety of breakfast, lunch, and all kinds of coffees. I enjoyed their delray breakfast and their latte! It was my first time trying Arepas and it was absolutely delicious. I recommend stopping by!"
+          "text": "It was our first time visiting and it’s such a welcoming environment! The staff was great with explaining the food on the menu. They had a variety of breakfast, lunch, and all kinds of coffees. I enjoyed their delray breakfast and their latte! It was my first time trying Arepas and it was absolutely delicious. I recommend stopping by!"
         },
         {
           "rating": 5,
@@ -936,7 +2325,7 @@
       "reviewSample": [
         {
           "rating": 4,
-          "text": "I stopped by The Pots Cafe at 6000 Glades Rd in Boca Raton and really enjoyed the experience. The place has a relaxed, welcoming feel that makes it easy to slow down and enjoy your time. It\u2019s a nice spot whether you\u2019re meeting someone or just taking a break for yourself.\n\nThe food was fresh and comforting without trying too hard to impress. Everything tasted thoughtfully prepared, and the portions felt just right. I also appreciated how calm the atmosphere was\u2014no rush, no noise overload, just a pleasant place to sit and enjoy a meal.\n\nService was friendly and genuine, which made the visit even better. Overall, The Pots Cafe felt like one of those neighborhood spots you\u2019d come back to when you want something easy, warm, and familiar."
+          "text": "I stopped by The Pots Cafe at 6000 Glades Rd in Boca Raton and really enjoyed the experience. The place has a relaxed, welcoming feel that makes it easy to slow down and enjoy your time. It’s a nice spot whether you’re meeting someone or just taking a break for yourself.\n\nThe food was fresh and comforting without trying too hard to impress. Everything tasted thoughtfully prepared, and the portions felt just right. I also appreciated how calm the atmosphere was—no rush, no noise overload, just a pleasant place to sit and enjoy a meal.\n\nService was friendly and genuine, which made the visit even better. Overall, The Pots Cafe felt like one of those neighborhood spots you’d come back to when you want something easy, warm, and familiar."
         },
         {
           "rating": 5,
@@ -974,11 +2363,11 @@
         },
         {
           "rating": 5,
-          "text": "Stopped by on Saturday morning while the car was getting some work done, they welcomed my dog. Penny offered a coffee and an excellent blueberry muffin. It was delicious. I\u2019ll definitely come again (I meant we will come again)"
+          "text": "Stopped by on Saturday morning while the car was getting some work done, they welcomed my dog. Penny offered a coffee and an excellent blueberry muffin. It was delicious. I’ll definitely come again (I meant we will come again)"
         },
         {
           "rating": 4,
-          "text": "Cute little place. Great friendly service. We didn't enjoy our mocha latte that much. Maybe it was just a bad pull but we didn't want to say anything, just to be polite. Don't let that keep you from trying this place though. There are so many others raving about the coffee. \ud83d\ude0a"
+          "text": "Cute little place. Great friendly service. We didn't enjoy our mocha latte that much. Maybe it was just a bad pull but we didn't want to say anything, just to be polite. Don't let that keep you from trying this place though. There are so many others raving about the coffee. 😊"
         }
       ],
       "reviewsAnalysed": 5,
@@ -1004,11 +2393,11 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "I\u2019ve been coming here for years and have always loved my experience. The coffee and matchas are really high quality, and the syrup flavors are always delish. I have often spent time doing schoolwork/writing here because the atmosphere is so great. I even enjoy coming here for trivia, which is always a really fun time! Food options are always spectacular, too. 10/10 recommend, and the music always hits the spot!"
+          "text": "I’ve been coming here for years and have always loved my experience. The coffee and matchas are really high quality, and the syrup flavors are always delish. I have often spent time doing schoolwork/writing here because the atmosphere is so great. I even enjoy coming here for trivia, which is always a really fun time! Food options are always spectacular, too. 10/10 recommend, and the music always hits the spot!"
         },
         {
           "rating": 5,
-          "text": "I always come here with my partner to sit and chat, we tend to order dirty chai lattes to which they never miss!\n\nVery well balance of a good dirty chai latte should be like, you can distinguish all flavors in the drink.\n\nTheir empanadas are the best, we get the Peruvian beef empanadas and even though they got raisins in them, it does not bother me one bit since it\u2019s not overtaking the beef flavor.\n\nI very much appreciate this place for staying open for later hours for us latte coffee enthusiasts"
+          "text": "I always come here with my partner to sit and chat, we tend to order dirty chai lattes to which they never miss!\n\nVery well balance of a good dirty chai latte should be like, you can distinguish all flavors in the drink.\n\nTheir empanadas are the best, we get the Peruvian beef empanadas and even though they got raisins in them, it does not bother me one bit since it’s not overtaking the beef flavor.\n\nI very much appreciate this place for staying open for later hours for us latte coffee enthusiasts"
         },
         {
           "rating": 5,
@@ -1038,15 +2427,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "The coffee is consistently smooth and flavorful (you can tell they care about quality), and their vanilla Latte  are always on point. I also love that they offer great pastries and light bites \u2014 everything feels thoughtfully curated, not just thrown together.\nWhat really stands out is the vibe: friendly staff, calm energy, and a space that makes you want to stay a little longer. It\u2019s become one of my go-to spots for a peaceful coffee break or casual meet-ups.\nHighly recommend if you\u2019re looking for great coffee, a comfortable environment, and reliable quality every visit. \u2615\ufe0f\u2728"
+          "text": "The coffee is consistently smooth and flavorful (you can tell they care about quality), and their vanilla Latte  are always on point. I also love that they offer great pastries and light bites — everything feels thoughtfully curated, not just thrown together.\nWhat really stands out is the vibe: friendly staff, calm energy, and a space that makes you want to stay a little longer. It’s become one of my go-to spots for a peaceful coffee break or casual meet-ups.\nHighly recommend if you’re looking for great coffee, a comfortable environment, and reliable quality every visit. ☕️✨"
         },
         {
           "rating": 2,
-          "text": "This place has lost its touch. I used to come here and get really nice coffees with strong shots of espresso but now my iced latte taste like milk. I got four shots that should send me through the roof instead I finish my coffee questioning on if I\u2019ve even had one today. I\u2019m putting my patronage of Foxtel coffee to bed."
+          "text": "This place has lost its touch. I used to come here and get really nice coffees with strong shots of espresso but now my iced latte taste like milk. I got four shots that should send me through the roof instead I finish my coffee questioning on if I’ve even had one today. I’m putting my patronage of Foxtel coffee to bed."
         },
         {
           "rating": 5,
-          "text": "This coffee shop offers a fantastic experience with quick service and minimal wait times, making it perfect for those on the go. The staff is incredibly welcoming and attentive, ensuring a smooth and enjoyable visit. Whether you\u2019re grabbing a coffee to start your day or settling in for a relaxing break, the atmosphere is warm and inviting. The quality of the coffee is top-notch, with a great selection of brews to satisfy any preference. While parking can be tricky during peak hours, the efficient service and friendly environment make it well worth the visit."
+          "text": "This coffee shop offers a fantastic experience with quick service and minimal wait times, making it perfect for those on the go. The staff is incredibly welcoming and attentive, ensuring a smooth and enjoyable visit. Whether you’re grabbing a coffee to start your day or settling in for a relaxing break, the atmosphere is warm and inviting. The quality of the coffee is top-notch, with a great selection of brews to satisfy any preference. While parking can be tricky during peak hours, the efficient service and friendly environment make it well worth the visit."
         }
       ],
       "reviewsAnalysed": 5,
@@ -1072,15 +2461,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "When I walked in I was greeted by Kylie\u2019s warm welcome! The decoration is so so cute, simple and delicate. I was having trouble deciding what I wanted to drink to be ready for my day. Kylie guided me to try the Tiramisu latte! Thanks to her wonderful recommendation and sweet attitude she made my day! Thanks again!"
+          "text": "When I walked in I was greeted by Kylie’s warm welcome! The decoration is so so cute, simple and delicate. I was having trouble deciding what I wanted to drink to be ready for my day. Kylie guided me to try the Tiramisu latte! Thanks to her wonderful recommendation and sweet attitude she made my day! Thanks again!"
         },
         {
           "rating": 5,
-          "text": "\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\n\nLong Story Short Coffee Shop is truly a hidden gem on Second St! The atmosphere is warm and welcoming, and the people there are genuinely pleasant.\n\nI had the nitro cold brew and it was incredibly smooth \u2014 rich, bold, and perfectly balanced. My husband ordered a cold foam drink (and he\u2019s very particular about his coffee), and it absolutely met his standards. That alone says a lot!\n\nIf you\u2019re looking for great coffee and kind service, this spot is definitely worth stopping by. We\u2019ll be back."
+          "text": "⭐️⭐️⭐️⭐️⭐️\n\nLong Story Short Coffee Shop is truly a hidden gem on Second St! The atmosphere is warm and welcoming, and the people there are genuinely pleasant.\n\nI had the nitro cold brew and it was incredibly smooth — rich, bold, and perfectly balanced. My husband ordered a cold foam drink (and he’s very particular about his coffee), and it absolutely met his standards. That alone says a lot!\n\nIf you’re looking for great coffee and kind service, this spot is definitely worth stopping by. We’ll be back."
         },
         {
           "rating": 2,
-          "text": "Lavender latte wasn\u2019t great, took a while, and the woman working the register was noticeably bothered by asking what ingredients were in the coconut milk. \u201cIt\u2019s literally just coconut,\u201d she said. The ingredient list on the carton tells a different tale."
+          "text": "Lavender latte wasn’t great, took a while, and the woman working the register was noticeably bothered by asking what ingredients were in the coconut milk. “It’s literally just coconut,” she said. The ingredient list on the carton tells a different tale."
         }
       ],
       "reviewsAnalysed": 5,
@@ -1106,7 +2495,7 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "This is a great place for breakfast or brunch/lunch if you\u2019re looking for authentic Ecuadorian food in Boca Raton. The atmosphere is very cozy and welcoming\u2014perfect for inviting someone to experience Ecuadorian cuisine and traditional desserts for the first time."
+          "text": "This is a great place for breakfast or brunch/lunch if you’re looking for authentic Ecuadorian food in Boca Raton. The atmosphere is very cozy and welcoming—perfect for inviting someone to experience Ecuadorian cuisine and traditional desserts for the first time."
         },
         {
           "rating": 5,
@@ -1114,7 +2503,7 @@
         },
         {
           "rating": 5,
-          "text": "This place is a mix of great food, excellent customer service and reasonable pricing. I recommend this place it never disappoints my recommendation are the Bolton Milotino with bistec for breakfast and my favorites for lunch would be: Bandera, encebollado and tr\u00edo ceviche."
+          "text": "This place is a mix of great food, excellent customer service and reasonable pricing. I recommend this place it never disappoints my recommendation are the Bolton Milotino with bistec for breakfast and my favorites for lunch would be: Bandera, encebollado and trío ceviche."
         }
       ],
       "reviewsAnalysed": 5,
@@ -1144,7 +2533,7 @@
         },
         {
           "rating": 5,
-          "text": "Can\u2019t wait for you guys to open. You\u2019ve done a beautiful job improving the site \u2014 it\u2019s gorgeous. Please let us know when you will open! We live on the street and would love to support you during a soft launch. We\u2019re so excited!"
+          "text": "Can’t wait for you guys to open. You’ve done a beautiful job improving the site — it’s gorgeous. Please let us know when you will open! We live on the street and would love to support you during a soft launch. We’re so excited!"
         },
         {
           "rating": 5,
