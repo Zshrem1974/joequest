@@ -21,14 +21,21 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  PLACES_BASE, CITY,
-  isRealCafe, typesAreCafe, inBoca, addressInBoca,
-  priceToDollars, hoursLabel, score,
+  PLACES_BASE,
+  isRealCafe, typesAreCafe, priceToDollars, hoursLabel, score,
   getReviews, getPicks, newAnthropic,
 } from "../lib/data.js";
+import { CITIES, cityBySlug } from "../lib/cities.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", "boca-snapshot.json");
+const cityArg = process.argv.find((a) => a.startsWith("--city="));
+const citySlug = cityArg ? cityArg.split("=")[1] : "boca-raton";
+const CITY_CFG = cityBySlug(citySlug);
+if (!CITY_CFG) {
+  console.error(`❌  Unknown city slug "${citySlug}". Known: ${CITIES.map((c) => c.slug).join(", ")}`);
+  process.exit(1);
+}
+const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", `${citySlug}.json`);
 
 const FIELD_MASK = [
   "places.id", "places.displayName", "places.formattedAddress",
@@ -55,7 +62,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Searching Google Places for: "${query}, ${CITY}"`);
+  console.log(`Searching Google Places for: "${query}, ${CITY_CFG.displayName}"`);
   const r = await fetch(`${PLACES_BASE}/places:searchText`, {
     method: "POST",
     headers: {
@@ -63,7 +70,7 @@ async function main() {
       "X-Goog-Api-Key": googleKey,
       "X-Goog-FieldMask": FIELD_MASK,
     },
-    body: JSON.stringify({ textQuery: `${query}, ${CITY}`, maxResultCount: 5 }),
+    body: JSON.stringify({ textQuery: `${query}, ${CITY_CFG.displayName}`, maxResultCount: 5 }),
   });
   if (!r.ok) throw new Error(`Places search ${r.status}: ${await r.text()}`);
   const data = await r.json();
@@ -79,8 +86,11 @@ async function main() {
   // Apply the same filters; warn rather than refusing in case user wants to override.
   const fName  = isRealCafe(place.displayName?.text);
   const fTypes = typesAreCafe(place.types);
-  const fBox   = inBoca(place.location?.latitude, place.location?.longitude);
-  const fAddr  = addressInBoca(place.formattedAddress);
+  const lat = place.location?.latitude, lng = place.location?.longitude;
+  const b = CITY_CFG.bbox;
+  const fBox = typeof lat === "number" && typeof lng === "number"
+    && lat >= b.south && lat <= b.north && lng >= b.west && lng <= b.east;
+  const fAddr = CITY_CFG.addressRegex.test(place.formattedAddress || "");
   console.log(`    filters: name=${fName} types=${fTypes} bbox=${fBox} address=${fAddr}`);
   if (!fName || !fTypes || !fBox || !fAddr) {
     console.log("⚠️   Filter failure — adding anyway because you asked. Tweak filters if this is consistent.");
@@ -88,6 +98,7 @@ async function main() {
 
   const h = place.regularOpeningHours ?? place.currentOpeningHours;
   const cafe = {
+    city: CITY_CFG.slug,
     id: place.id,
     name: place.displayName?.text || "Unknown",
     address: place.formattedAddress || "",

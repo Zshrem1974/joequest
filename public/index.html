@@ -1610,14 +1610,14 @@
         <h1>Coffee Quest Begins</h1>
         <p id="greeting-sub">One drink, one bite, per café. Hand-picked from real reviews.</p>
         <div class="city-bar">
-          <label for="city-select" class="city-bar-k">City</label>
-          <select id="city-select" class="city-select" aria-label="Choose city"></select>
+          <span class="city-bar-k">City</span>
+          <select class="city-select" aria-label="Choose city"></select>
           <div class="zip-wrap">
             <input type="text" inputmode="numeric" pattern="\d*" maxlength="5"
-              id="zip-input" class="zip-input" placeholder="or ZIP" aria-label="ZIP code overrides city">
-            <button class="zip-clear" id="zip-clear" hidden aria-label="Clear ZIP">×</button>
+              class="zip-input" placeholder="or ZIP" aria-label="ZIP code overrides city">
+            <button class="zip-clear" hidden aria-label="Clear ZIP">×</button>
           </div>
-          <span class="city-bar-hint" id="origin-hint" hidden></span>
+          <span class="city-bar-hint" hidden></span>
         </div>
       </div>
 
@@ -1637,6 +1637,16 @@
     <!--  MAP                                                       -->
     <!-- ========================================================== -->
     <main class="view" id="view-map">
+      <div class="city-bar city-bar-map">
+        <span class="city-bar-k">City</span>
+        <select class="city-select" aria-label="Choose city"></select>
+        <div class="zip-wrap">
+          <input type="text" inputmode="numeric" pattern="\d*" maxlength="5"
+            class="zip-input" placeholder="or ZIP" aria-label="ZIP code overrides city">
+          <button class="zip-clear" hidden aria-label="Clear ZIP">×</button>
+        </div>
+        <span class="city-bar-hint" hidden></span>
+      </div>
       <div class="filter-bar" id="filter-bar"></div>
 
       <div class="filter-summary">
@@ -2354,29 +2364,25 @@
     }
 
     function renderCityDropdown() {
-      const sel = document.getElementById("city-select");
-      if (!sel) return;
-      sel.innerHTML = state.cities.map((c) => {
+      const options = state.cities.map((c) => {
         const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
         return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
       }).join("");
-      sel.disabled = !!state.zipMode;
-
-      const clearBtn = document.getElementById("zip-clear");
-      if (clearBtn) clearBtn.hidden = !state.zipMode;
-
-      const hint = document.getElementById("origin-hint");
-      if (hint) {
-        if (state.zipMode && state.zip) {
-          hint.hidden = false;
-          hint.textContent = `📮 ZIP ${state.zip} · sorting all cities by distance`;
-        } else if (state.origin) {
-          hint.hidden = false;
-          hint.textContent = "📍 sorting by distance from you";
-        } else {
-          hint.hidden = true;
-        }
-      }
+      $$(".city-select").forEach((sel) => {
+        sel.innerHTML = options;
+        sel.value = state.city;
+        sel.disabled = !!state.zipMode;
+      });
+      $$(".zip-clear").forEach((b) => { b.hidden = !state.zipMode; });
+      const hintText = state.zipMode && state.zip
+        ? `📮 ZIP ${state.zip} · sorting all cities by distance`
+        : state.origin
+          ? "📍 sorting by distance from you"
+          : "";
+      $$(".city-bar-hint").forEach((h) => {
+        h.hidden = !hintText;
+        h.textContent = hintText;
+      });
     }
 
     async function applyZip(zip) {
@@ -2413,11 +2419,11 @@
         state.origin = null;
         state.originSource = null;
       }
-      const zi = document.getElementById("zip-input");
-      if (zi) zi.value = "";
+      $$(".zip-input").forEach((zi) => { zi.value = ""; });
       loadCafesForCity(state.city).then(() => {
         renderCityDropdown();
         renderDiscover();
+        if (state.view === "map") renderMap();
       });
     }
 
@@ -4012,21 +4018,23 @@
       // mini-map → go to map
       $("#mini-map").addEventListener("click", () => go("map"));
 
-      // city dropdown
-      $("#city-select")?.addEventListener("change", (e) => selectCity(e.target.value));
-
-      // zipcode override (Stage C)
-      const zipInput = $("#zip-input");
-      zipInput?.addEventListener("input", () => {
-        // Strip non-digits, fire when exactly 5
-        zipInput.value = zipInput.value.replace(/\D/g, "").slice(0, 5);
-        if (zipInput.value.length === 5) applyZip(zipInput.value);
+      // city dropdown + zipcode override (Stage C) — both Discover and Map bars
+      $$(".city-select").forEach((sel) =>
+        sel.addEventListener("change", (e) => selectCity(e.target.value))
+      );
+      $$(".zip-input").forEach((zipInput) => {
+        zipInput.addEventListener("input", () => {
+          zipInput.value = zipInput.value.replace(/\D/g, "").slice(0, 5);
+          // Keep both inputs in sync
+          $$(".zip-input").forEach((other) => { if (other !== zipInput) other.value = zipInput.value; });
+          if (zipInput.value.length === 5) applyZip(zipInput.value);
+        });
+        zipInput.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" && /^\d{5}$/.test(zipInput.value)) applyZip(zipInput.value);
+          if (e.key === "Escape") { zipInput.value = ""; clearZip(); }
+        });
       });
-      zipInput?.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" && /^\d{5}$/.test(zipInput.value)) applyZip(zipInput.value);
-        if (e.key === "Escape") { zipInput.value = ""; clearZip(); }
-      });
-      $("#zip-clear")?.addEventListener("click", clearZip);
+      $$(".zip-clear").forEach((b) => b.addEventListener("click", clearZip));
 
       // filter clear
       els.filterClear.addEventListener("click", () => {

@@ -2,33 +2,46 @@ You're joining the JoeQuest project as PM-in-the-loop. Get up to speed and help 
 
 ## What JoeQuest is
 
-A recommendation engine that reads a coffee shop's Google reviews and names the ONE drink and ONE food item most worth ordering at each café. Per-café picks roll up into city-wide "best of" awards. Picks come from Claude (Opus 4.7) with JSON-schema-enforced structured output. There is a live, deployed web MVP for Boca Raton, FL.
+A recommendation engine that reads a coffee shop's Google reviews and names the ONE drink and ONE food item most worth ordering at each café. Per-café picks roll up into city-wide "best of" awards. Picks come from Claude (Opus 4.7) with JSON-schema-enforced structured output. There is a live, deployed web MVP covering **6 South-Florida cities**: Boca Raton, Delray Beach, Boynton Beach, Deerfield Beach, Fort Lauderdale, Miami.
 
 ## Where the project is right now — LIVE
 
 - **Public URL:** https://joequest.onrender.com
 - **Source:** https://github.com/Zshrem1974/joequest
 - Hosted on Render (free tier, deployed via `render.yaml` blueprint).
-- Verified live: `/api/status` -> both keys configured, snapshot loaded;
-  `/api/cafes` -> 19 Boca cafés (all from disk); `/api/cafes/:id` -> drink + food
-  picks (all from disk, `source: "snapshot"`). Warm response ~190 ms.
+- Verified live: `/api/status` reports a `snapshots[]` array (one entry per
+  city, all loaded from disk). `/api/cafes?city=<slug>` returns that
+  city's cafés; `/api/cafes?all=1` returns the flat union (89 cafés total).
+  `/api/cities` powers the dropdown. Warm response ~190 ms.
+
+Coverage: **89 cafés across 6 cities** (Boca 20, Delray 15, Boynton 11,
+Deerfield 9, Fort Lauderdale 18, Miami 16).
 
 ## Build artifacts (~/joequest/)
 
 Engine / CLI: `test-offline.js`, `joequest-engine.js`, `scan-list.js`, `recurate.js`.
 Live app:
-- `server.js` (Express API: list, detail, photo proxy, favourites, taste, auth-config, status; snapshot loader)
-- `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label)
-- `public/index.html` (vanilla-JS UI, single page, **nine views**; loads `supabase-js` from CDN for browser-side auth)
+- `server.js` (Express API: list, detail, photo proxy, favourites, taste, auth-config, status, **cities, zip→latlng**; multi-snapshot loader)
+- `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label; **city-parameterized**)
+- `lib/cities.js` (**6 FL city configs**: slug, bbox, center, addressRegex, searchQuery; `nearestCity()` helper)
+- `public/index.html` (vanilla-JS UI, single page, **nine views** + city dropdown / ZIP override / distance lines; loads `supabase-js` from CDN for browser-side auth)
 - `public/img/` (brand SVGs: lockup, favicon, app icon, standalone pin; PNG: JoeQuester marker)
 - `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles, user settings, offers, help messages. In-memory fallback for dev.)
 
-Snapshot pipeline:
-- `data/boca-snapshot.json` — café metadata + picks + **periods + weekdayDescriptions** + per-place `fetched_at`
-- `scripts/snapshot.js` — full refresh with the 90-day rule, `--force` + `--dry-run`
-- `scripts/refresh-hours.js` — cheap hours-only refresh (~$0.005 + per-place Details backfill), no Claude
-- `scripts/add-cafe.js` — manually add a single café that Google's top-20 search misses
-- `.github/workflows/snapshot.yml` — monthly cron + manual dispatch, opens a PR with the diff
+Snapshot pipeline (one file per city):
+- `data/boca-raton.json`, `delray-beach.json`, `boynton-beach.json`,
+  `deerfield-beach.json`, `fort-lauderdale.json`, `miami.json` — each
+  has café metadata + picks + **periods + weekdayDescriptions** + per-
+  place `fetched_at` + `citySlug`.
+- `scripts/snapshot.js --city=<slug>` — full refresh with the 90-day
+  rule, `--force` + `--dry-run`. Defaults to `boca-raton`.
+- `scripts/refresh-hours.js` — cheap hours-only refresh (~$0.005 + per-
+  place Details backfill), no Claude.
+- `scripts/add-cafe.js "<name>"` — manually add a single café that
+  Google's top-20 search misses.
+- `.github/workflows/snapshot.yml` — monthly cron + manual dispatch.
+  (Currently still single-city; needs the city-matrix update — see
+  next-steps.)
 
 Admin / analytics:
 - `admin-views/admin.html` — gated dashboard (events, funnel, by-day, by-name, by-view)
@@ -115,14 +128,19 @@ The deployed app implements nine screens with the brand palette and
 Poppins / Inter typography. **Every drawer item is now functional** —
 no more `alert()` placeholders.
 
-- **Discover** — header lockup, "Coffee Quest Begins" greeting, mini-map with
-  brand pins + rating pills, ranked café card list with rank badges,
-  **live-computed open/closed status** (from each café's `periods[]` +
-  current Boca time — accurate regardless of snapshot age, no Google live
-  call), heart-save, photo via the photo proxy, two-up Drink/Food strip,
-  **"Today: 8 AM – 9 PM" line** at the bottom of each card. **Drink pick
-  shows a mint `✓ your taste` chip** when it matches the user's coffee
-  taste profile (Stage 2 — honest, never fabricated).
+- **Discover** — header lockup, "Coffee Quest Begins" greeting, **city
+  dropdown + ZIP override** in the city-bar (geolocation > ZIP > last city
+  > Boca for first-timers; persisted via `localStorage["jq.lastCity"]`),
+  mini-map with brand pins + rating pills, ranked café card list with rank
+  badges, **live-computed open/closed status** (from each café's
+  `periods[]` + current ET time — accurate regardless of snapshot age, no
+  Google live call), heart-save, photo via the photo proxy, two-up
+  Drink/Food strip, **"📍 1.4 mi away" distance line** (only when an
+  origin is set, using mi/km from Settings), **"Today: 8 AM – 9 PM" line**
+  at the bottom of each card. **Drink pick shows a mint `✓ your taste`
+  chip** when it matches the user's coffee taste profile (honest, never
+  fabricated). Typing a 5-digit ZIP disables the city dropdown and re-
+  sorts all 89 cafés across the 6 cities by distance from the ZIP centroid.
 - **Map** — Google-Maps-style interaction:
   - viewBox-based zoom (1×–5×) with `+` / `−` controls
   - drag-to-pan once zoomed in
