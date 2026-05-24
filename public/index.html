@@ -412,7 +412,12 @@
       overflow: hidden;
       position: relative;
       box-shadow: var(--shadow-sm);
+      cursor: grab;
+      touch-action: none;       /* let pan handlers own the gesture */
+      user-select: none;
+      -webkit-user-select: none;
     }
+    .big-map.panning { cursor: grabbing; }
     .big-map .map-canvas { width: 100%; height: 100%; }
 
     /* Floating zoom + locate controls in the corner of the map */
@@ -1352,13 +1357,16 @@
       <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#5E3E27"/>
     `;
 
-    function pinSVG(x, y, scale, id, rating) {
-      // Pill scales with the pin so it works on both mini and full maps.
+    // Pin renderer. Outer transform `translate(x,y) scale(1/zoom)` keeps the
+    // pin's rendered pixel size CONSTANT as the user zooms — same as Google
+    // Maps. The map background scales with viewBox, but pins do not.
+    function pinSVG(x, y, scale, id, rating, zoom = 1) {
+      const cs = 1 / zoom;
       const pillW = 26 + scale * 46;          // big ≈ 50, mini ≈ 39
       const pillH = 12 + scale * 17;          // big ≈ 21, mini ≈ 17
       const pillFs = 6.5 + scale * 11.5;      // big ≈ 12.5, mini ≈ 9.7
       const pill = rating
-        ? `<g transform="translate(${x - pillW / 2}, ${y + 3})">
+        ? `<g transform="translate(${-pillW / 2}, 3)">
              <rect width="${pillW}" height="${pillH}" rx="${pillH / 2}" fill="#FFF6EC" stroke="rgba(43,28,18,0.18)" stroke-width="1"/>
              <text x="${pillW / 2}" y="${pillH * 0.7}" text-anchor="middle" font-family="Inter, sans-serif" font-size="${pillFs}" font-weight="700">
                <tspan fill="#E8A317">★</tspan><tspan fill="#5E3E27" dx="2">${rating.toFixed(1)}</tspan>
@@ -1366,9 +1374,9 @@
            </g>`
         : "";
       return `
-        <g class="map-pin" data-id="${id}" style="cursor: pointer;">
-          <ellipse cx="${x}" cy="${y + 2}" rx="${Math.max(5, 14 * scale)}" ry="2" fill="rgba(43,28,18,0.22)"/>
-          <g transform="translate(${x - 32 * scale}, ${y - 82 * scale}) scale(${scale})">
+        <g class="map-pin" data-id="${id}" transform="translate(${x}, ${y}) scale(${cs})" style="cursor: pointer;">
+          <ellipse cx="0" cy="2" rx="${Math.max(5, 14 * scale)}" ry="2" fill="rgba(43,28,18,0.22)"/>
+          <g transform="translate(${-32 * scale}, ${-82 * scale}) scale(${scale})">
             ${BRAND_PIN_PATHS}
           </g>
           ${pill}
@@ -1412,39 +1420,44 @@
       `;
       svg.insertAdjacentHTML("beforeend", bg);
 
-      // JoeQuesters markers (drawn under café pins). Uses the branded purple
-      // smiley-cup pin PNG. Tip of the marker lands on the simulated coord.
+      // Markers (questers, "you", café pins) all get an outer counter-scale
+      // of 1/zoom on the detailed map so they keep a constant pixel size as
+      // the user zooms in — matches Google Maps.
+      const zoom = detailed ? state.mapView.zoom : 1;
+      const cs = 1 / zoom;
+
+      // JoeQuesters markers (drawn under café pins, simulated positions).
       if (detailed && state.filters.questers) {
         const positions = [
           [0.30, 0.45], [0.18, 0.62], [0.60, 0.68], [0.74, 0.30],
           [0.42, 0.78], [0.55, 0.18], [0.86, 0.62],
         ];
-        const mw = 22, mh = 30;   // aspect ≈ 256:344 from joequester-marker.png
+        const mw = 22, mh = 30;
         positions.forEach(([fx, fy]) => {
           const cx = fx * w, cy = fy * h;
           svg.insertAdjacentHTML("beforeend", `
-            <ellipse cx="${cx}" cy="${cy + 1}" rx="6" ry="1.8" fill="rgba(43,28,18,0.22)"/>
-            <image href="/img/joequester-marker.png"
-              x="${cx - mw / 2}" y="${cy - mh}"
-              width="${mw}" height="${mh}"
-              preserveAspectRatio="xMidYMid meet"
-              style="pointer-events: none;"/>
+            <g transform="translate(${cx}, ${cy}) scale(${cs})">
+              <ellipse cy="1" rx="6" ry="1.8" fill="rgba(43,28,18,0.22)"/>
+              <image href="/img/joequester-marker.png"
+                x="${-mw / 2}" y="${-mh}"
+                width="${mw}" height="${mh}"
+                preserveAspectRatio="xMidYMid meet"
+                style="pointer-events: none;"/>
+            </g>
           `);
         });
       }
 
-      // "You are here" — red JQ-shaped pin at the user's location (Boca centre
-      // until geolocation provides a real fix). Slightly larger than café pins
-      // so it stays distinct, with a soft pulse halo at the base.
+      // "You are here" — red JQ-shaped pin, counter-scaled to stay constant.
       if (detailed) {
         const me = state.myLocation;
         const { x: yx, y: yy } = projectXY(me.lat, me.lng, w, h);
         const us = 0.58;
         svg.insertAdjacentHTML("beforeend", `
-          <g class="user-pin">
-            <circle cx="${yx}" cy="${yy + 1}" r="${Math.max(8, 22 * us)}" fill="rgba(217,72,58,0.16)"/>
-            <ellipse cx="${yx}" cy="${yy + 2}" rx="${Math.max(6, 16 * us)}" ry="2.4" fill="rgba(43,28,18,0.28)"/>
-            <g transform="translate(${yx - 32 * us}, ${yy - 82 * us}) scale(${us})">
+          <g class="user-pin" transform="translate(${yx}, ${yy}) scale(${cs})">
+            <circle cy="1" r="${Math.max(8, 22 * us)}" fill="rgba(217,72,58,0.16)"/>
+            <ellipse cy="2" rx="${Math.max(6, 16 * us)}" ry="2.4" fill="rgba(43,28,18,0.28)"/>
+            <g transform="translate(${-32 * us}, ${-82 * us}) scale(${us})">
               ${USER_PIN_PATHS}
             </g>
           </g>
@@ -1456,8 +1469,14 @@
       cafes.forEach((c) => {
         if (typeof c.lat !== "number" || typeof c.lng !== "number") return;
         const { x, y } = projectXY(c.lat, c.lng, w, h);
-        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, c.rating ?? 0));
+        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, c.rating ?? 0, zoom));
       });
+    }
+
+    // Lightweight re-render of just the big map SVG (no list rebuild).
+    // Used during pan/zoom for smooth updates.
+    function redrawBigMap() {
+      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
     }
 
     // ---- card rendering ----
@@ -1751,6 +1770,55 @@
       } catch {}
     }
 
+    // ---- map pan (drag) ----
+    function bindMapPan(mapEl) {
+      if (!mapEl) return;
+      let drag = null;
+      let rafPending = false;
+
+      mapEl.addEventListener("pointerdown", (e) => {
+        // Don't start a pan if the press lands on a pin or a control button.
+        if (e.target.closest(".map-pin")) return;
+        if (e.target.closest(".user-pin")) return;
+        if (e.target.closest(".map-controls")) return;
+        // Don't pan when fully zoomed out (nothing to pan to).
+        if (state.mapView.zoom <= 1.02) return;
+
+        drag = {
+          x0: e.clientX,
+          y0: e.clientY,
+          cx0: state.mapView.cx,
+          cy0: state.mapView.cy,
+          ptr: e.pointerId,
+        };
+        try { mapEl.setPointerCapture(e.pointerId); } catch {}
+        mapEl.classList.add("panning");
+      });
+
+      mapEl.addEventListener("pointermove", (e) => {
+        if (!drag) return;
+        const rect = mapEl.getBoundingClientRect();
+        const dx = (e.clientX - drag.x0) / rect.width;
+        const dy = (e.clientY - drag.y0) / rect.height;
+        const z = state.mapView.zoom;
+        state.mapView.cx = drag.cx0 - dx / z;
+        state.mapView.cy = drag.cy0 - dy / z;
+        if (!rafPending) {
+          rafPending = true;
+          requestAnimationFrame(() => { rafPending = false; redrawBigMap(); });
+        }
+      });
+
+      const endDrag = (e) => {
+        if (!drag) return;
+        try { mapEl.releasePointerCapture(drag.ptr); } catch {}
+        drag = null;
+        mapEl.classList.remove("panning");
+      };
+      mapEl.addEventListener("pointerup", endDrag);
+      mapEl.addEventListener("pointercancel", endDrag);
+    }
+
     // ---- geolocation ----
     function locateMe() {
       if (!navigator.geolocation) {
@@ -1773,7 +1841,7 @@
             alert("You're outside Boca Raton — showing the city view. JoeQuest is Boca-only for now.");
           }
           go("map");
-          renderMap();
+          redrawBigMap();
         },
         (err) => alert("Couldn't get your location: " + err.message),
         { enableHighAccuracy: true, timeout: 8000, maximumAge: 60_000 }
@@ -1803,15 +1871,18 @@
       // map zoom + locate
       $("#zoom-in").addEventListener("click", () => {
         state.mapView.zoom = Math.min(5, state.mapView.zoom * 1.5);
-        renderMap();
+        redrawBigMap();
       });
       $("#zoom-out").addEventListener("click", () => {
         const z = state.mapView.zoom / 1.5;
         state.mapView.zoom = z <= 1.02 ? 1 : z;
         if (state.mapView.zoom === 1) { state.mapView.cx = 0.5; state.mapView.cy = 0.5; }
-        renderMap();
+        redrawBigMap();
       });
       $("#locate-me").addEventListener("click", locateMe);
+
+      // drag-to-pan on the big map
+      bindMapPan($("#big-map"));
 
       // global click delegation
       document.addEventListener("click", (e) => {
