@@ -1,5 +1,52 @@
 # CHANGES
 
+## Refresh pipeline: monthly cron now refreshes ALL 6 cities
+
+**Correctness fix.** The monthly GitHub Action previously defaulted to Boca
+only — Delray, Boynton, Deerfield, Fort Lauderdale, and Miami would have
+silently gone stale at their 90-day mark. Now every monthly run iterates
+every city in `lib/cities.js`.
+
+### What changed in `.github/workflows/snapshot.yml`
+
+- Single job serialises calls to `node scripts/snapshot.js --city=<slug>`
+  for all 6 cities, then opens **one combined PR** with the diff.
+- `workflow_dispatch` gained a `city` input — leave blank to run all,
+  fill in a single slug (e.g. `delray-beach`) to target one.
+- `force` input still ignores the 90-day rule when set.
+- Per-city failures don't abort the rest (`|| echo failed — continuing`)
+  so one bad city can't block the other five.
+
+### Why one combined PR instead of one-per-city
+
+- 6 separate PRs would step on each other's `data/*.json` diffs and
+  thrash reviewer attention. One PR keeps the whole month's changes
+  in a single reviewable unit and makes rollback trivial (revert one
+  merge).
+- The trade-off is cycle time — all 6 cities run serially in one job,
+  so a partial failure in city 3 still gives you cities 1-2's results
+  in the same PR.
+
+### City list is duplicated in YAML — kept in sync with `lib/cities.js`
+
+Action runners can't easily import ES modules from YAML, so the city
+slug list is hardcoded in the workflow's run-step. A comment in the
+file points back to `lib/cities.js` as the real source. **When you add
+a new city, update both.**
+
+### MUST_INCLUDE per-city (queued)
+
+`lib/cities.js` has the new `mustInclude: [...]` field on Boca-Raton
+seeded with the place_ids for Espresso Joint and Rosalia's Botanical
+Cafe — both have dropped out of Google's rotating top-20 before. The
+union logic in `scripts/snapshot.js` (Place Details lookup for any
+listed id missing from the fresh search results) is **not yet
+implemented**; until it lands, those two cafés can still drop on a
+fresh refresh and need re-adding via `scripts/add-cafe.js`. **TODO**
+for the next session.
+
+---
+
 ## Multi-city (Stages A → D) + share + deep links + Espresso Joint refill
 
 Expanded coverage from Boca-only to **6 South-Florida cities**: Boca Raton,

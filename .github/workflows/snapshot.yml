@@ -1,9 +1,12 @@
 name: Monthly snapshot refresh
 
-# Runs the snapshot script on a monthly schedule. Cafés <90 days old are
-# skipped automatically (per-place rule in scripts/snapshot.js), so this
-# only spends Claude tokens on stale or new entries. The result is opened
-# as a PR so a human reviews the JSON diff before it goes live.
+# Runs scripts/snapshot.js for every city on a monthly schedule. Cafés
+# <90 days old are skipped automatically (per-place rule in the script),
+# so this only spends Claude tokens on stale or new entries. The result
+# is opened as ONE combined PR so a human reviews the full JSON diff
+# across all cities before it goes live. One PR (vs. 6 per-city PRs)
+# avoids review fatigue and merge conflicts — see CHANGES.md for the
+# rationale.
 #
 # REQUIRED REPO SECRETS (Settings → Secrets and variables → Actions):
 #   GOOGLE_PLACES_API_KEY
@@ -19,6 +22,10 @@ on:
         description: "Force re-pull every café (ignore 90-day rule)"
         required: false
         default: "false"
+      city:
+        description: "Target a single city slug (e.g. boca-raton). Leave blank for all 6."
+        required: false
+        default: ""
 
 jobs:
   refresh:
@@ -37,31 +44,45 @@ jobs:
 
       - run: npm ci
 
-      - name: Refresh Boca snapshot
+      - name: Refresh snapshots
         env:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          if [ "${{ inputs.force }}" = "true" ]; then
-            node scripts/snapshot.js --force
+          # City list — keep in sync with lib/cities.js (the real source).
+          # We serialise rather than fan out via matrix so the run produces
+          # one combined PR. Per-city errors don't abort the rest.
+          if [ -n "${{ inputs.city }}" ]; then
+            CITIES="${{ inputs.city }}"
           else
-            node scripts/snapshot.js
+            CITIES="boca-raton delray-beach boynton-beach deerfield-beach fort-lauderdale miami"
           fi
+          FORCE_FLAG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          for slug in $CITIES; do
+            echo "═══════════════════════════════════════════════"
+            echo "  $slug"
+            echo "═══════════════════════════════════════════════"
+            node scripts/snapshot.js --city=$slug $FORCE_FLAG || echo "⚠️  $slug failed — continuing"
+          done
 
-      - name: Open PR if snapshot changed
+      - name: Open PR if snapshots changed
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "chore: refresh Boca snapshot"
-          title: "Snapshot refresh — Boca Raton"
+          commit-message: "chore: monthly snapshot refresh (all cities)"
+          title: "Snapshot refresh — all cities"
           body: |
-            Automated monthly snapshot refresh from `scripts/snapshot.js`.
+            Automated monthly snapshot refresh across all 6 cities.
 
             **Review before merging:**
-            - Any obvious chains/non-cafés that slipped through the filters?
+            - Any obvious chains/non-cafés that slipped through?
             - Picks that swung wildly (drink/food changed completely)?
             - Newly added or dropped cafés make sense?
 
             Snapshot rule: per-café 90-day clock, hard block, whole-pipeline pull.
+            City list mirrors `lib/cities.js`.
           branch: snapshot/monthly-refresh
           delete-branch: true
           labels: snapshot, automated
