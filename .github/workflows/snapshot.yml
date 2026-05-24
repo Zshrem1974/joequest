@@ -1,0 +1,67 @@
+name: Monthly snapshot refresh
+
+# Runs the snapshot script on a monthly schedule. Cafés <90 days old are
+# skipped automatically (per-place rule in scripts/snapshot.js), so this
+# only spends Claude tokens on stale or new entries. The result is opened
+# as a PR so a human reviews the JSON diff before it goes live.
+#
+# REQUIRED REPO SECRETS (Settings → Secrets and variables → Actions):
+#   GOOGLE_PLACES_API_KEY
+#   ANTHROPIC_API_KEY
+
+on:
+  schedule:
+    # 09:00 UTC on the 1st of every month
+    - cron: "0 9 1 * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force re-pull every café (ignore 90-day rule)"
+        required: false
+        default: "false"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Refresh Boca snapshot
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            node scripts/snapshot.js --force
+          else
+            node scripts/snapshot.js
+          fi
+
+      - name: Open PR if snapshot changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: refresh Boca snapshot"
+          title: "Snapshot refresh — Boca Raton"
+          body: |
+            Automated monthly snapshot refresh from `scripts/snapshot.js`.
+
+            **Review before merging:**
+            - Any obvious chains/non-cafés that slipped through the filters?
+            - Picks that swung wildly (drink/food changed completely)?
+            - Newly added or dropped cafés make sense?
+
+            Snapshot rule: per-café 90-day clock, hard block, whole-pipeline pull.
+          branch: snapshot/monthly-refresh
+          delete-branch: true
+          labels: snapshot, automated

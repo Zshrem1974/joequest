@@ -34,48 +34,59 @@ Deploy: `render.yaml`, `fly.toml`, `.gitignore`, `DEPLOY.md`, `CHANGES.md`.
   3. Live Google Places + Claude call (only when both fall through).
 - Photo proxy at `/api/photo` keeps the Google key out of the browser.
 
-## Snapshot model — the MVP refresh policy
+## Snapshot model — the MVP refresh policy (LOCKED)
 
-The deployed app serves entirely from `data/boca-snapshot.json` (committed to
-the repo). This means:
+The deployed app serves entirely from `data/boca-snapshot.json` (committed
+to the repo). This means **zero API cost per browse** — Render free-tier
+sleep doesn't matter, the snapshot survives every wake / redeploy.
 
-- **Zero API cost per browse.** Render free-tier sleep doesn't matter — the
-  snapshot file survives every wake / redeploy.
-- **One-time refresh per city/coffee place.** When we want to refresh Boca
-  picks, we re-run the snapshot script, commit the new JSON, push. That's
-  the entire refresh ceremony for MVP.
-- **Adding a café:** we don't auto-discover until we resync. The current shape
-  is "Google's top 20 cafés in Boca filtered by city-boundary + types[] +
-  blocklist." If a worthy new café opens, it's picked up the next time we
-  re-run the snapshot.
-- **Removing a chain false-positive:** add the chain name to `EXCLUDE_NAMES`
-  in `server.js`, re-run snapshot, commit. (Pura Vida already in blocklist.)
-- **Editing a single café's picks** (e.g., reviewers got it wrong): hand-edit
-  the JSON. The schema is flat and obvious. Commit.
+### The 90-day-per-café rule (locked decisions)
 
-### How to refresh the Boca snapshot (~$0.80 of Claude, ~90 seconds)
+| Decision | Choice |
+|---|---|
+| Clock scope | **Per café.** Each `place_id` has its own `fetched_at`. |
+| What a "pull" includes | **Whole pipeline** — Google place metadata, reviews, and the Claude drink/food picks, all stored together. |
+| Enforcement | **Hard block in `scripts/snapshot.js`.** Refuses to re-pull a café whose `fetched_at` is <90 days old. `--force` flag overrides for emergencies. |
+| Trigger | **Scheduled monthly via GitHub Action.** Manual override via `workflow_dispatch` (with optional force) and via running the script locally. |
 
+This means a café's picks change at most every 90 days. We trust that reviews
+don't shift meaningfully on shorter timescales, and we want stable picks so
+users can rely on the recommendation. AI tokens spent only when the data is
+stale OR a new café appears in Google's results.
+
+### How to refresh
+
+**Automatic:** `.github/workflows/snapshot.yml` runs on the 1st of each month
+at 09:00 UTC. It runs the script (90-day rule enforced) and opens a PR with
+the JSON diff. A human reviews and merges.
+
+**Manual:**
 ```bash
-# From the repo root, against the live server:
-python3 scripts/snapshot-boca.py   # to be extracted from the inline session script
-# OR ad-hoc via curl + a quick python loop against /api/cafes and /api/cafes/:id,
-# saving the assembled payload into data/boca-snapshot.json.
-git add data/boca-snapshot.json && git commit -m "Refresh Boca snapshot" && git push
+GOOGLE_PLACES_API_KEY=xxx ANTHROPIC_API_KEY=yyy node scripts/snapshot.js
+# --force   re-pull every café
+# --dry-run show what would change without writing
 ```
 
-Render redeploys automatically.
+Required repo secrets for the Action: `GOOGLE_PLACES_API_KEY`, `ANTHROPIC_API_KEY`.
+
+### What the rule changes practically
+
+- **Adding a café:** new cafés that appear in Google's top-20 list get pulled on the next refresh — they have no `fetched_at`, so they're always considered stale.
+- **Removing a chain false-positive:** add to `EXCLUDE_NAMES` in `lib/data.js`, re-run snapshot, commit.
+- **Dropping a café that no longer passes filters** (closed, renamed to a chain, moved out of Boca): automatic — the script tracks `stats.dropped` and they're absent from the new snapshot.
+- **Editing a single café's picks** (e.g., reviewers got it wrong): hand-edit `data/boca-snapshot.json` — the schema is flat and obvious. Bump that café's `fetched_at` so the script doesn't immediately overwrite your edit.
 
 ## Multi-city — not yet, deliberately
 
-When we add the second city, this snapshot pattern becomes:
+When we add the second city the snapshot pattern generalizes:
 
 - `data/{city-slug}.json` per city.
 - Server reads all snapshots at startup, routes by `?city=` param.
-- A scheduled job (GitHub Action cron, daily) regenerates each city's snapshot and opens a PR with the diff — a human approves before it goes live.
+- The same GitHub Action runs per-city snapshots in a matrix.
 
-That design lives in the head right now; it's the *next-step* once we have user
-demand to leave Boca. **Do not generalize until we know whether deep-Boca beats
-broad-anywhere on engagement.**
+That design lives in the head; it's the *next-step* once we have demand. **Do
+not generalize until we know whether deep-Boca beats broad-anywhere on
+engagement.**
 
 ## Locked product decisions
 
@@ -100,11 +111,11 @@ spend rate.
 1. **Restrict the Google API key (DO FIRST, ~10 min, security).** Cloud Console
    → Credentials → the key → API restrictions: Places API (New) only.
    Application restrictions: HTTP referrers → `joequest.onrender.com/*`.
-   Also set a Google Cloud budget alert. (Snapshot saves cost but the key is
-   still public on the network — a leak is still a leak.)
-2. **Extract `scripts/snapshot-boca.py` (~15 min).** Right now the snapshot
-   ceremony lives in an ad-hoc curl+python flow from the session. Turn it into
-   a committed script so refresh is reproducible by anyone with shell access.
+   Set a Google Cloud budget alert too. (Snapshot saves cost but the key is
+   still public on the wire — a leak is still a leak.)
+2. **Add GitHub Actions secrets (~5 min).** Repo → Settings → Secrets and
+   variables → Actions → add `GOOGLE_PLACES_API_KEY` and `ANTHROPIC_API_KEY`.
+   Without these the monthly cron will fail.
 3. **Persist favourites to Supabase (~1 day).** Pick cache is now redundant
    because of the snapshot, but the `favourites` table is still in-memory.
    Connect Supabase (set `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` in
@@ -116,7 +127,7 @@ spend rate.
    a. `/quest` onboarding flow — "where are you → the one best café + its pick." Stronger 5-second hook than a list. ~2 days.
    b. Real map plotting — replace placeholder positions with true lat/lng on a tile layer (Maps JS or Mapbox). Cost/complexity higher.
 6. **Aggregate beyond Google (1–2 wks, biggest moat lever).** Yelp / TripAdvisor / Reddit to break the ~5-review ceiling. Needs legal review (ToS) before building.
-7. **Multi-city scheduled refresh (when we add city #2).** See "Multi-city" section above.
+7. **Multi-city snapshot matrix (when we add city #2).** See "Multi-city" section above.
 
 ## Still-open strategic questions
 
