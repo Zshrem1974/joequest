@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * scripts/refresh-hours.js — patch hours data into data/boca-snapshot.json
+ * scripts/refresh-hours.js — patch hours data into data/<city-slug>.json
  *
  * Does ONE Google Places text search (~$0.005), pulls fresh hours
  * (regularOpeningHours.periods + weekdayDescriptions) for every café that
@@ -14,13 +14,16 @@
  *     triggering the 90-day full-pull rule.
  *
  * USAGE:
- *   GOOGLE_PLACES_API_KEY=xxx node scripts/refresh-hours.js
+ *   GOOGLE_PLACES_API_KEY=xxx node scripts/refresh-hours.js [--city=<slug>]
+ *
+ * Defaults to boca-raton. Valid slugs come from lib/cities.js.
  */
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { searchCafes, hoursLabel } from "../lib/data.js";
+import { CITIES, cityBySlug } from "../lib/cities.js";
 
 const PLACES_BASE = "https://places.googleapis.com/v1";
 
@@ -47,7 +50,14 @@ async function fetchHoursForPlace(placeId, googleKey) {
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", "boca-snapshot.json");
+const cityArg = process.argv.find((a) => a.startsWith("--city="));
+const citySlug = cityArg ? cityArg.split("=")[1] : "boca-raton";
+const CITY_CFG = cityBySlug(citySlug);
+if (!CITY_CFG) {
+  console.error(`❌  Unknown city slug "${citySlug}". Known: ${CITIES.map((c) => c.slug).join(", ")}`);
+  process.exit(1);
+}
+const SNAPSHOT_PATH = path.resolve(__dirname, "..", "data", `${citySlug}.json`);
 
 async function main() {
   const googleKey = process.env.GOOGLE_PLACES_API_KEY;
@@ -61,10 +71,10 @@ async function main() {
   }
 
   const snapshot = JSON.parse(readFileSync(SNAPSHOT_PATH, "utf8"));
-  console.log(`Existing snapshot: ${snapshot.cafes.length} cafés (generated ${snapshot.generatedAt}).`);
+  console.log(`Existing snapshot: ${snapshot.cafes.length} cafés in ${CITY_CFG.displayName} (generated ${snapshot.generatedAt}).`);
   console.log("Fetching fresh café list from Google Places…");
 
-  const fresh = await searchCafes(googleKey);
+  const fresh = await searchCafes(googleKey, CITY_CFG);
   console.log(`  Got ${fresh.length} cafés back.`);
   const byId = new Map(fresh.map((c) => [c.id, c]));
 
