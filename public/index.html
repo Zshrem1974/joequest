@@ -3328,14 +3328,14 @@
             ${c.openNow ? `<span>·</span><span class="open-now">● Open now</span>` : ""}
           </div>
 
-          ${renderHoursBlock(c)}
-
           <div id="sheet-picks">${cached ? renderSheetPicks(cached) : renderSheetLoading()}</div>
 
           <div class="sheet-cta">
             ${c.mapsUri ? `<a href="${escapeHTML(c.mapsUri)}" target="_blank" rel="noopener">Open in Maps</a>` : ""}
             <a class="primary" href="${escapeHTML(c.mapsUri || "#")}" target="_blank" rel="noopener">Get directions</a>
           </div>
+
+          ${renderHoursBlock(c)}
         </div>
       `;
       els.sheet.classList.add("open");
