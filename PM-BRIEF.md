@@ -108,7 +108,7 @@ engagement.**
 The deployed app implements all six screens from the spec, with the brand
 palette and Poppins/Inter typography.
 
-- **Discover** — header lockup, "Best coffee in Boca" greeting, mini-map with
+- **Discover** — header lockup, "Coffee Quest Begins" greeting, mini-map with
   brand pins + rating pills, ranked café card list with rank badges,
   open/closed status badges (with closing/opening time, e.g. "Open · Closes
   10 PM"), heart-save, photo via the photo proxy, two-up Drink/Food strip on
