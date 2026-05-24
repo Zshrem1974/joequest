@@ -1,0 +1,2436 @@
+{
+  "version": 1,
+  "citySlug": "miami",
+  "city": "Miami, FL",
+  "generatedAt": "2026-05-24T21:42:34.265Z",
+  "count": 16,
+  "cafes": [
+    {
+      "city": "miami",
+      "id": "ChIJMZYy4rK22YgRM_O-D2pKGDw",
+      "name": "MIAM CAFE-WYNWOOD",
+      "address": "2750 NW 3rd Ave Suite 21, Miami, FL 33127, USA",
+      "lat": 25.8026667,
+      "lng": -80.2013647,
+      "rating": 4.7,
+      "reviews": 8292,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "sandwich_shop",
+        "brunch_restaurant",
+        "salad_shop",
+        "breakfast_restaurant",
+        "coffee_shop",
+        "cafe",
+        "grocery_store",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4330292861107893043&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJMZYy4rK22YgRM_O-D2pKGDw%2Fphotos%2FAb43m-vnjg4FvxSF-IV5DL61NlRMh77dnSd4HZIJiI8L8856Q4J-Nly1dyl1DFvelMyYshba9W6xTJ60fV9dFTR5imhHuhXhX46AN_WGPSFiG8x1gh05EyWPaK98K5z-FLUbfX1Czhd5iCU3Brwdvd5DdqS89rmBJ09YimzsDrt11GYBVMS2KNgGgVav1xgNcNy-y8Rvnscu6Zw9SxSPwBbMc8xisOOqWXAAOXkcFjR5I_5exaivl7Q1DFYA8B_9YCthMDzU7EvH1FWUduqYAYBAfD4Kh8rmR7Wdp1w-En8ToTjybA&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJadaygN6x2YgRsCcueNDVNxI",
+      "name": "{petite} maman",
+      "address": "140 NE 39th St #136, Miami, FL 33137, USA",
+      "lat": 25.812278199999998,
+      "lng": -80.1925737,
+      "rating": 4.9,
+      "reviews": 1271,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "family_restaurant",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "european_restaurant",
+        "french_restaurant",
+        "cafe",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "service",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 7:00 PM",
+        "Tuesday: 8:00 AM – 7:00 PM",
+        "Wednesday: 8:00 AM – 7:00 PM",
+        "Thursday: 8:00 AM – 7:00 PM",
+        "Friday: 8:00 AM – 7:00 PM",
+        "Saturday: 8:00 AM – 7:00 PM",
+        "Sunday: 8:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1312752907747993520&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJadaygN6x2YgRsCcueNDVNxI%2Fphotos%2FAb43m-taW1RLRHGzgYAapwtFdneapX1OalsUgMz5vSfXb0gyotVkErVo4J9g0kTi9liATMAPLq9ClsilCdJM1A6nR9j6LKVsFRpuF-Ic3NjHkIqUfVggbTVHhELK-bWPSFeYs4atGxgfe5vVlI1SsQ9WtKIntfEw7NUgy8agWWCUeZDuTEWbU2wnAvEUaPJOi3-zpN5KSsJ7UPGMwyUeXBdbBqh1JANf8g62t8bPg2Zi6qwBQmkSTLVk2O6zIsLpDq_MqUuLN9xyaW7yWOQImtEllki4xwJR0oCO55arb2j88YxAC7o-hg6tNYLF2X7gNvqKOafpOSySJhP74q048-mHn3fsduRhts6gUKKI42g6Jqr0BNztbaycKfPqli1Wg6YV6fKLuWGUWBZRSlRgvKeh-iCwFcuVNdQZKDX_xSyRfOw&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJ80e5BQC32YgRFukcZsIqbBo",
+      "name": "maman",
+      "address": "69 NW 26th St, Miami, FL 33127, USA",
+      "lat": 25.8018917,
+      "lng": -80.1962361,
+      "rating": 4.7,
+      "reviews": 1081,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "family_restaurant",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "european_restaurant",
+        "french_restaurant",
+        "cafe",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "service",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 6:00 PM",
+        "Tuesday: 7:30 AM – 6:00 PM",
+        "Wednesday: 7:30 AM – 6:00 PM",
+        "Thursday: 7:30 AM – 6:00 PM",
+        "Friday: 7:30 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1903943756896069910&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ80e5BQC32YgRFukcZsIqbBo%2Fphotos%2FAb43m-vaUwDRnYzvrYXzPzHek3fpnf7SDMilq_gvhT59uqDRfSdLjqQzGt7cr6Jr0a7gaaRcbYXb14a7l2ulCj-ZgO_CX9l_SpQ93VyiUnbV7rYQQEYUxa6qDr6eKr5MrnvDfdlzK54GEb-3EtWAgNIEMAh6Jq4lcqC7QP0ufiHtNYMZ2obCypNQ37rVxKpRR2IItfH-WM20cJD3-NAfTWZWoRhetJaSoRm958TJj9mQRUM0rtbpiHOYPABy_KkLA6M1ZEo7Q4teEIbUr6qIBAxZ5eM8DjMs0srxhSEO2SnOv7W_adxzELoNWNLrqWJrA4I7zL_JiPiD4zrD4Y75LoR7unteztjkFF4vYqBiDFiDw4xuLKgVbRcx4XkIqQtpIoc4HoX5KyY0vPTIZX0zjxt6TG1h8vcZn_ca8GSWDkAf1KXA3SY&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJG6HQcrK22YgREOwX4PyCF8c",
+      "name": "Panther Coffee - Wynwood",
+      "address": "2390 NW 2nd Ave, Miami, FL 33127, USA",
+      "lat": 25.7998834,
+      "lng": -80.19929549999999,
+      "rating": 4.4,
+      "reviews": 2558,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14346079160615037968&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJG6HQcrK22YgREOwX4PyCF8c%2Fphotos%2FAb43m-vo5rCBFgILRnOrxL9y5QWIQyyOt95JwKkFMkN6uNs1w7uT2Dv9xXSDi7yfqS5yCnOfoT2d9sec0ff6QpeZgTQKR27hxh2pntFoATlV1m11pvFFmIfe5SyVXuQczCiu4fmaiBY8gjVn0B_JxB4OHtCSJ7GxF-I8cePTkGFO1Sk53Cz5IuyduU23TwPjMhbIC_DailYkto_dsI4_WYTuDexzLTkiDYIlVxZUAWjKp3zyv8S3RHEMsLaRyu_WJwSbAGcSztTw5LaCrj37sMusC7FPNUZ8iS_sZbG8NaPc-qlRIg&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJ35yW5CG32YgRZQVQzlclW1s",
+      "name": "Suite Habana Cafe",
+      "address": "2609 N Miami Ave, Miami, FL 33127, USA",
+      "lat": 25.8019705,
+      "lng": -80.19488869999999,
+      "rating": 4.8,
+      "reviews": 711,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: Closed",
+        "Friday: Closed",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6582896339385845093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ35yW5CG32YgRZQVQzlclW1s%2Fphotos%2FAb43m-sj7NS6mnPPLvroeTZL2u9XYuI2cfPpp-3iRzukwheVYzflOrx9nf_6GqnyGY6nApFxJ72zXpHlbqt-0kN44ouZNV54LlGo5f4KajZ1EVXvtQV8JFqO9U8fKQIUZ3LHtmbTYIeEWBbXoO288Wf606f5d_KA2nYOBn08LIUbFaNu82t4h1L8bCltEhiEFc5lZTZPgQiOTpCsXYWkLHDZ3KKzdjtyNxpzBKTQUsupUAMxqUpnxNY_HLWp_HunC4g4C7KXjxKlgNR7z0X8VS4uTmEdxNjIgiYSDeHuAHCHn4OpZ6CF0VVVlQ-Sd9Q7edZmlTayyF4DZXEJ06U_BR0PglW0v-1uVgHa4WYVRcZHbKTJ2mq43ygLnXKhp7h3n5k2qPbEfe1o_PG3laLpaoe55-BWA8iOdxJl9Ncj1G5G6yGktcM2&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJt5rMrRO32YgRydNauniXhK4",
+      "name": "maman",
+      "address": "1300 Brickell Bay Dr CU2, Miami, FL 33131, USA",
+      "lat": 25.760372000000004,
+      "lng": -80.190197,
+      "rating": 4.9,
+      "reviews": 515,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "family_restaurant",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "european_restaurant",
+        "french_restaurant",
+        "cafe",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "service",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 7:30 AM – 6:00 PM",
+        "Sunday: 7:30 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12575342604303651785&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJt5rMrRO32YgRydNauniXhK4%2Fphotos%2FAb43m-sGyIQD3c5rsxc5zyXJEuJQqcP0-YHF6zcTb2Y-V6YuQBUtCPCjtxu98vkHzPaED7qVZSXeYPYMSp68ZW2KcACjLtp2kyIAVH2xAPDw41ZTWcq9uCrGj2kentTih14SU3ikOKuXS0yFZ9Vha1TBDZt0ysgucyufS0eSjlJWXbLwiRw1ejxz5AcGsP5gFzFViswZhw66OyS0YJoEJSOWbAh8ngmWDuCHZlAuR6Mf3_Bbxm_5knDnj-A3Eb2V_RgjqveXy1l-tJ2nRqRzgYg0bDmiCv5ocBH1PyIMVOSTRwNNVmxd1pq54Uo9zmygJjR6fw0bC5Mn0j56KpqivMvuVUE2I6UyZd_GDSTFe2O0q3lFrdDZBBPc7SNBY_pDud0btPo9txuQfqV277LtI3VABrQbWsrF7HoDvgn4sydwq5LySrABvgYyfblEopRPDhMZ&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJZ8dtWXCx2YgR2qVfKsAzR0c",
+      "name": "Imperial Moto Café",
+      "address": "7299 NW 2nd Ave, Miami, FL 33150, USA",
+      "lat": 25.8422251,
+      "lng": -80.2005868,
+      "rating": 4.7,
+      "reviews": 647,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 8:00 PM",
+        "Tuesday: 8:00 AM – 8:00 PM",
+        "Wednesday: 8:00 AM – 8:00 PM",
+        "Thursday: 8:00 AM – 8:00 PM",
+        "Friday: 8:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5136130800476988890&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJZ8dtWXCx2YgR2qVfKsAzR0c%2Fphotos%2FAb43m-uvL6G5LTNAuBmf7CVMzfJOqVKT7s1DXX7XX2_7ebD4ujR6RYpnkYFLoUu3kFwB3U-289u67YzzA78AJSSMLaI3-bY96ZOhz4-mXmK1XlQ2QNOH-O1OG0T6kR04FDzPSange1M9uiyn4oXEQ4fmkMHL91lUTenkms-D1ehzCdvFgdInadhr0KSJ3Yu2EBNrfRsGdlkauI7PN_z1mkfZ1-eVu8HymohNwYQTWpZs_6md3qByAb1DLL8gWAX4tZMwDcF-7IYwFUHDueHL_1mkV5UyFbUW0ral-T4M6muc9xQRog&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJk417wLW32YgRgYfV48wooek",
+      "name": "Novela Cafe Social",
+      "address": "2323 N Miami Ave, Miami, FL 33127, USA",
+      "lat": 25.7993968,
+      "lng": -80.1946986,
+      "rating": 4.7,
+      "reviews": 634,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 9:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16834781742548486017&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJk417wLW32YgRgYfV48wooek%2Fphotos%2FAb43m-vCrrzAGEl7a-KO87-zyHXtbFX2BJ52WyejHP1dYKDaGlpEHzUJZ5iFWtUZHJTRntoYutKM1-1IrXxjTJwkh0lTxpjOAC4qeYnHFZx18uP2C1LhRRGQ8MQr0Gbxzx8HXxpcYHOqbT-rHDcw_zeWLLhXv1QPcygdObwxN56GKlw1_u86m14Nrc_zg1CfzHF0hdEZnt34EUU01TOtU6mgh4wxgXC3fADDwPKE8mAH3_sVOr63CrFt1gN4JFMjcP1MemvyZyxmeytqcyfIosNjVwi_uQ82I1PKat1Ves1oFZ_Dx90GUfUPXB1PHeLp4-vn_H-x3jWUEO3i7PJ1Q7gxSn-3rYiak8d71hfMu13JeY0C29DJw4kbYTK1lSIoywv0xEH_lm0axFrwckMHD7Pzz8P6lgIIw9bBPsjint_FBsc&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJU-jJiI632YgRrR4AFKd6Ssg",
+      "name": "Magdalena Coffee & Houseplants",
+      "address": "321 NE 26th St CU-04, Miami, FL 33137, USA",
+      "lat": 25.801795,
+      "lng": -80.1882917,
+      "rating": 4.7,
+      "reviews": 441,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14432482813875855021&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJU-jJiI632YgRrR4AFKd6Ssg%2Fphotos%2FAb43m-tyj2X1nhFqkkt3m5vEPh0FGWctME_i8j61ow8x1si5jcjwCnXA7EpkSYFbRHiX1pDNM5KBR7y2I3MPk3VzWJKM-OjC-A__7VZm9sVNiXcy6G59C6lUSrvVdVpdUDBteCz16lHhs7YCkJfh9aVug-3_Yq2AH8LjZGQzgwWpm2fuDbv9LjwlSlG8_1pprQMr97JHRw9GoTDC5-1fWWkA7FK60trG6Cwdk8vvJNRI2HivMokKhO0SnsYExt0xAHKJtVZUKtUwW5gMSO3vE-6OabeKbsx2BK2xJmDhyVK3TlHusqA60xSzumE5pPUvu6pBuwBNjagBWkm_hzS4ORPgCILxL1fFgTW0ce1HssKUVYPays-TNIGkAeGnUElCNvxyOE_f9tsmChTdKfHKoL0nckZH8YxSBhXddiADz4ZvnoiokhidmumkwayMueE9aThv&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJQ_DWCKKx2YgRMf7XM0TSJuI",
+      "name": "Surry Hills Coffee | Brunch Miami",
+      "address": "8226 NE 2nd Ave, Miami, FL 33138, USA",
+      "lat": 25.850345599999997,
+      "lng": -80.1930987,
+      "rating": 4.7,
+      "reviews": 384,
+      "price": "$$",
+      "types": [
+        "brunch_restaurant",
+        "pastry_shop",
+        "breakfast_restaurant",
+        "bakery",
+        "coffee_shop",
+        "cafe",
+        "dessert_restaurant",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 8:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 8:30 AM – 6:00 PM",
+        "Sunday: 8:30 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16295943492056120881&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJQ_DWCKKx2YgRMf7XM0TSJuI%2Fphotos%2FAb43m-viqVijHSTcTWpE92qj428C5qEyo2RLbhqHttJd9cjDtSVD-qF8tlIyanT_6NUHGF9E4yTvA0lQRrQGz_ZOBNUgVZddS8UC8NLO9sYzXBWAn79NMydVYf3ygsU1rpaoUu-MULy938GObIk6tvXeW2_rcjwVcddhLO1x65q2F_gcoeqJTjLMwKKKy2AlB2j74kuz5OV2O67sSbN7uiGDh0PgVWNMxijWX4KRSj25K6X_IOVkCLbtSQZw1mHZOyVjjM-r_d7349h3sfb6lfJEq8TcySGo7nxEjCxS1U7OAfx_XA&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJNRxUk1e32YgRLIl840TlJGQ",
+      "name": "Fincas Coffee",
+      "address": "5030 NE 2nd Ave unit. 402, Miami, FL 33137, USA",
+      "lat": 25.8219337,
+      "lng": -80.19217239999999,
+      "rating": 4.7,
+      "reviews": 305,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "cafe",
+        "wholesaler",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 9:00 AM – 7:00 PM",
+        "Tuesday: 9:00 AM – 7:00 PM",
+        "Wednesday: 9:00 AM – 7:00 PM",
+        "Thursday: 9:00 AM – 7:00 PM",
+        "Friday: 9:00 AM – 7:00 PM",
+        "Saturday: 9:00 AM – 7:00 PM",
+        "Sunday: 9:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7216144586991503660&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJNRxUk1e32YgRLIl840TlJGQ%2Fphotos%2FAb43m-u3qoYXYHATTKCoY0_ryO8MZUV6d133toIhCjRGCk2_exjX8Pe7FTsJNX7QlVPKJn6J5bbt1PUAbWY0NnjIWFaGAazgwqNcLFvVWlLX8mFTjYnBIxX7MFhEXzWlQHTDtLQf8JZtlNd9gpeij_UlC-cxUaVtS1j_TAMAr5TjpwOJFX6cpa1zcUroRFdXnqXH7aLwXwnHzz1kLV_-1Z2v6cX9kYoibxw-q3m8QGEFfXRwwRVLvGfGrxnq7htSKzcEbYseMPJH1vhFoSCV_cM2xUgrWQUGXYR8Mp00P77h_Z9MdhHvREBWX6Mc06UBn-tsJ2fhXDggxp0cow87jybDvALOaS_WGb7F6Wa8SjaqBJ72f0d_ByRH9pBmhA7juzSc-tFcuoqGnIk3uoOQ4t0egkjF90530AraE5F7q1yE_DKUbV9b&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJGTYZ1V632YgRVnSupWUjL0c",
+      "name": "Studio 24 Artful Coffee",
+      "address": "1250 S Miami Ave, Miami, FL 33130, USA",
+      "lat": 25.7619893,
+      "lng": -80.19361649999999,
+      "rating": 4.9,
+      "reviews": 188,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 7:00 AM – 6:00 PM",
+        "Sunday: 7:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5129357420076627030&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJGTYZ1V632YgRVnSupWUjL0c%2Fphotos%2FAb43m-ujbSpu8WDE8CF4AwctqreJ_ZwOYqx77ch1KpoQQPZAlBrkulv8MIuS1zTiirDcIK-FN9ZQ_Sm4JtPWHIEiw8MbCRCz2XtNvOAtxf9Dsfto7RpAhNI12NTFF4Vk34oEhRyFNQQ1qnP_DFygCJqYV0vjBc18zjV2hoHAXr_lowKmdR2KiBNaEpi2dWJZTXmJzAyRSdWnI29TSj5GRjOR_PWI--EML5kT0AAI4q8vfFA3-_XQ4EyjLevtuKHA9gCJxtGDEUApS4xePz9gI10m3-DYuoLKDhEECtj-YW9evQOCVw&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJC0Wl_qe32YgRsBh8j3fDJ10",
+      "name": "Naughty Coffee",
+      "address": "101 NE 2nd Ave, Miami, FL 33132, USA",
+      "lat": 25.7753737,
+      "lng": -80.190147,
+      "rating": 4.7,
+      "reviews": 291,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6712548687894812848&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJC0Wl_qe32YgRsBh8j3fDJ10%2Fphotos%2FAb43m-v2nrDueUuOiol1OM2rjki_7FLALJ-B1uOwx1VDXL3KAKBRuReap-uht0_P9SAT8ayjyKnM2lMDefYHAy-tp7lSWpzNvRcgwC1iK7zvvBxumKWTBKmfQCaj-7M_93jaWmKxETgzSYU4hCfjE84Uqmxz8LyhAUjILcUHpg0xeaN-mnfo61wztJfCiG4V83Lxq6xvUF2fKb3MUY7MgiX6E3OHLFa-mSb1DU8_unJ5aLwT5XPBNxf5aemjaiarrDRJsZw1LKOuCNM_59MpSRt0vOXNoYqlEfkjE-idnSuaQVdGxczhJkH5FmekKmFuHJVqrbOtaa6sAQWviZiu6dQf9oUxJrD_Zij-P2mff_m4xqRRf449q5mZwCs9CEa9m0jWrND0j5ilAgGcWCcm39Jr5_20PetDVVlCDwqkrqS37mVBEN_ZIcqId-7gxbagrgTg&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJhwCZ_pOz2YgRvHlf9CSYBuM",
+      "name": "Mad Records Cafe Miami",
+      "address": "7700 Biscayne Blvd, Miami, FL 33138, USA",
+      "lat": 25.84638,
+      "lng": -80.1847293,
+      "rating": 4.5,
+      "reviews": 283,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "brunch_restaurant",
+        "cocktail_bar",
+        "bar",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 1 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 1,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 4:00 PM – 12:00 AM",
+        "Wednesday: 4:00 PM – 12:00 AM",
+        "Thursday: 4:00 PM – 12:00 AM",
+        "Friday: 9:00 AM – 1:00 AM",
+        "Saturday: 9:00 AM – 1:00 AM",
+        "Sunday: 9:00 AM – 1:00 AM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16358929980956047804&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJhwCZ_pOz2YgRvHlf9CSYBuM%2Fphotos%2FAb43m-t6QLe5rgzkqf0bwTxliwyEbZVhWTHYTUxjsEl4m-vWnxLB20hSUx8Tdmf0JOn-ucqzi12kqiKgvduMTXvPxmHQ3CTM7_olstJtTYi59CpXdUrOofnL8IOdnhSUmwTUOsh55Rk6tX7_ilZjlsdSspoFoa0ISBrvg92DllGCFtC2yMvmX-eFAJ29M7HiFLe4PM6bpC6PxLhlaXsD5APC8QTyTgs67GgBBYIm00GmAzQqzcMmRHYZanlLZb6ksD_piKAd29QO-SM9ZeeCjSEpfa-IWp2v0fgorYMU6OMPK9RkyA&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJ-W_JjE632YgRNkuwJmRj4LA",
+      "name": "La Suiza BakeHouse “Brickell”",
+      "address": "708 SW 1st Ct Unit 708, Miami, FL 33130, USA",
+      "lat": 25.7669613,
+      "lng": -80.1959656,
+      "rating": 4.8,
+      "reviews": 130,
+      "price": "$$",
+      "types": [
+        "pastry_shop",
+        "brunch_restaurant",
+        "candy_store",
+        "bakery",
+        "coffee_shop",
+        "cafe",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 7:00 PM",
+        "Tuesday: 7:30 AM – 7:00 PM",
+        "Wednesday: 7:30 AM – 7:00 PM",
+        "Thursday: 7:30 AM – 7:00 PM",
+        "Friday: 7:30 AM – 7:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12745296227255470902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-W_JjE632YgRNkuwJmRj4LA%2Fphotos%2FAb43m-tvJIoJnWceF73831W0lDLy5Q4oo-SVF3QtRp7k0hvfUik5QW9brpZpgTdpPHEev0kESYJjojYP_Wg0PqXTo6VxdPxFKcZ0o6WZ1-dQhghKsKj9B8Bva35glFfH0SgMK6kQLhyLiuV9DMQgXcuYrkfDrtMM-rqFxvl2ShGI2AQ7in2oFibO2_26xg3hLTDl0Wdxkp-1bVqK8-zRZ7WwolhErmyyc2n56T_oKh_J6zls7zlVBQUgXXNlAXnzODVxyXbf3D_NzkgA3ufDpneIS89kA8cB7Yy8caEko2QfKGRezw&w=800"
+    },
+    {
+      "city": "miami",
+      "id": "ChIJHyqmo-y32YgRYHnLUs7ScrA",
+      "name": "MIAMI GRIND COFFEE",
+      "address": "45 NE 2nd Ave, Miami, FL 33132, USA",
+      "lat": 25.7749837,
+      "lng": -80.1901635,
+      "rating": 5,
+      "reviews": 20,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 8:30 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:30 AM – 8:30 PM",
+        "Tuesday: 5:30 AM – 8:30 PM",
+        "Wednesday: 5:30 AM – 8:30 PM",
+        "Thursday: 5:30 AM – 8:30 PM",
+        "Friday: 5:30 AM – 8:30 PM",
+        "Saturday: 5:30 AM – 8:30 PM",
+        "Sunday: 5:30 AM – 8:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12714456481614494048&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJHyqmo-y32YgRYHnLUs7ScrA%2Fphotos%2FAb43m-vv_gdB7xDjGkcm3M6VixhJQ-jPd8n8aTuWC_Lpth7YMtrET2EVpSCYxXZxjp53756M7g3j27185U1h6vDWJCLhCwUpMqq0N2CijokTZdCRaEsDxuEEd0OdIktkSEm0UdNZYgH_wvbaaoesxmnogThvKq4jTbDP4SrQuPxKuJRZqavkCn3Olillcuch3uE11wf8FvNv4cWRehWndMyAo-819f1IpCmZztD-eCT1KaFwFzxFPT-KQNaePX439n8PpPqxpxRXkDdaO0bzm70-u1O1V1aQXZ_FzLuQX4eGIR7zOg&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJMZYy4rK22YgRM_O-D2pKGDw": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drink received clear positive praise. Strawberry Matcha and Blue Pina Colada Smoothie were criticized; other reviews only mention 'great coffee' generically.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "MIAM Club Sandwich",
+          "reason": "Explicitly called the best item ordered in one review; other specific food praise was split across different dishes (Steak and Eggs, Scrambled Eggs and Potato) with only single mentions each.",
+          "quote": "the best out of all of the items we ordered",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 3,
+          "text": "My first impressions were confused. Immediately upon walking inside I’m unsure if I’m supposed grab a tale, wait to be sat down or order at the front. When I asked someone politely I was shrugged off. Then I figured it out after standing for 5 minutes like an idiot, the people taking orders had an attitude and was rude to people asking for their drinks. Then after ordering, you get a table number and then grab where ever you want to sit. The people bringing the food are “robotic” they don’t say anything and just set food down on the table\n\nThe food is mostly misses. The pancakes look appealing but were dry, potatoes had no flavor, and the eggs were eggs. The MIAM Club Sandwich was the best out of all of the items we ordered, and carry’s the whole rating for the Café.\n\nThe drinks we ordered were all misses. The Strawberry Matcha was very bland and the matcha is very thick. The Blue Pina Colada Smoothie doesn’t really taste like pina colada, tastes more like a mess.\n\nI simply fell for the hype and left disappointed feeling I should have spent my $80 for 2 people somewhere else."
+        },
+        {
+          "rating": 5,
+          "text": "A Wynwood Staple: The Perfect Modern Brunch Spot\nIf you find yourself wandering the street art-filled blocks of Wynwood, there is one culinary staple that simply cannot be missed: Miam Cafe. Every single time my wife and I are in Miami, this is our mandatory stop. It has become a tradition for us, and for good reason—the consistency and quality never waver.\nThe aesthetic is very nice and modern, perfectly capturing that industrial-chic Wynwood energy with its clean lines and minimalist black-and-white decor. It’s the kind of bright, airy space that makes a morning meal feel special without being overly fussy. It’s located in the iconic Wynwood Garage building, which adds to the overall architectural appeal.\nOn our most recent visit, I opted for the Steak and Eggs, and it was exceptional. The steak was seasoned perfectly and cooked exactly to my liking, providing a hearty start to the day. My wife tried the Scrambled Eggs and Potato, which she absolutely loved. The eggs were light, fluffy, and seasoned just right, while the potatoes had that perfect golden crispness.\nThe food was great across the board, proving that Miam Cafe isn’t just about the \"cool\" atmosphere—they actually deliver on the plate. If you want a reliable, stylish, and delicious breakfast in one of Miami’s most vibrant neighborhoods, this is the place. We’ll definitely be back on our next trip!"
+        },
+        {
+          "rating": 5,
+          "text": "Best breakfast place ever!!! Worth the money! U need to try it! Great service, great food, great coffee yum yum Miami! : ) ernesto our server was super attentive."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:17.773Z"
+    },
+    "ChIJadaygN6x2YgRsCcueNDVNxI": {
+      "picks": {
+        "drink": {
+          "name": "Hot chocolate",
+          "reason": "Specifically praised as decadent and perfectly served; matcha and coffee also mentioned positively but hot chocolate received the most detailed praise.",
+          "quote": "the hot chocolate truly hits the spot. It is decadently creamy",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Chocolate cookie",
+          "reason": "Called the best ever in a 5-star review, and the cookies are noted as famous at this location.",
+          "quote": "Genuinely the best chocolate cookie I've ever had!!",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Genuinely the best chocolate cookie I’ve ever  had!! The matcha is amazing and they went above and beyond to make my birthday coffee so special! 10/10 if you’re in the design district and need a shopping break coffee and snack!"
+        },
+        {
+          "rating": 5,
+          "text": "Tiny coffee & pastry spot in the lovely courtyard of the Design District mall.  Seating for approximately 6 people inside + approx 20 people outside.  Prices are fair.  Beautiful scene & very nice crowd.  The surrounding stores are uber-expensive & high end."
+        },
+        {
+          "rating": 5,
+          "text": "Walking into Maman in the Design District feels like being whisked away from the sleek, polished streets of Miami and dropped directly into a rustic garden in Southern France. The interior is nothing short of breathtaking—a whimsical blend of vintage wooden furniture, hanging greenery, and their signature blue-and-white floral patterns. It is an aesthetic triumph that feels warm, intentional, and deeply inviting, providing a soft contrast to the high-fashion industrialism of the surrounding neighborhood.\nThe vibe is effortlessly charming. It manages to be both a sophisticated meeting spot for the fashion elite and a cozy sanctuary for a quiet afternoon. There is a gentle hum of conversation that complements the curated decor, creating an atmosphere that is high-energy yet soothing. It is the type of space that feels like a \"home away from home,\" provided your home is a chic, sun-drenched European cottage.\nWhile many come for the famous cookies, the hot chocolate truly hits the spot. It is decadently creamy and served at the perfect temperature, offering a rich, comforting embrace in every sip. Whether you are seeking a visual feast for your social feed or a soul-warming treat, Maman delivers a quintessential Design District experience with a heartfelt, French-inspired soul."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:22.275Z"
+    },
+    "ChIJ80e5BQC32YgRFukcZsIqbBo": {
+      "picks": {
+        "drink": {
+          "name": "Matcha latte",
+          "reason": "Mentioned positively in multiple reviews - iced matcha with coconut milk was 'pretty good' and the unsweetened matcha latte with oat milk was praised.",
+          "quote": "Their matcha latte comes unsweetened just how I like it",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Steak sandwich",
+          "reason": "Praised in a 5-star review as something the reviewer loves, and ordered by another reviewer. Croissants and pastries also got strong mentions but the steak sandwich had the most direct praise.",
+          "quote": "I love their croissants, steak sandwich",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Really nice coffee shop with great food options. The coffee is fantastic and there’s plenty to choose from. The food is just as good, I especially recommend the ratatouille on weekends, it was so good.\n\nThe overnight oats were also excellent. Prices were very fair, especially for the coffee. Can definitely recommend!"
+        },
+        {
+          "rating": 4,
+          "text": "This cage was close to the hotel we stayed pre-cruise in miami. We went there for late lunch and also for coffee and pastries the next morning. I got the iced matcha with coconut milk and steak sub for lunch. The matching was pretty good but the sub was ok. The next day we got coffees and pastries and they were amazing. Really liked the vibe of the place and the food presentation was pretty good. The ambience of the Cafe was very modern. The wait staff were amazing. They remembered us when we went to the coffee from the day prior. On the whole I would recommend this place for morning coffee and pastries and a quick bite.."
+        },
+        {
+          "rating": 5,
+          "text": "Gabriel was absolutely wonderful at Maman. I visited with two friends, and from the moment we arrived, he was attentive, kind, and genuinely made us all feel welcome. His service was thoughtful without being intrusive, and he paid great attention to every detail. He was knowledgeable about the menu, gave great recommendations, and made the whole experience feel relaxed and special. It’s clear he truly cares about providing excellent service. We’ll definitely be coming back—thank you, Gabriel, for such a great experience!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:28.114Z"
+    },
+    "ChIJG6HQcrK22YgREOwX4PyCF8c": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Praised in the top 5-star review as incredibly smooth and flavorful, among the best had in a while. Other specialty options (V60, Nicaraguan pour-over, americano) also got love but the latte had the most direct enthusiastic mention.",
+          "quote": "incredibly smooth and flavorful — easily some of the best",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "We stopped by Panther Coffee while passing through and were really impressed! We ordered a couple of lattes, and they were incredibly smooth and flavorful — easily some of the best we’ve had in a while.\n\nThe atmosphere is rustic yet inviting, with a warm local vibe that makes you want to stay awhile. Indoor seating is a bit limited, but the overall experience more than makes up for it.\n\nIf we lived in the area, we’d definitely be regulars. Highly recommend stopping in for a quality cup of coffee and great service!"
+        },
+        {
+          "rating": 3,
+          "text": "We tried the vanilla cream nitro cold brew and found it a bit sour and not as smooth as expected. The latte was also disappointing—the milk temperature wasn’t well controlled, with the bottom being too hot, so you definitely need to be careful not to get burned. Two coffees came out to $20, which felt pricey for the quality. Not sure if it’s just Miami prices or this location, but overall it wasn’t worth the hype for us."
+        },
+        {
+          "rating": 5,
+          "text": "High quality specialty coffee, with V60 and Chemex. They have different coffee origins with great tasting notes (Nicaragua and Ethiopia recommended)"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:33.535Z"
+    },
+    "ChIJ35yW5CG32YgRZQVQzlclW1s": {
+      "picks": {
+        "drink": {
+          "name": "Bombón",
+          "reason": "Specifically praised in multiple reviews for its perfect layers of condensed milk, espresso, and foam. Cafecito/espresso also highly praised but bombón is the most specifically named standout drink.",
+          "quote": "perfect layers of leche condensada, espresso and espresso foam",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Croissant with jamón y queso",
+          "reason": "Only one reviewer mentions specific food items, naming the ham and cheese croissant alongside cardamom orange madeleines. Food selection is described as minimal.",
+          "quote": "We got the croissant with jamón y queso",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "A coffee shop you should definitely visit. The staff is incredibly helpful. I think it's quite difficult to find good cold brew in Miami. They usually serve filtered coffee cold. It needs to be distilled. For black cold brew lovers, I definitely recommend checking it out. The coffee has a non-acidic flavor. It has a small and chill atmosphere. I also liked the music playlist. You're great.\nThanx 🤘🏻"
+        },
+        {
+          "rating": 5,
+          "text": "Stopped by for a quick Cafecito, and was absolutely blown away. It was absolutely delicious and on par with some of the best espresso I've had in Italy. The owner was kind, chatted with us and recommended a few spots to check out in the are. You can tell he is passionate about coffee and makes each cup special. Don't miss out!"
+        },
+        {
+          "rating": 5,
+          "text": "Havana Café is a cozy, laid-back spot that’s perfect if you’re looking for a relaxed atmosphere. The coffee was truly excellent—definitely a highlight! While they don’t have a huge food selection, that minimalist charm fits the vibe. The service was on the slower side since there was only one person working, but it felt like part of the easygoing, unhurried ambiance. If you’re not in a rush and want a great cup of coffee, this place has a charm all its own."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:38.001Z"
+    },
+    "ChIJt5rMrRO32YgRydNauniXhK4": {
+      "picks": {
+        "drink": {
+          "name": "Mocha with oat milk",
+          "reason": "Specifically recommended in a 5-star review; other drink mentions (coffee l'orange, lavender hot chocolate) appear only once each.",
+          "quote": "try the mocha coffee with espresso and oat milk",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Cookies",
+          "reason": "Cookies are explicitly praised in multiple 5-star reviews as delicious, soft, and excellent.",
+          "quote": "The cookies are delicious and soft",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Amazing food! Loved the portions person. This was a clean establishment for my first time visiting! The cookies are delicious and soft. The staff is polite and values the best experience. Definitely try the mocha coffee with espresso and oat milk!"
+        },
+        {
+          "rating": 5,
+          "text": "Super nice place!! Loved the coffee l’ orange, the cookies are excellent, the service is so good. We loved everything! Highly recommended"
+        },
+        {
+          "rating": 5,
+          "text": "This coffee shop is absolutely amazing! The coffee is incredibly rich and flavorful, and you can really tell they use high-quality beans. Every drink is made perfectly, and the aroma when you walk in is just incredible.\n\nThe atmosphere is warm, cozy, and beautifully designed — the kind of place where you want to sit, relax, and enjoy your coffee. The staff is also very friendly and welcoming, which makes the experience even better.\n\nDefinitely one of the best coffee spots I’ve visited. Highly recommend if you love great coffee and a great vibe! ☕✨"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:42.385Z"
+    },
+    "ChIJZ8dtWXCx2YgR2qVfKsAzR0c": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Reviewers consistently praise the coffee as strong and excellent, but no specific drink is named.",
+          "quote": "Coffee is strong, lots of food options",
+          "confidence": "low",
+          "mention_count": 5
+        },
+        "food": {
+          "name": "Brownie",
+          "reason": "Only specific food item named, described as delicious. Other reviews mention café treats and a taco stand outside generically.",
+          "quote": "The brownie was so delicious",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Great coffee. The atmosphere is fantastic. Service is good. Taco stand outside if you’re hungry. Parking is good. Good people and always fun. If you’re in the area, do yourself a favor and grab some coffee and good times."
+        },
+        {
+          "rating": 5,
+          "text": "Original coffee shop concept in Little River ☕️\n\nThis pioneer of Little river community is always lively and a great local watering hole.\n\nCoffee is strong, lots of food options and don’t forget the barber shop in the back!"
+        },
+        {
+          "rating": 5,
+          "text": "I love this spot and wish I could visit more often. Unfortunately, this place embodies the café experience that Miami seems to be moving away from. It is locally focused, uniquely elegant, and truly delightful for relaxation. The coffee is excellent, the staff are friendly, and the café treats perfectly complement the atmosphere."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:46.133Z"
+    },
+    "ChIJk417wLW32YgRgYfV48wooek": {
+      "picks": {
+        "drink": {
+          "name": "Matcha latte",
+          "reason": "Explicitly called the best place for matcha latte in a 5-star review; cappuccino also praised but matcha received the most specific superlative.",
+          "quote": "Best place to get a matcha latte",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Shakshuka",
+          "reason": "Highlighted as part of a 'must have combo' in an enthusiastic 5-star review, with specific recommendation to order it.",
+          "quote": "the acai with the shakshuka with the omelette ciabatta",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I came with my mom for the first time today on National women’s day and I was not disappointed by Novela Café Social, I was impressed. My mom and I love it, she got the Spanish breakfast and I got the avocado toast with eggs and we both got matcha latte. Best place to get a matcha latte. The place is super calm, welcoming with a peaceful atmosphere and the vibe is great. Highly recommended!"
+        },
+        {
+          "rating": 4,
+          "text": "Novela is a smart choice if you want to spend the day in Wynwood. The location is excellent—just four blocks from Wynwood Walls—making the walk effortless. The patio is lovely and has that cozy, backyard-at-home feeling, with enough space between tables to actually relax.\n\nIt’s also dog-friendly, which is a huge plus for pet owners like me; the pups add to the warm, homey atmosphere.\n\nThe food is decent—not remarkable—but the prices are very fair, so it feels balanced. Same goes for the service: nothing extraordinary, but good enough for a casual, pleasant outing.\n\nOverall, it’s a solid pick for brunch or a girls’ day out. I’d definitely come back."
+        },
+        {
+          "rating": 5,
+          "text": "We had a great breakfast experience here. The place is very nice.\n\nHellen’s service was excellent! very friendly and attentive at all times.\n\nThe food was delicious, well presented, and full of flavor.\n\nWe would definitely come back. Highly recommended!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:50.946Z"
+    },
+    "ChIJU-jJiI632YgRrR4AFKd6Ssg": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Specifically praised in two 5-star reviews, including ceremonial grade quality.",
+          "quote": "highly recommend the matcha",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Pistachio croissant",
+          "reason": "Highlighted in a 5-star review as among the best baked goods in Miami; other food mentions were mixed (cachito) or generic (Danish pastries).",
+          "quote": "pistachio croissant... some of the best in Miami",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Treat yourself and escape your daily routine here! I highly recommend the matcha and the Basque cheesecake. The atmosphere is great, and the manager, Charlie, is incredibly kind and gentle with every guest. Such a welcoming spot!"
+        },
+        {
+          "rating": 3,
+          "text": "I was really looking forward to trying this place after hearing so many great things. Unfortunately, I was a bit disappointed. The cachito wasn’t served at the right temperature… the inside was cold even after being warmed in the oven, which made me question its freshness.\n\nThe coffee was good, and the service was friendly. We especially enjoyed the yuca bread bites. The location, however, is quite small and can feel overwhelming when it’s full, especially considering that dogs are welcomed. I also wish the space was larger as I believe it will make it more welcoming. Parking in the area is difficult to find."
+        },
+        {
+          "rating": 5,
+          "text": "😋😋😋😋😋\nI've been a loyal fan of Magdalene Coffee in Wynwood since they opened, and it's consistently one of my favorite spots! Their coffee is always fantastic, brewed to perfection every time. You absolutely have to try their Danish pastries—they're incredibly delicious and taste so fresh. It's the perfect treat to go with your coffee.\nI also love their hours, open from 7 AM to 7 PM, which makes it easy to grab a great cup whenever you need it. And if that wasn't enough, they gift their clients with beautiful flowers, a truly lovely touch that makes every visit special. Plus, if you want to enjoy their amazing coffee at home, you can buy their beans and have them ground right there for you to take home. Magdalene Coffee truly stands out!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:55.863Z"
+    },
+    "ChIJQ_DWCKKx2YgRMf7XM0TSJuI": {
+      "picks": {
+        "drink": {
+          "name": "Lavender Cappuccino",
+          "reason": "Mentioned across multiple visits by one reviewer as 'perfect' and ordered repeatedly, indicating standout quality.",
+          "quote": "The lavender cappuccino was perfect.",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Avocado Toast",
+          "reason": "Praised in two separate 5-star reviews for satisfying crunch, authentic Australian style, and thoughtful toppings like soft-boiled egg and seed seasoning.",
+          "quote": "super satisfying crunch and texture...real Australian brunch plate",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Surry Hills was so memorable I barely captured any photos or video, I just wanted to be in it. The space is calm and confident, and you can feel how intentional everything is, inside and out. Even the tiny things are dialed in, like the soap and lotion in the bathroom, and the specialty dog treats that make it feel genuinely welcoming. They’ve been recognized by The World’s 100 Best Coffee Shops, and once you sit down, you get why.  ￼\n\nNow the food and coffee. Their coffee is perfectly dialed in, smooth, balanced, and consistent, the kind of flat white that tastes like someone actually cared about ratio, texture, and temperature, not just speed.  ￼The almond croissant was flawless, soft and gooey inside, with that crunchy almond top that gives you the perfect snap in every bite.  ￼\n\nAnd then the savory stuff surprised me in the best way. The avocado toast has that super satisfying crunch and texture, and it tastes like a real Australian brunch plate, not the watered down version. The quinoa salad with chicken was a wow too, hearty but still fresh, with edamame, greens, seeds, and that dukkah vibe that makes it feel intentional instead of just “healthy.”  ￼They got it all right, the coffee, the food, the details, and the energy.\n\nMore on social media: @ratedbymaryam"
+        },
+        {
+          "rating": 5,
+          "text": "One of my go-to coffee shops/ cafe in Miami. I love that their coffee is strong yet well balanced. Their food is plated beautifully and tastes phenomenal and fresh. Everyone that works there is kind and helpful. I enjoy that they often change their menu by highlighting new and different drinks/plates."
+        },
+        {
+          "rating": 5,
+          "text": "First visit here and thoroughly enjoyed the ambiance, service and food.\n\nMet the owner, Francisco and had a nice convo on the other locations in Argentina and Spain.\n\nThe lavender cappuccino was perfect.\n\nThe tuna melt was very good!\n\nThe turkey croissant with lime was scrumptious.\n\nLooking forward to our next visit.\n\n2nd Visit: enjoyed a lavender/vanilla cappuccino and the egg/sausage sandwich. Both excellent!\n\n3rd visit: Enjoyed the protein bowl and a lavender/vanilla cappuccino. The only issue with this place is they don't have a location within walking distance from my home 😅."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:03.951Z"
+    },
+    "ChIJNRxUk1e32YgRLIl840TlJGQ": {
+      "picks": {
+        "drink": {
+          "name": "Lavender Latte",
+          "reason": "Multiple reviewers specifically praise lavender-based drinks, including the lavender latte and iced lavender vanilla matcha, with strong enthusiasm.",
+          "quote": "Lavender latte was amazing",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Pistachio Croissant",
+          "reason": "Specifically named and praised as 'Really Tasty!' with full pistachio cream. The chocolate croissant was also praised but pistachio got more vivid detail.",
+          "quote": "pistacho croissant Full Pistacho Cream, Really, Tasty!",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I, Try, fincas Americano Coffee I Was It was light body  and I Try, pistacho croissant Full Pistacho Cream, Really, Tasty! I Was greeted By Chris  Very Pleasant Young Man Who made everyone Feel Welcomed. Is a cute little coffee shop with plenty of seating outside."
+        },
+        {
+          "rating": 5,
+          "text": "I had a fantastic time at Finca’s Coffee! The atmosphere was warm and charming, making it the perfect place to relax. I tried their coffee, which was rich, smooth, and absolutely top-notch. Alongside it, I indulged in a chocolate croissant, and it was just delightful—flaky, decadent, and perfectly sweet. If you’re a coffee lover, this place is a must-visit!"
+        },
+        {
+          "rating": 5,
+          "text": "Thank you for giving me the greatest first impression of Miami. I had an iced lavender vanilla matcha and it was the BEST matcha of my life!! The pastry was equally good. Coming from someone who works in specialty coffee, I super HIGHLY recommend and the staff was great 🥰❤️"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:11.893Z"
+    },
+    "ChIJGTYZ1V632YgRVnSupWUjL0c": {
+      "picks": {
+        "drink": {
+          "name": "Yuzu Espresso Tonic",
+          "reason": "Specifically called out as the best you'll find in a 5-star review; other drink mentions are generic.",
+          "quote": "Best yuzu espresso tonic you'll find for sure",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Breakfast",
+          "reason": "Only one specific food mention, but enthusiastically praised as fresh and thoughtfully prepared.",
+          "quote": "Their breakfasts are fantastic — fresh, thoughtfully prepared",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I absolutely love this place. The coffee is truly unique, the staff are super friendly and welcoming, and the café itself is beautifully designed. Highly recommend stopping by at least once!😊"
+        },
+        {
+          "rating": 5,
+          "text": "A super cool new coffee location right in the middle of Brickell! Really nice atmosphere and amazing drinks! Have been coming everyday since they have opened, whether to work or just sit and relax!"
+        },
+        {
+          "rating": 5,
+          "text": "A cozy place now in the crazy brickell area. Truly a parenthesis from the chaos around. Best yuzu espresso tonic you’ll find for sure. All the staff was very sweet and friendly. Great spot to work (considering WiFi in the area sucks)"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:16.508Z"
+    },
+    "ChIJC0Wl_qe32YgRsBh8j3fDJ10": {
+      "picks": {
+        "drink": {
+          "name": "Salted caramel iced latte",
+          "reason": "Specifically named and praised in a 5-star review alongside other top-notch coffee blends. Flat white also mentioned but only descriptively.",
+          "quote": "the coffee blends were top-notch",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Almond croissant",
+          "reason": "Named explicitly and called part of a delicious food experience in a 5-star review; mortadella focaccia also mentioned but with less emphasis.",
+          "quote": "The food was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I went with my wife and my niece's dog to try the salted caramel iced lattes. We also ordered an almond croissant because it's a must-have at every coffee shop I visit, and my wife ordered the mortadella focaccia. The food was delicious, and the coffee blends were top-notch. The place is really nice, some people working, as well as some small to medium-sized groups gathering. The atmosphere was pleasant, and the service was excellent. We will definitely come back. There is plenty of parking in nearby buildings, as well as parking lots in front of Bayfront Park, which is just a few minutes' walk to the coffee shop. I have to say, this is one of the best coffee shops in the area."
+        },
+        {
+          "rating": 5,
+          "text": "Naughty Coffee in Miami is special, the kind of place that instantly feels like a little taste of Barcelona. I met Luis, the roaster, and he was genuinely warm. The whole team matched that energy, thoughtful, welcoming, and seriously skilled, and they made me a beautiful cup.\n\nThey’re pulling shots on a Slayer, and everything about the experience feels intentional. My flat white came out on a gorgeous tray with a glass of water on the side, and what I loved most is that they actually share the story behind what you’re drinking, origin, elevation, and processing, so you’re not just sipping coffee, you’re connected to it.\n\nThe food selection is simple, but it’s the best kind of simple, curated, high quality, and clearly chosen with care. Add in a great vibe and plenty of indoor seating, and it’s the sort of spot you’ll want to linger in, or come back to. I’m already planning to return to see the roasting side because this place feels like it’s about to become Miami’s next real coffee hotspot.\n\nMore on social media: @ratedbymaryam"
+        },
+        {
+          "rating": 5,
+          "text": "I discovered Naughty Coffee and immediately felt that this place has a real story behind it, not just great coffee.\nThey started in 2019, what really stands out to me is that Naughty Coffee is about craftsmanship, warmth, and consistency. Every cup I’ve had there is made with care, and the people behind the counter always make you feel welcome.\nThis is one of those rare places where you’re not just buying coffee, you’re experiencing someone’s dream in every sip. Highly recommended if you’re in Miami and want something special."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:20.950Z"
+    },
+    "ChIJhwCZ_pOz2YgRvHlf9CSYBuM": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Specifically ordered in a 5-star breakfast review; coffee drinks also broadly praised as 'out of this world'.",
+          "quote": "The coffee drinks were out of this world",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Mango BBQ Wings",
+          "reason": "Detailed, specific praise in a 5-star review highlighting balanced flavor of the mango barbecue sauce.",
+          "quote": "wings were flavored in a mango barbecue sauce... just the right amount of flavor",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "After 30 years a visit to Miami was memorialize with lunch at thos eclectic diner. The place features vinyl records and player along with a water view outside with both indoor and outdoor seating. The location is beside a Chanel that goes under a bridge that has inside mural with both fish and cartoons.\n\nOk, the wings were flavored in a mango barbecue sauce that was not too sweet and just the right amount of flavor. The smash burger tasted like it was straight from the grill. I love the shoestring French fries, cooked just enough to have a soft center with a crispy exterior.\n\nThe host was professionally attentive.\n\nThis is a good spot to have a quaint snack or wholesome meal with smiling faces."
+        },
+        {
+          "rating": 5,
+          "text": "This place a had an amazing atmosphere. I absolutely loved all the vinyl records everywhere and old memorabilia. The food was absolutely fantastic. The bartender Michael was fabulous. The coffee drinks were out of this world. I highly recommend stopping here if you're in Miami."
+        },
+        {
+          "rating": 5,
+          "text": "Chill vibes for sure happy hour 50 % off till 8 for drinks till 6 for food. Food was decent but menus change they have breakfast lunch dinner and late night."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:25.565Z"
+    },
+    "ChIJ-W_JjE632YgRNkuwJmRj4LA": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Coffee is praised generally, with one specific iced americano mention and another calling the coffee 'amazing,' but no single drink dominates.",
+          "quote": "The coffee was amazing too",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Pistachio cheesecake",
+          "reason": "Singled out with the strongest, most specific praise—called the best ever—in a 5-star review, while other food mentions stay generic.",
+          "quote": "the best I've ever had in my life",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "We came for breakfast on our last day in Miami. It’s a a  well decorated, cozy place with an inviting vibe.  The owner was super friendly and accommodating. I had an iced americano and a delicious blueberry danish. We sat outside and had a perfect morning."
+        },
+        {
+          "rating": 5,
+          "text": "I found this place today and honestly didn’t expect it to be that good! Omg!!! The pistachio cheesecake is the best I’ve ever had in my life. The coffee was amazing too. The owner has Italian roots, he really knows what good desserts should taste like. He’s also super nice and easy to talk to, which made the whole experience even better. Thank you! My favourite coffee spot now in Miami\nP.S. The cheesecake was so delicious that I even forgot to take a photo because I started eating it right away 😂"
+        },
+        {
+          "rating": 5,
+          "text": "I went to La Suiza today and enjoyed the experience and the food. I had previously tried their pastries so I was sure the quality is top notch. One thing that was hard to find is the location. Google Maps was telling me I had arrived but there was only a garage beside me. Sending this picture in case it's helpful for any other guests. They're located besides the facial place. They also have wifi so I was able to take a meeting from there."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:30.272Z"
+    },
+    "ChIJHyqmo-y32YgRYHnLUs7ScrA": {
+      "picks": {
+        "drink": {
+          "name": "Detox juice",
+          "reason": "Specifically named and highly praised in a 5-star review as the best they've ever tried; other reviews only generically mention 'great coffee'.",
+          "quote": "the best detox juices I've ever tried always fresh, flavorful, and refreshing",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I absolutely love this café! I always come here for my detox juice after my Pilates class, and honestly, they have the best detox juices I’ve ever tried always fresh, flavorful, and refreshing.\n\nIt’s the perfect grab-and-go spot. They have a few outdoor tables if you want to sit and enjoy your drink, but what I love the most is how convenient it is when I’m in a rush. I can just order my juice, grab it, and head to work while drinking it on the way. The atmosphere is beautiful, clean, and welcoming. Highly recommend!"
+        },
+        {
+          "rating": 5,
+          "text": "A truly special coffee shop. You can tell every detail is carefully thought out, from the service to the coffee presentation. The atmosphere is beautiful, cozy, and relaxing. Definitely a place made with love and care. ☕✨"
+        },
+        {
+          "rating": 5,
+          "text": "Stopped by this little coffee spot in Miami and honestly loved the vibe. Fast service, great coffee, and perfect for a quick grab-and-go. The staff was super friendly and the coffee tasted fresh and smooth. Definitely a nice place to stop by if you need a good coffee during the day."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:42:34.265Z"
+    }
+  }
+}

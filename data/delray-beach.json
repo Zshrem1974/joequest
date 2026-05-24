@@ -1,0 +1,2323 @@
+{
+  "version": 1,
+  "citySlug": "delray-beach",
+  "city": "Delray Beach, FL",
+  "generatedAt": "2026-05-24T21:37:57.041Z",
+  "count": 15,
+  "cafes": [
+    {
+      "city": "delray-beach",
+      "id": "ChIJ16jBIFff2IgRJK8Nk4E8tWo",
+      "name": "Glimmer Cafe",
+      "address": "325 NE 3rd Ave 1st Floor, #C, Delray Beach, FL 33444, USA",
+      "lat": 26.467709,
+      "lng": -80.0700373,
+      "rating": 4.8,
+      "reviews": 876,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7689118466020585252&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ16jBIFff2IgRJK8Nk4E8tWo%2Fphotos%2FAb43m-umcmRs5tekQT-QGNvk7UkztmGnanfWbseAbTNM75A_oNaGFStpHbcubcyXVMSPzlWilHJWRxJvboI7cAKfLZCAkdwxO7GhBdZ-FmxPehSFYgmf7OxfaEYnBmw4PJm305F_vq8-r3yuD1FKRCcDAP9t7lGYu4Kjezvx9BcrnucaMwHvIJm0L6F8ibdv1EgmPXGouo0FcjNJHGck0Fk3R0QfXYoUAj_nvrJs6LY1FMRC9zYWh-QW8ekPNpXWZg3ZXLaRyrUSrZVpmBevRtYoJgCojrp-oOhIuC8_c7l7yTYKsw&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJecutcsAf2YgRAoWoM0DW-Qg",
+      "name": "Carmela Coffee - West Delray",
+      "address": "8918 W Atlantic Ave Bay 300, Delray Beach, FL 33446, USA",
+      "lat": 26.452688,
+      "lng": -80.186618,
+      "rating": 4.7,
+      "reviews": 618,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "bakery",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=646783592737309954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJecutcsAf2YgRAoWoM0DW-Qg%2Fphotos%2FAb43m-uC9GQyNVjcbYmOkq3cV9itioYPaKvZfCzVU5o4MgyKqzOJZ1o155d5vd-2URUvmgO1AuZcU5UafNyAavKFO1E4I8Ap_pr-bHKFY_dETKyF6CIKIMr-cu3I4YJmJ2NOwjBv6lbSqWD7cfHb5kKR6zUqMeYxm36rL9PZDEAPbV9yvjD0R94G9R_DYBK1VnrwxMS8X65oaJN5AzA8XkUX4Ybw6NDXPc6oI-o_fJLUGzgUryRoX0IxKCAcv0KycRgFRgPnXQcNf-xrbw5vXD9em11PIUBdErF2Jwun-PELiyEbaDBeCTZQBAKytHPaO6VcER3Db33JlYkgXg1Bmsc5ip84AFDCku4B89LwIIr3EGNMaoHfvn5np26Iy1rjL87AUe1SxD1PzjdVeUp4SPDxcoinBjdOPOAvL-9K7RheB29VGw&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJMUOGUt_f2IgR2DkKvpg-J_8",
+      "name": "the seed. Coffee + Juice Bar",
+      "address": "526 E Atlantic Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.4615409,
+      "lng": -80.06732269999999,
+      "rating": 4.7,
+      "reviews": 573,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "acai_shop",
+        "internet_cafe",
+        "bakery",
+        "brazilian_restaurant",
+        "juice_shop",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=18385732829507631576&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJMUOGUt_f2IgR2DkKvpg-J_8%2Fphotos%2FAb43m-vAHvI3zZrD8-BkS7LMBKsF1w1tTBMSKMT3-TDtib-7OXf2HP841HpyDBWKnJ9xdlxV6PXSV-zBp5rEcs6gNrmWT84PrXWUdh1nhwYnT9yGtzu9p9EIcbQ33ffQtPBSK4OHyDxKvJnJwVs3vK3sz_sZuDXuxaIdv54jrMK_pO8-5N13-103Jwf1X-5aBSKnGnYS7Dcx8ec2fIojOWebZg7n59NZ-AsCHurPH872O-4HGBlEYsA8Wd4uyyFN9peawEZ-CxigM_CMhDkCmmpUDn8WzFdyYGD8zuVBr4N1ytY3SA&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJZ3uVgeff2IgRKzB1iPKDTR4",
+      "name": "Carmela Coffee - East Delray",
+      "address": "247 SE 6th Ave Suite 1, Delray Beach, FL 33483, USA",
+      "lat": 26.4570012,
+      "lng": -80.0666107,
+      "rating": 4.7,
+      "reviews": 554,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "bakery",
+        "cafe",
+        "tea_house",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 4:00 PM",
+        "Tuesday: 7:00 AM – 4:00 PM",
+        "Wednesday: 7:00 AM – 4:00 PM",
+        "Thursday: 7:00 AM – 4:00 PM",
+        "Friday: 7:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2183546472039264299&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJZ3uVgeff2IgRKzB1iPKDTR4%2Fphotos%2FAb43m-sxfHyidZhHcuCaJZRtSSVId8Jh6ifF7aGcUWFdGcseW6VtUoXzijKkdzCFahyOOf-PpLdWFP77JCcE18p2bgU4Qq-IhSnfSvUi7oo58zR5hZ0wv39gI5-2nNNRqUEoOoLBMSLYpLdWl_FfIP8-F7oP-OG4dvWKtUjw1Dc2ZQicWA0dtS2xNsypCFnKpx_pTDYNHZBthZHQ-WRKyyi3DE2e4AeJljWkzbXzt9YkUGjXFrZz34Z05bC4u-HoM6IvknKkT5lH5yYytNJs7Gp221NAv0lYFsE4QxQ3d2lkVj5Yng&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJL_cmLtvf2IgRq-XagfuOSOY",
+      "name": "Colombian Coffee House",
+      "address": "12 SE 5th Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.4613668,
+      "lng": -80.0682149,
+      "rating": 4.5,
+      "reviews": 909,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16593670037913134507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJL_cmLtvf2IgRq-XagfuOSOY%2Fphotos%2FAb43m-u8MauapAq42bwLa1yNwjLciyIdKB7Nm7skxDG6DU4CJtCC_fKPcvHXQMtTOmOqyYvmXdASyD8uRrbsoZA7iKLgGd5Cp_8U5l1xd-ow7d58WmQ78tvxjvM8SJAXI3KfdZ1TlOvgDuPPayL-xbUiSPxdl3-lCnWlGXXBQGqYmy1e41979EFGfeUxe07eP7I1kLuH9AQbiEigp3a6GE45q-f5bsY7RT1OAdkL87a3pCFauDFCoHQNuxJyPZYbt8UUz3CYWOYALSM9FzzTYlSU11B3kmTR3iDzl6O55PJb9SghOg&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJz1vg-fPf2IgRRAYb5rghdZA",
+      "name": "Cumbres Coffee Roasters Delray",
+      "address": "1880 Dr. Andres Way, Delray Beach, FL 33445, USA",
+      "lat": 26.4566019,
+      "lng": -80.09239029999999,
+      "rating": 4.8,
+      "reviews": 338,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 3:00 PM",
+        "Tuesday: 8:00 AM – 3:00 PM",
+        "Wednesday: 8:00 AM – 3:00 PM",
+        "Thursday: 8:00 AM – 3:00 PM",
+        "Friday: 8:00 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10409263191754999364&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJz1vg-fPf2IgRRAYb5rghdZA%2Fphotos%2FAb43m-u2hsHFOtxWAZBcsxCt8j6GcuBYIIZLac02XmzQ8FBr6rtRxprglRFXufbC3ZwZSaBH0y32YvqfoSbI21tl7GSLvEP2p90XVT23OncfRWuACiaXLLUDO-xY4qvmDa-uH33lwEHUeSdYyWikj7QjjbhMz3b4-0mQNOlNXUcZFIrb314eID7l0zaA2bHfPa8lfcsVvH4_JvmZzB07q2Zl4547rbUy_hJJSDp2Si5ntmqMTLDbI1ZD-nft3U42pMhmK2TW5cEbQptbZf2tgWecPgAXyT39Lkgx_tr2oqORxC6C3w&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJwYOqtdzf2IgRwWe-SXPynE8",
+      "name": "Subculture Coffee Delray",
+      "address": "302 NE 6th Ave, Delray Beach, FL 33444, USA",
+      "lat": 26.467436799999998,
+      "lng": -80.06740769999999,
+      "rating": 4.4,
+      "reviews": 673,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 10:00 PM",
+        "Tuesday: 7:00 AM – 10:00 PM",
+        "Wednesday: 7:00 AM – 10:00 PM",
+        "Thursday: 7:00 AM – 10:00 PM",
+        "Friday: 7:00 AM – 10:00 PM",
+        "Saturday: 7:00 AM – 10:00 PM",
+        "Sunday: 7:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5736726602335545281&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJwYOqtdzf2IgRwWe-SXPynE8%2Fphotos%2FAb43m-tnimzoEzLVtLIO-b_AXnSb5igvbA-qJmvwfMIoWGjfQqQc4WCzL-jRyzakGS1eRF55y7PpQjkybs7Wucw789X20uEghZrnbZ6G2YEroy50Ai6ePVDg5jwTi73aDli43JxjjgmYbnQnyDVWIByd_fPVmOlZjqLTiZyvOJHSbuMDaxB_omAGj4VGBBWZyrzjuepxBRBMn_e_MCiAxjWs4M9MRdxqNGRNIVXCWtte5oQtYFzHsL17nIJTbdzXYkxNL1ZWd1toBP6o5aPNwIIlrHPV9Q0zgxdskDI5PodtEfdwIA&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJr6mtW8Hf2IgRMmLiyMwQh-Y",
+      "name": "Coffee District",
+      "address": "325 NE 2nd Ave STE 104, Delray Beach, FL 33444, USA",
+      "lat": 26.4682557,
+      "lng": -80.0710075,
+      "rating": 4.5,
+      "reviews": 457,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 8:00 PM",
+        "Tuesday: 8:00 AM – 8:00 PM",
+        "Wednesday: 8:00 AM – 8:00 PM",
+        "Thursday: 8:00 AM – 8:00 PM",
+        "Friday: 8:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16611264222309016114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJr6mtW8Hf2IgRMmLiyMwQh-Y%2Fphotos%2FAb43m-u4Seg0h93aAYmnh1jN1IyXavOhLoHggQbynUuj2j-uoyScuDGiKkzss-eM8A7W_kxGrzo-ekEbVcXNA9m-ajlZLb0awGsePPYQyRQWOrX0EFa2-nIwcmp4Pv55jEetGST67Aec-hivVNm35fsu4hCbTU1tQAxfqlA5XVjdkHISjus-CI8YKtN_YWihzWoF9hwTwiDhXCWD1kNoW7063cl8W9yyg8ufGtb6VlZGLUyh7yjf-LkMHL5_1He9UUT-F65BqG-EvyIpLz2qBU1EB727fx9He5hrc41d76QvSd8wtqOim_vnJg4KH8gKPlzdtTvEMAjYQT_ZAsOTG9BSPY4EducRmVBiScibLSWkc6s4HQAlpJWypZthDilzgy7LupZAcOQtYsqOEwx4B0k3CAp02IIGov0onttgz7PKaV5tPw&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJa18HDWzg2IgRm9KHyZwvMG0",
+      "name": "Gizzi's Coffee",
+      "address": "2275 S Federal Hwy, Delray Beach, FL 33483, USA",
+      "lat": 26.4329568,
+      "lng": -80.0716597,
+      "rating": 4.6,
+      "reviews": 330,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 4:00 PM",
+        "Tuesday: 7:00 AM – 4:00 PM",
+        "Wednesday: 7:00 AM – 4:00 PM",
+        "Thursday: 7:00 AM – 4:00 PM",
+        "Friday: 7:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7867840899458781851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJa18HDWzg2IgRm9KHyZwvMG0%2Fphotos%2FAb43m-vrQ0smj-7ZMYG8pVHeIYx_46ytPSuIqzDQHoh-StNoolGVy1ju4uEzBFkHikZCj-d6X46RVSc-mTnhYspPmj_nGnDPUX0H8DbdLpDXKU4GsNCl4SxAPWlBXa1yILlr4SS3WXC6fvxo-dZkMHblT5-laGMfoBqf4Ym8ojULeU5ECh5_bhIshKDg5uJ4ivN4CzdvnMtnMlteuJg0fcs9i8y_Q_7jS2D0ZxTZQvyRfh1iFgQxLouk9ezsC9yjyl3QUOPOboTOKXnwZF3E_y_kbu5CIDgkT4XbV-lSdKmWzyvSGU0BNM0Q3SflM-aTeixvqyoYhLwB3gMBDpV7MJ5xEPnJc9ABLD7dG-ENq06OOnliigPcQpbfy5yBBuGA4mzLgU2twgX0CohD3rpLzs1BPxeKsL38ptJ62lVrfw5VT9B9Dg&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJfzQYE1_f2IgRHNRJmeCkaqk",
+      "name": "The Modern Rose Delray Beach",
+      "address": "142 SE 6th Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.4589446,
+      "lng": -80.0673309,
+      "rating": 4.6,
+      "reviews": 307,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 9 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 9:00 AM – 5:00 PM",
+        "Tuesday: 9:00 AM – 5:00 PM",
+        "Wednesday: 9:00 AM – 5:00 PM",
+        "Thursday: 9:00 AM – 5:00 PM",
+        "Friday: 9:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12207751024492532764&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJfzQYE1_f2IgRHNRJmeCkaqk%2Fphotos%2FAb43m-tTcFoI-4egdkszy7B5mKSHXpn6xb1zH49A4sc1b1c-mIDR4QLrNYByT-pDIs8HtWwuhWk_mTTtFFaEdO-1--OZNdD7WpNDC7nbP44o1q2BoXL-45WlvbY6nHUOaChf-2Sg1RFMJJnCahG8fVnQwUn2dIUDWfrEPB3obI0zXT4NR_Ls4Ja8T6ScueybhO5TnfkrifcmC-6uLR0mqF15OchJixx1gUTqEu_2s9rpJfJoQY9ei9qRtdyWAUFiZ5u1-rIyOydyVxZq6Dlk6JHdfRS8hYO5J13d2JHLehgsFwVU1t_Q8gCNuwQw6Haocnj1hSrH3T8DMy2ILfrK0_HV9m2LExkTvscKdTSPxGa3lJeiiXR1lc2tqQUljw-siL21cszP-hXRMNnbOUsuYtAT-d23p6DAIL4Gc5FMEueMxPfIn6hwqa5KagyX84X-fLwB&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJx7cFXlDf2IgRQWS1H44_n2s",
+      "name": "Deke's in Delray",
+      "address": "6 NE 5th Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.461972,
+      "lng": -80.0682375,
+      "rating": 4.7,
+      "reviews": 233,
+      "price": "$$",
+      "types": [
+        "coffee_roastery",
+        "coffee_shop",
+        "cafe",
+        "wholesaler",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 12,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 12:00 PM",
+        "Tuesday: 7:00 AM – 12:00 PM",
+        "Wednesday: 7:00 AM – 12:00 PM",
+        "Thursday: 7:00 AM – 12:00 PM",
+        "Friday: 7:00 AM – 12:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: 7:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7754986963005170753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJx7cFXlDf2IgRQWS1H44_n2s%2Fphotos%2FAb43m-uzGEV9c7WKL2KkOAkQFg0hW3xXlp0DcKtUk0O0aPIkR5r2C8YcejdMR0dmZP2bx3B7Nuu2bJXJPzcteVrSNYN2MX1OoFQ-eoN9TMrGTYlVe-SezEsepFNNr8ygrUu4b2VmsA-kT8uljjf-XTP-lETU_nJMKEMGSWiqOtNqnfUj851bPTiKrugKRJfnF2_iINU-yFuYSt6SooGZ49yVbYgh1ce3uErSsIPKtnp3J_CkxmI3vQO_WTvB8vLVvz6Fkgjl0nQORIlQlZB5152yc35h9yZXiZazeVwWbGPcBAGs0Q&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJd_TzVeTf2IgRHXWTP3U_yCM",
+      "name": "Foxtail Coffee Co Delray Beach East",
+      "address": "244 SE 5th Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.457034,
+      "lng": -80.0681638,
+      "rating": 4.6,
+      "reviews": 162,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 6 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 4:00 PM",
+        "Tuesday: 6:00 AM – 4:00 PM",
+        "Wednesday: 6:00 AM – 4:00 PM",
+        "Thursday: 6:00 AM – 4:00 PM",
+        "Friday: 6:00 AM – 4:00 PM",
+        "Saturday: 6:00 AM – 4:00 PM",
+        "Sunday: 6:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2578380559479960861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJd_TzVeTf2IgRHXWTP3U_yCM%2Fphotos%2FAb43m-ss2UM3Ws8M3IwHWqtJ2L0E7FGA89Qx5kpUBDTl3Hha65j1wW_6u4oCpXTI5_Cs6lQO_fvHmemaFo25SqO9-_j68el8yejGBD_XKNnKxUeco-adpiZLzqg4feaNCuP2n1vmiUENxY5Phf38agv9p7CnhNigiC7MuHQF4-fe7cVr1QrPtRUW6X75RNi-8JBgyRXs0oEV4ESLV8HTy8dRqaVewG32QwjvIMqzcNIdmaCZXuKcj9NWkPNa4se_slV_1gHiqYv4ahe-z7vKfQJDRFvi6fDwcfv8byIHSzWXOq5wRg&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJQTq2d93f2IgRHJB9fO5nfOI",
+      "name": "Latte & Licks",
+      "address": "1214 E Atlantic Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.4615731,
+      "lng": -80.0594487,
+      "rating": 4.6,
+      "reviews": 33,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "coffee_stand",
+        "ice_cream_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 1:00 PM",
+        "Tuesday: 7:00 AM – 1:00 PM",
+        "Wednesday: 7:00 AM – 1:00 PM",
+        "Thursday: 7:00 AM – 1:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 7:00 AM – 6:00 PM",
+        "Sunday: 7:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16320033423672315932&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJQTq2d93f2IgRHJB9fO5nfOI%2Fphotos%2FAb43m-s5OWaRIt7INt2IVFdtvrx6sRuVBFfPy8XXeymnq9MVYBKPfT_Zdv37m5Bq0pKfO1JXCLqOgyfHw7R3KhsBRVZ8QnCGaapMyi0fpJagGIfKyAWifUpNgaqyj2omcje4apAHQsjN9Wr9W6Z9A7qIcvRlW2ne4vI5tViA_2UI9eH8p_0uQ8dUYEP355DxvZujvqSSF9XeH9AIrH_Xg2IWKSznCpS2ue9AXbW0OLT5XpN1e-SYnZaJ0ifpqfjlj-CxxQdB9kUUzKm0Y40XrLgVmQiX7RUHb11iaaA8M75FDQVV-N58lk5ABvxjqQpKlmmsZPZoVIhVMvkaa8RizSHkQIe8rmpZ0mNYFFh8gCN5ugNGuxlnaDvG3R7QAdq6uim6-9vr1Wke_oX54yfAmrCSgVHm4oAimRDKPVXWUZTi9Vm7Cn1HMDqb4C8ZHPLsvCRu&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJ7zDjtQLf2IgRjGZXkqqyiIA",
+      "name": "Tartelette Frênch Patisserie & Café Delray Beach",
+      "address": "506 E Atlantic Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.461503999999998,
+      "lng": -80.067759,
+      "rating": 4.6,
+      "reviews": 29,
+      "price": "$$",
+      "types": [
+        "pastry_shop",
+        "bakery",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 12:00 AM",
+        "Tuesday: 12:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9261849079356810892&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ7zDjtQLf2IgRjGZXkqqyiIA%2Fphotos%2FAb43m-tsYazE4ksjkMTU8AwQz-v7zXGcGepKbt0U8A7gxg--vp1_qbTx0GYDV-h3SYgt5GmidEEdzVsUklpHwAg3RdhoRsX9eiMEv5Sa0vR_P1IH0RYioOyrJ8ldCQvzXKgE3CF-v_VH_Aupqcri54YkU8rF51-XmR4-u98-fei2Hgjq3XVP2KoSbZ1544B__f4yPyGJ77k-aa48W_9r39No1_H6WmwCYrWG1S6d5ypQ1tdpg1FdZu6wv0XxVE9nZVTf2TrUWA7EoZBAP0yeVa3HDtHKpsNd8jFM6-mqTTe47OPagg&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJjbLHLHPf2IgRAPdTY0wtXT4",
+      "name": "Beach Market Cafe - Opal Grand Resort & Spa",
+      "address": "10 N Ocean Blvd, Delray Beach, FL 33483, USA",
+      "lat": 26.4625357,
+      "lng": -80.05863889999999,
+      "rating": 4.3,
+      "reviews": 27,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "bistro",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:30 AM – 10:00 PM",
+        "Tuesday: 6:30 AM – 10:00 PM",
+        "Wednesday: 6:30 AM – 10:00 PM",
+        "Thursday: 6:30 AM – 10:00 PM",
+        "Friday: 6:30 AM – 10:00 PM",
+        "Saturday: 6:30 AM – 10:00 PM",
+        "Sunday: 6:30 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4493797809292834560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJjbLHLHPf2IgRAPdTY0wtXT4%2Fphotos%2FAb43m-un69Vaj7XIzsiTcx76BMFvI5X9K7-FybCi55omtrSeTAD23ZsnW9b8D8I-eZJeNPOnhCECUcnApAhEiOCBSoo0dyPEvRrWpNtFprFxJAXBirRqE5W8e64W6GAC3-eHM501LBZzWdC84npCFUVlQmoGEcwACpWJYSq1BKinR9xbvYDVfynwbzT6rWTuzuMwAd2MDNmKrnfPczX8eOSKQ1I7u4U-fzHzZgKJsUAcxKk0QMr53fgF2xggBaXcGivnUWZjiFTgKBDi-r2DOpM7kSeecLR22UxlNofkywjNsD6DjA&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJ16jBIFff2IgRJK8Nk4E8tWo": {
+      "picks": {
+        "drink": {
+          "name": "Lavender Honey Latte",
+          "reason": "Specifically praised in a 5-star review with vivid enthusiasm; lattes broadly celebrated across multiple reviews as smooth and well-made.",
+          "quote": "One sip and suddenly I'm a whimsical forest fairy",
+          "confidence": "high",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Croissant Sandwich",
+          "reason": "Only food item described in detail with strong praise—buttery, flaky, fluffy eggs, provolone, and ham. Other items had caveats (too much jelly).",
+          "quote": "so buttery and flaky it basically shattered into edible confetti",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Just had breakfast at Glimmer Café in Delray Beach and I’m convinced I accidentally wandered into a Pinterest board that became sentient 😂✨☕️\n\nLike… why is this place so cute?? It’s giving “Romantic Industrial,” which apparently means it looks like a love story between a poet and a hardware store 😍🛠️🌹 And it WORKS. Even the chairs are prettier than me. I kept taking photos of the furniture like I was on a date with it 🤦‍♀️📸💕\n\nStarted with their lavender honey latte ☕💜🍯 and OMG. One sip and suddenly I’m a whimsical forest fairy who writes poetry at sunrise and never pays bills. Meanwhile I’m sitting there in my “do not perceive me before caffeine” outfit 😅🙈 But the latte didn’t judge. It just silently healed 12% of my stress and maybe 3 of my personality flaws ✨🧚‍♀️🌿\n\nThen came the croissant sandwich 🥐😮‍💨💛\nThis thing was so buttery and flaky it basically shattered into edible confetti. Eggs fluffier than my future, provolone giving main character energy, ham living its best life. I took one bite and reassessed my entire existence. I caught someone staring at it, and honestly? I would’ve been jealous too 😌🤣\n\nMeanwhile, Grammy (our caffeinated queen 👑💖) ordered the amaretto almond latte ☕🤍✨ topped with honey‑roasted almonds like it was auditioning for a Vogue cover. She took one sip, closed her eyes, nodded once, and went “Oh, that’s NICE.”\nIf you know grandmas, you know that’s basically a Michelin star, a Nobel Prize, and a Grammy Award rolled into one 😭👏\n\nPretty sure her soul teleported to a chic Italian café where she’s wearing oversized sunglasses and silently judging everyone with class 🇮🇹😌💅\n\nFinal verdict: Glimmer Café said “breakfast, but make it emotionally transformative” 💖✨\n\nIf you’re ever in Delray Beach, get yourself a latte and let it spiritually upgrade you ☕💫😌💜"
+        },
+        {
+          "rating": 5,
+          "text": "Glimmer Cafe is such a vibe. Super cozy, warm, and effortlessly charming—the kind of place you actually want to sit and stay for a while. The atmosphere is inviting and intimate, perfect for catching up with a friend or enjoying some quiet time. And the lattes? Absolutely delish—smooth, well-balanced, and clearly made with care. A total gem in Delray and definitely worth a visit."
+        },
+        {
+          "rating": 5,
+          "text": "I lived in Delray Beach for a year, and I still don’t understand how I went to yoga right across the street from this coffee shop and never came in before. It’s so beautiful, truly stunning. Delicious coffee, incredible atmosphere, and such a gorgeous interior you just want to look at every detail. I managed to grab a table pretty quickly, but it was very busy."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:36:44.664Z"
+    },
+    "ChIJecutcsAf2YgRAoWoM0DW-Qg": {
+      "picks": {
+        "drink": {
+          "name": "Iced Latte (soy brown sugar cinnamon)",
+          "reason": "Specifically praised as a regular morning pick-me-up by a 5-star reviewer; other drink mentions are generic iced coffee.",
+          "quote": "my morning coffee pick me up iced latte soy brown sugar cinnamon",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Burrata & Prosciutto Avocado Toast",
+          "reason": "Explicitly named and described as delicious, fresh, and beautifully presented in a 5-star review.",
+          "quote": "Burrata & Prosciutto Avocado Toast — both were absolutely delicious!",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Wifey and I both had medium iced coffee $5 each.  Indoor atmosphere is cool and outdoor seating available.\n\nPeople come to get coffee and meet or work on their laptops.  Why do Starbucks when you can come here."
+        },
+        {
+          "rating": 5,
+          "text": "I had a fantastic experience at Carmela Delray. Every dish we tried was thoughtfully prepared and full of flavor, with fresh ingredients and attractive presentation. The staff were welcoming and knowledgeable, helping us choose the perfect drinks and courses. The restaurant has a cozy, intimate vibe that’s perfect for date night or a relaxed gathering with friends. Excellent food, service, and atmosphere — highly recommended."
+        },
+        {
+          "rating": 5,
+          "text": "⭐️⭐️⭐️⭐️⭐️\nIt was my first time at Carmela Coffee, and I absolutely loved it!\nThe place is super cute, spotless, and has a really pleasant atmosphere. The service was amazing — you can tell they truly care about their customers. My husband ordered the Beef Empanadas, and I had the Burrata & Prosciutto Avocado Toast — both were absolutely delicious! Everything was fresh, tasty, and beautifully presented.\nI’d definitely go back, and I highly recommend it! 💯☕🥑✨"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:36:53.062Z"
+    },
+    "ChIJMUOGUt_f2IgR2DkKvpg-J_8": {
+      "picks": {
+        "drink": {
+          "name": "Cold Brew White",
+          "reason": "Specifically called out as a reviewer's go-to with detailed praise for being smooth and balanced. Other drinks (iced Americano, strawberry latte) also praised but cold brew white had the most enthusiastic specific endorsement.",
+          "quote": "smooth, balanced, and just the right amount of sweetness",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Cinnamon Roll",
+          "reason": "Mentioned positively in two separate reviews, including one reviewer who has tried it and another noting they 'looked amazing.' Breakfast burrito also mentioned but only once.",
+          "quote": "the cinnamon rolls looked amazing",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The Seed is a great coffee shop & bakery right on Atlantic Ave, and a perfect stop for a morning or afternoon refuel.\n\nIt’s a cozy spot with a few seats indoors and outside and a cute little bench swing too. The staff are fast and friendly, and the baked goods are delicious. I’ve gone for the breakfast burrito a few times, along with the cinnamon roll and a few other treats.\n\nThey also sponsor the local run club and offer a discount to members."
+        },
+        {
+          "rating": 5,
+          "text": "Adorable little coffee place in Delray with a bunch of yummy little brunch offerings! Quiche, croissants, bacon and egg sandwiches, muffins, etc. The iced Americano was great! Lovely place to grab something small before heading down Atlantic Adventue or going to the beach. We will be back on our next visit through Delray.\n\nPretty interior with some neat photo opportunity areas and lots of pretty house plants. Good vibes."
+        },
+        {
+          "rating": 5,
+          "text": "White girl tik tok was buzzing about this place so had to try it. Everytime i drive by there is a like out the door. Thankfully when I went (valet parking with my Kia Sorrento) there wasn’t much of a line. I can see where the hype comes from, these coffees are great and are perfect for a morning stroll down the ave"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:00.432Z"
+    },
+    "ChIJZ3uVgeff2IgRKzB1iPKDTR4": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Multiple reviewers praise the coffee generally as 'great' and 'fresh' but no specific drink is consistently recommended; the one specific drink named (sugar-free vanilla iced coffee) received a negative review.",
+          "quote": "Great food, great coffee, and such a cozy vibe",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Shakshuka",
+          "reason": "Explicitly singled out as 'incredible' in a 5-star review highlighting the food, and overall food praise is strong across reviews.",
+          "quote": "the shakshuka is incredible",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "First time I’ve been to this place. Very friendly staff, the place is nice and has a cozy atmosphere. The coffee was fresh, and tasted good. They have a lot of breakfast options, and whatever I got was delicious.\nThe staff were friendly and even brought the food to my table (which they didn’t have to) . It’s the perfect spot to relax, catch up with a friend, or get a little work done. They also had plenty of plugs which made it easier to work anywhere within the coffee shop.\nI highly recommend Carmela’s to anyone looking for great coffee and an inviting place to unwind.\n\n**Bathroom was very clean even though they only have one unisex one."
+        },
+        {
+          "rating": 5,
+          "text": "Lovely little spot! Came here with my partner on vacation, drawn in by the name. Staff was very kind, and playful when I gave them my name. It was a super groovy atmosphere and interior. It was relaxing and playful, perfect for a brunch date, but there were also plenty of people working with laptops and reading. 10/10 would recommend if you’re looking for a refreshing bite with a homey atmosphere."
+        },
+        {
+          "rating": 5,
+          "text": "Had such a great time here that we had to come twice on our vacation! First time we were just blown away by the food—the shakshuka is incredible—and amazing customer service. We came back again today for some brunch and mentioned it was our anniversary, and assistant manager Jacob brought us a hot brownie on the house. We love it here!!! The locals are lucky to have this place."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:05.253Z"
+    },
+    "ChIJL_cmLtvf2IgRq-XagfuOSOY": {
+      "picks": {
+        "drink": {
+          "name": "Cortadito",
+          "reason": "Mentioned positively in a 5-star review as a mid-day pick-me-up; coffee broadly praised as strong and flavorful across multiple reviews.",
+          "quote": "grab a cortadito if you need a mid day pick me up",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Chocolate croissant",
+          "reason": "Enthusiastically praised in a 5-star review with vivid detail about texture and filling, outshining other food mentions.",
+          "quote": "chocolate croissants are absolutely perfect! Crispy crunch on the outside",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Love this place. Very cozy & very friendly. Get a yummy Colombian breakfast or just grab a cortadito if you need a mid day pick me up. Un lugar bien chimba parceros 🇨🇴"
+        },
+        {
+          "rating": 4,
+          "text": "Along the main drag of 5th Avenue in Delray Beach is a family-owned Colombia Coffee House. The space is small, but there are tables in the back and a couch in the front.\n\nService was great! Within minutes my iced hazelnut latte was ready. At first, it wasn't sweetened, but they added an extra pump and it was perfect. The guava pastry warmed up was good too."
+        },
+        {
+          "rating": 5,
+          "text": "Cute little coffee shop. We ordered a Cappacino and french press, both were the perfect amount of strong and were both very good!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:09.601Z"
+    },
+    "ChIJz1vg-fPf2IgRRAYb5rghdZA": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Multiple reviewers rave about the coffee; the latte received the most enthusiastic specific praise, with one reviewer buying beans afterward. Cappuccino and white chocolate mocha also got specific positive mentions.",
+          "quote": "This latte was INSANE. So delicious.",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Morning Luxe Melt",
+          "reason": "The only named breakfast item, described in detail with praise for its brie, bacon, egg, and croissant in a 5-star review.",
+          "quote": "Melted brie cheese, crisp bacon, egg and a few crunchy fried onions",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I discovered Cumbres Coffee Roasters simply because it's a 4 minute walk from the Tri Rail station.  These guys hit a home run.  Fantastic white chocolate mocha with a distinct robust flavor from the shot of espresso.  I enjoyed the Morning Luxe Melt  breakfast sandwich.  Melted brie cheese,  crisp bacon, egg and a few crunchy fried onions on a bakery fresh toasted croissant.  Cumbres has all the boxes checked with intimate seating,  gourmet pastries,  bar seating and immaculately clean and neat. Who doesn't enjoy the sounds of coffee grinding and the frothing steamer hissing in the background? In a world of unbelievably competitive coffee Bistro's seemingly on every block,  Cumbre rises above the rest,  tucked away off Congress near the Delray Beach TriRail station.  Shout out to this morning's friendly baristas, Juanita and Isabella"
+        },
+        {
+          "rating": 5,
+          "text": "Best coffee and breakfast in West Palm Beach, I was pleasantly surprised by this coffee and breakfast shop, so happy we found this hidden gem. The barista (Jeronimo) was super nice to us and it gave us a feel you can’t really find at just any coffee shop. The service was fast and the atmosphere was amazing, so happy to find this place!"
+        },
+        {
+          "rating": 5,
+          "text": "I was looking for a really good breakfast & coffee. I happened to stumble upon Cumbres and oh my. What a DELICIOUS place. The coffee… WOOW. There’s nothing like a really good cup of coffee that TASTES like freshly roasted beans. This latte was INSANE. So delicious. So good I bought the beans to make some at work. The breakfast was fresh and so yummy as well. The Pandebono was warm, and a perfect reminder of my motherland. The service was impeccable and the owner took the time to explain his concept and his product thoroughly. He even had a water bowl for my pup. This place is a GEM and I’m so happy I found it. 20/10!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:14.870Z"
+    },
+    "ChIJwYOqtdzf2IgRwWe-SXPynE8": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Lattes are the most frequently and specifically praised drink, called 'fantastic' and 'strongly recommend' across multiple 5-star reviews.",
+          "quote": "The lattes were fantastic and the service was so great",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Pastry",
+          "reason": "Pastries are mentioned positively in two reviews as 'delicious' and 'good,' though without a specific type named.",
+          "quote": "The pastry and coffee were good",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "My favorite cafe!! I love coming here for the coffee, food, and vibes. The drinks, pastries, and sandwiches are always delicious. My personal favorites are the matcha, chai, and lattes. The service is always great too. All the baristas are super nice and attentive. The only down side is the parking. The parking lot is really small and it can be hard to find a spot. The interior definitely makes up for it though, its super cozy!"
+        },
+        {
+          "rating": 4,
+          "text": "Cute little spot with retro vibes - good service and large location. Coffee options are endless and quick. Really loved the atmosphere and got a latte- strongly recommend, good quality"
+        },
+        {
+          "rating": 5,
+          "text": "Long time listener, first time caller.\nThe best there ever is. 10/10 all the baristas, amazing place to come to everyday get some work done and talk to people and listen to some great music. Can’t name a better place id rather go to."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:19.171Z"
+    },
+    "ChIJr6mtW8Hf2IgRMmLiyMwQh-Y": {
+      "picks": {
+        "drink": {
+          "name": "Chai latte",
+          "reason": "Specifically praised in a 5-star review as smooth and comforting. Lattes also got positive mentions, but chai latte had the most descriptive praise.",
+          "quote": "smooth, flavorful, and comforting",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are named in any review. Only a vague mention of a 'nice selection of snacks' with no detail.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Coffee District is a nice little place that keeps things easy and welcoming. The vibe is laidback, perfect for slowing down a bit, and my chai latte was just what I needed, smooth, flavorful, and comforting."
+        },
+        {
+          "rating": 5,
+          "text": "Full bar, but they specialize in Belgian style beers! Nice selection of snacks. And the coffee choices are great too!!"
+        },
+        {
+          "rating": 5,
+          "text": "Just happened to be in the area in need of coffee. My hot latte was perfect!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:23.413Z"
+    },
+    "ChIJa18HDWzg2IgRm9KHyZwvMG0": {
+      "picks": {
+        "drink": {
+          "name": "Strawberry Banana Fruitizzi",
+          "reason": "Specifically named and called 'phenomenal' in a 5-star review; other reviews only mention coffee generically.",
+          "quote": "Their strawberry banana fruitizzi is phenomenal",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "Reviews mention pastries and breakfast foods generically but no specific food item is named.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This coffee shop is such a gem! The drinks are always delicious—whether it’s a classic latte, a seasonal special, or something iced, everything tastes fresh and carefully made. You can really tell they take pride in what they serve. The staff are equally wonderful—friendly, welcoming, and quick to make you feel at home. They take the time to greet customers with a smile and often remember regulars’ orders, which makes the experience even more personal.\n\nThe atmosphere is cozy and inviting, perfect for catching up with a friend, getting some work done, or just relaxing with a great cup of coffee. Between the amazing drinks, the warm staff, and the comfortable vibe, it’s easily one of my favorite coffee shops in town"
+        },
+        {
+          "rating": 5,
+          "text": "Awesome atmosphere, great workers! My roommate and I drive 20 minutes, and it's worth it every time. So many different options to choose from, coffee, pastries, etc. Love coming here, and the owner is so nice! Everyone go to Gizzys now!"
+        },
+        {
+          "rating": 5,
+          "text": "I came here because my close friend’s name is Gizzi. Seemed like a good sign. I’m glad I came. Their strawberry banana fruitizzi is phenomenal. The host is an incredibly kind man. Calm, laid back atmosphere. Great for co-working or relaxing."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:27.159Z"
+    },
+    "ChIJfzQYE1_f2IgRHNRJmeCkaqk": {
+      "picks": {
+        "drink": {
+          "name": "Churro Cold Brew",
+          "reason": "Specifically named and enthusiastically praised in a review; only specifically named drink in the reviews.",
+          "quote": "We had the Churro Cold Brew-Magnificent!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Avocado toast with chicken",
+          "reason": "Only specifically named food item, ordered and enjoyed by reviewer in a 5-star review. Other reviews praise food generally without naming dishes.",
+          "quote": "We enjoyed our meals and beverages",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "✨ First time visiting. My favorite childhood friend expressed interest in visiting, so I surprised her for her birthday 🎂. With the popularity of this venue, the parking space is limited. We parked in the bank parking next door. There were also multiple groups celebrating in the private dining room. We visited on a Saturday midday, but did not have reservations. We waited 20 minutes for a table.\nThe menu selection is very diverse with a great price point and vegan selections. I ordered avocado toast with chicken and chili sauce (not spicy). We enjoyed our meals and beverages. Our waitress was friendly, but I had to remind her at least 3 times to bring an item that was missing from the order. Otherwise, the restaurant staff are very hospitable and the decor is fun and festive for any outing, celebration or gathering. I look forward to returning, especially to try the boba tea flight."
+        },
+        {
+          "rating": 5,
+          "text": "One of my favorite brunch spots! The owners are so sweet, friendly, and welcoming! It is always packed so make a reservation in advance.\nI came here multiple times with my friends and with my church friends (over 20 guests) they never fail to amaze me with their amazing service."
+        },
+        {
+          "rating": 5,
+          "text": "I hosted a very special and emotional brunch at The Modern Rose to honor my daughter who passed away, and I cannot put into words how grateful I am for the care and compassion we received. The staff was incredibly attentive, thoughtful, and went above and beyond to make sure every detail beautifully honored her memory. It meant more than they will ever know.\n\nThe food and drinks were delicious, every plate fresh and full of flavor, and the service was outstanding from start to finish. They created an atmosphere that felt warm, respectful, and full of heart, and I will forever be thankful for that.\n\nIf you are looking for a place that not only serves amazing food but also truly cares about its guests, The Modern Rose is the place. I highly recommend them and will always hold this experience close to my heart."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:31.533Z"
+    },
+    "ChIJx7cFXlDf2IgRQWS1H44_n2s": {
+      "picks": {
+        "drink": {
+          "name": "Cortado",
+          "reason": "Cortado is specifically praised in multiple 5-star reviews, with reviewers calling it 'excellent' and 'amazing.' The house-made Haus milk also gets repeated love across reviews.",
+          "quote": "Cortado was amazing",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are named in any review. One reviewer mentions partnerships with local bakeries but does not name any pastry or food item.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Cortado was excellent! Nice milk texture. My buddy got the matcha, which he enjoyed. Didn’t come sweetened, which is a plus. A little honey and he was off to the races. I like the straightforward cafe vibe. Standing at a bar drinking espresso in the morning is my idea of a good time."
+        },
+        {
+          "rating": 5,
+          "text": "An excellent experience all around. I live in NYC and I’d consider Deke’s one of the best iced lattes I’ve ever had (I make sure to stop through every time I visit). Their Haus milk is so flavorful, and staff are very generous and attentive."
+        },
+        {
+          "rating": 5,
+          "text": "Amazing coffee with expert baristas. Cortado was amazing. Single origin coffee with haus milk (cocunut, cashew, dates) or whole milk if you prefer. Nice aesthetic and customer service! Will be coming back!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:36.579Z"
+    },
+    "ChIJd_TzVeTf2IgRHXWTP3U_yCM": {
+      "picks": {
+        "drink": {
+          "name": "Latte with sweetened condensed milk",
+          "reason": "Specifically praised in a positive review; espresso drinks and lattes also broadly commended.",
+          "quote": "loved the latte with sweetened condensed milk. So good!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food item received positive mention. The cinnamon roll and breakfast croissant were criticized, and general 'food is great' lacks specificity.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Foxtail Coffee is a charming little spot that serves some of the best coffee in the area. The espresso drinks are consistently flavorful, and the lattes and matcha options are especially well done. Prices are reasonable, and the quality easily matches what you’d expect from a specialty coffee shop. The staff is generally friendly, welcoming, and knowledgeable, which adds to the overall experience. The cozy atmosphere makes it a nice place to stop in or grab coffee to go.\n\nThat said, service and food quality can occasionally be inconsistent depending on timing and staff. Seating is limited, and it can feel a bit cramped during busy hours. Despite those minor issues, this is still a reliable and enjoyable coffee stop. I’d definitely recommend it to anyone looking for good coffee in Delray Beach."
+        },
+        {
+          "rating": 5,
+          "text": "Best coffee in town. I will drive super far to get this delicious coffee. Food is great too. Prices are awesome. And the baristas are always nice"
+        },
+        {
+          "rating": 4,
+          "text": "This tiny coffee shop was around the corner from our Airbnb. Inside a larger building, we ordered ahead. We walked in and our coffee was on the counter waiting. Having a sweet tooth, I loved the latte with sweetened condensed milk. So good!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:41.187Z"
+    },
+    "ChIJQTq2d93f2IgRHJB9fO5nfOI": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Positive specific mention in a 5-star review praising it as delicious, though other reviews criticize coffee quality. Mixed signals but latte has the most positive specific callout.",
+          "quote": "makes a delicious latte",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Hyppo popsicles",
+          "reason": "Specifically praised as 'amazing' and highlighted as a family tradition; the only food item with clear positive feedback (muffins were criticized).",
+          "quote": "The Hyppo pops are amazing!",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "Very cute place with a nice atmosphere, but unfortunately the drinks were disappointing. I ordered a matcha and it tasted extremely watered down you could mostly taste the milk, not the matcha or the added flavor. The quality of the matcha itself also didn’t seem great, which was noticeable from the dull, greyish color.\n\nI decided to give it another chance and asked for their most popular drink, which was a cinnamon iced latte. Sadly, this was also very watered down I couldn’t really taste the coffee or the cinnamon, and the color again looked very diluted. Their cold foam machine also wasn’t working at the time.\n\nI’m sharing this feedback in hopes that the quality of the drinks improves, since that is the main reason people visit. I ended up spending about $8 and couldn’t finish either drink."
+        },
+        {
+          "rating": 5,
+          "text": "Absolutely loved this place! We received outstanding customer service from Kennedy, super friendly and attentive. The atmosphere was cozy, and the Italian coffee was delicious and authentic. Definitely coming back soon!"
+        },
+        {
+          "rating": 5,
+          "text": "Kennedy was absolutely fabulous! Upbeat and bubbly energy, makes a delicious latte and such an array of fun popsicles to choose from. Definitely coming back!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:46.206Z"
+    },
+    "ChIJ7zDjtQLf2IgRjGZXkqqyiIA": {
+      "picks": {
+        "drink": {
+          "name": "Hazelnut coffee",
+          "reason": "Specifically praised in a 5-star review for using real hazelnut and natural ingredients; cappuccino also called 'perfect' in another review.",
+          "quote": "Best coffee in Delray Beach. Their hazelnut coffee has real Hazel nut",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pastries",
+          "reason": "Pastries are the most frequently and enthusiastically mentioned food, compared favorably to those in France across multiple 5-star reviews.",
+          "quote": "pastries were as good as we've had in France",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is a wonderful addition to The Avenue. The cappuccino was perfect, the pastries were as good as we’ve had in France and the little grace note of bringing a carafe of water and two adorable glasses was a bonus. The servers were gracious and helpful. The sandwiches look amazing but we haven’t tried them yet. Next time!"
+        },
+        {
+          "rating": 5,
+          "text": "Great place. Good coffee and pastry! Highly recommended"
+        },
+        {
+          "rating": 5,
+          "text": "Delicious pastry"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:50.992Z"
+    },
+    "ChIJjbLHLHPf2IgRAPdTY0wtXT4": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drink is named positively; one reviewer was unimpressed with coffee drinks and no other drink mentions exist.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Grand Classic Sandwich",
+          "reason": "Singled out with strong specific praise in a 5-star review as one of the best breakfast sandwiches ever, and sandwiches generally are praised as fresh and well-priced.",
+          "quote": "their grand classic sandwich is hands down one of the best breakfast sandwiches",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Everything’s so wonderful. Check in everyday while my stay. The best blueberry muffin😍😍"
+        },
+        {
+          "rating": 4,
+          "text": "Fair prices and the food was excellent.  Great place to eat healthy and quickly - whether staying at The Opal Resort or heading to the beach.  I’m at the resort and would come back again either way.  Unfortunately, I was not as impressed with the coffee drinks I ordered."
+        },
+        {
+          "rating": 5,
+          "text": "It’s not just for hotel guests. Stroll on it from the beach or your next business meeting."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:37:57.041Z"
+    }
+  }
+}

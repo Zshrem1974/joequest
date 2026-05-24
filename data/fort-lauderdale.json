@@ -1,0 +1,2680 @@
+{
+  "version": 1,
+  "citySlug": "fort-lauderdale",
+  "city": "Fort Lauderdale, FL",
+  "generatedAt": "2026-05-24T21:41:09.883Z",
+  "count": 18,
+  "cafes": [
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJH9758boB2YgRrs8O7f55ATA",
+      "name": "Café Bastille Fort Lauderdale",
+      "address": "704 SE 1st St, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.121367,
+      "lng": -80.13606899999999,
+      "rating": 4.9,
+      "reviews": 16499,
+      "price": "$$",
+      "types": [
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=3459180124603076526&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJH9758boB2YgRrs8O7f55ATA%2Fphotos%2FAb43m-s0ahNgbmMxMOnuhFDpwet3guzBcRbL6DVwmms9y9bqFtuOhnKdm6tokLJtdMf8VxjTE0uynG8WndYEbwzCneSAUAnJ6Bsq8rx2QWjAVifmlZ1eP7Vd0Sgjh6DSeDeMgl-HApCVCwQbXyRe2RuBUXsylXmGLSQ15YWO2gF2oTBC_D6Qb3gZHHZQyjhfp-BIJmV77ni0bPNbsuGl9cTOaztutwYkwk3EDlKYZGbuug526xYFlzgHneDxjsVlr7lrVfioeLNzOu1vyj0qFRN7rTd0PC1jdVN1UJ8aa3RgC7MwPw&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJa4pU3ioB2YgRgqk6sKCTv5c",
+      "name": "MIAM CAFE - FORT LAUDERDALE",
+      "address": "110 SE 6th St SUITE 115, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.1141099,
+      "lng": -80.1418989,
+      "rating": 4.8,
+      "reviews": 1426,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10934620738639538562&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJa4pU3ioB2YgRgqk6sKCTv5c%2Fphotos%2FAb43m-ueRnGsZN9ux2bSUFUx16Y-4OVhT5MKWlNr4gR7yE1mbnxzrO3_05IqgeNQqA-zOc0EV_Nsr9RcpWHs1bH7lylki2jRK9RFn9aYB6D9qXWWLFUicgIEt7ffaR2cZcZiOuyHpHayBagIMDfas33iuF3vzJ35y2ZlgiksLyBKP1SV7yEffFHX6QeyFNNbIfQS9jJHDnBQWO6FosJAcDjDf96pBQBecb94uK0HHxLEdPIdGZMSs18aZD5LbhNEJYIAx_Ow-9Gi-ZlvTsRfO86nFN5x6Gjo5UYXipxaCA1TBIbWIw&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJD5nSAbAB2YgRNKz7g9ynsoo",
+      "name": "Archibalds Village Bakery",
+      "address": "608 Breakers Ave Suite 1, Fort Lauderdale, FL 33304, USA",
+      "lat": 26.131755599999998,
+      "lng": -80.10464929999999,
+      "rating": 4.8,
+      "reviews": 1095,
+      "price": "$$",
+      "types": [
+        "bakery",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:00 PM",
+        "Tuesday: 7:00 AM – 3:00 PM",
+        "Wednesday: 7:00 AM – 3:00 PM",
+        "Thursday: 7:00 AM – 3:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: 7:00 AM – 3:00 PM",
+        "Sunday: 7:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9994235088637504564&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJD5nSAbAB2YgRNKz7g9ynsoo%2Fphotos%2FAb43m-vQ0oURwUyk-90qTWDTWo4YRfeAhJ5gySunhHzSiSeE2M7wbDYzlPQULs7Hew8A_hlB2YY1B2F4Bo4OZtPOAJdsoQ-9G7PHwcSUgXMish3RkUI2Q7cDKbP7gpvKvopyFIIqPCHEY2-fbkN8zZiaKm5EG7ZKEQ1xAEobAwBYJvL3TQGrVla3QrZo5B0wnJcq7Nh1m6n2f9ZAg4nDLE0E-AhguiHQ1dOkZbHHQXozrCj8uSp7u5sxQnGpTblVnvcUIEFGoTaNU_JGl3GFThdByzAL9KWdIxsGmUH5BGZdxgE1ETv08KqqzohuofouPj8Yq9OV_HQnllLNKk1BWsJFbSsCQ4Prrz7BoCwhNEFLb9fOW-JD4K7siyy1eE_YyMaXBmg5EwG0IcUd30byfDIEk2rZLIsB5KWQ7EfFb_Th_p0NmQ&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJXfU6WJ0B2YgR99bjGUrADRY",
+      "name": "Magnolia Caffee",
+      "address": "1218 NE 4th Ave, Fort Lauderdale, FL 33304, USA",
+      "lat": 26.141054999999998,
+      "lng": -80.14035220000001,
+      "rating": 4.8,
+      "reviews": 762,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 10:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 10:30 AM – 4:00 PM",
+        "Wednesday: 10:00 AM – 4:00 PM",
+        "Thursday: 10:00 AM – 4:00 PM",
+        "Friday: 10:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1589137668026128119&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJXfU6WJ0B2YgR99bjGUrADRY%2Fphotos%2FAb43m-sDsizO0p0KpLOBAFckJ9gpqssdqHCKPt8tLmU-UurU1_M5chNgN5oZ0155gH-DY3LZ1892hEKci_zn4n_mUxA-ZtKmoobvHhjhzlmnsCZuLSTXsbUPOJUk9gGwz-CEy1nQBPaGTyFCpFwC8yWKXJ8epsQPRSgKs7hUrgtoBHu2EBc01IchPPZein3ZBpFitDrFQZvDBye3rnoP0pyPDKikB3y5fbTCBf3rHYNpbOiGRtIDdFEaNiKp3k3cgLgAnk6nuPRTBp51GVitKXv4rHwVmcKLyytOP-HdohwDOTKUJw&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJN6B_28MB2YgRZNhm_V_uacM",
+      "name": "The Coffee Culture",
+      "address": "3045 N Federal Hwy Unit 60G, Fort Lauderdale, FL 33306, USA",
+      "lat": 26.1661806,
+      "lng": -80.1175925,
+      "rating": 4.9,
+      "reviews": 382,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 3:00 PM",
+        "Tuesday: 7:30 AM – 4:00 PM",
+        "Wednesday: 7:30 AM – 6:00 PM",
+        "Thursday: 7:30 AM – 6:00 PM",
+        "Friday: 7:30 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14081047805991245924&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJN6B_28MB2YgRZNhm_V_uacM%2Fphotos%2FAb43m-tIijxeSa5U6x3TH9Ib97MWRXQk5UslsBk5JKMy3L65hYqX_GCKwHEC64sDNuXnD55jUZkfrk07YZX8u6f1OrcF004g39cD8ycIK413_PEd_BIL40lmU4AQnARLMoMR_NI91-0tjIjMiw00YDRH2KLEHCpo6ByJbbYT6k2YnrHIl8p2ilTY8HpzPzL526JMfpxBt2eXvlO6fVSX0VQMAqUy_vuENyi--vo1McSDhcPZ83VUox1CVdMB5z179I8FgpZaGo7w6fELGvLKTn_3vM0eMgmlfQxLLjITEA-aScxgKQ&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJVQZw-CMB2YgRHNf__WQq-zk",
+      "name": "Wells Coffee Tarpon River",
+      "address": "599 SW 2nd Ave, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.1148603,
+      "lng": -80.1456879,
+      "rating": 4.8,
+      "reviews": 484,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4177979692562765596&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJVQZw-CMB2YgRHNf__WQq-zk%2Fphotos%2FAb43m-uZmJIG9mXrjlO86m-GhMCFFcDGjbfk25GjDOK6Vkx4P--XfiXKqydmC5d27kXJAbPoVr6uKBLWU-4XQRtag9FuTQo-1babvRWficlVQmPgSxpE3PBPH-AvQFSAgfn2fjPOf6WWvk2WALn6xkE46j2SF2pjM8sTrnAtOGKlQCg1SgVzeH5bU_RthToL2AwIyzNGDE9gnZ-YT4usGQ3T8dSRaHVBwl4YgZJDDqBcM_G9aBBIJ2W9M9u6aIqrZryOXoZZ3NdS-tvcJk9ZVIAiUGGl6YWQ_X1rKZOjTGSoIutQwg&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJuxOlXAAB2YgRwqKwx0HdcB0",
+      "name": "CRAFT Fort Lauderdale",
+      "address": "551 N Federal Hwy #600, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.129287599999998,
+      "lng": -80.1377851,
+      "rating": 4.9,
+      "reviews": 331,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "pizza_restaurant",
+        "coffee_shop",
+        "cafe",
+        "brunch_restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 10:00 PM",
+        "Tuesday: 8:00 AM – 10:00 PM",
+        "Wednesday: 8:00 AM – 10:00 PM",
+        "Thursday: 8:00 AM – 10:00 PM",
+        "Friday: 8:00 AM – 11:00 PM",
+        "Saturday: 8:00 AM – 11:00 PM",
+        "Sunday: 8:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2121438699084358338&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJuxOlXAAB2YgRwqKwx0HdcB0%2Fphotos%2FAb43m-trY8D58dX9DkHlkQkkSW6Z5qLo9q6-YLSvQz_nPmPGhVL_YrqMGDhnF4wxk40F-1ifh9_i6g0SH_sBcYHNx3eHPEo-bT5djFobrBXEnYrM1siQ5xTHF-BRyiN2_bIU8j3kzUvdf8iFM5EjTCVOleu5cjEnIlwW2Q03QQzPuJrmkqHxM5UasWFZcoDMuVw5bqhsj32YB9n9-U3iLyr_puiqf424g7-OeIopWhZlVbxhgTv3b0Ad2EeAf3DxpzSvYMpTcb3GBz7BZClwGLZwIGq3DrKFyWF7YHCa3DD-PyjzIQ&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJ-0IPvx0B2YgRrAnLHcQ-Dps",
+      "name": "Ann's Florist and Coffee Bar",
+      "address": "1001 E Las Olas Blvd, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.1194921,
+      "lng": -80.1331321,
+      "rating": 4.5,
+      "reviews": 891,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 9 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 10:00 PM",
+        "Tuesday: 8:00 AM – 10:00 PM",
+        "Wednesday: 8:00 AM – 10:00 PM",
+        "Thursday: 8:00 AM – 10:00 PM",
+        "Friday: 8:00 AM – 11:00 PM",
+        "Saturday: 8:00 AM – 11:00 PM",
+        "Sunday: 9:00 AM – 9:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=11172936737587136940&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-0IPvx0B2YgRrAnLHcQ-Dps%2Fphotos%2FAb43m-voUo-SWBz6LASFjYlAB9N8Spl5uKT9k813AS8k04mCTCG_ZZOp_UAaDMyLloBi_lrvRcX0WpDs9nCUF5I9Bs-JQ0sL4m-pvDpdn5QKhB0jf9sbrzw8osyt8cQwWSTwPcYaJ_RonZsrOnUVn1BW2ToPvduujNHXmPgTRwsyYxkjWDR3Angh4FMF1mGuiPqb1EP654Drbw-wivs9MYl0dsJfacDGg9kaVpnku4rz7GpdGQsfQrwdVsIMQEHuqJYQ1eMAW1hLYsmPEgZy7nQDawr7FZgwgBciYNLUepmwWwEDTl711F602Cf1WZKfHzpFytUPod8UOsZFeYaQNbkrm08CogdYxuLn9HIuM6wLU4N18yvEDjw42cjxVtqhwsbkJAtoSe4sSxgxGvDwVUMZmGtKLUNQt0_zX3habWQF6hNvyQ&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJ4WcpS9kB2YgRlyKh1Lv1jIQ",
+      "name": "Living Green Cafe - Fort Lauderdale 17 street",
+      "address": "1489 SE 17th St, Fort Lauderdale, FL 33316, USA",
+      "lat": 26.101116599999997,
+      "lng": -80.1283631,
+      "rating": 4.7,
+      "reviews": 502,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "wine_bar",
+        "juice_shop",
+        "coffee_shop",
+        "vegan_restaurant",
+        "dessert_restaurant",
+        "vegetarian_restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "brunch_restaurant",
+        "food_store",
+        "store",
+        "food",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 9:30 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 9:30 PM",
+        "Tuesday: 7:00 AM – 9:30 PM",
+        "Wednesday: 7:00 AM – 9:30 PM",
+        "Thursday: 7:00 AM – 9:30 PM",
+        "Friday: 7:00 AM – 9:30 PM",
+        "Saturday: 7:00 AM – 9:30 PM",
+        "Sunday: 7:00 AM – 9:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9551279096820998807&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ4WcpS9kB2YgRlyKh1Lv1jIQ%2Fphotos%2FAb43m-urxd7DtiFUUwurnONGt8gSYHPDkWS9VR6x8I8_DNW0TfdAhneybvTquSmlfzzPvNw93WvkHV9EHY64dOvEpMXX4HSLWdOVKMXp55UJkLpz4bAjfQW5U5izHww5KQjNZnkTdozqBIJbxaq3DyLBHsl-E7eZbpjIIMTaTqd-4zx0W8W7BGdH9YmjwRjfRWQFOowSMo9SdPaJ-96MNGj-A2CYBTdVlHMYc2-TXZZ6M2Xs0BEwH1IIkCXjhGmklQs-Wthf-y3PGWD7gekC-5rfHjehhM52gVUv_CSndri24SJL-w&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJcXUIo28B2YgR4hySqdi6Gdc",
+      "name": "Spud's Coffee",
+      "address": "3301 NE 32nd St, Fort Lauderdale, FL 33308, USA",
+      "lat": 26.1686208,
+      "lng": -80.1018531,
+      "rating": 4.7,
+      "reviews": 320,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "pastry_shop",
+        "cafe",
+        "brunch_restaurant",
+        "dessert_shop",
+        "bakery",
+        "confectionery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 9 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 9:00 AM – 2:00 PM",
+        "Wednesday: 8:00 AM – 2:00 PM",
+        "Thursday: 8:00 AM – 2:00 PM",
+        "Friday: 8:00 AM – 2:00 PM",
+        "Saturday: 9:00 AM – 5:00 PM",
+        "Sunday: 9:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15499625032292900066&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJcXUIo28B2YgR4hySqdi6Gdc%2Fphotos%2FAb43m-tcRIk_8sWmr_y7QeVaACMYuSZCU_m-GM38vUJsQZMsNSNaUO72-rpuHLqgGlukKxoK5h44Y1GTiNI_3NNtsx8rMEzWxakfZxkGwtN5k5GowORiXejHFnm7ADxNAcnOtqiQ-b0-hHGnmDY3QRzZNMhXIELDEaBKHbgDZlkChZkpgH-7g1d66oJa1Fzo-Q5KU7raRKli7rcnJJ3flR6jPsKsD0k7rnd8Q6O8yE35pv7FqIGfExHE2rY0435XAcW8ZIPGhpvAsOurmchysmDZuZ00kcUV9wNFzIejHQ9cjFKRaeylVQS8b_MJ0fyIbCPCN_srbSWi1aweUhjOoOJGCj9JiZSVRpukRkvNE3jFUpMjPCgy5Fri_B0ZyaKHjsESU-hk5cld17i0-GYblt-_JC0P5iAl3ixAsPWbgSPKFKPCQA&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJY9FCVQAB2YgROXSeU9Kb0wY",
+      "name": "The Bread & The Cup Café | Las Olas",
+      "address": "100 N Federal Hwy, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.1226967,
+      "lng": -80.1364459,
+      "rating": 4.8,
+      "reviews": 134,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 3:00 PM",
+        "Tuesday: Closed",
+        "Wednesday: Closed",
+        "Thursday: 8:00 AM – 3:00 PM",
+        "Friday: 8:00 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=491908111961846841&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJY9FCVQAB2YgROXSeU9Kb0wY%2Fphotos%2FAb43m-s9gFDovQ9jQEVkNn4ykB30GRRt-VQb8zNV848s89C6eyDcTO0gx854nilNJQUwTEzwprZmteho5N6ibuZcslJRNuX02K1QbftXLCQaBgMynj8u7RquzTr0ynx2GJWy7ewL6d9Z7jIDG1yhYAfNHIbXnSmsRZTAEx_1hAZ9LTVTo_8wogfJkAlmOfQDZ5vcOAqAy8u7sM4AGXSpfyOfYZBiStbuAEHMGCPHFr_6ORfoU8o_Pbq5U4OXyJxd-pSk7wL6q43nK-4QhLiiBaK2-ZR-E5k0IiNbv7tOcmQLt4NF8A&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJm0NDH6IF2YgRtGFS-HCkw3A",
+      "name": "Cali Coffee",
+      "address": "3920 Prospect Rd, Fort Lauderdale, FL 33319, USA",
+      "lat": 26.194800299999997,
+      "lng": -80.2023537,
+      "rating": 4.7,
+      "reviews": 146,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 9 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:30 AM – 9:00 PM",
+        "Tuesday: 5:30 AM – 9:00 PM",
+        "Wednesday: 5:30 AM – 9:00 PM",
+        "Thursday: 5:30 AM – 9:00 PM",
+        "Friday: 5:30 AM – 9:00 PM",
+        "Saturday: 7:00 AM – 9:00 PM",
+        "Sunday: 7:00 AM – 9:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8125518957815947700&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJm0NDH6IF2YgRtGFS-HCkw3A%2Fphotos%2FAb43m-slgTxm1SSc4oBK4VGoNn7NIXQWpqPUyZcHdJIEPF3Ry19xWeWsFAygw5W42WUr-5mD0k0dSToBVxjQUzh3sPLFZFUuQBr-bDIsl7aCA6G1xzWS1-K1Dkhdq8-nVMi6SYjvpjc7RVCK0zfJuturH6XB9e8WqRCq6NtJXHo9y0VOc924L_w1n6hYvpfM7TNnoAdNbvLlvNvZAeKTlIGxOLpTJYqIWK98DihhJkQ4bK7ABat2ZlvHj1hUhYLnd7gkDLzoopwYqF7ES3UZXATLScwqPwJ7tW084-W_qmir66HPSw&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJWd1lMAAB2YgRWmCx0pXqJnc",
+      "name": "Beach House Coffee And Tea",
+      "address": "921 Sunrise Ln, Fort Lauderdale, FL 33304, USA",
+      "lat": 26.137450899999997,
+      "lng": -80.1040974,
+      "rating": 4.9,
+      "reviews": 60,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 2,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 2,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 10:00 PM",
+        "Tuesday: 7:00 AM – 10:00 PM",
+        "Wednesday: 7:00 AM – 10:00 PM",
+        "Thursday: 7:00 AM – 10:00 PM",
+        "Friday: 7:00 AM – 2:00 AM",
+        "Saturday: 7:00 AM – 2:00 AM",
+        "Sunday: 7:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8585807668834295898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJWd1lMAAB2YgRWmCx0pXqJnc%2Fphotos%2FAb43m-uE1W8WBc7m7eQEjGR5VWoQz7VkDQQlt9RGyBZUVv_zW_9m8c7N7UGjjrt3zeu8VJLod16LY9L_l-KkG_ms8Vo1NaMejSljc43UNFo5GcBx3oZbz0hm4ieHsH5eNd8qwNsI_8IrBNGCbrZiJkaPKytDBpjySYZlQf1Sf8ltB2iZk2Cbcyr2SgL3QANFvSC_iKcTfoGYcJvWxcEWcOPIQHs69LNcXscSHWZNa1JCFfZ01hTbA7jAO1leLGNj5KqH2PzQ1SSD2bxiHO7GvTwfyPPCh-QNdbBTySDWM3fVl93Qqg&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJYaCJHGwB2YgRe9JyqqKiFuQ",
+      "name": "Croissant Park Café",
+      "address": "223 SW 17th St Unit 2, Fort Lauderdale, FL 33315, USA",
+      "lat": 26.1003854,
+      "lng": -80.14462470000001,
+      "rating": 4.8,
+      "reviews": 71,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:30 PM",
+        "Tuesday: 7:00 AM – 3:30 PM",
+        "Wednesday: 7:00 AM – 3:30 PM",
+        "Thursday: 7:00 AM – 3:30 PM",
+        "Friday: 7:00 AM – 3:30 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16435502709663257211&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJYaCJHGwB2YgRe9JyqqKiFuQ%2Fphotos%2FAb43m-vniBpCjqpsCVHHO61kzoQKEIK8-NtNGpxZ9aJAnXogDi5aEc6CvTRH9U1eRWoZXpaFqacZzfAsdUZZzehokE56G7pzMQ59_tQaoyk1a9g5ebF5pvpPlrCTiduUY-nDy6MqLpTUWChH-DoHtGMfcavXCvnJQWhuCClP6fTypYVXyzuVJgBiYuqBIrMvlz9WCnuIa_ZdXKpq46XKO8ihfZj2yL8eyvBiCE3ZjcHHOfvghhMgJMqz5oyFO_stprpiu0lx-2NQm0lUkNQCdArRjZMs-9CUhn8SuD7Eifh7g-zMJKiCE9ndNAgCXNZv_o6Jqymt_LG_WtOsJ0xnq7q1ZHcwIae2MilgSqQMrPs3E_-6sSf7wcIg3TtfZFxJHdjAlx6zXut54QI57qJaAhHAKb8V9AaiuuJsVTHKLdEaT3qKxN6dy1gXTjJ2EREuFjfy&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJMy00jUkB2YgRHPQIJE_wIxA",
+      "name": "Si Buenas cafe",
+      "address": "815 NE 13th St, Fort Lauderdale, FL 33304, USA",
+      "lat": 26.142651899999997,
+      "lng": -80.1351811,
+      "rating": 5,
+      "reviews": 46,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 9:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1163037351489369116&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJMy00jUkB2YgRHPQIJE_wIxA%2Fphotos%2FAb43m-s3QZowBSF4F1zwUWLTEIM9F2mJMjWFGScNvORWpmkIF2SfnC3zY7FxJEHZT5KUcGCvG0T43YNi8npuw7oYAG9QRQBfNkBVlorG2ZlCnT2uKwKxAuVG0S36EFzVOFqLrydS_SRGqTVVx_JrBfIHwR_f6rPtousVUuMYcp5pPjSdLKDstldibM1W5CYz5hUdnCwofuIxNjFl_gDQbPBwTDyFwOr8Fk7VeLsC6iQFiqA3bvtW9ZQ_MKp1DJNos9kG7e_xeHKiNbcfGVFqJPv0x68IpTTCr1Pl0QXTB2Y7qtwdudoMnOlKRaDrfx4BNINxV9z9RVbCawWEgistIUpFhIqZ4nn5pm1fLqq3jXqzOQEz3iFVWc-ZqovSOoUV9pi1MsckDtzEUE6DiMF-2FDBeRsfG5Zm84OQmpsg9-rMZ23lFXLEIYSMjEs2Ll5e0luP&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJrzShwdMB2YgRo43yuTps5xQ",
+      "name": "On the Run Coffee Bar",
+      "address": "327 SW 2nd St, Fort Lauderdale, FL 33312, USA",
+      "lat": 26.120614200000002,
+      "lng": -80.1471408,
+      "rating": 4.8,
+      "reviews": 52,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1506291599862304163&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJrzShwdMB2YgRo43yuTps5xQ%2Fphotos%2FAb43m-vt4TdIri5xa5iA9NPjvlUbq9Hnnla0DGFprp-0NcxavylhhCeeqvw65qbwCkvJii0aHrSWsnje4yowY5PMgv9umTh61vtywWh-s4i3uSvWrDzCOEnecMk1Mr1nZ6e1nqNfVRQYOIeMWg4f1qtobfw95h-sB2SiAjRCX-qmP6boM2uLhFRZJYGcYmr00eLerxgAnUwbyFAOnqLphwqa0kzfpeNnnj8fAexZiqEkEiABCX-SPT53w1XCbICHqeEdQrRZqa_ZEWNYQKLZO-u96WG3e-e-gP43dpvf4A_Rlty7WR2giwdxvh8Lt6Ea7UYfscz_NA1j6elg2EeM6caBNXpLGixeUDzrFVy3nW0QWoeb87SA97A02NcfjCYr1AVWiw72kRUs_iMMPhZ2W9x3ugaEORF60UO65O_MyqA2o0GgnhXiS7gd8VHLjJNHc8VM&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJxUKgbAAB2YgRs2exnUtTYkU",
+      "name": "Ludlow Coffee Supply Fort Lauderdale",
+      "address": "110 E Broward Blvd, Fort Lauderdale, FL 33301, USA",
+      "lat": 26.1220888,
+      "lng": -80.14154239999999,
+      "rating": 5,
+      "reviews": 34,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4999650120567973811&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJxUKgbAAB2YgRs2exnUtTYkU%2Fphotos%2FAb43m-tEfJtAd5HUv9NiHXN0h4CuLekWJL-LfUr_JD00NwQXx83Q7ah3iUx2lvMp-hijaXKBoUupbiHlQ9xVNewEHwLxwSiG27tzAYyxfEX2n6dpgAUvkM8w2_-piW1AORIahnmPEyhvKTtqmkACp5FlLlJhbk1CDqDpHzUg9wjqJlF5xuwj-7kmFLRlHi8hg90QNfiyEsP6vEagc6pf_CHB2_mtZS-EYXwZv49zhG94LaZyQqrVGGS0n06dgDDJffDJ3y_iXTnXtH_DuXg2laSbVB5HFuTE2uX4j5XEcFpxwwK0W5NNSMvNzhg23nyhcCycx8Dtwq9x7VIw6Xv_NXO1yDW045FYlRy8mtSwzD3vH51_NiH-SzO2CmhSvz4-Naa4sdSqvhM6Go72YM1rTWcGTiwfgfl9Y6IkcMGNjWHw2CWhTInz3BfsSMIDfffJFg&w=800"
+    },
+    {
+      "city": "fort-lauderdale",
+      "id": "ChIJTckxPUIB2YgREF8cf_b0Rk0",
+      "name": "The Gathering Grounds Coffee Co.",
+      "address": "603 NE 13th St, Fort Lauderdale, FL 33304, USA",
+      "lat": 26.1426628,
+      "lng": -80.1375868,
+      "rating": 4.8,
+      "reviews": 36,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 2:00 PM",
+        "Tuesday: 7:00 AM – 2:00 PM",
+        "Wednesday: 7:00 AM – 2:00 PM",
+        "Thursday: 7:00 AM – 2:00 PM",
+        "Friday: 7:00 AM – 2:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: 7:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5568407328821894928&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJTckxPUIB2YgREF8cf_b0Rk0%2Fphotos%2FAb43m-vzir8le-BtFZS1i45P681qKNloEZHSvDB2uV1VMJYkJIf370PzS0quZgNDnUrSgBrsNA2pXKIwRryysLs-5n6g_F9SfvydnrkfovTr9hYe1FT5ZVrO64YOAhqmOa-7cCvEHb20IOf9_KJ5Ce89tI9I-GKU0L10Rx-28s6WRe77LhykxImlWswLQJz1mInNl-5slR6kYOMN_tOna3267LGRp4UWNE-w3Jgs8q8FAfKsmicxrNAddQlA0I74K6odCJBX7BiLy5wKHfzSI0p-oiEww-uQEGX2AaSmNGQNUSmyCw&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJH9758boB2YgRrs8O7f55ATA": {
+      "picks": {
+        "drink": {
+          "name": "Dubai hot chocolate",
+          "reason": "Specifically recommended by waitress and praised as delicious; pistachio hot chocolate also noted, suggesting their hot chocolates are a standout.",
+          "quote": "recommended us the Dubai hot chocolate... everything was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Nutella croissant",
+          "reason": "Mentioned in multiple reviews as a must-try item, sold out by lunchtime in one visit, and praised as delicious in another.",
+          "quote": "wanted to try their Nutella croissants, but they were already sold out",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "I’ve heard great things about this restaurant so I decided to give it a try. I definitely recommend getting on the waiting list as soon as possible because there was an hour wait (which wasn’t bad in my opinion) but just in case you don’t have time to wait – get on the waiting list as soon as possible. I think it’s a very cute restaurant, I just wish that the tables had more space but if you don’t care about space, then it should be fine. I got there around 1 PM and when we were beginning to order our food, a few of the items were out of stock, unfortunately, so maybe earlier in the day, inventory is fully stocked and ready to order. Azul was such a great help. Anything I asked for he brought it right away which I truly appreciate. I understand that it can get busy so his attentiveness made the experience more enjoyable. I would recommend him 1000 times. I love their healthy options as well especially when trying to stay on track with a certain diet. It was super windy outside, so I’m glad that we got seated inside but just keep that in mind when questioning where to sit."
+        },
+        {
+          "rating": 5,
+          "text": "Barbara’s service was top-notch! She was very attentive, kind, and patient with us. We are very grateful to her.\n\nFood was delicious as always, we wanted to try so many things from the menu! Atmosphere is always enjoyable. On a weekday it’s less crowded and it’s faster to find seating. This is my 4th time here!"
+        },
+        {
+          "rating": 5,
+          "text": "Everything was so perfect!! Haven't seen a friend in a while, and I can tell you, we chose the best spot ever to meet again! Btw, the place was beautiful. We ordered the breakfast croissant, and it was amazing. But what we loved most was our waitress, Nicolle. She was outstanding. She recommended us the Dubai hot chocolate and the Nutella croissant, and everything was delicious. Also, Azul, the foodrunner, was out of this world. We loved him; his energy was something else :). Nice place, nice staff, nice food. Recommended ✅"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:45.201Z"
+    },
+    "ChIJa4pU3ioB2YgRgqk6sKCTv5c": {
+      "picks": {
+        "drink": {
+          "name": "Tiramisu Latte",
+          "reason": "Specifically recommended in a 5-star review alongside other standout items; other drinks (caramel latte, strawberry matcha) were each mentioned only once without comparable enthusiasm.",
+          "quote": "the tiramisu latte!! super super delicious",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pancakes (Dulce de Leche / Mile High)",
+          "reason": "Pancakes are mentioned across multiple reviews as the standout item, called 'some of the best I've ever had' and 'the best pancakes in Miami.'",
+          "quote": "the best pancakes in Miami — huge, fluffy, and unforgettable",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This was my first stop after landing in Florida. This is an amazing spot. Food was so delicious! The staff were even better! Would definitely recommend this place. I ordered the Eggs Benedict (which comes with salmon), Caramel Latte with coconut milk, and the Strawberry Matcha was so delicious, made by Jasmine. Thank you so much for the amazing experience! 😘"
+        },
+        {
+          "rating": 5,
+          "text": "Absolutely love this place! We had the banana bread, dulce de leche pancakes, the crispy chicken sandwich, and the acai bowl and everything was delicious. The service was great; the servers checked on us a few times to make sure we were comfortable, and all our food came out quickly.\n\nThe highlight of the whole meal was definitely the dulce de leche pancakes.  Honestly, some of the best I’ve ever had.\n\nGreat spot to brunch.\n\n(Also, there’s free street parking on Sunday’s and Holidays)"
+        },
+        {
+          "rating": 5,
+          "text": "This place is worth the hype.  Tasty empanadas, breakfast sandwiches and Mile High pancakes the taste as great as they look. All that with friendly service and moderately reasonable prices for the quality.  The young man at the register is friendly, hospitable and helpful.\n\nThe only drawback is the dining area is a little cramped so don't plan on big gatherings. Parking is also tight as it is across the street from the courthouse and you will need to get a paid parking spot to enjoy."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:50.404Z"
+    },
+    "ChIJD5nSAbAB2YgRNKz7g9ynsoo": {
+      "picks": {
+        "drink": {
+          "name": "Iced Cinnamon Roll Latte",
+          "reason": "Enthusiastically called the best latte ever by a 5-star reviewer; only specifically named drink with strong praise.",
+          "quote": "holy moly, genuinely the best latte I've ever had",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Chocolate Croissant",
+          "reason": "Praised as amazing in a 5-star review, with multiple pastries lauded across reviews but this one stood out with specific detail.",
+          "quote": "took the rest of my croissant to the beach... 10/10 recommend",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "What a great little spot!! The iced cinnamon roll latte… holy moly, genuinely the best latte I’ve ever had! I opted for the chocolate croissant & my boyfriend for the chocolate chip mini muffin, both were amazing. I took the rest of my croissant to the beach and let the chocolate melt a little in the sun… 10/10 recommend. We noticed a super sweet, enthusiastic, and genuinely happy guy bringing out orders, who we assumed was an owner and he was! I’m not sure if it was Justin or Chris, but we got a chance to talk to him about his business and what a kind & happy soul! I didn’t catch my cashiers name either but she was also wonderful and was passing out compliments like candy 🥰 The outside seating was beautiful!!"
+        },
+        {
+          "rating": 5,
+          "text": "This quaint little bakery was a very short walk from our hotel. The staff was friendly and attentive. I tried their ham and cheese pasty, or rather an English empanada. It was warm, flaky, and cheesy. It hit the spot. We also tried the egg and cheese fritatta with bacon and tomato. Just as tasty. They serve up hot/cold coffees and teas. They have a simple menu, open from 8 am to 3 pm. Only one table inside, but plenty of outside patio seating. Dog friendly. It's a few blocks off the strip, so it's more laid back and very relaxing eating outside on the patio. Tho, you can always grab and go. Loved it!"
+        },
+        {
+          "rating": 3,
+          "text": "I love the outside seating area, inside is just a little bakery where you order and they bring out your treats, coffee etc. Nice place to talk with friends, get some emails taken care of, or just relax by yourself which is what I did.\n\nI got the hand apple pie, it was flaky and delicious would have gone a long way warmed a bit. The pumpkin muffin was decent, along with their coffee. Nothing bad to say here, just wasn’t really impressed.\n\nJust a block for the beach, and major hotels along the strip."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:56.462Z"
+    },
+    "ChIJXfU6WJ0B2YgR99bjGUrADRY": {
+      "picks": {
+        "drink": {
+          "name": "Magnolia Cappuccino",
+          "reason": "Specifically named and praised in a 5-star review; other coffee mentions are generic.",
+          "quote": "the Magnolia Cappuccino was tasty",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Avocado toast",
+          "reason": "Mentioned and praised in multiple 5-star reviews for generous portions and seasoning.",
+          "quote": "avocado toast that deserves its own fan club",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Amazing place! All the vintage collectible items they have on the walls is top tier for interior design. Tons of nostalgia. The staff is as friendly as you’ll find. Service is fast. The ginger lemonade is a must if you love ginger. Had the Bacon egg and cheese croissant, will 100% have it again"
+        },
+        {
+          "rating": 5,
+          "text": "OMG y’all 😍☕️✨ Just wandered into Magnolia Caffee in Fort Lauderdale and I swear I walked straight into a real-life *I Spy* book 😂🔍📚 Everywhere you look there’s something quirky, vintage, or artsy staring back at you like “find me if you can!” 🤣🪑🖼️🌺\n\nThe vibe? Total cozy cottage meets eclectic art museum meets tropical vacation hideaway 🌴✨ It’s the kind of place where you sit down for coffee and suddenly realize you’ve been staring at a funky old bottle for 10 minutes like it’s profound 😂💡\n\nThe food = pure happiness 😘👌\n• Avocado toast that deserves its own fan club 🥑🙌\n• Waffles that made me re-evaluate my priorities in life 🧇🤤\n• Lox, turkey paninis, muffins, cakes… send help 😵‍💫🍰🥪\nAll with that *European flair* that makes you feel fancy even if you’re still in sweatpants 😌✨\n\nThe handwritten menu on the big window? Cute enough to make your heart do a lil wiggle 🪟❤️\n\nAnd the husband-and-wife team? The sweetest humans ever. Like, “I’m adopting this café as my new family” level sweet 🥹💕\n\nIf you need me, I’ll be in their tropical garden pretending I’m on vacation 🌺😌☕️\nMagnolia Caffee = Fort Lauderdale’s most delicious, whimsical hidden gem 🤫💎 Go before it becomes everyone’s fave spot! 😜✨"
+        },
+        {
+          "rating": 5,
+          "text": "It’s a very quaint and cosy place. Service is fast, very familiar and. Food tastes home-cooked and delicious. Portions are generous, the avocado toast comes with nice big chunks of avocado, and it was seasoned very tasty. A hidden gem. We’ll be back soon !"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:00.563Z"
+    },
+    "ChIJN6B_28MB2YgRZNhm_V_uacM": {
+      "picks": {
+        "drink": {
+          "name": "Horchata Latte",
+          "reason": "Specifically named with enthusiastic praise in a 5-star review; Colombian coffee and matcha also praised but Horchata Latte received the most emphatic callout.",
+          "quote": "Guava Matcha and the Horchata Latte WOW!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Breakfast empanada",
+          "reason": "Only specific food item named, praised as 'chef's kiss' and noted as baked not fried.",
+          "quote": "a tasty breakfast empanada… chef's kiss",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Super cute place with an amazing vibe! It’s filled with uplifting art that truly feeds the soul. The décor changes often, so every visit feels like a brand-new experience. My favorite drinks are the Guava Matcha and the Horchata Latte WOW! Both have the perfect balance of flavor and sweetness. I also love working at The Coffee Culture it’s quiet, spacious, and you don’t have to worry about bumping elbows with other people while working on your laptop. Plus, there’s plenty of free parking"
+        },
+        {
+          "rating": 5,
+          "text": "This is a hidden gem!!  I don’t get to Ft Lauderdale often, but if you love Colombian coffee, you must visit - the couple that owns it are super kind, there’s such an amazing ambiance & you can even leave a card with your thoughts on “Love is . . .”.  The coffee is exceptionally rich & smooth, & I will definitely be back!"
+        },
+        {
+          "rating": 5,
+          "text": "I wanted to try a new coffee shop in my area and stumbled across this gem. The staff is very nice and welcoming. My latte was very good they made it sweet just how I like it. The place is well kept and quiet I was able to read and drink my coffee. I will def be back!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:05.237Z"
+    },
+    "ChIJVQZw-CMB2YgRHNf__WQq-zk": {
+      "picks": {
+        "drink": {
+          "name": "Horchata latte",
+          "reason": "Singled out as one of the best cups ever in a glowing 5-star review; other coffee drinks received only general praise.",
+          "quote": "one of the best cups of coffee I've ever had",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Tiny tiramisu",
+          "reason": "Received the most enthusiastic specific praise (double hearts) among food items; other baked goods were also liked but less emphasized.",
+          "quote": "tiny tiramisu 💞💞",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I walked into Wells Coffee Co for the first time and did what I always do — I trusted the person behind the counter. “What do you recommend?”\n\nThey pointed me to the horchata, and I’m genuinely grateful they did — because it turned into one of the best cups of coffee I’ve ever had. Smooth, comforting, and perfectly balanced, it felt like a warm hug in a cup.\n\nThe space itself is just as inviting. Cozy, calm, and thoughtfully designed, it’s the kind of place you don’t rush through — you settle into.\n\nWhat really stood out was their commitment to quality. From premium ingredients like Elmhurst to a wide range of healthy milk options, every detail feels intentional.\n\nWells Coffee Co isn’t just a coffee stop — it’s an experience I’ll gladly come back for."
+        },
+        {
+          "rating": 5,
+          "text": "Stopped by around 930am and they were preparing for an event. Cool vibe. A good amount of seating. Friendly service. My husband got a $6 cold brew and said it was good"
+        },
+        {
+          "rating": 5,
+          "text": "We had:\n- tiny tiramisu 💞💞\n- pumpkin pie latte 💞\n- Coconut banana bread 🫶\n- Cold brew with a salted honey cold foam✨\nThe cafe has really chill vibes and sweet baristas who seem to know what they’re doing. Overall amazing"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:09.548Z"
+    },
+    "ChIJuxOlXAAB2YgRwqKwx0HdcB0": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Caesar salad",
+          "reason": "Specifically praised in a 5-star review as 'beyond delicious and filling.' Other named items (Argentinian pizza, garlic shrimp) were called 'solid' but the Caesar salad received the most enthusiastic specific praise.",
+          "quote": "the Caesar salad for lunch and it was beyond delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Love this new restaurant! We went with the whole family to have brunch and everything was delicious! Special note to the desserts and the friendliness of the servers. We’ll definitely come back!"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing service, everything was fast, fresh and delicious. We had Argentinian pizza and garlic shrimp. Both solid choices. Guadalupe was so kind and helpful."
+        },
+        {
+          "rating": 5,
+          "text": "First time coming here and it was amazing! Service was great. Food was AMAZING and fresh. Have lots of deals and definitely will be coming back!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:13.805Z"
+    },
+    "ChIJ-0IPvx0B2YgRrAnLHcQ-Dps": {
+      "picks": {
+        "drink": {
+          "name": "Lavender and Roses",
+          "reason": "Specifically praised as refreshing in a positive review; cappuccino and matcha were criticized.",
+          "quote": "Lavender and Roses drink was refreshing and great",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Spinach and Brie Quiche",
+          "reason": "The only specifically named food item, described positively in a 4-star review.",
+          "quote": "quiche of Spinach and Brie was delish and light",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Both a florist and a pastry/coffee shop. Beautiful floral displays make the inside beautiful. But not much seating inside they do have nice outdoor seating on a scenic street. Love the coffee and the food is good too. It was a nice experience all around."
+        },
+        {
+          "rating": 5,
+          "text": "Ann’s Florist and Coffee Bar is one of those hidden gems where time seems to slow down. 🌿☕\nThe atmosphere is calm, cozy, and beautifully decorated — perfect for reading, writing, or even having a quiet work meeting.\n\nThe coffee is excellent, the pastries are fresh, and the staff is genuinely kind and attentive. It’s the kind of place that inspires creativity and peace of mind.\n\nIf you’re looking for a spot to disconnect, enjoy a good cup of coffee, and simply be present, this is the place. Highly recommended."
+        },
+        {
+          "rating": 4,
+          "text": "Loved/Ame my server. The quiche of Spinach and Brie was delish and light. The cappuccino was so so, but the Lavender and Roses drink was refreshing and great. There was live music which gave it a great relaxing atmosphere."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:18.171Z"
+    },
+    "ChIJ4WcpS9kB2YgRlyKh1Lv1jIQ": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Coffee is mentioned but no specific drink is named or praised in detail.",
+          "quote": "sip coffee, or even get some work done",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Brazilian Açaí Bowl",
+          "reason": "Specifically praised as better than the alternative in a detailed 5-star review; açaí bowls are a signature item highlighted alongside other liked dishes.",
+          "quote": "The Brazilian açaí bowl is better tasting than the choconut",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Stopped in for some breakfast. I got a Brazilian and a choconut açaí bowls, avocado toast with scrambled eggs. The eggs were cooked to perfection!!!! Soft, but not runny. Firm but not hard. The avocado toast was not small, hearty size served with lettuce and I believe that was spinach with a za’tar seasoning and extra virgin olive oil. Tasty!!!!! I enjoyed every bite. The Brazilian açaí bowl is better tasting than the choconut in my opinion. I think all the peanuts and peanut butter in the choconut gives it a more chalky taste. But it was still delicious. The vibe inside was cozy and they do offer outdoor seating. If you are in the Ft Lauderdale area and you’re looking for some place to eat.  Check them out!"
+        },
+        {
+          "rating": 3,
+          "text": "The atmosphere was great, with many people arriving with their suitcases. However, the service was terrible. The staff was not only slow but also rude. On the bright side, when a man was present, the cashier girl was smiling like a flower 😅"
+        },
+        {
+          "rating": 5,
+          "text": "Fresh food and well-prepared.     The problem  is people  are slow to order.   The personalized service  is great but so annoying  for humans  who know what they want..  order woth intentions:)"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:22.084Z"
+    },
+    "ChIJcXUIo28B2YgR4hySqdi6Gdc": {
+      "picks": {
+        "drink": {
+          "name": "Cappuccino",
+          "reason": "Mentioned positively across multiple reviews; lattes also praised but cappuccino is the most specifically named drink.",
+          "quote": "Cappuccino was great",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Salmon Benedict",
+          "reason": "Praised in two separate reviews as delicious, making it the most consistently recommended food item.",
+          "quote": "smoked salmon benedict... absolutely delicious",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I found this spot while visiting a friend.  Itd super cute and has a cool vibe.  Cappuccino was great but not a fan of the fact that it’s served in a small glass as it was challenging to hold in my hand. .  Fruit was fresh and good.  Sourdough toast was good but I asked for butter and it was not buttered nor did I receive butter.  The jam was superb.\nDefinitely recommend"
+        },
+        {
+          "rating": 5,
+          "text": "Hands down my favorite coffee shop!! The people are amazing, the atmosphere is modern and cozy, and the coffee/food is the best! Their food is so delicious, I recommend the procuttio salad or the eggs Benedict they are fabulous! I love everything about this place especially their lattes! Highly recommend if you want to go for brunch or lunch!"
+        },
+        {
+          "rating": 5,
+          "text": "We stopped by for coffee and ended up having breakfast.  Never have I seen a pot roast sandwich on a breakfast menu, but I’m so glad I ordered it. It was absolutely delicious, as was the salmon Benedict.  The coffees were a little unexpected, in that they were small cups, and not at all what we were accustomed to, but they tasted delicious."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:26.390Z"
+    },
+    "ChIJY9FCVQAB2YgROXSeU9Kb0wY": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Specifically praised as bold, not bitter, and cleverly made with coffee ice cubes. Cappuccino also praised in another review.",
+          "quote": "My latte was bold without being bitter",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Avocado toast (Mediterranean Feast)",
+          "reason": "Named and highly praised across multiple reviews as fresh, flavorful, and one of the best.",
+          "quote": "Mediterranean Feast avocado toast was honestly one of the best",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "We were looking for a comfortable, welcoming place to stop as my family needed to pass time before our flight. I'm thankful and blessed we stopped at the Bread and the Cup Cafe. I had a matcha and avocado toast while other family members had chai, iced hazelnut latte, tea, sandwich and coffee cake muffin. Everything was delicious and top quality. Best of all was meeting the owner, Carlos, a man of genuine faith and character, full of warmth and hospitality. This is a very special cafe. While I love that this is a Christian owned establishment and the love of God is readily evident in the owner, service and atmosphere, the attention given to serving high quality food, coffee and beverages are top notch! If I lived in town, this would definitely be our go to cafe!"
+        },
+        {
+          "rating": 5,
+          "text": "From the moment I walked in, the atmosphere felt intentional, warm, and thoughtfully designed. My latte was bold without being bitter, and I loved that it was made with coffee ice cubes so it never tasted watered down. The Mediterranean Feast avocado toast was honestly one of the best I’ve had fresh, flavorful, and beautifully prepared. I’ll definitely be back."
+        },
+        {
+          "rating": 4,
+          "text": "Stopped by the Bread and the Cup Cafe on a whim and was pleasantly surprised. A nice, big space with plenty of seating. I got a bottled juice which was fresh and refreshing. To eat, we got a smoked salmon bagel and a bacon and Swiss quiche which came with a side salad. It all tasted good! The owner was very friendly and attentive. I’ll definitely be back to give their coffee a try."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:31.651Z"
+    },
+    "ChIJm0NDH6IF2YgRtGFS-HCkw3A": {
+      "picks": {
+        "drink": {
+          "name": "Cookies and Cream Iced Latte",
+          "reason": "Specifically praised as strong and good in a 5-star review; other reviewers highlight customizable iced/frozen coffees but this is the most concretely named drink with positive feedback.",
+          "quote": "cookies and cream iced latte it's definitely really good and strong",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "The only named food item is the hot oat chips, which received a negative review (room temp, poured out). No food items received positive mentions.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Friends recommended this place and it has great coffee, I get the cookies and cream iced latte it's definitely really good and strong, large is big like DDs.\nSurprisingly there are cute girls that work here also which gives it extra stars for sure. It's pricey but what isn't these days, to me it's worth it once a week. I only gave 3 stars for atmosphere cause it's off 441 which is kinda ghetto and it smelled like pee outside where you order. Definitely not Calicoffe fault but it does ruin the ambiance a bit 😅"
+        },
+        {
+          "rating": 5,
+          "text": "Cali Coffee was founded in 2018 in Broward County by Craig Avera and Rose White who met each other while working in the fitness industry. Cali Coffee is not your classic coffee house where you can set up your laptop and work a spell or hang out. Instead it is for people on the go with a walkup window and drive through. They have now expanded to six locations including Stuart and Miramar and they will be opening 12 more soon all over the state.\n\nI first tried Cali Coffee in Cooper City and really enjoyed it. In addition to coffee they also have on their menu fruity drinks, energy drinks iced tea, soda and shakes. They also have a kids menu with a featured shake flavor and a few pastries.\n\nWe were headed home and my friend suggested stopping by to try their new iced coffee. We had been sitting outside in the heat for a few hours and an iced coffee sounded perfect. Like all of their coffee drinks the iced coffee is highly customizable with many favors to chose from, toppings like sprinkles, syrup drizzles, cookie crumbs, and cold foam for an additional charge. My friend was able to order our drinks on the app so we only had a short wait when we arrived. I chose a Irish cream frozen coffee with cinnamon sprinkles and a caramel drizzle. I like that you can even customize the percentage of sweetness. In this heat, a frozen coffee from Cali is the perfect way to caffeinate this summer."
+        },
+        {
+          "rating": 5,
+          "text": "Cali coffee is a really good espresso coffee venue (that also serves milkshakes and cold drinks) with a friendly, welcoming staff. If you're going for a first visit, highly recommend the walk up window and about the pressure of the regulars' drive through window (people got place to go!). The espresso  was delicious, which I was told is a local roast. We'll look for the Cali Coffee in Marathon, FL on the way home."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:36.317Z"
+    },
+    "ChIJWd1lMAAB2YgRWmCx0pXqJnc": {
+      "picks": {
+        "drink": {
+          "name": "Dubai chocolate coffee and kratom mix",
+          "reason": "Specifically called out as exceptional in a 5-star review, with Kratom drinks praised across multiple reviews.",
+          "quote": "the dubai chocolate coffee and kratom Mix. It is out of this world!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Absolutely love this new location!\nLots of potential to come with this place.\n\nGreat Kratom and Kava.\nDelicious Kava Lactone Shots\n\nVery good prices.\nManagement said there will be lots of events and surprises!\n\nSam and Dean were very nice and knowledgeable about their menu.\n\nDelicious Kratom Specialty Drinks!"
+        },
+        {
+          "rating": 5,
+          "text": "I needed a place where I could space out and vibe, and this spot was perfect for that. They had a couch away from the main area, so I could relax, listen to my own music, and just decompress. They also had a really cool LED strip that looked like colorful shooting stars, which made the atmosphere even better. I loved that it felt quiet but still social at the same time. Seriously, I needed this after a long day at work.. thank you so much…"
+        },
+        {
+          "rating": 5,
+          "text": "The owners were amazing! We wanted coffee around 3 pm while walking along the beachfront and their sign read “closed”. The new owners were just starting up their business and invited us inside (Jeff and Doria). They were so friendly and inviting and the place has great potential once they open up! I can’t wait to come back. Jeff whipped us up one heck of an iced coffee on the spot and even threw in some freebies! Overall wonderful experience!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:46.435Z"
+    },
+    "ChIJYaCJHGwB2YgRe9JyqqKiFuQ": {
+      "picks": {
+        "drink": {
+          "name": "Cold brew",
+          "reason": "Multiple reviewers specifically praised the cold brew, with one self-described connoisseur calling it some of the best they've had.",
+          "quote": "cold brew coffee is some of the best I've ever had",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Chocolate croissant",
+          "reason": "Named directly by two reviewers with strong praise for flakiness, butteriness, and chocolate filling; croissants overall are a signature item.",
+          "quote": "perfectly flaky, buttery, and filled with delicious chocolate",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Great, new little spot in Croissant Park!! It's a walk up counter, with places to enjoy your food and coffee. No seating area, it's more of a quick stop. The place looks immaculately clean, the coffee is bought and roasted locally and was DELICIOUS. We got the cold brew and highly recommend it. Also ordered the ham and cheese croissant which I practically inhaled. The croissants are a local bakery too I believe, they were authentic. The egg bites were very flavorful and fresh. Great spot to enjoy the view of the park on the weekend, there's usually games going on and lots of activity. The owners were onsite, very involved/invested, and the staff behind the counter were incredibly warm and friendly. Will definitely come back again soon!"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing little coffee shop! Beautiful and full of charm. The coffee is delicious and the staff is incredibly friendly and welcoming. Definitely my new favorite spot to get my morning coffee!"
+        },
+        {
+          "rating": 5,
+          "text": "Just had such a nice experience at Croissant Park Cafe! We were looking for a quick coffee and pastry before heading to Parker Playhouse. What a little gem this is - convenient parking in the back, super clean bathroom, and the most welcoming and charming staff. The croissants were warm and fresh out of the oven, what an unexpected treat! The cold brew coffee is some of the best I’ve ever had, and I am a cold brew connoisseur. We will definitely be back to this neighborhood gem whenever we are nearby."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:51.043Z"
+    },
+    "ChIJMy00jUkB2YgRHPQIJE_wIxA": {
+      "picks": {
+        "drink": {
+          "name": "Cold brew with dulce de leche cold foam",
+          "reason": "Specifically named in a 5-star review with enthusiastic praise; other coffee mentions are generic, making this the most concrete standout drink.",
+          "quote": "their cold brew with dulce de leche cold foam",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Empanadas",
+          "reason": "Empanadas are named in multiple 5-star reviews with strong praise ('amazing', 'fantastic'), making them the most consistently recommended food item.",
+          "quote": "amazing spinach empanadas and delicious coffee",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Love this new cafe! Everything is freshly baked in house. I got a chocolate croissant and I’m coming back with my daughter because she will love it. I met the owner Jesica, she was very friendly and helpful. Beautiful atmosphere and everyone is super nice."
+        },
+        {
+          "rating": 5,
+          "text": "The coffe taste great, the pastry 🥐 so delicious and the place it’s very beautiful, the staff and owners are very friendly and professional. 10/10 best coffee  shop in Fort Lauderdale!"
+        },
+        {
+          "rating": 5,
+          "text": "Beautiful space, amazing spinach empanadas and delicious coffee!  An amazing addition to the neighborhood"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:55.649Z"
+    },
+    "ChIJrzShwdMB2YgRo43yuTps5xQ": {
+      "picks": {
+        "drink": {
+          "name": "Orange Truffle Latte",
+          "reason": "Singled out as the standout drink, called a 'must-try' that pushes the experience beyond 5 stars.",
+          "quote": "the orange truffle latte easily pushes it beyond a 5 star experience",
+          "confidence": "high",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The coffee truck is located inside a little cute park. The decorations, ambiance are nice. I was not happy with the coffees because I didn’t taste the coffee! They put too much milk and not enough coffee. My cortado coffee unfortunately didn’t taste good:(\nPlease: make your coffees more strong because when I buys coffee, I’m always expecting to taste the coffee in the drink and not the milk."
+        },
+        {
+          "rating": 5,
+          "text": "This coffee truck is situated in a lovely little area with several eateries. It's got a great outdoor seating area with music to just relax and enjoy company with friends or partners. The highlight of my experience was hands down the orange truffle latte. If you're in the area and you love coffee you are doing yourself a disservice not stopping by and trying this drink. Everything about this coffee truck and it's staff deserves the 5 stars but the orange truffle latte easily pushes it beyond a 5 star experience."
+        },
+        {
+          "rating": 5,
+          "text": "Nice place with a cozy atmosphere. The coffee is always tasty and well made. I’ve been here a few times already — consistently a good experience."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:40:59.747Z"
+    },
+    "ChIJxUKgbAAB2YgRs2exnUtTYkU": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "Reviews mention coffee and beverage selection are great but no specific drink is named.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Breakfast taco",
+          "reason": "Specifically praised as 'perfect snack size' and delicious; chocolate chip cookie also mentioned positively but taco has more detailed praise.",
+          "quote": "breakfast taco was the perfect snack size, not too heavy and delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "welcoming staff, management that took time to acknowledge my first visit and tell me more about the brand. VERY New York- which is a nice break from SoFlo style coffee shops. Super quiet and hidden location which allows me to work in peace. great music selection. didn’t try the food but looks good and is made daily. super good choc chip cookie."
+        },
+        {
+          "rating": 5,
+          "text": "such a sweet and hidden gem in the middle of downtown ftl. The coffee and beverage selection is incredible and the staff, including Elana, are a bunch of sweethearts!"
+        },
+        {
+          "rating": 5,
+          "text": "David was very welcoming. Great service from him"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:04.441Z"
+    },
+    "ChIJTckxPUIB2YgREF8cf_b0Rk0": {
+      "picks": {
+        "drink": {
+          "name": "Fort Laudy Latte",
+          "reason": "Only specifically named drink with positive praise in a 5-star review; other named drinks (matcha, hot chocolate) were criticized.",
+          "quote": "I had the Fort Laudy Latte and it was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are named with praise. One reviewer mentions oatmeal but notes it was just hot water added to a cup. General 'food tastes fresh' comment lacks specifics.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Such a cute store and great drinks. I had the Fort Laudy Latte and it was delicious. The prices are reasonable. The service was also very pleasant and friendly. I highly recommend coming here if you in the area."
+        },
+        {
+          "rating": 2,
+          "text": "We’re visiting from out of town. I googled coffee shops and this was 3 minutes from the Airbnb. I wanted to like it. The people were nice. But I ordered a honey lavender matcha….it was full of clumps of unsifted matcha and I tasted not even a hint of lavender. This is my go to drink and I was happy to order it and I couldn’t drink even half because I hate sipping clumps of matcha powder. I ordered a hot chocolate for my daughter. She said she tasted no chocolate, it was more like hot brown milk, she couldn’t drink it. I got a decaf coffee with caramel syrup for my husband and he didn’t enjoy it and decided not to finish it. The reviews were good so I gave it a try. Maybe just an off day….but not one of the three things I ordered was enjoyable enough to finish. I got an oatmeal, that was quite tasty but they just added hot water to the cup for me so they don’t actually make the oatmeal. Still, it was really good."
+        },
+        {
+          "rating": 5,
+          "text": "Beautiful area, I love the atmosphere. Everyone is so sweet, food taste fresh. If I could give more stars I would. "
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:41:09.882Z"
+    }
+  }
+}

@@ -1,0 +1,1433 @@
+{
+  "version": 1,
+  "citySlug": "deerfield-beach",
+  "city": "Deerfield Beach, FL",
+  "generatedAt": "2026-05-24T21:39:39.874Z",
+  "count": 9,
+  "cafes": [
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJY9zTUWLi2IgRlCMGP-r5-P4",
+      "name": "Sylvain's Café",
+      "address": "1634 SE 3rd Ct, Deerfield Beach, FL 33441, USA",
+      "lat": 26.3135132,
+      "lng": -80.0835519,
+      "rating": 4.5,
+      "reviews": 778,
+      "price": "$",
+      "types": [
+        "breakfast_restaurant",
+        "hamburger_restaurant",
+        "brunch_restaurant",
+        "french_restaurant",
+        "american_restaurant",
+        "meal_takeaway",
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 2:30 PM",
+        "Tuesday: 7:00 AM – 2:30 PM",
+        "Wednesday: 7:00 AM – 2:30 PM",
+        "Thursday: 7:00 AM – 2:30 PM, 5:00 – 8:30 PM",
+        "Friday: 7:00 AM – 2:30 PM, 5:00 – 8:30 PM",
+        "Saturday: 7:00 AM – 2:00 PM, 5:00 – 8:30 PM",
+        "Sunday: 7:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=18372709464332968852&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJY9zTUWLi2IgRlCMGP-r5-P4%2Fphotos%2FAb43m-vCW-Sq2wDnPOBMPs6BqQL6sylhMfZNOGrG5ckpFvlSEmITdAUlNDCV_6lpjzc6Wyae4Qk2XgULkthzF3ZAZa9B0v7BRDjw85mghnS4wFv18B27aW8g9e0XiUSrOelabtwCBAdKKDRfKgDggp3OG3OVYpN5c5-U-VuydAl6iGFBjEfyKfbUWrHOkF8otqSmVrij4pa2k3QEx9cwRQYNftOPinmm3ArcR88vIGqtu9OuZ2bqesmlgqBFee5wvC2DovuNb9dt2hwym8wY1RXHzGOB6eZwarpDY9Tbrh4qKmltLQ&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJXbuFs2Di2IgR5bx66mLnmJc",
+      "name": "Le Rendez-Vous",
+      "address": "2066 N Ocean Dr, Deerfield Beach, FL 33441, USA",
+      "lat": 26.3162517,
+      "lng": -80.07686029999999,
+      "rating": 4.7,
+      "reviews": 365,
+      "price": "$$",
+      "types": [
+        "ice_cream_shop",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10:30 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 10:00 AM – 10:30 PM",
+        "Tuesday: 10:00 AM – 10:30 PM",
+        "Wednesday: 10:00 AM – 10:30 PM",
+        "Thursday: 10:00 AM – 10:30 PM",
+        "Friday: 10:00 AM – 10:30 PM",
+        "Saturday: 10:00 AM – 10:30 PM",
+        "Sunday: 10:00 AM – 10:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10923735308213861605&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJXbuFs2Di2IgR5bx66mLnmJc%2Fphotos%2FAb43m-tZcjGGflHIOmXf_SN4jZdykmoFamKrs6E81-aDAj1dbr2Zhy0HJzktFk5jCkXyxsLfglZN6Hsx2-1pVBlLsNtuSUymwn7tiFzmYCPi-Eh8QUNWkT11ix7CeJG6diIZyLGncx2eKlTDCp_0ic1KsAYZ5czgn73CHmb7diVw9MhKKzK28VPIhHtOLCUpycmodcAwMzsdSe4Os_cRuMUEHjLKXnJclT06Add8f4Eo-CqEQhDhI8DPP51iuQPM6Wh-nOFm5QPfsXjzM3HBB7HOXcPE09d8Aa6De7hcbSVE9oOvIA&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJ7ZEyycXj2IgRGcmwbp3KJUs",
+      "name": "StreatArt Cafe",
+      "address": "505 S Federal Hwy Suite #6, Deerfield Beach, FL 33441, USA",
+      "lat": 26.3109477,
+      "lng": -80.092203,
+      "rating": 5,
+      "reviews": 155,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "bakery",
+        "deli",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5414956904498645273&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ7ZEyycXj2IgRGcmwbp3KJUs%2Fphotos%2FAb43m-vQkm6MjT89dZwHim8pjGz5WyYMB3LtCZSXhH-G2SCEBdmXwm6fO6S9KKoCjPyGCg7AzG-nrK2OFtMg-xR2AXMnFm-SN24lusreWyl4jbkLZ3190-C2Bh6VXk79fnLXQOURRwYYGcLOb2fALn1tER5opkMvAB0hmFz85Vn2oynG-x3lgnc0o-KezMz7ZL46UFV_ZXFYIhg-Uj3OGBBaX6i_XM0iC6u4w112Yn7rILfloKwMRiBcdpWx10CVvyAeSrk12AnDc74YgDWMw1Fp43Fn1b5KKrPMG7mB8w9lBz5lNg&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJ3yAi2g_j2IgRGe0-k_FCcbE",
+      "name": "Le Petit Parisian Cafe ( New Owner March 2026 )",
+      "address": "261 S Federal Hwy, Deerfield Beach, FL 33441, USA",
+      "lat": 26.3151264,
+      "lng": -80.0919041,
+      "rating": 4.6,
+      "reviews": 308,
+      "price": "$$",
+      "types": [
+        "bakery",
+        "brunch_restaurant",
+        "pastry_shop",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:30 PM",
+        "Tuesday: 7:00 AM – 3:30 PM",
+        "Wednesday: 7:00 AM – 3:30 PM",
+        "Thursday: 7:00 AM – 3:30 PM",
+        "Friday: 7:00 AM – 3:30 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12786074422406475033&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ3yAi2g_j2IgRGe0-k_FCcbE%2Fphotos%2FAb43m-uvvPBuOCuTZK3KJgZ0dDa93uIbTMEr6uyTFWXzTZi0l1vcc4HmhzO5JYNVf8BrjrXNODkLV1gaCM3TULAeCUkPJ8liJ2r_DTjhqTpfof4G65UAL9hrvL3V9aofDvZNzGiF_4r3hdq7Xh8VtpjBfJbSds8uiucWDtzkEhLla06h7KfDu2MwFoIXbk1RWZDg7zyi-9T8L0V0RdCtiiV2MUnrYM93TYQFJymUUzC7ez_CYZ9td4rsItndmv_CYIxA9oJdwpOf6IqtT_OvP4Z7CiA8D4efdi6w7zdAwJx9lTujRA&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJ81Rh9NTj2IgRgS1a6fAxxaY",
+      "name": "The Gathering Grounds Coffee Co.",
+      "address": "1985 NE 2nd St East Entrance, Deerfield Beach, FL 33441, USA",
+      "lat": 26.316772699999998,
+      "lng": -80.07789389999999,
+      "rating": 4.7,
+      "reviews": 173,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Mon",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 4:00 PM",
+        "Tuesday: 7:00 AM – 4:00 PM",
+        "Wednesday: 7:00 AM – 4:00 PM",
+        "Thursday: 7:00 AM – 4:00 PM",
+        "Friday: 7:00 AM – 4:00 PM",
+        "Saturday: 7:00 AM – 4:00 PM",
+        "Sunday: 7:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12017066091484949889&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ81Rh9NTj2IgRgS1a6fAxxaY%2Fphotos%2FAb43m-sdu5kZZFf-AcP1snBr1Dtns5k21-cTPZOfUXA9TsmZqFQ1SOJ0D8l_Z0HnFy4HrwJ8hZiX7tj7XJyqPoze3Vd4T9TrlYMi5b_Rs73roKGPeNYNC8oKj0h1_mng7Y_WeBLcuUPxK3D7k_fdpRsdAh7QDTRUemaY4_sMH_L2Kqq0GvweaKGD7BeAoHSwZn6BXD0rs2r3-mmeV-QWGx3BfwGjCkDGRGmhYunh6d8fXQUBcHz3W5X4sEOsHpAZt-lSwHYRjJtKxzpWyDiyn0D7BJ3dTPqagtvl-S7oD8Szg1b5QA&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJa9sNk03g2IgRgvn9-qXKoA8",
+      "name": "La Riviera Cafe",
+      "address": "123 NE 20th Ave, Deerfield Beach, FL 33441, USA",
+      "lat": 26.316024199999998,
+      "lng": -80.07796909999999,
+      "rating": 4.2,
+      "reviews": 625,
+      "price": "$$",
+      "types": [
+        "french_restaurant",
+        "wine_bar",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "bakery",
+        "italian_restaurant",
+        "bistro",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "bar",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1126122721071987074&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJa9sNk03g2IgRgvn9-qXKoA8%2Fphotos%2FAb43m-svDzM6W5_rLKxWst0GG3rW5r6FVydWCKVYRvzwAYDY2efp6O9sTlKDWUM2XN32UKQQWvQJm5XUemtMTRiqjyNf93V1HMwT9-1_ZHTvZsQkNrDJ9TyY48U63c4T66vCYgShWXgBBqNfjf-m5FzKJ68ymzg2G_2BC-dT1mP6B6r1oplL1qQMBge3J4WIEUB-qVkTLemsnBRwHfABNMT6THX6t2QI02sBV7XQJVdESyOsv211nRIQ70WIxOquPas85ghTXmC40WmSvJ4ngzol0TwnH3O78scHEaxsIHz81TbDxA&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJ36g2NgUd2YgRaGyjP8Uub68",
+      "name": "Cafe & Bakery 2000",
+      "address": "2100 SW 10th St, Deerfield Beach, FL 33442, USA",
+      "lat": 26.303637000000002,
+      "lng": -80.132903,
+      "rating": 4.1,
+      "reviews": 775,
+      "price": "$",
+      "types": [
+        "bakery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 10:00 PM",
+        "Tuesday: 6:00 AM – 10:00 PM",
+        "Wednesday: 6:00 AM – 10:00 PM",
+        "Thursday: 6:00 AM – 10:00 PM",
+        "Friday: 6:00 AM – 10:00 PM",
+        "Saturday: 6:00 AM – 10:00 PM",
+        "Sunday: 7:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12641374103763381352&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ36g2NgUd2YgRaGyjP8Uub68%2Fphotos%2FAb43m-s4bXb9pj3J9SrSmEgFfgP9loubzCP-ow1pZbCVytANNN59rzeT4XvhvbsBV6s0vWLt-Ae3Ftl2eJp55Qb-stdqy1_msQAeS0iGeFY18BpQWiY_osm5N6K0q6cMrinw6DablAZ_vfkcH06EIaNE-8eToJCDzM_xKLl0_Rc-9RlwFFQhJul6Hat1ptK0wJWTa7MdDw_2bAPtr9jJnJve6zXfFrsqdU-f60Da5j8-a5SHEDa1zUWFzv2KzCFNOgfvY7axT1y6ZDMvKH9NLA7w1IUNGiZfWhxExRXbjzgJO3A7LYTPK-eZCyucZgzPQ-gHfO3OU0IOKEYvsGvBLXVBsPVcPvOIMXSDltFCOamUDCJKQFR3-zRuBybGoZiCY4PNQZxROnNWYORkEcOtwT6owzg5oCCnwttODIOsSd8l6PahdSpZ&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJsbdL1x_h2IgREufR-Pn0V18",
+      "name": "Pilar Coffee Bar & Iced Treats",
+      "address": "1500 SE 3rd Ct #104, Deerfield Beach, FL 33441, USA",
+      "lat": 26.3133508,
+      "lng": -80.08513889999999,
+      "rating": 4.3,
+      "reviews": 261,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 8:00 PM",
+        "Tuesday: 7:30 AM – 8:00 PM",
+        "Wednesday: 7:30 AM – 8:00 PM",
+        "Thursday: 7:30 AM – 8:00 PM",
+        "Friday: 7:30 AM – 9:00 PM",
+        "Saturday: 7:30 AM – 9:00 PM",
+        "Sunday: 7:30 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6870229111035520786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJsbdL1x_h2IgREufR-Pn0V18%2Fphotos%2FAb43m-vxV6rYSqZauWdEqCDNz9o74C5uOeAYu4LvIEB1heyX7l0pHazYxiohtTs3gONuNV8r_R0hv6d_zPhxMARps8erSlOU21ZHm9-7v5uhtaYw0IVy_8eiVtvaDQI2ATJYxD91liwetFyybjDd-_5D_d7FIS8QPriMPCBQ4kQdvvBFnLGgcWqdGpQFncT_cZjiG8FJ8QG1arPJzt-4r-psINVkVa-MPKPg0GOWqVWhav3Hm9NL3KYXLlZVvbIBHhl38uU4NS6ssA140qt7s-h7aOs8tRWNWbdJDjTtoCcn9lkUTw&w=800"
+    },
+    {
+      "city": "deerfield-beach",
+      "id": "ChIJgWrmaubj2IgRcW1KN0xlxFY",
+      "name": "The Break House",
+      "address": "202 NE 21st Ave, Deerfield Beach, FL 33441, USA",
+      "lat": 26.3165084,
+      "lng": -80.075599,
+      "rating": 4,
+      "reviews": 176,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 10:00 PM",
+        "Tuesday: 8:00 AM – 10:00 PM",
+        "Wednesday: 8:00 AM – 10:00 PM",
+        "Thursday: 8:00 AM – 10:00 PM",
+        "Friday: 8:00 AM – 10:00 PM",
+        "Saturday: 8:00 AM – 10:00 PM",
+        "Sunday: 8:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6252233560716635505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJgWrmaubj2IgRcW1KN0xlxFY%2Fphotos%2FAb43m-vNJHmWEY6WL5BISwJaVoS_YVb_1U5fuC9QLQIcydR2siK-oSSQCBE7V_alCnv9BVeUtXxcd9rVFt-4WgGXvf4EsXka6VgWf2rSsbfJ5QCmEden5gpBScOSDU4OwkhLVVOzSwyG4iEM0bc4K7hRN9lWIhGka_7mrP-YiNkTaD5EyFybxisqRzCaYegstM3HNaQcApgRULEa3IocmZ38kDENdTByU4yQ2DSqIeXWUz3KQgsDfTObmRImmlVGPZeXStknbu1-pRVm5_df0byxT-tJS43Rla-uc964nxQ_B-f7qJ4evw0f2xlqjTQEWWaXYsU3_Khz1Yd_mDTKdDWilW3OyewyLh8lI3K7d7W6C2eo1srbmS-6hcEHfUtw9JgBOekv1gf5aolZBuuI_mkalLz3uKKVxPd4sTbUqIPrZKUz7gz4b2d_7Z47iyZv0yvg&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJY9zTUWLi2IgRlCMGP-r5-P4": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Multiple reviewers praise the coffee, with mentions of great options and non-stop refills.",
+          "quote": "non-stop hot coffee refills",
+          "confidence": "medium",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Challah French Toast",
+          "reason": "Specifically named in a 5-star review where the reviewer said it hit the spot. Other specific dishes like the meat lover omelet also got strong praise, but French toast is a classic diner highlight here.",
+          "quote": "Food hit the spot",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This was the most generous, fattest meat lover omelet I've ever had. Ms. Dee went above n beyond to accommodate my annoying demands, from asking for a side of heavycream for my coffee to offering to swap my fruit with sliced avocado, and non-stop hot coffee refills.\n\nMy husband ordered the traditional eggs benni. Check out the perfectly medium yolk in the pic.\nIf you like intimate diner with nostalgic atmosphere, this place is highly recommended."
+        },
+        {
+          "rating": 5,
+          "text": "My husband and I were in Florida for our friend’s wedding and stopped by Sylvain’s Cafe the morning before. I ordered the challah French toast and he ordered the healthy breakfast. Food hit the spot and the service by Kelly and Mel was fantastic. Great coffee options too. Definitely recommend."
+        },
+        {
+          "rating": 5,
+          "text": "Positive experience, good food, great service, cute little hole in the wall diner. If anything could be elevated, the bathroom definitely needs a facelift."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:38:54.119Z"
+    },
+    "ChIJXbuFs2Di2IgR5bx66mLnmJc": {
+      "picks": {
+        "drink": {
+          "name": "Nutella and Kinder Bueno milkshake",
+          "reason": "Single but very enthusiastic 5-star mention; only specific drink named in reviews.",
+          "quote": "amazing milkshake out of the combination of Nutella and kinder Bueno",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Gelato",
+          "reason": "Repeatedly praised across multiple 5-star reviews as the best, compared favorably to Italian gelato.",
+          "quote": "hands down the best — so creamy, flavorful, and absolutely worth the wait",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This ice cream shop is the absolute best in Florida. The Gelato flavors are crazy good. I got the Salted Caremel Pop Corn. Topped mine with peanuts. Wow!!!! So good.. Wife and kids are in a happy place.  I'm on Cloud 9. Staff was super awesome and we were able to taste a lot of flavors 😋"
+        },
+        {
+          "rating": 5,
+          "text": "Just got serviced by Alec, He made an amazing milkshake out of the combination of Nutella and kinder Bueno. It was excellent."
+        },
+        {
+          "rating": 5,
+          "text": "Amazing. Spending a week in Deerfield. Was looking for a ice cream place for my 3 years old. Came here by chance. Amazing. I lived in Rome for 3 years and their gelato taste just like back in Italy !"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:38:59.118Z"
+    },
+    "ChIJ7ZEyycXj2IgRGcmwbp3KJUs": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Arancini",
+          "reason": "Specifically praised in a 5-star review as huge, stuffed with meat, and well-priced at $7. Other reviews rave about authentic Italian food generally, but arancini is the most concretely recommended named item.",
+          "quote": "raving about the Arancini here so I had to try. They were delicious!",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The best food I’ve had in south Florida! The employees are so nice and the prices are great. You can taste the quality in the food and the meatballs are big and full of flavor. They make everything in house and you can feel the love they carry for their food as soon as you walk in. I highly recommend stopping and eating here or you’ll be missing out big time. Can’t wait to come back"
+        },
+        {
+          "rating": 5,
+          "text": "Excited to write this review for authentic Italian food at great prices!\nSaw a FB post from local food critic Mikeiseating raving about the Arancini here so I had to try. They were delicious! Some places are skimpy with the meat but these are stuffed. They were HUGE and only $7 each. Also ordered the pear ricotta cake imported from Italy and cannolis which were delicious! Mini cannoli are only $3.50!! The place is very clean, service was excellent by 3 wonderful and friendly employees Rich, Antonio and Andrea. Drove from Hollywood and will be back for sure! Tables outside, open for breakfast and lunch until 4pm with daily specials posted."
+        },
+        {
+          "rating": 5,
+          "text": "Delicious food. Friendly service!\nWarm and welcoming! Chef Andrea and Richie were great! As someone who was born and raised in a Sicilian family this food is as authentic as it gets! Patio seating and counter service was very accommodating as well!\nHighly recommend this cafe!!!! Can't wait to eat there again!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:04.648Z"
+    },
+    "ChIJ3yAi2g_j2IgRGe0-k_FCcbE": {
+      "picks": {
+        "drink": {
+          "name": "Matcha (vanilla)",
+          "reason": "Explicitly praised in a 5-star review for its balanced flavor; the only specific drink mentioned positively.",
+          "quote": "The matcha is the perfect balance of sweet and bitter",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Almond croissant",
+          "reason": "Named and praised across multiple 5-star reviews, including one reviewer who turned around to compliment it.",
+          "quote": "immediately had to turn around to go back in to profess how amazing the croissant was",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "First time and definitely the last time ordering from Le Petit Poussin.\n\nMy boyfriend and I ordered their avocado toast through DoorDash because it looked great in the photos and we were excited to try something new. What arrived was nothing like what was advertised. It was a plain piece of toast with some smashed avocado and an egg on top—no salad, no presentation, and honestly, no flavor. It was extremely bland and underwhelming, and not at all what you’d expect for a $19 menu item.\n\nThis wasn’t a case of “presentation being off.” We did not receive the item that was pictured and described on the menu.\n\nWe called the store to express our disappointment and were told they couldn’t help us, then given the owner’s number. When we spoke to the owner, he was dismissive and unprofessional, repeatedly stating that presentation is not grounds for a refund and cutting the call short. He showed no interest in actually addressing the issue—that we didn’t receive what we ordered.\n\nOverall, it was a complete letdown in both food quality and customer service. If you’re looking for a good café-style breakfast, Stinky Buns in the Cove and Keke’s are much better options. If you’re looking for a French bakery, Flore Bakery is a great choice.\n\nSave your time and money—this place isn’t worth it."
+        },
+        {
+          "rating": 5,
+          "text": "Amazing food and service!! The matcha is the perfect balance of sweet and bitter. I loved the vanilla with it. And the food is even better. Alonna was awesome and gave me great recommendations like the pistachio roll and almond croissant."
+        },
+        {
+          "rating": 5,
+          "text": "Everything here is perfect (not exaggerating).  The most important in any restaurant is the food and literally everything they make is delicious!  What makes things better is the service, the ladies are so friendly and welcoming (especially Sirine - she’s the best).  There is a gentleman that also helps out and he is also very friendly. They truly seem like they care and are very helpful.\n\nWhat I typically order…\n- almond croissant, chocolate croissant or a combo (sometimes they create new things like the chocolate chip croissant in the pic).  All their croissants are good!\n- ham and cheese quiche, it’s just simply the best and they gave you a good size slice with a side salad.  If I need something quick to go then I get the spinach pastry you see in the pic.\n\nTIP: it maybe hard to find from the street because of the name, the name shows “LPP” instead of the full name and it’s at the corner of the plaza.  They also have a cute outdoor area when weather is nice.\n\nCome check it out, you won’t be disappointed!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:10.175Z"
+    },
+    "ChIJ81Rh9NTj2IgRgS1a6fAxxaY": {
+      "picks": {
+        "drink": {
+          "name": "Iced Matcha with Oat Milk",
+          "reason": "Specifically praised in a 5-star review; other drink mentions are generic (iced coffee, cold brew, cinnamon honey latte) with only single mentions each.",
+          "quote": "beverages are excellent- especially the iced matcha with oat milk",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Empanadas",
+          "reason": "Mentioned positively in three separate 5-star reviews, with specific praise calling them a must-try.",
+          "quote": "the empanadas are a must-try—flaky, flavorful",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Spectacular little coffee nook destination - always a family favorite to visit while at the beach!\nTheir beverages are excellent- especially the iced matcha with oat milk!!\nAnd they have a good selection of baked goods.\nThis is one of my favorite places in Deerfield- always a must visit!"
+        },
+        {
+          "rating": 5,
+          "text": "My cousin recommended this little spot for coffee. He was so enthusiastic about it I had to try it. The ice coffee was delicious and had a pork and pineapple empanada that was very tasty."
+        },
+        {
+          "rating": 5,
+          "text": "I found this place while visiting Deerfield Beach. This was perfect small quaint spot located not far from where I was staying. It had a small seating area where it was perfect to sit and enjoy a great cup of coffee. The coffee was tasted fantastic and the staff was so gracious and patient with my order. They made it an easy choice tmto come back everyday I was there. I couldn't have asked for anything more. The highlight was the staff, the fresh coffee and choices and the ability to sit outside and enjoy the beautiful day."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:14.670Z"
+    },
+    "ChIJa9sNk03g2IgRgvn9-qXKoA8": {
+      "picks": {
+        "drink": {
+          "name": "Cortado",
+          "reason": "Specifically named and praised in a 5-star review alongside matcha latte; espresso also noted positively in another review. Cortado has direct positive mention.",
+          "quote": "a matcha latte and a cortado, and they were also tasty",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Crepes",
+          "reason": "Crepes received the most specific, enthusiastic praise, compared favorably to authentic Greek crepes in a 5-star review. French toast and burrata also praised but crepes have the strongest endorsement.",
+          "quote": "The crepes were absolutely delicious",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Went here for breakfast with a friend and we really liked the place. We ordered the burrata and the French toast — both were really good. We also had a matcha latte and a cortado, and they were also tasty. The brunch was under $40 total. The café is super cozy, the service was fast, and the whole place has a great vibe."
+        },
+        {
+          "rating": 5,
+          "text": "La Riviera Cafe is a wonderful place you’ll want to come back to again and again. The atmosphere is cozy and stylish, creating a relaxing, almost seaside vibe. The food was excellent — fresh, beautifully presented, and full of flavor. The service deserves special mention: attentive, friendly, and never intrusive. You can really feel that they care about their guests and the overall experience. A perfect spot for breakfast, brunch, or a lovely evening out. Highly recommended!"
+        },
+        {
+          "rating": 5,
+          "text": "We visited Crepe Cafe last year and loved it! We tried the crepes, and they tasted just like the ones in Greece. The lady working there was very friendly ,she told me she’s from Bulgaria, and I’m from Greece, which made it feel even more special. The crepes were absolutely delicious. I definitely recommend this place!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:19.750Z"
+    },
+    "ChIJ36g2NgUd2YgRaGyjP8Uub68": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "One 5-star reviewer mentions always getting coffee here, but no specific drink is named.",
+          "quote": "I always get my coffee from here",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Coconut cake",
+          "reason": "Specifically recommended in the only 5-star review, described as soft and great for coconut lovers. Other food items (cheese bread, pastries, pizza, burger) received negative reviews.",
+          "quote": "the coconut cake...was soft and made for coconut lovers",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "This is the first time I come to this bakery. I only wanted scrambled eggs and one toast for myself. I also ordered a chicken sandwich and a milk shake for my son. The cashier took my order and when I saw the ticket after paying I realized I had been charged more than a full breakfast that had proteins such as sausages and bacon. When I asked why that was I was told that next time I should order a full breakfast and remove the items I didn’t want so that it came out more economical. I can’t believe I wasn’t suggested that in the first place and ended up paying over $8 with taxes for 2 scrambled eggs not even organic eggs (she also says that scrambled eggs are more expensive) and 1 toast."
+        },
+        {
+          "rating": 1,
+          "text": "I usually go to “Marcos Top Burger” for thir picanha, but today i figured i try this place, and I was surprised on how little food for 27 bucks… so, I paid for my mistake so you don’t have to pay for yours. Go to Marcos Top Burguers” powerline and hillsboro"
+        },
+        {
+          "rating": 3,
+          "text": "A nice Brazilian style bakery with delicious looking pastries. It is a big place inside with a side room great for events. It has a big TV.\nI was in the mood for those cheese bread, that was my reason to stop in today.  I was disappointed with the ones they had. They were stale and a little hard. I bought other things in the case. The name was not written in English so I didn't know what I was getting but it looked good lol. The lady behind the counter spoke little English.  It was enough to communicate how many but not what the item was. I was happy with the other pastries.  They were good."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:28.417Z"
+    },
+    "ChIJsbdL1x_h2IgREufR-Pn0V18": {
+      "picks": {
+        "drink": {
+          "name": "Iced Honey Cinnamon Latte",
+          "reason": "Specifically called out as delicious in a 5-star review; other coffee mentions are generic (Colombian coffee, house brew) though consistently praised.",
+          "quote": "their iced honey cinnamon latte was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Avocado Toast with Square Egg",
+          "reason": "Only specifically named food item, praised for quality and presentation in a 5-star review. Other food references (salad, gelato) lack the same specific dish-level praise, though gelato was also enjoyed.",
+          "quote": "avocado toast with a square egg — a fun, modern twist",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The staff were all so friendly on a busy Saturday afternoon. The coffee was perfect, not too sweet, which is rare. Other coffee spots load up the sugar to cover the flavor. But their iced honey cinnamon latte was delicious. It was clean and well decorated. Excited for their other locations opening up. I will definitely be back!"
+        },
+        {
+          "rating": 5,
+          "text": "As an admitted coffee snob, I’m always searching for a place that truly gets coffee right — and Pilar absolutely delivers.\nI drink my coffee black, and unlike many chains (hello, over-roasted and bitter), Pilar’s coffee was smooth, balanced, and genuinely enjoyable on its own — no cream or sugar needed.\nI stopped in for breakfast and tried their avocado toast with a square egg — a fun, modern twist on a classic — and it was delicious. The quality and presentation really stood out.\n\nWhat I love most is that Pilar has something for everyone. Whether you're a purist like me who wants a simple, well-crafted cup of coffee, or you're into the trend-forward drinks the younger crowd loves (some with names I can barely pronounce!), they’ve nailed the balance.\n\nI even came back later for dinner, had a great salad, and spent hours working in a beautiful, comfortable environment.\nHighly recommend if you're looking for great coffee, great food, and a space you’ll actually want to stay in."
+        },
+        {
+          "rating": 3,
+          "text": "I debated whether to do a review on this place or not cause I don't do these to be negative. But then thought just be real all the time. So the place is dope as far as decor and the service was outstanding. But the food, coffee, and matcha latte were meh, just average nothing that sticks out or would make me come back again. Btw it's in a plaza that has a bunch of decent breakfast spots so the competition is fierce. And it was next to a bar that was open at 8:30 am with patrons which gave me old Florida vibes that I love. Felt nostalgic"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:34.333Z"
+    },
+    "ChIJgWrmaubj2IgRcW1KN0xlxFY": {
+      "picks": {
+        "drink": {
+          "name": "Espresso martini",
+          "reason": "Specifically praised as 'perfectly curated' in a 5-star review, alongside lychee martini mentions. Multiple cocktail mentions support the upstairs bar's drink quality.",
+          "quote": "her espresso martini was perfectly curated",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Dubai chocolate brownie",
+          "reason": "Enthusiastically called the reviewer's favorite dessert ever with a strong recommendation. Other foods are praised but none with this level of specific enthusiasm.",
+          "quote": "my fave dessert ever— HIGHLY RECOMMEND",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This review is for the upstairs bar. It’s a cute spot with stunning views just footsteps north of the main restaurant.\n\nThe drinks were nice and well priced for the prime beach overlook. They have their own creations plus classic cocktails.\n\nSeating includes spots right along the water and bar top seating plus high tops on the sides.\n\nThey have a staircase or elevator to get up to the second floor. You have great views of the pier and surrounding beach. Didn’t try the food, but the drinks were nice!"
+        },
+        {
+          "rating": 5,
+          "text": "Idk how this place only has a 4.0 rating!\n\nThe food and drinks are so good and the atmospheres with chill tropical house music playing on the beachside?! Like hello?!\n\nI loved the shift of the aesthetic from day to night— being here for a sunset and enjoying a lychee or gorgeous espresso martini 🍸 is an enchanting experience and so much fun 🤩 the 🍷 wine pour was generous and her espresso martini was perfectly curated! I also had a lychee martini with my bf and it was💯💯💯💯💯💯💯\n\nI came here 2x so far with the 1st time being with my bf and we had a couch section. We didn’t need the entire space as we sit next to eachother so inviting another couple to sit across from us so they could enjoy the view/vibes also was a fun way to brighten the experience!\n\nThe second time was with my best friend for our one year anniversary and it was the cherry on top to our little beach day and product shoot for her necklaces :)\n\nThe Dubai chocolate brownie is my fave dessert ever— HIGHLY RECOMMEND 🩷❤️🌺🥰"
+        },
+        {
+          "rating": 5,
+          "text": "The break house is simply amazing. The location is just perfect beach front, and the food options are many and all with high quality. I had the breakfast burrito and it was incredibly tasty haha the baristas were great as well with their cappuccinos and lattes! Highly recommended!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T21:39:39.874Z"
+    }
+  }
+}
