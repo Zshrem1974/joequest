@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <meta name="theme-color" content="#5E3E27" />
-  <title>JoeQuest — Boca Raton</title>
+  <meta name="theme-color" content="#D98324" />
+  <title>JoeQuest — Coffee, sorted</title>
 
+  <!-- PWA install + iOS home-screen niceties -->
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
-  <link rel="apple-touch-icon" href="/img/joequest-app-icon.svg" />
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="JoeQuest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -4245,6 +4250,19 @@
     }
 
     init();
+  </script>
+
+  <!-- Service worker: registers after load so it never blocks first paint.
+       Guarded so unsupported browsers (older Safari, in-app webviews) just
+       skip the whole thing — the app still works normally without it. -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js").catch((err) => {
+          console.warn("SW registration failed:", err);
+        });
+      });
+    }
   </script>
 </body>
 </html>

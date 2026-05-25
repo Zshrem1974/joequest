@@ -1,0 +1,26 @@
+{
+  "name": "JoeQuest — Coffee, sorted",
+  "short_name": "JoeQuest",
+  "description": "Find the one drink and one food worth ordering at every café — picked by AI from real reviews.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#D98324",
+  "background_color": "#F5E9DC",
+  "icons": [
+    {
+      "src": "/img/joequest-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/joequest-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

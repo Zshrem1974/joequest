@@ -1,5 +1,67 @@
 # CHANGES
 
+## PWA: JoeQuest is now installable on iOS + Android
+
+Additive wrapper around the existing web app — no feature, UI, engine,
+auth, snapshot, or routing changes. Phones can now "Add to Home Screen"
+and launch JoeQuest full-screen with its own icon. Repeat loads are
+instant from the shell cache.
+
+### What landed
+
+- **`public/manifest.webmanifest`** — `name`, `short_name`, standalone
+  display, portrait orientation, crema-orange `#D98324` theme, oat
+  `#F5E9DC` background. Icons declared at 192 + 512, with the 512
+  flagged `purpose: "any maskable"` (the existing app icon's pin sits
+  well inside the 80% safe zone, so one file serves both regular and
+  Android adaptive masks).
+- **`public/sw.js`** — plain service worker, no Workbox, no build step.
+  Versioned cache (`joequest-shell-v1`), old versions deleted on
+  activation. Caches the shell only: HTML, manifest, offline page, all
+  icons/brand SVGs, the JoeQuesters marker PNG. **Never caches `/api/*`,
+  the `/api/photo` proxy, `/admin`, or any cross-origin request** —
+  stale picks/favourites/offers/auth would be worse than honest
+  failures. Navigation requests use network-first (so deploy updates
+  reach users immediately); other shell assets use cache-first.
+- **`public/offline.html`** — brand-styled (oat/espresso/Poppins) page
+  shown when the network is dead and there's no cached shell. One
+  honest line + a Retry button. No fake data.
+- **`public/img/joequest-icon-192.png`** (192×192), **`joequest-icon-512.png`**
+  (512×512), **`apple-touch-icon.png`** (180×180) — all rasterized from
+  the existing `joequest-app-icon.svg` via `qlmanage` (macOS-native
+  Quick Look). Crema-orange background, cream pin/cup centered. No
+  external rasterizer/build pipeline required.
+- **`public/index.html` head additions** — `<link rel="manifest">`,
+  `<meta name="theme-color" content="#D98324">` (updated from the prior
+  espresso `#5E3E27` to match the manifest), `apple-mobile-web-app-*`
+  metas (`capable`, `status-bar-style`, `title`), apple-touch-icon now
+  points at the new 180px PNG (was the SVG — iOS prefers PNG). Title
+  bumped from "JoeQuest — Boca Raton" to "JoeQuest — Coffee, sorted"
+  to match the multi-city reality. Service-worker registration added
+  in a tiny separate `<script>` block after the main app boot;
+  registers on `window.load` so it can't block first paint and is
+  feature-detected so old Safari / in-app webviews are a graceful no-op.
+
+### Bumping the SW cache version when the shell changes
+
+When you change anything in the precached shell list (a new icon, an
+updated `index.html` shell, the offline page), bump `SHELL_VERSION` at
+the top of `public/sw.js` (e.g. `"v1"` → `"v2"`). On the next user
+visit, the install event opens a fresh cache, the activate handler
+deletes any cache whose name doesn't match the new version, and clients
+pick up the new shell on the following reload. Navigation requests use
+network-first anyway, so HTML changes propagate without a version bump
+— version bumps matter most for image/icon swaps.
+
+### Note on hosting
+
+Installability requires HTTPS — Render already provides it for the
+deployed domain, so no infra change needed. No new env vars. The
+manifest + SW are pure static files served by the existing
+`express.static("public")` mount.
+
+---
+
 ## UI: last-input-wins for city/ZIP/Location + share-on-sheet + copy tweaks
 
 ### City / ZIP / Location now follow a single "last input wins" rule
