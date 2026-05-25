@@ -24,8 +24,11 @@ Live app:
 - `server.js` (Express API: list, detail, photo proxy, favourites, taste, auth-config, status, **cities, zip→latlng**; multi-snapshot loader)
 - `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label; **city-parameterized**)
 - `lib/cities.js` (**6 FL city configs**: slug, bbox, center, addressRegex, searchQuery; `nearestCity()` helper)
-- `public/index.html` (vanilla-JS UI, single page, **nine views** + city dropdown / ZIP override / distance lines; loads `supabase-js` from CDN for browser-side auth)
-- `public/img/` (brand SVGs: lockup, favicon, app icon, standalone pin; PNG: JoeQuester marker)
+- `public/index.html` (vanilla-JS UI, single page, **nine views** + city dropdown / ZIP override / distance lines; loads `supabase-js` from CDN for browser-side auth; registers `/sw.js` for PWA install)
+- `public/manifest.webmanifest` (PWA install manifest: name, short_name, crema theme, 192+512 icons, 512 also `purpose: "any maskable"`)
+- `public/sw.js` (plain service worker — versioned shell cache, **never** caches `/api/*` or cross-origin; navigation = network-first, other shell = cache-first)
+- `public/offline.html` (brand-styled offline fallback; one honest line + Retry, never fakes café data)
+- `public/img/` (brand SVGs: lockup, favicon, app icon, standalone pin; PNGs: JoeQuester marker, **`joequest-icon-192.png`**, **`joequest-icon-512.png`**, **`apple-touch-icon.png`** — all rasterized from the app-icon SVG)
 - `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles, user settings, offers, help messages. In-memory fallback for dev.)
 
 Snapshot pipeline (one file per city):
@@ -224,9 +227,35 @@ no more `alert()` placeholders.
   from $250/campaign) + the coffee-only sponsorship policy box.
 
 Brand assets: `joequest-lockup.svg` in the header, `favicon.svg` in the tab,
-`joequest-app-icon.svg` for iOS install, `joequest-icon.svg` paths used for
-the café and "You" map pins (orange + red), `joequester-marker.png` for the
-purple JoeQuesters markers and the filter chip icon.
+`joequest-app-icon.svg` is the source SVG for the PWA icons, `joequest-icon.svg`
+paths are used for the café and "You" map pins (orange + red),
+`joequester-marker.png` for the purple JoeQuesters markers and the filter
+chip icon. PWA install uses the rasterized PNGs (`joequest-icon-192.png`,
+`joequest-icon-512.png`, `apple-touch-icon.png`).
+
+## Installable PWA (shipped)
+
+JoeQuest is installable on iOS and Android. Phone users can "Add to Home
+Screen" and launch full-screen with the JoeQuest icon. Repeat loads are
+instant from the shell cache; new shells propagate on the next reload.
+
+| What | Where | Notes |
+|---|---|---|
+| Manifest | `public/manifest.webmanifest` | `display: standalone`, portrait, crema-orange theme (`#D98324`), oat background (`#F5E9DC`). Icons at 192 + 512 (the 512 is also flagged `purpose: "any maskable"`). |
+| Service worker | `public/sw.js` | Plain SW, no Workbox. Versioned cache `joequest-shell-v1`; old versions wiped on activate. Shell precached: HTML, manifest, offline, all icons/brand SVGs. |
+| Caching rules | (in `sw.js`) | **Never** caches `/api/*`, `/api/photo`, `/admin`, or any cross-origin request — stale picks/favourites/auth would be worse than honest failures. Navigation = network-first (so deploy updates reach users immediately); other shell assets = cache-first. |
+| Offline page | `public/offline.html` | Brand-styled, one honest line + Retry button. No fake café data ever. |
+| iOS niceties | `<head>` in `index.html` | `apple-mobile-web-app-capable`, `apple-mobile-web-app-status-bar-style`, `apple-mobile-web-app-title`, apple-touch-icon as 180px PNG (was SVG — iOS prefers PNG). |
+| Registration | `<script>` block at end of `index.html` | Runs on `window.load` (never blocks first paint), feature-detected (older Safari / in-app webviews → graceful no-op). |
+
+**Bumping the SW cache:** change `SHELL_VERSION` at the top of `public/sw.js`
+(e.g. `"v1"` → `"v2"`). Required when you change anything in the precached
+shell list (a new icon, the offline page, etc.). Navigation requests are
+network-first regardless, so HTML edits propagate without a version bump —
+bumps matter most for image/icon swaps.
+
+**Installability needs HTTPS** — Render already provides it; no new env vars,
+no infra changes.
 
 ## Accounts, taste profile & data privacy
 
