@@ -1,5 +1,70 @@
 # CHANGES
 
+## Messaging: new Our Story page + Partner page rebuilt around brand offers
+
+Two drawer pages updated as a single messaging pass. No engine, auth,
+snapshot, map, analytics, or offers-data-model changes. Verbatim copy
+supplied by PM, used as-is.
+
+### Our Story (new)
+
+- New drawer item **"Our Story"** placed directly under Profile (top of
+  the drawer's first section), open-book icon matching the existing
+  20px stroke style.
+- New `<main class="view" id="view-our-story">` following the same
+  pattern as every other drawer page: Back button, gradient hero with
+  page title, content sections.
+- Two heading sections (`Coffee, without the guesswork.` and `New in
+  town? Start with a good cup.`) with three body paragraphs each.
+- CSS: `.story-hero` (gradient header, Poppins 26px) and
+  `.story-section` (Poppins 19px h2, Inter 15px body, line-height
+  1.65). Static content — no render fn needed.
+
+### Partner page — rebuilt around brand offers
+
+The page is now exclusively about **coffee brands offering discount
+codes to JoeQuesters**, with JoeQuest earning a share when a code is
+redeemed.
+
+**Removed:** the paid café-placement tier in full — the $49/mo
+"Featured café slot" card, the "Apply for placement" CTA, the
+"Featured slot in the top 3 cards on Discover" bullet, and the prior
+"Sponsored placements never override our AI picks" policy box (replaced
+with a stronger standalone trust callout, see below). The standalone
+"$250/campaign Coffee brand sponsorship" tier card is also gone — the
+new model is performance-based on redemptions, not campaign-priced.
+
+**Added:**
+- New page title: "Partner with JoeQuest" (hero, no sub-tagline).
+- Two pitch sections: "Coffee brands, meet JoeQuesters." and "How it
+  works" — verbatim copy, rendered in the same `.story-section` style
+  used by Our Story so the two new pages feel consistent.
+- A visually distinct trust callout using the existing `.policy-box`
+  style with a `.trust-callout` modifier that promotes the bold
+  statement to a standalone heading: **"Offers never influence our
+  picks."** followed by the explanatory paragraph.
+- A single CTA: **"Offer a code to JoeQuesters"** that opens the
+  existing Help form with the **Partner enquiry** category pill
+  pre-selected. Wired via a tiny global click handler that watches
+  `data-help-category`, then calls `go("help")` (which resets the form
+  via `renderHelp`), then assigns the requested category to the module-
+  scoped `helpCategory` variable and updates the pill UI. No new form,
+  no `mailto:`, no self-serve portal — reuses the pattern already in
+  the app.
+
+### Why paid café placement was removed (positioning/trust)
+
+A page that simultaneously says "our picks come from real reviews,
+period" *and* "cafés can pay for a featured top-3 slot" is internally
+inconsistent and reads as "we can be bought." Removing the paid tier
+brings the partner-page pitch in line with the engine's editorial
+promise (`SYSTEM_PROMPT` in `lib/data.js`: only items actually named in
+reviews, null + confidence "none" when thin). Brand-offer redemption
+sharing is a clean revenue model that doesn't touch the picks at all,
+and that's what the page now leads with.
+
+---
+
 ## PWA: JoeQuest is now installable on iOS + Android
 
 Additive wrapper around the existing web app — no feature, UI, engine,

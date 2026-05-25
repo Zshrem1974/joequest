@@ -223,8 +223,19 @@ no more `alert()` placeholders.
   Profile, Coffee taste profile *(AI tag)*, Offers, Become a JQ partner,
   Settings, Privacy & location (routes to Settings), Help. Header shows
   user email + initials when logged in.
-- **Partner page** — two offer types (Café placement $49/mo, Brand offers
-  from $250/campaign) + the coffee-only sponsorship policy box.
+- **Our Story** — drawer page (placed directly under Profile) telling
+  the brand story in two sections: "Coffee, without the guesswork."
+  (the no-pay-for-rank promise) and "New in town? Start with a good
+  cup." (the traveler pitch).
+- **Partner page** — pitches **brand offers only**: coffee brands /
+  roasters give JoeQuesters a discount code; JoeQuest earns a share on
+  redemptions. Performance-based, no upfront cost. Includes a
+  standalone trust callout ("Offers never influence our picks.") and a
+  single CTA that opens the Help form with the Partner-enquiry
+  category pre-selected. The prior paid café-placement tier ($49/mo
+  featured slot) has been removed — it was internally inconsistent
+  with the "picks come from real reviews, period" promise. The brand-
+  offer redemption-share model is the only partner revenue path now.
 
 Brand assets: `joequest-lockup.svg` in the header, `favicon.svg` in the tab,
 `joequest-app-icon.svg` is the source SVG for the PWA icons, `joequest-icon.svg`

@@ -790,6 +790,38 @@
     }
     .policy-box strong { font-family: var(--display); color: var(--crema); }
 
+    /* ----- Partner page (trust callout + CTA) ----- */
+    .policy-box.trust-callout {
+      margin: 16px 18px;
+      padding: 18px 20px;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .policy-box.trust-callout strong {
+      display: block;
+      font-size: 17px;
+      letter-spacing: -0.2px;
+      margin-bottom: 8px;
+    }
+    .partner-cta-wrap { padding: 6px 22px 32px; }
+    .cta-partner {
+      display: block;
+      width: 100%;
+      background: var(--espresso);
+      color: var(--cream);
+      border: none;
+      padding: 14px;
+      border-radius: var(--r-pill);
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 0.1px;
+      cursor: pointer;
+      transition: background 0.12s, transform 0.12s;
+    }
+    .cta-partner:hover { background: var(--espresso-deep); }
+    .cta-partner:active { transform: scale(0.98); }
+
     /* ----- Our Story page ----- */
     .story-hero {
       padding: 28px 22px 8px;
@@ -1798,42 +1830,26 @@
       </div>
 
       <div class="partner-hero">
-        <h1>Become a JQ partner</h1>
-        <p>Two ways to be seen by Boca's most curious coffee drinkers.</p>
+        <h1>Partner with JoeQuest</h1>
       </div>
 
-      <div class="offer-card">
-        <span class="tag">Café placement</span>
-        <h3>Featured café slot</h3>
-        <p>A boosted card on Discover + a "JQ partner" badge on your detail sheet.</p>
-        <div class="price">$49 <small>/ month</small></div>
-        <ul>
-          <li>Featured slot in the top 3 cards on Discover</li>
-          <li>Verified partner badge on your café detail</li>
-          <li>Performance dashboard (views, saves, click-throughs)</li>
-          <li>Pause or cancel anytime</li>
-        </ul>
-        <button class="cta">Apply for placement</button>
+      <section class="story-section">
+        <h2>Coffee brands, meet JoeQuesters.</h2>
+        <p>JoeQuest members are people actively hunting for their next great cup. Reach them with an exclusive discount code — and only pay when it's used.</p>
+      </section>
+
+      <section class="story-section">
+        <h2>How it works</h2>
+        <p>Leading coffee brands and roasters offer JoeQuesters a member discount. We surface your code to the right audience, you reward new customers, and JoeQuest earns a small share when a code is redeemed. Simple, performance-based, no upfront cost.</p>
+      </section>
+
+      <div class="policy-box trust-callout">
+        <strong>Offers never influence our picks.</strong>
+        Our café recommendations come from real reviews, full stop. Brand offers live in their own space and never change what we recommend — that's a promise to our members and the reason they trust us.
       </div>
 
-      <div class="offer-card brand">
-        <span class="tag">Brand offers</span>
-        <h3>Coffee brand sponsorship</h3>
-        <p>Surface a single beans, brewing-gear, or roastery offer in-app to engaged drinkers.</p>
-        <div class="price">From $250 <small>/ campaign</small></div>
-        <ul>
-          <li>One sponsored "Try this" card per week</li>
-          <li>Geo-targeted to the city of your choice</li>
-          <li>Strict editorial review — coffee-only, no junk</li>
-        </ul>
-        <button class="cta">Talk to us</button>
-      </div>
-
-      <div class="policy-box">
-        <strong>Our policy:</strong> JoeQuest only carries coffee-related sponsorships.
-        Soda, energy drinks, alcohol, food delivery, and unrelated brands stay off the
-        app — period. Sponsored placements never override our AI picks; reviewers'
-        words are the source of truth.
+      <div class="partner-cta-wrap">
+        <button class="cta-partner" data-help-category="partner">Offer a code to JoeQuesters</button>
       </div>
     </main>
 
@@ -4302,6 +4318,18 @@
           else if (a === "privacy") go("settings");
           else if (a === "offers") go("offers");
           else if (a === "help") go("help");
+          return;
+        }
+        // Partner-page CTA: open Help with a category pre-selected. Runs
+        // after go() so renderHelp's reset has already completed.
+        const helpCta = e.target.closest("[data-help-category]");
+        if (helpCta) {
+          const cat = helpCta.dataset.helpCategory;
+          go("help");
+          helpCategory = cat;
+          $$(`#view-help .taste-choices[data-key="category"] button`).forEach((b) => {
+            b.classList.toggle("selected", b.dataset.val === cat);
+          });
           return;
         }
         // generic data-go
