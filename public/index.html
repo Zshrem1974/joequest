@@ -790,6 +790,39 @@
     }
     .policy-box strong { font-family: var(--display); color: var(--crema); }
 
+    /* ----- Our Story page ----- */
+    .story-hero {
+      padding: 28px 22px 8px;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--oat) 100%);
+    }
+    .story-hero h1 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 26px;
+      letter-spacing: -0.4px;
+      color: var(--espresso);
+      margin: 0;
+    }
+    .story-section { padding: 22px 22px 6px; }
+    .story-section + .story-section { padding-top: 8px; }
+    .story-section:last-of-type { padding-bottom: 28px; }
+    .story-section h2 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 19px;
+      color: var(--espresso);
+      margin: 0 0 12px;
+      letter-spacing: -0.2px;
+      line-height: 1.3;
+    }
+    .story-section p {
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.65;
+      margin: 0 0 14px;
+    }
+    .story-section p:last-child { margin-bottom: 0; }
+
     /* ============================================================
        BOTTOM TAB BAR
        ============================================================ */
@@ -1725,6 +1758,35 @@
     <!-- ========================================================== -->
     <!--  PARTNER                                                   -->
     <!-- ========================================================== -->
+    <main class="view" id="view-our-story">
+      <div style="padding: 14px 18px 0;">
+        <button class="back-btn" data-go="discover">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+          Back
+        </button>
+      </div>
+
+      <div class="story-hero">
+        <h1>Our Story</h1>
+      </div>
+
+      <section class="story-section">
+        <h2>Coffee, without the guesswork.</h2>
+        <p>We've all stood at a coffee counter, stared at a board full of options, and just… guessed. Then watched someone next to us order the thing we wish we'd known about.</p>
+        <p>That's why we built JoeQuest. We read what real customers actually say in their reviews, and we name the single best drink and the single best food worth ordering at each café. One honest verdict — so you order like a regular on your very first visit.</p>
+        <p>We don't take a cent to rank a café higher. Our picks come from real reviews and nothing else, because the moment a recommendation can be bought, it stops being worth trusting. That independence isn't a feature to us — it's the whole point.</p>
+      </section>
+
+      <section class="story-section">
+        <h2>New in town? Start with a good cup.</h2>
+        <p>There's a particular comfort in finding the right café when everything around you is unfamiliar. A warm room, a drink that's actually worth it, a small pocket of calm before you head back out into a city you don't know yet. When you're traveling, you don't have time to gamble on the wrong cup — and you don't know which corner spot the locals quietly love.</p>
+        <p>That's where we come in. JoeQuest points you straight to the place worth your while and tells you exactly what to order when you get there — so a new city feels a little more like home, one good coffee at a time.</p>
+        <p>Right now we're deep in South Florida, getting to know one coffee scene at a time. We'd love for you to find your next great cup with us.</p>
+      </section>
+    </main>
+
     <main class="view" id="view-partner">
       <div style="padding: 14px 18px 0;">
         <button class="back-btn" data-go="discover">
@@ -2126,6 +2188,10 @@
         <button class="drawer-item" data-action="profile">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5 21c0-4 3-7 7-7s7 3 7 7"/></svg>
           Profile
+        </button>
+        <button class="drawer-item" data-action="our-story">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          Our Story
         </button>
         <button class="drawer-item" data-action="taste">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v6m0 0a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6 14a6 6 0 0 1-12 0"/></svg>
@@ -4230,6 +4296,7 @@
           closeDrawer();
           if (a === "partner") go("partner");
           else if (a === "profile") go("profile");
+          else if (a === "our-story") go("our-story");
           else if (a === "taste") go("taste");
           else if (a === "settings") go("settings");
           else if (a === "privacy") go("settings");
