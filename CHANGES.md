@@ -1,5 +1,27 @@
 # CHANGES
 
+## City #7: Parkland, FL
+
+Adds Parkland (Broward County, north of Coral Springs, bordering the
+Palm Beach line) as JoeQuest's 7th city — slug `parkland`. Standard
+add-a-city flow: config row in `lib/cities.js`, workflow snapshot run,
+`data/parkland.json` committed via PR.
+
+**Honest count: 2 cafés** — Carmela Coffee (4.8★, 1.7k reviews) and
+Cozy Drop (4.8★, 68 reviews). Parkland is a residential suburb whose
+coffee landscape is mostly chains in strip plazas, which the chain
+blocklist correctly excludes. Worth revisiting whether 2 cafés earns
+a dedicated city slot or whether Parkland should fold into a
+neighbour once the rest mature — for now it ships as-is, with data
+quality intact (real Parkland addresses only, no boundary leakage
+from Coral Springs / Coconut Creek / Boca).
+
+**Also unblocked along the way:** the monthly snapshot cron had been
+silently failing every 1st — the two repo secrets (`GOOGLE_PLACES_API_KEY`,
+`ANTHROPIC_API_KEY`) were never set, and "Allow GitHub Actions to
+create and approve pull requests" was off. Both fixed, so the monthly
+refresh will now actually open its PR.
+
 ## Offers: removed café samples; non-café brand examples only
 
 Aligns the **Offers** page with the new Partner positioning (coffee
