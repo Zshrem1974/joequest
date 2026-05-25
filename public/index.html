@@ -822,6 +822,138 @@
     .cta-partner:hover { background: var(--espresso-deep); }
     .cta-partner:active { transform: scale(0.98); }
 
+    /* ----- Install instructions modal ----- */
+    .install-modal {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0.96);
+      width: min(420px, calc(100vw - 32px));
+      max-height: calc(100vh - 64px);
+      overflow-y: auto;
+      background: var(--cream);
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(43, 28, 18, 0.28);
+      padding: 28px 24px 24px;
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s, transform 0.18s;
+    }
+    .install-modal.open {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      pointer-events: auto;
+    }
+    .install-close {
+      position: absolute;
+      top: 10px; right: 12px;
+      background: none;
+      border: none;
+      font-size: 28px;
+      line-height: 1;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 50%;
+    }
+    .install-close:hover { background: var(--oat); color: var(--espresso); }
+    .install-icon {
+      width: 72px; height: 72px;
+      margin: 0 auto 14px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(43,28,18,0.18);
+    }
+    .install-icon img { width: 100%; height: 100%; display: block; }
+    .install-modal h2 {
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--espresso);
+      margin: 0 0 6px;
+      text-align: center;
+      letter-spacing: -0.2px;
+    }
+    .install-sub {
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+      margin: 0 0 18px;
+      line-height: 1.5;
+    }
+    .install-now {
+      display: block;
+      width: 100%;
+      background: var(--espresso);
+      color: var(--cream);
+      border: none;
+      padding: 12px;
+      border-radius: var(--r-pill);
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 16px;
+      transition: background 0.12s;
+    }
+    .install-now:hover { background: var(--espresso-deep); }
+    .install-tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      background: var(--oat);
+      padding: 4px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+    .install-tab {
+      background: transparent;
+      border: none;
+      padding: 8px;
+      border-radius: 9px;
+      font-family: var(--body);
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background 0.12s, color 0.12s;
+    }
+    .install-tab.active {
+      background: var(--cream);
+      color: var(--espresso);
+      box-shadow: 0 1px 3px rgba(43,28,18,0.10);
+    }
+    .install-steps ol {
+      margin: 0;
+      padding-left: 22px;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .install-steps li { margin-bottom: 8px; }
+    .install-steps li:last-child { margin-bottom: 0; }
+    .install-steps strong {
+      font-family: var(--display);
+      font-weight: 600;
+      color: var(--espresso);
+    }
+    .install-already {
+      text-align: center;
+      padding: 16px;
+      background: rgba(59, 125, 90, 0.10);
+      border: 1px dashed var(--mint);
+      border-radius: 12px;
+      color: var(--espresso);
+      font-size: 14px;
+    }
+    .install-already strong {
+      font-family: var(--display);
+      color: var(--mint);
+      display: block;
+      margin-bottom: 4px;
+    }
+
     /* ----- Our Story page ----- */
     .story-hero {
       padding: 28px 22px 8px;
@@ -1840,7 +1972,7 @@
       </div>
 
       <section class="story-section">
-        <h2>Coffee brands, meet JoeQuesters.</h2>
+        <h2>Coffee gear and bean brands, meet JoeQuesters.</h2>
         <p>JoeQuest members are people actively hunting for their next great cup. Reach them with an exclusive discount code — and only pay when it's used.</p>
       </section>
 
@@ -2245,9 +2377,52 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           Help
         </button>
+        <button class="drawer-item" data-action="install" id="drawer-install" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Install app
+        </button>
       </div>
     </aside>
     <div class="scrim" id="scrim"></div>
+
+    <!-- Install instructions modal (PWA Add to Home Screen) -->
+    <div class="install-modal" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="install-title" hidden>
+      <button class="install-close" id="install-close" aria-label="Close">×</button>
+      <div class="install-icon">
+        <img src="/img/joequest-icon-192.png" alt="JoeQuest icon" />
+      </div>
+      <h2 id="install-title">Install JoeQuest</h2>
+      <p class="install-sub">Get the full-screen, instant-launch experience on your home screen.</p>
+
+      <button class="install-now" id="install-now" hidden>Install now</button>
+
+      <div class="install-tabs" role="tablist">
+        <button class="install-tab" data-platform="ios" role="tab">iPhone / iPad</button>
+        <button class="install-tab" data-platform="android" role="tab">Android</button>
+      </div>
+
+      <div class="install-steps" id="install-steps-ios">
+        <ol>
+          <li>Open JoeQuest in <strong>Safari</strong> (Chrome on iOS can't install web apps).</li>
+          <li>Tap the <strong>Share</strong> button at the bottom of the screen (a square with an up-arrow).</li>
+          <li>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
+          <li>Tap <strong>Add</strong> in the top-right corner.</li>
+        </ol>
+      </div>
+
+      <div class="install-steps" id="install-steps-android" hidden>
+        <ol>
+          <li>Open JoeQuest in <strong>Chrome</strong> (or Edge, Brave, Samsung Internet).</li>
+          <li>Tap the <strong>⋮ menu</strong> in the top-right.</li>
+          <li>Tap <strong>Install app</strong> or <strong>Add to Home Screen</strong>.</li>
+          <li>Tap <strong>Install</strong> to confirm.</li>
+        </ol>
+      </div>
+
+      <div class="install-already" id="install-already" hidden>
+        <strong>You're all set.</strong> JoeQuest is already installed on this device.
+      </div>
+    </div>
 
     <!-- ========================================================== -->
     <!--  BOTTOM SHEET                                              -->
@@ -2753,6 +2928,7 @@
       bindTasteEvents();
       bindSettingsEvents();
       bindOffersHelpEvents();
+      bindInstallModal();
 
       // Deep link: ?cafe=<id> opens that café's sheet. Works across cities —
       // we'll switch the active city if the requested place lives elsewhere.
@@ -3841,6 +4017,108 @@
       `;
     }
 
+    // ---- install modal (PWA Add to Home Screen) ----
+    let deferredInstallPrompt = null;
+    // Stash the Chrome/Edge/Brave "this is installable" event so the modal
+    // can fire it later instead of just showing instructions.
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      const installBtn = document.getElementById("install-now");
+      if (installBtn) installBtn.hidden = false;
+    });
+
+    function isStandalonePWA() {
+      // Android / Chrome: display-mode media query. iOS Safari: legacy
+      // navigator.standalone flag (mobile-Safari-only, not in the spec).
+      return (
+        window.matchMedia("(display-mode: standalone)").matches ||
+        window.navigator.standalone === true
+      );
+    }
+
+    function detectPlatform() {
+      const ua = navigator.userAgent || "";
+      if (/iPhone|iPad|iPod/.test(ua)) return "ios";
+      if (/Android/.test(ua)) return "android";
+      return null; // desktop / other — modal still works, no auto-tab pick
+    }
+
+    function openInstallModal() {
+      const modal = document.getElementById("install-modal");
+      const scrim = document.getElementById("scrim");
+      const already = document.getElementById("install-already");
+      const tabs = document.querySelectorAll(".install-tab");
+      const steps = {
+        ios: document.getElementById("install-steps-ios"),
+        android: document.getElementById("install-steps-android"),
+      };
+
+      // If already running as an installed PWA, swap instructions for the
+      // friendly "you're set" note and hide the platform tabs entirely.
+      if (isStandalonePWA()) {
+        already.hidden = false;
+        steps.ios.hidden = true;
+        steps.android.hidden = true;
+        document.querySelector(".install-tabs").hidden = true;
+        document.getElementById("install-now").hidden = true;
+      } else {
+        already.hidden = true;
+        document.querySelector(".install-tabs").hidden = false;
+        const platform = detectPlatform() || "ios";
+        showInstallTab(platform);
+      }
+
+      modal.hidden = false;
+      // Next frame so the transition runs from the hidden state.
+      requestAnimationFrame(() => {
+        modal.classList.add("open");
+        scrim.classList.add("open");
+      });
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeInstallModal() {
+      const modal = document.getElementById("install-modal");
+      const scrim = document.getElementById("scrim");
+      modal.classList.remove("open");
+      scrim.classList.remove("open");
+      // Hide after the transition so screen-readers ignore it again.
+      setTimeout(() => { modal.hidden = true; }, 220);
+      document.body.style.overflow = "";
+    }
+
+    function showInstallTab(platform) {
+      document.querySelectorAll(".install-tab").forEach((t) =>
+        t.classList.toggle("active", t.dataset.platform === platform)
+      );
+      document.getElementById("install-steps-ios").hidden = platform !== "ios";
+      document.getElementById("install-steps-android").hidden = platform !== "android";
+    }
+
+    function bindInstallModal() {
+      // Drawer item: visible only when we're NOT already running as a PWA.
+      // (No point offering install if the user already did.)
+      const drawerItem = document.getElementById("drawer-install");
+      if (drawerItem && !isStandalonePWA()) drawerItem.hidden = false;
+
+      document.getElementById("install-close").addEventListener("click", closeInstallModal);
+      document.querySelectorAll(".install-tab").forEach((t) => {
+        t.addEventListener("click", () => showInstallTab(t.dataset.platform));
+      });
+
+      // Native install (Chrome/Edge/Brave on Android + desktop). Only wired
+      // when beforeinstallprompt has fired; otherwise the button stays hidden.
+      document.getElementById("install-now").addEventListener("click", async () => {
+        if (!deferredInstallPrompt) return;
+        deferredInstallPrompt.prompt();
+        try { await deferredInstallPrompt.userChoice; } catch {}
+        deferredInstallPrompt = null;
+        document.getElementById("install-now").hidden = true;
+        closeInstallModal();
+      });
+    }
+
     // ---- drawer ----
     function openDrawer() {
       els.drawer.classList.add("open");
@@ -4325,6 +4603,7 @@
           else if (a === "privacy") go("settings");
           else if (a === "offers") go("offers");
           else if (a === "help") go("help");
+          else if (a === "install") openInstallModal();
           return;
         }
         // Partner-page CTA: open Help with a category pre-selected. Runs
@@ -4344,10 +4623,10 @@
         if (goBtn) { go(goBtn.dataset.go); return; }
       });
 
-      // close sheet/drawer on scrim or escape
-      els.scrim.addEventListener("click", () => { closeSheet(); closeDrawer(); });
+      // close sheet/drawer/install-modal on scrim or escape
+      els.scrim.addEventListener("click", () => { closeSheet(); closeDrawer(); closeInstallModal(); });
       document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") { closeSheet(); closeDrawer(); }
+        if (e.key === "Escape") { closeSheet(); closeDrawer(); closeInstallModal(); }
       });
     }
 
