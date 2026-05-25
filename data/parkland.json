@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "citySlug": "parkland",
+  "city": "Parkland, FL",
+  "generatedAt": "2026-05-25T22:42:44.740Z",
+  "count": 2,
+  "cafes": [
+    {
+      "city": "parkland",
+      "id": "ChIJ22CD3V0a2YgRS1AvEB3bzzs",
+      "name": "Carmela Coffee - Parkland",
+      "address": "7967 N University Dr, Parkland, FL 33076, USA",
+      "lat": 26.3291354,
+      "lng": -80.2530036,
+      "rating": 4.8,
+      "reviews": 1742,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "breakfast_restaurant",
+        "brunch_restaurant",
+        "bakery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4309904286288924747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ22CD3V0a2YgRS1AvEB3bzzs%2Fphotos%2FAb43m-srL0_M7W4kk05KTuCd8BAO5DF1hESuwg8jIW2i3l6yW0p_24187A6nl1fRyEG0KjddnTwO_pnAQRbDepyl4dJoq6bHYaC2HEEAaaSf9ngLqujY-EhETiymprLXgXeYJoEOPifgd07-t0AFphOtLOujbrz3xOWVB3hnFJJPMjyvBlvxUtgFkqKQgg-1xOMpbNJbxc3QgSEB3VxJF1Rer5lDTRFv3Sohydxs0wxyiEBkg_XUq2KlcX3ncO8Z6ib2gqO51EoUE_CkBCzuJl4eWvSL3ongW69yPsIt_dILCtF_kQ&w=800"
+    },
+    {
+      "city": "parkland",
+      "id": "ChIJ2TOnP64b2YgRuEW1yM52W_g",
+      "name": "Cozy Drop",
+      "address": "6682 Parkside Dr, Parkland, FL 33067, USA",
+      "lat": 26.3133783,
+      "lng": -80.2218924,
+      "rating": 4.8,
+      "reviews": 68,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "juice_shop",
+        "wine_bar",
+        "sandwich_shop",
+        "cafe",
+        "bar",
+        "bakery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 9:00 PM",
+        "Saturday: 8:00 AM – 9:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=17896028174789461432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ2TOnP64b2YgRuEW1yM52W_g%2Fphotos%2FAb43m-vV5uvow4vrf1SzaYFhlrXwOHZ0ijtV7tr2twhPndjTywMneD8Pd8Fn97bP_U0N00vshdOPgvOCO6oSK5KiP3YxjxdN6IWDA8wO9hC2gjtsq3ugyKYWddt8-vHIgI8dGgleOTbTdtJiHWDrvI2iX0qOY5UQaog89jq4h3q0DG_R02-v5vheH1moiJ_t_WMFY7Bc1EBcJth-tg1vtzkXKRAXWtPieOcI7eyG6Cmwvg15JPyaad2eDGsUnjuoWQ6HDsXnS8EPCcqkHIMExvobOcf2R-WRhxyln6m5fZG2VOeQrP4V-c5pnOdg14x564PQ-hMiT3eFzcAT2iCdIKBSB726cFzNXMVDosALb6DFMmRwPQPXZK85itO2DM7VlutqJeqTUsw9DhIHg8uk_sTLcNBcdhwWbxQrJIIiDw23wQYOcZWc3gu7FN2Bp7w4VGao&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJ22CD3V0a2YgRS1AvEB3bzzs": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Coffee is praised across nearly every review as rich and smooth, with specific positive mentions of the iced caramel coffee and dirty chai.",
+          "quote": "rich, smooth, and always perfectly made",
+          "confidence": "high",
+          "mention_count": 5
+        },
+        "food": {
+          "name": "Omelet with toast",
+          "reason": "Only one specific food item received clear positive feedback; the Carmela pancake was criticized as not worth the price, while the omelet was genuinely enjoyed.",
+          "quote": "tried the omelet with toast and really enjoyed it",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "I was looking for a quiet spot to get some work done on a Saturday morning, and this cafe came highly recommended. It's a busy little place, offering a solid cafe menu, coffee, and reliable Wi-Fi. The owners are hands-on, helping out behind the counter and supporting staff with clean-up, which makes the space feel welcoming and well-run.\n\nBeing in a shopping center, parking is available but can be limited depending on the time of day. The inside is small, but the layout works well for small groups. They have conference-style tables, high tops, and charging ports. During the festive season, the cozy decor adds a cheerful touch.\n\nThe staff were approachable and helpful, answering our questions clearly. They serve all-day brunch, sandwiches, flatbreads, salads, and bowls, so there's something for everyone.\n\nMy friend tried the omelet with toast and really enjoyed it. I went for the Carmela pancake. Honestly, I expected a bit more for $14. It was a small cornbread skillet topped with strawberries, blueberries, granola, and maple syrup. It looked great, but I felt it wasn't worth the price; a sandwich might have been a better choice, but the staff had recommended this.\n\nWe also had a small misunderstanding where I was charged for both dishes as we discussed options, but the staff were prompt in correcting it and issuing a refund.\n\nDrinks included a Matcha and a Tiramisu, with dairy-free options available. The coffee was rich and smooth. I'm not a huge coffee drinker, but I genuinely enjoyed it.\n\nOverall, the cafe has a relaxed, cozy vibe. It's the kind of place where you can work, catch up with friends, there was even a small group having Bible study on the patio.\n\nWhere food meets adventure see you back at the table!\nIG: @ShallonzTable"
+        },
+        {
+          "rating": 5,
+          "text": "Carmela Coffee is one of our favorite spots in Parkland. My son has breakfast there at least once a week, and it’s become a special part of our routine.\nI absolutely love their coffee — rich, smooth, and always perfectly made. I often come with my friends to enjoy a relaxing morning together.\nThe atmosphere is cozy and welcoming, and the staff is always friendly and attentive.\nIt’s the perfect place to start the day, whether for a quick coffee or a long chat with good company. ☕"
+        },
+        {
+          "rating": 5,
+          "text": "Carmela Coffee is my go-to spot for coffee and breakfast, though they offer an impressive selection of food all day. The customer service is outstanding—Santiago, in particular, is fantastic. He recognizes repeat customers and often has my to-go order ready immediately. The environment is warm and inviting, making it a great place to relax. I highly recommend Carmela Coffee."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-25T22:42:40.783Z"
+    },
+    "ChIJ2TOnP64b2YgRuEW1yM52W_g": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Multiple positive but generic mentions of coffee; one detailed review found all drinks bland.",
+          "quote": "Good coffee and the avocado toast is delicious",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Avocado toast",
+          "reason": "Specifically praised as delicious in a 5-star review; food generally well-reviewed across multiple visits.",
+          "quote": "the avocado toast is delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 3,
+          "text": "Food and ambiance are good. I’ve come 5-6 times now. Drinks are never good. I’ve tried the iced coffees, their signature, latte, decaf and regular. But they are always bland, watery, just not good. Today I tried the new nitro hibiscus and my sister the iced matcha thinking maybe a non-coffee would do better, but both were rough. I think they’ll make it with the great location and good food, and I’ll keep trying."
+        },
+        {
+          "rating": 5,
+          "text": "Beautiful interior with great service. Lots of seating. Food and drinks were good!"
+        },
+        {
+          "rating": 5,
+          "text": "Great food and coffee empanadas were tasty and fresh the chicken sandwich was great will be back soon"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-25T22:42:44.740Z"
+    }
+  }
+}
