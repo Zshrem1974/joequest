@@ -1,5 +1,76 @@
 # CHANGES
 
+## Offers: removed café samples; non-café brand examples only
+
+Aligns the **Offers** page with the new Partner positioning (coffee
+gear + bean brands only, no café partnerships ever). Two pieces:
+
+### Frontend (shipped in this commit)
+
+- `public/index.html` Offers-page intro copy:
+  - Was: "Partner deals from cafés and coffee brands. Reveal a code,
+    use it on the spot."
+  - Now: "Member discounts from coffee-product brands — machines,
+    beans, brewing gear, subscriptions. Reveal a code, use it on the
+    spot."
+- The defensive "Café offer" tag label in `offerCardHTML` is left in
+  place — it's now unreachable code (every future row is
+  `kind: 'brand'`) but it doesn't hurt and guards against any legacy
+  row that might still exist.
+
+### Database (run this in Supabase → SQL Editor)
+
+I don't have access to the live DB from here. Paste this once to swap
+the seeded samples:
+
+```sql
+-- 1. Remove the seeded café-kind sample offers (the BOGO cortado +
+--    pastry discount from the original Stage 4 seed). Only touches
+--    rows where sample = true, so any real café offer you added
+--    manually is left alone.
+delete from offers where sample = true and kind = 'cafe';
+
+-- 2. Insert three non-café brand sample offers so the Offers page
+--    has demo content again. Same DEMO- code prefix convention so
+--    they're obviously fake.
+insert into offers (partner_name, title, description, code, terms, kind, ends_at, sample)
+values
+  ('Aurum Espresso Works', '15% off any home espresso machine',
+   'Get the home setup that ends the café guesswork.',
+   'DEMO-MACHINE15',
+   'Online only. One redemption per customer. Excludes commercial models.',
+   'brand', now() + interval '90 days', true),
+  ('Lighthouse Roasters', 'First bag free on a 3-month subscription',
+   'Single-origin beans delivered fresh — try it on us.',
+   'DEMO-FIRSTBAG',
+   'New subscribers only. Auto-renews after the trial; cancel anytime.',
+   'brand', now() + interval '90 days', true),
+  ('Brew Co. Gear', '20% off pour-over and brewing kit',
+   'Drippers, kettles, scales — the gear behind a great cup.',
+   'DEMO-POUR20',
+   'Online only. Excludes already-discounted items.',
+   'brand', now() + interval '90 days', true);
+```
+
+**Optional follow-up (only if you have real café offers in the table):**
+the new policy is no café partnerships at all, so any non-sample row
+with `kind = 'cafe'` is now off-strategy. If you want, also run:
+
+```sql
+-- DOUBLE-CHECK before running. Lists what would be deactivated:
+select id, partner_name, title from offers where kind = 'cafe' and sample = false and active = true;
+
+-- If that list is OK to deactivate (the rows stay in the DB for audit
+-- but stop showing on the Offers page):
+update offers set active = false where kind = 'cafe' and sample = false;
+```
+
+The `kind` CHECK constraint still allows `'cafe'` so the schema is
+unchanged — we're just declining to use it going forward. No code
+change needed if/when you decide to tighten the constraint later.
+
+---
+
 ## Messaging: new Our Story page + Partner page rebuilt around brand offers
 
 Two drawer pages updated as a single messaging pass. No engine, auth,
