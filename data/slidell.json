@@ -3,7 +3,7 @@
   "citySlug": "slidell",
   "city": "Slidell, LA",
   "generatedAt": "2026-05-26T19:56:44.013Z",
-  "count": 16,
+  "count": 15,
   "cafes": [
     {
       "city": "slidell",
@@ -478,126 +478,6 @@
       ],
       "mapsUri": "https://maps.google.com/?cid=970597911338366418&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "photo": "/api/photo?name=places%2FChIJ6bo3MZDmnYgR0jUPbahBeA0%2Fphotos%2FAb43m-stoZRlmKHxSNxYi9rHx7zH7HObNREBoWQG8P1nuiYBR8nouBVH3HvoG9ul5i6bN6o6KQjNyIjYl5oo6HMov1_fLzPMiW6wpNnUjnVKjE5U_VB_TDU5KoQt6xAPemlSrXeLjQBspu48HxsuOzxN34bHly2QCyosp9bltjIrqOwGbVHWuoNjW_szIiwsgVepXFlC79o43TGjn3t5UkfQrXVRjgAA-z-FEpW8MVXrE7_yTQtCQ1fYAzXd-7iuUJM-d51xxiiTFdGuU-1_72prObK743U3dVtjSkzWptzpmRYbuw&w=800"
-    },
-    {
-      "city": "slidell",
-      "id": "ChIJuYS6bK7nnYgRRMUGaBQ_dl4",
-      "name": "7 Brew Coffee",
-      "address": "1648 Gause Blvd, Slidell, LA 70458, USA",
-      "lat": 30.285179399999997,
-      "lng": -89.752865,
-      "rating": 4.9,
-      "reviews": 223,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "point_of_interest",
-        "food_store",
-        "food",
-        "store",
-        "establishment"
-      ],
-      "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 0,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 1,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 23,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 6,
-            "hour": 23,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 5:30 AM – 10:00 PM",
-        "Tuesday: 5:30 AM – 10:00 PM",
-        "Wednesday: 5:30 AM – 10:00 PM",
-        "Thursday: 5:30 AM – 10:00 PM",
-        "Friday: 5:30 AM – 11:00 PM",
-        "Saturday: 5:30 AM – 11:00 PM",
-        "Sunday: 5:30 AM – 10:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=6806697243694253380&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJuYS6bK7nnYgRRMUGaBQ_dl4%2Fphotos%2FAb43m-sU_FJvHIXapgm4q7gqjZkGbYmEMGiF3bVyQzEBkpOfxheyBCcfB1F1GQldY-vLvOoB32c60goUU8dD-enk89-nVjv9FmfYSJqkdOCVqT5VR6htuyZ3VvgvYQJmfXnoTcIKMJQd2ykUwtYh9XYORrqK33Gnn9oiEzBNk1NELCCXgJfVHY8ci90DAlULmP1HJs7y5-bJGrBVKfEr2xFwCasWx8_wwleV-MYi_uI5n0umqN5Ze0XaZ_ctAugA57GPXEmRmqRa3O2OXSiwwClYk3BBnpdFYhnrUCofrpErAjlPwmZApQHnlD0x_g0xKapCUx3pD3fvQnbF03bPGw0q-bY_MJdL90RMJxquBrg1Gu5ukwdZL03FFvMhcfWAHDSEw0pdwIQex_Y0c_5dWT_srjxbxSM09BYJkkx4WW6xlpXNqUbMndyBaT4QVVcaetpA&w=800"
     },
     {
       "city": "slidell",
@@ -1975,40 +1855,6 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:55:50.938Z"
-    },
-    "ChIJuYS6bK7nnYgRRMUGaBQ_dl4": {
-      "picks": {
-        "drink": {
-          "name": "Iced Blondie (half sweet)",
-          "reason": "Specifically called out as a favorite in a 5-star review; other named drinks (cold brew, chai, salted caramel latte) only got one mention each.",
-          "quote": "my go to is the iced blondie half sweet. SO delicious!!",
-          "confidence": "medium",
-          "mention_count": 1
-        },
-        "food": {
-          "name": null,
-          "reason": "No food items are mentioned in any of the reviews.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "This new 7brew in slidell is the best! The staff is so friendly and fun. They make your morning, afternoon, or evening coffee run a joy. I love how engaging and thorough they are while taking your order. The music is always pumping which makes me happy and keeps the kids entertained while we wait. Speaking of, the wait times here are next to none! This 7brew crew whips out coffees in a blink. I promise, even if there’s a line — stop! It goes so fast. 😍 my go to is the iced blondie half sweet. SO delicious!! 🤤\n\nSign up for their rewards program with your number and earn free coffees as well."
-        },
-        {
-          "rating": 5,
-          "text": "Went on “Opening Day” (Dec 8th - 2 medium drinks for $8), and walked inside. Today, the drive thru was open at 5:30am and the inside opened at 8am.\n\nI got a medium cold brew (no ice, that’s why it looks like less) and a hot chai latte with almond milk. I thought they were both good (I would say on track to be better than Starbucks), and the employees were very nice. Both things good on a hectic opening day. They do accept cash, card, and tap to pay (Apple Pay/Google wallet/Samsung pay).\n\nThere’s nothing inside, and I’m not sure if it’s just not furnished yet. Will update in the future once they’ve settled in."
-        },
-        {
-          "rating": 5,
-          "text": "Really friendly staff and super fast service. The drink was made right and tasted great. You can tell they keep the energy up even when they’re busy"
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-26T19:55:55.534Z"
     },
     "ChIJpW7NJLnlnYgRBlhuK3qSLiY": {
       "picks": {

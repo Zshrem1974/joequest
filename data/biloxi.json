@@ -3,7 +3,7 @@
   "citySlug": "biloxi",
   "city": "Biloxi, MS",
   "generatedAt": "2026-05-26T19:58:20.923Z",
-  "count": 10,
+  "count": 9,
   "cafes": [
     {
       "city": "biloxi",
@@ -769,126 +769,6 @@
     },
     {
       "city": "biloxi",
-      "id": "ChIJX5-gQTERnIgRn3ZChpfgifM",
-      "name": "7 Brew Coffee",
-      "address": "2366 Pass Rd, Biloxi, MS 39531, USA",
-      "lat": 30.402404200000003,
-      "lng": -88.9742397,
-      "rating": 4.7,
-      "reviews": 50,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 0,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 1,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 23,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 6,
-            "hour": 23,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 5:30 AM – 10:00 PM",
-        "Tuesday: 5:30 AM – 10:00 PM",
-        "Wednesday: 5:30 AM – 10:00 PM",
-        "Thursday: 5:30 AM – 10:00 PM",
-        "Friday: 5:30 AM – 11:00 PM",
-        "Saturday: 5:30 AM – 11:00 PM",
-        "Sunday: 5:30 AM – 10:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=17548804364423034527&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJX5-gQTERnIgRn3ZChpfgifM%2Fphotos%2FAb43m-s9x04lb_i4EjTasy3Jjpkqd6BvfHST7ny_Q8KDelku00Fe3mRdIcLr9DlTuBlyKKejDMWSeTBpVqJdA062kxmAHNzc_TSKFvaD5cYy9sezOlbN3ws1cwqJl1eN9cVCtNS6Uqk2bmMMAayvLFFEONFnbHkkalX_vXJ4BL7FYLzH_B-2q53osIMsFOv19PEQJuIrUemHEv4diWWvBJvdwKzxVH7MejAL_OpQAMpPdkdnVaBOPWV23e0AemV1o4wjyg3xOUeVMOSVqpfhpRvbqE1bLfZFpYafjsl0YeFyNy1_lQ&w=800"
-    },
-    {
-      "city": "biloxi",
       "id": "ChIJc5WY5eQOnIgRxAd02gamARk",
       "name": "The Roasted Bean",
       "address": "Beau Rivage Resort & Casino, 875 Beach Blvd, Biloxi, MS 39530, USA",
@@ -1355,40 +1235,6 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:58:06.562Z"
-    },
-    "ChIJX5-gQTERnIgRn3ZChpfgifM": {
-      "picks": {
-        "drink": {
-          "name": "Cold brew",
-          "reason": "Only specifically named drink, but the single mention was negative. Other reviews praise drinks generically without naming items.",
-          "quote": "the drinks are consistently on point",
-          "confidence": "low",
-          "mention_count": 1
-        },
-        "food": {
-          "name": null,
-          "reason": "No food items are mentioned in any of the reviews.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "The drinks are amazing. Their opening day I was a first time customer and they had some technical difficulties with the tablets(due to how much service they got during the day) but the service was awesome regardless, very quick and studious. They also had some good music blasting making the atmosphere a 10/10. Don’t let any Karen’s stop the music that they are playing! they have good music tastes and they looked very happy to be there getting in that work and money. You can definitely still talk and hear eachother although the music was playing."
-        },
-        {
-          "rating": 5,
-          "text": "Seven Brew stays elite. The energy is always great, the staff is awesome, and the drinks are consistently on point. Easily the best coffee spot"
-        },
-        {
-          "rating": 5,
-          "text": "Service was top notch. And the drinks were super yummy 😋"
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-26T19:58:10.513Z"
     },
     "ChIJc5WY5eQOnIgRxAd02gamARk": {
       "picks": {

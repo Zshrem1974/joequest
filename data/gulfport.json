@@ -3,7 +3,7 @@
   "citySlug": "gulfport",
   "city": "Gulfport, MS",
   "generatedAt": "2026-05-26T19:57:34.421Z",
-  "count": 10,
+  "count": 9,
   "cafes": [
     {
       "city": "gulfport",
@@ -455,126 +455,6 @@
       ],
       "mapsUri": "https://maps.google.com/?cid=9874792077837635287&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
       "photo": "/api/photo?name=places%2FChIJdxB6QN8XnIgR145abhNPCok%2Fphotos%2FAb43m-s7RxIUJb8hFZ0Md4AD2Wyxj8tEsSqG2OmI3GDfe_GE5hLENfR9zr5b0EpDbE4vSoxM-vWV518OoLZXPA6meS-eo7KT3b-Z1GvjHj7fytgVLO5AlBoZrNsYCwQhHCtu7WZ-3ayR0gPTwnUdQawqqLq5jbg8CjRDnhAOHSO4-I4rwNhCktWpPWSt3kwjsRPYwPLhoHtt7XL-UhqiV9d-5vRm4U0F0r3abeF9rmxhcPcuDO261VGVZP2qlJ-7rXcnXwUiOvkjA1oko0jTfr1ES1pyj2VXPQIvXo2by_JCcLPC-A&w=800"
-    },
-    {
-      "city": "gulfport",
-      "id": "ChIJ7ebvHwA_nIgRGLvxsJZ2NAs",
-      "name": "7 Brew Coffee",
-      "address": "12023 US 49, Gulfport, MS 39503, USA",
-      "lat": 30.457568499999997,
-      "lng": -89.1012763,
-      "rating": 4.9,
-      "reviews": 214,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "point_of_interest",
-        "food_store",
-        "food",
-        "store",
-        "establishment"
-      ],
-      "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 0,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 1,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 23,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 5,
-            "minute": 30
-          },
-          "close": {
-            "day": 6,
-            "hour": 23,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 5:30 AM – 10:00 PM",
-        "Tuesday: 5:30 AM – 10:00 PM",
-        "Wednesday: 5:30 AM – 10:00 PM",
-        "Thursday: 5:30 AM – 10:00 PM",
-        "Friday: 5:30 AM – 11:00 PM",
-        "Saturday: 5:30 AM – 11:00 PM",
-        "Sunday: 5:30 AM – 10:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=807400622791965464&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ7ebvHwA_nIgRGLvxsJZ2NAs%2Fphotos%2FAb43m-uxmLOS-X9qCC-uqLP3sSFTNbNirToAA5oOT97USHgtnHLnBDQrGeQ8gqOQQq2fBq6iIhHi922mSA5tm8Nes0wBReEPdQfgx24j6n8cF70aIt0QvT4G314Hn_YYuu5hQw0gzLIhgkgZVATyIuur88_AUctEJPT_6HiJGrW7A_PDucTBq7T4Iy-2IU6NrmEF0cXJoJIUSU8q4D3JG6C9Fz3O2GiEFjzt45AuYsQbbc0_qor2f7S2cTptIzyg8u2L5MOJVCiSFNpuqav9AO3_86u3ZYuh6zg48eF4aexa8N7sR5z2HdVzOzBU88MNpxZhFiNsNFNoQxIimLfSYzvCfIpeAi19n7bhqnk72R0ADoSm49YJOIb1qorF1wI_sOWm9iQgU9npD7Fa4D6YQx40hHapcrSKgJsyWQRBhbii4knBwX_Tf0R-jS2uJIKJegGw&w=800"
     },
     {
       "city": "gulfport",
@@ -1305,40 +1185,6 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:57:03.623Z"
-    },
-    "ChIJ7ebvHwA_nIgRGLvxsJZ2NAs": {
-      "picks": {
-        "drink": {
-          "name": "House coffee",
-          "reason": "Reviewers praise the coffee generally but don't name a specific drink. Multiple positive mentions of overall drink quality and value.",
-          "quote": "Very impressed with drinks and price. Better than Starbucks",
-          "confidence": "low",
-          "mention_count": 4
-        },
-        "food": {
-          "name": null,
-          "reason": "No food items are mentioned in any of the reviews.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "Seven Brew has a fun atmosphere and the workers were genuinely nice. The line moved quickly, my order was correct, and the drink quality was solid. I’d come back."
-        },
-        {
-          "rating": 5,
-          "text": "We happened by when they were giving out free coffees. Absolutely made my day. And the coffee was great!"
-        },
-        {
-          "rating": 2,
-          "text": "General vibe and atmosphere was great, enjoyed the music played outside. Coffee was ok, lots of ice. Did not care for the service rendered, tried to explain our discrepancy with our coffee and was met with a rude stance from the worker"
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-26T19:57:06.906Z"
     },
     "ChIJJXKlQ90XnIgR1YiiI7VunrI": {
       "picks": {
