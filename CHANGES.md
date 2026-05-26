@@ -1,5 +1,26 @@
 # CHANGES
 
+## EXCLUDE_NAMES: 7 Brew added (Gulf Coast cleanup)
+
+7 Brew Coffee — regional drive-thru chain (~250 locations, 7brew.com)
+— added to `lib/data.js`'s `EXCLUDE_NAMES` blocklist. Future snapshots
+across any city now skip it automatically (the filter runs before the
+90-day per-café clock, so it applies on every run).
+
+Surgically removed the 3 entries that the Gulf Coast snapshot had
+already pulled in (one each in Slidell, Gulfport, Biloxi). Cleanup
+used `lib/data.js`'s own `isRealCafe` plus the same
+`JSON.stringify(_, null, 2)` shape as `snapshot.js` so the diffs are
+byte-clean. Per-city counts after the purge:
+
+- slidell: 16 → 15
+- gulfport: 10 → 9
+- biloxi:   10 → 9
+
+**PJ's Coffee** — the other regional chain flagged in the Cities
+#8-10 audit (Louisiana-regional, ~150 locations) — left in place for
+now as a separate decision.
+
 ## Cities #8-10: Gulf Coast expansion (Slidell, Gulfport, Biloxi)
 
 JoeQuest's first non-Florida cities — three on the central Gulf Coast:
@@ -49,8 +70,9 @@ time — South Florida is where we started, with the Gulf Coast
 
 **7 Brew Coffee** (regional, ~250 locations) and **PJ's Coffee**
 (Louisiana-regional, ~150 locations) appear in multiple Gulf Coast
-cities — neither is in `EXCLUDE_NAMES`. Borderline chain-y. Worth
-deciding later whether to exclude; for now they're shipping.
+cities — neither was in `EXCLUDE_NAMES` at ship time. Borderline
+chain-y. **7 Brew was subsequently excluded** (see top of changelog);
+PJ's left in for now.
 
 ## City #7: Parkland, FL
 
