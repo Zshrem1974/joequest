@@ -1,0 +1,2380 @@
+{
+  "version": 1,
+  "citySlug": "slidell",
+  "city": "Slidell, LA",
+  "generatedAt": "2026-05-26T19:56:44.013Z",
+  "count": 16,
+  "cafes": [
+    {
+      "city": "slidell",
+      "id": "ChIJ6YtN-g_knYgR0ETvH6nghAg",
+      "name": "Southside Cafe",
+      "address": "3154 Pontchartrain Dr, Slidell, LA 70458, USA",
+      "lat": 30.2601723,
+      "lng": -89.78583139999999,
+      "rating": 4.6,
+      "reviews": 3875,
+      "price": "$$",
+      "types": [
+        "american_restaurant",
+        "family_restaurant",
+        "sports_bar",
+        "seafood_restaurant",
+        "cafe",
+        "bar",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:00 AM – 10:00 PM",
+        "Tuesday: 11:00 AM – 10:00 PM",
+        "Wednesday: 11:00 AM – 10:00 PM",
+        "Thursday: 11:00 AM – 10:00 PM",
+        "Friday: 11:00 AM – 10:00 PM",
+        "Saturday: 11:00 AM – 10:00 PM",
+        "Sunday: 11:00 AM – 9:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=613862466219099344&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ6YtN-g_knYgR0ETvH6nghAg%2Fphotos%2FAb43m-v3bjtXDA0KXP1AeugyNsQ8OgRRAikVKy5stOR1juAIZE7tQDQLF09lhJAL6A511gRhxhRcQgySEABsVYaPEaDciYagOAIbudKn95Yzg0cn8j-njfQnNJryY6PBj-0qXcYq4LN4-6gPK1ec8eTGddWqYiCg8KUVZNkpYDEKxkxnzXM0XmkYYVImH4ME48ruTKXwF7Gf4vqTZPOCB4IHsXw50MPYsanHpAsO07-E5E6fmmhCVcNThrfIEreEmm8ZULAi6wozx09Xh7fsgwvVkCFlcbXpCsaNvPFhD2XwVpFjooMTL3pY4Tx0MVXaHxEJb_wdpphO9RitY9Tqm0IGBlLcUke1hPY7yv28efkZrdkOs5veOjmrSW5lmeE29-3GzjBRZCE5CDF0C99Ys6Hky-7Jhk8WHS5s9y2vkSndqassRA&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJN4IIZU3knYgRNHwQTZFIkf8",
+      "name": "S & H Good Eats Cafe",
+      "address": "1830 Hwy 190 W, Slidell, LA 70460, USA",
+      "lat": 30.295827,
+      "lng": -89.804087,
+      "rating": 4.6,
+      "reviews": 929,
+      "price": "$",
+      "types": [
+        "restaurant",
+        "breakfast_restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 8:00 PM",
+        "Tuesday: 6:00 AM – 8:00 PM",
+        "Wednesday: 6:00 AM – 8:00 PM",
+        "Thursday: 6:00 AM – 8:00 PM",
+        "Friday: 6:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 8:00 PM",
+        "Sunday: 7:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=18415580140195052596&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJN4IIZU3knYgRNHwQTZFIkf8%2Fphotos%2FAb43m-s9h2qj1xim8J3kUQyzRaRv4eW26GbksL5_uNYF8DImiEBN4RJCQ0JswZJELyYrwakLzOi1XykY14j4JkENeXurdvvhE-jN3OiOkEcSHIZvayehzmbOW3zcVTY6JW1-sOPHaq3MBV0KShzSKK4_Q4L4dKpFiQ0NqAix2oGdadFww9HP-7YxdsDnP1J4j6LkZoKKaXtjrHWWvTXALKLNe5AIkYXXQPXUh9dUU7VfGTvE--BFZ9FyMXQrJYu5kSsIeEsM34dd7TWlK11Vlb9pvIO-8KQJ0AaYdDtgBSBp0SI6r3eOScCs5l_Rl1p45bSY2oxbz2nNVc7bYilmdL2LzxYLfyemnZRZdxqMWhM2vFfCegAxuGeVCwlqheX6oXP29z57nEY-VlgdrbyT0Lew1iFyBqxT0xrnVkB7VQtzgPQ&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJ8bYdhoPmnYgR-cNJRnxuNnw",
+      "name": "La Pines Cafe",
+      "address": "1061 Robert Blvd, Slidell, LA 70458, USA",
+      "lat": 30.289291000000002,
+      "lng": -89.77110499999999,
+      "rating": 4.5,
+      "reviews": 1191,
+      "price": "$",
+      "types": [
+        "restaurant",
+        "cafe",
+        "american_restaurant",
+        "meal_takeaway",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 6 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 2:00 PM",
+        "Tuesday: 6:00 AM – 2:00 PM",
+        "Wednesday: 6:00 AM – 2:00 PM",
+        "Thursday: 6:00 AM – 2:00 PM",
+        "Friday: 6:00 AM – 2:00 PM",
+        "Saturday: 6:00 AM – 2:00 PM",
+        "Sunday: 6:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8950462789479678969&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ8bYdhoPmnYgR-cNJRnxuNnw%2Fphotos%2FAb43m-sfoF6njvlvnhk9GbQkxE5sL60BH-g9IAetQbpWAImZ2UBP3nuRHtTAcqcC9oFi2Twuj-8PhvdeOXHT63DWs64tPnu1tBLfExmz9IjmBsfNGA_dfIuw2xP-Z8JzTuvrx54sjj9ILSo9gKyqWwq0qu9llWkYjfVt-ie4MnVAILVUBvUyJPtByo1hRAAmSZ68j1atHD-SLn7qOoH1xZLSm0ibz_ZIFuJwXl54LDpaF02FbCo3u9mQwczmyb9Nr1nAo36b3MA8BPeu05sTICTmctwY19tDGNLpYmagjaENdj_JpCGumxBMhnNp86d6T_Fj-XpIAx9Bb8rLOLbEGtcG9ADP6N3xYgpZwGJWTJGJzjMrHGJ3z3eTxl8KKAnmHxB4dmA-VU4uETUBffgvnCoDC39msJ0GeIvLsYppYGNF1iU&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJ6bo3MZDmnYgR0jUPbahBeA0",
+      "name": "Creole Bagelry and Café",
+      "address": "1337 Gause Blvd, Slidell, LA 70458, USA",
+      "lat": 30.284179599999998,
+      "lng": -89.76237479999999,
+      "rating": 4.6,
+      "reviews": 651,
+      "price": "$",
+      "types": [
+        "cafe",
+        "salad_shop",
+        "coffee_shop",
+        "bagel_shop",
+        "sandwich_shop",
+        "bakery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 6:30 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 6:30 AM – 2:00 PM",
+        "Wednesday: 6:30 AM – 2:00 PM",
+        "Thursday: 6:30 AM – 2:00 PM",
+        "Friday: 6:30 AM – 2:00 PM",
+        "Saturday: 8:00 AM – 2:00 PM",
+        "Sunday: 8:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=970597911338366418&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ6bo3MZDmnYgR0jUPbahBeA0%2Fphotos%2FAb43m-stoZRlmKHxSNxYi9rHx7zH7HObNREBoWQG8P1nuiYBR8nouBVH3HvoG9ul5i6bN6o6KQjNyIjYl5oo6HMov1_fLzPMiW6wpNnUjnVKjE5U_VB_TDU5KoQt6xAPemlSrXeLjQBspu48HxsuOzxN34bHly2QCyosp9bltjIrqOwGbVHWuoNjW_szIiwsgVepXFlC79o43TGjn3t5UkfQrXVRjgAA-z-FEpW8MVXrE7_yTQtCQ1fYAzXd-7iuUJM-d51xxiiTFdGuU-1_72prObK743U3dVtjSkzWptzpmRYbuw&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJuYS6bK7nnYgRRMUGaBQ_dl4",
+      "name": "7 Brew Coffee",
+      "address": "1648 Gause Blvd, Slidell, LA 70458, USA",
+      "lat": 30.285179399999997,
+      "lng": -89.752865,
+      "rating": 4.9,
+      "reviews": 223,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:30 AM – 10:00 PM",
+        "Tuesday: 5:30 AM – 10:00 PM",
+        "Wednesday: 5:30 AM – 10:00 PM",
+        "Thursday: 5:30 AM – 10:00 PM",
+        "Friday: 5:30 AM – 11:00 PM",
+        "Saturday: 5:30 AM – 11:00 PM",
+        "Sunday: 5:30 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6806697243694253380&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJuYS6bK7nnYgRRMUGaBQ_dl4%2Fphotos%2FAb43m-sU_FJvHIXapgm4q7gqjZkGbYmEMGiF3bVyQzEBkpOfxheyBCcfB1F1GQldY-vLvOoB32c60goUU8dD-enk89-nVjv9FmfYSJqkdOCVqT5VR6htuyZ3VvgvYQJmfXnoTcIKMJQd2ykUwtYh9XYORrqK33Gnn9oiEzBNk1NELCCXgJfVHY8ci90DAlULmP1HJs7y5-bJGrBVKfEr2xFwCasWx8_wwleV-MYi_uI5n0umqN5Ze0XaZ_ctAugA57GPXEmRmqRa3O2OXSiwwClYk3BBnpdFYhnrUCofrpErAjlPwmZApQHnlD0x_g0xKapCUx3pD3fvQnbF03bPGw0q-bY_MJdL90RMJxquBrg1Gu5ukwdZL03FFvMhcfWAHDSEw0pdwIQex_Y0c_5dWT_srjxbxSM09BYJkkx4WW6xlpXNqUbMndyBaT4QVVcaetpA&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJpW7NJLnlnYgRBlhuK3qSLiY",
+      "name": "Sirincci Coffee Company | Robert",
+      "address": "791 Robert Blvd, Slidell, LA 70458, USA",
+      "lat": 30.2952051,
+      "lng": -89.7651448,
+      "rating": 4.7,
+      "reviews": 323,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 8:00 PM",
+        "Tuesday: 6:00 AM – 8:00 PM",
+        "Wednesday: 6:00 AM – 8:00 PM",
+        "Thursday: 6:00 AM – 8:00 PM",
+        "Friday: 6:00 AM – 8:00 PM",
+        "Saturday: 6:00 AM – 8:00 PM",
+        "Sunday: 6:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2751297475782268934&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJpW7NJLnlnYgRBlhuK3qSLiY%2Fphotos%2FAb43m-tw52XVeeXdUW2ksqPh1HbwKYg3GSgdQtgC6pYM11qT4II6PYPuoTAokll3L-ybBtqgN_12KAWZnsMjSsbzLakvnwTCTcqCpUS9untu7Hg4OU6gFmzmQC-cLdgqcsGtC1C9DewDC3dnVkZwm_VV4uPKZJhtaZMqfTT1gYA8uIS6Ib7vK1AVayve2RuWHuHno1FxtazsLjFNJl3q4MJgzFOhRQzPpQONaepbJXXhgJbcoqLvT6y0Ad7xChyQeNi-UKLxTQp36uDoVlUicq_BP0iu33d9BatxJQZ3aL-u_oOkkA&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJc_D09HjlnYgRk1Fb9KylfcI",
+      "name": "Sirincci Coffee Company | Olde Towne",
+      "address": "1808 Front St, Slidell, LA 70458, USA",
+      "lat": 30.278268699999998,
+      "lng": -89.7820186,
+      "rating": 4.8,
+      "reviews": 231,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 8:00 PM",
+        "Tuesday: 6:00 AM – 8:00 PM",
+        "Wednesday: 6:00 AM – 8:00 PM",
+        "Thursday: 6:00 AM – 8:00 PM",
+        "Friday: 6:00 AM – 8:00 PM",
+        "Saturday: 6:00 AM – 8:00 PM",
+        "Sunday: 6:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14014539777699434899&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJc_D09HjlnYgRk1Fb9KylfcI%2Fphotos%2FAb43m-saBqT-6q9rPi72-y7pi89xoFWnUZ6WjVioN0G4jPDfe9ksmQUXszYdCNh1UU5k7Aad6KMDbZqNdMxoJe09K9NtCsEfKDnelN0iDBB-aru_Y-q1ylii9AYXP8brjKwbDOwbS15XQqAz3YE0TJs82v5JJq2va_XsajwOTE0u0adetobf7zsT3tzAYp_ReN29G6lGPLtLL4Wb7cSPFIza2NNwXsZao0ASLszkWRdtP1eYraavLx4JU99o2RRWnmLNI64cLTtkNE9x505pDRB_fjkO_LYFSFPncQU0qm-OCRAhJUTRwES0AUv5t1lT9oJmug1w6uXPJw6KTLkxyN-yU9YDYMGoywziIpQr6Bo8bdO0D6NM5umBoE_A0xK6U9yZJmUTqz6TbiwhF91a7ZJgVt1_yoAkJnn5v3pxqqhfvEfD7t4ay6kvNQ0W2qu-UQ&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJcRndeRLlnYgRd88DXGMWEuE",
+      "name": "Roots Plants + Coffee",
+      "address": "124 Erlanger Ave Suite B, Slidell, LA 70458, USA",
+      "lat": 30.276581699999994,
+      "lng": -89.7828736,
+      "rating": 4.7,
+      "reviews": 241,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "farm",
+        "wholesaler",
+        "point_of_interest",
+        "service",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16218049824115904375&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJcRndeRLlnYgRd88DXGMWEuE%2Fphotos%2FAb43m-s731PAQwLIrvmcjmTU4ID7ErjYHUCTJ3188AQlE3-70A8fpNBFJNEiQWBkkX6b-TCKZNLyXQKZDGbIsilryKXYOvn90l3ThU6w_fE3AJ9p-iP3izCREdcAfBy352hMCU02hqrbLGrpRANV73uUyuJyqDX6-3ZMVDNM1H83B-z3qBB1evflTqvLOgLkJ7yuoXAPExcvjO5MTjWFYNP3k333wCXeRr3be5nHuoTZVQkWHvMju0_sG6FpqTjvucOrfQneitesGNcJs3uOV-q79cWNqi730qHV5KNnNcPClVAPQaFraxBr2bSzJu9crnZbKVkiazq3C_P7Cm7St0nlLY-eKVfHzAvsz2ThrRyW6EYNJrCmH18v-89xhfoy7Zjlwce2UyoEGX7d_oHKlHUUOatIOXu4iwyy9SBf8L4FF3abbC2o&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJY_xQSePmnYgRqMq1nIdGcx8",
+      "name": "PJ's Coffee",
+      "address": "2040 Gause Blvd E, Slidell, LA 70461, USA",
+      "lat": 30.286591599999998,
+      "lng": -89.7385405,
+      "rating": 4.5,
+      "reviews": 359,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "pastry_shop",
+        "cafe",
+        "breakfast_restaurant",
+        "dessert_shop",
+        "american_restaurant",
+        "confectionery",
+        "bakery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 7:00 PM",
+        "Tuesday: 6:00 AM – 7:00 PM",
+        "Wednesday: 6:00 AM – 7:00 PM",
+        "Thursday: 6:00 AM – 7:00 PM",
+        "Friday: 6:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2266232585761180328&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJY_xQSePmnYgRqMq1nIdGcx8%2Fphotos%2FAb43m-tyWGgxJH5VNamOYWseTPrxYfFg8orgI-W1v7Q8oJuFDfQWOwNw8l63loMUW-aK-kdt-mWsux8ucqHyPKM41mz_gnH2Vz5L0TkIISaZs0ZRQAEITxoQZ-HWtqJqe4j_DbBYS0_CD7Vp54Ms4-kUdR2VYxaiOVFYPoaY207EXqQmO-lIjbRECoxeH-J3POfB-gVVXwAS9Am52OCxLpMjpxIpOjC1egqcuK_GtzMYXgMLM5pX0Fi6z3W8sC1lNz7t1f-N0KcoMt-BeL9SYLjp7tuFLgNao32pZOxazzENKFljqNoSOKScBH_V1dju76A72F4mMsyYOSbtUtGoGHzhAbAAMp22Y6N9JuDILoeAI3qFAFGeCcHtTRPaGVeGUQkkJgT4-_U-zAHGVBt6eaGndvtBnS3mWoxncK42r9ZVy8jGxQ&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJQ3AgSSnnnYgRDgxSGRW_f-E",
+      "name": "Tea Plus",
+      "address": "1736 Gause Blvd E STE 16, Slidell, LA 70461, USA",
+      "lat": 30.285636799999995,
+      "lng": -89.74585309999999,
+      "rating": 4.8,
+      "reviews": 77,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "tea_house",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 9 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:00 AM – 9:00 PM",
+        "Tuesday: 11:00 AM – 9:00 PM",
+        "Wednesday: 11:00 AM – 9:00 PM",
+        "Thursday: 11:00 AM – 9:00 PM",
+        "Friday: 11:00 AM – 9:00 PM",
+        "Saturday: 11:00 AM – 9:00 PM",
+        "Sunday: 11:00 AM – 9:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16248916077916064782&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJQ3AgSSnnnYgRDgxSGRW_f-E%2Fphotos%2FAb43m-tUsTOt0rh_pPijEGRJxn72LUTArNCs-yJ8IWRviZ8u4ywKquQN_TMjinRJvAATaqarcqmFzFOE-GB1sTznUAsq2WjMaVGf4yBz1hxUkDH_Iepab8LAhPH68rQWuw0J-kK6Gs7WzYEt2pnr90sUANKWiqVdbVSf_WR9k_sbAiX25MuNGUNm0Z5RVWI-6rjg9MHjWWRFGwAPZUU4jHpeGVBvXk2WkBLTh96Vv1ZvqGEb5LdAS0RFomgS8jPkXX_u6mK7TfVYRGhLqY_qcusDUo3E6rZlqNSoJylN9yU3cWzSSQ&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJbSCxw1_nnYgRVdwMmo5QI0I",
+      "name": "Yum Tra Slidell",
+      "address": "720 Town Center Pkwy, Slidell, LA 70458, USA",
+      "lat": 30.268621399999997,
+      "lng": -89.7604838,
+      "rating": 4.6,
+      "reviews": 107,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "dessert_shop",
+        "confectionery",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:00 AM – 8:00 PM",
+        "Tuesday: 11:00 AM – 8:00 PM",
+        "Wednesday: 11:00 AM – 8:00 PM",
+        "Thursday: 11:00 AM – 8:00 PM",
+        "Friday: 11:00 AM – 8:00 PM",
+        "Saturday: 11:00 AM – 8:00 PM",
+        "Sunday: 11:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4765741404088228949&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJbSCxw1_nnYgRVdwMmo5QI0I%2Fphotos%2FAb43m-u4qAS53zAy6ixbDhW_Tni3M9vWgJdCzBuWr-TRgztz4GCYsqLeC6nnReBJpwLotTxlH8jdTNPEA43D7V-bGCRunTgh2lim_bQb3H9B-1IPC2ChxKJ7PNtbMrPYAHXzzh0GSBcVqIIU88GFHO6_g1seSysCzcT8tUzrckb44lv2gr-1p0QrCp5pV36uBzOhdGqi36WUmYX4vlv3RD0OWIzYRu42MlItg-Uq3C8dbxVpsv2zrCE363yHEvcH4DLVynqL2zgSyBmH59PtvNXQZLV8ec7bNyGGmWwemFXfDzyqLqhZhDna7rI_WxxVDDuIEho2AbdDCcIW2jax2tTde14q81Y7JbMymEeJL9rOvMLJVUkfYvuTsScNo9z-xPY6ZzlUTY4yy7iYu3gRdQfUPTvBNoqgvomLFna58_GaKdIybSc&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJWbVbuQLnnYgRaDfCuZEcSXY",
+      "name": "PJ's Coffee",
+      "address": "1806 Lindberg Dr, Slidell, LA 70458, USA",
+      "lat": 30.2724704,
+      "lng": -89.75646200000001,
+      "rating": 4.4,
+      "reviews": 142,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "pastry_shop",
+        "coffee_roastery",
+        "cafe",
+        "breakfast_restaurant",
+        "dessert_shop",
+        "confectionery",
+        "bakery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 8:00 PM",
+        "Tuesday: 6:00 AM – 8:00 PM",
+        "Wednesday: 6:00 AM – 8:00 PM",
+        "Thursday: 6:00 AM – 8:00 PM",
+        "Friday: 6:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 8:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8523375181987723112&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJWbVbuQLnnYgRaDfCuZEcSXY%2Fphotos%2FAb43m-u2zSVnf_FTIDT5v8Oaf01N8Wf5n4zZv53JdTrbr5AL7FQWHlxv5bl7bPtpxfCxVQJDKtIwT7XSw4eIFEZL3Xb_KnZ81QCyV08uo1kiAMl0S5G11wq0jrfWBKmwMbm_rGDFhRtdOgMTOnCxwlCVzVExq8GCZGYrYLoGLPoRmEc4CHXpEUZVPBl0qL7tGz90IEv7U4ERbPi6LcrSXLCN5ldWMxjHuxaDDWQ5lin87WIDm4w9KAktfU-Krz3rIf5wxXm0fYLqU8wkGFfo4H8m6ZIA6nJds5T5PU-RDERBhvrYM-d2knWkaovGuGFTdXnZxF8ca7IBtpsjBkTVuABUDqct48da4EWeJwRAjZVtbMlGXGUeZzrqXnkT0x5_saI98OEfxz7-V-EvIRhdTs0uXxmWdG4EwUW0Y_kHF0oH7c4&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJJ3kcLEDnnYgRz-I8vurNm0w",
+      "name": "Flatland Coffee",
+      "address": "2132 Gause Blvd E Suite 2, Slidell, LA 70461, USA",
+      "lat": 30.2875683,
+      "lng": -89.7346558,
+      "rating": 4.8,
+      "reviews": 60,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:30 AM – 5:00 PM",
+        "Tuesday: 6:30 AM – 5:00 PM",
+        "Wednesday: 6:30 AM – 5:00 PM",
+        "Thursday: 6:30 AM – 5:00 PM",
+        "Friday: 6:30 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 1:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5520232176370377423&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJJ3kcLEDnnYgRz-I8vurNm0w%2Fphotos%2FAb43m-tLVzyfChcXPGAMEsJ58y1PGhEDUOFgCgRfq29WAs3txcK8H8IrWvRfy35CmouePqTQYL_9qSWpNfudf9V5cKesVpDVp_9_0TKPouzpplH2HQCsETasvWkpewU46ppxBgYnmCw0phoQ-_Sb3dVLnT2W6VbFPJ85PPjSy3LGDud98fZnVqu0NyNDPrP9OFoNCPZ6WCKc8d6dXBn4Wd0-MiiWNX5tCu4gJ1F-N5GAebiRB2GWCTwKFuOhpUdvTqcf-LJFpg0vNeqFHhngqTHdNYakOy1bh6n-4CQxdJNf49MCSg&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJa_FUX7vlnYgRsUk8eSs9h70",
+      "name": "Trace of Sno Cafe & Sno-balls",
+      "address": "2301 Hwy 190 W Ste A, Slidell, LA 70460, USA",
+      "lat": 30.301502799999998,
+      "lng": -89.83344919999999,
+      "rating": 4.9,
+      "reviews": 48,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "ice_cream_shop",
+        "sandwich_shop",
+        "dessert_shop",
+        "confectionery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 11:00 AM – 6:00 PM",
+        "Wednesday: 11:00 AM – 6:00 PM",
+        "Thursday: 11:00 AM – 6:00 PM",
+        "Friday: 11:00 AM – 6:00 PM",
+        "Saturday: 11:00 AM – 6:00 PM",
+        "Sunday: 12:00 – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13656951651951200689&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJa_FUX7vlnYgRsUk8eSs9h70%2Fphotos%2FAb43m-vAqqWlmN54W7XWayVP6kiqo2V1GHjqn5M0ahtYk0W1yRx257-dCvuRXUrAHmmR4xf6LdEz5qKxQIKXzp-PSi5ltIadwN1fJz0aCwxXaFyC4ZgMOQMYu4oOe8gQt9A4GSC7uUUfNX7GQy5hVAg9Xh_TrPVT5jocREXfwC9_NFPENfbtnCyQYfM54D3pMUZrXl2gXzBxYkSjDHO--jK3Xz7V-zxqi_Yw3P_c8o0JfB4hsduQXrxemCqgUuutobYXf3fxRi1uRAGuvQG2ii8KiC6h1k73vrBSRWZ28I_-p5Sihw&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJqYr1ctznnYgRjK5ktBHuoAQ",
+      "name": "Grit and Grind Coffee Slidell",
+      "address": "1951 Gause Blvd E, Slidell, LA 70461, USA",
+      "lat": 30.2850938,
+      "lng": -89.7403691,
+      "rating": 5,
+      "reviews": 5,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": null,
+      "hoursLabel": null,
+      "periods": null,
+      "weekdayDescriptions": null,
+      "mapsUri": "https://maps.google.com/?cid=333528132233768588&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJqYr1ctznnYgRjK5ktBHuoAQ%2Fphotos%2FAb43m-swm34DadIhVnIEfSf7D7r9HPxvINzVvEFtZeTmvc8Ldyt2O2tSG2rEBh7HnkQ7Z-aveDc2xm70Gs8NA4GhSj1WPLJMj7lEIo8OxvL5HXHEGUiCVIpOY-FrT7bSqxPpZh3kNUGdFHn3tm-WF8uh7FToQka-2zVGAgOinp5MgqNfPt6nHefTXhhhTnc0a3EBoEqG-Qv3FIjPkL0xuTgmJQPthMoCrxksOdPWQ5inxzfwNof7gexfvWSe1JmV8owm9QU_fqvxsWODdc1Cux2Plld6gpbwNJ1Ehl92vPBqgJX8y7MXhAFXxaxXEgAwy_l5XrK5PDcCyv2ygDmNF__IYjfIdAxaDf6sTPz02SvRXMhpGfwGXf3JJyhrHjuEwvYcCRcUyYy0d_lLBBRzAsozgm8sq3Jvw7INHUbeRqygFTM2c_xADoVmc7VR0P4piA4X&w=800"
+    },
+    {
+      "city": "slidell",
+      "id": "ChIJxQganGTnnYgRKudhq3_KvlQ",
+      "name": "Liquid Gardens Cafe",
+      "address": "723 Robert Blvd, Slidell, LA 70458, USA",
+      "lat": 30.296241000000002,
+      "lng": -89.763854,
+      "rating": 5,
+      "reviews": 1,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 11 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:00 AM – 11:00 PM",
+        "Tuesday: 5:00 AM – 11:00 PM",
+        "Wednesday: 5:00 AM – 11:00 PM",
+        "Thursday: 5:00 AM – 11:00 PM",
+        "Friday: 5:00 AM – 11:00 PM",
+        "Saturday: 5:00 AM – 11:00 PM",
+        "Sunday: 5:00 AM – 11:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6106540794445948714&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJxQganGTnnYgRKudhq3_KvlQ%2Fphotos%2FAb43m-sIn5W5lOreyYxVW2ORdUCZtZl76sLQeQHLm21kvFcijh08UR-_6ePkEyywtKzSaYft3xoJ_QhbemXmYqwOjla7H_1TW93LF20GB7etqrhKwu8DukCyFKS-9MxoVIf7bkRIG_RCSDae0TrEfziyG8u4PPgM0M2qKJwnlQdana03nGDlpm0L-qcPhqA4W9qXtHKNGCaZOXpPdcjCBg_6Rj0H0mh5joI1RuZgIcE-HIV1Vn5PSELGipVZEuyI8LbzUJYZOQkDb0PvpErkzajmpxi4gE-cWIaWcc69Tcx-zgIv7cq-SiVEYPfKwV-TwxUofUl6Mm7sYXMj1RaHwSxkOvYvzxo3NX5T5Z0_wJLW_BxN68Pb2yTm1-KIklXlCDCClxQ4wguzWhRdGXCJL5J6T3UtuH1V7kFI-eJW5-cEZKfoqBgwzcYsSUmLG0Joa88A&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJ6YtN-g_knYgR0ETvH6nghAg": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks mentioned in any review.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Poboy (Fried Shrimp)",
+          "reason": "Multiple reviewers specifically praise the poboy sandwiches, with the fried shrimp poboy highlighted for its great flavor, seasoning, and freshness.",
+          "quote": "The seasoning and freshness of everything was great!",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "We had an assortment of dishes for lunch. Could have very well gotten by with just the Poboy sandwiches, but wanted to try a few other items. We started with the fried mushrooms, they were very good, loved the breading and the sauces. From there we each ordered a soup, I had the Seafood Gumbo, the wife had the French Onion. Both soups were very good, would recommend either of them. Then we had sandwiches. I had the Black and Blue, the wife had the Fried Shrimp Peaux boy sandwiches. The meat and cheese on the Black and Blue was delicious, and the aux ju was very tasty as well. The Fried Shrimp had a very good flavor as well. The wife even commented how good she thought the bread was, and I'd have to agree. Overall, we enjoyed this very much. We would definitely go back when we were in the area."
+        },
+        {
+          "rating": 5,
+          "text": "I ordered the 1/2 and 1/2 poboy fried shrimp and fried fish poboy and had it mixed. The seasoning and freshness of everything was great! The staff is always friendly. I would definitely recommend this if you're in the area."
+        },
+        {
+          "rating": 5,
+          "text": "My Photos aren't great but the food was delicious!!!\nGumbo, Potato Salad, fat Catfish and the Toast under it brought back wonderful childhood memories!\nBread Pudding was exactly the way we like it!\nGreat staff!  Great Service!\nThank you all!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:55:38.698Z"
+    },
+    "ChIJN4IIZU3knYgRNHwQTZFIkf8": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks mentioned in any review.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Omelette",
+          "reason": "Omelettes are mentioned across multiple reviews with specific praise—the 'everything omelet' called 'so good' and the shrimp omelet with alligator sausage that a reviewer's wife 'is in love' with. Multiple omelette variations are highlighted positively.",
+          "quote": "the everything omelet. So good, as the name implies it has everything",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "They have a lot of omelettes to choose from. So just do what I did and get the everything omelet. So good, as the name implies it has everything. And the biscuits are huge,fluffy,buttery goodness. And hashbrowns are cooked just right. I ended up putting them on top my omelette, SUPER GOOD IDEA! Bottom line eat here if you want great food at a good price.🫵👌👍👍👍👍 AMEN all glory to our Lord and Savior Jesus Christ"
+        },
+        {
+          "rating": 5,
+          "text": "This restaurant came up first when I did a Google search to find the best breakfast burrito in Slidell, La. I ended up getting the breakfast enchilada with a side of green chili. It was very good. The pancakes, sausage and eggs were excellent too. Service was good. Ate on the patio which was too close to the street. Seating inside is limited and the tables are close as it is a very small dining room in an older building. Not much ambiance. My rating is for the food and service, not the vibe."
+        },
+        {
+          "rating": 5,
+          "text": "I stopped in with my Husband for the first time today and it was quite tasty! It was affordable with huge portions and good service. The cook messed up order, but our waitress took care of it right away and they expedited our food. It's a quaint and classic little hole-in-the-wall cafe with limited seating, but it's worth the small wait! Our server was kind and helpful. I got the Scramble Hash and my Husband got the Meat Lover's Omelette. We had full bellies when we left and plenty of leftovers to bring home. We plan to visit when we're in town next!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:55:43.069Z"
+    },
+    "ChIJ8bYdhoPmnYgR-cNJRnxuNnw": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Only one mention of coffee, praised for attentive refills but no specific drink named.",
+          "quote": "my coffee cup was never empty",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Hash browns",
+          "reason": "Specifically praised with vivid detail in a 5-star review; other food mentions are more generic or mixed.",
+          "quote": "Perfect hash browns, crispy on the outside, fluffy inside",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Local breakfast place that doesn’t disappoint. I dropped in while on a trip, didn’t want to face another Waffle House. It was a good decision. Perfect hash browns, crispy on the outside, fluffy inside. Eggs cooked exactly as I requested. Sausage was tasty and not dry. The price was very fair, the service was attentive, and my coffee cup was never empty. It was filled with locals that know they have a great of thing going. No complaints, I’m happy I found it."
+        },
+        {
+          "rating": 3,
+          "text": "Pretty decent service, but the food was just ok. Eggs weren’t great. My daughter didn’t end up eating her eggs. The omelets was fine. Nothing mind blowing. Same with grits. Everything was serviceable but nothing blew our minds. It’s a very very busy place, lots of hustle and bustle going on. Prices are good, especially for that area. Place is a little dingy, but I don’t mind that necessarily. I love a good hole in the wall spot, but I definitely could see that being a problem for some. Oh also Sundays they only do breakfast, nothing else."
+        },
+        {
+          "rating": 5,
+          "text": "This was the best diner I ate at thus far.. great tasting food… great service and awesome prices …"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:55:46.889Z"
+    },
+    "ChIJ6bo3MZDmnYgR0jUPbahBeA0": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Coffee is mentioned but with mixed feedback - one review praises it as 'robust, aromatic' while another calls it weak. Not enough consistent specific praise.",
+          "quote": "robust, aromatic coffee that fuels lively conversations",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "TANGY Turkey bagel",
+          "reason": "The TANGY Turkey sandwich on cranberry almond bagel received an enthusiastic 5-star review with specific praise. Bagels in general are highlighted as the bakery's specialty.",
+          "quote": "Delicious with pickle and fresh made chips",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "The fruit was so rotten, it was brown. My $17 bagel had very minimal cream cheese as well. I had to go back in to say something because it was a to go order. I was offered a different side to substitute the fruit, but if I had gotten home and saw it, that wouldn’t have been an option.  I waited 10 minutes for a new side and just ended up walking out without it.  By that time, my frozen coffee was completely melted. My husband ended up going back in because I was just over it. We did get what we asked for, but it just isn’t worth it.This is my 2nd time here with a really awful experience. I won’t be back and can’t recommend them."
+        },
+        {
+          "rating": 5,
+          "text": "TANGY Turkey\nTurkey, Swiss cheese, cucumbers, lettuce, tomato, cranberries and our tangy cranber mustard on a cranberry almond bagel.\n\nDelicious with pickle and fresh made chips"
+        },
+        {
+          "rating": 4,
+          "text": "The Creole Bagelry and cafe is a beloved local spot where the warm ambiance invites everyone to come together for a hearty meal, whether it's breakfast, brunch, or lunch. The bakery's handcrafted bagels, perfectly baked to achieve a crisp crust and soft interior, are a highlight of the menu, often served with a variety of rich, creamy cheeses that elevate the experience. Patrons eagerly gather around cozy tables, savoring their bagels topped with decadent herb-infused cream cheese or classic flavors like chive, all while sipping on robust, aromatic coffee that fuels lively conversations. The inviting atmosphere buzzes with laughter and camaraderie, making it the perfect haven for friends and families to enjoy delicious food and each other’s company, creating memories over every shared bite and sip."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:55:50.938Z"
+    },
+    "ChIJuYS6bK7nnYgRRMUGaBQ_dl4": {
+      "picks": {
+        "drink": {
+          "name": "Iced Blondie (half sweet)",
+          "reason": "Specifically called out as a favorite in a 5-star review; other named drinks (cold brew, chai, salted caramel latte) only got one mention each.",
+          "quote": "my go to is the iced blondie half sweet. SO delicious!!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This new 7brew in slidell is the best! The staff is so friendly and fun. They make your morning, afternoon, or evening coffee run a joy. I love how engaging and thorough they are while taking your order. The music is always pumping which makes me happy and keeps the kids entertained while we wait. Speaking of, the wait times here are next to none! This 7brew crew whips out coffees in a blink. I promise, even if there’s a line — stop! It goes so fast. 😍 my go to is the iced blondie half sweet. SO delicious!! 🤤\n\nSign up for their rewards program with your number and earn free coffees as well."
+        },
+        {
+          "rating": 5,
+          "text": "Went on “Opening Day” (Dec 8th - 2 medium drinks for $8), and walked inside. Today, the drive thru was open at 5:30am and the inside opened at 8am.\n\nI got a medium cold brew (no ice, that’s why it looks like less) and a hot chai latte with almond milk. I thought they were both good (I would say on track to be better than Starbucks), and the employees were very nice. Both things good on a hectic opening day. They do accept cash, card, and tap to pay (Apple Pay/Google wallet/Samsung pay).\n\nThere’s nothing inside, and I’m not sure if it’s just not furnished yet. Will update in the future once they’ve settled in."
+        },
+        {
+          "rating": 5,
+          "text": "Really friendly staff and super fast service. The drink was made right and tasted great. You can tell they keep the energy up even when they’re busy"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:55:55.534Z"
+    },
+    "ChIJpW7NJLnlnYgRBlhuK3qSLiY": {
+      "picks": {
+        "drink": {
+          "name": "Flapjack Latte",
+          "reason": "Specifically praised as '1000/10' in a 5-star review; other lattes (pumpkin spice, spiced brown sugar) and mocha also received strong specific praise, but flapjack got the most enthusiastic individual callout.",
+          "quote": "the 'flapjack latte' it was 1000/10!!!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Ham, egg, cheese croissant",
+          "reason": "Described as 'perfect,' lightly toasted, and great quality in a 5-star review. Only one of two specifically named food items, with strong praise.",
+          "quote": "ham, egg, cheese croissant was also perfect",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "First time trying them and wow, they do not disappoint! Pumpkin spice latte with oat milk was perfect and fresh tasting. The ham, egg, cheese croissant was also perfect. Toasted lightly and great quality. Warm, friendly helpful staff as soon as you walk into the nicely laid out shop. Plenty of tables and chairs and off to the side seating for study or chatting. Wonderful addition to Slidell coffee scene and now my new favorite! Well done, owners and staff!"
+        },
+        {
+          "rating": 5,
+          "text": "Visiting from California and let me start off by saying this by far one the BEST coffee shops I have been to . The employees are amazing so friendly and offered great recommendations . It’s a beautiful coffee shop we visited both shops and their mocha is the best mocha I have had in a long time ! I personally can not say enough about this establishment and their employees they have been a diamond in the ruff !"
+        },
+        {
+          "rating": 5,
+          "text": "The coffee shop is super cute and the baristas were very kind! They had patience as I browsed the menu (with my twin toddlers were talking, haha). I definitely recommend ordering the spiced brown sugar latte with sourdough chocolate chip scones!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:01.501Z"
+    },
+    "ChIJc_D09HjlnYgRk1Fb9KylfcI": {
+      "picks": {
+        "drink": {
+          "name": "Red Flags",
+          "reason": "Specifically named drink praised in a 5-star review; the only named drink across all reviews.",
+          "quote": "I was ordering the 'red flags' long before it became a menu item",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are named. One reviewer notes food is mostly prepackaged, which is not a positive endorsement.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is a place where you can sit comfortably and enjoy your coffee. The food they offer is mostly prepackaged. I wish they would offer to put the food on a plate and maybe even heat it up. Also, unfortunately the condiments are all behind the counter so you have to ask for everything like, sugar, spoon etc. The coffee was excellent but a little more expensive than at another well known coffee shop chain."
+        },
+        {
+          "rating": 5,
+          "text": "To start off, what ever concoctions I have in my brain, the girls at front street always deliver! The don’t just treat me as a customer, they treat me as a family. I was ordering the “red flags” long before it became a menu item. I adore this coffee shop. They have never messed up a drink for me, and if I think of something and I end up not liking it, they will always remake it to something else 10/10 THE BEST IN SLIDELL."
+        },
+        {
+          "rating": 5,
+          "text": "I’ve had the privilege of enjoying this company’s coffee since back when they were just a local coffee cart. It has been such a joy to watch them grow and continue to pour so much love back into our community.\n\nThe team here is truly the best. They treat you like family from the moment you walk in. Beyond the incredible drinks, I’ve also attended several networking events here that were fantastic. The owner is genuinely dedicated to supporting other local businesses, which makes me even prouder to stop by. Our family loves supporting the best coffee shop in town!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:05.841Z"
+    },
+    "ChIJcRndeRLlnYgRd88DXGMWEuE": {
+      "picks": {
+        "drink": {
+          "name": "Birds of Paradise latte",
+          "reason": "Named specifically by two reviewers, with praise for flavor and the specialty latte selection.",
+          "quote": "I loved the flavor of the drinks I tried",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Donuts",
+          "reason": "Called 'the best thing ever' in a 5-star review; croissant also mentioned positively but donuts got the strongest praise.",
+          "quote": "their donuts are the best thing ever",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "I don't like doning bad reviews for local businesses but it was not a very good experience. They are very over priced on their coffees compared to alot of other companies. I got a 20 once frappe with a extra shot and it was $9.50 I get the same coffee from gulfport for 4.75 almost $5 less. And unfortunately its not like the coffee is amazing it really didn't taste any different than Starbucks or anyone else. If your looking for a coffee I suggest going to a more reasonable place."
+        },
+        {
+          "rating": 5,
+          "text": "Slidell has its share of coffee houses, and this is the one you want. Totally local, amazing food offerings, and sooo many plants inside. And they’re for sale.\n\nYou’ll be glad you came."
+        },
+        {
+          "rating": 5,
+          "text": "Grab a coffee, a great book, and relax! This was my first visit at Roots, Plants + Coffee and it was beyond great! As soon as you walk in, it’s like you’re in someone’s home. The atmosphere is welcoming and soothing! The staff greets you immediately with a smile. I ordered a Birds of Paradise latte and croissant! I was there for 2 1/2 hours, lol! Talk about comfort lol. I loved the antique furniture! But the PLANTS! Omg, such a beautiful collection! I will be back."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:10.442Z"
+    },
+    "ChIJY_xQSePmnYgRqMq1nIdGcx8": {
+      "picks": {
+        "drink": {
+          "name": "Cold brew",
+          "reason": "Mentioned across reviews; chai latte also highly recommended but only once. Cold brew has multiple mentions though mixed experience.",
+          "quote": "Highly recommend the chai latte!",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Beignets",
+          "reason": "Mentioned in multiple reviews and explicitly praised as one of the best places to get them.",
+          "quote": "One of the best places to get beignets!",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 2,
+          "text": "I came thru the drive thru on this day . I came thru to get a cold brew and beignet bites  tiny ones like I order thru door dash all the time . This brunette wasn’t customer service friendly on this day . When I placed my order I asked what’s a good cold brew . I drink a cold brews a lot but I wanted her opinion that day ; she was not in the mood to help me . She just wanted me to place the order and leave her window .when I ordered Beignet bites , she clearly didn’t listen , she charged me $18.80 all together.coffee large 32 was spilled on me sloppy presentation. Then had wait  another 20 minutes because the wrong beignets were being made , the other girl delivered the box to me which is not what I ordered. 6 huge beignets . I clearly was pissed and went off on her and I’m so sorry. But , brunette needs to better at customer service and getting the correct orders ."
+        },
+        {
+          "rating": 5,
+          "text": "I’m use to the traditional Starbucks but this was closer to my house so I tried it and now Starbucks is a secondary option.  The staff was fun and friendly and very knowledgeable.  The order was fast and on time. N my breakfast was so good I went back in and got another one.  The place looks like it would be a cool vibe on a Saturday or Sunday morning the relax before starting your day.  It’s also connected to some kind of ice cream shop in case you have to kiddos with you. I’ll be back and I’m definitely going to be a regular until further notice."
+        },
+        {
+          "rating": 4,
+          "text": "Grabbed a black in the drive-thru. Coffee was better than average but not exceptional. Employee at the window was very friendly. Only issue is that receipt asked for a tip and signature... at a drive-thru window. What am I being asked to tip for?"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:15.129Z"
+    },
+    "ChIJQ3AgSSnnnYgRDgxSGRW_f-E": {
+      "picks": {
+        "drink": {
+          "name": "Horchata Coffee",
+          "reason": "Specifically praised and highly recommended in a 5-star review; other drink mentions are generic or noted as watered down.",
+          "quote": "horchata coffee and it was so so good I highly recommend",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Popcorn Chicken",
+          "reason": "Mentioned and praised in two separate 5-star reviews for its perfect crunch, lemon pepper flavor, and crispiness without heavy starch.",
+          "quote": "perfect crunch to it and a zest of lemon pepper",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The inside decor of Tea Plus looked really nice and aesthetic! I felt like I was in a futuristic setting than an actual boba shop. Service was friendly and quick with the orders. I got their Roasted Brown Sugar Boba Milk ($5.25), Popcorn Chicken ($6.50), and Takoyaki ($6.50). Honestly, the brown sugar drink tasted a bit watered down as I felt like it didn’t have enough of the brown sugar taste to it. However, the popcorn chicken tasted amazing! It had the perfect crunch to it and a zest of lemon pepper to add good flavoring to it. The takoyaki was good too, but I felt it was a bit mushy not enough squid on the inside. Overall, my experience here was good, but the popcorn chicken had to be my favorite out of everything I ordered."
+        },
+        {
+          "rating": 5,
+          "text": "Finally, a truly amazing Chinese bakery near New Orleans! 😭😭\n\nThe super talented baker behind this shop just opened her store this year, and now I’ll never have to worry about finding good cakes in New Orleans again! 🎉\n\nMy top recommendations:\n🍰 Rousong (pork floss) mini cakes – I always regret not buying more boxes!\n🍡 Mochi buns – even people who don’t like mochi will fall in love with these.\n🍵 Matcha crepe cake – a perfect Lady M dupe, made with imported Japanese matcha.\n🥭 Mango crepe cake – incredibly fresh mango.\nDurian crepe cake – packed with rich durian, literally overflowing!\n🥭 Mango pomelo sago bursting cake (6”) – tastes exactly like real mango pomelo sago, super fresh mango and fluffy sponge layers.\n🍗 Popcorn chicken – crispy and flavorful, without that heavy starch taste.\n☕ Tiramisu – several flavors available, all delicious!\n🍓 Matcha strawberry cake – soft, fragrant, and perfectly balanced.\n\nBesides the daily fresh cakes, you can also order custom birthday cakes — they’re beautiful and delicious 💕\n\nThe owner is incredibly kind and genuinely cares about quality. The first time I visited, she thought one cake wasn’t perfect and insisted on giving me two boxes for free (still tasted amazing!). The second time, she was experimenting with new guava desserts and let me try fresh guava on the spot! 🥹 Even the highly anticipated matcha crepe cake won’t be made unless her premium matcha powder shipment arrives — that’s how dedicated she is.\n\nThe shop is located in Slidell, about a 30-minute drive from New Orleans, but it’s 100% worth the trip. I usually go once a month for a “cake stock-up trip.” Sometimes, when her husband is available, they even organize group deliveries to New Orleans.\n\nIt’s technically a milk tea shop (the drinks are great too!) and the cake selection changes daily, so message the owner in advance to check what’s available.\n\n🍰💕 If you love fresh, handmade desserts — this is the place to go!"
+        },
+        {
+          "rating": 5,
+          "text": "The ambience of the inside is amazing, staff was very kind and helpful. The tea is delicious, we just tried it for the first time and my daughter and son love it, I tried the horchata coffee and it was so so good I highly recommend. We usually go further down the street to a different shop but I think this is going to be our new favorite shop!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:19.580Z"
+    },
+    "ChIJbSCxw1_nnYgRVdwMmo5QI0I": {
+      "picks": {
+        "drink": {
+          "name": "Hokkaido Milk Tea",
+          "reason": "Only specifically named drink with positive praise, from the sole 5-star review.",
+          "quote": "Hokkaido Milk Tea 9.5/10 will definitely get this one again",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 2,
+          "text": "Drinks were delicious but the employees looked like they would’ve rather been literally anywhere but work. The service sucked, the employees were not kind, they don’t belong in customer service. Not one smile, no thank you, didn’t even look up from the screen while I was talking or asking questions. Get better employees, I’ll leave a better review because the drinks are great. Looking into a different boba spot with better service because I’ve experienced this two times and I don’t look forward to going back."
+        },
+        {
+          "rating": 1,
+          "text": "I always get the same thing boba latte but this time it was messed up bad the girl didn't know what she was doing the drink didn't even have the carmel in it supposed to i called and she said she didn't put anything i didn't ask for but obviously something is wrong with the drink they need to train them better and customer service needs work before they end up like Ding Tea"
+        },
+        {
+          "rating": 1,
+          "text": "Be prepared to wait 45 minutes for your drink, if they were busy I’d be more understanding but even those who came way after me left before me so it makes me feel like I was purposefully discriminated. So be careful, if you’re looking for a quick refresher or in a rush you’ll be better off going elsewhere, at least you’ll be in and out quicker than OVER half an hour. Girls not focused on their job very slow when there were no other orders & just gossiping & giggling to each other when they should have been doing their job no way it takes 45 minutes for a drink, please do better on hiring who works for you, very unprofessional experience."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:23.795Z"
+    },
+    "ChIJWbVbuQLnnYgRaDfCuZEcSXY": {
+      "picks": {
+        "drink": {
+          "name": "Iced tea with peach purée",
+          "reason": "Specifically praised in a 5-star review; reviewer notes coffee isn't their favorite but recommends this tea.",
+          "quote": "I also really like their iced black and green tea with peach purée",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Beignets",
+          "reason": "Highlighted as a standout in a 5-star review, with beignet bites also praised as 'just as delicious.'",
+          "quote": "Looking for a good local beignet! Look no further than PJ's!",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Looking for a good local beignet! Look no further than PJ’s! They also have beignet bites and those are just as delicious. Perfect for the kiddos. Just be aware they do stop serving them at 4pm. I also really like their iced black and green tea with peach purée! Their coffee beverages aren’t my personal favorite in terms of flavor, but my husband and friends love it. The staff is always friendly."
+        },
+        {
+          "rating": 5,
+          "text": "Isabella is amazing!  Please give this girl a raise, vacation, or both!  For the longest time, I have not been able to log into my account. I had tried to reset my password several times, but would never receive the email allowing me to do so. Any time I would ask a PJ's employee about it, they seemed confused and weren't really sure what to do.  I basically just gave up. When Isabella found out about this, she was able to explain to me that--when they overhauled the PJ's platform--this problem started occurring.  She walked me through the steps and, within 2 minutes, I was back into my account!  In short, she cared.  You have a fabulous employee with Isabella.  Do yourself a favor and take care of her--she is clearly an asset to your business and I am so grateful to have stumbled upon her!"
+        },
+        {
+          "rating": 5,
+          "text": "Every time I visit, the PJ’s team is always such a pleasure to interact with. They consistently go above and beyond to make sure my special order is perfect."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:28.003Z"
+    },
+    "ChIJJ3kcLEDnnYgRz-I8vurNm0w": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Multiple specific mentions with strong praise; described as perfectly made.",
+          "quote": "nailing my matcha (the perfect green color)",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Sourdough pastries",
+          "reason": "Mentioned positively in two separate reviews, highlighted as a favorite.",
+          "quote": "sourdough pastries were delicious",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The coffee is amazing and when I can't make it in I order delivery. They have a beautiful little shop inside full of local businesses from blankets, candles, decorated pottery, pickled items, local honey, jewelry, and so much more!"
+        },
+        {
+          "rating": 5,
+          "text": "These ladies have been nailing my matcha (the perfect green color)!!! Love stopping there to pick up a matcha and a sweet treat! The sourdough treats, cookies, and cake pops are my favorite."
+        },
+        {
+          "rating": 5,
+          "text": "Everything you want in a coffee shop! Local Mandeville roasted coffee, sourdough pastries were delicious, atmosphere is great, they also have local art for sale."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:31.583Z"
+    },
+    "ChIJa_FUX7vlnYgRsUk8eSs9h70": {
+      "picks": {
+        "drink": {
+          "name": "Fruit smoothie",
+          "reason": "Explicitly praised as 'amazing' in a 5-star review; shakes and sno-balls also mentioned but smoothies got the most specific praise.",
+          "quote": "Fruit smoothies are amazing",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "BLT",
+          "reason": "Received the most enthusiastic, specific praise from a reviewer who emphasized high standards. Other items (wrap, panini, pizza) were also praised but less emphatically.",
+          "quote": "The best B.L.T I have ever ate",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Fantastic atmosphere and food!!\nFruit smoothies are amazing.\nThe chicken Caesar wrap and turkey bacon avocado panini are also delicious!"
+        },
+        {
+          "rating": 5,
+          "text": "Perfect little spot off the Trace for some cold treat on a hot day. I liked the eclectic decor inside.\nWould be cool if they started carrying boba tea too"
+        },
+        {
+          "rating": 5,
+          "text": "What an amazing service! I’m a fruit alkaline diet kind of person and they gave me options to have with meals and switch it up to serve my needs and fill me up! The best B.L.T I have ever ate and I eat nothing but the best . “Amazing” is all I can say , thank y’all for just giving me a taste of southern LA style at its finest…."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:37.240Z"
+    },
+    "ChIJqYr1ctznnYgRjK5ktBHuoAQ": {
+      "picks": {
+        "drink": {
+          "name": "Betty White",
+          "reason": "Mentioned by name in two 5-star reviews with strong praise, including 'to die for' with sweet cream.",
+          "quote": "The Betty white with sweet cream is to die for",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "Reviewers mention breakfast positively but never name a specific food item.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "A great first glance!! The blackberry lemonade is worth a trip back for me!! All the breakfast items I sampled were really good too!"
+        },
+        {
+          "rating": 5,
+          "text": "Love Grit & Grind! The Betty white with sweet cream is to die for! Go check them out! 🤩👏🏼"
+        },
+        {
+          "rating": 5,
+          "text": "Has great coffee and great atmosphere"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:40.968Z"
+    },
+    "ChIJxQganGTnnYgRKudhq3_KvlQ": {
+      "picks": {
+        "drink": {
+          "name": "Anemia smoothie",
+          "reason": "Single 5-star review specifically praises this smoothie as the best ever and notes it's formulated for anemia.",
+          "quote": "The best smoothie I have ever had",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The best smoothie I have ever had. It is so nutritious. It is actually for anemia. Tru them out indeed."
+        }
+      ],
+      "reviewsAnalysed": 1,
+      "fetched_at": "2026-05-26T19:56:44.013Z"
+    }
+  }
+}

@@ -1,0 +1,1514 @@
+{
+  "version": 1,
+  "citySlug": "gulfport",
+  "city": "Gulfport, MS",
+  "generatedAt": "2026-05-26T19:57:34.421Z",
+  "count": 10,
+  "cafes": [
+    {
+      "city": "gulfport",
+      "id": "ChIJRQwHyNgXnIgRpeBLCfco9JI",
+      "name": "Coast Roast Coffee & Tea",
+      "address": "1601 25th Ave, Gulfport, MS 39501, USA",
+      "lat": 30.369958,
+      "lng": -89.0931768,
+      "rating": 4.8,
+      "reviews": 585,
+      "price": "$",
+      "types": [
+        "cafe",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10589133665332879525&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJRQwHyNgXnIgRpeBLCfco9JI%2Fphotos%2FAb43m-sJj2ouerNVQmneyf_XuWLjyQoYZVISxQK6vF9yxnO-4sm9rLJlcGkL0q6ZJ720ZY6wqQV_WQJ7J6PV3ts2TF5Mu6tP4V6qDgwWpLdFNoPT6Z8tUuvtrCykEJg89umczaC5ZOyXYqQ742jPezNm9TDDJLSLOifsHjkG_jfG79rnyZ6jtztyguFei4sJ0hWisxcnkTONcDmbqfXigVwl9FvSQUzRgyPaBqivsRU5BqJUGGFw3saPkmcIfU396nfsG0t6YkUNqoI7UN64OOO10HHa-GVRJMMXkLYrBcmhQCiu8zDk3qtF0eJ7Mw8e2jphZYl3J3W73Ry8DLMScrrDyY-WxrZAnoxm34CguoIlxq2yJ2nrfQqHpnKzBN2bLjkjMCrQPWwJfemENPHZWJLkJqr94WIsv9r3DwvS4lX_AYMiSg&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJI2nY0QsVnIgR6LmfbS4nfeQ",
+      "name": "Coffee Y'all Espresso - Gulfport",
+      "address": "11293 Dye Rd, Gulfport, MS 39503, USA",
+      "lat": 30.449797,
+      "lng": -89.0936729,
+      "rating": 4.9,
+      "reviews": 278,
+      "price": "$",
+      "types": [
+        "coffee_stand",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:00 AM – 6:00 PM",
+        "Tuesday: 5:00 AM – 6:00 PM",
+        "Wednesday: 5:00 AM – 6:00 PM",
+        "Thursday: 5:00 AM – 6:00 PM",
+        "Friday: 5:00 AM – 6:00 PM",
+        "Saturday: 6:00 AM – 4:00 PM",
+        "Sunday: 7:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16464358893097564648&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJI2nY0QsVnIgR6LmfbS4nfeQ%2Fphotos%2FAb43m-s-RiNWMKaY_X7BPiUO9aME6PfZUvLhkb2o0u06xSipcsjxzW20h-JpYJXgWG-2iCyKftewcy-tOQnBME2sz1Anulyh3piR5W2In82aCzfglm-py7y9_yvjf538OB2fgYdH6w0BXsF1rW0oNJl0SBrxArzFW_-tvomjpPQnRp0gaD-r23PRiu0JH9u2AETMQl1HR58B48ot_0VRQpJ0P-NxNFjl0vbqQPYLeOQIzOB4MoJmXrRNzpJ7RpcD27lncClq7psLsvGAQLhJQKnACz1RGL7OzI1MJKpybavjC75o1-ZNMgnH1yNA49o9-77DsU4ugKUUnrmSXGuGh3VqvKgNCkwwq8HLeWDyQdDx5HkgkRQEnyo5bR76olLLj1uitmR8cQLGiocNXsBH5tcd48lLS2Sz86dJkqzNFMREugKr&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJgQ0GdM4XnIgRfp7VHJXxFlQ",
+      "name": "Boozer's Brew & a Cafe Too-Downtown",
+      "address": "1921 15th St, Gulfport, MS 39501, USA",
+      "lat": 30.3690487,
+      "lng": -89.0858082,
+      "rating": 4.7,
+      "reviews": 413,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 6 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 2:00 PM",
+        "Tuesday: 6:00 AM – 2:00 PM",
+        "Wednesday: 6:00 AM – 2:00 PM",
+        "Thursday: 6:00 AM – 2:00 PM",
+        "Friday: 6:00 AM – 2:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6059295971409763966&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJgQ0GdM4XnIgRfp7VHJXxFlQ%2Fphotos%2FAb43m-vW94gvBtex94hvJZhwCeHMmlGAKPjNCmaRcFGPSWTxlAlvWrUfguUf9axnJlMAd-iCyyoGq6rkJ5DbPud-H4GFvkV0QdELy3vAF5o1lTxhYmuW1d8zD10jhkM7qwfMKPMzivcl9js9jyRyTOAThlyOjsPeC2IUOM-E15YF0dUog4KgUWeyNsZ4xPjvvNlheT2tAEkOTqNxQEtusWmGbnAz2NRM1PeJSoRNujpi5D7VDB6aZmcD3ph6wKQo9rvTAcViDj2x0byAilly0T8PxjNeIDBCv7mOjFehchJKc7ZIGt8VToNvRben5KHN0pppuVCBGLiyONWb4N8jkGzwpCSyIMTxnjlhxXot8FvG0NnkaXAxBIYUwwJIu7xPRzzZSHm69xGDCeBTQNu5G2wvQlYfNK31Etoc2XXn_FzZqgLQ2Q&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJdxB6QN8XnIgR145abhNPCok",
+      "name": "Perks Coffee Shop and Cafe",
+      "address": "1309 25th Ave, Gulfport, MS 39501, USA",
+      "lat": 30.367545099999997,
+      "lng": -89.093203,
+      "rating": 4.5,
+      "reviews": 678,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "breakfast_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 3 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:00 PM",
+        "Tuesday: 7:00 AM – 3:00 PM",
+        "Wednesday: 7:00 AM – 3:00 PM",
+        "Thursday: 7:00 AM – 3:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9874792077837635287&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJdxB6QN8XnIgR145abhNPCok%2Fphotos%2FAb43m-s7RxIUJb8hFZ0Md4AD2Wyxj8tEsSqG2OmI3GDfe_GE5hLENfR9zr5b0EpDbE4vSoxM-vWV518OoLZXPA6meS-eo7KT3b-Z1GvjHj7fytgVLO5AlBoZrNsYCwQhHCtu7WZ-3ayR0gPTwnUdQawqqLq5jbg8CjRDnhAOHSO4-I4rwNhCktWpPWSt3kwjsRPYwPLhoHtt7XL-UhqiV9d-5vRm4U0F0r3abeF9rmxhcPcuDO261VGVZP2qlJ-7rXcnXwUiOvkjA1oko0jTfr1ES1pyj2VXPQIvXo2by_JCcLPC-A&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJ7ebvHwA_nIgRGLvxsJZ2NAs",
+      "name": "7 Brew Coffee",
+      "address": "12023 US 49, Gulfport, MS 39503, USA",
+      "lat": 30.457568499999997,
+      "lng": -89.1012763,
+      "rating": 4.9,
+      "reviews": 214,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:30 AM – 10:00 PM",
+        "Tuesday: 5:30 AM – 10:00 PM",
+        "Wednesday: 5:30 AM – 10:00 PM",
+        "Thursday: 5:30 AM – 10:00 PM",
+        "Friday: 5:30 AM – 11:00 PM",
+        "Saturday: 5:30 AM – 11:00 PM",
+        "Sunday: 5:30 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=807400622791965464&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ7ebvHwA_nIgRGLvxsJZ2NAs%2Fphotos%2FAb43m-uxmLOS-X9qCC-uqLP3sSFTNbNirToAA5oOT97USHgtnHLnBDQrGeQ8gqOQQq2fBq6iIhHi922mSA5tm8Nes0wBReEPdQfgx24j6n8cF70aIt0QvT4G314Hn_YYuu5hQw0gzLIhgkgZVATyIuur88_AUctEJPT_6HiJGrW7A_PDucTBq7T4Iy-2IU6NrmEF0cXJoJIUSU8q4D3JG6C9Fz3O2GiEFjzt45AuYsQbbc0_qor2f7S2cTptIzyg8u2L5MOJVCiSFNpuqav9AO3_86u3ZYuh6zg48eF4aexa8N7sR5z2HdVzOzBU88MNpxZhFiNsNFNoQxIimLfSYzvCfIpeAi19n7bhqnk72R0ADoSm49YJOIb1qorF1wI_sOWm9iQgU9npD7Fa4D6YQx40hHapcrSKgJsyWQRBhbii4knBwX_Tf0R-jS2uJIKJegGw&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJJXKlQ90XnIgR1YiiI7VunrI",
+      "name": "Cat Island Coffeehouse Gulfport",
+      "address": "360 Courthouse Rd C, Gulfport, MS 39507, USA",
+      "lat": 30.384351499999998,
+      "lng": -89.0436101,
+      "rating": 4.8,
+      "reviews": 180,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 3 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:00 PM",
+        "Tuesday: 7:00 AM – 3:00 PM",
+        "Wednesday: 7:00 AM – 3:00 PM",
+        "Thursday: 7:00 AM – 3:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: 7:00 AM – 3:00 PM",
+        "Sunday: 7:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12870846509337446613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJJXKlQ90XnIgR1YiiI7VunrI%2Fphotos%2FAb43m-tDRPEaXZAf_98WJjWjapxTJdoXkHU2yjUF_1Eyu_MFNTuiUJUt72KOFEh9MU8CMJq6bcimGITp0wxr7ok_-kQFy_I-zmLsVnBlkMRGh1NNlRgAwSfbafwz4HyWWELPZhTYH1wHgHYSyOpYrJVTpvh8PctIlBrzuS3Vn6_YJw_LotHraZPLXHZmme9IWTYqno08CrCsC6Q7Vl13UaY_1PME-w6RiSkg_MIh58CLGQzpAiZNkBNLOq0OnTA3n4z0QH-LFaO3OQ_bXCNkDjvnKeErJtXMQXRPg9Nwy6aLHAh3GQ&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJ46vHw-YXnIgRps-NMlZwFK8",
+      "name": "Boozer's Brew and a Cafe Too-Tegarden",
+      "address": "802 E Pass Rd, Gulfport, MS 39507, USA",
+      "lat": 30.396912999999998,
+      "lng": -89.035377,
+      "rating": 4.6,
+      "reviews": 171,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 4 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 4:00 PM",
+        "Tuesday: 6:00 AM – 4:00 PM",
+        "Wednesday: 6:00 AM – 4:00 PM",
+        "Thursday: 6:00 AM – 4:00 PM",
+        "Friday: 6:00 AM – 4:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12615831971689254822&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ46vHw-YXnIgRps-NMlZwFK8%2Fphotos%2FAb43m-vopnpe4M_DiZdyY5WR2H261GvAgwITg5V5h9jsJlAmoD9YczdQ-l5Qf8dhQ04Td0GqPclSvyZA5cp58mmirRbvwmTNcNj8O4Gp5NodRbfPiG9H_9IbUp0mEIiM6QRbloByKxRYquw2bGkiEuvxLLl7Ov3m_p52MOBSvXdqMThNdr0xVluH7_T9Y1IUlUfiqJY1x8xVkv1jxtotewy4V0ng0wQcupKTQ-DagFYcxCyl_ANNFfI40GyXbMltOqp4ZFmIIVsjF5Az26V5R7aVhXZzPsnnih7Y2opWyj6VIl2XFlOLLIaF9jrdlllnPOLQqkbXUiVJEh5W6QX7ec5kNDjND5MRNyLw5Tq0Zh9Vwigb-brrOsmJI-dWBSVdaRylOCbcRqUMOqqPY9zgVlGZ6uSCRkix_TpnDQSriECMtkV_CQ&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJS8GKOwARnIgRLijUfIbxhXI",
+      "name": "Zakis Cafe",
+      "address": "2093a E Pass Rd, Gulfport, MS 39507, USA",
+      "lat": 30.400646300000002,
+      "lng": -89.00892750000001,
+      "rating": 4.6,
+      "reviews": 105,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 22,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 10:00 PM",
+        "Tuesday: 8:00 AM – 10:00 PM",
+        "Wednesday: 8:00 AM – 10:00 PM",
+        "Thursday: 8:00 AM – 10:00 PM",
+        "Friday: 8:00 AM – 10:00 PM",
+        "Saturday: 8:00 AM – 10:00 PM",
+        "Sunday: 8:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8252267452148492334&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJS8GKOwARnIgRLijUfIbxhXI%2Fphotos%2FAb43m-v6J5lnHKsoxQqsMmvlgpF-3TWdT7kQFo6JMw6djnF7T_Ej0DWFVotCKjTATht2-PYXSRHigEVXxghUdtAXmWnvqV_PrDwYuMi1Q7yJ5oggG3gMKLcEn7et3yscziGvmNIgBuTt086JsDxOez055eiPI6dwLBSx071m_GXdIlAaZaU13hfSbP_wUWkDykfqo1Il5PVtrpoRm4hQOoqSH7PJSWFFokOgknBGQv8N9husiAef46nFcznZVB-Vk2Z9eCDp7M31z8PMg_BjGmhyybUfp3eY_rmjn0aNN3Ge-MeagA&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJe6gWdc8XnIgRFz8yFI2iPTk",
+      "name": "Sage Coffee and Books",
+      "address": "1709 19th Ave, Gulfport, MS 39501, USA",
+      "lat": 30.372070399999995,
+      "lng": -89.0851174,
+      "rating": 4.8,
+      "reviews": 38,
+      "price": "$$",
+      "types": [
+        "book_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:00 AM – 7:00 PM",
+        "Tuesday: 11:00 AM – 7:00 PM",
+        "Wednesday: 11:00 AM – 7:00 PM",
+        "Thursday: 11:00 AM – 7:00 PM",
+        "Friday: 11:00 AM – 7:00 PM",
+        "Saturday: 11:00 AM – 7:00 PM",
+        "Sunday: 11:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4124631560554168087&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJe6gWdc8XnIgRFz8yFI2iPTk%2Fphotos%2FAb43m-ui6ZShF2x-urFu8OQRvZ1xCzrxbEnLAfC_IBSEP67WTRgwUtiP8tOy_0kRw67z_eOwyzd_8mIl7h-9q_eVPxd8Z4vwP1DYnSK31Cd4SdPdsifA5HNHlg5twkLcCOsXqfVOSM0HhxmB-8lFIrsQs8e6k4h1b6vnP03ZVIx7Wl10j_DAkVhzsRDwwKOjNi9XfE39bplI8OKdvAUX3ENsURkmokFwELk2hxGlnYU0W-CsXi8uKObzsOYSFDWkWTlld1OtnY9GFB1TQr6ARR9AR7Cg49cD0MX0atDG7Ji_bbYIpSEp1u1a-iqw5_iQNRGmn-uHYshUMRt2ebW_g92aRKmQBj__wdBSvUuRdU5uGHzpNyPrv-hF1YlGO5LIJm0WklOhnmJaxiH4uTycE_PzowyQCq03i0jC2lEmg6JdAXhM9-Oc&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJwVHb-NAXnIgR4s3OJZGZZoM",
+      "name": "PJ's Coffee",
+      "address": "9347 US 49, Gulfport, MS 39503, USA",
+      "lat": 30.4221985,
+      "lng": -89.0930489,
+      "rating": 3.9,
+      "reviews": 33,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "pastry_shop",
+        "cafe",
+        "breakfast_restaurant",
+        "dessert_shop",
+        "american_restaurant",
+        "confectionery",
+        "bakery",
+        "restaurant",
+        "point_of_interest",
+        "food_store",
+        "food",
+        "store",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 6:00 PM",
+        "Tuesday: 6:00 AM – 6:00 PM",
+        "Wednesday: 6:00 AM – 6:00 PM",
+        "Thursday: 6:00 AM – 6:00 PM",
+        "Friday: 6:00 AM – 6:00 PM",
+        "Saturday: 6:00 AM – 6:00 PM",
+        "Sunday: 6:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9468424115276664290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJwVHb-NAXnIgR4s3OJZGZZoM%2Fphotos%2FAb43m-vs1GXCOZQVy7nIjsuU9LVIkX2r0XHlAaoqMW1YSKB_Em7_5szF30FPhPLhGXoQmLFqRJ1Iye1YRPZbovPdADog_DmfwYoDxgNJxP74M5RpRwb9x7Quvhat5GcRxZj_2_37AnKSVVb_c2XtsU7_bsKWvw5qOW8loljItuegILlRO0oad2CE_2Lq38lRN5Vm2-yM1XzKpHdf3rG_kbUyGOMlZ3Z7X10QsnAHDPsfxMVIurB-InW8E452tMYnbKIaZJ7r9Li-lee4dysBiUk63tKTuY37kxoAMeuaOq3LZHcxIQ&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJRQwHyNgXnIgRpeBLCfco9JI": {
+      "picks": {
+        "drink": {
+          "name": "Mocha/Cupcake",
+          "reason": "Specifically recommended by staff and praised as 'positively amazing,' tasting like chocolate birthday cake. Other drinks mentioned (frozen chai, cold brew) also praised but this got the most enthusiastic specific callout.",
+          "quote": "taste like a chocolate birthday cake",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Paris sandwich",
+          "reason": "Only specifically named food item in reviews, with mostly positive notes on bread, meat, and cheese, though the pesto had a sour aftertaste and it's pricey.",
+          "quote": "The bread was really tasty the meat. The cheese was tasty",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "I had the Paris sandwich. The bread was really tasty the meat. The cheese was tasty. Most of the condiments are tasty, but the pesto or whatever kind of sauce they had on it had kind of sour aftertaste that I didn’t like. And of course it’s not cheap."
+        },
+        {
+          "rating": 5,
+          "text": "This place is the best. The team is so friendly and helpful, they make super delicious coffee from locally roasted beans (oh, you can tell), and the environment is so relaxed. A great place to study and hang for a while. Definitely my favorite coffee shop and always a must when I’m in the area."
+        },
+        {
+          "rating": 3,
+          "text": "For ones who enjoy Starbucks style drinks, it's very good at that. milk forward drinks are mostly what you'll find here. Not to say that they are bad, just lacking something. If you're looking for something more like third wave coffee, you may be better off buying the beans and making it at home"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:50.233Z"
+    },
+    "ChIJI2nY0QsVnIgR6LmfbS4nfeQ": {
+      "picks": {
+        "drink": {
+          "name": "Blueberry Cobbler Lotus",
+          "reason": "Specifically praised in a 5-star review as 'incredible' and something the reviewer would drink daily. Lotus spritzers also highlighted as a standout offering.",
+          "quote": "The blueberry cobbler lotus is incredible!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any review. All named items (peanut butter delight, banana foster, caramel macchiato) are drinks.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Hidden Gem in Gulfport, MS! ☕️✨\n\nStumbled upon this little coffee treasure while road-tripping from Florida to Texas — and let me tell you, it did NOT disappoint! Just a quick hop off I-10, this drive-thru is impossible to miss (and you wouldn’t want to!).\n\nThe service? Lightning fast ⚡️.\nThe guy at the window? Super handsome AND helpful — double win!\nThe coffee? Out. Of. This. World. Seriously, as an undercover coffee snob, I’m not easily impressed, but this place knocked my socks off.\n\nWhether you’re a latte lover, cold brew addict, or just in need of a caffeine fix, this spot is a must-stop on your road trip route. I’m already planning my next visit.\n\nIf I could give you 6 stars, I would!\nFrom one coffee lover to another — do yourself a favor and check this place out.\n\nDon’t sleep on this Gulfport gem!\n⭐️⭐️⭐️⭐️⭐️⭐️"
+        },
+        {
+          "rating": 5,
+          "text": "I’m a regular here and have never had a bad experience!! I always recommend this place to people who ask where to get a good coffee and great customer service. Everyone who works there is so nice and they always make sure you get the exact drink you want."
+        },
+        {
+          "rating": 4,
+          "text": "I had really high hopes of trying this place today for the first time, but am left with a mixed review of my experience.\n\nI will first began with the “positives”\n\nHighlights:\nI ordered a blended banana foster coffee. The flavor of the coffee itself was strong in a good way and was honestly the first time I was able to distinguish the taste of the coffee itself versus only being able to taste mostly cream and sugar like most places.\nThe texture and consistency of the blend was excellent. It was very smooth all throughout the entire drink. The banana foster flavor added a nice addition to the drink, although I realized I didn’t like the “banana” flavor as much as I thought I would have. But would recommend it to folks who enjoy that flavor. Everything about the drink was smooth and overall the taste was enjoyable.\n\nUh-oh’s (cons):\nThere was quite a bit of a wait pulling into the car drive through and having to sit there for a while. But once I placed my order, my drink was made rather quickly!\nThe service at the window as a descent experience although the women making the drinks seemed more happy than the person taking and handing out orders. I wasn’t happy to have not received a copy of my receipt but upon looking at the details of my receipt that I was given to sign, I realized the price landed at near $7, and that was for their smallest size (12oz). That is certainly pricey given the size of the drink. This was due to a card and blending fee along with taxes.\n\nOverall my experience is so so, but I would be open to trying other drinks and other flavors. I have hope in the product itself and am aware that if I plan to buy a product here, then I should expect to spend a little more than average.\n\nI would recommend others to give it a try for themselves."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:54.173Z"
+    },
+    "ChIJgQ0GdM4XnIgRfp7VHJXxFlQ": {
+      "picks": {
+        "drink": {
+          "name": "Iced mocha",
+          "reason": "Coffee is consistently praised; the iced mocha specifically was called out as having wonderful flavor even in a critical review.",
+          "quote": "The flavor of the coffee was wonderful and I really enjoyed it",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Turkey on ciabatta",
+          "reason": "Specifically highlighted as 'a hit' with detailed praise for ingredients; breakfast bowl also mentioned but turkey ciabatta had the most enthusiastic specific endorsement.",
+          "quote": "The turkey on ciabatta is a hit! Turkey piled high",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Ok, so I got it to go…so atmosphere is based on pics, but a great lunch experience.\n\nMultiple orders and some were picky. All made to order, correct and hot and fresh.\n\nThe turkey on ciabatta is a hit! Turkey piled high, meaty cheese, sweet honey mustard, spinach and a lightly toasted bun.\n\nThe club on croissant is great.\n\nThe chicken wrap is good.\n\nBag of chips, a pickle and cookie balance out the food pyramid.\n\nGood coffees, cold brews and teas.\n\nThere’s nothing to complain about!"
+        },
+        {
+          "rating": 5,
+          "text": "Love this place. Breakfast was wonderful! I had the \"Everything (Breakfast) Bowl\". Very healthy and filling. The Coffee was delicious. Much to choose from. Outside seating is available.  It has a nice view of the beach park and walking distance to the beach."
+        },
+        {
+          "rating": 5,
+          "text": "Boozer’s Coffee and Cafe is a true gem on the Gulf Coast. From the moment you walk in, the airy, relaxed vibe sets the tone - bright, open, and welcoming.\n\nThe patio is a standout feature, offering views of the Gulf that make your coffee or meal even more enjoyable.\n\nThe menu is impressively complete, with delicious breakfast and lunch options to suit any appetite. Whether you’re grabbing a quick bite or settling in for a leisurely brunch, there’s something for everyone.\n\nWhat really makes Boozer’s shine, though, is the exceptional service. Friendly, attentive, and genuinely warm - just the way Southern hospitality should be.  Highly recommend stopping by if you’re in the area!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:56:59.182Z"
+    },
+    "ChIJdxB6QN8XnIgR145abhNPCok": {
+      "picks": {
+        "drink": {
+          "name": "Mocha",
+          "reason": "Mocha and latte options specifically praised in a 5-star review; coffee generally well-reviewed but few specific drink names appear.",
+          "quote": "I really enjoyed their mocha and latte options",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Biscuits and Gravy",
+          "reason": "Directly recommended by staff to first-timers and echoed by another reviewer calling the gravy 'special' with a 10/10 rating.",
+          "quote": "Biscuits and Gravy... ya'll need to try it",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Stopped in for breakfast. We got the breakfast fiesta burrito and the breakfast sandwich! The owners brought out our food and felt like the quality wasn’t up to par and just made a second burrito for us. Completely on their own. Talk about good customer service 😳\n\nThey make their own hash browns in house! They are tasty! The food came out SO hot, it was refreshing. The breakfast sandwich was delicious but if you can’t handle spice, leave off the creole sauce!\n\nWe will definitely be back!"
+        },
+        {
+          "rating": 5,
+          "text": "A cozy little coffee shop and the perfect spot to relax—especially if you’re waiting on the tire shop across the street.\n\nI really enjoyed their mocha and latte options, and the comfy couches in the back made it easy to unwind. Big bonus: they have a giant puzzle in the back that was a fun way to pass the time.\n\nHighly recommend checking out Perks Coffee if you’re looking for a laid-back place to enjoy a great cup of coffee."
+        },
+        {
+          "rating": 5,
+          "text": "Starts with smiles walking in from the staff. Music was upbeat and happy. Ordered a frozen drink and asked about the menu. Girl at the counter said \"Biscuits and Gravy\" for a first timer. Whow..... ya'll need to try it...! 😁\n\nCan't wait to see what is up for lunch next time I come here."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:03.623Z"
+    },
+    "ChIJ7ebvHwA_nIgRGLvxsJZ2NAs": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Reviewers praise the coffee generally but don't name a specific drink. Multiple positive mentions of overall drink quality and value.",
+          "quote": "Very impressed with drinks and price. Better than Starbucks",
+          "confidence": "low",
+          "mention_count": 4
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Seven Brew has a fun atmosphere and the workers were genuinely nice. The line moved quickly, my order was correct, and the drink quality was solid. I’d come back."
+        },
+        {
+          "rating": 5,
+          "text": "We happened by when they were giving out free coffees. Absolutely made my day. And the coffee was great!"
+        },
+        {
+          "rating": 2,
+          "text": "General vibe and atmosphere was great, enjoyed the music played outside. Coffee was ok, lots of ice. Did not care for the service rendered, tried to explain our discrepancy with our coffee and was met with a rude stance from the worker"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:06.906Z"
+    },
+    "ChIJJXKlQ90XnIgR1YiiI7VunrI": {
+      "picks": {
+        "drink": {
+          "name": "Mississippi Mocha",
+          "reason": "Specifically praised as 'rich' in a 5-star review; mochas mentioned multiple times including a peppermint mocha enjoyed in another review.",
+          "quote": "I loved my mocha, it tasted so rich",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Brisket sandwich/biscuit",
+          "reason": "Brisket is the most repeatedly and specifically praised food item, mentioned in multiple high-star reviews with direct enthusiasm.",
+          "quote": "My husband loved the brisket",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Coffee house and bookstore.\nCoffee was excellent. I had a peppermint mocha. Sandwiches were also excellent.\nI had the brisket and my wife had the club.\nLook for the pass books\nsign as the coffee house sign is very small."
+        },
+        {
+          "rating": 5,
+          "text": "Very spacious coffee shop that allows u to not just enjoy coffee but also sit down and read and do work. They have free WiFi and also they have a brunch/lunch menu such as sandwiches etc.."
+        },
+        {
+          "rating": 5,
+          "text": "I really enjoyed this coffee house experience! I went with my husband. He ordered a brisket biscuit and a southern vanilla latte with skim milk and I ordered an Italian ciabatta sandwich with a Mississippi mocha decaf with oat milk. Our orders both came out very good. My husband loved the brisket. I loved my mocha, it tasted so rich. I took a small sip of my husband’s vanilla latte and his was delicious. We were in a small hurry so we unfortunately didn’t have time to look around the bookstore, but I’ll 100% come back whenever we need to study or just want somewhere relaxing to read."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:14.920Z"
+    },
+    "ChIJ46vHw-YXnIgRps-NMlZwFK8": {
+      "picks": {
+        "drink": {
+          "name": "Blended coffee",
+          "reason": "Mentioned positively with flavor selection praised; one reviewer specifically ordered a large blended coffee with flavors.",
+          "quote": "GREAT selection of flavorings to choose for your coffee",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Chicken salad sandwich",
+          "reason": "Specifically praised in a 5-star review with detailed positive description of bread and seasoning. Orange Cranberry muffin also notable but chicken salad got more detailed praise.",
+          "quote": "chicken salad sandwich. Delicious. Bread was perfect",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is not just a coffee shop… my brother in law Danny W highly recommended this spot… sandwiches were very very good.  I had the chicken salad sandwich.  Delicious.   Bread was perfect and chicken was season just right.  I washed it all down with some unsweetened tea.  Local place and worth a stop for lunch and coffee."
+        },
+        {
+          "rating": 5,
+          "text": "I've came here more then once and I absolutely love the food and atmosphere! I usually get the same order every time on a normal days a but everything I've tried here tastes amazing. The sweets aren't too sweet, the food is so delicious and the drinks are amazing. I definitely will continue to come here regularly and bring people along with me."
+        },
+        {
+          "rating": 5,
+          "text": "Cute little coffee house. Great food. Great coffee. Customer service was fabulous. Lots of options. Orange Cranberry muffin is so good. Highly recommend this place."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:20.912Z"
+    },
+    "ChIJS8GKOwARnIgRLijUfIbxhXI": {
+      "picks": {
+        "drink": {
+          "name": "Mocha Iced Coffee",
+          "reason": "Only specifically named drink, praised for balanced flavor in a 5-star review.",
+          "quote": "The mocha coffee was just the right amount of kick!",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Dubai Strawberry Chocolate Cup",
+          "reason": "Mentioned across multiple 5-star reviews as the standout item, praised for fresh strawberries, quality chocolate, and pistachio filling.",
+          "quote": "The Dubai strawberry cup was perfect with fresh strawberry's and good quality chocolate",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This establishment is a 10 out of 10. The ambiance was great from the staff, the decor, music ect. I had the strawberry cheese cake, mocha iced coffee and the strawberry Dubai chocolate cup. I loved them all! The cheese cake wasn’t overly sweet, taste homemade. The mocha coffee was just the right amount of kick! The Dubai strawberry cup was perfect with fresh strawberry’s and good quality chocolate. I will definitely come again!!!"
+        },
+        {
+          "rating": 5,
+          "text": "We visited this restaurant and was very satisfied with the food, service, and atmosphere. This is the complete restaurant experience from the food, service, music, and the most relaxing  pleasant experience.\nThe Dubai Chocolate Strawberry Crepe was my favorite along with the Ceasar Salad. My friend enjoyed the roast beef sandwich and I tasted it and it was perfect.\nThere is a great selection of deserts and food that enhances the great atmosphere. This is certainly an asset for Gulfport and guest. We will definitely return.\nSharon Settle\nDiamondhead"
+        },
+        {
+          "rating": 5,
+          "text": "This was the only place I could find the Dubai strawberry chocolate cup and it did not disappoint! I got a small size which was close to $8 but shared it with my husband … I think I liked it more than him"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:26.879Z"
+    },
+    "ChIJe6gWdc8XnIgRFz8yFI2iPTk": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks are mentioned in any review; one reviewer even notes they didn't have time for coffee.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews; the focus is entirely on books.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I went to a writer's conference at University of Southern Mississippi in Gulfport and left with a hunger for books: \"Google, where's a used bookstore near me?\" Google Maps gave me several suggestions but the one that looked the most promising was Sage Coffee and Books in Gulfport. There are books everywhere in a charming old house - on the floor, on the shelves, on the front porch - and there are treasures to be found! The selections range from first editions to dimestore paperbacks and everything in between. I was on the hunt for vintage cookbooks and found everything I wanted, and more. I left with a big bag full of books and the knowledge that I would be back, again and again, whenever I happen to be in Mississippi. The owner was lovely, knowledgeable and welcoming, and although I didn't have time for coffee, next time I'll plan better! Make this a destination if you are a booklover anywhere on the Mississippi coast."
+        },
+        {
+          "rating": 5,
+          "text": "This is a must visit. I just love the organized chaos of books everywhere you look. The lady is amazing and friendly. She has everything from New all the way to the 19th century."
+        },
+        {
+          "rating": 5,
+          "text": "A used book store in an old house. So many books to chose from and the owner Laura was so friendly. She knew where every book was. I ended up getting a few books to add to my collection. If you are looking for a book that’s inexpensive this is the place."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:30.559Z"
+    },
+    "ChIJwVHb-NAXnIgR4s3OJZGZZoM": {
+      "picks": {
+        "drink": {
+          "name": "Hot white chocolate",
+          "reason": "Specifically named drink in reviews, though noted with order accuracy issues. Other reviews praise drinks generically.",
+          "quote": "The drink and the beignets were perfect",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Beignets",
+          "reason": "Only specific food item named, praised as 'perfect' in a 5-star review.",
+          "quote": "the drink and the beignets were perfect",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "Got there at 738 repeated our order 4 times and waited for over 15 min to find out they made the order wrong then other 10 min for me to have to walk in to get my coffee. The owner needs to get some workers that are able to work at a faster past. There wasn't anyone there when we got there. It's crazy that couldn't even get what I asked for. Late for work and it wasn't worth it."
+        },
+        {
+          "rating": 5,
+          "text": "OMG!!! Customer service was absolutely amazing! Keeley took my order and made me feel sooooo welcomed! The atmosphere of the place really added to the experience as a whole! 100/10 would recommend to anyone in the area. I WILL be coming back here in the future for my morning coffee runs! 🙌"
+        },
+        {
+          "rating": 5,
+          "text": "Kay is awesome, always gets my order done right. it would be great to have her train the other girls because they mostly struggle."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:34.421Z"
+    }
+  }
+}
