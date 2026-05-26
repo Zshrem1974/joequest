@@ -1,5 +1,57 @@
 # CHANGES
 
+## Cities #8-10: Gulf Coast expansion (Slidell, Gulfport, Biloxi)
+
+JoeQuest's first non-Florida cities — three on the central Gulf Coast:
+
+- **Slidell, LA** (16 cafés) — St. Tammany Parish, north shore of Lake
+  Pontchartrain. ZIPs 70458/70460/70461. Notable: Sirincci Coffee (two
+  locations), Roots Plants + Coffee, Flatland Coffee.
+- **Gulfport, MS** (10 cafés) — Harrison County, ZIPs 39501/39503/39507.
+  Notable: Coast Roast, Coffee Y'all Espresso, Cat Island Coffeehouse.
+  The `addressRegex` anchor on `", MS"` was critical — Gulfport, FL
+  also exists (near St. Petersburg) and would otherwise contaminate.
+- **Biloxi, MS** (10 cafés) — Harrison County, ZIPs 39530/39531/39532.
+  Shares its western boundary with Gulfport at lng -89.00; per-city
+  `addressRegex` second-guard prevented any cross-bleed.
+
+Total: **36 new cafés, ~$1.62** in Claude+Places for the snapshot pull.
+All addresses verified clean, zero boundary leakage between Gulfport
+and Biloxi or from Gulfport-FL.
+
+### Per-city timezone wiring (bundled fix)
+
+Both `lib/data.js` (server `hoursLabel`) and `public/index.html` (client
+`nowInBocaClient` / `liveStatus`) hardcoded `America/New_York`. Correct
+for FL-only; would have produced 1-hour-off "Closes X PM" labels for
+any Central-time city.
+
+Fixed end-to-end:
+- New `timezone` field per city in `lib/cities.js` (existing 7 set to
+  `America/New_York`, new 3 to `America/Chicago`).
+- `nowInBoca` renamed to `nowInZone(timeZone)`; `hoursLabel(h, tz)`.
+- `mapPlaceToCafe` bakes `timezone` into every café in the snapshot
+  so the client uses it without a city lookup.
+- Client functions thread `c.timezone` end-to-end, with an Eastern
+  fallback for any snapshot row predating this change.
+- `scripts/refresh-hours.js` passes timezone too and backfills the
+  field on cafés it touches.
+
+### Marketing copy
+
+`public/index.html`'s "Right now we're deep in South Florida" line
+became factually wrong the moment the Gulf Coast snapshots ship.
+Rewritten to region-agnostic: "We're growing one coffee scene at a
+time — South Florida is where we started, with the Gulf Coast
+(Louisiana and Mississippi) coming online now."
+
+### Observation, not bug
+
+**7 Brew Coffee** (regional, ~250 locations) and **PJ's Coffee**
+(Louisiana-regional, ~150 locations) appear in multiple Gulf Coast
+cities — neither is in `EXCLUDE_NAMES`. Borderline chain-y. Worth
+deciding later whether to exclude; for now they're shipping.
+
 ## City #7: Parkland, FL
 
 Adds Parkland (Broward County, north of Coral Springs, bordering the
