@@ -1,0 +1,1462 @@
+{
+  "version": 1,
+  "citySlug": "biloxi",
+  "city": "Biloxi, MS",
+  "generatedAt": "2026-05-26T19:58:20.923Z",
+  "count": 10,
+  "cafes": [
+    {
+      "city": "biloxi",
+      "id": "ChIJ602GPQkPnIgRkFsQZ6HPdCA",
+      "name": "Jacked Up Coffee Bar",
+      "address": "999 W Howard Ave, Biloxi, MS 39530, USA",
+      "lat": 30.3976892,
+      "lng": -88.89808269999999,
+      "rating": 4.7,
+      "reviews": 1032,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:30 AM – 6:00 PM",
+        "Tuesday: 6:30 AM – 6:00 PM",
+        "Wednesday: 6:30 AM – 6:00 PM",
+        "Thursday: 6:30 AM – 6:00 PM",
+        "Friday: 6:30 AM – 6:00 PM",
+        "Saturday: Closed",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2338722398637939600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ602GPQkPnIgRkFsQZ6HPdCA%2Fphotos%2FAb43m-vdiwCert9AqQfQsSAJ6N1qrw40x5galHORjdUrNfC1ngUiNT_BtR8CrK-UjkiFnmgUJ-yodk1B0RgrFGZGqBJg8n6FiBbi8x_LawauNefd-Vlov74NP4OUwKdzrV_Nmg8vJAl1CeDP9xLwZRUgGYs4BYxjjR5zUifU7WnqBGQjh1LRCTxrRSUU0dQS5bV-duryc8bFxLRbs-hflWW5b7RLdE0cx0TSN9sQBXM9LDVBDemQme0Ja5BDl57hTfgq4Ypeoe7ez2AMS59xGTjaiIwBnb0Sv9CMUvVZItofo2iV_hqXfuXxFmym-Hn9HuMYd7SnpINaApKrBzfFjwR-vcEwLLJhfmqASNWVWbaY96pAfHwu3viWnIIkXCA_lc5jZFFSpjWRj590J7mfDSTVRUzijCusDsIr5Sg4I6DgwYoUo48&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJFX9hW_ANnIgRXnqNm5H_Jeg",
+      "name": "Grind Coffee & Nosh",
+      "address": "934 Cedar Lake Rd, Biloxi, MS 39532, USA",
+      "lat": 30.4448352,
+      "lng": -88.9337419,
+      "rating": 4.6,
+      "reviews": 700,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 6:30 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:30 AM – 2:00 PM",
+        "Tuesday: 6:30 AM – 2:00 PM",
+        "Wednesday: 6:30 AM – 2:00 PM",
+        "Thursday: 6:30 AM – 2:00 PM",
+        "Friday: 6:30 AM – 2:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: 7:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16728057391782656606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJFX9hW_ANnIgRXnqNm5H_Jeg%2Fphotos%2FAb43m-vOIof_y5VnXOMbhPJFCpVNPxifQn-DGccg9Oo297ZYOj0N3qXy3DPQ6gwGAnucOxQvzDzQicYZ9bx_Fsb9CdKR2LEpp8NwxjSZuRcLNfxK4iHyHxs8X16YWkc0vOV2DLDu73npC34_F2C-jch9TOcTMxMlFxjraB8TJmT66d419JoG1nP_OtMfRnj5fd_DklpLZLlrJkrnYs56IG0soBCcgKEbJLjkC935cNKr8cxdzamXxKj8T3BCqSdHn09gQqK48x5facZF7Bsu4gS2RdatYZPrrVdS195oeaXg0r2rWVLbxr2xPLxus0HGyMq5KEupva45kEIOTvn-ng3Vgd78B5nP_c0BdGvgFniTxHehwh9F4ZXUsn7tvnSHWIA81dyKqGSMmI0kdCVtwsdc5lcVRVsT21dsWlo9TiTB7_obwQ&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJdSXgYhwPnIgR1HmR49VNXwo",
+      "name": "Brewpaddle Cafe",
+      "address": "854 Howard Ave, Biloxi, MS 39530, USA",
+      "lat": 30.397062599999998,
+      "lng": -88.8907574,
+      "rating": 4.8,
+      "reviews": 269,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 8:00 AM – 2:00 PM",
+        "Wednesday: 8:00 AM – 2:00 PM",
+        "Thursday: 8:00 AM – 2:00 PM",
+        "Friday: 8:00 AM – 2:00 PM",
+        "Saturday: 8:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=747401644208126420&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJdSXgYhwPnIgR1HmR49VNXwo%2Fphotos%2FAb43m-tKgPB2rk7yT9jfTO3p0ggiDzd90rf_iTi5h06CFtoG5_NftfPr6d5rWd4ZMZkr7_dzeI5gycBo1AYAH-XTTUItC8hwJRfG6dxW1xnFVkBW96YkUaP7uEcaE72CduJUmLkGb7nAP5p3eT85DQrB6dcIOTJJ6Lp9aNwxE_PMVrCD3fmwARwN6FU-pOYDbZwiXXpclob1UMFh9oj2keIM_OQJURHpT0-yRKpREZeRLUumcj_QVhI5BO2e6oxzJBDUXz6D3YNXkCxLHXg_bCVLuHy11t14RgfY-A4KOy8tjxyrAquGf3lavZxClWp2olHykl8gzXJ0rfYY0Lmex4v8E4lQglbZJ9wULwC8XKrEjNUuQwzfqru1ieBrC1P1dCFLRi8tbVeMPilBxPToUecZOAZ9fU2SbxoUnm1QvwIX3RDCNQ&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJ7xxcXtYPnIgREZqOhCOM928",
+      "name": "Greenhouse Biloxi",
+      "address": "152 G E Ohr St, Biloxi, MS 39530, USA",
+      "lat": 30.3961955,
+      "lng": -88.8880909,
+      "rating": 4.7,
+      "reviews": 341,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 7:00 AM – 2:00 PM",
+        "Wednesday: 7:00 AM – 2:00 PM",
+        "Thursday: 7:00 AM – 2:00 PM",
+        "Friday: 7:00 AM – 2:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8068071341633214993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ7xxcXtYPnIgREZqOhCOM928%2Fphotos%2FAb43m-vt7Ck8CTYQxn18rLbHfCvvlCYsyyB8zR9E1AZw7tPUZkLuXKcPUdnBvclfOVG5a8vecW1lCenWZB4tJgKY0p5lyP-W1PW0anl5Gj01yVeoodkThou4bx8dEhYVMJnaxkLf4mRdGZQ2-1RyyNSOy5yJEBXJIhX9eLT_O0gTYmDWhxj6WfJmWOYzL85GpPz1e-Ave4moDl0dXwmFdBQHdkSkGfibSKATy1OYpBfnI368zN3FjOBcrik5L88-j50usw-QuuyDkOFueFu9jS_h6HHb8W5UmshSXnYFK8yT-ksVUw&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJq6N3ljEY-isR4ITuTXUEF7c",
+      "name": "Finch Coffee Co.",
+      "address": "8244 Woolmarket Rd, Biloxi, MS 39532, USA",
+      "lat": 30.4701095,
+      "lng": -88.9751137,
+      "rating": 5,
+      "reviews": 103,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 6 AM Wed",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 13,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 1:00 PM",
+        "Tuesday: 6:00 AM – 1:00 PM",
+        "Wednesday: 6:00 AM – 1:00 PM",
+        "Thursday: 6:00 AM – 1:00 PM",
+        "Friday: 6:00 AM – 1:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13193018535270319328&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJq6N3ljEY-isR4ITuTXUEF7c%2Fphotos%2FAb43m-vT5Z8mWsNclxXNf_urFqIXaPrbgn8S5LKzfaGf8m7ik1V0hpx095IWPNX0kIHlotZiQRxC9zrEczQ-R9WbW2MDbjIrLMpYmo6aUO_KHOZVSHfqHuWFdfoECY0YNhtlcC_lWzlzImXGgLKuyXx8E1dmQS81BWQvIk0E9By6U3Tvmp26jr4x0j80TKw2AzzMqU9tX-ji1OuyJ5fnqOq8QlPNZGiKmotbNp7lfZdPXqg_B6fte8RCYdRHn4BmUuD3haX2nfot3T0aSfCNv09ikPlpDeOLMxuMgcKyt5zxyjccCQ&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJR6mdThQNnIgR2yd3LRSgwGQ",
+      "name": "Coffee Y’all Espresso - St. Martin",
+      "address": "15750 Lemoyne Blvd, Biloxi, MS 39532, USA",
+      "lat": 30.4427872,
+      "lng": -88.87202219999999,
+      "rating": 4.8,
+      "reviews": 139,
+      "price": "$",
+      "types": [
+        "coffee_stand",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:00 AM – 6:00 PM",
+        "Tuesday: 5:00 AM – 6:00 PM",
+        "Wednesday: 5:00 AM – 6:00 PM",
+        "Thursday: 5:00 AM – 6:00 PM",
+        "Friday: 5:00 AM – 6:00 PM",
+        "Saturday: 6:00 AM – 4:00 PM",
+        "Sunday: 7:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7259978607843813339&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJR6mdThQNnIgR2yd3LRSgwGQ%2Fphotos%2FAb43m-soEpQ-_Nm-Rxm_kL2mdpcVNl2YLb_oKqsKfyv5G8QDEwRyV30Wq9DHTrz7ZObb1efMk5sArbsgZsZ184nq4VcrtXZ0HgSsutVTopUBiEnlhtiTLElXtHw2z6xHhRpjpEr5uVhJMf4LeFD2Cck6g_FV9RqN5yGfFcAz7oWtoQ_xMhyk9fx56R6qUcjKAyJWW4rp8YAauLsfIoeWVA1zL18-xeO7A_AK9PFr2A8CPxE8LsijFHwJJ1QH0vf6L2cZnkNA0pGRFwjy4Yho6p_ph4WENvLhcbWJGRgqa0S4Wkso2g&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJmeGNCI0NnIgRBNjiBCSrgd0",
+      "name": "Tiger Paw Cafe",
+      "address": "921 Cedar Lake Rd Suite I, Biloxi, MS 39532, USA",
+      "lat": 30.4432347,
+      "lng": -88.9354752,
+      "rating": 4.8,
+      "reviews": 112,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:00 AM – 7:00 PM",
+        "Tuesday: 12:00 – 5:00 PM",
+        "Wednesday: 11:00 AM – 7:00 PM",
+        "Thursday: 11:00 AM – 7:00 PM",
+        "Friday: 11:00 AM – 7:00 PM",
+        "Saturday: 11:00 AM – 7:00 PM",
+        "Sunday: 11:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15961226725566896132&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJmeGNCI0NnIgRBNjiBCSrgd0%2Fphotos%2FAb43m-vdCLtVt1SRdkvOXtCAoWASpJ-aAAE4iTKCMThOtaQv1XdsToS7HBeVhqtHFwlEZc3LNLFQsrHzp7FCudoHdq11D96HzmDKl_AYRCEe0qv3u5QbIsyY1nr0DhBvgpAIm9SZUNjIcxABZ3VW8wQTNkd1xwnZO0Jc4SzWpjgJoC2d5JS0E6L75iPbr1k1OadGlm7r8IMn4Zti6jBMPj2NcfxuNvfEd6JhzUfSY1PxC6vNwWsNdvJphwDZ4iXJ2HtvWGzPrDVy8vvSIV9oCm0R2wWq4uFUOfEWFxuqmcQDmXxFem5EM2pqynIuIljINBdyz8tgLTZ1w_VhqkTDCkOpNi8lGzOnvq1dBjILvPGWVu0Yesp0KJsxCvNz-pgwm937g-Ue59dcKAYM43BxTgOfNfjmIxhwCp8iHsP02tXSN0DdZFtu3iYwOqByHqXJZvew&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJX5-gQTERnIgRn3ZChpfgifM",
+      "name": "7 Brew Coffee",
+      "address": "2366 Pass Rd, Biloxi, MS 39531, USA",
+      "lat": 30.402404200000003,
+      "lng": -88.9742397,
+      "rating": 4.7,
+      "reviews": 50,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 10 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:30 AM – 10:00 PM",
+        "Tuesday: 5:30 AM – 10:00 PM",
+        "Wednesday: 5:30 AM – 10:00 PM",
+        "Thursday: 5:30 AM – 10:00 PM",
+        "Friday: 5:30 AM – 11:00 PM",
+        "Saturday: 5:30 AM – 11:00 PM",
+        "Sunday: 5:30 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=17548804364423034527&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJX5-gQTERnIgRn3ZChpfgifM%2Fphotos%2FAb43m-s9x04lb_i4EjTasy3Jjpkqd6BvfHST7ny_Q8KDelku00Fe3mRdIcLr9DlTuBlyKKejDMWSeTBpVqJdA062kxmAHNzc_TSKFvaD5cYy9sezOlbN3ws1cwqJl1eN9cVCtNS6Uqk2bmMMAayvLFFEONFnbHkkalX_vXJ4BL7FYLzH_B-2q53osIMsFOv19PEQJuIrUemHEv4diWWvBJvdwKzxVH7MejAL_OpQAMpPdkdnVaBOPWV23e0AemV1o4wjyg3xOUeVMOSVqpfhpRvbqE1bLfZFpYafjsl0YeFyNy1_lQ&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJc5WY5eQOnIgRxAd02gamARk",
+      "name": "The Roasted Bean",
+      "address": "Beau Rivage Resort & Casino, 875 Beach Blvd, Biloxi, MS 39530, USA",
+      "lat": 30.392832000000002,
+      "lng": -88.89197800000001,
+      "rating": 4,
+      "reviews": 226,
+      "price": "$$",
+      "types": [
+        "bakery",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:00 AM – 8:00 PM",
+        "Tuesday: 5:00 AM – 8:00 PM",
+        "Wednesday: 5:00 AM – 8:00 PM",
+        "Thursday: 5:00 AM – 8:00 PM",
+        "Friday: 5:00 AM – 9:00 PM",
+        "Saturday: 5:00 AM – 9:00 PM",
+        "Sunday: 5:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1801903874289960900&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJc5WY5eQOnIgRxAd02gamARk%2Fphotos%2FAb43m-t1L9mGse6dSyxbiIY9J2bgdz7h_PnMEIKAM8aSGU-ugMYgWxIF-tIbLHDeSQDpws3f5i7fq7hOAXhVIGWUlOcpm-VQDvQAc0l3wosAgsLLBN0h_PNr1Vhxme9zRvivYSoPisgw8DmELW8R4LlqdThtqVpUhrAfce2kLGZMTgRJc63fVIMp7MlZdkStshKv5i5DaC0HWuIvoQBR1yIgp58gpH389AqfLGt56Q9kbZnQpZzBNR6QMJBIo0aNFU5dJIVVYxHzMLG9iuCmhJw-jw_GsojpuP-riYE4C6Z_N1cCElQo-2ggnwwrs2c6kEXgsYp6dUx2DIqDF0kAY_DSSDyA2SEjXuFko2JeSFESeGqweD0cOTRfg704m7ibYHJyPv-sl2jQ1SbZour3RPFtM6L_yllIc9T7zSgTC2ZsUjMovwfe&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJi8igMgAPnIgRHg_SqAOUGtI",
+      "name": "Cornerstone Cafe",
+      "address": "1400 Leggett Dr, Biloxi, MS 39530, USA",
+      "lat": 30.395644,
+      "lng": -88.92017109999999,
+      "rating": 4.8,
+      "reviews": 33,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 3 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:30 AM – 3:00 PM",
+        "Tuesday: 6:30 AM – 3:00 PM",
+        "Wednesday: 6:30 AM – 3:00 PM",
+        "Thursday: 6:30 AM – 3:00 PM",
+        "Friday: 6:30 AM – 3:00 PM",
+        "Saturday: 6:30 AM – 3:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15139575840797495070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJi8igMgAPnIgRHg_SqAOUGtI%2Fphotos%2FAb43m-vXCJKltxEhCrJ7tJOXWMZG7P-aoVzDnXpEGawrkihe6CX1VLUqhUmLth6YZBTfKp0HSGGOZ3KQWG0FgPkyTgGcB9FOXpZn26ra2iCzokjZYOn4RMx3l53YQ5zSkkU6AH8-IcL6cbXTqCFI2fQhPGlcD35ClZi_imXC0mwRDlMWXrmmeXhjiioU0ysO7yxZPLId0ZHGHSHaBNMZgu7MsUbbVPwe4uSD8ZnNQbXNMKZvdP7O1wdAvu60yefWHSnaRohUpgFrUYxM2imF_m-eUdGvDO4-43cWYI206NlkmaeNcvTRomgu9NXnpOoQAB4MLJcfb8lQGSzpUUUSvIPvNwQmxx8nUMmwylNcdHxXcy_IUDFuYryPmG6XNQjhJIcZWbgiNw0TeYOvghP-HOwiWSalIrcHOiOXyo7yp0nS6m1JolaqlmBsGKHlfgmr_6mo&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJ602GPQkPnIgRkFsQZ6HPdCA": {
+      "picks": {
+        "drink": {
+          "name": "Samoa",
+          "reason": "Mentioned by name in two 5-star reviews with strong praise for flavor balance and quality.",
+          "quote": "the Samoa cookie coffee drink... was excellent",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Chicken and biscuits",
+          "reason": "Specifically named in two reviews; a regular's favorite and even the critical reviewer called it 'above average.'",
+          "quote": "I always get their chicken and biscuits 🔥",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "First time visiting this coffee shop and WOW! So good! 🤩 We ordered the Samoa with caramel, the Royal Latte iced coffees, and a Caramel Praline hot latte (added banana 🍌) and everything was SOOOOO GOOOOD!! The flavors were perfect!! Sweet but not overpowering, and you can tell they really care about quality.\n\nBreakfast is delish as well!! 🙌 Everything tasted fresh and was the perfect pairing with our drinks.\n\nOn top of that, the service was amazing and the atmosphere was such a vibe!! Cozy, welcoming, and the perfect spot to hang out or catch up with friends.\n\nDefinitely coming back to try more on the menu!!! ☕✨"
+        },
+        {
+          "rating": 5,
+          "text": "We were fortunate enough to find the only place open on Christmas day. But it wasn't a compromise. If everything was open I would still recommend it. They have an infinite choice of baristas coffee. No cheap caffeine. They have a crazy big and diverse menu. Vegetarian options. I got the avocado toast. Delicious. They have soy milk. Great t-shirt designs. Roasted coffee to go. Parking. Great music choices and cozy and beautiful interior design. This is almost what we find in Montreal, which is a cultural thing, personnalised small coffee shop with identity.\n\nThank for existing in a world where all taste the same, where you feel nothing, humans becomes machines, experiences are safe and tasteless.  We want to feel something, aventures, living in the moment.\n\nStop here and take your time."
+        },
+        {
+          "rating": 4,
+          "text": "I don't agree with other reviews.\nThe chicken & egg biscuit, in hot honey was above average. I ordered it with cheese, that never happened.  And over priced, nearly $15! Even the table beside me complained about slow service and high price.\nService was slow, almost 10 mins for my Americana. Then breakfast was another at least 10 mins. And there were only 2 orders in front of me.\nThe place was uncomfortably hot. The place was decorated like a decent coffee hole."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:39.166Z"
+    },
+    "ChIJFX9hW_ANnIgRXnqNm5H_Jeg": {
+      "picks": {
+        "drink": {
+          "name": "Iced white chocolate latte",
+          "reason": "Specifically praised as 'perfect each time' by a repeat customer; other named drinks (iced hazelnut, hot chocolate) only mentioned once each.",
+          "quote": "I always get their iced white chocolate latte, and its perfect",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Panini",
+          "reason": "Paninis are mentioned across multiple 5-star reviews and explicitly 'highly recommended' as the best food in Biloxi.",
+          "quote": "Paninis are highly recommended",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This place is so cute! Service was excellent. The coffee was great! I ordered an iced hazelnut coffee with oat milk. If I am out this way, I will surely be stopping here again."
+        },
+        {
+          "rating": 5,
+          "text": "Extremely friendly service, Great hot and cold coffees, great surroundings. Fantastic sandwiches. Don’t pass on the side salad for your meal it’s really good. Warm, Friendly atmosphere that makes you feel welcome every time you go."
+        },
+        {
+          "rating": 5,
+          "text": "Wow! Why has this place been so close by and I have never stopped in. I will say I am not a coffee drinker BUT they have more to offer than great coffee! I enjoyed a large hot chocolate made with half and half and hazelnut. The whole atmosphere was cosey with large sink worthy chairs by a fireplace and plenty of tables to enjoy your drink and meal. Salads, panini's, and more check out their menu! I will be back."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:43.633Z"
+    },
+    "ChIJdSXgYhwPnIgR1HmR49VNXwo": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Lattes receive repeated specific praise across reviews, including the apple pie latte and hot latte with rich flavor.",
+          "quote": "both so well made and had a great rich flavor",
+          "confidence": "high",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Avocado tartine/toast",
+          "reason": "The avocado tartine with avocado mousse is the most specifically and enthusiastically praised food item, even drawing customers from TikTok.",
+          "quote": "The avocado mousse was so light and everything on it was great",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Incredible! Absolutely amazing food. Everyone should try it. My husband and I came here for brunch. We both started with cafe au laits. The coffee here is great by the way, they use Coast Roast. We split an avocado tartine and croissant. He got the corned beef hash and I got the scramble bowl. Everything was better than I imagined! Everything is made in house, if it can be made there it will be. Big shout out to Keira as our barista and Finn who came by to check on us and bring us our food. They were both awesome and friendly and fun to talk to!"
+        },
+        {
+          "rating": 5,
+          "text": "I saw this place on TikTok and had to try the avocado mousse that was advertised. My toast was amazing! The avocado mousse was so light and everything on it was great. The crispy fried onions really make the toast stellar so don't skip it! The hot latte was better than the iced but they were both so well made and had a great rich flavor. All of the syrups were in unlabeled bottles so I think they make their own syrups. My husband had the breakfast plate and said the bacon was amazing, I believe he ate all three strips in less than a minute! 😂 The server was so kind and everything came out quickly even though it was really busy. Plenty of free parking in the back and there are multiple milk options for those that are dairy free. I will definitely be back, it was worth every penny!"
+        },
+        {
+          "rating": 5,
+          "text": "Brewpaddle was our saving grace on New Year’s day! After driving around Ocean Springs and part of Biloxi for an hour, looking for open restaurants, we finally found our way to Brewpaddle.\n\nWe ordered an iced Chai Latte, iced tea, and iced Earl Grey Latte - all were excellent! Breakfast was equally delicious and arrived fairly swiftly considering the restaurant was fairly busy.\n\nA cool ambiance inside this old bank building and you can even sit in the vault. They had lots of cute Christmas decor up still which was nice."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:49.760Z"
+    },
+    "ChIJ7xxcXtYPnIgREZqOhCOM928": {
+      "picks": {
+        "drink": {
+          "name": "Virgo chata",
+          "reason": "Only specifically named drink with positive praise; cappuccino was explicitly disliked.",
+          "quote": "the Virgo chata was super yummy",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Biscuits",
+          "reason": "Biscuits are repeatedly praised across multiple high-star reviews as a standout item.",
+          "quote": "The biscuits are so good it's hard to explain",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Definitely did not disappoint! I loved the environment and how clean and organized it is! It’s a nice coffee spot in Biloxi! Everyone is super nice and welcoming! I tried their blueberry muffin and it was delicious! It was the perfect temp when I got it! Definitely recommend if you’re in the Biloxi area!"
+        },
+        {
+          "rating": 4,
+          "text": "Pretty good lunch/brunch spot. A little pricey for some of the things you can get. They did mess up the order quite a few times, but they were amazing and fixed everything for us, plus offered us a treat for all the mishaps.\n\nI got the ham sandwich, which was actually pretty delicious and all the flavors fit well together. Small fruit cup on the side. And I added a cheddar bacon biscuit on the side to try, which was good, but I think would have been even better with butter or something on it. My husband got the club and it was huge with a ton of added meat on it. They also accidentally gave us one of their special biscuits, which I didn’t realize since it was our first time there, but it was very sweet and a pretty good dessert after the meal.\n\nI also added a cappuccino, which was a little expensive for the size you receive, and it was  more liquid with a little foam on top compared to the hundred of other capps I’ve had everywhere else. Wouldn’t order that again unfortunately.\n\nVery small inside with about 6 tables inside. You order first when entering and then they’ll call your name for your order. It does look like they have an outside area on the side of the building, but it wasn’t open when we went. They take cash or card!\n\nI’d probably go back to try breakfast."
+        },
+        {
+          "rating": 5,
+          "text": "Decided to go in here today with my partner and we were greeted with the most friendly staff including the loveliest lady with a dachshund mug who took our order :) we’ll definitely be returning for the biscuit and lox, and more fur baby pictures"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:53.328Z"
+    },
+    "ChIJq6N3ljEY-isR4ITuTXUEF7c": {
+      "picks": {
+        "drink": {
+          "name": "Iced Mocha",
+          "reason": "Specifically praised in a 5-star review; Americano also mentioned positively but mocha received more enthusiastic specific praise.",
+          "quote": "tried the iced mocha was begging to go back",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Breakfast Burrito",
+          "reason": "Mentioned in two 5-star reviews with strong specific praise for flavor, ingredients, and house-made salsa/guac.",
+          "quote": "plenty of meat, egg and cheese and the guac is fresh",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Had their Americano and chocolate chip cookie! Americano was great I think their roast is probably a lighter-medium roast and man that cookie was warm and chewy and good… I wish they had a bit more seating inside but a great place to grab coffee and study and do work. I’m not too sure if they have WiFi available but will ask next time"
+        },
+        {
+          "rating": 5,
+          "text": "Finch Coffee Co is a special place for me because I’m great friends with the owners. The love for what they do & willingness to serve their community bleed through everything they do.\nTheir commitment to exceptional service, a comfortable free-flowing atmosphere, & high quality coffee is what keeps folks coming back for more.\nThe menu is dynamic & filled with options that will satisfy any craving. They have non coffee options too & even a little something for the kids!\nThey’ve recently rolled out their breakfast burritos accompanied by an in house made salsa (mild or hot) & the depth of flavor remarkable! Ugh, SO good!\nI visit every Friday for a coffee & treat. Everything they have  to offer is either hand made or locally sourced, at a price that’s unmatched. If you haven’t tried this coffee shop yet, you are sorely missing out!"
+        },
+        {
+          "rating": 5,
+          "text": "They showed great character!!! Offered many great options! Looking for a great coffee place and family owned business go to finch!! This is our new coffee place!!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:57:58.080Z"
+    },
+    "ChIJR6mdThQNnIgR2yd3LRSgwGQ": {
+      "picks": {
+        "drink": {
+          "name": "Lotus (flavored)",
+          "reason": "Multiple reviewers specifically praise the lotus drinks, with named favorites like Jack Frost Lotus and Blueberry Cobbler Lotus.",
+          "quote": "delicious lotus drinks definitely a hidden gem",
+          "confidence": "high",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Everything bagel with cream cheese",
+          "reason": "Only specifically named food item with direct praise; other food mentions (Sticky Bun, Oatmeal Cream Pie) were coffee flavors, not food.",
+          "quote": "an everything bagel with cream cheese, and it was so good",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Coffee Y'all offers a great variety of coffee and delicious lotus drinks definitely a hidden gem where you get so much more than what you pay for. Be sure to ask for the staff’s recommendations they really put so much efforts and won’t steer you wrong. The quality, creativity, and friendly service make every visit worth it!"
+        },
+        {
+          "rating": 5,
+          "text": "Always have to visit my caffeine dealer at least once a week. I love trying their flavors of the week for coffee and lotus. All of the employees, owners included, are always so pleasant and cheerful. What a way to start each day!!"
+        },
+        {
+          "rating": 5,
+          "text": "2nd time visiting in 2 days I've gotten a few different drinks 3 different coffee's, a spritzer, and smoothies. They have all tasted amazing!  The staff has been kind. And they move with a quickness getting your drinks out in a timely manner. The prices are great for the products you are receiving."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:58:02.333Z"
+    },
+    "ChIJmeGNCI0NnIgRBNjiBCSrgd0": {
+      "picks": {
+        "drink": {
+          "name": "Dirty chai",
+          "reason": "Specifically praised in a 5-star review with detail about whole milk and house cream foam; other drink mentions are generic.",
+          "quote": "dirty chai with whole milk and added their house cream foam....it was absolutely delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Banh mi",
+          "reason": "Mentioned positively across multiple 5-star reviews as a standout item, with the grilled chicken version specifically praised.",
+          "quote": "The grilled chicken Banh Mi is absolutely delicious",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Had a mishap on my order a year ago and they still kept their word for making it up a year after when I moved back in town! Their yummy banh mi will keep me coming back. Thank you to the kind staff that went above and beyond when technically they didn’t have to. Ube roll was not to sweet and soft. Try their banh mi!!"
+        },
+        {
+          "rating": 5,
+          "text": "It is so cute in here & the staff is so friendly and accommodating! The banh mi’s and bobas never miss a beat. Also the Japanese cheesecakes are 10/10 so fluffy and yummy, I will always have room for it 😋"
+        },
+        {
+          "rating": 1,
+          "text": "Great customer service, below average sandwiches. Come on man 16$ for these two. I’m doing you a favor for this review but even if you take this down there’s still word of mouth so yall better step ur game up."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:58:06.562Z"
+    },
+    "ChIJX5-gQTERnIgRn3ZChpfgifM": {
+      "picks": {
+        "drink": {
+          "name": "Cold brew",
+          "reason": "Only specifically named drink, but the single mention was negative. Other reviews praise drinks generically without naming items.",
+          "quote": "the drinks are consistently on point",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The drinks are amazing. Their opening day I was a first time customer and they had some technical difficulties with the tablets(due to how much service they got during the day) but the service was awesome regardless, very quick and studious. They also had some good music blasting making the atmosphere a 10/10. Don’t let any Karen’s stop the music that they are playing! they have good music tastes and they looked very happy to be there getting in that work and money. You can definitely still talk and hear eachother although the music was playing."
+        },
+        {
+          "rating": 5,
+          "text": "Seven Brew stays elite. The energy is always great, the staff is awesome, and the drinks are consistently on point. Easily the best coffee spot"
+        },
+        {
+          "rating": 5,
+          "text": "Service was top notch. And the drinks were super yummy 😋"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:58:10.513Z"
+    },
+    "ChIJc5WY5eQOnIgRxAd02gamARk": {
+      "picks": {
+        "drink": {
+          "name": "Frozen roasted coffee",
+          "reason": "Explicitly praised in the only 5-star review; chai also mentioned positively. Other drink mentions were negative (latte from machine, frozen coffee tasting like pinesol in one review, though the 5-star reviewer loved the frozen version).",
+          "quote": "always order the beignet and frozen roasted coffee here and its tasted great",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "Food is overwhelmingly panned across reviews: frozen sandwiches, fake beignets with black specks tasting like sausage, pathetic sandwiches. The single 5-star mention of beignets is contradicted by multiple detailed negative reviews calling them not real beignets.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "I’ve never eaten somewhere that made me feel like I was at the DMV. If you would like to eat here, my recommendation would be to not order any heated food. Despite being well staffed, the front counter seemed very unorganized. By its own nature, the restaurant is meant to be a quick service stop. However, this is far from the case. When I asked about my food, the lady asked to review my receipt, then never gave it back. I had to ask three times before seeing it again. Each time I asked for my receipt, I was met with an angry response from the woman that originally took it. Finally, my food came from the kitchen after 35 minutes. Simple turkey sandwiches. Other than the rude service, you can get decent pastries and coffee. Don’t expect much in the way of service beyond that. If I weren’t a local and was visiting the casino from out of town, I would be very put off by the experience. For not too much more you can have a nice, sit down brunch on the other side of the casino. That’s what I’ll be doing from now on."
+        },
+        {
+          "rating": 1,
+          "text": "I am from Texas but have family in Biloxi. We wanted Beignets so we found the Roasted Bean as a suggested option on Google.\n\nI ordered Beignets, A Ham and Swiss Croissant, and a plain hot Latte.\n\nMy beignets were not beignets. I cannot stress enough that they were not beignets but sopapillas passed off as beignets and priced at a premium. In Texas I can get a basket of 7 or 8 sopapillas for the seven dollars I paid for three alleged \"beignets.\" For anyone wondering what the difference is between the two; sopapillas are hollow and typically served with chocolate syrup or honey to be injected inside. Beignets are breadier and more substantial and typically served with powdered sugar dusted on top. These were sopapillas served with powdered sugar on top, thrown in a bag and thrusted dejectedly at us. Disappointing. What's more, they tasted like sausage patty which I can only assume was due to the fact that they were reheated in the same oven they cooked my friend's sandwich in. The last thing I will say about these \"beignets\" is that they had suspicious black specks in them. Weird.\n\nThe ham and Swiss was frozen, never fresh. It was hot which is all the good that can be said about it.\n\nMy latte was fine but I feel it should be stated their coffee is made from a machine where you press a button labeled Latte and it spits out of everything from one dispenser. Ikea charges 4 dollars for the same service they charge 7 dollars for. Don't waste your time."
+        },
+        {
+          "rating": 1,
+          "text": "I live in Biloxi. I have been to the Beau several times but never eaten their. So, when my family from out of town said let's go to the Roasted Bean for Beignets for breakfast I was excited. The place is pricey which is expected inside of a casino. But you would also expect it to be good food. Or at least eatable. It is microwaved frozen food. Maybe a toaster oven is involved I don't know, but I can get better food for cheaper at a gas station. Back to the start of this experience. The customer service is terrible. We asked one of the workers if they had beignets because they were not on the menu. The worker just said yeah with attitude like us asking her a question was inconvenient for her. We all order and the microwaved food was bland. One of our sandwiches was still completely frozen in the middle and could not be eaten. My cousins frozen coffee tasted like pinesol and burned her throat. We all thought she was playing so we tried it and it really did taste like chemicals. The \"Beignets\" if that's what you want to call them were not even Beignets. If you are from the south you know a Beignets. They are not hollow. These were completely hollow with black specs on the inside like what? And some of them even tasted like Sausage for some reason like they were heated up too soon after some sausage was microwaved. The best thing about this place was when we got to leave."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:58:17.557Z"
+    },
+    "ChIJi8igMgAPnIgRHg_SqAOUGtI": {
+      "picks": {
+        "drink": {
+          "name": "Cappuccino",
+          "reason": "Specifically named in a 5-star review praising it alongside the cozy work environment.",
+          "quote": "I was able to get a great cappuccino",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Charcuterie board",
+          "reason": "The only specifically named food item, called delicious in a 5-star review.",
+          "quote": "shared a charcuterie board which was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is an amazing place to stop by if you are trying to support local businesses! Cozy warm atmosphere and inviting baristas ! The food was really good and the coffee didn’t disappoint. Definitely a hidden gem!"
+        },
+        {
+          "rating": 5,
+          "text": "Hidden local gem. I was able to get a great cappuccino, work on my laptop with their WiFi, and have Gulf views through mossy oak trees. One of my new favorite, cozy work spots. The staff is so friendly! Saw gluten free options too.🎉"
+        },
+        {
+          "rating": 5,
+          "text": "Found this place passing through Biloxi looking for coffee. Cute hidden gem. The coffee was good, as well as the food. The people who worked there were super nice & friendly (shout out to Nicole F) and we ended up chatting for a bit. Would go back again if I’m in the area."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:58:20.923Z"
+    }
+  }
+}
