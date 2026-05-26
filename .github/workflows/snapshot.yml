@@ -23,7 +23,7 @@ on:
         required: false
         default: "false"
       city:
-        description: "Target a single city slug (e.g. boca-raton). Leave blank for all 6."
+        description: "Target a single city slug (e.g. boca-raton). Leave blank for all cities."
         required: false
         default: ""
 
@@ -55,7 +55,7 @@ jobs:
           if [ -n "${{ inputs.city }}" ]; then
             CITIES="${{ inputs.city }}"
           else
-            CITIES="boca-raton delray-beach boynton-beach deerfield-beach fort-lauderdale miami parkland"
+            CITIES="boca-raton delray-beach boynton-beach deerfield-beach fort-lauderdale miami parkland slidell gulfport biloxi"
           fi
           FORCE_FLAG=""
           if [ "${{ inputs.force }}" = "true" ]; then
@@ -74,7 +74,7 @@ jobs:
           commit-message: "chore: monthly snapshot refresh (all cities)"
           title: "Snapshot refresh — all cities"
           body: |
-            Automated monthly snapshot refresh across all 6 cities.
+            Automated monthly snapshot refresh across all configured cities.
 
             **Review before merging:**
             - Any obvious chains/non-cafés that slipped through?

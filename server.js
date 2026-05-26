@@ -180,7 +180,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // List endpoint:
 //   /api/cafes                 → default city (Boca)
 //   /api/cafes?city=delray-beach
-//   /api/cafes?all=1           → all 6 cities flat, each cafe tagged with city
+//   /api/cafes?all=1           → all cities flat, each cafe tagged with city
 app.get("/api/cafes", async (req, res) => {
   try {
     const all = req.query.all === "1" || req.query.all === "true";

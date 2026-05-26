@@ -30,7 +30,7 @@ const PLACES_BASE = "https://places.googleapis.com/v1";
 // Per-place Place-Details lookup. Used only for cafés that fell out of the
 // fresh top-20 search — so we still get accurate hours for ALL existing
 // snapshot rows. ~$0.017 per call (Places Details).
-async function fetchHoursForPlace(placeId, googleKey) {
+async function fetchHoursForPlace(placeId, googleKey, timeZone) {
   const res = await fetch(`${PLACES_BASE}/places/${placeId}`, {
     headers: {
       "X-Goog-Api-Key": googleKey,
@@ -45,7 +45,7 @@ async function fetchHoursForPlace(placeId, googleKey) {
     periods: h.periods ?? null,
     weekdayDescriptions: h.weekdayDescriptions ?? null,
     openNow: h.openNow ?? null,
-    hoursLabel: hoursLabel(h),
+    hoursLabel: hoursLabel(h, timeZone),
   };
 }
 
@@ -85,6 +85,7 @@ async function main() {
     updated++;
     return {
       ...old,
+      timezone: f.timezone || CITY_CFG.timezone,
       openNow: f.openNow,
       hoursLabel: f.hoursLabel,
       periods: f.periods,
@@ -101,12 +102,13 @@ async function main() {
   for (const cafe of snapshot.cafes) {
     if (cafe.periods && cafe.weekdayDescriptions) continue;
     process.stdout.write(`  · ${cafe.name}  — backfilling hours via Place Details… `);
-    const h = await fetchHoursForPlace(cafe.id, googleKey);
+    const h = await fetchHoursForPlace(cafe.id, googleKey, CITY_CFG.timezone);
     if (!h) { console.log("✗ not found"); continue; }
     cafe.periods = h.periods;
     cafe.weekdayDescriptions = h.weekdayDescriptions;
     cafe.openNow = h.openNow;
     cafe.hoursLabel = h.hoursLabel;
+    if (!cafe.timezone) cafe.timezone = CITY_CFG.timezone;
     backfilled++;
     console.log("✓");
   }

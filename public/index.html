@@ -1953,7 +1953,7 @@
         <h2>New in town? Start with a good cup.</h2>
         <p>There's a particular comfort in finding the right café when everything around you is unfamiliar. A warm room, a drink that's actually worth it, a small pocket of calm before you head back out into a city you don't know yet. When you're traveling, you don't have time to gamble on the wrong cup — and you don't know which corner spot the locals quietly love.</p>
         <p>That's where we come in. JoeQuest points you straight to the place worth your while and tells you exactly what to order when you get there — so a new city feels a little more like home, one good coffee at a time.</p>
-        <p>Right now we're deep in South Florida, getting to know one coffee scene at a time. We'd love for you to find your next great cup with us.</p>
+        <p>We're growing one coffee scene at a time — South Florida is where we started, with the Gulf Coast (Louisiana and Mississippi) coming online now. Pick the city closest to you and we'll point you at the cup worth your while.</p>
       </section>
     </main>
 
@@ -2755,10 +2755,11 @@
     // ---- live hours computation (client-side, from periods[]) ----
     // Mirrors server lib/data.js's hoursLabel logic so the open/closed
     // status on cards is accurate no matter how old the snapshot is.
-    // All math is in Boca local time (America/New_York) via Intl.
-    function nowInBocaClient() {
+    // Each café carries `timezone` (IANA tz) baked into the snapshot. Fall
+    // back to Eastern for any pre-timezone-field snapshot still on disk.
+    function nowInZoneClient(tz) {
       const parts = new Intl.DateTimeFormat("en-US", {
-        timeZone: "America/New_York",
+        timeZone: tz || "America/New_York",
         weekday: "long", hour: "numeric", minute: "numeric", hour12: false,
       }).formatToParts(new Date());
       const dayName = parts.find((p) => p.type === "weekday").value;
@@ -2773,9 +2774,9 @@
       const h12 = h % 12 || 12;
       return m === 0 ? `${h12} ${ampm}` : `${h12}:${String(m).padStart(2, "0")} ${ampm}`;
     }
-    function liveStatus(periods) {
+    function liveStatus(periods, tz) {
       if (!Array.isArray(periods) || !periods.length) return null;
-      const { dayIdx, minutes } = nowInBocaClient();
+      const { dayIdx, minutes } = nowInZoneClient(tz);
       const nowMin = dayIdx * 1440 + minutes;
       const events = [];
       for (const p of periods) {
@@ -2818,7 +2819,7 @@
     function renderHoursBlock(c) {
       const desc = c.weekdayDescriptions;
       if (!Array.isArray(desc) || !desc.length) return "";
-      const { dayName } = nowInBocaClient();
+      const { dayName } = nowInZoneClient(c.timezone);
       return `
         <div class="hours-block">
           <div class="hours-h">Hours</div>
@@ -2838,9 +2839,9 @@
         </div>
       `;
     }
-    function todaysHoursLine(weekdayDescriptions) {
+    function todaysHoursLine(weekdayDescriptions, tz) {
       if (!Array.isArray(weekdayDescriptions) || !weekdayDescriptions.length) return null;
-      const { dayName } = nowInBocaClient();
+      const { dayName } = nowInZoneClient(tz);
       for (const line of weekdayDescriptions) {
         const i = line.indexOf(":");
         if (i < 0) continue;
@@ -2852,7 +2853,7 @@
     }
     function statusBadgeHTML(c) {
       // Prefer live computation from periods[] over the snapshot's stale fields.
-      const live = liveStatus(c.periods);
+      const live = liveStatus(c.periods, c.timezone);
       const openNow = live ? live.open : c.openNow;
       const label   = live ? live.label : c.hoursLabel;
       if (openNow === true) {
@@ -3771,7 +3772,7 @@
               </div>
             </div>
             ${(() => {
-              const tline = todaysHoursLine(c.weekdayDescriptions);
+              const tline = todaysHoursLine(c.weekdayDescriptions, c.timezone);
               return tline ? `<div class="card-hours"><span class="card-hours-k">Today</span> ${escapeHTML(tline)}</div>` : "";
             })()}
           </div>
