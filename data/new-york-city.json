@@ -1,0 +1,3109 @@
+{
+  "version": 1,
+  "citySlug": "new-york-city",
+  "city": "New York City, NY",
+  "generatedAt": "2026-05-28T03:17:16.791Z",
+  "count": 20,
+  "cafes": [
+    {
+      "city": "new-york-city",
+      "id": "ChIJRWo8v4RZwokRbggnxWmoWpA",
+      "name": "787 Coffee",
+      "address": "204 W 10th St, New York, NY 10014, USA",
+      "lat": 40.733954399999995,
+      "lng": -74.0039929,
+      "rating": 4.9,
+      "reviews": 4691,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10401811461598283886&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJRWo8v4RZwokRbggnxWmoWpA%2Fphotos%2FAb43m-uULdJMlhRLHeGg1m8_LUf-yJcg6aaBAyCU0V9quq2z97u2vc7EQKajVtmU3EKu10dlW-VKlVxaP6usT3XbtNYx6OxoMXSOkgDXFe2ztZ8St_NbBxgMvMjllKUmxgZLznv_JZ-Nfc6wEJBMpPe-kIg7dvUcEE8GveBnf7Kn8WrgZc98PZ4ibpX4R-kUtmjQqZuR9zYk4eyD5jERMza_Xx3CiUkNy72llF9rUlbcU2HQ1shSCnWpjBO65_XyDiFUU3ZW_bYTE24O8BwHH3hY5OUHbcfWrxjFTpI8G7z-x3q2eQ&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ41W9caFZwokRVJOfTKNepZI",
+      "name": "787 Coffee Co.",
+      "address": "251 W 30th St, New York, NY 10001, USA",
+      "lat": 40.7493629,
+      "lng": -73.9942691,
+      "rating": 4.8,
+      "reviews": 5567,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10566956156152943444&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ41W9caFZwokRVJOfTKNepZI%2Fphotos%2FAb43m-vx8XJ6AUpVjr75sSIZWVImRPun-OLbJYK4Xa2meOW40s0xOUUhsvFgD5id6DjM8V1cxD1NAMwPmusM5VfL-EELnrco55OfbLzbBq6ZqkBDVmTMjs2doX9gyuzBDMC8RaziD9FCSuYhALpczrQ41n2LailMrMDQ4JZy_u3n_DWSFkNo-ZVvbHc8BeA8M2_mszs8iNAfMBntK4DR-EPwmkr2jBT8c1rXf4M-odDxU-vTd7WSI175t32pdUGFTXg50NQP2d7WKQseJIt5xjFztxJegmtWMbOUwxQDXJm6czE2FA&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJBRY0FTJZwokRO9yVHnHsu9k",
+      "name": "787 Coffee",
+      "address": "256 W 15th St, New York, NY 10011, USA",
+      "lat": 40.7400325,
+      "lng": -74.00158929999999,
+      "rating": 4.9,
+      "reviews": 3816,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15689393697463852091&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJBRY0FTJZwokRO9yVHnHsu9k%2Fphotos%2FAb43m-v7eQ6W9TLMlYumtC-9zGIE5ljCjsR8G0nVJ5yGmRhq8tZ_WzNI0wB-vXNNmojv7S_e75dhmmb1JNt3ej6KmugqA2Y198n8dzZHtF1lZrUE4Op6ciqlWOWeR3eZVNVLGp2tSbLOO_O5kRaClhjTb4LPi5znvXAfU9jAfIBaH0pbxA9zebHkxbggtDTyjWDMmAav4ws5s6ZV8wNs0k1ealcH3MnlRS-RKz3wY7ZjjmUn-88i8kOeWAxVMtJhcFzO46Qqm21C1WRPWV3Vs1Hz-_XncxMWL7yXIkZl0Ld9GpMZoPK1xaZ43SLov0SQG_kR4oGdoI37eqNVtMwUs6xHTfKMbIDbCf8Zlhuh-QKAiDSGVd0Mhw_7fuJVetmQf9Z3lpe9_hP8um0bJTCl4fG_GU9tWQcc-ImFhcMVycLxyH80kbs&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJs88PkWVZwokR2jF02LIXkw0",
+      "name": "787 Coffee",
+      "address": "310 W 14th St, New York, NY 10014, USA",
+      "lat": 40.739911299999996,
+      "lng": -74.003287,
+      "rating": 4.9,
+      "reviews": 3812,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=978151600972640730&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJs88PkWVZwokR2jF02LIXkw0%2Fphotos%2FAb43m-ubgyhiv2-JHn9BkSi9wY7t78t5porT3g5DP7DBWWEzm5cJTa02nHxgZOPNIMfQ_E0lv2cRDMrCz___R_f_0qp9wgCQ5bL9nldapkt2P5F8qU-x6rYDMPBZPmoQPiy3tibA1T6705q65iVq39MOG-jpG0orQ9FT6NqFWSOFuTi0EbJ2ujZ9sqRCZh5HEvXVnukEaFw63QPpvb2E2VUoDu683Oq--cJCGkTc9cPty9TY5eP4BcWM5I33b7RLowvKk9hguVEXpL01v_hoLOn0F6ctWOC0rsu7tf_T4YrwhGUWqA&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJR6rSfzdbwokRqxjfFh0tj4I",
+      "name": "787 Coffee",
+      "address": "93 Worth St, New York, NY 10013, USA",
+      "lat": 40.7165872,
+      "lng": -74.00480639999999,
+      "rating": 4.9,
+      "reviews": 3717,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 6:30 PM",
+        "Tuesday: 7:30 AM – 6:30 PM",
+        "Wednesday: 7:30 AM – 6:30 PM",
+        "Thursday: 7:30 AM – 6:30 PM",
+        "Friday: 7:30 AM – 6:30 PM",
+        "Saturday: 7:30 AM – 6:30 PM",
+        "Sunday: 7:30 AM – 6:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9407787749561276587&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJR6rSfzdbwokRqxjfFh0tj4I%2Fphotos%2FAb43m-tpV8pRcPQsv42n5mV7VvtHeMCIxHwdp73rc8AE9zSd49Km4IiUIIv-DuBzAbtW6E52KSWg_g0qNu54QJEyaCxllQ22xZO96kxg7CtmG68_24W9rE4AV0NqcNb2j69JzNc1J8QWgXFwLBi_EeDNTSkS0D-ZPOTGUJIfGxwNwemCQJEn9sfKiIw_EDpe8bEb8wtIYx7YZ2jC5h0jxeA9tO670BGfxpMgxoapcdpqHel5dgrnRuz2I5fRMsnTu4wcy2BfUMB97U5RzJZsFvUoX104vrz2uHR6D3b6XPjwHJmKiw&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJoZLve8JZwokRiI2HC6SgXpY",
+      "name": "787 Coffee",
+      "address": "131 E 7th St, New York, NY 10009, USA",
+      "lat": 40.7263237,
+      "lng": -73.9838523,
+      "rating": 4.9,
+      "reviews": 3338,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "internet_cafe",
+        "coffee_roastery",
+        "coffee_stand",
+        "tea_house",
+        "cafe",
+        "service",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10835274379928505736&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJoZLve8JZwokRiI2HC6SgXpY%2Fphotos%2FAb43m-vOLIYmYnef5tGrXZ1j3mKNRb5kBHx2_l8zdUeqooOtMLOf6P_FSbO7LfkefrJLTiN9elvr_xzgQ0LK92Pb_nsmj2h-2MYcAn0esg9O4BNTtUP12m7_6s5FyvlFboUeRfDOmz8cM1pb3tVnqxnsO55kowpP3gSmI5uxRhkXtW7cxemzGHu4rT1ZT9c0R_kf7HDE_xcM4cgxDT1p6saA9Rt77KvyTKfxSqsLJ1aoTgeYfM4sBlqUX6LbxLAHXrGCCqDi3joq0fS1YCmUzXBjob96RDy8czmlO7q52LqKjL3dihxH3D_34FEsV0jMIpzVISZvbNiJZrA2WaP5HF-kk2ATlEjKD7-o9ZdWOCe1OGqaQaU_He21ly3wNOXcrGl9N_V2e2rqK3h4Ler-mUiQiWLEhY_ZpV7CUNRYd-M-4EDKfw&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ9Tfdk8dZwokRiz6jQxTHOnY",
+      "name": "787 Coffee",
+      "address": "72 Thompson St, New York, NY 10012, USA",
+      "lat": 40.7244179,
+      "lng": -74.0029292,
+      "rating": 4.9,
+      "reviews": 2981,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8519340534972759691&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ9Tfdk8dZwokRiz6jQxTHOnY%2Fphotos%2FAb43m-uT9vfljGhMvPIlRW5TRn5-tQHoW6p8WCl3foqZrNS_q70VYxt0ElHF4KtIIUY9LIdEFtBlkH-D7B2QooQrWXuPfGfV4hzTlVXNEu6gbGCm-xtB7mpZ6tIfAN-cwMDSdIH-iqFqXdNyxzC7t3XCQs9Dn_fG3orE9BVUCVsYCdpjWcWanMYMw-B4TqpdNoi4wNC_txzc_3FuQk4kjXPQ53J5FhxxeRjxzBQqc4GjdBZ9n2xTJ2Lc-HzN3pt0TWgDWKJf6cB4R242WMN2BgX-VNC9DPER0ExgzHhWyb4BYziAXQ&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJv1FHeU5ZwokRZUZ3QKsgjdg",
+      "name": "787 Coffee",
+      "address": "340 E 70th St, New York, NY 10021, USA",
+      "lat": 40.7665717,
+      "lng": -73.9573989,
+      "rating": 4.9,
+      "reviews": 2436,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15604164203801691749&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJv1FHeU5ZwokRZUZ3QKsgjdg%2Fphotos%2FAb43m-vNeVKa2xvg8RvJ2UtiB2J3AoTf_tH7VM1ScHl96tti-QrfCOk2WDE8cLLyqe7t5Gc73JxKRqWVyK2LmwdULjCD7L543IKvq-7HpXTZYPKZ3SBSulpRMJ-KQBf49ChHA6futAJ0FHEFa89qHl6gKmd6RQQP-rEzykb7bJ3TleAydUIRCG1H27NGqKS2jDHa_lDZyIEboz_MyoQ2cydQLNrwcQ3NpXNj2NftqYxJE4vbyAQMYUI8S6xTZx6N2MKWea47yCopwj3GyVaYNtwvk_RVZwOauBtj_kaAWNYt7WP2cexPzhWNG7VondtM318p8-4_Fdl82aq3TDd-RsMh5jPamCdeqW58A6_xaB5khzNm7nCNNlB_aqRaGvkVgMYn92Bev_PmH9ol6rBKNbhmOIADphfieMQXw4nmRXoFEZdz8A&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJu31WZgBbwokRfZL2jUuHW14",
+      "name": "Simpl Coffee",
+      "address": "59 Nassau St, New York, NY 10038, USA",
+      "lat": 40.709311299999996,
+      "lng": -74.0088552,
+      "rating": 4.9,
+      "reviews": 762,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6799176821019939453&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJu31WZgBbwokRfZL2jUuHW14%2Fphotos%2FAb43m-tJ1Adb5ioqXTPXbb5X0-R-fk0hilScn2FmqI6XvFE2y30IYqMaZANUcVvWubnpL2uLgFR7lIFFrqDsRYJNAO0Um9rZpLNED-s8LR-onr-69tVxLdhsuDN-nE_4U1xbDrnU0irbyFBrXG4dLCyGwM6sPulE6RCfBorEibTVH4NTjaAsayksVmPUNkpOqYfh_PxU8w_i0PVzUL5UWeo9ErjPvQNhFTPHjy72SR_V7fN87cWxR055vXczfRhj81eHiGEKr4tyhIWFUznKhbc6YP9Z01U8NJ9Oyc7OSPYyH0I7RADG1-dJ3QSwZvXa05e3DF0jArxHQCIK1ToLjYFXLvmgxTSADG_TvPeKvM3Ns6LwLHE3MkX3mMlyY5qLYF1RUSK4rLvIbYQUSsDY1vyQ2QWV1R7ge-zgN3JbpVOGISTgfss&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJHcFFXH9ZwokR_QKedPacLiQ",
+      "name": "The Lost Draft",
+      "address": "398 Broome St, New York, NY 10013, USA",
+      "lat": 40.7208397,
+      "lng": -73.9972231,
+      "rating": 4.7,
+      "reviews": 1345,
+      "price": "$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 7:00 PM",
+        "Tuesday: 8:00 AM – 7:00 PM",
+        "Wednesday: 8:00 AM – 7:00 PM",
+        "Thursday: 8:00 AM – 7:00 PM",
+        "Friday: 8:00 AM – 7:00 PM",
+        "Saturday: 8:00 AM – 7:00 PM",
+        "Sunday: 8:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2607193816626496253&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJHcFFXH9ZwokR_QKedPacLiQ%2Fphotos%2FAb43m-tfIkGYeeGcFA2-dXQTEXfqJg_Q0kx4nEvObqvNWyO28FezI3tKd1SVMcp402ODaWmMgHMpqqsf9t6YHKeHv6Iy0UzZ2O0bwwacEIT9s-UEA7LJrs8_rDCxKzXwvTKIwj7Lkj4awisZy97vgEShCRBMbDCLfUNKwZ4VBe3477eGTT_SKJJCyAe4O6PRrvbc7zYTrpNl3fNZtRBHNmd_3Ih6uHX-jC2kw4VeF77VjhwMFsb_AbA64U6pd8LetlRnXxSsfDcJPju3mtdWidE21tIb_8_1d4oDNReHTepXzxxFmwVC6tkLYsGj0CTCwcSnba3FoW1UTiiHTFYzYISVQoYQeNuq5vw3vM_l2_fkNMbYkjcJisU6qTmNn6g6IuqUQdvWVQjVt6ZXbKviQbz5jjOB_qHPBE-QqOkJjtoD3bTc-A&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJtz83BQFcwokRrUZ9HpeGOng",
+      "name": "SEY Coffee",
+      "address": "18 Grattan St, Brooklyn, NY 11206, USA",
+      "lat": 40.7053167,
+      "lng": -73.9324176,
+      "rating": 4.6,
+      "reviews": 1069,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "coffee_roastery",
+        "tea_house",
+        "wholesaler",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8663384816810280621&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJtz83BQFcwokRrUZ9HpeGOng%2Fphotos%2FAb43m-ursnZ8DenXnnngMEo3E1z-hYqss4DWRMBtJc_DthjgBBcnveZ998Z8kHv500I6psA1tg3Sn8X9HrHhxs4vbInMBn3bH9Qukx90hlIyeAozyEoXtFwOdZRdSwpdy3nxVJgPd5it27961AjBhW8QVv3zD_b0niBV0zE-BzqLFtlZhGdRORfMZ4ynxB22G9p3P9y-gQy-9jWCdjsq2-B72SRJe3U42bk9rfO4I3Mq5XfjAqCMbLDpLHTa0FHPMT1idDv_eIq2VZNpykwxJYvJspi1Aqjuj3OA5tV5gyL-RIs-dTcFWUyGLNwahqd5c6AwpxFK42Qf9tXg_pSebtACjqKB-IjMS5cKDhRb82iguHp8HhSPNue7pOBzX_81wNsFohg4_lgq0TCDOYsT8A3kBoFnRJ1P5uNcVy1d-2LfrvCsxYdx&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJIW02-Q5ZwokR3lDY6rBN29E",
+      "name": "Embriago Coffee",
+      "address": "5 Rivington St, New York, NY 10002, USA",
+      "lat": 40.7212926,
+      "lng": -73.99295049999999,
+      "rating": 4.9,
+      "reviews": 420,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15121765596076200158&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJIW02-Q5ZwokR3lDY6rBN29E%2Fphotos%2FAb43m-s00c2PGOS79PmNm1YcimfvvO7Lt41FeriJ_NnWCdNNXxvUYuSYlEN6VTG7KG-Db_4aQjOjCbH9bicgPM-zodVxi_S1e1PvuRNmt5e9thSYKM0auz-yKcIBZvASLJLZuRBUAn-2dCiqCV4LyV1TodN_DkLRvAiZdkSSsr9ao-gq6Z0Q2TunOXsxsUkLxhP5F5DzPrJv7kU7lqzaGV2TGMnh1Ga9HdEghSKh3uTlyrgfGKUGV2ugd5jeFRi2cxOZ5P2L06GQMyVmnHFtQzeXfG0gVt9vxSWVk8Ejq1xPzqSJjkbHIsHccuJHseWHkStmzsKIIygEelouN2S-pAM1jznnJEJz_4nmyJ2nvV1XqTVfWLizD0zhzKDGJ77o6X_iHYR_clLKgrjp7JgnJ7GBODX7W_I4HrK5GULb5cXPHGEhVpp99GfhscTky56A6weh&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ_dckWptZwokR_LkU9WxPNZ4",
+      "name": "Coffee Project New York | East Village",
+      "address": "239 E 5th St, New York, NY 10003, USA",
+      "lat": 40.7270884,
+      "lng": -73.98938199999999,
+      "rating": 4.6,
+      "reviews": 816,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "restaurant",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 5:00 PM",
+        "Tuesday: 7:30 AM – 5:00 PM",
+        "Wednesday: 7:30 AM – 5:30 PM",
+        "Thursday: 7:30 AM – 5:30 PM",
+        "Friday: 7:30 AM – 5:30 PM",
+        "Saturday: 8:00 AM – 5:30 PM",
+        "Sunday: 8:00 AM – 5:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=11400105361145117180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ_dckWptZwokR_LkU9WxPNZ4%2Fphotos%2FAb43m-vVydXzeebFmZYBxaBEHdGCpWBeU4RaJ0tqLbrYJscPZZlebEm6CEqUsspXiF8LIl_s9pQftkc1WoPisUiaRVzty_RJyo1crchgeE548if9XR5yUsCcCD06MQs0ceq2trCrS0n9C-JSfvEnsQ59GTFeAf-Xfd397Fgu9ew7yYcVlvbiiml-DWlLy8fsNS9i1_xK-0QyGY1r0GeknKKAoPd6lpknX48duOtBrMiviT87ltDjT_Q8P30F28dvD0KRLfmZhiw8C4QOiKwl4jDLC8-KCpk0ikwBJGknjs1Kh_gxz-dYaWvr5jXd0Fl8xPFrZyoZc8lEnwXwlpDepkPxqLVpACHW-MjQUtaEyhPYOcURBGBspYvaH09xpgnaP2SuHB280Aj9UBXnj7XsAD8mj6PILPXpy-0_j4sUUaKYi0z2bQ&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ064AVwtZwokRK_IbyKmCNBQ",
+      "name": "La Cabra",
+      "address": "284 Lafayette St, New York, NY 10012, USA",
+      "lat": 40.72431,
+      "lng": -73.9962,
+      "rating": 4.5,
+      "reviews": 1050,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "bakery",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1455932245265871403&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ064AVwtZwokRK_IbyKmCNBQ%2Fphotos%2FAb43m-ss5daJTe5lvLtMR3y0MijEPXUkHuGiGnQvRMcIl6tMMFWULdg8s2CcmGwGtAe_Ey21TcELu9m5h1SoWJAI0WAeubznW6auzoLlUVI7Jgfse6OXysVQK9YU8MGiOI087IDV8NHuwVllAGlpwj4RptlgIbNtx4gT9DV-wIhkX_qFEIBkFNRixyDC5C3y2d4vtD9ZiBqKW1VjnTPafM56lG0DHPmcXnzL07O4Vt9i2zFcZsK0Egz-674VzLvZoL93UT1FufSAEB9xfvHBQDEszim-sbYQ7MhEUtOD3utqA9BrRQ&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJwR4noh5ZwokREcz36jnEQbo",
+      "name": "Sote Coffee Roasters",
+      "address": "329 Amsterdam Ave, New York, NY 10023, USA",
+      "lat": 40.7808931,
+      "lng": -73.97973379999999,
+      "rating": 4.8,
+      "reviews": 399,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13421224117575076881&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJwR4noh5ZwokREcz36jnEQbo%2Fphotos%2FAb43m-siljJVbrogBq5BOuCHZrCMf69Gdl2FYIjVn-HFjghIH0jwrxFUIWXoDynvOtmQvzEefukV0ZJbS6SfKeZBMwMoEnow2ngK_2NH_CS_UGVaSYQu93zwqm85mAuvCSfRL5g_Au2OmKNwa83sYHiO8-GRP4lWKi6kdVeRY6WSgy8NMAZTIwgMqogsMBaD7n99HGy8EHi_ywJZSvSGz96cT9nqexvguBDOhZ6sEp3vkiMlktO09DJvRDmFyOd915ts4cKC_f-7Xkwo9ArwKjlQx-sg7cNoi1u9GIrSFoXrd-T3KSld8ugNtl8vUva9aVh-rc0NJYZ5__Xc_rVHeU6WHauSs0Cgy2fNZ-8KQVQ6c0kVKpH5iep_CUM0NAfUk7nA6GzabT80MRrhZu0MJhpKhthm4RP2qnfw2EybmIPAmtcwkdgI&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJf2O7ky_Tw4kRlyj-Jpsxlm8",
+      "name": "Afficionado Coffee Roasters",
+      "address": "750 11th Ave, New York, NY 10019, USA",
+      "lat": 40.7676039,
+      "lng": -73.9931737,
+      "rating": 4.6,
+      "reviews": 476,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 7:30 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8040668727160481943&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJf2O7ky_Tw4kRlyj-Jpsxlm8%2Fphotos%2FAb43m-vTp_QuJbvuqI86j_eI4cyjjQovUWVJAYU20CBJDSJZIthm4LnPKqYoQJ7IsAQVhyp1oqyXtuOyqqPCtI8Csr0_rySyN6yGXh0DuWbqRlaIKb8dhJ07T0bpwqOnT_dpZRL4UUZmBkSkMadQLF1YyvaAf8gbXnyktcBtLocwtICJvFi5r6AEXtL8_fqVeL2eoMc_2gVdswUoW_Hyg3LVvjeuceSYF8Ea1SiVQ2O-hNQnm15zyKfIrlh8coOpX9Km3y5thY0nO8iS3_HwVNApPnMLZ_Fc0HIPPSX2P0fJ7tS9Bw&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ3ziX-h9ZwokRgTE-XdwJuIQ",
+      "name": "White Noise Coffee - Coffee Shop & Roastery",
+      "address": "829 11th Ave, New York, NY 10019, USA",
+      "lat": 40.7701469,
+      "lng": -73.99193149999999,
+      "rating": 4.6,
+      "reviews": 457,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "internet_cafe",
+        "breakfast_restaurant",
+        "coffee_roastery",
+        "cafe",
+        "wholesaler",
+        "restaurant",
+        "service",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9563404650783060353&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ3ziX-h9ZwokRgTE-XdwJuIQ%2Fphotos%2FAb43m-tY1poPkUhFNEph5Qxk6Hbk4AIPXg5oHRePy1_SH7q7BOo8gicSKqiO8-GqjliilQ4ZhlpRJvYrt8-mSIEuAOLYBmVDo3hPDT0WL6vTQNYlAI8a5mZOgjtwEjXxCMPd-hkz4Cj0s0dfVVGIuBo9BDyLPgsuHou_OyTgqRnRVpdCry7G9hvBIvSJxHSx0TbQv6f_z0EeKH9TUnT2gs8tyN6lME4kImakr3MpVIQuVSMP_TDJHYSaHgH22I4APixaBbpsnsfGEIO87zISBCp1Of1lIZy-v4pU8Z_MofAxOiwz58z6RZph0BwxAPLDj4-tjG1oMk_znXLCJLfHyRbKmSooCql9qQ6FHun2q_UBSvPGsUyvfuZHvOv6O5lUqqKiyQxLkmsIYSYwzta8QZUSDsSg364AOcXL8EevnqY8QNwWUxA&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ1-gCLABZwokRWwBFGp2LxYY",
+      "name": "Milkweed Studio",
+      "address": "166 Mott St B, New York, NY 10013, USA",
+      "lat": 40.7197653,
+      "lng": -73.996028,
+      "rating": 4.9,
+      "reviews": 153,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9711321678361198683&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ1-gCLABZwokRWwBFGp2LxYY%2Fphotos%2FAb43m-s7MWyVavthg_Ax6c-ATeCZlgKWhYISjXaOz44AFF2obByqg3OnHlYI_GvF5eTmT1grGmUbvlGCHBHcFx3SrLJ4JL0chC_deuQGFRnyKuszzHMYr29x2l6EsxNhD3Z9Xv7PBG7zbnlINPeOk3o0LNuVxyNIRiPuftFDV9zBzi9S6qETEgD478l3P8bi2UT4h2tzua6mDBlYXvvVFIph507G07iuA68HElKMa7l_TsoNyNBlAUhE9bzTIDRY6ZjlXIY4wKh5b36TSuWxoQnOYd4PAc-WAXZT8TjXYagDuNOVCnMSbez4CR_9HqVmIW-Cqhdk-Y80IlysKVkbl9jgqSUi1H9PO3yZh1fzjVBpIDiloFffiQb-guJYxPP0DjkbHPhEHcLpbSiv6y3hM7Ch7LBnk1fIDZ2WcBofbSG71Dnn-wsrjInlePrKjEqimF7B&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJUfk89QNZwokRjzQ5y6vjx8I",
+      "name": "Gumption Coffee",
+      "address": "106 W 45th St, New York, NY 10036, USA",
+      "lat": 40.7569259,
+      "lng": -73.983446,
+      "rating": 4.5,
+      "reviews": 301,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14035437090711876751&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJUfk89QNZwokRjzQ5y6vjx8I%2Fphotos%2FAb43m-vmw_f6rkzOuPeeYNwgLBYJ5als7b4Tt9iuBqxKczSN9Ul_2cxZzunpmRYGBQPf3f8r2VgqCHBPqO54it36FDRJwY-7eiKilULh8Ciyo4ze7FTZUfDIf8qlkTtgo_ruHez02s62bt3hIJkM0MZlWivU2DgPy-35CCNn_w6nbHN_rrkUuZ6Zjt8CF8TdKLnOF8b1BIhmUuhCvXWSsmuX79l5R8zRayP6kIAfScuENJb_o-jZY0j5xMTOz3KIcZBm3oXNfMUFxBTl7BpuASGirKPYwuCFzrzXBtVPcdmBMeZKAQ&w=800"
+    },
+    {
+      "city": "new-york-city",
+      "id": "ChIJ2U_5dwBbwokR4fDJvTfvMUY",
+      "name": "Blue Dove Coffee",
+      "address": "140 Church St, New York, NY 10007, USA",
+      "lat": 40.7146323,
+      "lng": -74.00841299999999,
+      "rating": 4.8,
+      "reviews": 56,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Thu",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 7:00 AM – 6:00 PM",
+        "Sunday: 7:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5058086879200145633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ2U_5dwBbwokR4fDJvTfvMUY%2Fphotos%2FAb43m-t3gtm3scJiIFIEbwSCEsii7v08vCWSJLgNz4p8XTemskjDWFJst4WjRBAFRdtftD1pucCAw9gjlHt83fdUrqKbSR0mYkv_S9feefvELoEr6fWOdLUBpVqH6C8FDpMD-RhxhJkzcz8p46IoAASK52jdhPQwZ1n6HKHXFIXYipRE2G39mVLMXTO8bCj_k26R5GgVgW_g-NCndoCVGvvKfq_gxYqLvXxuDjLutBca0tzzn2B4PsNXvCRJo1h922NioTIWpaIvK0luJezX-SyU12qAJGoPdLwgfNbSdj2hElf38g&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJRWo8v4RZwokRbggnxWmoWpA": {
+      "picks": {
+        "drink": {
+          "name": "Whiskey dulce de leche coffee",
+          "reason": "Specifically recommended by barista and described as unforgettable in a 5-star review; other rum/whiskey-infused specialty coffees (coquito, horchata, cinnamon rum) are also praised, showing the rum/whiskey bean lattes are the shop's standout.",
+          "quote": "Smooth, rich, and perfectly balanced...every sip feel indulgent",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are named in any review. Only merch is mentioned beyond drinks.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I had a wonderful experience at 787 Coffee in the West Village. The coffee was excellent — rich, smooth, and clearly high quality — but what truly made the visit special was the service.\n\nAmmie was incredibly kind, attentive, and welcoming. She took the time to explain the menu, made great recommendations, and genuinely made us feel comfortable and well taken care of. Her positive energy and professionalism really stood out and elevated the whole experience.\n\nThe atmosphere is cozy and authentic, exactly what you want from a neighborhood coffee shop in NYC. I’ll definitely be coming back — not just for the coffee, but for the amazing service as well. Highly recommend!"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing coffee! Do not miss. They make their own blends with unique flavours; coffee is smooth with no bitter after taste. Try the coquito and the horchata flavoured lattes with rum beans. Thank you for a lovely afternoon coffee!"
+        },
+        {
+          "rating": 5,
+          "text": "I love how quiet and cozy it is, makes it a perfect place to do some work or chill. The service here is super kind and sweet as well. I got the cinnamon rum-infused coffee and it’s sooo good, so fragrant. Will be coming here more!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:15:51.646Z"
+    },
+    "ChIJ41W9caFZwokRVJOfTKNepZI": {
+      "picks": {
+        "drink": {
+          "name": "Horchata Latte",
+          "reason": "Multiple reviewers specifically praise the horchata latte, calling it 'divine' and 10/10. It stands out among the named drinks.",
+          "quote": "the horchata was DIVINE!",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Quesito",
+          "reason": "Two reviewers mention pastries—one a 'cream cheese and honey pastry' (essentially a quesito) and another specifically names the 'fresh quesito' as a great snack.",
+          "quote": "I also grabbed a fresh quesito for a snack",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Found this little shop on a whim and it did not disappoint! The vibe is instantly set with tons of fresh indoor plants and Puerto Rican flags (Hello? Bad Bunny? Wya?)\nWe ordered a Conquito & Horchata latte both with oat milk. 10/10.\nCool thing about this place is that they have 3 different bean choices as well that they roast themselves.\nCindy was so helpful with suggestions and handled multiple customers seamlessly and with care 🤍🖤\n\nWould def return when I come back to NYC."
+        },
+        {
+          "rating": 5,
+          "text": "Awesome coffee find!\nDouble espresso was perfect! You can choose the variety of bean.\nAlso tried a cream cheese and honey pastry this was also great.\nGreat vibes, close to Penn Station, and funky interior.\nServer/owner was very friendly.\nGreat experience, put this one on your list of most visits if you want seriously good coffee."
+        },
+        {
+          "rating": 5,
+          "text": "Best coffee option near penn station, opens early. Plus lots of outlets. They were out of tres leches so I got dulce de leche instead. It was good—but the horchata was DIVINE! Shout out Cindy for beautiful latte art & kind energy ☺️"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:15:56.904Z"
+    },
+    "ChIJBRY0FTJZwokRO9yVHnHsu9k": {
+      "picks": {
+        "drink": {
+          "name": "Coquito latte",
+          "reason": "Specifically named in two 5-star reviews as a go-to, with praise for the flavored/infused coffee offerings.",
+          "quote": "Coquito and Dulce de leche are my go-tos",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "787 Coffee in Manhattan was really nice. I stopped by while walking across Manhattan during an exploratory vacation. Out of all the options, I landed on the mint cold brew pouch, which was a little pricey but 1) it was huge and 2) it’s New York City.\n\nThe mint cold brew was super tasty! It had a deep uniform flavor with a clean mint finish. It was also convenient for carrying around the city. The cafe itself is small, but it’s comfortable, cozy, and has a homey, welcoming vibe. Overall I had a nice experience."
+        },
+        {
+          "rating": 5,
+          "text": "My mom and I love coming to the 787 location on 15th street. Today we came in and Matthew was so welcoming and accommodating. We came during the blizzard and were very happy with our experience. Would highly recommend!! The coffee is also incredible."
+        },
+        {
+          "rating": 5,
+          "text": "Ordered a coquito latte and had a lovely conversation with the Barista. I love small local shops that allows you to get an intimate experience. Had the pleasure of speaking about my family coming from Ciales, PR and supported local small coffee company and bought Nuevayol coffee beans. They were recommended by the Barista."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:00.598Z"
+    },
+    "ChIJs88PkWVZwokR2jF02LIXkw0": {
+      "picks": {
+        "drink": {
+          "name": "Coquito latte",
+          "reason": "Multiple reviewers praise specialty PR-inspired lattes; coquito and horchata latte both highlighted, with coquito directly called 'so good' alongside strong praise for the PR coffee overall.",
+          "quote": "I had the coquito latte and the quesito. Both were so good",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Quesito",
+          "reason": "Quesito is the most-named food item across reviews, called 'delicious' and 'so good' by multiple reviewers in 5-star reviews.",
+          "quote": "Delicious quesito",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Wow, wow! Amazing coffee, first time we had this PR coffee! I will have this again 1000% it was delicious and so fresh. Given to me in a bag which is so cool. Customer service was A1. Tiny location but still was worth the stop."
+        },
+        {
+          "rating": 5,
+          "text": "The owner was fantastic. The drinks were great. I have had Matcha in other coffee shops but this by far was the best MATCHA I have had. My family members also had coffee drinks and quesitos and it was great. Will come again."
+        },
+        {
+          "rating": 5,
+          "text": "The vibe and atmosphere is cozy and intimate. I ordered the horchata latte and it was perfectly “not too sweet”. This is also a fun place because of swings at the window where you can look out while enjoying a coffee. Daniella & Nikki were amazing!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:05.338Z"
+    },
+    "ChIJR6rSfzdbwokRqxjfFh0tj4I": {
+      "picks": {
+        "drink": {
+          "name": "Coquito latte",
+          "reason": "Mentioned across multiple 5-star reviews with specific praise for flavor balance and perfect espresso.",
+          "quote": "The coquito coffee was phenomenal",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Freshly baked cookies",
+          "reason": "Multiple reviewers rave about the fresh-from-the-oven cookies, with one regretting not buying more.",
+          "quote": "a big freshly baked cookie was chefs kiss",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "787 Coffee is such a cozy and welcoming space with an amazing vibe. The atmosphere is warm, inviting, and perfect for relaxing, working, or catching up with friends. The coffee is absolutely delicious — rich, smooth, and clearly made with care and quality beans.\n\nWhat makes this place even more special is the history behind it. You can truly feel the passion and story in every cup, which adds a deeper meaning to the experience. From the friendly staff to the thoughtfully designed space, everything comes together beautifully.\n\nIf you’re looking for great coffee, a cozy environment, and a place with heart and history, 787 Coffee is a must-visit ☕️✨"
+        },
+        {
+          "rating": 5,
+          "text": "My first time trying 787 Coffee and I am quite amazed. I got a whiskey infused Mazapan latte and it tasted just like the Mazapan I’ve had growing up. My friends recommended this spot to me and it certainly lived up to its hype. I would 100% recommend this place to everyone. The service was also very lovely, I felt very welcomed and was recommended on what to get.\n\nIt’s also not too sweet and I’d say it was perfectly balanced"
+        },
+        {
+          "rating": 5,
+          "text": "It’s been 24 years since I’ve visited NY. It being a last minute thing, it seemed everywhere I went didn’t have a sufficient cup of coffee. I didn’t even attempt to get it out of knowing it was going to be garbage.\n\nWe drove past this location heading to Canal street. I instant knows I had to try it especially being Puerto Rican coffee runs in my veins.\n\nBefore heading back home I told myself I had to stop here and may I tell you I was NOT DISAPPOINTED AT ALL..\n\nThe coquito coffee was phenomenal and you could literally taste everything from. The coffee to the coquito to the cinnamon and chacho mang, I could have drank 2 more cups on the jump of how good it was 🤤😋\n\nBut of course I didn’t just try the coffee. Milo had just brought out a fresh batch of cookies. Like literally out the oven. I bought 3 and while driving back to Buffalo and fighting over the last bite, I instantly regretting not cleaning out the remainder cookies.\n\nThis was a dope find and 100% recommend this place!!!!!!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:09.521Z"
+    },
+    "ChIJoZLve8JZwokRiI2HC6SgXpY": {
+      "picks": {
+        "drink": {
+          "name": "Dulce de Leche Latte",
+          "reason": "Specifically praised in a 5-star review for smooth, creamy texture and balanced caramel-rum notes. Other reviews praise coffee generally but don't name specific drinks.",
+          "quote": "Smooth and creamy, with deep caramel notes and a subtle touch of rum",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Banana bread",
+          "reason": "The only food item named in any review, described as homemade and delicious in a 5-star review.",
+          "quote": "their homemade banana bread that was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "⭐⭐⭐⭐⭐\n787 Coffee never disappoints! The atmosphere is warm, the coffee is rich and smooth, and the service is always on point. Big shoutout to Octavio, my barista — he was welcoming, professional, and made my drink perfectly. You can tell he takes pride in what he does. Definitely coming back!"
+        },
+        {
+          "rating": 5,
+          "text": "The Dulce de Leche Latte with rum infusion is truly delightful. Smooth and creamy, with deep caramel notes and a subtle touch of rum that adds character while maintaining perfect balance.\nSpecial recognition to barista Nicky for her impeccable work — her precision and dedication are evident in every perfectly crafted cup. A refined experience worth repeating. ☕✨"
+        },
+        {
+          "rating": 5,
+          "text": "Loved this coffee in PR and was so excited to see it when we visited NY! Tasted just as good as it did in PR. So smooth and perfect! All of us espresso lovers loved this."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:13.873Z"
+    },
+    "ChIJ9Tfdk8dZwokRiz6jQxTHOnY": {
+      "picks": {
+        "drink": {
+          "name": "Coquito latte (or Horchata latte) with rum-infused beans",
+          "reason": "Multiple reviewers specifically praise the specialty lattes paired with the rum-infused coffee beans. The coquito latte was called 'creamy and perfect' and the horchata latte with rum beans also drew strong praise.",
+          "quote": "creamy and perfect — adding the rum coffee beans would've been a crime to skip",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Banana bread",
+          "reason": "Only one reviewer mentions it, but they praised it positively and noted generous portions. The cookie was also mentioned once, making food data limited overall.",
+          "quote": "banana bread and they were very generous and gave me 2 big slices",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I’ll start off by saying I’m not a coffee drinker.  But 787 was close, it was cold & had time to spare. So good  I went back two days in a row.\n\nThe coquito latte was creamy and perfect — and Jonathan’s recommendation to add the rum coffee beans would’ve been a crime to skip. Absolute upgrade.\n\nDay two I had the horchata — smooth, lightly sweet, and just as delicious.\n\nThe inside is bright, welcoming, and such a nice place to linger. Great drinks, even better service. A lovely spot."
+        },
+        {
+          "rating": 5,
+          "text": "An amazing little Puerto Rican Gem in the heart of SOHO. Loved the atmosphere, the coffee was PHENOMENAL! They had different flavored beans imported directly from their farm in Puerto Rico. Jonathan behind the counter was super helpful and informative."
+        },
+        {
+          "rating": 5,
+          "text": "A Delightful Stop with Stellar Service and Spanish Flair\n\n​Five stars! This coffee shop is definitely worth a stop and offers a refreshing change from the usual choices, thanks to its unique Spanish-influenced coffees.\n\n​The welcome and service were truly outstanding. John provided a great experience. His recommendation was spot-on and perfectly aligned with my taste—a clear sign of an attentive and knowledgeable staff member. The cookie was yummy and perfectly moist.\n\n​If you’re looking for high-quality service and a unique twist on your coffee routine, this is the place to be!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:19.192Z"
+    },
+    "ChIJv1FHeU5ZwokRZUZ3QKsgjdg": {
+      "picks": {
+        "drink": {
+          "name": "Coquito latte",
+          "reason": "Multiple reviewers specifically order and praise the coquito latte, often with rum beans and oat milk, tied to the shop's Puerto Rican identity.",
+          "quote": "a hot Coquito latte with rum beans and oat milk",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Quesito",
+          "reason": "Specifically named and described positively as pairing well with the signature coquito latte.",
+          "quote": "a lovely combo with coquito latte",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Honestly wasn’t expecting to find such a cute little cafe in such a busy part of the Upper East Side/Midtown area….my wife and I stopped by while we were heading to a hospital checkup…place is tiny, but that’s actually what made it special for us 🥰🥰 When we walked in, there were only two people there — a guy named Singh and a lady probably working with him. Because the place is so small and cozy, we ended up having a really nice conversation with Singh and quickly became friends. We even took a photo together an I just uploaded. Before we left, he told us that next time our coffee would be on the house. We also agreed to meet again the next time we come for a hospital checkup … March 25th. We’ll probably be there around 1 PM, or maybe 2 PM at the latest. If you read this hello Singh 😉😉 Just wanted to leave this here for anyone who comes across this place. I really loved the atmosphere and the people. Hopefully we’ll be back for another latte on March 25th before our appointment. Maybe we’ll see some of you there too! ☕️"
+        },
+        {
+          "rating": 5,
+          "text": "I’ve been going to this location for a while now. My girlfriend orders the same thing every time because it’s just so good: a hot Coquito latte with rum beans and oat milk. She says it’s really cozy to drink and reminds her of family traditions (she’s Puerto Rican btw). She had to rep a Puerto Rican Owned business! Honestly, it’s really good from what I’ve tasted. My girlfriend thinks so too so we always come back!! Dress is a super cool barista, super nice and easy to talk to. You get in a convo and the next second your drink is done. We thought it deserved a shoutout for coming here so often! Service- amazing!! The drinks absolutely amazing!! Atmosphere- super calm and cozy! Love going here!!"
+        },
+        {
+          "rating": 4,
+          "text": "Compact cafe serving Puerto Rican flavor inspired coffee drinks. The high-end beans make for an expensive yet flavorful cup. I tried a quesito, a small cheese-filled layered pastry with honey glaze, and it was a lovely combo with coquito latte. But with tax and tip I hit $20. The space is small with four seats. So you likely will be taking anything to go."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:23.200Z"
+    },
+    "ChIJu31WZgBbwokRfZL2jUuHW14": {
+      "picks": {
+        "drink": {
+          "name": "Strawberry Matcha Latte",
+          "reason": "Mentioned in multiple 5-star reviews with enthusiastic praise; customizable and refreshing.",
+          "quote": "real strawberry matcha latte. It was amazing and refreshing",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "Only one food item (croissant) was mentioned and it was described negatively as 'very mid' and needing to be rebaked.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I thought that a 5-star rating only happened when the owner rated its own establishment. However, I was wrong. This little coffee shop has many reviews and a perfect, well-deserved score. The house blend is medium toast with the flavor of something closer to dark roast; exquisite. The staff is very courteous and attentive. The site is clean, the espresso machine looks very clean, and the presentation is top notch with some type of latte art."
+        },
+        {
+          "rating": 5,
+          "text": "The real chocolate latte was delicious! You can tell they use real chocolate and the grated chocolate on top is a nice aesthetic and flavorful choice. Would be my go to spot if I lived here! My husband got the strawberry matcha latte which was also really good!!"
+        },
+        {
+          "rating": 4,
+          "text": "Great Americano, not acidic or burnt.\nCroissant was very mid. Not crunchy or airy. Cold tasting and need to be rebaked. I suggest take it home and rewarm with oven"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:30.049Z"
+    },
+    "ChIJHcFFXH9ZwokR_QKedPacLiQ": {
+      "picks": {
+        "drink": {
+          "name": "Sesame latte",
+          "reason": "Strongest specific praise in a 5-star review; osmanthus latte received mixed reviews.",
+          "quote": "sesame is wonderfully blended and adds an earthy, caramelized flavor",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "Food mentions are either negative (cold egg bites, disappointing cookie butter) or lukewarm (cookies and pastries are 'fine'). No food item has positive support.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Great vibes but questionable mixing mechanics.\n\nMy friend and I were looking for unique latte spots around SoHo, and this place came up. We stopped by late afternoon on a weekend, and the café was absolutely packed with people working. We grabbed seats at the bar and ordered their popular osmanthus latte and honey rose latte, both iced.\n\nThe lattes themselves were solid, but because we got them iced, it felt like the honey and syrups didn’t fully integrate into the coffee. The first 80% of the drink was just generic latte, and we kept swapping cups trying to figure out which was which. It wasn't until we hit the bottom of the cup that the flavors finally woke up and punched us in the face. I’d recommend ordering these hot if you want a more even flavor from start to finish."
+        },
+        {
+          "rating": 4,
+          "text": "Stopped by The Lost Draft for an Osmanthus latte - it was smooth but too mild to really catch the osmanthus flavor. The café has a warm, earthy vibe with plenty of seating. It’s a cozy spot to unwind or get some work done."
+        },
+        {
+          "rating": 5,
+          "text": "I’ve been searching for a sesame latte to top the black sesame latte from Tadaima, and the Lost Draft now has my second favorite. The sesame is wonderfully blended and adds an earthy, caramelized flavor to the latte.\n\nThis is also a great place to work, having good WiFi, outlets, lots of seating, and a bathroom."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:33.870Z"
+    },
+    "ChIJtz83BQFcwokRrUZ9HpeGOng": {
+      "picks": {
+        "drink": {
+          "name": "Iced coffee",
+          "reason": "Multiple reviewers praise the rotating roast iced coffee, served with sparkling water for an unexpected flavor dimension.",
+          "quote": "One of the best iced coffees I've ever had",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "Only one passing mention of pastries being fresh, with no specific item named.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "A visit to Sey Coffee is nothing short of a pilgrimage for anyone serious about specialty coffee. This is a world-renowned roastery whose coffees are celebrated in some of the best specialty cafés globally — including Motors Coffee — and experiencing it at the source is something special.\n\nThe top-shelf espressos were absolutely mind-blowing. Clean, expressive, layered — every shot showcased precision and a deep respect for the coffee itself. You can taste the intention behind every detail.\n\nA special thank you to Daniel and Lorenzo for making my visit unforgettable. Their knowledge, hospitality, and genuine passion elevated the entire experience.\n\nSey continues to set the bar for what modern specialty coffee can be."
+        },
+        {
+          "rating": 5,
+          "text": "There is no hype behind this coffee shop, hyperbole over the quality of exacting standards in this veritable laboratory where cups of coffee are constructed. Plant lined walls and ceilings reminiscent of your favorite rain forest. While lines may at times seem lengthy, to cue for coffee is indeed worth the wait for a liquid masterpiece. Friendly staff, plethora of flavors and alternatives -hot dark chocolate for the non-coffee drinkers. Delicious and chill without laptops or wifi -come to drink and socialize"
+        },
+        {
+          "rating": 5,
+          "text": "One of the best iced coffees I’ve ever had.\n\nEverything here seemed to revolve around the roast. No trendy drinks, no syrups, just coffee and tea. They rotate the roast for their iced coffee, and the one they were using when I went was incredibly fruity. Even served cold, it maintained onto that bright acidity you usually only get from a well-made filtered coffee.\n\nThe best part was that they serve it with a free cup of sparkling water. Taking a sip of the coffee and then a sip of the sparkling water added this unexpected dimension. Almost like a deconstructed espresso tonic. For whatever reason, the fizz gave it a lightly sweet finish that wasn’t there on its own. I tried pouring a bit of the sparkling water into the coffee at the end, but it didn’t hit the same."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:37.293Z"
+    },
+    "ChIJIW02-Q5ZwokR3lDY6rBN29E": {
+      "picks": {
+        "drink": {
+          "name": "Einspanner Latte",
+          "reason": "Explicitly highly recommended; lattes broadly praised as smooth, creamy, and amazing across multiple reviews.",
+          "quote": "Highly recommend the einspanner latte which is delicious",
+          "confidence": "high",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Spinach and Feta Bistro",
+          "reason": "Only named food item, described as perfection in a 5-star review.",
+          "quote": "The spinach and feta cheese bistro was perfection",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Highly recommend the einspanner latte which is delicious. The decaf flat white was average. The barista never called us for our drinks so they were sitting on the counter for a couple of mins. There's some seating."
+        },
+        {
+          "rating": 5,
+          "text": "((4.5 stars))\n\nslender stretched coffee shop planted on a sleepy block of Rivington. warm tones + neatly maintained + clean to the eye woody decor with the interruption of exposed brick, with some seating up front. a place to sip a quality brew of coffee and quiet conversations as the vibe here is a string of sedated subtle moments while enjoying the finer things in coffee craft.\n\nthe vibe really is quiet and warmth--like the long in-between pauses of drunkeness minus any insober boisterousness. it's calm caffeination.\n\nstopped by here several times. the coffee is made by the owner / operator, i think. it's never rushed. the last Cortado I sipped here on  the coffee shop bench outside…made me wish i got it to stay in a proper cup and sink into the rich smoothness of of the cortado espresso flavors balanced by the steamed milk. it makes you understand that there really is nothing better than enjoying simple things without having to complicate it with too many thoughts or explanations. all that said, good coffee offered, made, and served proficiently.\n\nthe service is quiet. no small talk. it's somewhat strange for a coffee shop, but fits the tone of the Embriago bc banter might sink the rhythm or just might elevate it. idk. come for the coffee and stay for the calm."
+        },
+        {
+          "rating": 5,
+          "text": "My husband prides himself on finding the best coffee in any city we go to, and EMBRIAGO was no exception.\n\nThe oat milk lattes were smooth and creamy, the perfect temperature, each cup a work of art. The spinach and feta cheese bistro was perfection.  The service was warm and welcoming.  We will definitely be back!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:41.103Z"
+    },
+    "ChIJ_dckWptZwokR_LkU9WxPNZ4": {
+      "picks": {
+        "drink": {
+          "name": "Deconstructed latte",
+          "reason": "Signature drink with specific high praise; other reviewers also rave about the anaerobic Colombian pourover, but the deconstructed latte is the cafe's known specialty.",
+          "quote": "rich, smooth, and beautifully balanced",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Almond croissant",
+          "reason": "Only specific food item mentioned, described in detail with positive experience including staff warming it up.",
+          "quote": "crisp outside, soft and fragrant inside—no sogginess",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "One of the best pourovers I've had in a cafe in a long time! Loved this cafe. The baristas are super nice and very skilled, which is hard to find in a lot of the country.\n\nI ordered a washed anaerobic Colombian from their Competition series. Sometimes these coffees can be a bit over fermented for my taste, but this was probably the best anaerobic I've ever tried. The barista brewed in an origami dripper. Such a nice acidity and balanced flavor that was sweet and fruity tasting. My wife got a hot chocolate that she very much enjoyed as well."
+        },
+        {
+          "rating": 5,
+          "text": "Coffee Project New York is hands down one of the best coffee spots I’ve ever visited in the city! The atmosphere is cozy and welcoming, with the aroma of freshly brewed coffee filling the air. Their baristas are incredibly skilled and friendly — they truly care about every cup they serve. I tried their signature deconstructed latte, and it was an experience in itself — rich, smooth, and beautifully balanced. The minimalist decor and chill vibe make it perfect for relaxing or getting some work done. Definitely a must-visit for true coffee lovers in NYC!"
+        },
+        {
+          "rating": 5,
+          "text": "Coffee Project in the East Village is a small, modern spot with a Euro-café vibe (bonus points for the no-laptop policy). Their medium-roast blend—Colombia meets Guatemala—hits a sweet spot: smooth milk-chocolate body with a caramel finish, zero bitterness, and plenty of flavor.\n\nI ordered an almond croissant, and the staff offered to pop it in the oven. It came out crisp outside, soft and fragrant inside—no sogginess. They even let us enjoy a couple of pastries we’d picked up elsewhere at their outdoor table, all with genuine warmth.\n\nFriendly people, thoughtful touches, and a medium roast I’d gladly order again. Perfect coffee-and-pastry stop in the neighborhood."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:45.595Z"
+    },
+    "ChIJ064AVwtZwokRK_IbyKmCNBQ": {
+      "picks": {
+        "drink": {
+          "name": "Cardamom latte",
+          "reason": "Specifically praised in multiple 5-star reviews for balanced sweetness, smooth coffee, and signature cardamom aroma.",
+          "quote": "The cardamon latte was so yummy",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Pain suisse",
+          "reason": "Called 'delicious and overall perfect' in one review and rated 9/10 'very flakey and chocolately' in another; noted as one of their most popular pastries.",
+          "quote": "very flakey and chocolately! Would get again",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "La Cabra is absolutely worth the hype. The coffee was outstanding—smooth, rich, and perfectly balanced, the kind that reminds you why you love specialty coffee in the first place. I paired it with an almond croissant, and it was honestly so good: flaky, buttery, with just the right amount of almond filling, not too sweet and beautifully baked.\nYes, expect a line outside, especially during busy hours, but don’t let that discourage you. The wait moves fairly quickly, and once you taste the coffee and pastries, you’ll understand why people are willing to queue. It’s very much worth it.\nThe space itself is minimal, calm, and thoughtfully designed. There’s also a quiet resting/sitting area, which makes it a nice spot to slow down, recharge, and actually enjoy your coffee instead of rushing through it. A must-visit for coffee lovers."
+        },
+        {
+          "rating": 5,
+          "text": "This is truly one of the finest cafés in New York City. Originally from Denmark, they now have multiple locations across the city, and I’ve visited one — this one happens to be a bit more spacious. When I stopped by on a weekday afternoon, the place was buzzing with energy. There was a steady line at the counter, but the atmosphere felt cozy and lively.\n\nI ordered my usual iced cardamom latte, which I highly recommend if you love the aroma of cardamom. The sweetness is perfectly balanced, the coffee smooth, and the milk-to-espresso ratio spot-on. That subtle hint of cardamom really elevates the flavor — it’s one of my absolute favorites.\n\nI also picked up a ham and cheese croissant. The barista didn’t warm it up, and I didn’t ask either — but even served cold, it tasted delicious. Flaky, buttery, and satisfying enough to devour right away. I can only imagine it would be even better warm.\n\nOverall, great coffee, good food, and an inviting atmosphere. Definitely one of my go-to café spots in NYC — I’ll absolutely be back."
+        },
+        {
+          "rating": 4,
+          "text": "They have a lot of good washed coffees. Sagastume in particular has a smooth tea like body and taste - a good everyday cup. Pricing is not terrible - $25 for 200oz but in store cups were like $12 a piece which is pretty crazy. I would come here again for tea-like coffees that are washed and tasty baked goods but I was sad there were no special or interesting fermented / funky coffees."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:50.168Z"
+    },
+    "ChIJwR4noh5ZwokREcz36jnEQbo": {
+      "picks": {
+        "drink": {
+          "name": "Espresso",
+          "reason": "Reviewer specifically praised the espresso beans pulling with rich crema and smooth balanced finish after a barista consultation. Other reviews broadly praise the coffee but don't name specific drinks.",
+          "quote": "pulled beautifully with rich crema and a smooth, balanced finish",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Homemade cakes and cookies",
+          "reason": "One reviewer specifically called out homemade cakes and cookies as great dessert options; another mentioned fresh, delicious pastries generally.",
+          "quote": "Great desserts options from home made cakes and cookies",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "A very cozy, welcoming spot with a genuinely homey feel. Small tables, comfortable chairs, and even a little couch that makes you want to stay longer than planned.\n\nThe coffee is done properly, smooth and well balanced, and the pastries are fresh and delicious. The service is genuinely friendly and attentive without hovering, which is rarer than it should be.\n\nThis place feels personal and relaxed, like a neighborhood café that actually cares. Easy five stars."
+        },
+        {
+          "rating": 5,
+          "text": "SOTE Coffee Roasters in NYC was an incredible experience from start to finish — the space felt intentional, calm, and genuinely crafted for people who love great coffee. The barista took time to walk me through their espresso options, and I ended up grabbing a bag of beans that pulled beautifully with rich crema and a smooth, balanced finish. If you care about quality roasting and thoughtful hospitality, SOTE absolutely delivers."
+        },
+        {
+          "rating": 5,
+          "text": "Highly recommend for coffee lovers in UWS ☕\nThis coffee shop has such a lovely atmosphere — it’s small, cozy, and super welcoming. You can smell the coffee from the moment you walk in. The drinks taste great, nicely bold and perfectly balanced — exactly my kind of coffee.\n\nThe owner and staff are incredibly friendly and make you feel comfortable right away. It’s a perfect spot whether you want a quick grab & go or to sit and chill with friends 🤍\n\nBest part… it’s dog-friendly too! 🐶✨ Love this place so much."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:54.607Z"
+    },
+    "ChIJf2O7ky_Tw4kRlyj-Jpsxlm8": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Mentioned positively alongside the standout cookie, and seasonal latte variations (eggnog latte) also praised.",
+          "quote": "Perfect combo with their latte or cold brew",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Sea salt chocolate chip cookie",
+          "reason": "Received the most specific and enthusiastic praise of any food item across the reviews.",
+          "quote": "soft, gooey, and that touch of sea salt makes it irresistible",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Great overall vibe inside. We came on a Sunday morning so it was quite busy but was a nice atmosphere. Service was good. Coffee had nice flavor and staff were efficient. The chocolate croissant was good too."
+        },
+        {
+          "rating": 5,
+          "text": "Unique and delicious! The seasonal offerings are wonderful- we tried the eggnog latte and dolce natale. We also enjoyed the food offerings- a hummus and tomato tart + a delicious tuna melt. The atmosphere is cozy and well curated (extra bonus for having macadamia milk!)"
+        },
+        {
+          "rating": 5,
+          "text": "The vibes in here are amazing! So many comfy chairs, benches and places to sit and work. Like a little piece of Mediterranean peace in hell's kitchen. Great music, and, on top of all of it, great coffee! I came to reconnect with an old friend and we had a lovely time. Gen especially gave me great service. Highly recommend!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:16:59.665Z"
+    },
+    "ChIJ3ziX-h9ZwokRgTE-XdwJuIQ": {
+      "picks": {
+        "drink": {
+          "name": "Vanilla Bean Latte",
+          "reason": "Explicitly praised in a 5-star review with a specific recommendation (extra shot). Matcha latte and iced americano also mentioned positively, but vanilla bean latte got the most enthusiastic specific callout.",
+          "quote": "Vanilla Bean Latte with an extra shot was so good",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Avocado toast",
+          "reason": "Named as a reviewer's favorite food option alongside their coffee order. The scone received mixed feedback (charred bottom), making avo toast the safer pick.",
+          "quote": "fave is avo toast + iced americano",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "White Noise is easily one of the most comfortable coffee shops I’ve been to. The space is large with plenty of seating, and it never feels crowded or noisy. The overall vibe is calm and pleasant, and the abundance of plants makes the atmosphere feel fresh and relaxing. It’s the kind of place where you can genuinely sit and enjoy your time, whether you’re working, studying, or just unwinding.\n\nThe coffee is delicious and offers a great variety of options. Personally, I tend to prefer my coffee a bit stronger and more bitter, so next time I’ll probably ask for an extra shot. Still, the quality and selection are impressive.\n\nThe pastries looked incredibly tempting as well. I was too full to try one this time, but I’ll definitely be back to give them a try.\n\nThe staff were also very friendly and helpful. They gave recommendations based on my preferences, which made the experience feel even more welcoming and personalized.\n\nThe only downside is that the cafe closes at 6 PM. If they stayed open later, this place would easily be a perfect 10/10. It’s such a great space that you naturally want to spend more time here."
+        },
+        {
+          "rating": 5,
+          "text": "Vanilla Bean Latte with an extra shot was so good. Atmosphere is chill.  You may have to wait for your drink so don’t come in a huge rush, but it is worth the wait.  If you like working to chill music, this place is excellent"
+        },
+        {
+          "rating": 5,
+          "text": "Nice place, friendly staff, not noisy, love the Korean music. Calm environment. Can work from here which is a plus for me. The scone was good, the bottom was on the charred side so I removed it and was able to enjoy the top portion which was delicious."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:17:04.111Z"
+    },
+    "ChIJ1-gCLABZwokRWwBFGp2LxYY": {
+      "picks": {
+        "drink": {
+          "name": "Magic",
+          "reason": "Specifically praised in multiple high-star reviews as a stronger, richer flat white; the pistachio milk version got particular acclaim.",
+          "quote": "the magic w/ pistachio milk was amazing with a very distinct flavor",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Cardamom bun",
+          "reason": "Mentioned positively in two reviews, including a 10/10 rating and a comparison to La Cabra.",
+          "quote": "Cardamom bun ($6): 10/10, they warmed it up for us!",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "What a beautiful new coffeeshop on an already charming small  yet bustling Nolita street! The flat white prepared by Sam was excellent and the pour-over was incredibly tasty. The space itself is well-designed with lovely lighting fixtures creating a cozy enjoyable atmosphere. I loved it here for the reasons just mentioned but also because the folks working here are just wonderful people, kind and inviting. Thank you Sam and Josh!\nPs. They roast their own coffee and even offer house made cashew and pistachio milk so definitely need to return to try those!"
+        },
+        {
+          "rating": 5,
+          "text": "An amazing little coffee shop owned by the sweetest team. I tried the Magic - think a stronger and richer flat white - which was delicious and gave me the perfect kick of caffeine. There’s a few tables and seating areas, but do keep in mind that it can become quite crowded and noisy on the weekends. Definitely a place I would stop by again whenever I’m in the area!"
+        },
+        {
+          "rating": 4,
+          "text": "Really cute cafe with vibey seating. The owner is really nice!\n\nCame on Valentine’s Day with my friend during the afternoon, and they had heart spoons 🥹 not sure if that’s a regular thing tho\n\n- Cardamom bun ($6): 10/10, they warmed it up for us! Strong cardamom bun flavor. Very soft texture\n- Homemade knafeh ($6): 3/10, not sure if this is a different variation of knafeh, but it didn’t have the shredded phyllo dough on top, and it was cold. Tasted more like a flan but not as good as a flan"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:17:08.344Z"
+    },
+    "ChIJUfk89QNZwokRjzQ5y6vjx8I": {
+      "picks": {
+        "drink": {
+          "name": "Pistachio & Salted Caramel Latte",
+          "reason": "Mentioned in multiple reviews with mixed but notably enthusiastic praise in a 5-star review calling it surprisingly good. It's the most-named specific drink.",
+          "quote": "Could not believe how good they were",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any review. Bananas in Pajamas appears to be a drink, not food.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "My wife and I visited NYC during a blizzard and stopped to warm up with coffee and an almond milk matcha. They are top atmosphere is fun, coffee tasty and high quality, and the matcha was very healthy and could use some added sugar to sweeten it up. The baristas were awesome and provided fun and great service. We really enjoyed our first time to Gumptown."
+        },
+        {
+          "rating": 3,
+          "text": "Gumption clearly prides itself on deep coffee knowledge and serious experience — and they make sure you know it. Unfortunately, the focus seems to lean more toward coffee than toward people.\n\nI had a cortado, which is usually my benchmark for judging bean quality, extraction, and latte art. Sadly, none of the three really stood out. Perfectly drinkable, but far from memorable — especially considering the reputation.\n\nBut here’s the bigger issue: coffee simply never tastes as good when the people serving it make you feel like you’re not particularly welcome in their shop. Expertise is great; hospitality is better.\n\nToo bad, because the potential is clearly there."
+        },
+        {
+          "rating": 2,
+          "text": "I've walked by this coffee shop a few times, and it definitely catches your eye -- vibrant colors, cool art, and a really nice setup even though the space is small. I tried the iced pistachio salted caramel latte from their seasonal menu, but it was way TOOOOOO sweet for me. The pistachio flavor completely overpowered everything, and I couldn't taste the caramel at all. Not really a fan of this one. Meh."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:17:12.730Z"
+    },
+    "ChIJ2U_5dwBbwokR4fDJvTfvMUY": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Matcha is the most frequently mentioned drink, with positive reviews calling it 'yummy' and 'proper'. The iced latte also got strong praise but matcha has more mentions.",
+          "quote": "I had a real yummy matcha, it tasted right",
+          "confidence": "medium",
+          "mention_count": 3
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 2,
+          "text": "Want to like this place but maybe this is what happens when you go from a coffee cart to a real brick and mortar biz. The store is tiny, in a lobby building but the coffee has a huge price tag. Paid over $8 for an ice latte. The barista looks like an amateur, didn’t really know how to grind an espresso and just used a distributor to tamp the puck. The machine also looks like it’s used from a corner deli. Coffee tasted terrible to me.  What a waste and a pass for me. Head across to street to Birch to get what I think is the one of the best in NYC."
+        },
+        {
+          "rating": 3,
+          "text": "UPDATE: 3 stars now.\n\nThis WAS my new fav spot. I live nearby so they have some tough competition with all the great cafes in the area. They have a mobile app which makes it way easier for me knowing I won’t have to wait for my matcha. However they never check their system so I always have to ask them when I come in.\n\nI had to lower my stars from 5 down to 3 bc I come in all the time and every time I ask for a large and confirm 16oz, they make me a small 12oz. The error stops at the register so they are always correct in charging me their large but when it comes to making it, their memory goes out the window. It happened 3x in a row with 2 different baristas. Look, I can stop them up front, but that gives me so much anxiety to correct their error. I’m that type of people pleaser that will just drink a completely messed up order if it avoids having to ask them to fix it. lol. Anyway, after the 3rd time, it’s kinda just like an operational issue. I’m not paying them for exposure therapy to fix my people pleasing anxiety. I’m paying for a large 16oz drink."
+        },
+        {
+          "rating": 5,
+          "text": "Not sure why this place has bad reviews, if you’re coming here for a drink, you’ll get a good one. I had a real yummy matcha, it tasted right, nothing crazy or outlandish. Just a proper beverage."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-28T03:17:16.791Z"
+    }
+  }
+}
