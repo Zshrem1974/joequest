@@ -2,7 +2,7 @@ You're joining the JoeQuest project as PM-in-the-loop. Get up to speed and help 
 
 ## What JoeQuest is
 
-A recommendation engine that reads a coffee shop's Google reviews and names the ONE drink and ONE food item most worth ordering at each café. Per-café picks roll up into city-wide "best of" awards. Picks come from Claude (Opus 4.7) with JSON-schema-enforced structured output. There is a live, deployed web MVP covering **6 South-Florida cities**: Boca Raton, Delray Beach, Boynton Beach, Deerfield Beach, Fort Lauderdale, Miami.
+A recommendation engine that reads a coffee shop's Google reviews and names the ONE drink and ONE food item most worth ordering at each café. Per-café picks roll up into city-wide "best of" awards. Picks come from Claude (Opus 4.7) with JSON-schema-enforced structured output. There is a live, deployed web MVP covering **10 cities across South Florida and the central Gulf Coast**: Boca Raton, Delray Beach, Boynton Beach, Deerfield Beach, Fort Lauderdale, Miami, Parkland (FL); Slidell (LA); Gulfport, Biloxi (MS).
 
 ## Where the project is right now — LIVE
 
@@ -11,11 +11,12 @@ A recommendation engine that reads a coffee shop's Google reviews and names the 
 - Hosted on Render (free tier, deployed via `render.yaml` blueprint).
 - Verified live: `/api/status` reports a `snapshots[]` array (one entry per
   city, all loaded from disk). `/api/cafes?city=<slug>` returns that
-  city's cafés; `/api/cafes?all=1` returns the flat union (90 cafés total).
+  city's cafés; `/api/cafes?all=1` returns the flat union (125 cafés total).
   `/api/cities` powers the dropdown. Warm response ~190 ms.
 
-Coverage: **90 cafés across 6 cities** (Boca 21, Delray 15, Boynton 11,
-Deerfield 9, Fort Lauderdale 18, Miami 16).
+Coverage: **125 cafés across 10 cities** — Boca 21, Delray 15, Boynton 11,
+Deerfield 9, Fort Lauderdale 18, Miami 16, Parkland 2 (FL); Slidell 15 (LA);
+Gulfport 9, Biloxi 9 (MS).
 
 ## Build artifacts (~/joequest/)
 
@@ -23,7 +24,7 @@ Engine / CLI: `test-offline.js`, `joequest-engine.js`, `scan-list.js`, `recurate
 Live app:
 - `server.js` (Express API: list, detail, photo proxy, favourites, taste, auth-config, status, **cities, zip→latlng**; multi-snapshot loader)
 - `lib/data.js` (shared data layer: filters, Google Places, Claude pick, hours label; **city-parameterized**)
-- `lib/cities.js` (**6 FL city configs**: slug, bbox, center, addressRegex, searchQuery; `nearestCity()` helper)
+- `lib/cities.js` (**10 city configs** — 7 FL + 3 Gulf Coast: slug, bbox, center, addressRegex, searchQuery, **timezone**; `nearestCity()` helper)
 - `public/index.html` (vanilla-JS UI, single page, **nine views** + city dropdown / ZIP override / distance lines; loads `supabase-js` from CDN for browser-side auth; registers `/sw.js` for PWA install)
 - `public/manifest.webmanifest` (PWA install manifest: name, short_name, crema theme, 192+512 icons, 512 also `purpose: "any maskable"`)
 - `public/sw.js` (plain service worker — versioned shell cache, **never** caches `/api/*` or cross-origin; navigation = network-first, other shell = cache-first)
@@ -32,20 +33,23 @@ Live app:
 - `db.js` (Supabase: JWT verify, user-keyed favourites, taste profiles, user settings, offers, help messages. In-memory fallback for dev.)
 
 Snapshot pipeline (one file per city):
-- `data/boca-raton.json`, `delray-beach.json`, `boynton-beach.json`,
-  `deerfield-beach.json`, `fort-lauderdale.json`, `miami.json` — each
-  has café metadata + picks + **periods + weekdayDescriptions** + per-
-  place `fetched_at` + `citySlug`.
+- `data/<slug>.json` for each of the 10 cities (boca-raton, delray-beach,
+  boynton-beach, deerfield-beach, fort-lauderdale, miami, parkland,
+  slidell, gulfport, biloxi) — each has café metadata + picks +
+  **periods + weekdayDescriptions + timezone** + per-place `fetched_at`
+  + `citySlug`.
 - `scripts/snapshot.js --city=<slug>` — full refresh with the 90-day
   rule, `--force` + `--dry-run`. Defaults to `boca-raton`.
 - `scripts/refresh-hours.js` — cheap hours-only refresh (~$0.005 + per-
-  place Details backfill), no Claude.
+  place Details backfill), no Claude. Threads the city's `timezone`
+  through `hoursLabel()`.
 - `scripts/add-cafe.js "<name>"` — manually add a single café that
   Google's top-20 search misses.
 - `.github/workflows/snapshot.yml` — monthly cron + manual dispatch.
-  Iterates all 6 cities serially and opens **one combined PR** with the
-  diff. `workflow_dispatch` gained a `city` input (leave blank to run
-  all; fill in a single slug to target one).
+  Iterates all configured cities serially and opens **one combined PR**
+  with the diff. `workflow_dispatch` accepts a `city` input — leave
+  blank to run all, fill in one slug, or pass space-separated slugs to
+  target a subset (the `for slug in $CITIES` loop tokenizes on space).
 
 Admin / analytics:
 - `admin-views/admin.html` — gated dashboard (events, funnel, by-day, by-name, by-view)
@@ -62,7 +66,8 @@ Deploy: `render.yaml`, `fly.toml`, `.gitignore`, `DEPLOY.md`, `CHANGES.md`.
 - Keys server-side ONLY. Never in browser, repo, or client.
 - **Data path (priority order):**
   1. `data/<city-slug>.json` — pre-baked per-city file, instant, free.
-     Server loads all 6 at startup into the `snapshots` map.
+     Server loads every `data/*.json` at startup into the `snapshots` map
+     (glob-by-slug; adding a new city's file is auto-picked up).
   2. Supabase / in-memory cache (per-`place_id` pick).
   3. Live Google Places + Claude call (only when both fall through).
 - Photo proxy at `/api/photo` keeps the Google key out of the browser.
@@ -117,22 +122,30 @@ Required repo secrets for the Action: `GOOGLE_PLACES_API_KEY`, `ANTHROPIC_API_KE
 - **Dropping a café that no longer passes filters** (closed, renamed to a chain, moved out of the city): automatic — the script tracks `stats.dropped` and they're absent from the new snapshot.
 - **Editing a single café's picks** (e.g., reviewers got it wrong): hand-edit `data/<slug>.json` — the schema is flat and obvious. Bump that café's `fetched_at` so the script doesn't immediately overwrite your edit.
 
-## Multi-city — shipped (6 South-Florida cities)
+## Multi-city — shipped (10 cities, South FL + Gulf Coast)
 
-The snapshot pattern was generalized in the multi-city build:
+The snapshot pattern is fully generalized:
 
-- `data/{city-slug}.json` per city (6 files, 90 cafés total).
-- Server reads all snapshots at startup, routes by `?city=` param.
-  `?all=1` returns the flat union for ZIP-mode sort-by-distance.
-- The GitHub Action runs all 6 cities serially in one job and opens a
-  combined PR (matrix would have produced 6 PRs — review fatigue).
+- `data/{city-slug}.json` per city (10 files, 125 cafés total).
+- Server reads every `data/*.json` at startup (glob-by-slug), routes by
+  `?city=` param. `?all=1` returns the flat union for ZIP-mode
+  sort-by-distance.
+- The GitHub Action runs all configured cities serially in one job and
+  opens a combined PR (matrix would have produced 10 PRs — review
+  fatigue).
 - Per-city configs (slug, bbox, center, addressRegex, searchQuery,
-  `mustInclude: [...]`) live in `lib/cities.js`. Adding city #7 = append
-  a row + run `node scripts/snapshot.js --city=<slug>` + commit.
+  `timezone`, `mustInclude: [...]`) live in `lib/cities.js`. Adding a
+  new city = append a row + run `node scripts/snapshot.js --city=<slug>`
+  (or dispatch the workflow with `city=<slug>`) + commit.
 
-**Adding more cities** is now a one-config-row change. The strategic
-question — *should* we expand beyond South Florida — is still open;
-the engineering blocker is gone.
+**Strategic expansion question — answered.** The "should we go beyond
+South Florida" question is now closed in favor of "yes, opportunistically":
+city #7 (Parkland, FL) shipped as a Broward suburb test, then cities
+#8-10 (Slidell LA, Gulfport MS, Biloxi MS) opened a new region. The
+expansion forced + delivered a real upgrade: a `timezone` field per
+city that threads through both server (`hoursLabel`) and client
+(`liveStatus`) so non-Eastern cities display the right "Closes X PM"
+labels. See "Shipped recently" block below.
 
 ## Locked product decisions
 
@@ -153,13 +166,15 @@ no more `alert()` placeholders.
   follow a strict **last-input-wins** rule: picking a city clears any
   active ZIP/location override; tapping Locate auto-switches the dropdown
   to the nearest city we have data for and re-sorts by distance; typing a
-  ZIP overrides geolocation origin and sorts all 90 cafés across the 6
+  ZIP overrides geolocation origin and sorts all 125 cafés across the 10
   cities by distance from the ZIP centroid (city dropdown still selectable
   — picking one clears ZIP).
   mini-map with brand pins + rating pills, ranked café card list with rank
   badges, **live-computed open/closed status** (from each café's
-  `periods[]` + current ET time — accurate regardless of snapshot age, no
-  Google live call), heart-save, photo via the photo proxy, two-up
+  `periods[]` + the café's `timezone` — accurate regardless of snapshot
+  age, no Google live call; Eastern-fallback for any snapshot row
+  predating the per-city tz field), heart-save, photo via the photo
+  proxy, two-up
   Drink/Food strip, **"📍 1.4 mi away" distance line** (only when an
   origin is set, using mi/km from Settings), **"Today: 8 AM – 9 PM" line**
   at the bottom of each card. **Drink pick shows a mint `✓ your taste`
@@ -339,9 +354,11 @@ spend rate.
    Credentials → API restrictions: Places API (New) only. Application
    restrictions: HTTP referrers → `joequest.onrender.com/*`. Set a budget
    alert.
-2. **Add GitHub Actions secrets (~5 min).** Repo → Settings → Secrets and
-   variables → Actions → `GOOGLE_PLACES_API_KEY`, `ANTHROPIC_API_KEY`.
-   Without these the monthly snapshot cron will fail.
+2. ~~**Add GitHub Actions secrets.**~~ ✅ **Done.** Both repo secrets are
+   set and the workflow's "Allow GitHub Actions to create and approve
+   pull requests" toggle is on. Monthly cron now actually opens its PR
+   (previously a silent no-op every 1st of the month — caught and fixed
+   during the Cities #7 push).
 3. **Custom domain (optional, ~30 min + DNS).** If you own `joequest.app`,
    CNAME → Render. Step 5 in `DEPLOY.md`.
 4. **Fork — decide from real usage, not now:**
@@ -359,7 +376,7 @@ spend rate.
    expose `bbox` from `/api/cities`). Surface area is small but touches
    `renderMapInto`, `redrawBigMap`, and the locate-me zoom logic.
 7. **Multi-city snapshot matrix.** ✅ Already shipped — the monthly cron
-   iterates all 6 cities in `.github/workflows/snapshot.yml`.
+   iterates all 10 configured cities in `.github/workflows/snapshot.yml`.
 
 ## Env vars (current, after all four drawer stages)
 
@@ -397,13 +414,51 @@ spend rate.
 - ✅ **`scripts/refresh-hours.js` now accepts `--city=<slug>`** (defaults
   to `boca-raton`, validates against `lib/cities.js`). Parity with
   `scripts/snapshot.js`.
-- ✅ **The monthly cron runs all 6 cities** in one combined PR per month.
+- ✅ **The monthly cron runs all 10 cities** in one combined PR per month
+  (verified working — repo secrets + PR-creation permission both fixed
+  this session).
 - **Map projection is hardcoded to Boca.** `projectXY()` in
   `public/index.html`'s map renderer uses Boca's bbox for all cities, so
-  the "you" pin and café pins for Delray/Boynton/Deerfield/Fort
-  Lauderdale/Miami render off-canvas on the stylized SVG map view. The
-  card list, dropdown, and `?city=` API path all work correctly across
-  cities — only the map's pixel projection is Boca-only. Queued.
+  the "you" pin and café pins for every non-Boca city render off-canvas
+  on the stylized SVG map view (now 9 affected cities). The card list,
+  dropdown, and `?city=` API path all work correctly — only the map's
+  pixel projection is Boca-only. Queued.
+
+### Shipped recently: Cities #7-10 + per-city timezone + cron unblocked
+
+- ✅ **City #7 (Parkland, FL)** shipped — Broward suburb adjacent to
+  Boca/Coral Springs. Honest thin count (2 cafés — most local coffee
+  there is excluded chains). Boundary discipline held: address regex
+  anchored on `", FL"` to neutralize "Parkland Ave" street-name false
+  positives.
+- ✅ **Cities #8-10 (Slidell LA, Gulfport MS, Biloxi MS)** shipped —
+  JoeQuest's first non-Florida region. Slidell 15, Gulfport 9, Biloxi 9
+  cafés after a 7 Brew purge. Critical address-regex anchor on `", MS"`
+  for Gulfport (Gulfport FL exists near St. Pete). Gulfport↔Biloxi share
+  a boundary at lng -89.00; per-city regex prevented cross-bleed.
+  Snapshot pull cost: $1.62 total.
+- ✅ **Per-city `timezone` field threaded end-to-end** — was a hidden
+  bug exposed by the Gulf Coast (Central-time) expansion. `lib/data.js`'s
+  `nowInBoca` → `nowInZone(timeZone)`; `hoursLabel(h, tz)`;
+  `mapPlaceToCafe` bakes `timezone` into every café in the snapshot.
+  Client (`public/index.html`) renamed `nowInBocaClient` → `nowInZoneClient(tz)`
+  and threads `c.timezone` through `liveStatus`, `renderHoursBlock`,
+  `todaysHoursLine`. Eastern fallback for any snapshot row predating
+  the field. `scripts/refresh-hours.js` updated too.
+- ✅ **GH Actions monthly cron now actually runs.** Discovery during
+  the Parkland push: both `GOOGLE_PLACES_API_KEY` and `ANTHROPIC_API_KEY`
+  repo secrets had never been set, AND "Allow GitHub Actions to create
+  and approve pull requests" was off — so the cron had been a silent
+  no-op every 1st of the month. Both fixed.
+- ✅ **`EXCLUDE_NAMES` got `"7 brew"`** added. 7 Brew Coffee (regional
+  drive-thru chain, ~250 locations) falls outside the standalone-
+  specialty-café curation. 3 entries (one per Gulf Coast city)
+  surgically purged using `isRealCafe` + `JSON.stringify(_, null, 2)`
+  for byte-clean diffs. PJ's Coffee (~150 LA-regional) flagged in the
+  same audit but left in for now as a separate decision.
+- ✅ **Marketing copy region-agnostic.** "Right now we're deep in
+  South Florida" rewritten — became factually wrong the moment the
+  Gulf Coast snapshots shipped.
 
 ### Shipped this session: MUST_INCLUDE + dry-run cost + last-input-wins
 
@@ -437,8 +492,9 @@ on desktop ("Link copied" toast). Payload is `"Try the <drink> + <food> at
 café lives in a different city than the user's current one, the app calls
 `selectCity()` first, then opens the sheet after the snapshot loads.
 - "You" pin uses real `navigator.geolocation` when the user grants permission,
-  else defaults to Boca centre.
-- Single city (Boca) hardcoded — by design for MVP, see "Multi-city" above.
+  else defaults to Boca centre (hardcoded at `state.myLocation` init in
+  `public/index.html` — minor inconsistency with the multi-city setup; a
+  candidate to switch to `nearestCity()` later).
 
 ## Run / deploy
 
@@ -450,9 +506,10 @@ Deploy: push to GitHub repo → Render Blueprint reads `render.yaml` → set bot
 ---
 
 **Recommended immediate sequence:** (1) restrict the Google API key
-(security hygiene), (2) add the two GitHub Actions secrets so the monthly
-snapshot cron can run, (3) fix `projectXY` so the map view works for
-non-Boca cities (small, mechanical, unblocks the multi-city map
-experience), then (4) let real usage decide between the `/quest`
-onboarding flow and the real-tile-map upgrade. Tell me which to start
-and I'll produce the exact code/diff.
+(security hygiene — still the only outstanding item from the original
+deploy checklist), (2) fix `projectXY` so the map view works for the
+9 non-Boca cities (small, mechanical, the multi-city map experience is
+otherwise broken on the SVG view), (3) decide on PJ's Coffee (in
+`EXCLUDE_NAMES` or stay?), then (4) let real usage decide between the
+`/quest` onboarding flow and the real-tile-map upgrade. Tell me which
+to start and I'll produce the exact code/diff.
