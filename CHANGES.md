@@ -1,5 +1,76 @@
 # CHANGES
 
+## City #11: New York City + multi-query search engine
+
+### New city: New York City, NY
+
+Slug `new-york-city`. All-5-boroughs bbox (40.496–40.917 N,
+-74.259 to -73.700 W), Eastern timezone, borough-aware addressRegex
+that matches any of the 5 borough names formatted as `, NY`.
+
+**59 cafés** after two rounds of refinement:
+- Round 1 (single query) returned 11 cafés — only 1 query, 20-result cap.
+- Round 2 added multi-query support (see below) — 11 → 59 cafés.
+- 787 Coffee excluded mid-process (see below) — freed 8 slots in round 1.
+
+Notable names: SEY Coffee, Culture Espresso, Little Collins, La Cabra
+Bakery, Black Fox Coffee, WatchHouse 5th Ave., Coffee Project NY,
+Stumptown, Gumption Coffee, Afficionado Coffee Roasters, Milkweed Studio.
+
+### EXCLUDE_NAMES: 787 Coffee added
+
+NYC-based Puerto Rican–style chain (~15 Manhattan/Brooklyn locations).
+Dominated the first NYC snapshot at 8 of 20 raw slots. Excluded by
+the same logic as 7 Brew — chain density crowds out independent specialty
+cafés. Added to `EXCLUDE_NAMES` in `lib/data.js` before the final snapshot
+was generated.
+
+### Multi-query search support
+
+`searchCafes` in `lib/data.js` now accepts a `searchQueries` string array
+on the city config. If present, it runs one Places text search per query
+(each up to 20 results), deduplicates by Place ID, then applies the
+standard filter pipeline (EXCLUDE_NAMES, BAD_TYPES, bbox, addressRegex).
+Existing cities with only `searchQuery` (singular) are unaffected — the
+function falls back to `[c.searchQuery]` automatically.
+
+NYC uses 4 queries:
+- `"specialty coffee shops in downtown Manhattan New York NY"`
+- `"specialty coffee shops in Midtown Manhattan New York NY"`
+- `"specialty coffee shops in Upper Manhattan New York NY"`
+- `"specialty coffee shops in Brooklyn New York NY"`
+
+This pattern is now available to any city — add a `searchQueries` array
+to a city config to expand beyond the 20-result single-query cap.
+
+---
+
+## Miami: expanded coverage (16 → 78 cafés)
+
+### 5 neighborhood queries replacing single city-wide search
+
+Miami's single `"coffee shops in Miami, FL"` query (capped at ~16 cafés
+after filtering) replaced with a `searchQueries` array covering:
+
+1. Wynwood / Design District
+2. Brickell / Downtown
+3. Little Havana / Coconut Grove
+4. South Beach / Miami Beach
+5. Coral Gables
+
+Result: **16 → 78 cafés** across the full Miami metro.
+
+### Miami Beach and Coral Gables now included
+
+- **bbox** extended east from -80.13 → -80.10 to capture Miami Beach
+  (a barrier island just off the prior boundary).
+- **addressRegex** updated from `/\bMiami\b(?!\s*Beach)/i` to
+  `/\b(Miami(?:\s*Beach)?|Coral\s*Gables),?\s*FL\b/i` — previously
+  explicitly excluded Miami Beach; now matches Miami, Miami Beach, and
+  Coral Gables.
+
+---
+
 ## EXCLUDE_NAMES: 7 Brew added (Gulf Coast cleanup)
 
 7 Brew Coffee — regional drive-thru chain (~250 locations, 7brew.com)
