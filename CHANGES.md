@@ -1,5 +1,41 @@
 # CHANGES
 
+## Multi-city map projection + auto-frame fix
+
+### Bug fix: `projectXY` Boca hardcode removed
+
+`public/index.html` had a module-level `const BOX` permanently set to Boca Raton's
+bounding box. Every call to `projectXY()` projected against Boca's coordinates
+regardless of the active city, placing pins 1000–2000 px off-canvas for any other
+city. The map view appeared empty while the card list was correct (data layer
+unaffected). Fixed by replacing `BOX` with `activeCityBbox()`, which reads the
+active city's `bbox` from `state.cities`. The `/api/cities` endpoint now includes
+`bbox` per city so the front-end has it available.
+
+### Auto-frame to fit city pins
+
+A new `frameToCity(cafes)` function computes zoom + center from the actual spread
+of a city's café pins, so the map frames correctly on initial load and whenever the
+city dropdown changes. All pins fit in view with ~30% padding on each side.
+
+### Sparse-city zoom cap
+
+Cities with 1–2 cafés are capped at 2.5× zoom to prevent absurd over-zoom on a
+single point. Zero-pin cities frame to the city center at zoom 1.
+
+### `locateMe` centering fixed for all cities
+
+The locate-me handler had a second hardcoded Boca box used to center the map on
+the user. Replaced with a `projectXY`-based center that works for any active city.
+
+### Open decision: stylized map vs tile map
+
+The decision to replace the stylized SVG map with a tile-based map (Mapbox/Leaflet)
+remains open and is tracked separately. This fix makes the stylized map correct for
+all current cities.
+
+---
+
 ## City #11: New York City + multi-query search engine
 
 ### New city: New York City, NY

@@ -2732,6 +2732,7 @@
       await loadCafesForCity(slug);
       renderCityDropdown();
       renderDiscover();
+      frameToCity(state.filtered);
       renderMaps();
       // renderMaps only repaints the SVG canvases — the Map view's card list
       // + count come from renderMap(). Without this, switching city on the
@@ -2918,6 +2919,7 @@
       try {
         await loadCafesForCity(state.city);
         renderDiscover();
+        frameToCity(state.filtered);
         renderMaps();
       } catch (e) {
         els.discoverList.innerHTML = `<div style="padding:40px 18px; text-align:center; color: var(--muted);">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
@@ -3557,11 +3559,47 @@
     }
 
     // ---- map rendering (placeholder canvas — uses real lat/lng on a stylized grid) ----
-    const BOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
+    const BOCA_BBOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
+    function activeCityBbox() {
+      const c = state.cities.find((x) => x.slug === state.city);
+      return (c && c.bbox) ? c.bbox : BOCA_BBOX;
+    }
     function projectXY(lat, lng, w, h) {
-      const x = ((lng - BOX.west) / (BOX.east - BOX.west)) * w;
-      const y = (1 - (lat - BOX.south) / (BOX.north - BOX.south)) * h;
+      const b = activeCityBbox();
+      const x = ((lng - b.west) / (b.east - b.west)) * w;
+      const y = (1 - (lat - b.south) / (b.north - b.south)) * h;
       return { x, y };
+    }
+
+    function frameToCity(cafes) {
+      const W = 420, H = 340;
+      const pinned = cafes.filter((c) => typeof c.lat === "number" && typeof c.lng === "number");
+
+      if (pinned.length === 0) {
+        const b = activeCityBbox();
+        const { x, y } = projectXY((b.south + b.north) / 2, (b.west + b.east) / 2, W, H);
+        state.mapView = { zoom: 1, cx: x / W, cy: y / H };
+        return;
+      }
+
+      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+      for (const c of pinned) {
+        const { x, y } = projectXY(c.lat, c.lng, W, H);
+        if (x < minX) minX = x; if (x > maxX) maxX = x;
+        if (y < minY) minY = y; if (y > maxY) maxY = y;
+      }
+
+      const midX = (minX + maxX) / 2;
+      const midY = (minY + maxY) / 2;
+      const spanX = Math.max(maxX - minX, 1);
+      const spanY = Math.max(maxY - minY, 1);
+
+      const zoomX = W / (spanX * 1.6);
+      const zoomY = H / (spanY * 1.6);
+      let zoom = Math.min(zoomX, zoomY);
+      zoom = Math.max(1, Math.min(zoom, pinned.length <= 2 ? 2.5 : 5));
+
+      state.mapView = { zoom, cx: midX / W, cy: midY / H };
     }
 
     function renderMaps() {
@@ -4486,20 +4524,9 @@
           renderDiscover();
           renderMaps();
 
-          // Center the big map on the user when we have a bbox to project
-          // into. NOTE: projectXY is still hardcoded to Boca's bbox (existing
-          // bug), so the user-pin will be off-canvas for non-Boca cities
-          // until that lands. Zoom + center logic below preserved as-is for
-          // Boca and degraded gracefully for other cities.
-          const BOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
-          const inBoca = lat >= BOX.south && lat <= BOX.north && lng >= BOX.west && lng <= BOX.east;
-          if (inBoca) {
-            state.mapView.cx = (lng - BOX.west) / (BOX.east - BOX.west);
-            state.mapView.cy = 1 - (lat - BOX.south) / (BOX.north - BOX.south);
-            state.mapView.zoom = 2.5;
-          } else {
-            state.mapView = { zoom: 1, cx: 0.5, cy: 0.5 };
-          }
+          // Center map on the user's location via the active city's bbox.
+          const { x: ux, y: uy } = projectXY(lat, lng, 420, 340);
+          state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
           go("map");
           if (state.view === "map") renderMap();
           redrawBigMap();

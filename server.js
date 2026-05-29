@@ -209,6 +209,7 @@ app.get("/api/cities", (req, res) => {
       displayName: c.displayName,
       state: c.state,
       center: c.center,
+      bbox: c.bbox,
       hasSnapshot: snapshots.has(c.slug),
       cafeCount: snapshots.get(c.slug)?.cafes?.length ?? 0,
     })),
