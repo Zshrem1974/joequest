@@ -5269,12 +5269,27 @@
       const zoom = detailed ? state.mapView.zoom : 1;
       const cs = 1 / zoom;
 
-      // All-Cities mode: show one hub pin per city, skip café + quester pins
+      // All-Cities mode: show one hub pin per city, skip café + quester pins.
+      // Normalize positions from city centers directly so all pins fit in the
+      // top 58% of the canvas (above the bottom card-strip sheet).
       if (state.allCitiesMode) {
-        state.cities.filter((c) => c.hasSnapshot && c.center).forEach((city) => {
-          const { x, y } = projectXY(city.center.lat, city.center.lng, w, h);
-          svg.insertAdjacentHTML("beforeend", cityHubPinSVG(x, y, city, zoom));
-        });
+        const visibleCities = state.cities.filter((c) => c.hasSnapshot && c.center);
+        if (visibleCities.length) {
+          const lats = visibleCities.map((c) => c.center.lat);
+          const lngs = visibleCities.map((c) => c.center.lng);
+          const minLat = Math.min(...lats), maxLat = Math.max(...lats);
+          const minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
+          const latSpan = Math.max(maxLat - minLat, 0.1);
+          const lngSpan = Math.max(maxLng - minLng, 0.1);
+          const padX = 52, padTop = 44, availH = h * 0.54;
+          visibleCities.forEach((city) => {
+            const xFrac = (city.center.lng - minLng) / lngSpan;
+            const yFrac = 1 - (city.center.lat - minLat) / latSpan;
+            const px = padX + xFrac * (w - padX * 2);
+            const py = padTop + yFrac * (availH - padTop);
+            svg.insertAdjacentHTML("beforeend", cityHubPinSVG(px, py, city, zoom));
+          });
+        }
         return;
       }
 
