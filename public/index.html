@@ -4015,6 +4015,7 @@
       cafesRanked: [],        // original server-ranked order; restored when leaving Near me
       mapFilter: "all",       // "all" | "near-me" | "open" | "saved"
       mapSelected: null,      // id of the currently selected map pin
+      allCitiesMode: false,   // true when state.city === "all"
       discoverFilter: "all",  // "all" | "open" | "match" | "near"
       currentCafe: null,
       pickCache: new Map(),
@@ -4150,12 +4151,12 @@
     function renderCityDropdown() {
       // Update the Discover city button label
       const found = state.cities.find((c) => c.slug === state.city);
-      const displayName = found?.displayName || found?.name || state.city;
+      const displayName = state.city === "all" ? "All Cities" : (found?.displayName || found?.name || state.city);
       const cityNameEl = document.getElementById("discover-city-name");
       if (cityNameEl) cityNameEl.textContent = displayName;
       // Update Map city chip label
       const mapChipName = document.getElementById("map-city-chip-name");
-      if (mapChipName) mapChipName.textContent = displayName.split(",")[0];
+      if (mapChipName) mapChipName.textContent = state.city === "all" ? "All Cities" : displayName.split(",")[0];
 
       const options = state.cities.map((c) => {
         const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
@@ -4225,6 +4226,19 @@
 
     async function selectCity(slug) {
       if (!slug) return;
+      if (slug === "all") {
+        state.city = "all";
+        localStorage.setItem(LAST_CITY_KEY, "all");
+        state.origin = null; state.originSource = null; state.zipMode = false; state.zip = null;
+        $$(".zip-input").forEach((zi) => { zi.value = ""; });
+        await loadAllCities();
+        renderCityDropdown();
+        renderDiscover();
+        state.mapView = { zoom: 1, cx: 0.5, cy: 0.5 };
+        renderMaps();
+        if (state.view === "map") renderMap();
+        return;
+      }
       const c = state.cities.find((x) => x.slug === slug);
       if (!c || !c.hasSnapshot) return;
       // No-op only when the user is already on this city AND no override is
@@ -4251,6 +4265,7 @@
     }
 
     async function loadCafesForCity(slug) {
+      state.allCitiesMode = false;
       try {
         const r = await fetch(`/api/cafes?city=${encodeURIComponent(slug)}`);
         if (!r.ok) throw new Error("HTTP " + r.status);
@@ -4264,6 +4279,26 @@
       } catch (e) {
         console.warn("loadCafesForCity:", e);
       }
+    }
+
+    async function loadAllCities() {
+      const slugs = state.cities.filter((c) => c.hasSnapshot).map((c) => c.slug);
+      const results = await Promise.all(slugs.map(async (slug) => {
+        try {
+          const r = await fetch(`/api/cafes?city=${encodeURIComponent(slug)}`);
+          if (!r.ok) return [];
+          const d = await r.json();
+          return (d.cafes || []).map((c) => ({ ...c, _city: slug }));
+        } catch { return []; }
+      }));
+      const all = results.flat();
+      const sorted = state.origin ? sortByDistance(all) : all.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+      state.cafesRanked = sorted;
+      state.cafes = [...sorted];
+      state.filtered = [...sorted];
+      state.allCitiesMode = true;
+      if (state.mapFilter === "near-me") state.mapFilter = "all";
+      if (state.discoverFilter === "near") state.discoverFilter = "all";
     }
 
     // ---- live hours computation (client-side, from periods[]) ----
@@ -5073,6 +5108,17 @@
     // ---- map rendering (placeholder canvas — uses real lat/lng on a stylized grid) ----
     const BOCA_BBOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
     function activeCityBbox() {
+      if (state.allCitiesMode) {
+        const bboxCities = state.cities.filter((x) => x.hasSnapshot && x.bbox);
+        if (bboxCities.length) {
+          return {
+            north: Math.max(...bboxCities.map((x) => x.bbox.north)),
+            south: Math.min(...bboxCities.map((x) => x.bbox.south)),
+            east:  Math.max(...bboxCities.map((x) => x.bbox.east)),
+            west:  Math.min(...bboxCities.map((x) => x.bbox.west)),
+          };
+        }
+      }
       const c = state.cities.find((x) => x.slug === state.city);
       return (c && c.bbox) ? c.bbox : BOCA_BBOX;
     }
@@ -5174,6 +5220,19 @@
       `;
     }
 
+    function cityHubPinSVG(x, y, city, zoom = 1) {
+      const cs = 1 / zoom;
+      const name = (city.displayName || city.name || "").split(",")[0];
+      return `
+        <g class="city-hub-pin" data-city-slug="${city.slug}" transform="translate(${x}, ${y}) scale(${cs})" style="cursor:pointer;">
+          <ellipse cx="0" cy="7" rx="24" ry="6" fill="rgba(42,30,22,0.18)"/>
+          <circle r="22" fill="#D98324" stroke="#FFF8EE" stroke-width="3"/>
+          <text text-anchor="middle" y="7" dominant-baseline="middle" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="15" font-weight="700" fill="#FFF8EE">☕</text>
+          <text text-anchor="middle" y="40" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="700" fill="#2A1E16">${escapeHTML(name)}</text>
+        </g>
+      `;
+    }
+
     function renderMapInto(svg, cafes, w, h, opts = {}) {
       const { detailed = false } = opts;
       svg.innerHTML = "";
@@ -5210,6 +5269,15 @@
 
       const zoom = detailed ? state.mapView.zoom : 1;
       const cs = 1 / zoom;
+
+      // All-Cities mode: show one hub pin per city, skip café + quester pins
+      if (state.allCitiesMode) {
+        state.cities.filter((c) => c.hasSnapshot && c.center).forEach((city) => {
+          const { x, y } = projectXY(city.center.lat, city.center.lng, w, h);
+          svg.insertAdjacentHTML("beforeend", cityHubPinSVG(x, y, city, zoom));
+        });
+        return;
+      }
 
       // JoeQuester pins — always shown on full map (simulated positions)
       if (detailed) {
@@ -5339,8 +5407,12 @@
       // City name
       const cityEl = document.getElementById("discover-city-name");
       if (cityEl) {
-        const found = state.cities.find((c) => c.slug === state.city);
-        cityEl.textContent = found ? found.displayName || found.name : state.city;
+        if (state.city === "all") {
+          cityEl.textContent = "All Cities";
+        } else {
+          const found = state.cities.find((c) => c.slug === state.city);
+          cityEl.textContent = found ? found.displayName || found.name : state.city;
+        }
       }
 
       // Avatar initials
@@ -5410,7 +5482,7 @@
             ${photoHTML}
             <div class="hero-photo-overlay"></div>
             <div class="hero-tags">
-              <span class="hero-tag">#${c.rank ?? 1} in ${escapeHTML((state.cities.find((x) => x.slug === state.city)?.name || "").split(",")[0] || "")}</span>
+              <span class="hero-tag">#${c.rank ?? 1} in ${escapeHTML((state.cities.find((x) => x.slug === (state.allCitiesMode ? c._city : state.city))?.name || "All Cities").split(",")[0] || "")}</span>
             </div>
             <button class="hero-heart${isSaved ? " saved" : ""}" data-fav="${c.id}" aria-label="${isSaved ? "Unsave" : "Save"}">
               <svg viewBox="0 0 24 24" fill="${isSaved ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
@@ -6247,6 +6319,16 @@
             <div class="city-sheet-handle"></div>
             <div class="city-sheet-title">Switch city</div>
             <div class="city-sheet-list" id="city-sheet-list">
+              ${(() => {
+                const selAll = state.city === "all";
+                return `<button class="city-sheet-item${selAll ? " selected" : ""}" data-city-slug="all">
+                  <svg style="color:${selAll ? "var(--amber-deep)" : "var(--ink-faint)"};width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  <div style="flex:1;">
+                    <div class="city-sheet-item-name">All Cities</div>
+                  </div>
+                  ${selAll ? CHECK_ICON_CITY : ""}
+                </button>`;
+              })()}
               ${state.cities.filter((c) => c.hasSnapshot).map((c) => {
                 const sel = c.slug === state.city;
                 return `
@@ -7082,6 +7164,14 @@
           openSheet(card.dataset.id);
           return;
         }
+        // all-cities city hub pin → switch to that city
+        const hubPin = e.target.closest(".city-hub-pin");
+        if (hubPin && e.target.closest("#map-stage")) {
+          const slug = hubPin.dataset.citySlug;
+          closeCitySheet();
+          await selectCity(slug);
+          return;
+        }
         // map pin → select pin, show sheet preview (only on the big map stage, not mini-map)
         const pin = e.target.closest(".map-pin");
         if (pin && e.target.closest("#map-stage")) {
@@ -7125,7 +7215,7 @@
           return;
         }
         // tap on map canvas (not a pin) → deselect
-        if (e.target.closest("#map-stage") && !e.target.closest(".map-pin") && !e.target.closest(".map-controls")) {
+        if (e.target.closest("#map-stage") && !e.target.closest(".map-pin") && !e.target.closest(".city-hub-pin") && !e.target.closest(".map-controls")) {
           state.mapSelected = null;
           redrawBigMap();
           renderMapSheet();
