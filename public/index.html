@@ -5885,6 +5885,17 @@
         applyFilters();
         renderMapSheet();
         redrawBigMap();
+        // All: silently fetch location if not yet known, then re-sort
+        if (k === "all" && !state.origin && navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (pos) => {
+              state.origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+              if (state.mapFilter === "all") { applyFilters(); renderMapSheet(); }
+            },
+            () => {},
+            { enableHighAccuracy: false, timeout: 5000, maximumAge: 300000 }
+          );
+        }
       });
       refreshMapChips();
     }
@@ -5958,6 +5969,9 @@
         if (f === "saved" && !state.saved.has(c.id)) return false;
         return true;
       });
+      if (f === "all" && state.origin) {
+        state.filtered = sortByDistance(state.filtered);
+      }
       if (els.mapSheetCount) {
         const total = state.cafes.length;
         const shown = state.filtered.length;
