@@ -6003,14 +6003,22 @@
       chipEl.innerHTML = `<span class="chip-spinner"></span> Locating…`;
       chipEl.classList.add("chip-spinning");
       navigator.geolocation.getCurrentPosition(
-        (pos) => {
+        async (pos) => {
           const lat = pos.coords.latitude, lng = pos.coords.longitude;
           state.myLocation = { lat, lng };
           state.origin = { lat, lng };
           state.originSource = "geolocation";
 
-          // Sort current city's cafés by distance — do NOT switch cities.
-          // Sort a copy so ranked order in state.cafesRanked is preserved for restore.
+          // Switch to the nearest city so the "You" dot projects correctly
+          // and cafés sorted by distance are actually nearby.
+          const near = findNearestCity(lat, lng);
+          if (near && near.slug !== state.city) {
+            state.city = near.slug;
+            localStorage.setItem(LAST_CITY_KEY, near.slug);
+            await loadCafesForCity(near.slug);
+            renderCityDropdown();
+          }
+
           state.cafes = sortByDistance([...state.cafesRanked]);
           state.mapFilter = "near-me";
           state.discoverFilter = "near";
