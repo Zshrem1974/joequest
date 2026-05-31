@@ -5314,8 +5314,8 @@
         });
       }
 
-      // "You" pin — pulsing clay dot with SVG animate
-      if (detailed) {
+      // "You" pin — only shown once real GPS is obtained (not the default city-center fallback)
+      if (detailed && state.originSource === "geolocation") {
         const me = state.myLocation;
         const { x: yx, y: yy } = projectXY(me.lat, me.lng, w, h);
         svg.insertAdjacentHTML("beforeend", `
@@ -6030,7 +6030,7 @@
           chipEl.classList.remove("chip-spinning");
           state.mapFilter = "all";
           refreshMapChips();
-          const msg = err.code === 1 ? "Location access denied" : "Couldn't get your location";
+          const msg = err.code === 1 ? "Location blocked — tap the 🔒 in your browser to allow it" : "Couldn't get your location";
           toast(msg, "error");
         },
         { enableHighAccuracy: true, timeout: 8000, maximumAge: 60_000 }
