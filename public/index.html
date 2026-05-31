@@ -4222,7 +4222,8 @@
         await loadAllCities();
         renderCityDropdown();
         renderDiscover();
-        state.mapView = { zoom: 1, cx: 0.5, cy: 0.5 };
+        applyFilters();
+        frameToCity(state.filtered);
         renderMaps();
         if (state.view === "map") renderMap();
         return;
@@ -4461,11 +4462,8 @@
           await loadCafesForCity(state.city);
         }
         renderDiscover();
-        if (state.allCitiesMode) {
-          state.mapView = { zoom: 1, cx: 0.5, cy: 0.5 };
-        } else {
-          frameToCity(state.filtered);
-        }
+        applyFilters();
+        frameToCity(state.filtered);
         renderMaps();
       } catch (e) {
         els.discoverList.innerHTML = `<div style="padding:40px 18px; text-align:center; color: var(--muted);">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
@@ -5266,10 +5264,9 @@
       const zoom = detailed ? state.mapView.zoom : 1;
       const cs = 1 / zoom;
 
-      // All-Cities mode: show one hub pin per city, skip café + quester pins.
-      // Normalize positions from city centers directly so all pins fit in the
-      // top 58% of the canvas (above the bottom card-strip sheet).
-      if (state.allCitiesMode) {
+      // All-Cities mode on mini-map only: show city hub pins (compact).
+      // The big map falls through to normal café pin rendering.
+      if (state.allCitiesMode && !detailed) {
         const visibleCities = state.cities.filter((c) => c.hasSnapshot && c.center);
         if (visibleCities.length) {
           const lats = visibleCities.map((c) => c.center.lat);
