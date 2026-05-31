@@ -4127,25 +4127,12 @@
     }
 
     async function pickInitialCity() {
-      // 1) silent geolocation if already granted
-      try {
-        if (navigator.permissions?.query && navigator.geolocation) {
-          const s = await navigator.permissions.query({ name: "geolocation" });
-          if (s?.state === "granted") {
-            const pos = await new Promise((res, rej) => {
-              navigator.geolocation.getCurrentPosition(res, rej, { timeout: 4000, maximumAge: 300000 });
-            });
-            state.origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-            const near = findNearestCity(state.origin.lat, state.origin.lng);
-            if (near) return near.slug;
-          }
-        }
-      } catch {}
-      // 2) last selected
+      // 1) last selected (honours explicit user choice, including "all")
       const last = localStorage.getItem(LAST_CITY_KEY);
+      if (last === "all") return "all";
       if (last && state.cities.find((c) => c.slug === last)) return last;
-      // 3) default
-      return "boca-raton";
+      // 2) default — All Cities
+      return "all";
     }
 
     function renderCityDropdown() {
@@ -4468,9 +4455,17 @@
       state.city = await pickInitialCity();
       renderCityDropdown();
       try {
-        await loadCafesForCity(state.city);
+        if (state.city === "all") {
+          await loadAllCities();
+        } else {
+          await loadCafesForCity(state.city);
+        }
         renderDiscover();
-        frameToCity(state.filtered);
+        if (state.allCitiesMode) {
+          state.mapView = { zoom: 1, cx: 0.5, cy: 0.5 };
+        } else {
+          frameToCity(state.filtered);
+        }
         renderMaps();
       } catch (e) {
         els.discoverList.innerHTML = `<div style="padding:40px 18px; text-align:center; color: var(--muted);">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
@@ -5285,22 +5280,27 @@
           const lngSpan = Math.max(maxLng - minLng, 0.1);
           const padX = 52, padTop = 44, availH = h * 0.54;
 
-          // Initial geographic positions
-          const pts = visibleCities.map((city) => ({
-            city,
-            x: padX + ((city.center.lng - minLng) / lngSpan) * (w - padX * 2),
-            y: padTop + (1 - (city.center.lat - minLat) / latSpan) * (availH - padTop),
-          }));
+          // Initial geographic positions + golden-angle jitter to break
+          // zero-distance ties (FL cities are <4px apart without it,
+          // making the repulsion direction vector zero → no movement).
+          const pts = visibleCities.map((city, i) => {
+            const angle = i * 2.3999; // golden angle ≈ 2π/φ
+            return {
+              city,
+              x: padX + ((city.center.lng - minLng) / lngSpan) * (w - padX * 2) + Math.cos(angle) * 3,
+              y: padTop + (1 - (city.center.lat - minLat) / latSpan) * (availH - padTop) + Math.sin(angle) * 3,
+            };
+          });
 
-          // Repulsion pass — push overlapping pins apart until min distance is met
-          const MIN = 58;
-          for (let iter = 0; iter < 40; iter++) {
+          // Force-directed repulsion — larger MIN and more iterations
+          const MIN = 72;
+          for (let iter = 0; iter < 120; iter++) {
             for (let i = 0; i < pts.length; i++) {
               for (let j = i + 1; j < pts.length; j++) {
                 const dx = pts[j].x - pts[i].x, dy = pts[j].y - pts[i].y;
-                const d = Math.sqrt(dx * dx + dy * dy) || 0.01;
+                const d = Math.sqrt(dx * dx + dy * dy) || 0.001;
                 if (d < MIN) {
-                  const push = (MIN - d) / 2;
+                  const push = (MIN - d) / 2 + 0.5;
                   const nx = dx / d, ny = dy / d;
                   pts[i].x -= nx * push; pts[i].y -= ny * push;
                   pts[j].x += nx * push; pts[j].y += ny * push;
