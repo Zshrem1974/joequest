@@ -4127,25 +4127,46 @@
     }
 
     async function pickInitialCity() {
-      // 1) last selected (honours explicit user choice, including "all")
       const last = localStorage.getItem(LAST_CITY_KEY);
       if (last === "all") return "all";
+      // my-location: re-acquire GPS silently if permission already granted
+      if (last === "my-location") {
+        try {
+          if (navigator.permissions?.query && navigator.geolocation) {
+            const s = await navigator.permissions.query({ name: "geolocation" });
+            if (s?.state === "granted") {
+              const pos = await new Promise((res, rej) =>
+                navigator.geolocation.getCurrentPosition(res, rej, { timeout: 4000, maximumAge: 120000 })
+              );
+              state.origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+              state.originSource = "geolocation";
+              state.myLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+              return "my-location";
+            }
+          }
+        } catch {}
+        return "all"; // permission gone — fall back to all-cities
+      }
       if (last && state.cities.find((c) => c.slug === last)) return last;
-      // 2) default — All Cities
       return "all";
     }
 
     function renderCityDropdown() {
       // Update the Discover city button label
       const found = state.cities.find((c) => c.slug === state.city);
-      const displayName = state.city === "all" ? "All Cities" : (found?.displayName || found?.name || state.city);
+      const displayName = state.city === "all" ? "All Cities"
+        : state.city === "my-location" ? "My Location"
+        : (found?.displayName || found?.name || state.city);
       const cityNameEl = document.getElementById("discover-city-name");
       if (cityNameEl) cityNameEl.textContent = displayName;
       // Update Map city chip label
       const mapChipName = document.getElementById("map-city-chip-name");
-      if (mapChipName) mapChipName.textContent = state.city === "all" ? "All Cities" : displayName.split(",")[0];
+      if (mapChipName) mapChipName.textContent = state.city === "all" ? "All Cities"
+        : state.city === "my-location" ? "My Location"
+        : displayName.split(",")[0];
 
       const options = `<option value="all" ${state.city === "all" ? "selected" : ""}>All Cities</option>` +
+        `<option value="my-location" ${state.city === "my-location" ? "selected" : ""}>My Location</option>` +
         state.cities.map((c) => {
           const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
           return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
@@ -4226,6 +4247,34 @@
         frameToCity(state.filtered);
         renderMaps();
         if (state.view === "map") renderMap();
+        return;
+      }
+      if (slug === "my-location") {
+        if (!navigator.geolocation) { toast("Your browser doesn't support location.", "error"); return; }
+        toast("Getting your location…");
+        navigator.geolocation.getCurrentPosition(
+          async (pos) => {
+            state.origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+            state.originSource = "geolocation";
+            state.myLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+            state.zipMode = false; state.zip = null;
+            $$(".zip-input").forEach((zi) => { zi.value = ""; });
+            state.city = "my-location";
+            localStorage.setItem(LAST_CITY_KEY, "my-location");
+            await loadAllCities();
+            renderCityDropdown();
+            renderDiscover();
+            applyFilters();
+            frameToCity(state.filtered);
+            renderMaps();
+            if (state.view === "map") renderMap();
+          },
+          (err) => {
+            const msg = err.code === 1 ? "Location blocked — tap the 🔒 to allow it" : "Couldn't get your location";
+            toast(msg, "error");
+          },
+          { enableHighAccuracy: true, timeout: 8000, maximumAge: 60_000 }
+        );
         return;
       }
       const c = state.cities.find((x) => x.slug === slug);
@@ -4456,7 +4505,7 @@
       state.city = await pickInitialCity();
       renderCityDropdown();
       try {
-        if (state.city === "all") {
+        if (state.city === "all" || state.city === "my-location") {
           await loadAllCities();
         } else {
           await loadCafesForCity(state.city);
@@ -5444,9 +5493,9 @@
       // City name
       const cityEl = document.getElementById("discover-city-name");
       if (cityEl) {
-        if (state.city === "all") {
-          cityEl.textContent = "All Cities";
-        } else {
+        if (state.city === "all") cityEl.textContent = "All Cities";
+        else if (state.city === "my-location") cityEl.textContent = "My Location";
+        else {
           const found = state.cities.find((c) => c.slug === state.city);
           cityEl.textContent = found ? found.displayName || found.name : state.city;
         }
@@ -5957,10 +6006,12 @@
 
     // ---- filters (Map view) ----
     function buildMapChipBar() {
-      const cityName = (() => {
-        const c = state.cities.find((x) => x.slug === state.city);
-        return c ? (c.name || c.displayName || state.city).split(",")[0] : state.city;
-      })();
+      const cityName = state.city === "all" ? "All Cities"
+        : state.city === "my-location" ? "My Location"
+        : (() => {
+          const c = state.cities.find((x) => x.slug === state.city);
+          return c ? (c.name || c.displayName || state.city).split(",")[0] : state.city;
+        })();
       els.mapChipBar.innerHTML = `
         <button class="chip" id="map-city-chip" data-chip="all" style="gap:5px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -6357,12 +6408,16 @@
             <div class="city-sheet-list" id="city-sheet-list">
               ${(() => {
                 const selAll = state.city === "all";
+                const selLoc = state.city === "my-location";
                 return `<button class="city-sheet-item${selAll ? " selected" : ""}" data-city-slug="all">
                   <svg style="color:${selAll ? "var(--amber-deep)" : "var(--ink-faint)"};width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                  <div style="flex:1;">
-                    <div class="city-sheet-item-name">All Cities</div>
-                  </div>
+                  <div style="flex:1;"><div class="city-sheet-item-name">All Cities</div></div>
                   ${selAll ? CHECK_ICON_CITY : ""}
+                </button>
+                <button class="city-sheet-item${selLoc ? " selected" : ""}" data-city-slug="my-location">
+                  <svg style="color:${selLoc ? "var(--amber-deep)" : "var(--ink-faint)"};width:18px;height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+                  <div style="flex:1;"><div class="city-sheet-item-name">My Location</div><div style="font-size:11px;color:var(--ink-faint);margin-top:1px;">Nearest cafés first</div></div>
+                  ${selLoc ? CHECK_ICON_CITY : ""}
                 </button>`;
               })()}
               ${state.cities.filter((c) => c.hasSnapshot).map((c) => {
