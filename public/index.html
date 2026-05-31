@@ -5221,13 +5221,15 @@
 
     function cityHubPinSVG(x, y, city, zoom = 1) {
       const cs = 1 / zoom;
+      const pinScale = 0.68;
       const name = (city.displayName || city.name || "").split(",")[0];
       return `
         <g class="city-hub-pin" data-city-slug="${city.slug}" transform="translate(${x}, ${y}) scale(${cs})" style="cursor:pointer;">
-          <ellipse cx="0" cy="7" rx="24" ry="6" fill="rgba(42,30,22,0.18)"/>
-          <circle r="22" fill="#D98324" stroke="#FFF8EE" stroke-width="3"/>
-          <text text-anchor="middle" y="7" dominant-baseline="middle" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="15" font-weight="700" fill="#FFF8EE">☕</text>
-          <text text-anchor="middle" y="40" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="700" fill="#2A1E16">${escapeHTML(name)}</text>
+          <ellipse cx="0" cy="2" rx="${Math.max(5, 14 * pinScale)}" ry="2" fill="rgba(42,30,22,0.22)"/>
+          <g transform="translate(${-32 * pinScale}, ${-82 * pinScale}) scale(${pinScale})">
+            ${cafePin(false)}
+          </g>
+          <text text-anchor="middle" y="14" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="11" font-weight="700" fill="#2A1E16">${escapeHTML(name)}</text>
         </g>
       `;
     }
