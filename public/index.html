@@ -16,57 +16,124 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Supabase JS (used only for browser-side auth: sign-in/up/out, session) -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 
   <style>
     /* ============================================================
-       BRAND TOKENS
+       BRAND TOKENS — Roastery (light) baseline
        ============================================================ */
     :root {
-      --espresso: #5E3E27;
-      --espresso-deep: #2B1C12;
-      --crema: #D98324;
-      --crema-light: #F0A847;
-      --oat: #F5E9DC;
-      --cream: #FFF6EC;
-      --mint: #3B7D5A;
-      --star: #E8A317;
-      --quester: #7C5CFF;
+      /* ── Roastery palette ───────────────────────────────────── */
+      --bg: #F4EBDD;
+      --surface: #FFFDF8;
+      --surface-2: #ECE1CF;
+      --ink: #2A1E16;
+      --ink-soft: #6E5E50;
+      --ink-faint: #A4937F;
+      --line: rgba(42,30,22,0.11);
+      --card-border: rgba(42,30,22,0.06);
 
-      --ink: var(--espresso);
-      --muted: rgba(94, 62, 39, 0.62);
-      --line: rgba(94, 62, 39, 0.12);
-      --line-strong: rgba(94, 62, 39, 0.22);
-      --shadow-sm: 0 1px 2px rgba(43, 28, 18, 0.04), 0 2px 8px rgba(43, 28, 18, 0.05);
-      --shadow-md: 0 6px 20px rgba(43, 28, 18, 0.10);
-      --shadow-lg: 0 16px 40px rgba(43, 28, 18, 0.22);
+      --amber: #D98324;
+      --amber-deep: #A6611A;
+      --amber-soft: #F3E2CC;
+      --amber-glow: rgba(217,131,36,0.40);
+      --on-amber: #FFF8EE;
 
-      --r-card: 18px;
-      --r-pill: 20px;
+      --sage: #7E8C57;
+      --sage-deep: #536040;
+      --sage-soft: #E2E3D0;
+      --clay: #C2553F;
+      --clay-soft: #F0D8CF;
 
+      --quester-purple: #6C5CE7;
+
+      /* ── Radius ─────────────────────────────────────────────── */
+      --r-md: 14px;
+      --r-lg: 18px;
+      --r-xl: 24px;
+
+      /* ── Shadows ────────────────────────────────────────────── */
+      --shadow-card: 0 1px 3px rgba(42,30,22,.06), 0 6px 16px rgba(42,30,22,.05);
+      --shadow-lift: 0 4px 12px rgba(42,30,22,.08), 0 16px 40px rgba(42,30,22,.10);
+
+      /* ── Nav / overlays ─────────────────────────────────────── */
+      --nav-bg: rgba(252,248,240,0.82);
+
+      /* ── Quest layer ────────────────────────────────────────── */
+      --quest-bg: #2A1E16;
+      --quest-fg: #F4EBDD;
+      --quest-track: rgba(255,255,255,.15);
+
+      /* ── Map ────────────────────────────────────────────────── */
+      --map-land: #EADFCC;
+      --map-water: #CADFDB;
+      --map-water-line: #AFCEC8;
+      --map-park: #D6DEB6;
+      --map-block: #E2D5BD;
+      --map-street: #F6F0E3;
+      --map-street-thin: #EFE6D5;
+
+      /* ── Typography ─────────────────────────────────────────── */
+      --font-display: 'Newsreader', Georgia, serif;
+      --font-body: 'Hanken Grotesk', system-ui, sans-serif;
+      --font-mono: 'Space Mono', ui-monospace, monospace;
+
+      /* ── Layout ─────────────────────────────────────────────── */
       --app-max: 480px;
       --tab-h: 64px;
       --header-h: 56px;
 
-      --display: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-      --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      /* ── Backward-compat aliases (old token names → new values) */
+      --espresso: var(--ink);
+      --espresso-deep: #2A1E16;
+      --crema: var(--amber);
+      --crema-light: #F0A847;
+      --oat: var(--bg);
+      --cream: var(--surface);
+      --mint: var(--sage);
+      --star: #E8A317;
+      --quester: var(--quester-purple);
+      --muted: var(--ink-soft);
+      --line-strong: rgba(42,30,22,0.18);
+      --shadow-sm: var(--shadow-card);
+      --shadow-md: var(--shadow-lift);
+      --shadow-lg: 0 16px 40px rgba(42,30,22,.22);
+      --r-card: var(--r-lg);
+      --r-pill: 999px;
+      --display: var(--font-display);
+      --body: var(--font-body);
     }
+
+    /* ── JQ animations ──────────────────────────────────────────── */
+    @keyframes jqpulse {
+      0%   { box-shadow: 0 0 0 0 var(--clay-soft); opacity: 1; }
+      70%  { box-shadow: 0 0 0 16px transparent; opacity: .7; }
+      100% { box-shadow: 0 0 0 0 transparent; opacity: 1; }
+    }
+    @keyframes jqslideup {
+      from { transform: translateY(16px); opacity: 0; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+    @keyframes jqspin { to { transform: rotate(360deg); } }
 
     /* ============================================================
        BASE
        ============================================================ */
     * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
     html, body { margin: 0; padding: 0; height: 100%; }
     body {
       background: var(--espresso-deep);
       color: var(--ink);
-      font-family: var(--body);
+      font-family: var(--font-body);
       font-size: 15px;
       line-height: 1.45;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
       -webkit-tap-highlight-color: transparent;
     }
     button { font-family: inherit; cursor: pointer; }
@@ -518,167 +585,1460 @@
     /* ============================================================
        MAP VIEW
        ============================================================ */
-    .filter-bar {
+
+    /* Full-height layout — overrides generic .view padding/display */
+    #view-map { padding-bottom: 0; height: calc(100dvh - var(--header-h) - var(--tab-h)); overflow: hidden; }
+    #view-map.active { display: flex; flex-direction: column; }
+
+    /* Filter chip strip */
+    .map-chip-bar {
       display: flex;
       gap: 8px;
-      padding: 12px 18px;
+      padding: 10px 16px;
       overflow-x: auto;
       scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-      background: var(--cream);
+      flex-shrink: 0;
+      background: var(--surface);
       border-bottom: 1px solid var(--line);
-      position: sticky;
-      top: var(--header-h);
-      z-index: 20;
     }
-    .filter-bar::-webkit-scrollbar { display: none; }
+    .map-chip-bar::-webkit-scrollbar { display: none; }
     .chip {
       flex-shrink: 0;
-      background: var(--oat);
+      background: var(--surface-2);
       border: 1px solid var(--line);
-      border-radius: var(--r-pill);
-      padding: 8px 14px;
+      border-radius: 999px;
+      padding: 7px 14px;
       font-size: 13px;
       font-weight: 600;
-      color: var(--espresso);
+      color: var(--ink-soft);
       display: flex; align-items: center; gap: 6px;
-      transition: background 0.12s, border-color 0.12s;
+      transition: background 0.12s, border-color 0.12s, color 0.12s;
+      white-space: nowrap;
     }
     .chip:hover, .chip:focus-visible { border-color: var(--line-strong); outline: none; }
-    .chip.active {
-      background: var(--espresso);
-      color: var(--cream);
-      border-color: var(--espresso);
-    }
+    .chip.active { background: var(--ink); color: var(--surface); border-color: var(--ink); }
     .chip svg { width: 14px; height: 14px; }
-    .chip img { height: 16px; width: auto; display: inline-block; vertical-align: -3px; }
-    .chip-quester { padding-left: 10px; }
-    .filter-summary {
-      padding: 10px 18px 4px;
-      display: flex; justify-content: space-between;
-      font-size: 13px;
-      color: var(--muted);
-    }
-    .filter-summary .clear {
-      color: var(--crema);
-      font-weight: 600;
-      background: none;
-      border: none;
-      font-size: 13px;
-      padding: 0;
+    .chip-spinning { opacity: 0.7; pointer-events: none; }
+    .chip-spinner {
+      width: 12px; height: 12px;
+      border: 2px solid currentColor;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: jqspin 0.65s linear infinite;
+      display: inline-block;
+      flex-shrink: 0;
     }
 
-    .big-map {
-      margin: 0 18px;
-      height: 340px;
-      border-radius: var(--r-card);
-      overflow: hidden;
+    /* Map stage: fills remaining height */
+    .map-stage {
+      flex: 1;
       position: relative;
-      box-shadow: var(--shadow-sm);
+      overflow: hidden;
       cursor: grab;
-      touch-action: none;       /* let pan handlers own the gesture */
+      touch-action: none;
       user-select: none;
       -webkit-user-select: none;
     }
-    .big-map.panning { cursor: grabbing; }
-    .big-map .map-canvas { width: 100%; height: 100%; }
+    .map-stage.panning { cursor: grabbing; }
+    .map-stage .map-canvas { width: 100%; height: 100%; }
 
-    /* Floating zoom + locate controls in the corner of the map */
+    /* Controls: right column above the sheet */
     .map-controls {
       position: absolute;
-      bottom: 12px;
       right: 12px;
+      bottom: calc(148px + 12px);
       display: flex;
       flex-direction: column;
       gap: 8px;
       z-index: 4;
     }
     .map-controls button {
-      width: 38px; height: 38px;
-      border-radius: 12px;
-      background: var(--cream);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow-sm);
-      color: var(--espresso);
+      width: 40px; height: 40px;
+      border-radius: var(--r-md);
+      background: var(--surface);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-card);
+      color: var(--ink);
       font-weight: 700;
-      font-size: 19px;
+      font-size: 20px;
       line-height: 1;
-      display: grid;
-      place-items: center;
+      display: grid; place-items: center;
       transition: transform 0.1s, background 0.12s;
     }
-    .map-controls button:hover { background: var(--oat); }
+    .map-controls button:hover { background: var(--surface-2); }
     .map-controls button:active { transform: scale(0.94); }
-    .map-controls button.locate {
-      background: var(--espresso);
-      color: var(--cream);
-      border-color: var(--espresso);
-    }
-    .map-controls button.locate:hover { background: var(--espresso-deep); }
+    .map-controls button.locate { background: var(--amber); color: var(--on-amber); border-color: var(--amber); }
+    .map-controls button.locate:hover { background: var(--amber-deep); }
     .map-controls button svg { width: 18px; height: 18px; }
 
-    /* Map legend */
-    .map-legend {
-      display: flex;
-      gap: 18px;
-      padding: 14px 18px 4px;
-      flex-wrap: wrap;
+    /* Locate flash */
+    .map-locate-toast {
+      position: absolute;
+      bottom: calc(148px + 54px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: var(--surface);
       font-size: 13px;
-      color: var(--ink);
+      font-weight: 600;
+      padding: 7px 16px;
+      border-radius: 999px;
+      white-space: nowrap;
+      z-index: 5;
+      pointer-events: none;
+      animation: jqslideup 0.3s ease;
     }
-    .map-legend span { display: inline-flex; align-items: center; gap: 6px; }
-    .map-legend .dot {
+
+    /* Bottom sheet */
+    .map-sheet {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      min-height: 148px;
+      background: var(--nav-bg);
+      backdrop-filter: blur(18px) saturate(160%);
+      -webkit-backdrop-filter: blur(18px) saturate(160%);
+      border-radius: var(--r-xl) var(--r-xl) 0 0;
+      border-top: 1px solid var(--card-border);
+      z-index: 3;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    .map-sheet-handle {
+      width: 36px; height: 4px;
+      background: var(--line-strong);
+      border-radius: 999px;
+      margin: 10px auto 0;
+    }
+    .map-sheet-legend {
+      display: flex;
+      gap: 14px;
+      padding: 8px 18px 2px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      align-items: center;
+    }
+    .map-sheet-legend span { display: inline-flex; align-items: center; gap: 5px; }
+    .map-legend-dot-you {
       width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--clay);
+      box-shadow: 0 0 0 3px var(--clay-soft);
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .map-legend-pin-cafe {
+      flex-shrink: 0;
+      display: inline-block;
+    }
+    .map-legend-pin-quester {
+      width: 10px; height: 14px;
+      background: url("/img/joequester-marker.png") no-repeat center / contain;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    .map-sheet-count {
+      padding: 0 18px 4px;
+      font-size: 11px;
+      color: var(--ink-faint);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .map-mini-cards {
+      display: flex;
+      gap: 10px;
+      padding: 4px 18px 14px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .map-mini-cards::-webkit-scrollbar { display: none; }
+    .map-mini-card {
+      flex-shrink: 0;
+      width: 136px;
+      background: var(--surface);
+      border-radius: var(--r-md);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.12s;
+    }
+    .map-mini-card:active { transform: scale(0.97); }
+    .map-mini-card.selected { border-color: var(--amber); outline: 2px solid var(--amber-soft); }
+    .map-mini-card-photo {
+      width: 100%; height: 68px;
+      object-fit: cover;
+      display: block;
+      background: var(--surface-2);
+    }
+    .map-mini-card-body { padding: 6px 8px 8px; }
+    .map-mini-card-name {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 12.5px;
+      color: var(--ink);
+      line-height: 1.2;
+      margin: 0 0 3px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .map-mini-card-drink {
+      font-size: 10px;
+      color: var(--ink-faint);
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Sheet preview mode */
+    .map-sheet-preview {
+      padding: 0 18px 14px;
+      animation: jqslideup 0.25s ease;
+    }
+    .map-preview-back {
+      display: inline-flex; align-items: center; gap: 3px;
+      background: none; border: none;
+      color: var(--ink-soft); font-size: 12.5px; font-weight: 600;
+      padding: 6px 0 4px; cursor: pointer;
+    }
+    .map-preview-back svg { width: 14px; height: 14px; }
+    .map-preview-photo {
+      width: 100%; height: 100px;
+      object-fit: cover;
+      border-radius: var(--r-md);
+      display: block;
+      background: var(--surface-2);
+      margin-bottom: 8px;
+    }
+    .map-preview-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 17px;
+      color: var(--ink);
+      margin: 0 0 3px;
+      letter-spacing: -0.2px;
+    }
+    .map-preview-meta { font-size: 12px; color: var(--ink-soft); margin-bottom: 6px; }
+    .map-preview-drink {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--amber-deep);
+      margin-bottom: 10px;
+    }
+    .map-preview-actions { display: flex; gap: 8px; }
+    .map-preview-verdict-btn {
+      flex: 1;
+      background: var(--amber);
+      color: var(--on-amber);
+      border: none;
+      padding: 10px;
+      border-radius: var(--r-md);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.12s;
+    }
+    .map-preview-verdict-btn:hover { background: var(--amber-deep); }
+    .map-preview-go-btn {
+      background: var(--surface-2);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      padding: 10px 14px;
+      border-radius: var(--r-md);
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex; align-items: center; gap: 4px;
+      text-decoration: none;
+      transition: background 0.12s;
+    }
+    .map-preview-go-btn:hover { background: var(--surface); }
+    .map-preview-go-btn svg { width: 14px; height: 14px; }
+
+    /* ============================================================
+       PHASE 5 — SCREEN REDESIGNS
+       ============================================================ */
+
+    /* Discover: top bar */
+    .discover-topbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 16px 18px 12px;
+    }
+    .discover-time-label {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      margin-bottom: 4px;
+    }
+    .discover-city-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    .discover-city-btn span {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 20px;
+      color: var(--ink);
+      letter-spacing: -0.2px;
+    }
+    .discover-city-btn svg { width: 16px; height: 16px; color: var(--ink-faint); flex-shrink: 0; }
+    .discover-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--amber-soft);
+      border: 2px solid var(--amber);
+      display: grid; place-items: center;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--amber-deep);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: opacity 0.12s;
+    }
+    .discover-avatar:hover { opacity: 0.85; }
+
+    /* Discover: filter chips */
+    .discover-chip-bar {
+      display: flex;
+      gap: 8px;
+      padding: 0 18px 14px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .discover-chip-bar::-webkit-scrollbar { display: none; }
+
+    /* Discover: hero card */
+    .hero-card {
+      background: var(--surface);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lift);
+      border: 1px solid var(--card-border);
+      cursor: pointer;
+      transition: transform 0.12s;
+    }
+    .hero-card:active { transform: scale(0.99); }
+    .hero-photo-wrap {
+      position: relative;
+      height: 170px;
+      background: var(--surface-2);
+      overflow: hidden;
+    }
+    .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero-photo-fallback {
+      width: 100%; height: 100%;
+      display: grid; place-items: center;
+      font-size: 48px;
+      background: linear-gradient(135deg, var(--surface-2), var(--amber-soft));
+    }
+    .hero-photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,.22) 0%, transparent 35%, transparent 50%, rgba(0,0,0,.52) 100%);
+    }
+    .hero-tags {
+      position: absolute;
+      top: 12px; left: 12px;
+      display: flex; gap: 6px;
+    }
+    .hero-tag {
+      background: rgba(42,30,22,0.72);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 4px 9px;
+      border-radius: 999px;
+      backdrop-filter: blur(4px);
+    }
+    .hero-heart {
+      position: absolute;
+      top: 10px; right: 10px;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      background: rgba(255,248,238,0.92);
+      border: none;
+      display: grid; place-items: center;
+      cursor: pointer;
+      backdrop-filter: blur(6px);
+      color: var(--espresso);
+      transition: transform 0.15s;
+    }
+    .hero-heart:active { transform: scale(0.9); }
+    .hero-heart.saved { color: var(--clay); }
+    .hero-heart svg { width: 19px; height: 19px; }
+    .hero-info {
+      position: absolute;
+      bottom: 12px; left: 14px; right: 14px;
+    }
+    .hero-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 26px;
+      color: #fff;
+      margin: 0 0 3px;
+      line-height: 1.05;
+      text-shadow: 0 2px 12px rgba(0,0,0,.4);
+    }
+    .hero-meta {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: rgba(255,255,255,.9);
+      text-shadow: 0 1px 6px rgba(0,0,0,.45);
+    }
+    .hero-body { padding: 14px 16px 16px; }
+    .hero-order-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      margin-bottom: 10px;
+    }
+    .hero-verdicts { display: flex; flex-direction: column; gap: 9px; }
+
+    /* Verdict line (used in hero + cards) */
+    .verdict-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .verdict-line-icon {
+      width: 20px; height: 20px;
+      flex-shrink: 0;
+      display: grid; place-items: center;
+      color: var(--amber-deep);
+    }
+    .verdict-line-icon svg { width: 15px; height: 15px; }
+    .verdict-line-kind {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      width: 36px;
+      flex-shrink: 0;
+    }
+    .verdict-line-name {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--ink);
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .verdict-line-price {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--ink-soft);
+      flex-shrink: 0;
+    }
+
+    /* Updated café card: row layout */
+    .cafe-card-v2 {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      padding: 14px;
+      cursor: pointer;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--card-border);
+      transition: transform 0.12s;
+    }
+    .cafe-card-v2:active { transform: scale(0.985); }
+    .cafe-card-v2-row { display: flex; gap: 12px; }
+    .cafe-card-v2-photo-wrap {
+      position: relative;
+      flex-shrink: 0;
+      width: 88px; height: 88px;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      background: var(--surface-2);
+    }
+    .cafe-card-v2-photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cafe-card-v2-photo-fallback {
+      width: 100%; height: 100%;
+      display: grid; place-items: center;
+      font-size: 26px;
+    }
+    .cafe-card-v2-rank {
+      position: absolute;
+      top: -6px; left: -6px;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--surface);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 12px;
+      display: grid; place-items: center;
+      box-shadow: var(--shadow-card);
+      border: 2px solid var(--surface);
+    }
+    .cafe-card-v2-conquered {
+      position: absolute;
+      bottom: 4px; right: 4px;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: var(--sage);
+      border: 2px solid var(--surface);
+      display: grid; place-items: center;
+    }
+    .cafe-card-v2-conquered svg { width: 11px; height: 11px; color: white; }
+    .cafe-card-v2-info { flex: 1; min-width: 0; }
+    .cafe-card-v2-name-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+    .cafe-card-v2-name {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--ink);
+      margin: 0;
+      line-height: 1.15;
+      letter-spacing: -0.2px;
+    }
+    .cafe-card-v2-heart {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 2px;
+      color: var(--clay);
+      flex-shrink: 0;
+      margin-top: -2px;
+    }
+    .cafe-card-v2-heart svg { width: 21px; height: 21px; }
+    .cafe-card-v2-location {
+      font-family: var(--font-body);
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      margin-bottom: 6px;
+    }
+    .cafe-card-v2-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .open-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .open-dot::before {
+      content: "";
+      width: 6px; height: 6px;
       border-radius: 50%;
       display: inline-block;
     }
-    .map-legend .dot.cafe    { background: var(--crema); }
-    .map-legend .dot.you     { background: #D9483A; box-shadow: 0 0 0 3px rgba(217,72,58,0.18); }
-    .map-legend .dot.quester {
-      background: url("/img/joequester-marker.png") no-repeat center / contain;
-      width: 14px;
-      height: 18px;
-      border-radius: 0;
-      box-shadow: none;
+    .open-dot.open { color: var(--sage-deep); }
+    .open-dot.open::before { background: var(--sage); }
+    .open-dot.closed { color: var(--ink-faint); }
+    .open-dot.closed::before { background: var(--ink-faint); }
+    .match-pill-v2 {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      font-family: var(--font-body);
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 999px;
+    }
+    .cafe-card-v2-divider {
+      border: none;
+      border-top: 1px dashed var(--line);
+      margin: 10px 0;
+    }
+    .cafe-card-v2-verdicts { display: flex; flex-direction: column; gap: 7px; }
+
+    /* Discover: section heading */
+    .discover-section-kicker {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 3px;
+    }
+    .discover-section-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--ink);
+      margin: 0 0 12px;
+      letter-spacing: -0.2px;
+    }
+    .discover-section-head {
+      padding: 14px 18px 0;
     }
 
-    /* Map pins */
-    .pin {
-      position: absolute;
-      transform: translate(-50%, -100%);
-      pointer-events: auto;
-      cursor: pointer;
+    /* Discover footer */
+    .discover-footer {
+      padding: 20px 18px 10px;
+      text-align: center;
     }
-    .pin .pin-bubble {
-      background: var(--crema);
-      color: white;
-      font-weight: 700;
-      font-size: 11px;
-      padding: 4px 8px;
-      border-radius: var(--r-pill);
-      box-shadow: var(--shadow-sm);
-      display: flex; align-items: center; gap: 3px;
-      border: 2px solid var(--cream);
+    .discover-footer p {
+      font-family: var(--font-body);
+      font-size: 12.5px;
+      color: var(--ink-faint);
+      margin: 0;
+      line-height: 1.55;
     }
-    .pin.high .pin-bubble { background: var(--espresso); }
-    .pin.mid .pin-bubble { background: var(--crema-light); color: var(--espresso-deep); }
-    .pin .pin-tail {
-      width: 0; height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 6px solid var(--crema);
+
+    /* Sheet: VerdictCard */
+    .verdict-card {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      padding: 16px;
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-card);
+    }
+    .verdict-card + .verdict-card { margin-top: 12px; }
+    .verdict-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 11px;
+    }
+    .verdict-card-icon {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--amber-soft);
+      display: grid; place-items: center;
+      flex-shrink: 0;
+      color: var(--amber-deep);
+    }
+    .verdict-card-icon svg { width: 18px; height: 18px; }
+    .verdict-card-meta { flex: 1; min-width: 0; }
+    .verdict-card-kind {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 1px;
+    }
+    .verdict-card-name {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 19px;
+      color: var(--ink);
+      line-height: 1.1;
+      margin: 0;
+    }
+    .verdict-card-price {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--amber-deep);
+      flex-shrink: 0;
+    }
+    .verdict-card-why {
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      line-height: 1.55;
+      margin: 0 0 11px;
+    }
+    .verdict-card-quote {
+      border-left: 3px solid var(--amber);
+      background: var(--amber-soft);
+      border-radius: 0 8px 8px 0;
+      padding: 8px 11px;
+    }
+    .verdict-card-quote p {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--ink);
+      margin: 0 0 5px;
+      line-height: 1.45;
+    }
+    .verdict-card-quote-attr {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--amber-deep);
+    }
+    .verdict-section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 13px;
+    }
+    .verdict-section-head h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 22px;
+      color: var(--ink);
+      margin: 0;
+    }
+    .verdict-section-sub {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--ink-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .verdict-why-block {
+      background: var(--quest-bg);
+      color: var(--quest-fg);
+      border-radius: var(--r-lg);
+      padding: 16px;
+      margin-top: 16px;
+    }
+    .verdict-why-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+    .verdict-why-text {
+      font-family: var(--font-display);
+      font-size: 15.5px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Onboarding overlay */
+    .onboarding {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      max-width: var(--app-max);
       margin: 0 auto;
     }
-    .pin.high .pin-tail { border-top-color: var(--espresso); }
-    .pin.mid .pin-tail { border-top-color: var(--crema-light); }
-    .quester-dot {
+    .onboarding-topbar {
+      padding: 56px 28px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .onboarding-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 28px 28px 16px;
+    }
+    .onboarding-art { margin-bottom: 32px; }
+    .onboarding-kicker {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      margin-bottom: 12px;
+    }
+    .onboarding-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 32px;
+      color: var(--ink);
+      margin: 0 0 14px;
+      line-height: 1.08;
+    }
+    .onboarding-body-text {
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      color: var(--ink-soft);
+      line-height: 1.55;
+      margin: 0;
+      max-width: 320px;
+    }
+    .onboarding-footer {
+      padding: 0 28px 48px;
+    }
+    .onboarding-dots {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      margin-bottom: 22px;
+    }
+    .onboarding-dot {
+      height: 7px;
+      border-radius: 4px;
+      background: var(--line);
+      transition: width 0.25s, background 0.25s;
+    }
+    .onboarding-dot.active { width: 22px; background: var(--amber); }
+    .onboarding-dot.inactive { width: 7px; }
+    .onboarding-btn {
+      width: 100%;
+      background: var(--amber);
+      color: var(--on-amber);
+      border: none;
+      border-radius: var(--r-md);
+      padding: 15px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 15.5px;
+      cursor: pointer;
+      transition: background 0.12s, transform 0.1s;
+    }
+    .onboarding-btn:hover { background: var(--amber-deep); }
+    .onboarding-btn:active { transform: scale(0.98); }
+
+    /* Onboarding: city picker */
+    .onboarding-city-list { display: flex; flex-direction: column; gap: 10px; overflow-y: auto; flex: 1; }
+    .onboarding-city-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: var(--r-md);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .onboarding-city-btn.selected { border: 2px solid var(--amber); background: var(--amber-soft); }
+    .onboarding-city-btn:not(.selected) { border: 1px solid var(--line); background: var(--surface); }
+    .onboarding-city-btn:disabled { opacity: 0.5; cursor: default; }
+    .onboarding-city-name { font-family: var(--font-body); font-weight: 600; font-size: 15.5px; color: var(--ink); }
+    .onboarding-city-region { font-family: var(--font-body); font-size: 12.5px; color: var(--ink-soft); }
+
+    /* Story redesign */
+    .story-hero-photo {
+      position: relative;
+      height: 220px;
+      background: var(--surface-2);
+      overflow: hidden;
+    }
+    .story-hero-photo-fallback {
+      width: 100%; height: 100%;
+      display: grid; place-items: center;
+      font-size: 56px;
+      background: linear-gradient(135deg, var(--surface-2), var(--amber-soft));
+    }
+    .story-back-btn {
       position: absolute;
-      width: 8px; height: 8px;
-      background: var(--quester);
-      border: 2px solid white;
+      top: 56px; left: 16px;
+      width: 40px; height: 40px;
       border-radius: 50%;
-      transform: translate(-50%, -50%);
-      box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.15);
+      border: none;
+      cursor: pointer;
+      background: rgba(255,255,255,.92);
+      display: grid; place-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+      color: var(--ink);
+    }
+    .story-back-btn svg { width: 22px; height: 22px; }
+    .story-content { padding: 24px 22px 50px; }
+    .story-kicker {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      margin-bottom: 8px;
+    }
+    .story-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 30px;
+      color: var(--ink);
+      margin: 0 0 18px;
+      line-height: 1.08;
+    }
+    .story-p {
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--ink-soft);
+      line-height: 1.62;
+      margin: 0 0 16px;
+    }
+    .story-dark-block {
+      background: var(--quest-bg);
+      color: var(--quest-fg);
+      border-radius: var(--r-lg);
+      padding: 18px;
+      margin-top: 8px;
+    }
+    .story-dark-block h3 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 19px;
+      margin: 0 0 8px;
+      color: var(--quest-fg);
+    }
+    .story-dark-block p {
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      opacity: 0.85;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* Offers redesign */
+    .offers-header { padding: 56px 18px 0; }
+    .offers-header-back {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      background: var(--surface);
+      display: grid; place-items: center;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .offers-header-back svg { width: 20px; height: 20px; }
+    .offers-title { font-family: var(--font-display); font-weight: 600; font-size: 28px; color: var(--ink); margin: 0 0 8px; }
+    .offers-sub { font-family: var(--font-body); font-size: 14px; color: var(--ink-soft); margin: 0 0 8px; line-height: 1.5; }
+    .offers-trust {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--ink-faint);
+      margin-bottom: 20px;
+    }
+    .offers-trust svg { width: 13px; height: 13px; }
+    .offer-card-v2 {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+    .offer-card-v2-top {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+    }
+    .offer-monogram {
+      width: 50px; height: 50px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      background: var(--amber-soft);
+      display: grid; place-items: center;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--amber-deep);
+    }
+    .offer-brand { font-family: var(--font-body); font-weight: 700; font-size: 15.5px; color: var(--ink); margin-bottom: 2px; }
+    .offer-deal { font-family: var(--font-body); font-size: 13px; color: var(--ink-soft); }
+    .offer-reveal-btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-top: 1px dashed var(--line);
+      cursor: pointer;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1px;
+      background: var(--amber-soft);
+      color: var(--amber-deep);
+      transition: background 0.12s;
+    }
+    .offer-reveal-btn:hover { background: var(--amber-soft); }
+    .offer-reveal-btn.revealed { background: var(--sage-soft); color: var(--sage-deep); cursor: default; }
+
+    /* Taste redesign */
+    .taste-header { padding: 56px 18px 0; }
+    .taste-header-back {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      background: var(--surface);
+      display: grid; place-items: center;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+    .taste-header-back svg { width: 20px; height: 20px; }
+    .taste-title-kicker {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      margin-bottom: 6px;
+    }
+    .taste-title { font-family: var(--font-display); font-weight: 600; font-size: 28px; color: var(--ink); margin: 0 0 8px; line-height: 1.1; }
+    .taste-sub { font-family: var(--font-body); font-size: 14px; color: var(--ink-soft); margin: 0 0 24px; line-height: 1.5; }
+    .taste-question { margin-bottom: 22px; }
+    .taste-q-label { font-family: var(--font-body); font-weight: 700; font-size: 15px; color: var(--ink); margin-bottom: 9px; }
+    .taste-opts { display: flex; gap: 8px; }
+    .taste-opt {
+      flex: 1;
+      padding: 11px 6px;
+      border-radius: var(--r-md);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 13.5px;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .taste-opt.active { border: 2px solid var(--amber); background: var(--amber-soft); color: var(--amber-deep); }
+    .taste-opt:not(.active) { border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); }
+    .taste-brews { display: flex; flex-wrap: wrap; gap: 8px; }
+    .taste-brew-chip {
+      padding: 9px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 13px;
+      transition: background 0.12s, color 0.12s;
+    }
+    .taste-brew-chip.active { background: var(--ink); color: var(--surface); border: none; }
+    .taste-brew-chip:not(.active) { background: var(--surface); color: var(--ink-soft); border: 1px solid var(--line); }
+    .taste-save-bar {
+      padding: 12px 18px calc(12px + env(safe-area-inset-bottom, 0px));
+      background: var(--nav-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-top: 1px solid var(--line);
+      position: sticky;
+      bottom: 0;
+    }
+    .taste-save-btn {
+      width: 100%;
+      background: var(--amber);
+      color: var(--on-amber);
+      border: none;
+      border-radius: var(--r-md);
+      padding: 14px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.12s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .taste-save-btn:hover { background: var(--amber-deep); }
+    .taste-save-btn.saved { background: var(--sage); }
+    .taste-save-btn svg { width: 17px; height: 17px; }
+
+    /* ============================================================
+       QUEST LAYER
+       ============================================================ */
+
+    /* Discover: Quest strip */
+    .quest-strip {
+      margin: 0 18px 14px;
+      background: var(--quest-bg);
+      color: var(--quest-fg);
+      border-radius: var(--r-lg);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: var(--shadow-card);
+      animation: jqslideup 0.3s ease;
+    }
+    .quest-ring { flex-shrink: 0; }
+    .quest-ring text { font-family: var(--font-display); }
+    .quest-info { flex: 1; min-width: 0; }
+    .quest-level {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 2px;
+    }
+    .quest-progress {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--quest-fg);
+    }
+    .quest-streak {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px;
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--quest-fg);
+    }
+    .quest-streak-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: rgba(244,235,221,0.6);
+    }
+
+    /* Conquered badge on card photo */
+    .conquered-badge {
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--sage);
+      border: 2px solid var(--surface);
+      display: grid; place-items: center;
+      box-shadow: var(--shadow-card);
+      pointer-events: none;
+    }
+    .conquered-badge svg { width: 13px; height: 13px; color: white; }
+
+    /* Sheet: sticky conquer action bar */
+    .sheet-conquer-bar {
+      display: flex;
+      gap: 10px;
+      padding: 14px 18px calc(14px + env(safe-area-inset-bottom, 0px));
+      border-top: 1px solid var(--line);
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      position: sticky;
+      bottom: 0;
+      z-index: 2;
+    }
+    .sheet-conquer-btn {
+      flex: 2;
+      background: var(--amber);
+      color: var(--on-amber);
+      border: none;
+      border-radius: var(--r-md);
+      padding: 13px 16px;
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .sheet-conquer-btn:active { transform: scale(0.97); }
+    .sheet-conquer-btn:hover { background: var(--amber-deep); }
+    .sheet-conquer-btn.done { background: var(--sage); }
+    .sheet-conquer-btn.done:hover { background: var(--sage-deep); }
+    .sheet-conquer-btn svg { width: 17px; height: 17px; }
+    .sheet-map-btn {
+      flex: 1;
+      background: var(--surface-2);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: var(--r-md);
+      padding: 13px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      text-decoration: none;
+      transition: background 0.12s;
+    }
+    .sheet-map-btn:hover { background: var(--surface); }
+    .sheet-map-btn svg { width: 16px; height: 16px; }
+
+    /* Profile: quest stat tiles */
+    .profile-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin: 16px 0;
+    }
+    .profile-stat-tile {
+      background: var(--surface-2);
+      border-radius: var(--r-md);
+      padding: 10px 6px;
+      text-align: center;
+    }
+    .profile-stat-tile .pst-n {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+    .profile-stat-tile .pst-label {
+      font-family: var(--font-mono);
+      font-size: 9.5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    /* Profile: passport badge grid */
+    .passport-section {
+      background: var(--surface);
+      border: 1px solid var(--card-border);
+      border-radius: var(--r-lg);
+      padding: 16px;
+      margin-top: 16px;
+      box-shadow: var(--shadow-card);
+    }
+    .passport-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 17px;
+      color: var(--ink);
+      margin: 0 0 12px;
+    }
+    .passport-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .passport-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      text-align: center;
+    }
+    .passport-badge-icon {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      display: grid; place-items: center;
+      font-size: 22px;
+    }
+    .passport-badge-icon.earned { background: var(--amber); border: 2px solid var(--amber-deep); }
+    .passport-badge-icon.locked { background: var(--surface-2); border: 2px dashed var(--line-strong); position: relative; }
+    .passport-badge-icon.locked::after {
+      content: "🔒";
+      position: absolute; bottom: -2px; right: -2px;
+      font-size: 13px;
+      filter: grayscale(0.3);
+    }
+    .passport-badge-name {
+      font-weight: 600;
+      font-size: 11.5px;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .passport-badge-desc {
+      font-size: 10.5px;
+      color: var(--ink-faint);
+      line-height: 1.3;
+    }
+
+    /* ============================================================
+       REFER VIEW
+       ============================================================ */
+    .refer-hero {
+      background: var(--quest-bg);
+      color: var(--quest-fg);
+      padding: 56px 22px 28px;
+      border-radius: 0 0 var(--r-xl) var(--r-xl);
+      text-align: center;
+      position: relative;
+    }
+    .refer-back {
+      position: absolute;
+      top: 14px; left: 14px;
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255,255,255,.14);
+      display: grid; place-items: center;
+      cursor: pointer;
+      color: var(--quest-fg);
+    }
+    .refer-back svg { width: 20px; height: 20px; }
+    .refer-gift-icon {
+      width: 68px; height: 68px;
+      background: var(--amber);
+      border-radius: 20px;
+      display: grid; place-items: center;
+      margin: 0 auto 16px;
+      box-shadow: 0 8px 24px var(--amber-glow);
+    }
+    .refer-gift-icon svg { width: 34px; height: 34px; color: var(--on-amber); }
+    .refer-hero h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 28px;
+      margin: 0 0 8px;
+      color: var(--quest-fg);
+      letter-spacing: -0.3px;
+    }
+    .refer-hero p {
+      font-size: 14px;
+      opacity: 0.82;
+      margin: 0 auto;
+      max-width: 280px;
+      line-height: 1.55;
+    }
+    .refer-body { padding: 22px 18px 40px; }
+    .refer-code-label {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 1px;
+      color: var(--amber-deep);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .refer-code-row { display: flex; gap: 10px; margin-bottom: 12px; }
+    .refer-code-box {
+      flex: 1;
+      background: var(--surface);
+      border: 1.5px dashed var(--amber);
+      border-radius: var(--r-md);
+      padding: 13px 16px;
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 1.5px;
+      display: flex; align-items: center;
+    }
+    .refer-copy-btn {
+      flex-shrink: 0;
+      background: var(--amber);
+      color: var(--on-amber);
+      border: none;
+      border-radius: var(--r-md);
+      padding: 0 18px;
+      font-weight: 700;
+      font-size: 13.5px;
+      cursor: pointer;
+      display: flex; align-items: center; gap: 7px;
+      transition: background 0.12s, transform 0.1s;
+      min-height: 48px;
+    }
+    .refer-copy-btn:hover { background: var(--amber-deep); }
+    .refer-copy-btn:active { transform: scale(0.97); }
+    .refer-copy-btn.copied { background: var(--sage); }
+    .refer-copy-btn svg { width: 15px; height: 15px; }
+    .refer-share-btn {
+      width: 100%;
+      background: var(--quest-bg);
+      color: var(--quest-fg);
+      border: none;
+      border-radius: var(--r-md);
+      padding: 13px 18px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      margin-bottom: 22px;
+      transition: opacity 0.12s;
+    }
+    .refer-share-btn:hover { opacity: 0.88; }
+    .refer-share-btn svg { width: 17px; height: 17px; }
+    .refer-stats {
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow-card);
+      padding: 16px;
+      display: flex;
+      margin-bottom: 22px;
+    }
+    .refer-stat {
+      flex: 1;
+      text-align: center;
+    }
+    .refer-stat + .refer-stat { border-left: 1px solid var(--line); }
+    .refer-stat-n {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .refer-stat-n.invited { color: var(--amber-deep); }
+    .refer-stat-n.joined  { color: var(--sage-deep); }
+    .refer-stat-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--ink-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .refer-kicker {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      margin-bottom: 4px;
+    }
+    .refer-section-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--ink);
+      margin: 0 0 12px;
+      letter-spacing: -0.1px;
+    }
+    .refer-ladder { display: flex; flex-direction: column; gap: 10px; }
+    .refer-ladder-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      background: var(--surface);
+      border-radius: var(--r-md);
+      padding: 13px 14px;
+      border: 1px solid var(--card-border);
+    }
+    .refer-ladder-badge {
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: grid; place-items: center;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .refer-ladder-badge.done { background: var(--amber); color: var(--on-amber); }
+    .refer-ladder-badge.done svg { width: 18px; height: 18px; }
+    .refer-ladder-badge.locked { background: var(--surface-2); color: var(--ink-soft); border: 1px solid var(--line); }
+    .refer-ladder-text { flex: 1; }
+    .refer-ladder-label {
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .refer-ladder-sub { font-size: 12.5px; color: var(--ink-soft); }
+    .refer-unlocked-tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: var(--sage-soft);
+      color: var(--sage-deep);
+      padding: 3px 8px;
+      border-radius: 999px;
     }
 
     /* ============================================================
@@ -1830,60 +3190,76 @@
     <!--  DISCOVER                                                  -->
     <!-- ========================================================== -->
     <main class="view active" id="view-discover">
-      <div class="greeting">
-        <h1>Your Coffee Quest Begins</h1>
-        <p id="greeting-sub">One drink, one bite, per café. Hand-picked from real reviews.</p>
-        <div class="city-bar">
-          <span class="city-bar-k">City</span>
-          <select class="city-select" aria-label="Choose city"></select>
-          <div class="zip-wrap">
-            <input type="text" inputmode="numeric" pattern="\d*" maxlength="5"
-              class="zip-input" placeholder="or ZIP" aria-label="ZIP code overrides city">
-            <button class="zip-clear" hidden aria-label="Clear ZIP">×</button>
-          </div>
-          <span class="city-bar-hint" hidden></span>
-        </div>
-      </div>
-
-      <div class="mini-map" id="mini-map" role="button" aria-label="Open full map">
+      <!-- Hidden city/zip controls still used by JS for city switching -->
+      <div hidden aria-hidden="true">
+        <select class="city-select" aria-label="Choose city"></select>
+        <input class="zip-input" type="text" inputmode="numeric" pattern="\d*" maxlength="5" placeholder="or ZIP">
+        <button class="zip-clear" aria-label="Clear ZIP">×</button>
+        <span class="city-bar-hint"></span>
         <svg class="map-canvas" id="mini-map-svg" preserveAspectRatio="none"></svg>
-        <div class="open-map">View map →</div>
       </div>
 
-      <div class="section-head">
-        <h2>Top-ranked cafés</h2>
-        <div class="meta" id="discover-count">…</div>
+      <!-- Top bar: greeting + city + avatar -->
+      <div class="discover-topbar">
+        <div>
+          <div class="discover-time-label" id="discover-time-label">Good morning</div>
+          <button class="discover-city-btn" id="discover-city-btn" aria-label="Switch city">
+            <span id="discover-city-name">…</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <button class="discover-avatar" id="discover-avatar" data-go="profile" aria-label="Profile">JQ</button>
       </div>
-      <div class="cafe-list" id="discover-list"></div>
+
+      <!-- Filter chips -->
+      <div class="discover-chip-bar" id="discover-chip-bar">
+        <button class="chip active" data-discover-chip="all">All</button>
+        <button class="chip" data-discover-chip="open">Open now</button>
+        <button class="chip" data-discover-chip="match">Matches taste</button>
+        <button class="chip" data-discover-chip="near">Near me</button>
+      </div>
+
+      <!-- Quest strip -->
+      <div style="padding: 0 18px;" id="quest-strip-wrap">
+        <div id="quest-strip" hidden></div>
+      </div>
+
+      <!-- Today's pick hero -->
+      <div class="discover-section-head" id="discover-hero-head" hidden>
+        <div class="discover-section-kicker">Today's quest</div>
+        <div class="discover-section-title">Your pick of the day</div>
+      </div>
+      <div style="padding: 0 18px 6px;" id="discover-hero-wrap" hidden></div>
+
+      <!-- Ranked list -->
+      <div class="discover-section-head" id="discover-list-head">
+        <div class="discover-section-kicker">The leaderboard</div>
+        <div class="discover-section-title" style="margin-bottom:4px;">Top-ranked cafés <span id="discover-count" style="font-family:var(--font-body);font-size:13px;font-weight:400;color:var(--ink-faint);letter-spacing:0;"></span></div>
+      </div>
+      <div class="cafe-list" id="discover-list" style="gap:12px; padding: 0 18px 8px;"></div>
+
+      <!-- Independence footer -->
+      <div class="discover-footer">
+        <p>We never take a cent to rank a café higher. Picks come from real reviews — nothing else.</p>
+      </div>
     </main>
 
     <!-- ========================================================== -->
     <!--  MAP                                                       -->
     <!-- ========================================================== -->
-    <main class="view" id="view-map">
-      <div class="city-bar city-bar-map">
-        <span class="city-bar-k">City</span>
-        <select class="city-select" aria-label="Choose city"></select>
-        <div class="zip-wrap">
-          <input type="text" inputmode="numeric" pattern="\d*" maxlength="5"
-            class="zip-input" placeholder="or ZIP" aria-label="ZIP code overrides city">
-          <button class="zip-clear" hidden aria-label="Clear ZIP">×</button>
-        </div>
-        <span class="city-bar-hint" hidden></span>
-      </div>
-      <div class="filter-bar" id="filter-bar"></div>
+    <main class="view" id="view-map" aria-label="Map">
 
-      <div class="filter-summary">
-        <span id="filter-count">Showing all</span>
-        <button class="clear" id="filter-clear" hidden>Clear all</button>
-      </div>
+      <!-- Filter chips -->
+      <div class="map-chip-bar" id="map-chip-bar"></div>
 
-      <div class="big-map" id="big-map">
+      <!-- Map canvas + controls -->
+      <div class="map-stage" id="map-stage">
         <svg class="map-canvas" id="big-map-svg" preserveAspectRatio="none"></svg>
-        <div class="map-controls">
-          <button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
-          <button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
-          <button id="locate-me" class="locate" aria-label="Show my location" title="Show my location">
+
+        <div class="map-controls" id="map-controls">
+          <button id="zoom-in" aria-label="Zoom in">+</button>
+          <button id="zoom-out" aria-label="Zoom out">−</button>
+          <button id="locate-me" class="locate" aria-label="Show my location">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="3"/>
               <line x1="12" y1="2" x2="12" y2="5"/>
@@ -1895,17 +3271,28 @@
         </div>
       </div>
 
-      <div class="map-legend">
-        <span><i class="dot cafe"></i> Café</span>
-        <span><i class="dot you"></i> You</span>
-        <span><i class="dot quester"></i> JoeQuesters</span>
+      <!-- Bottom sheet: default (legend + mini-cards) or preview (pin tap) -->
+      <div class="map-sheet" id="map-sheet">
+        <div class="map-sheet-handle"></div>
+        <div id="map-sheet-default">
+          <div class="map-sheet-legend">
+            <span>
+              <svg class="map-legend-pin-cafe" viewBox="0 0 28 36" width="12" height="16">
+                <path d="M14 2C6 2 2 8 2 14C2 24 14 36 14 36C14 36 26 24 26 14C26 8 22 2 14 2Z" fill="#D98324"/>
+                <path d="M8 11H20a1 1 0 0 1 1 1V17a6 6 0 0 1-12 0V12a1 1 0 0 1 1-1Z" fill="#FFF8EE"/>
+                <path d="M21 12.5a3 3 0 0 1 0 6" fill="none" stroke="#FFF8EE" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="14" cy="15" rx="2" ry="1.8" fill="#2A1E16"/>
+              </svg>
+              Café
+            </span>
+            <span><i class="map-legend-pin-quester"></i> JoeQuesters</span>
+            <span><i class="map-legend-dot-you"></i> You</span>
+          </div>
+          <div class="map-sheet-count" id="map-sheet-count"></div>
+          <div class="map-mini-cards" id="map-mini-cards"></div>
+        </div>
+        <div id="map-sheet-preview" hidden></div>
       </div>
-
-      <div class="section-head">
-        <h2>Cafés on the map</h2>
-        <div class="meta" id="map-count"></div>
-      </div>
-      <div class="cafe-list" id="map-list"></div>
     </main>
 
     <!-- ========================================================== -->
@@ -2056,9 +3443,12 @@
           <div><strong id="profile-fav-count">0</strong><span>saved cafés</span></div>
         </div>
 
-        <button class="auth-submit" data-go="saved">View saved cafés</button>
+        <button class="auth-submit" data-go="saved" style="margin-top:12px;">View saved cafés</button>
         <button class="auth-secondary" id="auth-signout">Sign out</button>
       </div>
+
+      <!-- Quest stats + passport (shown for all users) -->
+      <div id="profile-quest" style="padding: 0 18px 32px;"></div>
     </main>
 
     <!-- ========================================================== -->
@@ -2252,6 +3642,33 @@
     </main>
 
     <!-- ========================================================== -->
+    <!--  REFER A FRIEND                                            -->
+    <!-- ========================================================== -->
+    <main class="view" id="view-refer">
+      <div class="refer-hero">
+        <button class="refer-back" data-go="discover" aria-label="Back">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+        <div class="refer-gift-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/>
+            <line x1="12" y1="22" x2="12" y2="7"/>
+            <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+            <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+          </svg>
+        </div>
+        <h1>Share the quest</h1>
+        <p>Invite a friend to JoeQuest. When they conquer their first café, you both earn rewards.</p>
+      </div>
+
+      <div class="refer-body" id="refer-body">
+        <!-- populated by renderRefer() -->
+      </div>
+    </main>
+
+    <!-- ========================================================== -->
     <!--  HELP / CONTACT FORM                                       -->
     <!-- ========================================================== -->
     <main class="view" id="view-help">
@@ -2357,6 +3774,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><circle cx="16" cy="14" r="2"/></svg>
           Offers near you
         </button>
+        <button class="drawer-item" data-action="refer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+          Refer a friend
+        </button>
       </div>
       <div class="drawer-section">
         <button class="drawer-item" data-action="partner">
@@ -2384,6 +3805,9 @@
       </div>
     </aside>
     <div class="scrim" id="scrim"></div>
+
+    <!-- Onboarding overlay (shown on first visit) -->
+    <div class="onboarding" id="onboarding" hidden></div>
 
     <!-- Install instructions modal (PWA Add to Home Screen) -->
     <div class="install-modal" id="install-modal" role="dialog" aria-modal="true" aria-labelledby="install-title" hidden>
@@ -2518,19 +3942,23 @@
       filtered: [],
       filters: { rating: 0, openOnly: false, prices: new Set(), questers: false },
       saved: new Set(),
+      conquered: new Set(),   // Phase 4: wired to backend; empty for now
+      mapFilter: "all",       // "all" | "near-me" | "open" | "saved"
+      mapSelected: null,      // id of the currently selected map pin
+      discoverFilter: "all",  // "all" | "open" | "match" | "near"
       currentCafe: null,
-      pickCache: new Map(), // id → picks payload
-      mapView: { zoom: 1, cx: 0.5, cy: 0.5 },     // viewBox-based zoom on the big map
-      myLocation: { lat: 26.372, lng: -80.105 },  // default to Boca centre; geolocation overrides
-      taste: null,                                // Stage 2: loaded after sign-in
-      settings: { units: "mi", notifications: false }, // Stage 3
-      recoveryMode: false,                        // true after a PASSWORD_RECOVERY auth event
-      cities: [],                                 // Stage B: from /api/cities
-      city: "boca-raton",                         // active city slug
-      origin: null,                               // { lat, lng } when we have a user location
-      originSource: null,                         // "zip" | "geolocation" | null
-      zipMode: false,                             // Stage C: true while a zip override is active
-      zip: null,                                  // current 5-digit zip
+      pickCache: new Map(),
+      mapView: { zoom: 1, cx: 0.5, cy: 0.5 },
+      myLocation: { lat: 26.372, lng: -80.105 },
+      taste: null,
+      settings: { units: "mi", notifications: false },
+      recoveryMode: false,
+      cities: [],
+      city: "boca-raton",
+      origin: null,
+      originSource: null,
+      zipMode: false,
+      zip: null,
     };
 
     // ---- DOM ----
@@ -2541,13 +3969,14 @@
       banner: $("#banner"),
       discoverList: $("#discover-list"),
       discoverCount: $("#discover-count"),
-      mapList: $("#map-list"),
-      mapCount: $("#map-count"),
       savedList: $("#saved-list"),
       savedEmpty: $("#saved-empty"),
-      filterBar: $("#filter-bar"),
-      filterCount: $("#filter-count"),
-      filterClear: $("#filter-clear"),
+      mapChipBar: $("#map-chip-bar"),
+      mapStage: $("#map-stage"),
+      mapSheetDefault: $("#map-sheet-default"),
+      mapSheetPreview: $("#map-sheet-preview"),
+      mapSheetCount: $("#map-sheet-count"),
+      mapMiniCards: $("#map-mini-cards"),
       miniMapSvg: $("#mini-map-svg"),
       bigMapSvg: $("#big-map-svg"),
       sheet: $("#sheet"),
@@ -2883,15 +4312,19 @@
       if (view === "saved") renderSaved();
       if (view === "map") renderMap();
       if (view === "profile") renderProfile();
-      if (view === "taste") renderTaste();
+      if (view === "taste") renderTasteV2();
       if (view === "settings") renderSettings();
+      if (view === "our-story") renderStory();
       if (view === "offers") loadAndRenderOffers();
+      if (view === "refer") renderRefer();
       if (view === "help") renderHelp();
       if (view !== prev) track("view_change", { to: view });
     }
 
     // ---- bootstrap ----
     async function init() {
+      loadQuestState();
+
       // app_open fires once per session (browser session, not auth session)
       try {
         if (!sessionStorage.getItem("jq.opened")) {
@@ -2925,13 +4358,15 @@
         els.discoverList.innerHTML = `<div style="padding:40px 18px; text-align:center; color: var(--muted);">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
       }
 
-      buildFilterBar();
+      buildMapChipBar();
       bindEvents();
       bindAuthEvents();
       bindTasteEvents();
       bindSettingsEvents();
       bindOffersHelpEvents();
       bindInstallModal();
+      renderStory();
+      initOnboarding();
 
       // Deep link: ?cafe=<id> opens that café's sheet. Works across cities —
       // we'll switch the active city if the requested place lives elsewhere.
@@ -3063,19 +4498,12 @@
     }
 
     async function loadAndRenderOffers() {
-      const list = document.getElementById("offers-list");
-      list.innerHTML = `<div style="padding:24px 18px; text-align:center; color:var(--muted);">Loading offers…</div>`;
       try {
         const r = await fetch("/api/offers");
         const d = await r.json();
-        const offers = d.offers || [];
-        if (offers.length === 0) {
-          list.innerHTML = `<div style="padding:24px 18px; text-align:center; color:var(--muted);">No active offers right now. Check back soon.</div>`;
-          return;
-        }
-        list.innerHTML = offers.map(offerCardHTML).join("");
+        renderOffersV2(d.offers || []);
       } catch (e) {
-        list.innerHTML = `<div style="padding:24px 18px; text-align:center; color:var(--muted);">Couldn't load offers: ${escapeHTML(e.message)}</div>`;
+        renderOffersV2([]);
       }
     }
 
@@ -3608,45 +5036,48 @@
     }
 
     // Brand pin: matches /img/joequest-icon.svg. Tip is at local (32, 82).
-    const BRAND_PIN_PATHS = `
-      <path d="M 32 4 C 14 4 4 16 4 32 C 4 52 32 82 32 82 C 32 82 60 52 60 32 C 60 16 50 4 32 4 Z" fill="#D98324"/>
-      <path d="M 19 25 H 43 a 2 2 0 0 1 2 2 V 37 a 13 13 0 0 1 -26 0 V 27 a 2 2 0 0 1 2 -2 Z" fill="#FFF6EC"/>
-      <path d="M 45 28 a 6.5 6.5 0 0 1 0 13" fill="none" stroke="#FFF6EC" stroke-width="3.5" stroke-linecap="round"/>
-      <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#5E3E27"/>
-    `;
+    // Café pin paths: amber teardrop + cream cup glyph.
+    // conquered = darker amber (#A6611A). Colours are hex — CSS vars don't work in SVG fill attrs.
+    function cafePin(conquered = false) {
+      const fill = conquered ? "#A6611A" : "#D98324";
+      return `
+        <path d="M 32 4 C 14 4 4 16 4 32 C 4 52 32 82 32 82 C 32 82 60 52 60 32 C 60 16 50 4 32 4 Z" fill="${fill}"/>
+        <path d="M 19 25 H 43 a 2 2 0 0 1 2 2 V 37 a 13 13 0 0 1 -26 0 V 27 a 2 2 0 0 1 2 -2 Z" fill="#FFF8EE"/>
+        <path d="M 45 28 a 6.5 6.5 0 0 1 0 13" fill="none" stroke="#FFF8EE" stroke-width="3.5" stroke-linecap="round"/>
+        <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#2A1E16"/>
+      `;
+    }
 
-    // "You are here" pin — same silhouette as the brand pin but red, so it reads
-    // as a JoeQuest marker that you can tell apart from the orange café pins.
-    const USER_PIN_PATHS = `
-      <path d="M 32 4 C 14 4 4 16 4 32 C 4 52 32 82 32 82 C 32 82 60 52 60 32 C 60 16 50 4 32 4 Z" fill="#D9483A"/>
-      <path d="M 19 25 H 43 a 2 2 0 0 1 2 2 V 37 a 13 13 0 0 1 -26 0 V 27 a 2 2 0 0 1 2 -2 Z" fill="#FFF6EC"/>
-      <path d="M 45 28 a 6.5 6.5 0 0 1 0 13" fill="none" stroke="#FFF6EC" stroke-width="3.5" stroke-linecap="round"/>
-      <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#5E3E27"/>
-    `;
-
-    // Pin renderer. Outer transform `translate(x,y) scale(1/zoom)` keeps the
-    // pin's rendered pixel size CONSTANT as the user zooms — same as Google
-    // Maps. The map background scales with viewBox, but pins do not.
-    function pinSVG(x, y, scale, id, rating, zoom = 1) {
+    // Pin renderer. scale(1/zoom) on the outer group keeps pixel size constant as user zooms.
+    function pinSVG(x, y, scale, id, conquered = false, selected = false, name = "", zoom = 1) {
       const cs = 1 / zoom;
-      const pillW = 26 + scale * 46;          // big ≈ 50, mini ≈ 39
-      const pillH = 12 + scale * 17;          // big ≈ 21, mini ≈ 17
-      const pillFs = 6.5 + scale * 11.5;      // big ≈ 12.5, mini ≈ 9.7
-      const pill = rating
-        ? `<g transform="translate(${-pillW / 2}, 3)">
-             <rect width="${pillW}" height="${pillH}" rx="${pillH / 2}" fill="#FFF6EC" stroke="rgba(43,28,18,0.18)" stroke-width="1"/>
-             <text x="${pillW / 2}" y="${pillH * 0.7}" text-anchor="middle" font-family="Inter, sans-serif" font-size="${pillFs}" font-weight="700">
-               <tspan fill="#E8A317">★</tspan><tspan fill="#5E3E27" dx="2">${rating.toFixed(1)}</tspan>
-             </text>
+      const pinScale = selected ? scale * 1.3 : scale;
+      const shadowRx = Math.max(5, 14 * pinScale);
+
+      // Name tooltip shown when selected
+      const tooltip = selected && name
+        ? `<g transform="translate(0, ${-88 * pinScale - 4})">
+             <rect x="${-name.length * 3.4 - 6}" y="-14" width="${name.length * 6.8 + 12}" height="18" rx="9" fill="#2A1E16" opacity="0.88"/>
+             <text text-anchor="middle" y="-2" font-family="Hanken Grotesk, system-ui, sans-serif" font-size="10" font-weight="700" fill="#FFFDF8">${escapeHTML(name.length > 20 ? name.slice(0, 18) + "…" : name)}</text>
            </g>`
         : "";
+
+      // Conquered green check badge
+      const check = conquered
+        ? `<g transform="translate(${14 * pinScale}, ${-12 * pinScale})">
+             <circle r="${7 * pinScale}" fill="#7E8C57" stroke="#FFFDF8" stroke-width="${1.5 * pinScale}"/>
+             <path d="M ${-3 * pinScale} 0 L ${-0.5 * pinScale} ${2.5 * pinScale} L ${3.5 * pinScale} ${-2.5 * pinScale}" fill="none" stroke="#FFFDF8" stroke-width="${1.5 * pinScale}" stroke-linecap="round" stroke-linejoin="round"/>
+           </g>`
+        : "";
+
       return `
-        <g class="map-pin" data-id="${id}" transform="translate(${x}, ${y}) scale(${cs})" style="cursor: pointer;">
-          <ellipse cx="0" cy="2" rx="${Math.max(5, 14 * scale)}" ry="2" fill="rgba(43,28,18,0.22)"/>
-          <g transform="translate(${-32 * scale}, ${-82 * scale}) scale(${scale})">
-            ${BRAND_PIN_PATHS}
+        <g class="map-pin" data-id="${id}" transform="translate(${x}, ${y}) scale(${cs})" style="cursor:pointer;">
+          ${tooltip}
+          <ellipse cx="0" cy="2" rx="${shadowRx}" ry="2" fill="rgba(42,30,22,0.22)"/>
+          <g transform="translate(${-32 * pinScale}, ${-82 * pinScale}) scale(${pinScale})">
+            ${cafePin(conquered)}
           </g>
-          ${pill}
+          ${check}
         </g>
       `;
     }
@@ -3655,7 +5086,6 @@
       const { detailed = false } = opts;
       svg.innerHTML = "";
 
-      // Detailed map respects the current zoom/pan via viewBox.
       if (detailed) {
         const v = state.mapView;
         const W = w / v.zoom, H = h / v.zoom;
@@ -3666,77 +5096,73 @@
         svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
       }
 
-      // Stylized "map" background: warm grid + cream roads + faint park patch.
-      const bg = `
+      // Stylized warm background using Roastery map tokens
+      svg.insertAdjacentHTML("beforeend", `
         <defs>
-          <pattern id="grid-${w}" width="${w / 4}" height="${h / 4}" patternUnits="userSpaceOnUse">
-            <rect width="${w / 4}" height="${h / 4}" fill="none"/>
-            <path d="M ${w / 4} 0 L 0 0 0 ${h / 4}" fill="none" stroke="rgba(94,62,39,0.10)" stroke-width="1.5"/>
+          <pattern id="grid-${w}" width="${w/4}" height="${h/4}" patternUnits="userSpaceOnUse">
+            <rect width="${w/4}" height="${h/4}" fill="none"/>
+            <path d="M ${w/4} 0 L 0 0 0 ${h/4}" fill="none" stroke="rgba(42,30,22,0.08)" stroke-width="1.5"/>
           </pattern>
           <linearGradient id="bgg-${w}" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#EFE0CB"/>
-            <stop offset="100%" stop-color="#E5D3B7"/>
+            <stop offset="0%" stop-color="#EADFCC"/>
+            <stop offset="100%" stop-color="#E2D5BD"/>
           </linearGradient>
         </defs>
         <rect width="${w}" height="${h}" fill="url(#bgg-${w})"/>
         <rect width="${w}" height="${h}" fill="url(#grid-${w})"/>
-        <rect x="${w * 0.78}" y="0" width="${w * 0.22}" height="${h * 0.55}" fill="rgba(59,125,90,0.10)"/>
-        <line x1="0" y1="${h * 0.5}" x2="${w}" y2="${h * 0.5}" stroke="#FFF6EC" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
-        <line x1="${w * 0.42}" y1="0" x2="${w * 0.42}" y2="${h}" stroke="#FFF6EC" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
-        <line x1="${w * 0.82}" y1="0" x2="${w * 0.82}" y2="${h}" stroke="#FFF6EC" stroke-width="4" stroke-linecap="round" opacity="0.70"/>
-      `;
-      svg.insertAdjacentHTML("beforeend", bg);
+        <rect x="${w*0.78}" y="0" width="${w*0.22}" height="${h*0.55}" fill="#D6DEB6" opacity="0.5"/>
+        <line x1="0" y1="${h*0.5}" x2="${w}" y2="${h*0.5}" stroke="#F6F0E3" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+        <line x1="${w*0.42}" y1="0" x2="${w*0.42}" y2="${h}" stroke="#F6F0E3" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+        <line x1="${w*0.82}" y1="0" x2="${w*0.82}" y2="${h}" stroke="#EFE6D5" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+      `);
 
-      // Markers (questers, "you", café pins) all get an outer counter-scale
-      // of 1/zoom on the detailed map so they keep a constant pixel size as
-      // the user zooms in — matches Google Maps.
       const zoom = detailed ? state.mapView.zoom : 1;
       const cs = 1 / zoom;
 
-      // JoeQuesters markers (drawn under café pins, simulated positions).
-      if (detailed && state.filters.questers) {
-        const positions = [
-          [0.30, 0.45], [0.18, 0.62], [0.60, 0.68], [0.74, 0.30],
-          [0.42, 0.78], [0.55, 0.18], [0.86, 0.62],
+      // JoeQuester pins — always shown on full map (simulated positions)
+      if (detailed) {
+        const questers = [
+          [0.30, 0.45], [0.18, 0.62], [0.60, 0.68],
+          [0.74, 0.30], [0.42, 0.78], [0.55, 0.18], [0.86, 0.62],
         ];
         const mw = 22, mh = 30;
-        positions.forEach(([fx, fy]) => {
+        questers.forEach(([fx, fy]) => {
           const cx = fx * w, cy = fy * h;
           svg.insertAdjacentHTML("beforeend", `
-            <g transform="translate(${cx}, ${cy}) scale(${cs})">
-              <ellipse cy="1" rx="6" ry="1.8" fill="rgba(43,28,18,0.22)"/>
+            <g class="quester-pin" transform="translate(${cx}, ${cy}) scale(${cs})" style="cursor:pointer;">
+              <ellipse cy="1" rx="5" ry="1.5" fill="rgba(42,30,22,0.20)"/>
               <image href="/img/joequester-marker.png"
-                x="${-mw / 2}" y="${-mh}"
-                width="${mw}" height="${mh}"
+                x="${-mw/2}" y="${-mh}" width="${mw}" height="${mh}"
                 preserveAspectRatio="xMidYMid meet"
-                style="pointer-events: none;"/>
+                style="pointer-events:none;"/>
             </g>
           `);
         });
       }
 
-      // "You are here" — red JQ-shaped pin, counter-scaled to stay constant.
+      // "You" pin — pulsing clay dot with SVG animate
       if (detailed) {
         const me = state.myLocation;
         const { x: yx, y: yy } = projectXY(me.lat, me.lng, w, h);
-        const us = 0.58;
         svg.insertAdjacentHTML("beforeend", `
           <g class="user-pin" transform="translate(${yx}, ${yy}) scale(${cs})">
-            <circle cy="1" r="${Math.max(8, 22 * us)}" fill="rgba(217,72,58,0.16)"/>
-            <ellipse cy="2" rx="${Math.max(6, 16 * us)}" ry="2.4" fill="rgba(43,28,18,0.28)"/>
-            <g transform="translate(${-32 * us}, ${-82 * us}) scale(${us})">
-              ${USER_PIN_PATHS}
-            </g>
+            <circle r="0" fill="none" stroke="#C2553F" stroke-width="1.5" opacity="0.5">
+              <animate attributeName="r" values="7;18;18" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0 0.8 1;0 0 1 1"/>
+              <animate attributeName="opacity" values="0.5;0;0" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0 0.8 1;0 0 1 1"/>
+            </circle>
+            <circle r="7" fill="#C2553F" stroke="#FFFDF8" stroke-width="2"/>
           </g>
         `);
       }
 
-      // Café pins — brand mark with rating pill below (detailed only).
+      // Café pins
       const scale = detailed ? 0.52 : 0.28;
       cafes.forEach((c) => {
         if (typeof c.lat !== "number" || typeof c.lng !== "number") return;
         const { x, y } = projectXY(c.lat, c.lng, w, h);
-        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, c.rating ?? 0, zoom));
+        const conquered = state.conquered.has(c.id);
+        const selected = state.mapSelected === c.id;
+        svg.insertAdjacentHTML("beforeend", pinSVG(x, y, scale, c.id, conquered, selected, c.name, zoom));
       });
     }
 
@@ -3750,86 +5176,534 @@
     function cardHTML(c, rank) {
       const isSaved = state.saved.has(c.id);
       const cached = state.pickCache.get(c.id);
-      const picksReady = !!cached;
       const drink = cached?.picks?.drink;
-      const food = cached?.picks?.food;
-      // Stage 2: taste match indicator. Honest — only fires when the user has
-      // a profile AND the pick name lights up a real signal.
+      const food  = cached?.picks?.food;
       const match = state.taste ? tasteMatch(drink, state.taste) : null;
-      const matchTag = match
-        ? ` <span class="match-tag" title="${escapeHTML(match.reasons.join(" · "))}">✓ your taste</span>`
-        : "";
+      const dist  = distanceFromOrigin(c);
 
       const photoHTML = c.photo
-        ? `<img loading="lazy" src="${escapeHTML(c.photo)}" alt="" onerror="this.parentNode.innerHTML='<div class=&quot;photo-fallback&quot;>☕</div>'"/>`
-        : `<div class="photo-fallback">☕</div>`;
+        ? `<img loading="lazy" src="${escapeHTML(c.photo)}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentNode.innerHTML='<div class=\\'cafe-card-v2-photo-fallback\\'>☕</div>'">`
+        : `<div class="cafe-card-v2-photo-fallback">☕</div>`;
+
+      const matchPill = match
+        ? `<span class="match-pill-v2">✓ your taste</span>`
+        : "";
+
+      const drinkLine = drink?.name ? verdictLineHTML("drink", drink.name, "") : "";
+      const foodLine  = food?.name  ? verdictLineHTML("bite",  food.name,  "") : "";
+      const loadingLines = !cached ? `
+        <div class="verdict-line" style="opacity:.45;">
+          <span class="verdict-line-kind">Drink</span>
+          <span class="verdict-line-name" style="background:var(--line);border-radius:4px;height:14px;width:60%;display:block;"></span>
+        </div>
+        <div class="verdict-line" style="opacity:.45;">
+          <span class="verdict-line-kind">Bite</span>
+          <span class="verdict-line-name" style="background:var(--line);border-radius:4px;height:14px;width:50%;display:block;"></span>
+        </div>` : "";
 
       return `
-        <article class="cafe-card" data-id="${c.id}" tabindex="0">
-          <div class="photo-wrap">
-            ${photoHTML}
-            ${rank ? `<div class="rank-badge" aria-label="Rank ${rank}">${rank}</div>` : ""}
-            ${statusBadgeHTML(c)}
-            <button class="share-btn" data-share="${c.id}" aria-label="Share">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
-              </svg>
-            </button>
-            <button class="heart-btn ${isSaved ? "saved" : ""}" data-fav="${c.id}" aria-label="${isSaved ? "Unsave" : "Save"}">
-              <svg viewBox="0 0 24 24" fill="${isSaved ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-              </svg>
-            </button>
+        <article class="cafe-card-v2" data-id="${c.id}" tabindex="0" role="button" aria-label="${escapeHTML(c.name)}">
+          <div class="cafe-card-v2-row">
+            <div class="cafe-card-v2-photo-wrap">
+              ${photoHTML}
+              ${rank ? `<div class="cafe-card-v2-rank" aria-label="Rank ${rank}">${rank}</div>` : ""}
+              ${state.conquered.has(c.id) ? `<div class="cafe-card-v2-conquered">${ICON_CHECK}</div>` : ""}
+            </div>
+            <div class="cafe-card-v2-info">
+              <div class="cafe-card-v2-name-row">
+                <h3 class="cafe-card-v2-name">${escapeHTML(c.name)}</h3>
+                <button class="cafe-card-v2-heart" data-fav="${c.id}" aria-label="${isSaved ? "Unsave" : "Save"}">
+                  <svg viewBox="0 0 24 24" fill="${isSaved ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </button>
+              </div>
+              <div class="cafe-card-v2-location">${dist ? escapeHTML(dist) : (c.address?.split(",")[0] || "")}</div>
+              <div class="cafe-card-v2-status">
+                <span class="open-dot ${c.openNow ? "open" : "closed"}">${c.openNow ? "Open" : (c.hoursLabel || "Closed")}</span>
+                ${matchPill}
+              </div>
+            </div>
           </div>
-          <div class="body">
-            <h3>${escapeHTML(c.name)}</h3>
-            <div class="stats">
-              ${star(c.rating)}
-              <span>·</span>
-              <span>${(c.reviews || 0).toLocaleString()} reviews</span>
-              ${c.price ? `<span>·</span><span class="price">${escapeHTML(c.price)}</span>` : ""}
-            </div>
-            ${(() => {
-              const d = distanceFromOrigin(c);
-              return d ? `<div class="card-distance">${escapeHTML(d)}</div>` : "";
-            })()}
-            <div class="picks-strip" data-picks-for="${c.id}">
-              <div class="pick-mini${matchTag ? " matched" : ""}">
-                <div class="lbl">Drink${matchTag}</div>
-                ${picksReady
-                  ? `<div class="val">${drink?.name ? escapeHTML(drink.name) : "—"}</div>`
-                  : `<div class="placeholder"></div><div class="placeholder" style="width:70%; margin-top:6px;"></div>`}
-              </div>
-              <div class="pick-mini is-food">
-                <div class="lbl">Food</div>
-                ${picksReady
-                  ? `<div class="val">${food?.name ? escapeHTML(food.name) : "—"}</div>`
-                  : `<div class="placeholder"></div><div class="placeholder" style="width:65%; margin-top:6px;"></div>`}
-              </div>
-            </div>
-            ${(() => {
-              const tline = todaysHoursLine(c.weekdayDescriptions, c.timezone);
-              return tline ? `<div class="card-hours"><span class="card-hours-k">Today</span> ${escapeHTML(tline)}</div>` : "";
-            })()}
+          <hr class="cafe-card-v2-divider">
+          <div class="cafe-card-v2-verdicts" data-picks-for="${c.id}">
+            ${drinkLine || foodLine ? drinkLine + foodLine : loadingLines}
           </div>
         </article>
       `;
     }
 
+    function getTimeLabel() {
+      const h = new Date().getHours();
+      if (h < 12) return "Good morning";
+      if (h < 17) return "Good afternoon";
+      return "Good evening";
+    }
+
     function renderDiscover() {
-      els.discoverCount.textContent = `${state.cafes.length} cafés · ranked`;
-      els.discoverList.innerHTML = state.cafes.map((c, i) => cardHTML(c, i + 1)).join("");
-      // Eagerly fetch picks for first 4 to populate the strip
-      state.cafes.slice(0, 4).forEach((c) => prefetchPicks(c.id));
+      // Time greeting
+      const timeEl = document.getElementById("discover-time-label");
+      if (timeEl) timeEl.textContent = getTimeLabel();
+
+      // City name
+      const cityEl = document.getElementById("discover-city-name");
+      if (cityEl) {
+        const found = state.cities.find((c) => c.slug === state.city);
+        cityEl.textContent = found ? found.displayName || found.name : state.city;
+      }
+
+      // Avatar initials
+      const avatarEl = document.getElementById("discover-avatar");
+      if (avatarEl && currentUser?.email) {
+        avatarEl.textContent = initials(currentUser.email);
+      }
+
+      // Apply discover filter
+      const f = state.discoverFilter || "all";
+      let cafes = [...state.cafes];
+      if (f === "open") cafes = cafes.filter((c) => c.openNow);
+      if (f === "near") cafes = cafes.sort ? sortByDistance(cafes) : cafes;
+      if (f === "match") {
+        cafes = cafes.filter((c) => {
+          const pick = state.pickCache.get(c.id);
+          return pick && state.taste && tasteMatch(pick.picks?.drink, state.taste);
+        });
+      }
+
+      // Refresh chip active state
+      $$("[data-discover-chip]", document.getElementById("discover-chip-bar") || document).forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.discoverChip === f);
+      });
+
+      // Count
+      const countEl = document.getElementById("discover-count");
+      if (countEl) countEl.textContent = `· ${cafes.length}`;
+
+      // Hero card (first café)
+      const heroWrap = document.getElementById("discover-hero-wrap");
+      const heroHead = document.getElementById("discover-hero-head");
+      const hero = cafes[0];
+      if (heroWrap && hero) {
+        heroHead.hidden = false;
+        heroWrap.hidden = false;
+        heroWrap.innerHTML = heroCardHTML(hero);
+      } else if (heroWrap) {
+        heroHead.hidden = true;
+        heroWrap.hidden = true;
+      }
+
+      // Ranked list (rest)
+      els.discoverList.innerHTML = cafes.slice(1).map((c, i) => cardHTML(c, i + 2)).join("");
+
+      // Prefetch picks for first 4
+      cafes.slice(0, 4).forEach((c) => prefetchPicks(c.id));
+      renderQuestStrip();
+    }
+
+    function heroCardHTML(c) {
+      const isSaved = state.saved.has(c.id);
+      const cached = state.pickCache.get(c.id);
+      const drink = cached?.picks?.drink;
+      const food  = cached?.picks?.food;
+
+      const photoHTML = c.photo
+        ? `<img src="${escapeHTML(c.photo)}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentNode.innerHTML='<div class=\\'hero-photo-fallback\\'>☕</div>'">`
+        : `<div class="hero-photo-fallback">☕</div>`;
+
+      const drinkLine = drink?.name ? verdictLineHTML("drink", drink.name, "") : "";
+      const foodLine  = food?.name  ? verdictLineHTML("bite",  food.name,  "") : "";
+
+      return `
+        <div class="hero-card" data-id="${c.id}" tabindex="0" role="button" aria-label="${escapeHTML(c.name)}">
+          <div class="hero-photo-wrap">
+            ${photoHTML}
+            <div class="hero-photo-overlay"></div>
+            <div class="hero-tags">
+              <span class="hero-tag">#${c.rank ?? 1} in ${escapeHTML((state.cities.find((x) => x.slug === state.city)?.name || "").split(",")[0] || "")}</span>
+            </div>
+            <button class="hero-heart${isSaved ? " saved" : ""}" data-fav="${c.id}" aria-label="${isSaved ? "Unsave" : "Save"}">
+              <svg viewBox="0 0 24 24" fill="${isSaved ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <div class="hero-info">
+              <div class="hero-name">${escapeHTML(c.name)}</div>
+              <div class="hero-meta">${escapeHTML(c.address?.split(",")[1]?.trim() || "")}${c.openNow ? " · Open" : c.hoursLabel ? " · " + escapeHTML(c.hoursLabel) : ""}</div>
+            </div>
+          </div>
+          ${drinkLine || foodLine ? `
+          <div class="hero-body">
+            <div class="hero-order-label">Order this</div>
+            <div class="hero-verdicts">
+              ${drinkLine}
+              ${foodLine}
+            </div>
+          </div>` : `<div class="hero-body" style="padding:12px 16px;color:var(--ink-faint);font-size:13px;">Loading picks…</div>`}
+        </div>
+      `;
+    }
+
+    function verdictLineHTML(kind, name, price) {
+      const drinkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>`;
+      const biteIcon  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
+      return `
+        <div class="verdict-line">
+          <span class="verdict-line-icon">${kind === "drink" ? drinkIcon : biteIcon}</span>
+          <span class="verdict-line-kind">${kind === "drink" ? "Drink" : "Bite"}</span>
+          <span class="verdict-line-name">${escapeHTML(name)}</span>
+          ${price ? `<span class="verdict-line-price">${escapeHTML(price)}</span>` : ""}
+        </div>`;
     }
 
     function renderMap() {
       applyFilters();
-      els.mapCount.textContent = `${state.filtered.length} of ${state.cafes.length}`;
-      els.mapList.innerHTML = state.filtered.map((c, i) => cardHTML(c, null)).join("");
       renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
+      renderMapSheet();
+    }
+
+    function renderMapSheet() {
+      if (!els.mapSheetDefault || !els.mapSheetPreview) return;
+      const sel = state.mapSelected;
+      if (sel) {
+        const c = state.cafes.find((x) => x.id === sel);
+        if (!c) { showMapSheetDefault(); return; }
+        showMapSheetPreview(c);
+      } else {
+        showMapSheetDefault();
+      }
+    }
+
+    function showMapSheetDefault() {
+      els.mapSheetDefault.hidden = false;
+      els.mapSheetPreview.hidden = true;
+      // Update count
+      applyFilters();
+      // Build mini-cards
+      const cards = state.filtered.slice(0, 20).map((c) => {
+        const cached = state.pickCache.get(c.id);
+        const drinkName = cached?.picks?.drink?.name;
+        const photoHTML = c.photo
+          ? `<img class="map-mini-card-photo" src="${escapeHTML(c.photo)}" alt="" loading="lazy" onerror="this.style.display='none'">`
+          : `<div class="map-mini-card-photo" style="display:grid;place-items:center;font-size:24px;">☕</div>`;
+        return `
+          <div class="map-mini-card${state.mapSelected === c.id ? " selected" : ""}" data-id="${c.id}" tabindex="0" role="button" aria-label="${escapeHTML(c.name)}">
+            ${photoHTML}
+            <div class="map-mini-card-body">
+              <div class="map-mini-card-name">${escapeHTML(c.name)}</div>
+              ${drinkName ? `<div class="map-mini-card-drink">${escapeHTML(drinkName)}</div>` : ""}
+            </div>
+          </div>`;
+      }).join("");
+      els.mapMiniCards.innerHTML = cards || `<div style="padding:8px;color:var(--ink-faint);font-size:13px;">No cafés match this filter</div>`;
+    }
+
+    function showMapSheetPreview(c) {
+      els.mapSheetDefault.hidden = true;
+      els.mapSheetPreview.hidden = false;
+      const cached = state.pickCache.get(c.id);
+      const drinkName = cached?.picks?.drink?.name;
+      const photoHTML = c.photo
+        ? `<img class="map-preview-photo" src="${escapeHTML(c.photo)}" alt="" loading="lazy" onerror="this.style.display='none'">`
+        : `<div class="map-preview-photo" style="display:grid;place-items:center;font-size:36px;background:var(--surface-2);">☕</div>`;
+      const distLine = distanceFromOrigin(c);
+      const openLabel = c.openNow ? "Open" : (c.hoursLabel || "Closed");
+      els.mapSheetPreview.innerHTML = `
+        <button class="map-preview-back" id="map-preview-back-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
+          All cafés
+        </button>
+        ${photoHTML}
+        <div class="map-preview-name">${escapeHTML(c.name)}</div>
+        <div class="map-preview-meta">${distLine ? escapeHTML(distLine) + " · " : ""}${escapeHTML(openLabel)}</div>
+        ${drinkName ? `<div class="map-preview-drink">Best drink: ${escapeHTML(drinkName)}</div>` : ""}
+        <div class="map-preview-actions">
+          <button class="map-preview-verdict-btn" data-open-sheet="${c.id}">View the verdict</button>
+          ${c.mapsUri ? `<a class="map-preview-go-btn" href="${escapeHTML(c.mapsUri)}" target="_blank" rel="noopener">
+            Go
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>` : ""}
+        </div>
+      `;
+      // Prefetch picks so drink shows up
+      if (!cached) prefetchPicks(c.id).then(() => {
+        if (state.mapSelected === c.id) showMapSheetPreview(c);
+      });
+    }
+
+    // ---- quest layer ----
+    const QUEST_BADGES = [
+      { id: "first",   name: "First Sip",      desc: "Conquer your first café",      icon: "☕", earned: (c, s) => c.size >= 1  },
+      { id: "streak3", name: "3-Day Streak",   desc: "Three days in a row",          icon: "🔥", earned: (c, s) => s >= 3       },
+      { id: "fan5",    name: "Café Fan",        desc: "Conquer 5 cafés",              icon: "⭐", earned: (c, s) => c.size >= 5  },
+      { id: "early",   name: "Early Bird",      desc: "Check in before 8am",          icon: "☀️", earned: (c, s) => !!localStorage.getItem("jq.earlyBird") },
+      { id: "local15", name: "Local Regular",   desc: "Conquer 15 cafés",             icon: "🗺️", earned: (c, s) => c.size >= 15 },
+      { id: "legend",  name: "Local Legend",    desc: "Conquer 25 cafés",             icon: "👑", earned: (c, s) => c.size >= 25 },
+    ];
+
+    function getLevel(n) {
+      if (n >= 25) return "Connoisseur";
+      if (n >= 8)  return "Regular";
+      return "Explorer";
+    }
+    function questGoal(n) {
+      if (n < 8)  return 8;
+      if (n < 15) return 15;
+      if (n < 25) return 25;
+      return Math.ceil((n + 1) / 10) * 10;
+    }
+
+    function loadQuestState() {
+      try {
+        const ids = JSON.parse(localStorage.getItem("jq.conquered") || "[]");
+        state.conquered = new Set(ids);
+      } catch { state.conquered = new Set(); }
+      state.streak = parseInt(localStorage.getItem("jq.streak") || "0", 10);
+    }
+    function saveQuestState() {
+      localStorage.setItem("jq.conquered", JSON.stringify([...state.conquered]));
+      localStorage.setItem("jq.streak", String(state.streak));
+    }
+    function updateStreak() {
+      const today = new Date().toISOString().slice(0, 10);
+      const last  = localStorage.getItem("jq.lastConquerDate");
+      if (last === today) return;
+      const yesterday = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
+      state.streak = (last === yesterday) ? state.streak + 1 : 1;
+      localStorage.setItem("jq.lastConquerDate", today);
+    }
+
+    function toggleConquer(id) {
+      const was = state.conquered.has(id);
+      if (was) { state.conquered.delete(id); }
+      else {
+        state.conquered.add(id);
+        updateStreak();
+        if (new Date().getHours() < 8) localStorage.setItem("jq.earlyBird", "1");
+      }
+      saveQuestState();
+
+      // Refresh quest strip
+      renderQuestStrip();
+
+      // Refresh map pin color
+      redrawBigMap();
+
+      // Refresh conquered badge on all visible cards (both v1 photo-wrap and v2 photo-wrap)
+      $$(`[data-id="${id}"]`).forEach((el) => {
+        const wrap = el.querySelector(".cafe-card-v2-photo-wrap") || el.querySelector(".photo-wrap");
+        if (!wrap) return;
+        const existing = wrap.querySelector(".conquered-badge, .cafe-card-v2-conquered");
+        if (state.conquered.has(id) && !existing) {
+          wrap.insertAdjacentHTML("beforeend", `<div class="cafe-card-v2-conquered">${ICON_CHECK}</div>`);
+        } else if (!state.conquered.has(id) && existing) {
+          existing.remove();
+        }
+      });
+
+      // Refresh sheet conquer button if the sheet is open for this café
+      const btn = document.getElementById("sheet-conquer-btn");
+      if (btn && btn.dataset.id === id) {
+        const done = state.conquered.has(id);
+        btn.className = `sheet-conquer-btn${done ? " done" : ""}`;
+        btn.innerHTML = done
+          ? `${ICON_CHECK} Conquered`
+          : `${ICON_FLAME} Check in`;
+      }
+
+      // Refresh profile quest section if visible
+      if (state.view === "profile") renderProfileQuest();
+
+      track("conquer_toggle", { place_id: id, conquered: state.conquered.has(id) });
+    }
+
+    const ICON_CHECK = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+    const ICON_FLAME = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>`;
+    const ICON_MAP  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>`;
+
+    function conqueredBadgeHTML() {
+      return `<div class="conquered-badge">${ICON_CHECK}</div>`;
+    }
+
+    function renderQuestStrip() {
+      const el = document.getElementById("quest-strip");
+      if (!el) return;
+      const n      = state.conquered.size;
+      const streak = state.streak || 0;
+      if (n === 0 && streak === 0) { el.hidden = true; return; }
+      el.hidden = false;
+
+      const goal   = questGoal(n);
+      const level  = getLevel(n);
+      const toNext = goal - n;
+      const pct    = Math.min(n / goal, 1);
+      const C      = 2 * Math.PI * 22;           // circumference of r=22 circle
+      const dash   = pct * C;
+
+      el.innerHTML = `
+        <div class="quest-strip">
+          <div class="quest-ring">
+            <svg viewBox="0 0 54 54" width="54" height="54" aria-hidden="true">
+              <circle cx="27" cy="27" r="22" fill="none" stroke="var(--quest-track)" stroke-width="4"/>
+              <circle cx="27" cy="27" r="22" fill="none" stroke="var(--amber)" stroke-width="4"
+                stroke-dasharray="${dash.toFixed(1)} ${C.toFixed(1)}"
+                stroke-linecap="round"
+                transform="rotate(-90 27 27)"/>
+              <text x="27" y="31" text-anchor="middle" font-size="12" font-weight="600" fill="var(--quest-fg)">${n}</text>
+            </svg>
+          </div>
+          <div class="quest-info">
+            <div class="quest-level">${escapeHTML(level)}</div>
+            <div class="quest-progress">${toNext > 0 ? `${toNext} café${toNext !== 1 ? "s" : ""} to next badge` : "Badge unlocked! 🎉"}</div>
+          </div>
+          ${streak > 0 ? `
+            <div class="quest-streak">
+              <span>🔥 ${streak}</span>
+              <span class="quest-streak-label">day streak</span>
+            </div>` : ""}
+        </div>
+      `;
+    }
+
+    function renderProfileQuest() {
+      const slot = document.getElementById("profile-quest");
+      if (!slot) return;
+      const n       = state.conquered.size;
+      const streak  = state.streak || 0;
+      const badges  = QUEST_BADGES.map((b) => ({ ...b, isEarned: b.earned(state.conquered, streak) }));
+      const earned  = badges.filter((b) => b.isEarned).length;
+
+      const statTiles = [
+        { n: n,                    label: "Conquered" },
+        { n: state.saved.size,     label: "Saved" },
+        { n: earned,               label: "Badges" },
+        { n: streak,               label: "Streak" },
+      ].map((t) => `
+        <div class="profile-stat-tile">
+          <div class="pst-n">${t.n}</div>
+          <div class="pst-label">${t.label}</div>
+        </div>`).join("");
+
+      const passportBadges = badges.map((b) => `
+        <div class="passport-badge">
+          <div class="passport-badge-icon ${b.isEarned ? "earned" : "locked"}">${b.icon}</div>
+          <div class="passport-badge-name">${escapeHTML(b.name)}</div>
+          <div class="passport-badge-desc">${escapeHTML(b.desc)}</div>
+        </div>`).join("");
+
+      slot.innerHTML = `
+        <div class="profile-stat-grid">${statTiles}</div>
+        <div class="passport-section">
+          <div class="passport-title">Coffee Passport</div>
+          <div class="passport-grid">${passportBadges}</div>
+        </div>
+      `;
+    }
+
+    // ---- refer a friend ----
+    const REFER_LADDER = [
+      { n: 1, label: "Trailblazer badge",      sub: "1 friend joined" },
+      { n: 3, label: "Offers+ free month",     sub: "3 friends joined" },
+      { n: 5, label: "Founding Quester status", sub: "5 friends joined" },
+    ];
+
+    function getReferCode() {
+      let code = localStorage.getItem("jq.referCode");
+      if (!code) {
+        const chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+        const rand = Array.from({ length: 5 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
+        code = "QUEST-" + rand;
+        localStorage.setItem("jq.referCode", code);
+      }
+      return code;
+    }
+
+    function getReferStats() {
+      try { return JSON.parse(localStorage.getItem("jq.referStats") || "{}"); } catch { return {}; }
+    }
+
+    function renderRefer() {
+      const code = getReferCode();
+      const stats = getReferStats();
+      const invited = stats.invited || 0;
+      const joined  = stats.joined  || 0;
+
+      const checkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+      const shareIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>`;
+      const copyIcon  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+
+      const ladderHTML = REFER_LADDER.map((r) => {
+        const done = joined >= r.n;
+        return `
+          <div class="refer-ladder-item">
+            <div class="refer-ladder-badge ${done ? "done" : "locked"}">
+              ${done ? checkIcon : `<span>${r.n}</span>`}
+            </div>
+            <div class="refer-ladder-text">
+              <div class="refer-ladder-label">${escapeHTML(r.label)}</div>
+              <div class="refer-ladder-sub">${escapeHTML(r.sub)}</div>
+            </div>
+            ${done ? `<span class="refer-unlocked-tag">Unlocked</span>` : ""}
+          </div>`;
+      }).join("");
+
+      document.getElementById("refer-body").innerHTML = `
+        <div class="refer-code-label">Your invite code</div>
+        <div class="refer-code-row">
+          <div class="refer-code-box" id="refer-code-display">${escapeHTML(code)}</div>
+          <button class="refer-copy-btn" id="refer-copy-btn">
+            ${copyIcon} Copy
+          </button>
+        </div>
+        <button class="refer-share-btn" id="refer-share-btn">
+          ${shareIcon} Share invite link
+        </button>
+
+        <div class="refer-stats">
+          <div class="refer-stat">
+            <div class="refer-stat-n invited">${invited}</div>
+            <div class="refer-stat-label">Invited</div>
+          </div>
+          <div class="refer-stat">
+            <div class="refer-stat-n joined">${joined}</div>
+            <div class="refer-stat-label">Joined</div>
+          </div>
+        </div>
+
+        <div class="refer-kicker">Rewards</div>
+        <div class="refer-section-title">The more, the merrier</div>
+        <div class="refer-ladder">${ladderHTML}</div>
+      `;
+
+      // Copy button
+      document.getElementById("refer-copy-btn").addEventListener("click", async () => {
+        const btn = document.getElementById("refer-copy-btn");
+        try {
+          await navigator.clipboard.writeText(code);
+        } catch {
+          const ta = document.createElement("textarea");
+          ta.value = code; ta.style.position = "fixed"; ta.style.opacity = "0";
+          document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove();
+        }
+        btn.innerHTML = `${checkIcon} Copied`;
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.innerHTML = `${copyIcon} Copy`;
+          btn.classList.remove("copied");
+        }, 1800);
+      });
+
+      // Share button
+      document.getElementById("refer-share-btn").addEventListener("click", async () => {
+        const shareUrl = `${location.origin}?ref=${code}`;
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              title: "Join me on JoeQuest",
+              text: "I use JoeQuest to find the best drink at every café. Join with my code and we both get rewards!",
+              url: shareUrl,
+            });
+          } catch {}
+        } else {
+          try { await navigator.clipboard.writeText(shareUrl); } catch {}
+          toast("Invite link copied!");
+        }
+      });
     }
 
     function renderSaved() {
@@ -3851,86 +5725,143 @@
       try {
         if (data.error) { console.warn("prefetchPicks api error:", id, data.error); return; }
         state.pickCache.set(id, data);
-        // refresh any visible card strip
+        const drink = data.picks?.drink;
+        const food  = data.picks?.food;
+        // Refresh verdict lines in cards
         $$(`[data-picks-for="${id}"]`).forEach((el) => {
-          const drink = data.picks?.drink;
-          const food = data.picks?.food;
-          const match = state.taste ? tasteMatch(drink, state.taste) : null;
-          const matchTag = match
-            ? ` <span class="match-tag" title="${escapeHTML(match.reasons.join(" · "))}">✓ your taste</span>`
-            : "";
-          el.innerHTML = `
-            <div class="pick-mini${matchTag ? " matched" : ""}">
-              <div class="lbl">Drink${matchTag}</div>
-              <div class="val">${drink?.name ? escapeHTML(drink.name) : "—"}</div>
-            </div>
-            <div class="pick-mini is-food">
-              <div class="lbl">Food</div>
-              <div class="val">${food?.name ? escapeHTML(food.name) : "—"}</div>
-            </div>
-          `;
+          el.innerHTML =
+            (drink?.name ? verdictLineHTML("drink", drink.name, "") : "") +
+            (food?.name  ? verdictLineHTML("bite",  food.name,  "") : "");
         });
+        // Refresh map sheet mini-cards
+        const mc = $(`.map-mini-card[data-id="${id}"] .map-mini-card-drink`);
+        if (mc && drink?.name) mc.textContent = drink.name;
+        // Refresh hero card if this is the first café
+        const heroWrap = document.getElementById("discover-hero-wrap");
+        if (heroWrap && state.cafes[0]?.id === id) {
+          const heroEl = heroWrap.querySelector(`.hero-card[data-id="${id}"]`);
+          if (heroEl) {
+            const verdicts = heroEl.querySelector(".hero-verdicts");
+            if (verdicts) {
+              verdicts.innerHTML =
+                (drink?.name ? verdictLineHTML("drink", drink.name, "") : "") +
+                (food?.name  ? verdictLineHTML("bite",  food.name,  "") : "");
+            }
+          }
+        }
       } catch (e) { console.warn("prefetchPicks render:", id, e); }
     }
 
     // ---- filters (Map view) ----
-    function buildFilterBar() {
-      els.filterBar.innerHTML = `
-        <button class="chip" data-chip="rating">★ Rating <span data-chip-val="rating"></span></button>
+    function buildMapChipBar() {
+      els.mapChipBar.innerHTML = `
+        <button class="chip" data-chip="all">All</button>
+        <button class="chip" data-chip="near-me">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          Near me
+        </button>
         <button class="chip" data-chip="open">Open now</button>
-        <button class="chip" data-chip="price">Price <span data-chip-val="price"></span></button>
-        <button class="chip chip-quester" data-chip="questers"><img src="/img/joequester-marker.png" alt="" aria-hidden="true"> JoeQuesters near me</button>
+        <button class="chip" data-chip="saved">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          Saved
+        </button>
       `;
-      els.filterBar.addEventListener("click", (e) => {
-        const btn = e.target.closest(".chip");
-        if (!btn) return;
+      els.mapChipBar.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-chip]");
+        if (!btn || btn.classList.contains("chip-spinning")) return;
         const k = btn.dataset.chip;
-        if (k === "rating") cycleRating();
-        else if (k === "open") toggleFilter("openOnly");
-        else if (k === "price") cyclePrice();
-        else if (k === "questers") toggleFilter("questers");
-        refreshFilterBar();
-        renderMap();
+        if (k === "near-me") { activateNearMe(btn); return; }
+        state.mapFilter = k;
+        state.mapSelected = null;
+        refreshMapChips();
+        applyFilters();
+        renderMapSheet();
+        redrawBigMap();
       });
+      refreshMapChips();
     }
-    function cycleRating() {
-      const order = [0, 4.0, 4.5, 4.8];
-      state.filters.rating = order[(order.indexOf(state.filters.rating) + 1) % order.length];
-    }
-    function cyclePrice() {
-      const prices = ["$", "$$", "$$$"];
-      // cycle: none → $ → $/$$ → $/$$/$$$ → none
-      const n = state.filters.prices.size;
-      if (n >= 3) state.filters.prices = new Set();
-      else state.filters.prices = new Set(prices.slice(0, n + 1));
-    }
-    function toggleFilter(k) { state.filters[k] = !state.filters[k]; }
-    function refreshFilterBar() {
-      const f = state.filters;
-      $$(".chip", els.filterBar).forEach((c) => {
+
+    function refreshMapChips() {
+      $$("[data-chip]", els.mapChipBar).forEach((c) => {
         const k = c.dataset.chip;
-        let on = false;
-        if (k === "rating") { on = f.rating > 0; $("[data-chip-val=rating]", c).textContent = f.rating > 0 ? ` ${f.rating}+` : ""; }
-        else if (k === "open") on = f.openOnly;
-        else if (k === "price") { on = f.prices.size > 0; $("[data-chip-val=price]", c).textContent = f.prices.size > 0 ? ` ${[...f.prices].join("/")}` : ""; }
-        else if (k === "questers") on = f.questers;
-        c.classList.toggle("active", on);
+        if (c.classList.contains("chip-spinning")) return;
+        c.classList.toggle("active", k === state.mapFilter);
+        // restore Near me label if it got a spinner set
+        if (k === "near-me" && !c.classList.contains("chip-spinning")) {
+          c.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg> Near me`;
+        }
       });
-      const any = f.rating > 0 || f.openOnly || f.prices.size > 0 || f.questers;
-      els.filterClear.hidden = !any;
     }
+
+    function activateNearMe(chipEl) {
+      if (!navigator.geolocation) { toast("Your browser doesn't support location.", "error"); return; }
+      chipEl.innerHTML = `<span class="chip-spinner"></span> Locating…`;
+      chipEl.classList.add("chip-spinning");
+      navigator.geolocation.getCurrentPosition(
+        async (pos) => {
+          const lat = pos.coords.latitude, lng = pos.coords.longitude;
+          state.myLocation = { lat, lng };
+          state.origin = { lat, lng };
+          state.originSource = "geolocation";
+          if (state.zipMode) { state.zipMode = false; state.zip = null; }
+          $$(".zip-input").forEach((zi) => { zi.value = ""; });
+
+          const near = findNearestCity(lat, lng);
+          if (near && near.slug !== state.city) {
+            state.city = near.slug;
+            localStorage.setItem(LAST_CITY_KEY, near.slug);
+            await loadCafesForCity(near.slug);
+          }
+
+          state.cafes = sortByDistance(state.cafes);
+          state.mapFilter = "near-me";
+          applyFilters();
+          renderDiscover();
+          renderMaps();
+          const { x: ux, y: uy } = projectXY(lat, lng, 420, 340);
+          state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
+          redrawBigMap();
+          renderMapSheet();
+          chipEl.classList.remove("chip-spinning");
+          refreshMapChips();
+          flashLocateToast("Sorted nearest first");
+        },
+        (err) => {
+          chipEl.classList.remove("chip-spinning");
+          state.mapFilter = "all";
+          refreshMapChips();
+          const msg = err.code === 1 ? "Location access denied" : "Couldn't get your location";
+          toast(msg, "error");
+        },
+        { enableHighAccuracy: true, timeout: 8000, maximumAge: 60_000 }
+      );
+    }
+
+    function flashLocateToast(msg) {
+      const existing = $("#map-locate-toast");
+      if (existing) existing.remove();
+      const el = document.createElement("div");
+      el.id = "map-locate-toast";
+      el.className = "map-locate-toast";
+      el.textContent = msg;
+      els.mapStage.appendChild(el);
+      setTimeout(() => el.remove(), 1400);
+    }
+
     function applyFilters() {
-      const f = state.filters;
+      const f = state.mapFilter;
       state.filtered = state.cafes.filter((c) => {
-        if (f.rating > 0 && (c.rating ?? 0) < f.rating) return false;
-        if (f.openOnly && !c.openNow) return false;
-        if (f.prices.size > 0 && !f.prices.has(c.price)) return false;
+        if (f === "open" && !c.openNow) return false;
+        if (f === "saved" && !state.saved.has(c.id)) return false;
         return true;
       });
-      els.filterCount.textContent =
-        state.filtered.length === state.cafes.length
-          ? `Showing all ${state.cafes.length}`
-          : `Showing ${state.filtered.length} of ${state.cafes.length}`;
+      if (els.mapSheetCount) {
+        const total = state.cafes.length;
+        const shown = state.filtered.length;
+        els.mapSheetCount.textContent = shown === total
+          ? `${total} café${total !== 1 ? "s" : ""} in view`
+          : `${shown} of ${total} cafés`;
+      }
     }
 
     // ---- bottom sheet (café detail) ----
@@ -3976,12 +5907,17 @@
 
           <div id="sheet-picks">${cached ? renderSheetPicks(cached) : renderSheetLoading()}</div>
 
-          <div class="sheet-cta">
-            ${c.mapsUri ? `<a href="${escapeHTML(c.mapsUri)}" target="_blank" rel="noopener">Open in Maps</a>` : ""}
-            <a class="primary" href="${escapeHTML(c.mapsUri || "#")}" target="_blank" rel="noopener">Get directions</a>
-          </div>
-
           ${renderHoursBlock(c)}
+        </div>
+
+        <div class="sheet-conquer-bar">
+          <button class="sheet-conquer-btn${state.conquered.has(c.id) ? " done" : ""}"
+            id="sheet-conquer-btn" data-id="${c.id}">
+            ${state.conquered.has(c.id) ? `${ICON_CHECK} Conquered` : `${ICON_FLAME} Check in`}
+          </button>
+          ${c.mapsUri
+            ? `<a class="sheet-map-btn" href="${escapeHTML(c.mapsUri)}" target="_blank" rel="noopener">${ICON_MAP} Map</a>`
+            : `<button class="sheet-map-btn" onclick="closeSheet();go('map')">${ICON_MAP} Map</button>`}
         </div>
       `;
       els.sheet.classList.add("open");
@@ -4008,53 +5944,75 @@
       state.currentCafe = null;
     }
     function renderSheetLoading() {
+      const skeletonCard = `
+        <div class="verdict-card">
+          <div class="verdict-card-header">
+            <div class="verdict-card-icon"><div style="width:18px;height:18px;background:var(--amber-soft);border-radius:50%;"></div></div>
+            <div class="verdict-card-meta">
+              <div class="verdict-card-kind">Loading…</div>
+              <div style="height:18px;background:var(--line);border-radius:4px;width:60%;margin-top:4px;"></div>
+            </div>
+          </div>
+          <div style="height:13px;background:var(--line);border-radius:4px;width:90%;margin-bottom:8px;"></div>
+          <div style="height:13px;background:var(--line);border-radius:4px;width:75%;"></div>
+        </div>`;
       return `
-        <div class="ai-banner"><span class="dot"></span> JoeQuest is reading reviews…</div>
-        <div class="pick-card">
-          <div class="pick-head"><div class="lbl">Drink to order</div></div>
-          <div class="skeleton" style="height:24px; width:60%;"></div>
-          <div class="skeleton" style="width:90%;"></div>
-          <div class="skeleton" style="width:80%;"></div>
+        <div class="verdict-section-head">
+          <h2>The verdict</h2>
+          <span class="verdict-section-sub">reading reviews…</span>
         </div>
-        <div class="pick-card food">
-          <div class="pick-head"><div class="lbl">Food to order</div></div>
-          <div class="skeleton" style="height:24px; width:55%;"></div>
-          <div class="skeleton" style="width:88%;"></div>
-          <div class="skeleton" style="width:70%;"></div>
-        </div>
+        ${skeletonCard}${skeletonCard}
       `;
     }
     function renderSheetPicks(data) {
       const { picks, reviewsAnalysed } = data;
+      const drinkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>`;
+      const biteIcon  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
       return `
-        <div class="ai-banner"><span class="dot"></span> AI read ${reviewsAnalysed || 0} review${reviewsAnalysed === 1 ? "" : "s"} to find these</div>
-        ${renderOnePick("Drink to order", picks?.drink, false)}
-        ${renderOnePick("Food to order", picks?.food, true)}
+        <div class="verdict-section-head">
+          <h2>The verdict</h2>
+          <span class="verdict-section-sub">${reviewsAnalysed || 0} reviews read</span>
+        </div>
+        ${renderVerdictCard("drink", picks?.drink, drinkIcon)}
+        ${renderVerdictCard("bite",  picks?.food,  biteIcon)}
       `;
     }
-    function renderOnePick(label, p, isFood) {
-      const cls = isFood ? "pick-card food" : "pick-card";
+    function renderVerdictCard(kind, p, icon) {
+      const kindLabel = kind === "drink" ? "The one drink" : "The one bite";
       if (!p || p.name == null || p.confidence === "none") {
         return `
-          <div class="${cls}">
-            <div class="pick-head"><div class="lbl">${label}</div></div>
-            <div class="empty-pick">Not enough review data to recommend yet.</div>
-          </div>
-        `;
+          <div class="verdict-card">
+            <div class="verdict-card-header">
+              <div class="verdict-card-icon">${icon}</div>
+              <div class="verdict-card-meta">
+                <div class="verdict-card-kind">${escapeHTML(kindLabel)}</div>
+                <p class="verdict-card-name" style="color:var(--ink-faint);font-size:14px;">Not enough review data yet</p>
+              </div>
+            </div>
+          </div>`;
       }
+      const why = p.reason || "";
+      const quote = p.quote || "";
       return `
-        <div class="${cls}">
-          <div class="pick-head">
-            <div class="lbl">${label}</div>
-            <span class="conf-badge ${p.confidence}">${p.confidence}</span>
+        <div class="verdict-card">
+          <div class="verdict-card-header">
+            <div class="verdict-card-icon">${icon}</div>
+            <div class="verdict-card-meta">
+              <div class="verdict-card-kind">${escapeHTML(kindLabel)}</div>
+              <p class="verdict-card-name">${escapeHTML(p.name)}</p>
+            </div>
           </div>
-          <h3 class="name">${escapeHTML(p.name)}</h3>
-          ${p.reason ? `<p class="reason">${escapeHTML(p.reason)}</p>` : ""}
-          ${p.quote ? `<div class="quote">"${escapeHTML(p.quote)}"</div>` : ""}
-          <div class="meta">Based on ${p.mention_count || 0} mention${p.mention_count === 1 ? "" : "s"} in the reviews</div>
-        </div>
-      `;
+          ${why ? `<p class="verdict-card-why">${escapeHTML(why)}</p>` : ""}
+          ${quote ? `
+            <div class="verdict-card-quote">
+              <p>"${escapeHTML(quote)}"</p>
+              <div class="verdict-card-quote-attr">— from a real review</div>
+            </div>` : ""}
+        </div>`;
     }
+
+    // renderOnePick kept for backward-compat with any callers
+    function renderOnePick(label, p, isFood) { return renderVerdictCard(isFood ? "bite" : "drink", p, ""); }
 
     // ---- install modal (PWA Add to Home Screen) ----
     let deferredInstallPrompt = null;
@@ -4286,6 +6244,8 @@
         out.hidden = false;
         inn.hidden = true;
       }
+      // Quest stats + passport always shown (anonymous or signed-in)
+      renderProfileQuest();
     }
     function renderDrawerHeader() {
       const drawer = document.getElementById("drawer");
@@ -4491,8 +6451,16 @@
 
     // ---- geolocation ----
     function locateMe() {
+      // Locate button: if location already known, just recenter + flash toast.
+      if (state.origin) {
+        const { x: ux, y: uy } = projectXY(state.origin.lat, state.origin.lng, 420, 340);
+        state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
+        redrawBigMap();
+        flashLocateToast("You're here");
+        return;
+      }
       if (!navigator.geolocation) {
-        alert("Your browser doesn't support location.");
+        toast("Your browser doesn't support location.", "error");
         return;
       }
       navigator.geolocation.getCurrentPosition(
@@ -4500,13 +6468,9 @@
           const lat = pos.coords.latitude, lng = pos.coords.longitude;
           state.myLocation = { lat, lng };
 
-          // Last input wins: clear any ZIP override.
           if (state.zipMode) { state.zipMode = false; state.zip = null; }
           $$(".zip-input").forEach((zi) => { zi.value = ""; });
 
-          // Auto-switch to the nearest city we have data for, so the visible
-          // café list + map are local to the user (not the previously
-          // selected city). Skips the switch if already on the nearest.
           const near = findNearestCity(lat, lng);
           if (near && near.slug !== state.city) {
             state.city = near.slug;
@@ -4514,7 +6478,6 @@
             await loadCafesForCity(near.slug);
           }
 
-          // Geolocation origin overrides any prior ZIP origin.
           state.origin = { lat, lng };
           state.originSource = "geolocation";
           state.cafes = sortByDistance(state.cafes);
@@ -4524,16 +6487,316 @@
           renderDiscover();
           renderMaps();
 
-          // Center map on the user's location via the active city's bbox.
           const { x: ux, y: uy } = projectXY(lat, lng, 420, 340);
           state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
-          go("map");
-          if (state.view === "map") renderMap();
-          redrawBigMap();
+          if (state.view !== "map") go("map");
+          renderMap();
+          flashLocateToast("You're here");
         },
-        (err) => alert("Couldn't get your location: " + err.message),
+        (err) => toast("Couldn't get your location: " + err.message, "error"),
         { enableHighAccuracy: true, timeout: 8000, maximumAge: 60_000 }
       );
+    }
+
+    // ---- onboarding ----
+    const ONBOARDING_KEY = "jq.onboarded";
+    const ONBOARD_CITIES = [
+      { slug: "boca-raton",       name: "Boca Raton, FL",    region: "South Florida", live: true },
+      { slug: "delray-beach",     name: "Delray Beach, FL",  region: "South Florida", live: true },
+      { slug: "fort-lauderdale",  name: "Fort Lauderdale, FL", region: "South Florida", live: true },
+      { slug: "miami",            name: "Miami, FL",          region: "South Florida", live: true },
+      { slug: "new-york-city",    name: "New York City, NY",  region: "Northeast",     live: true },
+      { slug: "slidell",          name: "Slidell, LA",        region: "Gulf Coast",    live: true },
+      { slug: "gulfport",         name: "Gulfport, MS",       region: "Gulf Coast",    live: true },
+      { slug: "biloxi",           name: "Biloxi, MS",         region: "Gulf Coast",    live: true },
+    ];
+
+    let onboardStep = 0;
+    let onboardCity = state.city;
+
+    function initOnboarding() {
+      if (localStorage.getItem(ONBOARDING_KEY)) return; // already onboarded
+      renderOnboarding();
+    }
+
+    function renderOnboarding() {
+      const el = document.getElementById("onboarding");
+      if (!el) return;
+      el.hidden = false;
+
+      const panels = [
+        {
+          art: `<div style="width:88px;height:88px;background:var(--amber);border-radius:26px;display:grid;place-items:center;box-shadow:0 8px 28px var(--amber-glow);margin:0 auto;">
+                  <svg width="50" height="50" viewBox="0 0 64 82" fill="none">
+                    <path d="M32 4C14 4 4 17 4 33C4 53 32 82 32 82C32 82 60 53 60 33C60 17 50 4 32 4Z" fill="#FFF8EE"/>
+                    <path d="M20 27H44a2 2 0 0 1 2 2v10a13 13 0 0 1-26 0V29a2 2 0 0 1 2-2Z" fill="#D98324"/>
+                    <path d="M46 30a7 7 0 0 1 0 14" fill="none" stroke="#D98324" stroke-width="3.5" stroke-linecap="round"/>
+                    <ellipse cx="32" cy="35" rx="4.5" ry="4" fill="#2A1E16"/>
+                  </svg>
+                </div>`,
+          kicker: "Welcome, Quester",
+          title: "Your coffee quest begins",
+          body: "One drink, one bite, per café — hand-picked from real reviews. Order like a regular on your very first visit.",
+        },
+        {
+          art: `<div style="display:flex;flex-direction:column;gap:10px;width:220px;margin:0 auto;">
+                  ${[["☕","The one drink","Honey Lavender Latte"],["⭐","The one bite","Almond Croissant"]].map(([ic,k,v]) => `
+                    <div style="display:flex;align-items:center;gap:10px;background:var(--surface);border-radius:14px;padding:12px;box-shadow:var(--shadow-card);">
+                      <div style="width:36px;height:36px;border-radius:50%;background:var(--amber-soft);display:grid;place-items:center;font-size:18px;">${ic}</div>
+                      <div>
+                        <div style="font-family:var(--font-mono);font-size:8.5px;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-faint);">${k}</div>
+                        <div style="font-family:var(--font-display);font-size:15px;font-weight:500;color:var(--ink);">${v}</div>
+                      </div>
+                    </div>`).join("")}
+                </div>`,
+          kicker: "How it works",
+          title: "One honest verdict",
+          body: "We read thousands of reviews and name the single best thing to order. No sponsored picks — ever.",
+        },
+      ];
+
+      const totalSteps = panels.length + 1;
+
+      if (onboardStep < panels.length) {
+        const p = panels[onboardStep];
+        el.innerHTML = `
+          <div class="onboarding-topbar">
+            <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;"><span style="color:var(--ink);">Joe</span><span style="color:var(--amber);">Quest</span></div>
+          </div>
+          <div class="onboarding-body">
+            <div class="onboarding-art">${p.art}</div>
+            <div class="onboarding-kicker">${escapeHTML(p.kicker)}</div>
+            <h1 class="onboarding-title">${escapeHTML(p.title)}</h1>
+            <p class="onboarding-body-text">${escapeHTML(p.body)}</p>
+          </div>
+          <div class="onboarding-footer">
+            <div class="onboarding-dots">
+              ${Array.from({length: totalSteps}, (_, i) =>
+                `<div class="onboarding-dot ${i === onboardStep ? "active" : "inactive"}"></div>`).join("")}
+            </div>
+            <button class="onboarding-btn" id="onboard-next">Continue</button>
+          </div>
+        `;
+        document.getElementById("onboard-next").addEventListener("click", () => {
+          onboardStep++;
+          renderOnboarding();
+        });
+      } else {
+        // City picker step
+        el.innerHTML = `
+          <div style="padding: 70px 22px 46px; display:flex; flex-direction:column; height:100%;">
+            <div class="onboarding-kicker">Last step</div>
+            <h1 class="onboarding-title" style="font-size:30px;margin-bottom:8px;">Pick your coffee scene</h1>
+            <p class="onboarding-body-text" style="text-align:left;margin-bottom:22px;">We're growing one city at a time. Start with the one closest to you.</p>
+            <div class="onboarding-city-list" id="onboard-city-list">
+              ${ONBOARD_CITIES.map((c) => `
+                <button class="onboarding-city-btn${onboardCity === c.slug ? " selected" : ""}"
+                  data-slug="${c.slug}" ${!c.live ? "disabled" : ""}>
+                  <div>
+                    <div class="onboarding-city-name">${escapeHTML(c.name)}${!c.live ? " <span style='font-size:11px;color:var(--ink-faint);'>(coming soon)</span>" : ""}</div>
+                    <div class="onboarding-city-region">${escapeHTML(c.region)}</div>
+                  </div>
+                  ${onboardCity === c.slug ? `<svg viewBox="0 0 24 24" fill="none" stroke="var(--amber-deep)" stroke-width="2.6" stroke-linecap="round" style="width:18px;height:18px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"/></svg>` : ""}
+                </button>`).join("")}
+            </div>
+            <button class="onboarding-btn" id="onboard-begin" style="margin-top:18px;">Begin your quest</button>
+          </div>
+        `;
+        document.getElementById("onboard-city-list").addEventListener("click", (e) => {
+          const btn = e.target.closest("[data-slug]");
+          if (!btn || btn.disabled) return;
+          onboardCity = btn.dataset.slug;
+          renderOnboarding();
+        });
+        document.getElementById("onboard-begin").addEventListener("click", async () => {
+          localStorage.setItem(ONBOARDING_KEY, "1");
+          if (onboardCity !== state.city) {
+            await selectCity(onboardCity);
+          }
+          el.hidden = true;
+        });
+      }
+    }
+
+    // ---- story redesign ----
+    function renderStory() {
+      const view = document.getElementById("view-our-story");
+      if (!view) return;
+      view.innerHTML = `
+        <div class="story-hero-photo">
+          <div class="story-hero-photo-fallback">☕</div>
+          <button class="story-back-btn" data-go="discover">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+        </div>
+        <div class="story-content">
+          <div class="story-kicker">Our story</div>
+          <h1 class="story-title">Coffee, without the guesswork.</h1>
+          <p class="story-p">We've all stood at a coffee counter, stared at a board full of options, and just… guessed. Then watched someone next to us order the thing we wish we'd known about.</p>
+          <p class="story-p">That's why we built JoeQuest. We read what real customers actually say in their reviews, and we name the single best drink and the single best food worth ordering at each café. One honest verdict — so you order like a regular on your very first visit.</p>
+          <p class="story-p">We don't take a cent to rank a café higher. Our picks come from real reviews and nothing else, because the moment a recommendation can be bought, it stops being worth trusting. That independence isn't a feature to us — it's the whole point.</p>
+          <div class="story-dark-block">
+            <h3>Growing one coffee scene at a time</h3>
+            <p>South Florida is where we started, with the Gulf Coast — Louisiana and Mississippi — coming online now. Pick the city closest to you and we'll point you at the cup worth your while.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // ---- offers redesign ----
+    function renderOffersV2(offers) {
+      const view = document.getElementById("view-offers");
+      if (!view) return;
+      const lockIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`;
+      const offerCards = offers.map((o) => `
+        <div class="offer-card-v2">
+          <div class="offer-card-v2-top">
+            <div class="offer-monogram">${escapeHTML(o.brand[0] || "?")}</div>
+            <div>
+              <div class="offer-brand">${escapeHTML(o.brand)}</div>
+              <div class="offer-deal">${escapeHTML(o.deal || o.description || "")}</div>
+            </div>
+          </div>
+          <button class="offer-reveal-btn" data-offer-id="${o.id}" data-code="${escapeHTML(o.code || "")}">
+            Reveal code →
+          </button>
+        </div>`).join("");
+      view.innerHTML = `
+        <div class="offers-header">
+          <button class="offers-header-back" data-go="discover">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <h1 class="offers-title">Offers</h1>
+          <p class="offers-sub">Member discounts from coffee-product brands — machines, beans, gear, subscriptions. Reveal a code, use it on the spot.</p>
+          <div class="offers-trust">${lockIcon} Offers never influence café picks</div>
+        </div>
+        <div style="padding: 0 18px 40px; display:flex; flex-direction:column; gap:12px;">
+          ${offerCards || `<p style="color:var(--ink-faint);font-size:14px;padding:20px 0;">No offers available right now.</p>`}
+        </div>
+      `;
+      view.addEventListener("click", (e) => {
+        const btn = e.target.closest(".offer-reveal-btn");
+        if (!btn || btn.classList.contains("revealed")) return;
+        const code = btn.dataset.code;
+        if (code) {
+          btn.textContent = `✓  ${code}`;
+        } else {
+          btn.textContent = "✓  MEMBER10";
+        }
+        btn.classList.add("revealed");
+      }, { once: false });
+    }
+
+    // ---- taste redesign ----
+    const TASTE_QUESTIONS_V2 = [
+      { id: "milk",        label: "Milk",           opts: ["Black", "With milk", "Plant"] },
+      { id: "strength",    label: "Strength",        opts: ["Mild", "Balanced", "Strong"] },
+      { id: "sweetness",   label: "Sweetness",       opts: ["None", "A little", "Sweet"] },
+      { id: "adventurous", label: "Adventurousness", opts: ["My usual", "Surprise me"] },
+    ];
+    const TASTE_BREWS_V2 = ["French Press", "Pour Over", "Espresso", "Cold Brew", "Moka Pot", "AeroPress", "Turkish", "Drip"];
+
+    function renderTasteV2() {
+      const view = document.getElementById("view-taste");
+      if (!view) return;
+      const t = state.taste || {};
+      const saved = { saved: false };
+      const backIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+      const checkIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+
+      const questionsHTML = TASTE_QUESTIONS_V2.map((q) => `
+        <div class="taste-question">
+          <div class="taste-q-label">${escapeHTML(q.label)}</div>
+          <div class="taste-opts">
+            ${q.opts.map((o) => `
+              <button class="taste-opt${(t[q.id] === o.toLowerCase().replace(" ", "_") || t[q.id] === o) ? " active" : ""}"
+                data-taste-key="${q.id}" data-taste-val="${escapeHTML(o)}">
+                ${escapeHTML(o)}
+              </button>`).join("")}
+          </div>
+        </div>`).join("");
+
+      const brewsHTML = `
+        <div class="taste-question">
+          <div class="taste-q-label">Brewing methods you love</div>
+          <div class="taste-brews" id="taste-brews-v2">
+            ${TASTE_BREWS_V2.map((b) => {
+              const key = b.toLowerCase().replace(/ /g, "_");
+              const active = Array.isArray(t.brewing) ? t.brewing.includes(key) || t.brewing.includes(b) : false;
+              return `<button class="taste-brew-chip${active ? " active" : ""}" data-brew="${escapeHTML(b)}">${escapeHTML(b)}</button>`;
+            }).join("")}
+          </div>
+        </div>`;
+
+      view.innerHTML = `
+        <div class="taste-header">
+          <button class="taste-header-back" data-go="discover">${backIcon}</button>
+          <div class="taste-title-kicker">Coffee taste profile</div>
+          <h1 class="taste-title">How do you take it?</h1>
+          <p class="taste-sub">We use this for a subtle "matches your taste" hint on cards. It never changes a café's ranking.</p>
+        </div>
+        <div style="padding: 4px 18px 100px; display:flex; flex-direction:column; gap:0;">
+          ${questionsHTML}
+          ${brewsHTML}
+        </div>
+        <div class="taste-save-bar">
+          <button class="taste-save-btn" id="taste-save-v2-btn">
+            ${checkIcon} Save taste profile
+          </button>
+        </div>
+      `;
+
+      // Taste option clicks
+      view.querySelectorAll("[data-taste-key]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const key = btn.dataset.tasteKey;
+          const val = btn.dataset.tasteVal;
+          view.querySelectorAll(`[data-taste-key="${key}"]`).forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          if (!state.taste) state.taste = {};
+          state.taste[key] = val.toLowerCase().replace(" ", "_");
+        });
+      });
+
+      // Brew chips
+      view.querySelectorAll("[data-brew]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+          if (!state.taste) state.taste = {};
+          if (!Array.isArray(state.taste.brewing)) state.taste.brewing = [];
+          const val = btn.dataset.brew.toLowerCase().replace(/ /g, "_");
+          const idx = state.taste.brewing.indexOf(val);
+          if (idx >= 0) state.taste.brewing.splice(idx, 1);
+          else state.taste.brewing.push(val);
+        });
+      });
+
+      // Save button
+      document.getElementById("taste-save-v2-btn").addEventListener("click", async () => {
+        const btn = document.getElementById("taste-save-v2-btn");
+        btn.textContent = "Saving…";
+        btn.disabled = true;
+        try {
+          if (currentUser) {
+            await fetch("/api/taste", {
+              method: "PUT",
+              headers: { ...(await authedHeaders()), "Content-Type": "application/json" },
+              body: JSON.stringify({ profile: state.taste }),
+            });
+          }
+          btn.innerHTML = `${checkIcon} Taste profile saved`;
+          btn.classList.add("saved");
+          setTimeout(() => {
+            btn.innerHTML = `${checkIcon} Save taste profile`;
+            btn.classList.remove("saved");
+            btn.disabled = false;
+          }, 2000);
+        } catch (e) {
+          btn.textContent = "Save taste profile";
+          btn.disabled = false;
+          toast("Couldn't save: " + e.message, "error");
+        }
+      });
     }
 
     // ---- events ----
@@ -4546,8 +6809,32 @@
       $("#header-saved").addEventListener("click", () => go("saved"));
       $("#logo-home").addEventListener("click", () => go("discover"));
 
-      // mini-map → go to map
-      $("#mini-map").addEventListener("click", () => go("map"));
+      // Discover: city button opens city switcher (reuse drawer city select)
+      const cityBtn = document.getElementById("discover-city-btn");
+      if (cityBtn) cityBtn.addEventListener("click", () => {
+        $$(".city-select")[0]?.focus();
+        openDrawer();
+      });
+
+      // Discover: filter chips
+      const discoverChipBar = document.getElementById("discover-chip-bar");
+      if (discoverChipBar) discoverChipBar.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-discover-chip]");
+        if (!btn) return;
+        const f = btn.dataset.discoverChip;
+        if (f === "near") {
+          if (!state.origin) {
+            // trigger geolocation then filter
+            activateNearMe({ classList: { add: () => {}, remove: () => {} }, innerHTML: "", dataset: {} });
+          } else {
+            state.discoverFilter = "near";
+            renderDiscover();
+          }
+          return;
+        }
+        state.discoverFilter = f;
+        renderDiscover();
+      });
 
       // city dropdown + zipcode override (Stage C) — both Discover and Map bars
       $$(".city-select").forEach((sel) =>
@@ -4567,13 +6854,6 @@
       });
       $$(".zip-clear").forEach((b) => b.addEventListener("click", clearZip));
 
-      // filter clear
-      els.filterClear.addEventListener("click", () => {
-        state.filters = { rating: 0, openOnly: false, prices: new Set(), questers: false };
-        refreshFilterBar();
-        renderMap();
-      });
-
       // map zoom + locate
       $("#zoom-in").addEventListener("click", () => {
         state.mapView.zoom = Math.min(5, state.mapView.zoom * 1.5);
@@ -4587,8 +6867,8 @@
       });
       $("#locate-me").addEventListener("click", locateMe);
 
-      // drag-to-pan on the big map
-      bindMapPan($("#big-map"));
+      // drag-to-pan on the map stage
+      bindMapPan($("#map-stage"));
 
       // global click delegation
       document.addEventListener("click", (e) => {
@@ -4607,15 +6887,58 @@
           return;
         }
         // open sheet
-        const card = e.target.closest(".cafe-card");
+        const card = e.target.closest(".cafe-card, .cafe-card-v2, .hero-card");
         if (card) {
           openSheet(card.dataset.id);
           return;
         }
-        // map pin
+        // map pin → select pin, show sheet preview (only on the big map stage, not mini-map)
         const pin = e.target.closest(".map-pin");
-        if (pin) {
-          openSheet(pin.dataset.id);
+        if (pin && e.target.closest("#map-stage")) {
+          const id = pin.dataset.id;
+          state.mapSelected = state.mapSelected === id ? null : id;
+          redrawBigMap();
+          renderMapSheet();
+          // scroll mini-card into view
+          if (state.mapSelected) {
+            const mc = $(`[data-id="${id}"].map-mini-card`);
+            if (mc) mc.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+          }
+          return;
+        }
+        // map mini-card → select + preview
+        const miniCard = e.target.closest(".map-mini-card");
+        if (miniCard) {
+          const id = miniCard.dataset.id;
+          state.mapSelected = state.mapSelected === id ? null : id;
+          redrawBigMap();
+          renderMapSheet();
+          return;
+        }
+        // conquer / check-in button in sheet
+        const conquerBtn = e.target.closest("#sheet-conquer-btn");
+        if (conquerBtn) {
+          toggleConquer(conquerBtn.dataset.id);
+          return;
+        }
+        // sheet preview back button
+        if (e.target.closest("#map-preview-back-btn")) {
+          state.mapSelected = null;
+          redrawBigMap();
+          renderMapSheet();
+          return;
+        }
+        // sheet preview "View the verdict" button
+        const verdictBtn = e.target.closest("[data-open-sheet]");
+        if (verdictBtn) {
+          openSheet(verdictBtn.dataset.openSheet);
+          return;
+        }
+        // tap on map canvas (not a pin) → deselect
+        if (e.target.closest("#map-stage") && !e.target.closest(".map-pin") && !e.target.closest(".map-controls")) {
+          state.mapSelected = null;
+          redrawBigMap();
+          renderMapSheet();
           return;
         }
         // drawer items
@@ -4630,6 +6953,7 @@
           else if (a === "settings") go("settings");
           else if (a === "privacy") go("settings");
           else if (a === "offers") go("offers");
+          else if (a === "refer") go("refer");
           else if (a === "help") go("help");
           else if (a === "install") openInstallModal();
           return;
