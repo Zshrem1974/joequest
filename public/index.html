@@ -4283,23 +4283,21 @@
     }
 
     async function loadAllCities() {
-      const slugs = state.cities.filter((c) => c.hasSnapshot).map((c) => c.slug);
-      const results = await Promise.all(slugs.map(async (slug) => {
-        try {
-          const r = await fetch(`/api/cafes?city=${encodeURIComponent(slug)}`);
-          if (!r.ok) return [];
-          const d = await r.json();
-          return (d.cafes || []).map((c) => ({ ...c, _city: slug }));
-        } catch { return []; }
-      }));
-      const all = results.flat();
-      const sorted = state.origin ? sortByDistance(all) : all.sort((a, b) => (b.rating || 0) - (a.rating || 0));
-      state.cafesRanked = sorted;
-      state.cafes = [...sorted];
-      state.filtered = [...sorted];
-      state.allCitiesMode = true;
-      if (state.mapFilter === "near-me") state.mapFilter = "all";
-      if (state.discoverFilter === "near") state.discoverFilter = "all";
+      try {
+        const r = await fetch("/api/cafes?all=1");
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        const d = await r.json();
+        const all = d.cafes || [];
+        const sorted = state.origin ? sortByDistance(all) : all.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+        state.cafesRanked = sorted;
+        state.cafes = [...sorted];
+        state.filtered = [...sorted];
+        state.allCitiesMode = true;
+        if (state.mapFilter === "near-me") state.mapFilter = "all";
+        if (state.discoverFilter === "near") state.discoverFilter = "all";
+      } catch (e) {
+        console.warn("loadAllCities:", e);
+      }
     }
 
     // ---- live hours computation (client-side, from periods[]) ----
