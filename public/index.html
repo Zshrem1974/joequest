@@ -7168,7 +7168,7 @@
         if (hubPin && e.target.closest("#map-stage")) {
           const slug = hubPin.dataset.citySlug;
           closeCitySheet();
-          await selectCity(slug);
+          selectCity(slug);
           return;
         }
         // map pin → select pin, show sheet preview (only on the big map stage, not mini-map)
