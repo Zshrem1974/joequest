@@ -1,8 +1,38 @@
 # CHANGES
 
-## Map card-strip alignment fix
+## Session — Map overhaul, All Cities, My Location (2026-05-31)
 
-Fixed Map card-strip alignment — clears tab bar + safe-area, full names, clean right-edge peek.
+### Map card-strip alignment
+- Root bug: `.map-sheet { position: absolute; bottom: 0 }` was resolving to `#app` (no `position` on `#view-map`), placing the sheet behind the tab bar. Added `position: relative` to `#view-map`. Cards now clear the tab bar with safe-area support. Cards widened (136→152 px), photos taller (68→80 px), scroll-snap added.
+
+### Proximity sort for All / Near me / My Location filters
+- All filter: when location is known, `applyFilters()` sorts nearest-first. If GPS not yet obtained, a silent background `getCurrentPosition` fires on tap.
+- All filter merged into the city chip: tapping the city chip while already on All opens the city picker; tapping it from another filter resets to All.
+
+### All Cities in city picker
+- "All Cities" added as first option in both the city `<select>` dropdown and the bottom-sheet city picker.
+- `loadAllCities()` fetches `/api/cafes?all=1` (single server-side call), merges all city snapshots, sorts by proximity or rating.
+- Map in All Cities mode: shows all café pins across every city on one abstract canvas. Extended-south bbox math pushes FL cafés above the card-strip sheet (`effectiveSouth = (actualSouth − 0.42·north) / 0.58`).
+- Mini-map (Discover thumbnail) shows city hub pins for a compact overview.
+
+### My Location in city picker
+- "My Location" added as second option (below All Cities) in the picker and select.
+- Selecting it: requests GPS, loads all cities sorted nearest-first, sets city label to "My Location", persists choice to `localStorage`.
+- Startup: if My Location was last selected and GPS permission is already granted, silently re-acquires coordinates at load.
+- Near me chip (Map + Discover): now switches city filter to My Location and loads all cities sorted nearest-first, instead of sorting only the current city.
+- Default: app opens in My Location mode on first load when GPS is already granted; falls back to All Cities if not.
+
+### Map controls positioning
+- `updateMapControls()` dynamically sets the zoom/locate buttons' `bottom` to `sheet.offsetHeight + 12px` after every `renderMapSheet()` call — replaces the hardcoded `calc(20% + 12px)` that the mini-card strip overflowed.
+
+### Geolocation / "You" dot
+- "You" dot (pulsing clay pin) now only renders when `state.originSource === "geolocation"`, hiding the hardcoded Boca Raton default that showed before any GPS was obtained.
+- Near me permission-denied toast now says "tap the 🔒 to allow it".
+
+### Bug fixes
+- Fixed `await` in non-async click handler (was a hard JS parse error that blanked the entire page).
+- `loadAllCities()` switched from parallel per-city fetches (overloaded Render's free tier) to the existing `/api/cafes?all=1` endpoint.
+- City picker `<select>` was missing the All Cities `<option>` — added.
 
 ---
 
