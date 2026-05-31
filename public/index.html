@@ -5895,26 +5895,21 @@
       chipEl.innerHTML = `<span class="chip-spinner"></span> Locating…`;
       chipEl.classList.add("chip-spinning");
       navigator.geolocation.getCurrentPosition(
-        async (pos) => {
+        (pos) => {
           const lat = pos.coords.latitude, lng = pos.coords.longitude;
           state.myLocation = { lat, lng };
           state.origin = { lat, lng };
           state.originSource = "geolocation";
-          if (state.zipMode) { state.zipMode = false; state.zip = null; }
-          $$(".zip-input").forEach((zi) => { zi.value = ""; });
 
-          const near = findNearestCity(lat, lng);
-          if (near && near.slug !== state.city) {
-            state.city = near.slug;
-            localStorage.setItem(LAST_CITY_KEY, near.slug);
-            await loadCafesForCity(near.slug);
-          }
-
+          // Sort current city's cafés by distance — do NOT switch cities.
+          // City switching belongs to the locate button (locateMe), not this filter.
           state.cafes = sortByDistance(state.cafes);
           state.mapFilter = "near-me";
+          state.discoverFilter = "near";
           applyFilters();
           renderDiscover();
           renderMaps();
+
           const { x: ux, y: uy } = projectXY(lat, lng, bigMapDims().w, bigMapDims().h);
           state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
           redrawBigMap();
