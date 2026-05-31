@@ -1,5 +1,11 @@
 # CHANGES
 
+## Map card-strip alignment fix
+
+Fixed Map card-strip alignment — clears tab bar + safe-area, full names, clean right-edge peek.
+
+---
+
 ## Multi-city map projection + auto-frame fix
 
 ### Bug fix: `projectXY` Boca hardcode removed
