@@ -5107,9 +5107,17 @@
       state.mapView = { zoom, cx: midX / W, cy: midY / H };
     }
 
+    function bigMapDims() {
+      const stage = els.mapStage;
+      const w = stage ? Math.round(stage.clientWidth)  || 420 : 420;
+      const h = stage ? Math.round(stage.clientHeight) || 500 : 500;
+      return { w, h };
+    }
+
     function renderMaps() {
+      const { w, h } = bigMapDims();
       renderMapInto(els.miniMapSvg, state.cafes, 360, 150, { detailed: false });
-      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
+      renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
     }
 
     // Brand pin: matches /img/joequest-icon.svg. Tip is at local (32, 82).
@@ -5246,7 +5254,8 @@
     // Lightweight re-render of just the big map SVG (no list rebuild).
     // Used during pan/zoom for smooth updates.
     function redrawBigMap() {
-      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
+      const { w, h } = bigMapDims();
+      renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
     }
 
     // ---- card rendering ----
@@ -5430,7 +5439,8 @@
 
     function renderMap() {
       applyFilters();
-      renderMapInto(els.bigMapSvg, state.filtered, 420, 340, { detailed: true });
+      const { w, h } = bigMapDims();
+      renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
       renderMapSheet();
     }
 
@@ -5905,8 +5915,8 @@
           applyFilters();
           renderDiscover();
           renderMaps();
-          const { x: ux, y: uy } = projectXY(lat, lng, 420, 340);
-          state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
+          const { x: ux, y: uy } = projectXY(lat, lng, bigMapDims().w, bigMapDims().h);
+          state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
           redrawBigMap();
           renderMapSheet();
           chipEl.classList.remove("chip-spinning");
@@ -6591,8 +6601,8 @@
 
       // If location already known, just recenter + flash toast.
       if (state.origin) {
-        const { x: ux, y: uy } = projectXY(state.origin.lat, state.origin.lng, 420, 340);
-        state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
+        const { x: ux, y: uy } = projectXY(state.origin.lat, state.origin.lng, bigMapDims().w, bigMapDims().h);
+        state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
         redrawBigMap();
         flashLocateToast("You're here");
         return;
@@ -6638,8 +6648,8 @@
           renderDiscover();
           renderMaps();
 
-          const { x: ux, y: uy } = projectXY(lat, lng, 420, 340);
-          state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
+          const { x: ux, y: uy } = projectXY(lat, lng, bigMapDims().w, bigMapDims().h);
+          state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
           restoreBtn();
           if (state.view !== "map") go("map");
           renderMap();
