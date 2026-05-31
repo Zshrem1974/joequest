@@ -4158,10 +4158,11 @@
       const mapChipName = document.getElementById("map-city-chip-name");
       if (mapChipName) mapChipName.textContent = state.city === "all" ? "All Cities" : displayName.split(",")[0];
 
-      const options = state.cities.map((c) => {
-        const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
-        return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
-      }).join("");
+      const options = `<option value="all" ${state.city === "all" ? "selected" : ""}>All Cities</option>` +
+        state.cities.map((c) => {
+          const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
+          return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
+        }).join("");
       $$(".city-select").forEach((sel) => {
         sel.innerHTML = options;
         sel.value = state.city;
