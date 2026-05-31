@@ -6077,22 +6077,24 @@
       chipEl.innerHTML = `<span class="chip-spinner"></span> Locating…`;
       chipEl.classList.add("chip-spinning");
       navigator.geolocation.getCurrentPosition(
-        (pos) => {
+        async (pos) => {
           const lat = pos.coords.latitude, lng = pos.coords.longitude;
           state.myLocation = { lat, lng };
           state.origin = { lat, lng };
           state.originSource = "geolocation";
+          state.city = "my-location";
+          localStorage.setItem(LAST_CITY_KEY, "my-location");
 
-          // Sort current city's cafés by distance — do NOT switch cities.
-          state.cafes = sortByDistance([...state.cafesRanked]);
+          await loadAllCities(); // loads all cities sorted nearest-first
           state.mapFilter = "near-me";
           state.discoverFilter = "near";
           applyFilters();
+          renderCityDropdown();
           renderDiscover();
-          renderMaps();
 
           const { x: ux, y: uy } = projectXY(lat, lng, bigMapDims().w, bigMapDims().h);
           state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
+          renderMaps();
           redrawBigMap();
           renderMapSheet();
           chipEl.classList.remove("chip-spinning");
@@ -7182,13 +7184,7 @@
         if (!btn) return;
         const f = btn.dataset.discoverChip;
         if (f === "near") {
-          if (!state.origin) {
-            activateNearMe({ classList: { add: () => {}, remove: () => {} }, innerHTML: "", dataset: {} });
-          } else {
-            state.cafes = sortByDistance([...state.cafesRanked]);
-            state.discoverFilter = "near";
-            renderDiscover();
-          }
+          selectCity("my-location");
           return;
         }
         // Switching away from near — restore ranked order
