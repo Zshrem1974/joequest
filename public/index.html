@@ -5853,12 +5853,11 @@
         return c ? (c.name || c.displayName || state.city).split(",")[0] : state.city;
       })();
       els.mapChipBar.innerHTML = `
-        <button class="chip" id="map-city-chip" style="gap:5px;">
+        <button class="chip" id="map-city-chip" data-chip="all" style="gap:5px;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           <span id="map-city-chip-name">${escapeHTML(cityName)}</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:12px;height:12px;"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-        <button class="chip" data-chip="all">All</button>
         <button class="chip" data-chip="near-me">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
           Near me
@@ -5869,12 +5868,13 @@
           Saved
         </button>
       `;
-      document.getElementById("map-city-chip")?.addEventListener("click", openCitySheet);
       els.mapChipBar.addEventListener("click", (e) => {
         const btn = e.target.closest("[data-chip]");
         if (!btn || btn.classList.contains("chip-spinning")) return;
         const k = btn.dataset.chip;
         if (k === "near-me") { activateNearMe(btn); return; }
+        // City chip already on "all" → open city picker
+        if (k === "all" && state.mapFilter === "all") { openCitySheet(); return; }
         // Switching away from near-me — restore ranked order
         if (state.mapFilter === "near-me") {
           state.cafes = [...state.cafesRanked];
@@ -5885,7 +5885,7 @@
         applyFilters();
         renderMapSheet();
         redrawBigMap();
-        // All: silently fetch location if not yet known, then re-sort
+        // "all": silently fetch location if not yet known, then re-sort
         if (k === "all" && !state.origin && navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(
             (pos) => {
