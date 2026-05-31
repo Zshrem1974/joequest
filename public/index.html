@@ -864,6 +864,69 @@
     .map-preview-go-btn svg { width: 14px; height: 14px; }
 
     /* ============================================================
+       CITY PICKER SHEET
+       ============================================================ */
+    .city-sheet-scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(20,14,10,.45);
+      z-index: 90;
+      max-width: var(--app-max);
+      margin: 0 auto;
+    }
+    .city-sheet-panel {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      background: var(--bg);
+      border-radius: var(--r-xl) var(--r-xl) 0 0;
+      padding: 0 18px calc(32px + env(safe-area-inset-bottom, 0px));
+      animation: jqslideup 0.3s ease;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .city-sheet-handle {
+      width: 36px; height: 4px;
+      background: var(--line-strong);
+      border-radius: 999px;
+      margin: 12px auto 16px;
+      flex-shrink: 0;
+    }
+    .city-sheet-title {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 20px;
+      color: var(--ink);
+      margin: 0 0 14px;
+      flex-shrink: 0;
+    }
+    .city-sheet-list {
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      scrollbar-width: none;
+    }
+    .city-sheet-list::-webkit-scrollbar { display: none; }
+    .city-sheet-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 14px;
+      border-radius: var(--r-md);
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .city-sheet-item.selected { border: 2px solid var(--amber); background: var(--amber-soft); }
+    .city-sheet-item:not(.selected) { border: 1px solid var(--line); background: var(--surface); }
+    .city-sheet-item:disabled { opacity: 0.5; cursor: default; }
+    .city-sheet-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .city-sheet-item-name { font-family: var(--font-body); font-weight: 600; font-size: 15px; color: var(--ink); }
+    .city-sheet-item-region { font-family: var(--font-body); font-size: 12px; color: var(--ink-soft); }
+    .city-sheet-check { width: 18px; height: 18px; flex-shrink: 0; color: var(--amber-deep); }
+
+    /* ============================================================
        PHASE 5 — SCREEN REDESIGNS
        ============================================================ */
 
@@ -3249,8 +3312,10 @@
     <!-- ========================================================== -->
     <main class="view" id="view-map" aria-label="Map">
 
-      <!-- Filter chips -->
-      <div class="map-chip-bar" id="map-chip-bar"></div>
+      <!-- Filter chips + city -->
+      <div class="map-chip-bar" id="map-chip-bar">
+        <!-- City chip injected first by buildMapChipBar() -->
+      </div>
 
       <!-- Map canvas + controls -->
       <div class="map-stage" id="map-stage">
@@ -3806,6 +3871,9 @@
     </aside>
     <div class="scrim" id="scrim"></div>
 
+    <!-- City picker sheet -->
+    <div id="city-sheet" hidden></div>
+
     <!-- Onboarding overlay (shown on first visit) -->
     <div class="onboarding" id="onboarding" hidden></div>
 
@@ -4078,6 +4146,15 @@
     }
 
     function renderCityDropdown() {
+      // Update the Discover city button label
+      const found = state.cities.find((c) => c.slug === state.city);
+      const displayName = found?.displayName || found?.name || state.city;
+      const cityNameEl = document.getElementById("discover-city-name");
+      if (cityNameEl) cityNameEl.textContent = displayName;
+      // Update Map city chip label
+      const mapChipName = document.getElementById("map-city-chip-name");
+      if (mapChipName) mapChipName.textContent = displayName.split(",")[0];
+
       const options = state.cities.map((c) => {
         const label = c.hasSnapshot ? c.displayName : `${c.displayName} (coming soon)`;
         return `<option value="${escapeHTML(c.slug)}" ${c.slug === state.city ? "selected" : ""} ${c.hasSnapshot ? "" : "disabled"}>${escapeHTML(label)}</option>`;
@@ -5754,7 +5831,16 @@
 
     // ---- filters (Map view) ----
     function buildMapChipBar() {
+      const cityName = (() => {
+        const c = state.cities.find((x) => x.slug === state.city);
+        return c ? (c.name || c.displayName || state.city).split(",")[0] : state.city;
+      })();
       els.mapChipBar.innerHTML = `
+        <button class="chip" id="map-city-chip" style="gap:5px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="map-city-chip-name">${escapeHTML(cityName)}</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" style="width:12px;height:12px;"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
         <button class="chip" data-chip="all">All</button>
         <button class="chip" data-chip="near-me">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
@@ -5766,6 +5852,7 @@
           Saved
         </button>
       `;
+      document.getElementById("map-city-chip")?.addEventListener("click", openCitySheet);
       els.mapChipBar.addEventListener("click", (e) => {
         const btn = e.target.closest("[data-chip]");
         if (!btn || btn.classList.contains("chip-spinning")) return;
@@ -6116,6 +6203,55 @@
       });
     }
 
+    // ---- city picker sheet ----
+    const PIN_ICON = `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>`;
+    const CHECK_ICON_CITY = `<svg class="city-sheet-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+
+    function openCitySheet() {
+      const el = document.getElementById("city-sheet");
+      if (!el) return;
+
+      el.innerHTML = `
+        <div class="city-sheet-scrim" id="city-sheet-scrim">
+          <div class="city-sheet-panel">
+            <div class="city-sheet-handle"></div>
+            <div class="city-sheet-title">Switch city</div>
+            <div class="city-sheet-list" id="city-sheet-list">
+              ${state.cities.filter((c) => c.hasSnapshot).map((c) => {
+                const sel = c.slug === state.city;
+                return `
+                  <button class="city-sheet-item${sel ? " selected" : ""}" data-city-slug="${c.slug}">
+                    <svg style="color:${sel ? "var(--amber-deep)" : "var(--ink-faint)"};width:18px;height:18px;" viewBox="0 0 24 24" fill="${sel ? "currentColor" : "none"}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div style="flex:1;">
+                      <div class="city-sheet-item-name">${escapeHTML(c.displayName || c.name)}</div>
+                    </div>
+                    ${sel ? CHECK_ICON_CITY : ""}
+                  </button>`;
+              }).join("")}
+            </div>
+          </div>
+        </div>
+      `;
+      el.hidden = false;
+
+      document.getElementById("city-sheet-scrim").addEventListener("click", (e) => {
+        if (e.target === document.getElementById("city-sheet-scrim")) closeCitySheet();
+      });
+
+      document.getElementById("city-sheet-list").addEventListener("click", async (e) => {
+        const btn = e.target.closest("[data-city-slug]");
+        if (!btn) return;
+        const slug = btn.dataset.citySlug;
+        closeCitySheet();
+        await selectCity(slug);
+      });
+    }
+
+    function closeCitySheet() {
+      const el = document.getElementById("city-sheet");
+      if (el) el.hidden = true;
+    }
+
     // ---- drawer ----
     function openDrawer() {
       els.drawer.classList.add("open");
@@ -6451,7 +6587,9 @@
 
     // ---- geolocation ----
     function locateMe() {
-      // Locate button: if location already known, just recenter + flash toast.
+      const btn = document.getElementById("locate-me");
+
+      // If location already known, just recenter + flash toast.
       if (state.origin) {
         const { x: ux, y: uy } = projectXY(state.origin.lat, state.origin.lng, 420, 340);
         state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
@@ -6463,6 +6601,19 @@
         toast("Your browser doesn't support location.", "error");
         return;
       }
+
+      // Show spinner on button while waiting
+      if (btn) {
+        btn.innerHTML = `<span class="chip-spinner" style="width:16px;height:16px;border-width:2.5px;"></span>`;
+        btn.disabled = true;
+      }
+      const restoreBtn = () => {
+        if (btn) {
+          btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>`;
+          btn.disabled = false;
+        }
+      };
+
       navigator.geolocation.getCurrentPosition(
         async (pos) => {
           const lat = pos.coords.latitude, lng = pos.coords.longitude;
@@ -6489,11 +6640,18 @@
 
           const { x: ux, y: uy } = projectXY(lat, lng, 420, 340);
           state.mapView = { zoom: 2.5, cx: ux / 420, cy: uy / 340 };
+          restoreBtn();
           if (state.view !== "map") go("map");
           renderMap();
           flashLocateToast("You're here");
         },
-        (err) => toast("Couldn't get your location: " + err.message, "error"),
+        (err) => {
+          restoreBtn();
+          const msg = err.code === 1
+            ? "Location access denied — enable it in your browser settings"
+            : "Couldn't get your location: " + err.message;
+          toast(msg, "error");
+        },
         { enableHighAccuracy: true, timeout: 8000, maximumAge: 60_000 }
       );
     }
@@ -6809,12 +6967,9 @@
       $("#header-saved").addEventListener("click", () => go("saved"));
       $("#logo-home").addEventListener("click", () => go("discover"));
 
-      // Discover: city button opens city switcher (reuse drawer city select)
+      // Discover: city button opens city picker sheet
       const cityBtn = document.getElementById("discover-city-btn");
-      if (cityBtn) cityBtn.addEventListener("click", () => {
-        $$(".city-select")[0]?.focus();
-        openDrawer();
-      });
+      if (cityBtn) cityBtn.addEventListener("click", openCitySheet);
 
       // Discover: filter chips
       const discoverChipBar = document.getElementById("discover-chip-bar");
@@ -6976,9 +7131,9 @@
       });
 
       // close sheet/drawer/install-modal on scrim or escape
-      els.scrim.addEventListener("click", () => { closeSheet(); closeDrawer(); closeInstallModal(); });
+      els.scrim.addEventListener("click", () => { closeSheet(); closeDrawer(); closeInstallModal(); closeCitySheet(); });
       document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") { closeSheet(); closeDrawer(); closeInstallModal(); }
+        if (e.key === "Escape") { closeSheet(); closeDrawer(); closeInstallModal(); closeCitySheet(); }
       });
     }
 
