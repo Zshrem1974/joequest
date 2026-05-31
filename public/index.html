@@ -4130,7 +4130,7 @@
       const last = localStorage.getItem(LAST_CITY_KEY);
       if (last === "all") return "all";
       // my-location: re-acquire GPS silently if permission already granted
-      if (last === "my-location") {
+      if (last === "my-location" || !last) {
         try {
           if (navigator.permissions?.query && navigator.geolocation) {
             const s = await navigator.permissions.query({ name: "geolocation" });
