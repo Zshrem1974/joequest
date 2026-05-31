@@ -5284,12 +5284,36 @@
           const latSpan = Math.max(maxLat - minLat, 0.1);
           const lngSpan = Math.max(maxLng - minLng, 0.1);
           const padX = 52, padTop = 44, availH = h * 0.54;
-          visibleCities.forEach((city) => {
-            const xFrac = (city.center.lng - minLng) / lngSpan;
-            const yFrac = 1 - (city.center.lat - minLat) / latSpan;
-            const px = padX + xFrac * (w - padX * 2);
-            const py = padTop + yFrac * (availH - padTop);
-            svg.insertAdjacentHTML("beforeend", cityHubPinSVG(px, py, city, zoom));
+
+          // Initial geographic positions
+          const pts = visibleCities.map((city) => ({
+            city,
+            x: padX + ((city.center.lng - minLng) / lngSpan) * (w - padX * 2),
+            y: padTop + (1 - (city.center.lat - minLat) / latSpan) * (availH - padTop),
+          }));
+
+          // Repulsion pass — push overlapping pins apart until min distance is met
+          const MIN = 58;
+          for (let iter = 0; iter < 40; iter++) {
+            for (let i = 0; i < pts.length; i++) {
+              for (let j = i + 1; j < pts.length; j++) {
+                const dx = pts[j].x - pts[i].x, dy = pts[j].y - pts[i].y;
+                const d = Math.sqrt(dx * dx + dy * dy) || 0.01;
+                if (d < MIN) {
+                  const push = (MIN - d) / 2;
+                  const nx = dx / d, ny = dy / d;
+                  pts[i].x -= nx * push; pts[i].y -= ny * push;
+                  pts[j].x += nx * push; pts[j].y += ny * push;
+                }
+              }
+            }
+          }
+
+          // Clamp back into canvas
+          pts.forEach((p) => {
+            p.x = Math.max(padX, Math.min(w - padX, p.x));
+            p.y = Math.max(padTop, Math.min(availH, p.y));
+            svg.insertAdjacentHTML("beforeend", cityHubPinSVG(p.x, p.y, p.city, zoom));
           });
         }
         return;
