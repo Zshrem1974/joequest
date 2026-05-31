@@ -4011,6 +4011,7 @@
       filters: { rating: 0, openOnly: false, prices: new Set(), questers: false },
       saved: new Set(),
       conquered: new Set(),   // Phase 4: wired to backend; empty for now
+      cafesRanked: [],        // original server-ranked order; restored when leaving Near me
       mapFilter: "all",       // "all" | "near-me" | "open" | "saved"
       mapSelected: null,      // id of the currently selected map pin
       discoverFilter: "all",  // "all" | "open" | "match" | "near"
@@ -4194,7 +4195,8 @@
         state.originSource = "zip";
 
         const all = await fetch("/api/cafes?all=1").then((r) => r.json());
-        state.cafes = sortByDistance(all.cafes || []);
+        state.cafesRanked = all.cafes || [];
+        state.cafes = sortByDistance([...state.cafesRanked]); // ZIP mode: sort by distance
         state.filtered = state.cafes;
 
         renderCityDropdown();
@@ -4252,8 +4254,12 @@
         const r = await fetch(`/api/cafes?city=${encodeURIComponent(slug)}`);
         if (!r.ok) throw new Error("HTTP " + r.status);
         const d = await r.json();
-        state.cafes = sortByDistance(d.cafes || []);
+        state.cafesRanked = d.cafes || [];            // preserve server rank order
+        state.cafes = [...state.cafesRanked];         // working copy
         state.filtered = state.cafes;
+        // Reset any active near-me sort when loading a new city
+        if (state.mapFilter === "near-me") state.mapFilter = "all";
+        if (state.discoverFilter === "near") state.discoverFilter = "all";
       } catch (e) {
         console.warn("loadCafesForCity:", e);
       }
@@ -5868,6 +5874,10 @@
         if (!btn || btn.classList.contains("chip-spinning")) return;
         const k = btn.dataset.chip;
         if (k === "near-me") { activateNearMe(btn); return; }
+        // Switching away from near-me — restore ranked order
+        if (state.mapFilter === "near-me") {
+          state.cafes = [...state.cafesRanked];
+        }
         state.mapFilter = k;
         state.mapSelected = null;
         refreshMapChips();
@@ -5902,8 +5912,8 @@
           state.originSource = "geolocation";
 
           // Sort current city's cafés by distance — do NOT switch cities.
-          // City switching belongs to the locate button (locateMe), not this filter.
-          state.cafes = sortByDistance(state.cafes);
+          // Sort a copy so ranked order in state.cafesRanked is preserved for restore.
+          state.cafes = sortByDistance([...state.cafesRanked]);
           state.mapFilter = "near-me";
           state.discoverFilter = "near";
           applyFilters();
@@ -6636,8 +6646,9 @@
 
           state.origin = { lat, lng };
           state.originSource = "geolocation";
-          state.cafes = sortByDistance(state.cafes);
-          state.filtered = sortByDistance(state.filtered);
+          state.cafes = sortByDistance([...state.cafesRanked]);
+          state.cafesRanked = [...state.cafesRanked]; // keep ranked ref intact
+          state.filtered = sortByDistance([...state.cafesRanked]);
 
           renderCityDropdown();
           renderDiscover();
@@ -6984,13 +6995,17 @@
         const f = btn.dataset.discoverChip;
         if (f === "near") {
           if (!state.origin) {
-            // trigger geolocation then filter
             activateNearMe({ classList: { add: () => {}, remove: () => {} }, innerHTML: "", dataset: {} });
           } else {
+            state.cafes = sortByDistance([...state.cafesRanked]);
             state.discoverFilter = "near";
             renderDiscover();
           }
           return;
+        }
+        // Switching away from near — restore ranked order
+        if (state.discoverFilter === "near") {
+          state.cafes = [...state.cafesRanked];
         }
         state.discoverFilter = f;
         renderDiscover();
