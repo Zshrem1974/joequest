@@ -4244,7 +4244,7 @@
         renderCityDropdown();
         renderDiscover();
         applyFilters();
-        frameToCity(state.filtered);
+        frameToCity(cafesForFrame());
         renderMaps();
         if (state.view === "map") renderMap();
         return;
@@ -4265,7 +4265,7 @@
             renderCityDropdown();
             renderDiscover();
             applyFilters();
-            frameToCity(state.filtered);
+            frameToCity(cafesForFrame());
             renderMaps();
             if (state.view === "map") renderMap();
           },
@@ -4293,7 +4293,7 @@
       await loadCafesForCity(slug);
       renderCityDropdown();
       renderDiscover();
-      frameToCity(state.filtered);
+      frameToCity(cafesForFrame());
       renderMaps();
       // renderMaps only repaints the SVG canvases — the Map view's card list
       // + count come from renderMap(). Without this, switching city on the
@@ -4512,7 +4512,7 @@
         }
         renderDiscover();
         applyFilters();
-        frameToCity(state.filtered);
+        frameToCity(cafesForFrame());
         renderMaps();
       } catch (e) {
         els.discoverList.innerHTML = `<div style="padding:40px 18px; text-align:center; color: var(--muted);">Couldn't load cafés: ${escapeHTML(e.message)}</div>`;
@@ -5150,24 +5150,37 @@
     const BOCA_BBOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
     function activeCityBbox() {
       if (state.allCitiesMode) {
-        const bboxCities = state.cities.filter((x) => x.hasSnapshot && x.bbox);
-        if (bboxCities.length) {
-          return {
-            north: Math.max(...bboxCities.map((x) => x.bbox.north)),
-            south: Math.min(...bboxCities.map((x) => x.bbox.south)),
-            east:  Math.max(...bboxCities.map((x) => x.bbox.east)),
-            west:  Math.min(...bboxCities.map((x) => x.bbox.west)),
-          };
-        }
+        // Use the nearest city's bbox so café pins project at the right scale.
+        // Far-away cities' pins fall off-canvas (clipped), which is correct.
+        const near = state.origin ? findNearestCity(state.origin.lat, state.origin.lng) : null;
+        const slug = near?.slug || "boca-raton";
+        const c = state.cities.find((x) => x.slug === slug);
+        if (c?.bbox) return c.bbox;
+        const fallback = state.cities.find((x) => x.hasSnapshot && x.bbox);
+        if (fallback?.bbox) return fallback.bbox;
       }
       const c = state.cities.find((x) => x.slug === state.city);
       return (c && c.bbox) ? c.bbox : BOCA_BBOX;
+    }
+
+    // Reposition map controls above the actual sheet height (not a fixed %).
+    function updateMapControls() {
+      const sheet = document.getElementById("map-sheet");
+      const controls = document.getElementById("map-controls");
+      if (!sheet || !controls) return;
+      controls.style.bottom = (sheet.offsetHeight + 12) + "px";
     }
     function projectXY(lat, lng, w, h) {
       const b = activeCityBbox();
       const x = ((lng - b.west) / (b.east - b.west)) * w;
       const y = (1 - (lat - b.south) / (b.north - b.south)) * h;
       return { x, y };
+    }
+
+    // In all-cities mode, far-away pins project way off-canvas and skew the frame.
+    // Use only the nearest cafés (already sorted nearest-first) for framing.
+    function cafesForFrame() {
+      return state.allCitiesMode ? state.filtered.slice(0, 30) : state.filtered;
     }
 
     function frameToCity(cafes) {
@@ -5607,6 +5620,7 @@
       const { w, h } = bigMapDims();
       renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
       renderMapSheet();
+      requestAnimationFrame(updateMapControls);
     }
 
     function renderMapSheet() {
@@ -5619,6 +5633,7 @@
       } else {
         showMapSheetDefault();
       }
+      requestAnimationFrame(updateMapControls);
     }
 
     function showMapSheetDefault() {
