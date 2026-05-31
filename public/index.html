@@ -5150,14 +5150,20 @@
     const BOCA_BBOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
     function activeCityBbox() {
       if (state.allCitiesMode) {
-        // Use the nearest city's bbox so café pins project at the right scale.
-        // Far-away cities' pins fall off-canvas (clipped), which is correct.
-        const near = state.origin ? findNearestCity(state.origin.lat, state.origin.lng) : null;
-        const slug = near?.slug || "boca-raton";
-        const c = state.cities.find((x) => x.slug === slug);
-        if (c?.bbox) return c.bbox;
-        const fallback = state.cities.find((x) => x.hasSnapshot && x.bbox);
-        if (fallback?.bbox) return fallback.bbox;
+        // Global bbox covering all cities. The south boundary is extended so
+        // FL cafés (geographically at the bottom) project to ~58% of canvas
+        // height — above the card-strip sheet which covers the bottom ~35%.
+        // effectiveSouth = (actualSouth - 0.42*north) / 0.58
+        // East/west padded 8% so edge-city pins aren't clipped.
+        const bboxCities = state.cities.filter((x) => x.hasSnapshot && x.bbox);
+        if (bboxCities.length) {
+          const north = Math.max(...bboxCities.map((x) => x.bbox.north));
+          const actualSouth = Math.min(...bboxCities.map((x) => x.bbox.south));
+          const east  = Math.max(...bboxCities.map((x) => x.bbox.east));
+          const west  = Math.min(...bboxCities.map((x) => x.bbox.west));
+          const pad = (east - west) * 0.08;
+          return { north, south: (actualSouth - 0.42 * north) / 0.58, east: east + pad, west: west - pad };
+        }
       }
       const c = state.cities.find((x) => x.slug === state.city);
       return (c && c.bbox) ? c.bbox : BOCA_BBOX;
@@ -5177,10 +5183,8 @@
       return { x, y };
     }
 
-    // In all-cities mode, far-away pins project way off-canvas and skew the frame.
-    // Use only the nearest cafés (already sorted nearest-first) for framing.
     function cafesForFrame() {
-      return state.allCitiesMode ? state.filtered.slice(0, 30) : state.filtered;
+      return state.filtered;
     }
 
     function frameToCity(cafes) {
