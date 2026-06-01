@@ -1,5 +1,31 @@
 # CHANGES
 
+## Session — Real MapLibre street map (2026-06-01)
+
+### MapLibre GL JS replaces stylized SVG canvas
+- The blank tan grid canvas (`#big-map-svg`) is replaced by a real interactive street map (`#big-map-gl`) powered by **MapLibre GL JS** loaded from CDN — no build step, no per-load cost for the library.
+- **Tile provider**: MapTiler streets-v2 (`MAPTILER_KEY` env var, set in Render, domain-restrict in MapTiler dashboard). **Fallback**: keyless OpenStreetMap raster tiles for local dev — testing-grade only; set `MAPTILER_KEY` for production. No code change needed to switch; the server auto-selects via `/api/config`.
+- `MAPTILER_KEY` is a client-side tile key by design. `GOOGLE_PLACES_API_KEY` and `ANTHROPIC_API_KEY` remain server-side, untouched.
+- Pan, zoom, and pinch are native MapLibre — smooth and inertia-driven out of the box.
+
+### Brand pins on real streets
+- Café pins: existing amber cup-pin SVG, rendered as MapLibre HTML markers. Conquered cafés show the darker amber + green check badge.
+- JoeQuester pins: `joequester-marker.png` placed via fractional city-bbox coordinates (decorative; hidden in All Cities mode).
+- "You" dot: pulsing clay HTML marker, only rendered when real GPS is confirmed (`state.originSource === "geolocation"`).
+- Pins are pooled in `cafeMarkerPool` — show/hide on filter changes without recreating DOM elements.
+
+### Interaction
+- **Desktop hover**: MapLibre Popup shows the café name.
+- **Tap/click**: selects the pin (visual scale-up) + shows the bottom sheet preview. "View the verdict" opens the full detail card — same two-step UX as before.
+- Map background click deselects.
+
+### Retired
+- `projectXY()` / `activeCityBbox()` SVG projection math retired for the big map (kept for the hidden mini-map SVG thumbnail on Discover). `frameToCity()` now calls `mapgl.fitBounds()`. `locateMe()` now calls `mapgl.flyTo()`. `bindMapPan()` pointer-drag code is no longer invoked (MapLibre handles pan natively). `state.mapView` is no longer used for the big map.
+- The old stylized background (tan gradient + grid lines + fake road lines) is fully replaced by real cartographic tiles.
+
+### Server
+- Added `GET /api/config` → `{ maptilerKey }`. Only the tile key is served; all other secrets remain server-side.
+
 ## Session — Map overhaul, All Cities, My Location (2026-05-31)
 
 ### Map card-strip alignment

@@ -283,6 +283,12 @@ app.get("/api/auth/config", (req, res) => {
   });
 });
 
+// MAPTILER_KEY is a client-side tile key (domain-restrict it in MapTiler's dashboard).
+// GOOGLE_PLACES_API_KEY and ANTHROPIC_API_KEY never leave this server.
+app.get("/api/config", (_req, res) => {
+  res.json({ maptilerKey: process.env.MAPTILER_KEY || "" });
+});
+
 // ---- auth helper: extract & verify the user from the Authorization header --
 async function authedUser(req) {
   const h = req.get("Authorization") || "";

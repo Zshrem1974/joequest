@@ -21,6 +21,10 @@
   <!-- Supabase JS (used only for browser-side auth: sign-in/up/out, session) -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 
+  <!-- MapLibre GL JS — open-source interactive map renderer, loaded from CDN, no build step -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+
   <style>
     /* ============================================================
        BRAND TOKENS — Roastery (light) baseline
@@ -634,13 +638,71 @@
       flex: 1;
       position: relative;
       overflow: hidden;
-      cursor: grab;
-      touch-action: none;
-      user-select: none;
-      -webkit-user-select: none;
     }
-    .map-stage.panning { cursor: grabbing; }
+    /* Mini-map SVG (hidden Discover thumbnail) */
     .map-stage .map-canvas { width: 100%; height: 100%; }
+    /* MapLibre real-map container */
+    #big-map-gl { width: 100%; height: 100%; }
+
+    /* Custom café pin marker */
+    .jq-map-marker {
+      cursor: pointer;
+      filter: drop-shadow(0 2px 5px rgba(42,30,22,0.30));
+      transition: transform 0.15s, filter 0.15s;
+      transform-origin: bottom center;
+    }
+    .jq-map-marker:hover { transform: scale(1.12) translateY(-2px); filter: drop-shadow(0 4px 8px rgba(42,30,22,0.40)); }
+    .jq-map-marker.jq-selected { transform: scale(1.25) translateY(-4px); filter: drop-shadow(0 5px 10px rgba(42,30,22,0.45)); }
+
+    /* JoeQuester marker */
+    .jq-quester-marker { cursor: default; filter: drop-shadow(0 2px 4px rgba(42,30,22,0.25)); }
+    .jq-quester-marker img { display: block; }
+
+    /* "You" location marker */
+    .jq-you-marker { position: relative; width: 20px; height: 20px; }
+    .jq-you-dot {
+      width: 14px; height: 14px;
+      background: #C2553F;
+      border: 2.5px solid #FFFDF8;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(194,85,63,0.45);
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .jq-you-pulse {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 38px; height: 38px;
+      border-radius: 50%;
+      border: 1.5px solid #C2553F;
+      animation: jq-you-pulse 2.4s ease-out infinite;
+      pointer-events: none;
+    }
+    @keyframes jq-you-pulse {
+      0%  { transform: translate(-50%,-50%) scale(0.4); opacity: 0.55; }
+      100%{ transform: translate(-50%,-50%) scale(1.8); opacity: 0; }
+    }
+
+    /* MapLibre popup (hover name label) */
+    .maplibregl-popup-content {
+      background: #2A1E16 !important;
+      color: #FFFDF8 !important;
+      border-radius: 8px !important;
+      padding: 5px 11px !important;
+      font-family: var(--font-body, system-ui, sans-serif) !important;
+      font-size: 12px !important;
+      font-weight: 600 !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.30) !important;
+      pointer-events: none !important;
+      white-space: nowrap;
+    }
+    .maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: #2A1E16 !important; }
+    .maplibregl-popup-anchor-top    .maplibregl-popup-tip { border-bottom-color: #2A1E16 !important; }
+    /* Hide MapLibre default attribution (we add it to the legend) */
+    .maplibregl-ctrl-attrib { display: none !important; }
+    .maplibregl-ctrl-logo   { display: none !important; }
 
     /* Controls: right column above the sheet */
     .map-controls {
@@ -3320,7 +3382,7 @@
 
       <!-- Map canvas + controls -->
       <div class="map-stage" id="map-stage">
-        <svg class="map-canvas" id="big-map-svg" preserveAspectRatio="none"></svg>
+        <div id="big-map-gl"></div>
 
         <div class="map-controls" id="map-controls">
           <button id="zoom-in" aria-label="Zoom in">+</button>
@@ -3353,6 +3415,7 @@
             </span>
             <span><i class="map-legend-pin-quester"></i> JoeQuesters</span>
             <span><i class="map-legend-dot-you"></i> You</span>
+            <span style="margin-left:auto; font-size:10px; color:var(--ink-faint);">© <a href="https://www.maptiler.com" target="_blank" rel="noopener" style="color:inherit;">MapTiler</a> © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" style="color:inherit;">OSM</a></span>
           </div>
           <div class="map-sheet-count" id="map-sheet-count"></div>
           <div class="map-mini-cards" id="map-mini-cards"></div>
@@ -4049,12 +4112,18 @@
       mapSheetCount: $("#map-sheet-count"),
       mapMiniCards: $("#map-mini-cards"),
       miniMapSvg: $("#mini-map-svg"),
-      bigMapSvg: $("#big-map-svg"),
       sheet: $("#sheet"),
       sheetContent: $("#sheet-content"),
       drawer: $("#drawer"),
       scrim: $("#scrim"),
     };
+
+    // ---- MapLibre GL state ----
+    let mapgl = null;                     // MapLibre Map instance
+    const cafeMarkerPool = new Map();     // id → { marker, el, popup, conquered, visible }
+    let youMarker = null;
+    let questerMarkers = [];
+    let mapNeedsFrame = true;            // re-fit bounds after resize (set when city changes)
 
     function toast(message, kind = "info") {
       let el = document.getElementById("toast");
@@ -4465,7 +4534,7 @@
       });
       window.scrollTo(0, 0);
       if (view === "saved") renderSaved();
-      if (view === "map") renderMap();
+      if (view === "map") { if (!mapgl) initMapLibre(); renderMap(); }
       if (view === "profile") renderProfile();
       if (view === "taste") renderTasteV2();
       if (view === "settings") renderSettings();
@@ -4527,6 +4596,9 @@
       bindInstallModal();
       renderStory();
       initOnboarding();
+
+      // Start MapLibre in the background — tiles load while user sees Discover
+      initMapLibre();
 
       // Deep link: ?cafe=<id> opens that café's sheet. Works across cities —
       // we'll switch the active city if the requested place lives elsewhere.
@@ -5146,9 +5218,218 @@
       }
     }
 
-    // ---- map rendering (placeholder canvas — uses real lat/lng on a stylized grid) ----
+    // ---- MapLibre GL map ----
+
+    function makeCafeMarkerEl(c) {
+      const conquered = state.conquered.has(c.id);
+      const fill = conquered ? "#A6611A" : "#D98324";
+      const check = conquered ? `
+        <circle cx="46" cy="20" r="9" fill="#7E8C57" stroke="#FFFDF8" stroke-width="2"/>
+        <path d="M42 20 L45 23 L50 17" fill="none" stroke="#FFFDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>` : "";
+      const el = document.createElement("div");
+      el.className = "jq-map-marker";
+      el.dataset.id = c.id;
+      el.innerHTML = `<svg width="32" height="41" viewBox="0 0 64 82" fill="none" style="display:block">
+        <path d="M32 4C14 4 4 16 4 32C4 52 32 82 32 82C32 82 60 52 60 32C60 16 50 4 32 4Z" fill="${fill}"/>
+        <path d="M19 25H43a2 2 0 0 1 2 2V37a13 13 0 0 1-26 0V27a2 2 0 0 1 2-2Z" fill="#FFF8EE"/>
+        <path d="M45 28a6.5 6.5 0 0 1 0 13" fill="none" stroke="#FFF8EE" stroke-width="3.5" stroke-linecap="round"/>
+        <ellipse cx="32" cy="33" rx="4" ry="3.5" fill="#2A1E16"/>${check}
+      </svg>`;
+      return el;
+    }
+
+    function syncMarkerSelected() {
+      for (const [id, entry] of cafeMarkerPool) {
+        entry.el.classList.toggle("jq-selected", state.mapSelected === id);
+      }
+    }
+
+    function syncYouMarker() {
+      if (!mapgl) return;
+      if (state.originSource === "geolocation" && state.myLocation) {
+        const { lat, lng } = state.myLocation;
+        if (!youMarker) {
+          const el = document.createElement("div");
+          el.className = "jq-you-marker";
+          el.innerHTML = `<div class="jq-you-pulse"></div><div class="jq-you-dot"></div>`;
+          youMarker = new maplibregl.Marker({ element: el, anchor: "center" })
+            .setLngLat([lng, lat]).addTo(mapgl);
+        } else {
+          youMarker.setLngLat([lng, lat]);
+        }
+      } else if (youMarker) {
+        youMarker.remove();
+        youMarker = null;
+      }
+    }
+
+    function syncQuesterMarkers() {
+      questerMarkers.forEach(m => m.remove());
+      questerMarkers = [];
+      if (!mapgl || state.allCitiesMode) return;
+      const bbox = activeCityBbox();
+      // Fractional canvas positions from original SVG map, converted to real lat/lng
+      const FRACS = [
+        [0.30, 0.45], [0.18, 0.62], [0.60, 0.68],
+        [0.74, 0.30], [0.42, 0.78], [0.55, 0.18], [0.86, 0.62],
+      ];
+      FRACS.forEach(([fx, fy]) => {
+        const lat = bbox.south + (1 - fy) * (bbox.north - bbox.south);
+        const lng = bbox.west + fx * (bbox.east - bbox.west);
+        const el = document.createElement("div");
+        el.className = "jq-quester-marker";
+        el.innerHTML = `<img src="/img/joequester-marker.png" width="22" height="30" alt="">`;
+        questerMarkers.push(
+          new maplibregl.Marker({ element: el, anchor: "bottom" })
+            .setLngLat([lng, lat]).addTo(mapgl)
+        );
+      });
+    }
+
+    function syncMapMarkers() {
+      if (!mapgl) return;
+
+      const visibleIds = new Set(
+        state.filtered
+          .filter(c => typeof c.lat === "number" && typeof c.lng === "number")
+          .map(c => c.id)
+      );
+
+      for (const c of state.cafes) {
+        if (typeof c.lat !== "number" || typeof c.lng !== "number") continue;
+        const conquered = state.conquered.has(c.id);
+
+        if (!cafeMarkerPool.has(c.id)) {
+          const el = makeCafeMarkerEl(c);
+          // Desktop hover → popup with café name
+          const popup = new maplibregl.Popup({
+            offset: [0, -44], closeButton: false, closeOnClick: false
+          }).setText(c.name);
+          el.addEventListener("mouseenter", () => {
+            if (!("ontouchstart" in window)) popup.setLngLat([c.lng, c.lat]).addTo(mapgl);
+          });
+          el.addEventListener("mouseleave", () => popup.remove());
+          // Tap/click → select + show bottom sheet preview
+          el.addEventListener("click", (ev) => {
+            ev.stopPropagation();
+            popup.remove();
+            state.mapSelected = state.mapSelected === c.id ? null : c.id;
+            syncMarkerSelected();
+            renderMapSheet();
+            if (state.mapSelected) {
+              const mc = document.querySelector(`.map-mini-card[data-id="${c.id}"]`);
+              if (mc) mc.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+            }
+          });
+          const marker = new maplibregl.Marker({ element: el, anchor: "bottom" })
+            .setLngLat([c.lng, c.lat]);
+          cafeMarkerPool.set(c.id, { marker, el, popup, conquered, visible: false });
+        } else {
+          const entry = cafeMarkerPool.get(c.id);
+          // Refresh marker SVG if conquered state changed
+          if (entry.conquered !== conquered) {
+            entry.conquered = conquered;
+            const fresh = makeCafeMarkerEl(c);
+            entry.el.innerHTML = fresh.innerHTML;
+          }
+        }
+
+        const entry = cafeMarkerPool.get(c.id);
+        const shouldShow = visibleIds.has(c.id);
+        entry.el.classList.toggle("jq-selected", state.mapSelected === c.id);
+        if (shouldShow && !entry.visible) { entry.marker.addTo(mapgl); entry.visible = true; }
+        else if (!shouldShow && entry.visible) { entry.marker.remove(); entry.visible = false; }
+      }
+
+      syncYouMarker();
+      syncQuesterMarkers();
+    }
+
+    async function initMapLibre() {
+      if (mapgl) { mapgl.resize(); syncMapMarkers(); return; }
+
+      // Fetch client config (MapTiler key). Domain-restrict the key in MapTiler's dashboard.
+      let maptilerKey = "";
+      try {
+        const res = await fetch("/api/config");
+        if (res.ok) ({ maptilerKey } = await res.json());
+      } catch {}
+
+      // MapTiler streets-v2 is the production tile source.
+      // OSM raster is the keyless dev fallback — testing-grade only; use MapTiler in production.
+      const style = maptilerKey
+        ? `https://api.maptiler.com/maps/streets-v2/style.json?key=${maptilerKey}`
+        : {
+            version: 8,
+            sources: {
+              osm: {
+                type: "raster",
+                tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+                tileSize: 256,
+                attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                maxzoom: 19,
+              },
+            },
+            layers: [{ id: "osm", type: "raster", source: "osm" }],
+          };
+
+      const bbox = maplibreBbox(); // real geographic center, no SVG hack
+      mapgl = new maplibregl.Map({
+        container: "big-map-gl",
+        style,
+        center: [(bbox.west + bbox.east) / 2, (bbox.south + bbox.north) / 2],
+        zoom: 12,
+        attributionControl: false,
+      });
+
+      // Deselect selected café when clicking the map background
+      mapgl.on("click", () => {
+        if (state.mapSelected) {
+          state.mapSelected = null;
+          syncMarkerSelected();
+          renderMapSheet();
+        }
+      });
+
+      await new Promise(resolve => mapgl.once("load", resolve));
+
+      mapNeedsFrame = true;
+      syncMapMarkers();
+
+      // If the map view is already visible when tiles finish loading, frame it now.
+      // Otherwise mapNeedsFrame stays set and renderMap() will handle it after resize().
+      if (state.view === "map") {
+        mapgl.resize();
+        frameToCity(cafesForFrame());
+        mapNeedsFrame = false;
+        renderMapSheet();
+        requestAnimationFrame(updateMapControls);
+      }
+    }
+
+    // ---- SVG canvas rendering (mini-map thumbnail on Discover — hidden but kept) ----
     const BOCA_BBOX = { south: 26.32, north: 26.43, west: -80.22, east: -80.05 };
     function activeCityBbox() {
+      // Near-me: build a local bbox around the user + nearest cafés so pins
+      // appear at a navigable scale rather than the global FL scale.
+      if (state.mapFilter === "near-me" && state.myLocation) {
+        const { lat, lng } = state.myLocation;
+        const nearby = state.filtered
+          .filter(c => typeof c.lat === "number" && typeof c.lng === "number")
+          .slice(0, 12);
+        const lats = [lat, ...nearby.map(c => c.lat)];
+        const lngs = [lng, ...nearby.map(c => c.lng)];
+        const north = Math.max(...lats), south = Math.min(...lats);
+        const east  = Math.max(...lngs), west  = Math.min(...lngs);
+        const latSpan = Math.max(north - south, 0.03); // min ~2 mi
+        const lngSpan = Math.max(east  - west,  0.04);
+        return {
+          north: north + latSpan * 0.25,
+          south: south - latSpan * 0.55, // extra south padding for bottom-sheet overlay
+          east:  east  + lngSpan * 0.25,
+          west:  west  - lngSpan * 0.25,
+        };
+      }
       if (state.allCitiesMode) {
         // Global bbox covering all cities. The south boundary is extended so
         // FL cafés (geographically at the bottom) project to ~58% of canvas
@@ -5187,35 +5468,46 @@
       return state.filtered;
     }
 
-    function frameToCity(cafes) {
-      const W = 420, H = 340;
-      const pinned = cafes.filter((c) => typeof c.lat === "number" && typeof c.lng === "number");
-
-      if (pinned.length === 0) {
-        const b = activeCityBbox();
-        const { x, y } = projectXY((b.south + b.north) / 2, (b.west + b.east) / 2, W, H);
-        state.mapView = { zoom: 1, cx: x / W, cy: y / H };
-        return;
+    // Real geographic bbox for MapLibre — no extended-south SVG hack needed
+    // (MapLibre handles the bottom-sheet overlap via padding instead).
+    function maplibreBbox() {
+      if (state.mapFilter === "near-me" && state.myLocation) {
+        const { lat, lng } = state.myLocation;
+        const nearby = state.filtered
+          .filter(c => typeof c.lat === "number" && typeof c.lng === "number")
+          .slice(0, 12);
+        const lats = [lat, ...nearby.map(c => c.lat)];
+        const lngs = [lng, ...nearby.map(c => c.lng)];
+        const north = Math.max(...lats), south = Math.min(...lats);
+        const east  = Math.max(...lngs), west  = Math.min(...lngs);
+        const latSpan = Math.max(north - south, 0.03);
+        const lngSpan = Math.max(east  - west,  0.04);
+        return { north: north + latSpan * 0.2, south: south - latSpan * 0.2,
+                 east:  east  + lngSpan * 0.2, west:  west  - lngSpan * 0.2 };
       }
-
-      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-      for (const c of pinned) {
-        const { x, y } = projectXY(c.lat, c.lng, W, H);
-        if (x < minX) minX = x; if (x > maxX) maxX = x;
-        if (y < minY) minY = y; if (y > maxY) maxY = y;
+      if (state.allCitiesMode) {
+        const cs = state.cities.filter(x => x.hasSnapshot && x.bbox);
+        if (cs.length) {
+          const north = Math.max(...cs.map(x => x.bbox.north));
+          const south = Math.min(...cs.map(x => x.bbox.south)); // real south, no extension
+          const east  = Math.max(...cs.map(x => x.bbox.east));
+          const west  = Math.min(...cs.map(x => x.bbox.west));
+          const pad = (east - west) * 0.06;
+          return { north, south, east: east + pad, west: west - pad };
+        }
       }
+      const c = state.cities.find(x => x.slug === state.city);
+      return (c && c.bbox) ? c.bbox : BOCA_BBOX;
+    }
 
-      const midX = (minX + maxX) / 2;
-      const midY = (minY + maxY) / 2;
-      const spanX = Math.max(maxX - minX, 1);
-      const spanY = Math.max(maxY - minY, 1);
-
-      const zoomX = W / (spanX * 1.6);
-      const zoomY = H / (spanY * 1.6);
-      let zoom = Math.min(zoomX, zoomY);
-      zoom = Math.max(1, Math.min(zoom, pinned.length <= 2 ? 2.5 : 5));
-
-      state.mapView = { zoom, cx: midX / W, cy: midY / H };
+    function frameToCity(_cafes) {
+      mapNeedsFrame = true; // ensure renderMap() re-fits after resize if map is hidden
+      if (!mapgl || !mapgl.isStyleLoaded()) return; // style must be ready; tiles can still load
+      const bbox = maplibreBbox(); // real geography; MapLibre padding handles the bottom sheet
+      mapgl.fitBounds(
+        [[bbox.west, bbox.south], [bbox.east, bbox.north]],
+        { padding: { top: 60, bottom: 220, left: 40, right: 40 }, maxZoom: 15, duration: 600 }
+      );
     }
 
     function bigMapDims() {
@@ -5226,9 +5518,10 @@
     }
 
     function renderMaps() {
-      const { w, h } = bigMapDims();
+      // Mini-map thumbnail (hidden SVG on Discover view) — still SVG-based
       renderMapInto(els.miniMapSvg, state.cafes, 360, 150, { detailed: false });
-      renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
+      // Big map is MapLibre — just sync markers
+      syncMapMarkers();
     }
 
     // Brand pin: matches /img/joequest-icon.svg. Tip is at local (32, 82).
@@ -5429,11 +5722,9 @@
       });
     }
 
-    // Lightweight re-render of just the big map SVG (no list rebuild).
-    // Used during pan/zoom for smooth updates.
+    // Sync MapLibre markers without touching the sheet/filters.
     function redrawBigMap() {
-      const { w, h } = bigMapDims();
-      renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
+      syncMapMarkers();
     }
 
     // ---- card rendering ----
@@ -5621,8 +5912,14 @@
 
     function renderMap() {
       applyFilters();
-      const { w, h } = bigMapDims();
-      renderMapInto(els.bigMapSvg, state.filtered, w, h, { detailed: true });
+      if (mapgl) {
+        mapgl.resize(); // must come before fitBounds so container has correct dimensions
+        if (mapNeedsFrame && mapgl.isStyleLoaded()) {
+          frameToCity(cafesForFrame());
+          mapNeedsFrame = false;
+        }
+        syncMapMarkers();
+      }
       renderMapSheet();
       requestAnimationFrame(updateMapControls);
     }
@@ -6111,8 +6408,9 @@
           renderCityDropdown();
           renderDiscover();
 
-          const { x: ux, y: uy } = projectXY(lat, lng, bigMapDims().w, bigMapDims().h);
-          state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
+          // activeCityBbox() now returns a local bbox in near-me mode, so
+          // frameToCity correctly zooms to the user's neighbourhood.
+          frameToCity([{ lat, lng }, ...state.filtered.slice(0, 12)]);
           renderMaps();
           redrawBigMap();
           renderMapSheet();
@@ -6815,9 +7113,7 @@
 
       // If location already known, just recenter + flash toast.
       if (state.origin) {
-        const { x: ux, y: uy } = projectXY(state.origin.lat, state.origin.lng, bigMapDims().w, bigMapDims().h);
-        state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
-        redrawBigMap();
+        if (mapgl) mapgl.flyTo({ center: [state.origin.lng, state.origin.lat], zoom: 15, duration: 800 });
         flashLocateToast("You're here");
         return;
       }
@@ -6863,8 +7159,7 @@
           renderDiscover();
           renderMaps();
 
-          const { x: ux, y: uy } = projectXY(lat, lng, bigMapDims().w, bigMapDims().h);
-          state.mapView = { zoom: 2.5, cx: ux / bigMapDims().w, cy: uy / bigMapDims().h };
+          if (mapgl) mapgl.flyTo({ center: [lng, lat], zoom: 15, duration: 800 });
           restoreBtn();
           if (state.view !== "map") go("map");
           renderMap();
@@ -7232,21 +7527,10 @@
       });
       $$(".zip-clear").forEach((b) => b.addEventListener("click", clearZip));
 
-      // map zoom + locate
-      $("#zoom-in").addEventListener("click", () => {
-        state.mapView.zoom = Math.min(5, state.mapView.zoom * 1.5);
-        redrawBigMap();
-      });
-      $("#zoom-out").addEventListener("click", () => {
-        const z = state.mapView.zoom / 1.5;
-        state.mapView.zoom = z <= 1.02 ? 1 : z;
-        if (state.mapView.zoom === 1) { state.mapView.cx = 0.5; state.mapView.cy = 0.5; }
-        redrawBigMap();
-      });
+      // map zoom + locate (MapLibre handles pan/zoom natively)
+      $("#zoom-in").addEventListener("click", () => { if (mapgl) mapgl.zoomIn(); });
+      $("#zoom-out").addEventListener("click", () => { if (mapgl) mapgl.zoomOut(); });
       $("#locate-me").addEventListener("click", locateMe);
-
-      // drag-to-pan on the map stage
-      bindMapPan($("#map-stage"));
 
       // global click delegation
       document.addEventListener("click", (e) => {
@@ -7270,26 +7554,12 @@
           openSheet(card.dataset.id);
           return;
         }
-        // all-cities city hub pin → switch to that city
+        // all-cities city hub pin on mini-map SVG → switch to that city
         const hubPin = e.target.closest(".city-hub-pin");
-        if (hubPin && e.target.closest("#map-stage")) {
+        if (hubPin && !e.target.closest("#map-stage")) {
           const slug = hubPin.dataset.citySlug;
           closeCitySheet();
           selectCity(slug);
-          return;
-        }
-        // map pin → select pin, show sheet preview (only on the big map stage, not mini-map)
-        const pin = e.target.closest(".map-pin");
-        if (pin && e.target.closest("#map-stage")) {
-          const id = pin.dataset.id;
-          state.mapSelected = state.mapSelected === id ? null : id;
-          redrawBigMap();
-          renderMapSheet();
-          // scroll mini-card into view
-          if (state.mapSelected) {
-            const mc = $(`[data-id="${id}"].map-mini-card`);
-            if (mc) mc.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-          }
           return;
         }
         // map mini-card → select + preview
@@ -7297,7 +7567,7 @@
         if (miniCard) {
           const id = miniCard.dataset.id;
           state.mapSelected = state.mapSelected === id ? null : id;
-          redrawBigMap();
+          syncMarkerSelected();
           renderMapSheet();
           return;
         }
@@ -7310,7 +7580,7 @@
         // sheet preview back button
         if (e.target.closest("#map-preview-back-btn")) {
           state.mapSelected = null;
-          redrawBigMap();
+          syncMarkerSelected();
           renderMapSheet();
           return;
         }
@@ -7320,13 +7590,7 @@
           openSheet(verdictBtn.dataset.openSheet);
           return;
         }
-        // tap on map canvas (not a pin) → deselect
-        if (e.target.closest("#map-stage") && !e.target.closest(".map-pin") && !e.target.closest(".city-hub-pin") && !e.target.closest(".map-controls")) {
-          state.mapSelected = null;
-          redrawBigMap();
-          renderMapSheet();
-          return;
-        }
+        // map canvas deselect is handled by mapgl.on('click') in initMapLibre
         // drawer items
         const item = e.target.closest(".drawer-item");
         if (item) {
