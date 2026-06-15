@@ -1,0 +1,2790 @@
+{
+  "version": 1,
+  "citySlug": "tel-aviv",
+  "city": "Tel Aviv, Israel",
+  "generatedAt": "2026-06-15T19:45:46.538Z",
+  "count": 20,
+  "cafes": [
+    {
+      "city": "tel-aviv",
+      "id": "ChIJNSOc0IFMHRUR5oIkAzB1CjY",
+      "name": "WayCup Coffee",
+      "address": "Yohanan HaSandlar St 23, Tel Aviv-Yafo, Israel",
+      "lat": 32.0704091,
+      "lng": 34.7735561,
+      "rating": 4.8,
+      "reviews": 933,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: Closed",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=3894053676886819558&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJNSOc0IFMHRUR5oIkAzB1CjY%2Fphotos%2FAaVGc3m5jG7yUHEwFG_d8Uli3q4G0UFO5sj3ZZ3O1xtTQHoCSEO6ottOeRyz8HlL2WIbsTMcXT9Ya5DJrjrk3IOzvt1ltoOBIoaE5e11uGf09TLABmh-dT4T0qauNt_WVjz7vvwb9YG9sswf-f74OrQnOrG-5ISNhTFhiuo_K-5W36CDSW8gmfCOU610GXW3f1Zc6hfnJ_WaJ3qN7rGGk5m1-z_UVdwt63inRPkV5z1rGu3-d-KkJv_AVf4rj9ee4GnDz95-XxXrAXhi2fng3RocYm0uOJmEtjolG3OcIcwduBncjavRZBg9U7Qr8PlfeClhwTysliuAFiQv3Yviuovvttoocm3auXxysLi75iS_Cbo6WrVX0Kd6NxcUFgGyAOKVpoM62SA3X_r3ELadvwITLDDwJnNcfdAh0_baQ72RrjQUxg&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJP893XvFLHRUR1lsDiXEb3y8",
+      "name": "Café CUCU",
+      "address": "Dizengoff St 83, Tel Aviv-Yafo, 6433257, Israel",
+      "lat": 32.0771645,
+      "lng": 34.7742624,
+      "rating": 4.5,
+      "reviews": 2097,
+      "price": "$$$",
+      "types": [
+        "restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "european_restaurant",
+        "french_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": true,
+      "hoursLabel": "Closes 11:30 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 23,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 23,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 23,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 23,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 23,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 9:00 AM – 11:30 PM",
+        "Tuesday: 9:00 AM – 11:30 PM",
+        "Wednesday: 9:00 AM – 11:30 PM",
+        "Thursday: 9:00 AM – 11:30 PM",
+        "Friday: 9:00 AM – 11:30 PM",
+        "Saturday: 9:00 AM – 11:30 PM",
+        "Sunday: 9:00 AM – 11:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=3449506014033042390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJP893XvFLHRUR1lsDiXEb3y8%2Fphotos%2FAaVGc3mBvYh96Bf8yQJJ6-lG74LD2thR9L_0YXKDHQ6JjknIsbUUolgorqUvfH21sWdf08RXJlkKYPpaCiGyJ8wOu2GeIf56KuxjV4RFScEWflO_trMaeE7PUvonO5nkQ6Wd71PS1DsRuNXVx_0gut5s_K95V8hUt7d07cMlbEieoUdjYPLOPd0htuqXydjBukIs8BTaBCTpFIATwWhToAzM18Zhv_ITb2z6PFt_Zm0m5bhg3yz9o8Xwl4C5RXAYTeQItYHJY0LfVZ12dYxnvFOrtZO0lg61hyNMwdEJNbnDPulBDwSs82ttXfEYOgLgF3IbzEJRZI4KcJvWUeXnf3_6LiXMlshAj50TLuI6EoEtpW_Jho2Je4Fgcg5Z3mTUsumpvHgiWOdGh4oF9h1ytBpsTmmIpxlmTvwCRk8LT1H3GuOdPw&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJ-QkE8YlLHRURlqqPg1da7W8",
+      "name": "ORIGEM Coffee",
+      "address": "Dizengoff St 203, Tel Aviv-Yafo, 6311501, Israel",
+      "lat": 32.087641,
+      "lng": 34.774982099999995,
+      "rating": 4.6,
+      "reviews": 1468,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 8:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8065201839606311574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-QkE8YlLHRURlqqPg1da7W8%2Fphotos%2FAaVGc3mP1-cvrNUyOm2Pl_4nhhsXquuP9b70k0w4C9P5jk3bjG9L0uu0rLKMrBje4xb_qigjmcQ-pnwG1XjM5xIDblGeXc7I7fBKehBXr8XuFOTAMvYePgRxh2yEDEpAO2im9LcqkdSSYk4hKexLtngQzlEg_pwsTRIcPUKSA5JHwGf3mkTMv5aK_13ZwhuG9MvzNz-Ji00eS6vrNI7XTfYdmGc23PN9hPgOBysPe-l3LylhCOgDUVqFmnM87e6jfmJuOYvPefB5ueJKwHwfM9UEEz9AvGZ_GB8wOW3HKZZWnoNqQwcNli9w2N27F7gI3cp7MjyyCod56mRJueBYL2RL44PUE0DD0jf878pTaNfxKejo6lGUEnVmGq5UxwrEQR86BsmRAmsjTVw2cFwPBPPSAiKl06TADSxsKoIrKkz3eS9k4P4&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJ9RXn9YNMHRUR_yNpq7qaNnk",
+      "name": "Café Yom Tov",
+      "address": "Yom Tov St 30, Tel Aviv-Yafo, Israel",
+      "lat": 32.0689892,
+      "lng": 34.768695,
+      "rating": 4.5,
+      "reviews": 1841,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": true,
+      "hoursLabel": "Closes 1 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 18,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 1,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 1:00 AM",
+        "Tuesday: 8:00 AM – 1:00 AM",
+        "Wednesday: 8:00 AM – 1:00 AM",
+        "Thursday: 8:00 AM – 12:00 AM",
+        "Friday: 8:00 AM – 4:30 PM",
+        "Saturday: 6:30 PM – 1:00 AM",
+        "Sunday: 8:00 AM – 1:00 AM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8734338653862044671&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ9RXn9YNMHRUR_yNpq7qaNnk%2Fphotos%2FAaVGc3lwQegJSvJINUJNwAgkK_eXRCFljcnpqeTkutTwJOZpgbw_vChouQvxjDyTqcNLqLul3uxs0u0E3CVIZvHKTChFGBOq9EGqgDMZwoHN77gXgPEuJXRdYNmDctaVpYqkx5HA3uR3ypSXBS9-nJIMHMqKE82V2HHHiaP3umaKfOUKXX_A72eCdKkyueVFuWJg6HGNvXLOCjTMZm49aB_NemJ0t714tjhehhCfDLhbNVb3r5k5uoie0YbaaZJc-GncFEfRb0UGPO9COqv6mickiyJwZx_PENZSRkN7rBG809m9bZVD1WI3lKV67Ot-NfkYXd8FiMYrt83UG07ld_Ql8GACO-rX90jdF67HfFXPIVWJCKTrUajK88NxutJdmNNP4Vy7feXFkgvI1QhG5pQvvkbjS_Q5hhXqOBQkGKtPfCMVx9U&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJn7pmJ35MHRURz0lTk-FmpvY",
+      "name": "Café Shneor",
+      "address": "Pinsker St 20, Tel Aviv-Yafo, 63421, Israel",
+      "lat": 32.074510499999995,
+      "lng": 34.7704799,
+      "rating": 4.5,
+      "reviews": 1785,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 10:30 PM",
+        "Tuesday: 7:30 AM – 10:30 PM",
+        "Wednesday: 7:30 AM – 10:30 PM",
+        "Thursday: 7:30 AM – 10:30 PM",
+        "Friday: 7:30 AM – 5:00 PM",
+        "Saturday: Closed",
+        "Sunday: 7:30 AM – 10:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=17773006098489625039&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJn7pmJ35MHRURz0lTk-FmpvY%2Fphotos%2FAaVGc3kbjPq877fP2q48E31tqKi5YEm0qGCbanPpWDFPuyKiubIQHMnHwLrH6Lg-hqQZQ2wgFe2rraEMuFM84h3Y5nnHTpNMiXA1mryAqpUx10rfmExcPemwukNpKhBgiEe3RROCV_zj1NkO-y4mQ4ckx9grOBxcST-RmVPR5q1d4caJ6kaO3h7DsjXAE2y8WFXL_xhhmGo4_VJn20ZB64nT4Iix-VuyAkRsS04i0Iifm08oVBuGxi1cj5F3B38_HTukxow8tTsGTtAIF3Ic1UN3Gk5AAl-nAYNf-cXZqt7iBvmRRPCUOEDUOJRzgxyufNVfP3pTJ7U9jyZHDr8lE4BR8dr9hRs_LyEklRKrZ_va8UFGTTeVykMgBsHn3CfE1sZKFGn2MRQvnJ_F6IHTdp5YA3CH5oIYhvgduIP_3EH0ZN3-jS3q&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJl2HloH5NHRUR6b3SHQcImSU",
+      "name": "Sonder cafe Tel aviv",
+      "address": "Yishkon St 40, Tel Aviv-Yafo, Israel",
+      "lat": 32.0683607,
+      "lng": 34.768566899999996,
+      "rating": 4.9,
+      "reviews": 490,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 8:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 8:30 AM – 5:00 PM",
+        "Wednesday: 8:30 AM – 5:00 PM",
+        "Thursday: 8:30 AM – 5:00 PM",
+        "Friday: 8:30 AM – 5:00 PM",
+        "Saturday: 8:30 AM – 5:00 PM",
+        "Sunday: 8:30 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2709205477498207721&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJl2HloH5NHRUR6b3SHQcImSU%2Fphotos%2FAaVGc3k5WUHk2CSK1ABlE1TyxqLAMn2bumHum_KtX_Qe6eg5-iZTHLR9ZRCeZx9Op7VUduuUdao1TZNsDXMX3YTSHi-SErwjjEcfGBVhgNcwtOGQFBDn7j4crzoHEO3DnKEyRDNQ8uG6kTtiihZhClXlIBCxJggIkYbXJvLNGrpLsi-cxSkT-rh5dSG-jJfFa5lyQ8oa-aDBlqzmbKoGeCyIH91LQFPM-DEA9LUrIiUhpn7AjNxXRGw6Bge-nCILHHl81sY6Syh4khC7g92glzxazeIlQzTVX5uCg-zCXvY3s7oPOleyG8E5jPLG4AfCc5qGxuYYVNdwxovu5LEcmWC2QT-x-DtyC5vJGm5rgMSLL2Y_1v-3XKl8wyKQN7NgLEvhtyc_ATMHBtOqalrfVMmb5rgPdhnxE8IuwQIaet1z9XzuEyZJ&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJFRmg1IBLHRUR4yKpBbSx934",
+      "name": "Cafelix Shlomo Hamelech",
+      "address": "Shlomo HaMelekh St 12, Tel Aviv-Yafo, Israel",
+      "lat": 32.077466799999996,
+      "lng": 34.7767309,
+      "rating": 4.6,
+      "reviews": 1076,
+      "price": "$",
+      "types": [
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:30 AM – 3:00 PM",
+        "Saturday: Closed",
+        "Sunday: 7:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9148976554773652195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJFRmg1IBLHRUR4yKpBbSx934%2Fphotos%2FAaVGc3nQo3uzfdL0lmQ47lzGm3SDrMFBraMmVxAByusAnM-LtFCYhTBySO_i333osp1exwjT0SaX_3NC7aFqdKwX_igodi74Nwq2l0Tywg_3Bx_C5nN8ou-XmUAfbrTsAINXOc5E75hiuP49UcLLzMtL04YViyUPNBICWGr-_WKFLvUB4kqumOPSmYPnQDOz1fL67WbuK9A5eZBWHf16c8wogRRY_xtPUkhyeTL7YQbzevmaoavAN-k5aAmj66nwpEf3rIg-uo1HBh62g39IoP9egVHpQMU_1GIOOzo69Ngg_tDh4F384r_Ee6025u3ARcoWW7b_4eE9ikZW-gC5XVKZfPzselH-iqC7RTCU96lk5HQl4TOYYx2Gwe_nfo5SM1xD3BtaOv96TIgXQityC7abQUDVnTA1sRXlqSRSd6pgT-HhMa49&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJf54Q1nxLHRURkUPjg2F4e78",
+      "name": "WayCup Coffee",
+      "address": "Mikve Israel St 17, Tel Aviv-Yafo, Israel",
+      "lat": 32.062911,
+      "lng": 34.776826799999995,
+      "rating": 4.7,
+      "reviews": 791,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "coffee_roastery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: Closed",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13797754243599516561&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJf54Q1nxLHRURkUPjg2F4e78%2Fphotos%2FAaVGc3k5OuTfbzzIwbyGdyOvKIB-YfBmSaYDOSoVxGVVgqVUy_LK09yO4FytekbFOWrlPCjPcFKL-i2h8PtuNArvG5ZDUZWXKEyIxOwZcUfTHjDKAjf1EUIl1AeZ1KDElUZrzE9vXu0ZEy9HjC-NZG0wjxa_OWXOOBGPOTkiu4aZEyVj2sziC3TQ_mzA3pLetczBCgdpq-VMXX2QrkBh2fpcp_3f4ehEEiz3xF6Q1SQalo_yRVHPi7hNRgZ1-q2nDDKGNiECU5ePWhcvsuGvnThP8bGcm21SPHreqIuGd3LDqUYX5fx76E1XWFeTlwFkkl1JuGL1CHHf8E0AzEmqzZbUCFPiGv6o6NkBPfjJMJOP7kgwRGoNABkUpvR6SikjwYufaJorF_rHbA1Ar7D_BE-3LUAT9yiyCbN-8zMzMMc3r_KA_g&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJqT1ArXlMHRURc65-yk0QQlA",
+      "name": "CafeXoho",
+      "address": "Ben Yehuda St 73, Tel Aviv-Yafo, 6343501, Israel",
+      "lat": 32.0809187,
+      "lng": 34.770255399999996,
+      "rating": 4.4,
+      "reviews": 1960,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "grocery_store",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: Closed",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5783202797792964211&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJqT1ArXlMHRURc65-yk0QQlA%2Fphotos%2FAaVGc3kM8_8yjMIP5gbKramFKzqt6WY0Simr7PbsKsMlROriinI2mfe89CdqcNlYFvLALRpAgHVN0deOHyVsuGHVMBETxMct1LpdihzQ2oAuvtApAbeDsqTyjMynFLbgtgUJEqp_g_jgsMbq4vb0XQSxfNDFQ7MVDJXbMcJRzfaF1zJPcQSUu5YHLnWez9pyZRdTcD3WCVnuxX4mXY3vYhHaelpu0d-mZwa8CxeNHgvhRdy1e731_FVmhnoVdnTQMdsE_Bjjw4blAKuQrCqnreqx9skq-GbFSQXbDN-ajoYWwZbaolpyGTORPuJlyr5TzZZsYAu1MQyWD6FUNCPc5pURSgB50HiKcDzon3Cog0MjhefAb5y1R-22S8A3oZp-A9ZOuyAbHGELnTIExLgql21y-u4J4Cf45w7JZOcHpcSjagD4kmR5&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJm4T00olLHRURMIXHaAjtS34",
+      "name": "Dizengoff Cafe",
+      "address": "Dizengoff St 190, Tel Aviv-Yafo, Israel",
+      "lat": 32.085723699999996,
+      "lng": 34.7747447,
+      "rating": 4.3,
+      "reviews": 2511,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "breakfast_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": true,
+      "hoursLabel": "Closes 12 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 12:00 AM",
+        "Tuesday: 8:00 AM – 12:00 AM",
+        "Wednesday: 8:00 AM – 12:00 AM",
+        "Thursday: 8:00 AM – 12:00 AM",
+        "Friday: 8:00 AM – 12:00 AM",
+        "Saturday: 8:00 AM – 12:00 AM",
+        "Sunday: 8:00 AM – 12:00 AM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9100628092405646640&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJm4T00olLHRURMIXHaAjtS34%2Fphotos%2FAaVGc3lmUYATmv17JqTeKAd-bZLayP7O7moFt0fx4Wp3n_yu018YeOaiMuDhyvJkjvNsDq9K99e8WLv08PbMTedMm11kmvPXrld6tZPtX_zno82yCSJ7FDf-VHyykHbzUVGqLpm3os6557bRC4hfj5_6bH-t4QSWwVwVtJUSA8EbA8I61fQr06k2ScqtqlOM0IuGR2niThByy5NpWNZD-JKfCvKwQ_RQp-BSfPV4k688_GrEVh3yVHjhUTa7_DajRWonb4f2UeXtllEn_kC7Lj6NbrzYqrYES7nTEDD_aqLnEU2q4Z18tTFUni8fUTfaZxq30Z2XCf68iOTmUuZZjAUnl-FJKmoCe7ut9kzd_ha_16huKQssLrn1vxkL_CHjYFgBAeujqV4dEbnUtvG_Cxj3cUBgj_nA3TaSaIBXO57Wh0X_Eg&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJyZNcax9NHRURaoGasCiP9cA",
+      "name": "HOC - House of Coffee",
+      "address": "HaTavor St 2, Tel Aviv-Yafo, Israel",
+      "lat": 32.0649527,
+      "lng": 34.76661,
+      "rating": 4.5,
+      "reviews": 1209,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13904176829500653930&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJyZNcax9NHRURaoGasCiP9cA%2Fphotos%2FAaVGc3kQEB__Tv3Aiuarr2n8P-4ytnDb8LbUQ11E0GEOOa5UgVWlm-LJtlQHVDa2zOa1SomQGkV7KX6d700dgSqj3aao5s0RF6qvf701ip2V-Rs9SXgKb2KbYLzXlmQSDQGVHFu3g1vhTmgH3CzSkF7q2i0t-B4uhMsdtr6RnL_b0I8urv45egYLN-8kgmrTOf9eBWarfmoV8A0rdx3lq6H3ZZgJrqYH_41x0GsYexrsrDV9EFJ1WzR6oZuox1jgBS80oajewxjLCgiVDxfTMJjmC20cRuIFcIWTGmOApBPjjnqF7pwJi1_Dm0-GZL3OCGbEqDu9vNlVkoA-8t8-rbUNlbsEkBomsXBmd1h1AM4PeG8fsihSpiPEsoysZo9Rkn8f9roVeCmrSeAJDAqbY20yo_KPCJ-Q_MHp2SME0uxvFSpqNw&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJK5zFUYdLHRURzLpv8RjKSwc",
+      "name": "Nahat Coffee",
+      "address": "Harav Reines St 20, Tel Aviv-Yafo, Israel",
+      "lat": 32.0798109,
+      "lng": 34.7754178,
+      "rating": 4.3,
+      "reviews": 2077,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_roastery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": null,
+      "hoursLabel": null,
+      "periods": null,
+      "weekdayDescriptions": null,
+      "mapsUri": "https://maps.google.com/?cid=525735989997451980&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJK5zFUYdLHRURzLpv8RjKSwc%2Fphotos%2FAaVGc3lXNZM3tiTXse2dSnVTshM_nUdoKpANQwapcDd6irf6Zg6M28yliOYAq8-o9zeBsfdSH02eUf6kdUuV4Fr-m-d6u_6kV4JQmOFLkXsTzQULOiNPsXrcMVZIgAseLKLDPeQ6HdZ6Y1A0jHH5Ut1UY_bMZ5s67oAbvwR44NMNqs1Ix8lwbeEZj72JbVgx7YJAypdN8CIjUl9jfAzYnS3qxkmDH7MrvNY9kgVNV_E2i3cCkAQClYK0ZkTmG6Ks1o22RcchDP2aNR30QgS0J2mZCLWLqLv_cX2J4lEjvLdIrgAJ6XUBRniXYXhUgcdMf9lJslOh6_p6B97NvQsHf6oFYHoJZSdLbmdbwEW86Z7xhxxsIEKNYAZW-uJ2Hm0QtwQy1CM44WIp6gSpRHBxB8PYjVURLDAHxdZriECYjlpLbaa-dA&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJ5wPp6XVLHRURrOeCdeyojS4",
+      "name": "Cafe Zohar",
+      "address": "Erlinger St 15, Tel Aviv-Yafo, Israel",
+      "lat": 32.0599296,
+      "lng": 34.7807971,
+      "rating": 4.9,
+      "reviews": 318,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 5:00 PM",
+        "Tuesday: 7:30 AM – 5:00 PM",
+        "Wednesday: 7:30 AM – 5:00 PM",
+        "Thursday: 7:30 AM – 5:00 PM",
+        "Friday: 8:00 AM – 3:00 PM",
+        "Saturday: 9:00 AM – 3:00 PM",
+        "Sunday: 7:30 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=3354523030998149036&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ5wPp6XVLHRURrOeCdeyojS4%2Fphotos%2FAaVGc3kwWJkzf3gQNi04ui4DUS0YW_RQRQCN8f-cpWTJ9w8pJy7-wlmyegX449ylcCSmg_fniNUlEB6LErMXeA-5pPyvZj_LggbP4vVPw3BZ7EO4gPdw1LKG5i4KqmV1BssrS0iZ8p7jtUPDber4rKoLwy_ccH8LHQezZTyeaDhic10u5GwSXOTSfk1wsPLTT41TM-4Or91L-XUNBxz7cYYU0TGbHSGsA1XutskRMnTrtdb6eBRguLdtgOnzowAZGQjIUqVQzAnhqQtRO-7Dzjxb8DHjxukx-EonLUJRNzK-ytrwXtfE1OgSxLcbBZ3vaj3-glyn0TIWi533OKwdT27hAKYxvwzjufKBh6A4a0dHPViFs3AH63jDnP_YvoXKvMPxMMOLuG92iDaxb846NOE0EfBMTOJmVggmOQV72hgtRriy3P5Xikuela8xkexUMFFJ&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJFUzql2lLHRUR586y5uj5ros",
+      "name": "Jera",
+      "address": "Shlomo Ibn Gabirol St 54, Tel Aviv-Yafo, Israel",
+      "lat": 32.078081,
+      "lng": 34.7814555,
+      "rating": 4.6,
+      "reviews": 625,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 8:00 PM",
+        "Tuesday: 7:30 AM – 8:00 PM",
+        "Wednesday: 7:30 AM – 8:00 PM",
+        "Thursday: 7:30 AM – 8:00 PM",
+        "Friday: 7:30 AM – 3:00 PM",
+        "Saturday: 7:30 AM – 8:00 PM",
+        "Sunday: 7:30 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10065256995917844199&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJFUzql2lLHRUR586y5uj5ros%2Fphotos%2FAaVGc3mu4YdTTxBtLVCtJzCbqotzDgSqwZfb00iky07fZRXN1t7MVWhvIQKN9q3CthxqBDK5A_Irdj687ae5Nc1v3gz6i1kfkK7GL3_G3WqKWOWUp_R_2gM96SxnMdivOssoY_H9MhRc3w8lQBBratGvs9HtRE8ixxWSeMxYPUJY4qhITttYCJe9UVZHq5vfn3cYmNyi_HSp7sKQ6J7mDX8Rr2TYNRT27knu1dUPGo2APQgtlfZwtivKkZ0gJdyuHKrah53y64Jz6WKKTtVG31ewtvnmR97gM2tIBosxGWaknQHN1tT5FVFybZc2vShmpe4dnzCfICIWZ8nmKOObGs0kQdacp_KgMeRJszSEk-WIAhUjTNZY48iNHKvhtp7_n_pJ6dYUgfEp1kAv4xTv74-uk6dGJbo5DJ8JZZnqo1OUm_cvww&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJH8kam1RJHRURoccAKTlvK28",
+      "name": "Chacho's Cafe Geula - צ'אצ'וס",
+      "address": "Ge'ula St 51, Tel Aviv-Yafo, 6330450, Israel",
+      "lat": 32.0711824,
+      "lng": 34.7695581,
+      "rating": 4.8,
+      "reviews": 359,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "coffee_roastery",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=8010618653500295073&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJH8kam1RJHRURoccAKTlvK28%2Fphotos%2FAaVGc3kPkdsXnThIq5hktftx3EEbLy8Tdr-ZZ4difBgMIrhQNZhkNwlo905d4DEDk7bFByzbePxRWNJY6BXv8NpOwOYfHQihtfafbsPyIPJ71MEN1WdZQcT6OQbbEQynJ8LoTuJn6E3mqDLbahrtjeALdF8v9n7zMWMhbk43DhJ0uXxyad9dm7a2KZtN_XkIPUi_F3NscNMoEPSRzyZQZkZCRIxK3qca3692uUou3pxtcYm5pYu50g5bS6EU1BJW9tcMUBuJiAcRbGIOrE9OBbN2titVta1n2VqRpfm7TINu0lpSsWqxnOVrwhEYGs0rx27CCDz36XzomTjpXem340WS-I_hPv3Acq8PMvFZwETcgztOC4a5Y4B3mLRca1fWmJyVF1foiKIGrD8bKHGrhSsBvK2e3aJqFVqupDhJy6TBwEzp-_DN&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJnbu3jUZNHRURGGeYOqZsYsE",
+      "name": "Nomena",
+      "address": "Allenby St 54, Tel Aviv-Yafo, 6382205, Israel",
+      "lat": 32.0707348,
+      "lng": 34.7697016,
+      "rating": 4.8,
+      "reviews": 338,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 6:30 PM",
+        "Tuesday: 7:30 AM – 6:30 PM",
+        "Wednesday: 7:30 AM – 6:30 PM",
+        "Thursday: 7:30 AM – 6:30 PM",
+        "Friday: 7:30 AM – 4:00 PM",
+        "Saturday: Closed",
+        "Sunday: 7:30 AM – 6:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13934819658241173272&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJnbu3jUZNHRURGGeYOqZsYsE%2Fphotos%2FAaVGc3lvCMTZcLEqTKGLeu6Zge_XZ2DGJkl_x5P_uj_ffqtVDk6vJ1VDc7XJgytfHQGwQiet4fdAkupXbv3WX4tzo-SWwASWotUM-l70-3KRgfb2Tz130tx1P1BQiRjt9ydEVYcUzYRs1EstyRx1p8lpM0YjZlbQspYwDaJZjn9tedtvxdXeIUhtPnuGSRS0ZbiT4nP2a8Lsd3KB6UXDkYK76a2AmQv9lVMnmSJd-_FuWjULdlj2KrkrkI-7itaZUqeoXr68AZzEeMArEAh0SrxqFgVDTZpayUPomdzlGqt2TKRQ4WwTDF2pOTqM2PYtceB4OPIV2zd-_0VUOxTbHGl_5R2Znpw-sHDiw2NfxwxkG1gc8YlSWomNhe_7uelxLKXszI6G2VQm0jlNX2fglKj3W_wmHtTScpwFQK7cfVG-NE1L-2IvMLHfBHAdwvgllH7g&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJj-OCGRZLHRURAQ1V97vL0iI",
+      "name": "Chacho's Cafe Gordon - צ'אצ'וס",
+      "address": "J. L. Gordon St 47, Tel Aviv-Yafo, 6439406, Israel",
+      "lat": 32.0817456,
+      "lng": 34.7748345,
+      "rating": 4.8,
+      "reviews": 177,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: Closed",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2509291950567656705&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJj-OCGRZLHRURAQ1V97vL0iI%2Fphotos%2FAaVGc3lVlIR1tuYc-XjEqQeV63ATQwpAI8Z3G1ar-dnMhD9SsFFawJGaTnp1HHUY4EiMj0HKofI75en7gaFjMZn3o2Z4ny0Raw9oXIGZplq7GDM3f4QtBhQ25nO1WLDM_IuK5sNTwogOeqHRV5g9COok0h7pUWiSnTa3UH_23h51La8pZ-_AVTSu73al3NXo2YwBtAVzJKnKv01re8ggd2Hdc_ZSp1uY_pryT7EwfKr7jDAXG1_kZcgKUqFeynnYtyZBbj--0sd-qN5VFJwgIxhhasv1HS6-Rjlfp4YrZfhzE2m8McwiAwxOEGDj4TexJfd1lK8yE3Sbu_MKAPtDHCjeYD9-uHr3dqnrpJ8d-0ApLehmNsXk9eEG9sA85xy1SAnTMGMz6ozQ9gq2aNVKJgfRDyEMNLjGHoFfRtyYKZQ_MV9jen0&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJLUxvG4pNHRURoRVUEJD2gZA",
+      "name": "Tili Cafe",
+      "address": "Dov Hoz St 16, Tel Aviv-Yafo, Israel",
+      "lat": 32.080574,
+      "lng": 34.7727012,
+      "rating": 4.7,
+      "reviews": 159,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 6:00 PM",
+        "Tuesday: 7:30 AM – 6:00 PM",
+        "Wednesday: 7:30 AM – 6:00 PM",
+        "Thursday: 7:30 AM – 6:00 PM",
+        "Friday: 7:30 AM – 2:30 PM",
+        "Saturday: Closed",
+        "Sunday: 7:30 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=10412874912066966945&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJLUxvG4pNHRURoRVUEJD2gZA%2Fphotos%2FAaVGc3kTw6CPkHADtqW6F15NCX_IqXS38VVDZSP8sYBzMmuGIHu7yxOBWup3a675GT7ilgwxkh0qsUtbhKxJrNjWHCtszR6ug1ab0Ro4f8dh-BO0VKmSehbafL_07wqoDcH8Tv7kKBmLJuGjhmLsFwzlFwN4bDJANkl2EMN0XkqRHQ0w-XocsqyUf1-Y7wI3OkNKtpPghWGnHORKWKBbtM2fHInfHNYK230Euxm6o6GjGpU3b_MuD-apq6HldBO8KHU1aHwwj5zaT4aBQFwA_09yQlAXlIzwxj63bsI11jHjWOHRQsto_cADV2C5F68bEraEmnamEIeL1ezLK0o-XRv6_oCkAaSpg8kZ23Ape_o-DA_4d0oNa_ZNd_Wr2CekNAKu2tnQJSngrhfU2r1XxlJkEpLbIU0rmMf5avBgxolXiEN1Ibpm&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJ20xnH31LHRURtcRHz2toQYU",
+      "name": "Cafe Ahad Ha'am",
+      "address": "Ahad Ha'Am St 51, Tel Aviv-Yafo, Israel",
+      "lat": 32.0663765,
+      "lng": 34.7764352,
+      "rating": 4.6,
+      "reviews": 107,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": false,
+      "hoursLabel": "Opens 7:30 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 8:00 PM",
+        "Tuesday: 7:30 AM – 8:00 PM",
+        "Wednesday: 7:30 AM – 8:00 PM",
+        "Thursday: 7:30 AM – 8:00 PM",
+        "Friday: 7:30 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 8:00 PM",
+        "Sunday: 7:30 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9602070692778984629&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ20xnH31LHRURtcRHz2toQYU%2Fphotos%2FAaVGc3npm3V8khjYmLyCDDFwvWWANq8AwUPCVpwVmcx9PsEuG1kFKTwnrBJ3Slvk06mMpjDAhzOck9FHOp1ivSGrTxATn6AJRKbwb9m1rZGLmO1SSV_y5Axi0Wx0Angiod76a2BeEAQQ3JEnjF3j3C4zP922StgPlVXxEVyRPSARmhrum1Z2j0Y2x1YNRxgoKQICPL35KUQho6wOoIQTbciEMzoo0KJ-8Ammz1tzCY1G_RCRIJZSxFqqXglHu6J5OQVjxRWGXQfkMIPc_k3OlnahQQu-q7fc_10SnK6fzo3kAqesRks73oXfDv4QREdCLVPvgiDzGNMvV4Ty9kxtHxW9zAo1BIc6lQqWRz3s6zfLP2G9_wM_skUm8YXNF2013kN9QD8CSd6xzb937D1MUu1N91cmrGTxxik74GeaA8mS3JshLw&w=800"
+    },
+    {
+      "city": "tel-aviv",
+      "id": "ChIJ07wEFwBNHRURfcmJMWAN8KI",
+      "name": "OURO COFFEE SPOT",
+      "address": "Jerusalem Blvd 44, Tel Aviv Jaffo, Israel",
+      "lat": 32.0503873,
+      "lng": 34.758821,
+      "rating": 4.7,
+      "reviews": 14,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "Asia/Jerusalem",
+      "openNow": null,
+      "hoursLabel": null,
+      "periods": null,
+      "weekdayDescriptions": null,
+      "mapsUri": "https://maps.google.com/?cid=11740898935354018173&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ07wEFwBNHRURfcmJMWAN8KI%2Fphotos%2FAaVGc3mWpl2ar9i6iZeFGopHjlVlGiw7D4uso9AK8qYpdTmalE3Fl84nEcSi7eaY_a8H_5mDgdZ9V7UZjy0-qifOe-nzij9oJUmhygEvvxpuIu5HHJ3kzSNDDS8j06yPdUnfC0QdJvI2nsgKl_JbLZvwEm6Vzv5DbhmN99zFfufvIynu0x9GqLgDMkhWZ0ysSnIAJ-THuZdYYEIbwtMb6Sdq0JEVhawBQnPccAoAsTQHOpXKwb2FX24odOJtqFmDVrUhHApAjh_NV-SdMKBTjpgmBQ-xKu0bmEWF36rGZGPkkEdiHjRiaGWmsfEHXICavpG79qhHsr7MhnRX4b7Kh1AjFVgPB4L5jrC9-nJQeI3XvYJxs0a8VaktvJzF5fT9Md63se9zg6r5yHnEB8lbLOPyyh_JfPfBuy0zRBdQfWGyDGnGsUmLRyffQYFgLcCdcDNJ&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJNSOc0IFMHRUR5oIkAzB1CjY": {
+      "picks": {
+        "drink": {
+          "name": "Cold brew",
+          "reason": "Explicitly rated 5/5 in a 5-star review; other reviews praise coffee generally but only cold brew is named with specific high praise.",
+          "quote": "cold brew was 5/5",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pistachio cake",
+          "reason": "The only specifically named food item, described as delicious in a 5-star review.",
+          "quote": "Pistachio cake was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "One of my favorite coffee spots in TLV. Very chill corner with outdoor seating. Great coffee. If the benches are full, grab a cup and walk across the street to the tiny park with lots of benches. Also has possibly the best sweatshirt logo merch of any coffee shop."
+        },
+        {
+          "rating": 3,
+          "text": "Nice and friendly place. The coffee was good and the food was alright. My only real complaint is the tiny coffee cups. Please have normal big TA cups.  It might sound like a small issue but that's enough of a reason to choose a different place for my morning routine."
+        },
+        {
+          "rating": 5,
+          "text": "I loved this place. Pistachio cake was delicious and cold brew was 5/5. Great place to sit and chill while you’re enjoying your morning coffee. Looked like there were a lot of remote workers there posted up as well. Highly recommend!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:13.310Z"
+    },
+    "ChIJP893XvFLHRUR1lsDiXEb3y8": {
+      "picks": {
+        "drink": {
+          "name": "Wine",
+          "reason": "Mentioned positively alongside the stellar meal, but no specific wine named.",
+          "quote": "such good wine too",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Sea Bass Fillet",
+          "reason": "Praised in multiple 5-star reviews as a standout main dish.",
+          "quote": "the sea bass entree was a close second",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Such a wonderful establishment and restaurant with a great atmosphere and energy. Yuval was extremely friendly and polite towards me and the server Tal was simply one of the best. I would highly recommend Cafe Cucu to anyone visiting in Israel or Tel Aviv. The food is very fresh and delicious too."
+        },
+        {
+          "rating": 2,
+          "text": "I really wanted to try this place, hesitated between brunch and dinner menu, chose the later.\nUnfortunately, I was so disappointed. I expected dishes to be precise and neat, but they looked like they were made by an amateur, meat in tartar and meat cut was of very poor quality, also tartar looked very pale and cream of egg yolk just didn't work on it.\nOne of the worst cheesecakes I have every tried.\nThe positive side is Happy hour from 17:00 till 19:00 with 30% off on everything."
+        },
+        {
+          "rating": 5,
+          "text": "When I say amazing food, I mean it! A menu of simplistic but absolutely delicious food. Everything was fresh to order and service was great. We ordered their Beef Tartare & Pickled Yolk Cream, Tomatoes & Mozzarella Salad, and their main Sea Bass Fillet! One of the top restaurants I added to my Tel Aviv restaurant list!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:21.311Z"
+    },
+    "ChIJ-QkE8YlLHRURlqqPg1da7W8": {
+      "picks": {
+        "drink": {
+          "name": "Espresso",
+          "reason": "Multiple reviews praise the espresso and coffee quality; one 5-star review specifically calls out excellent espresso, and another highlights a great cortado.",
+          "quote": "Origem has excellent espresso and pour over",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Sandwich",
+          "reason": "Sandwiches are mentioned by two reviewers, with one specifically praising a cheese, tomato, and lettuce sandwich on rye bread.",
+          "quote": "sandwiches with cheese, tomato, and lettuce on rye bread",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Origem has excellent espresso and pour over. Always a couple tasty bakery and dessert items. They’ve moved next door to their old location which is much larger and offers great seating both inside and out under the trees."
+        },
+        {
+          "rating": 4,
+          "text": "Charming small cafe in the old north part of the city. the staff and the owner are from Brazil and they super nice people, you can find here many blends of great coffee. the atmosphere at the cafe is fantastic, so relaxing and the music perfect + great taste of decoration. they have also some sandwiches and sweets.\nI really like this place !\n\nHighly recommended !"
+        },
+        {
+          "rating": 4,
+          "text": "This place is really cute and small. It’s perfect for someone who either wants to take a coffee and go or someone who would like to sit down with a book or do work on a laptop. Is very relaxing and can be quiet.\n\nThere is also outdoor seating and they have heaters on a chillier day that you can ask to use if needed.\n\nIt’s a lovely clean coffee shop with a few food options that are nice like sandwiches with cheese, tomato, and lettuce on rye bread. I don’t even like rye bread but it did compliment a sandwich I shared with a friend so I’m impressed!\n\nThe pastries they had all looked great, they had cookies and different types of cakes.\n\nThe staff was very kind but informed me that they couldn’t make a cold brew because the machine was not working. I wasn’t able to get the coffee I had hoped for because I don’t like hot coffee but I’m hopeful for the next time I come that it will be repaired.\n\nThis place is a blend of Brasília and Israel apparently which I thought was cool! I love the idea of fusion in the same place.\n\nI would come back here but just remember you might not be able to get your cold coffee if that’s what you were looking for. I’m sure it will be fixed by the time you read this though!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:25.940Z"
+    },
+    "ChIJ9RXn9YNMHRUR_yNpq7qaNnk": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Coffee is mentioned but with mixed/generic feedback—one reviewer says it's good, another calls it average. No specific drink is named.",
+          "quote": "The food is good, and so is the coffee",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Brisket sandwich",
+          "reason": "Specifically praised in detail in a 5-star review as 'truly excellent' with high-quality brisket bursting with flavor. Other food mentions are more general.",
+          "quote": "the brisket sandwich and it was truly excellent",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Delicious brunch in the Carmel market area. Typical Israeli dishes full of flavour and very generous. The place has outdoor as well as indoor seating space and the vibe is really cool and welcoming. Staff were super friendly too."
+        },
+        {
+          "rating": 5,
+          "text": "Some of the best food I've eaten in Israel! I ordered the brisket sandwich and it was truly excellent. The brisket was of a high quality, bursting with flavor and heat (not spicy, but temperature-wise). The pickles added a great touch as well. The other members of my party had the smoked salmon and avocado sandwich which they said was excellent. Two people tried the chocolate chip cookie (cookie) which was okay. It was better once they asked it to be warmed up."
+        },
+        {
+          "rating": 5,
+          "text": "Wow, so good! Came in on a rainy day and were happy to find out they have a cozy indoor space. The food was exceptionally fresh and service impeccable. Will come back again, possibly tomorrow:-)"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:30.123Z"
+    },
+    "ChIJn7pmJ35MHRURz0lTk-FmpvY": {
+      "picks": {
+        "drink": {
+          "name": "Pumpkin Spice Latte",
+          "reason": "Explicitly called out as a seasonal must-try in a 5-star review. Coffee reviews are mixed overall (one reviewer compared regular coffee to instant), so the specifically praised seasonal drink is the safer pick.",
+          "quote": "Seasonal must-try: the pumpkin spice latte",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Israeli Breakfast",
+          "reason": "Praised as delicious and homemade in multiple 5-star reviews, with reviewers specifically highlighting the authentic Israeli breakfast experience. Homemade sandwiches also got strong mentions.",
+          "quote": "authentic Israeli Breakfast... delicious and homemade",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "We enjoyed so much the authentic Israeli Breakfast at this cozy neighborhood cafe! Ot was pouring rain, the servers and the host were super friendly and made room for us to accommodate. The food is delicious and homemade. Highly recommended place!"
+        },
+        {
+          "rating": 5,
+          "text": "Perfect neighborhood spot for breakfast 🥐☕️\n\nI’ve seen moms meeting here with their newborns, they welcome dogs with so much love, prices are fair and the staff is just cool vibes only. Definitely a local café that belongs in your top 5 – sandwiches are homemade, super fresh and seriously delicious.\n\nWe came for a cowork session with the girls, they gave us the biggest table and treated us like queens 👸🏼👸🏼👸🏼\nSeasonal must-try: the pumpkin spice latte – only for this season 🥳\n\nThank you Café Shneor! 🤍"
+        },
+        {
+          "rating": 4,
+          "text": "This place is absolutely charming — gorgeous setting, cozy atmosphere, and top-notch service. The food was a delight, beautifully made and plated with care. But then came the coffee… and it broke the spell. It tasted like instant coffee straight out of a teacher’s lounge — a real buzzkill after such a great experience."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:35.064Z"
+    },
+    "ChIJl2HloH5NHRUR6b3SHQcImSU": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Coffee is praised across nearly every review as 'very good,' 'delicious,' and 'amazing,' though no specific drink type is named.",
+          "quote": "The coffee is amazing as well",
+          "confidence": "medium",
+          "mention_count": 5
+        },
+        "food": {
+          "name": "Salmon and cream cheese bagel",
+          "reason": "The salmon/lox bagel is specifically named and praised in multiple high-star reviews, making it the most consistently recommended food item.",
+          "quote": "Great salmon bagels!",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "If like me, you're looking to try as much of the mind-blowing and taste redefining food that fills most of Tel-Aviv's street, and you find yourself, on a Saturday morning, just having to try the Jachnun (whether because you crave it or its your last day in town and you just haven't tried it yet), then by all means, this place is your spot.\n\nLovely and cozy place. Chill vibe, and most importantly, open on the shabbat! (Saturday mornings)\n\nThey of course have coffee, bagels, juices and whatever else obe might fancy if the Jachnun is not to your taste!\n\nCheerio!"
+        },
+        {
+          "rating": 5,
+          "text": "Coffee and bagels. Very warm reception. Awesome place to sit among the locals, just off the Carmel Shuk main street so it's rather quiet to sit there while you can observe the bustling market goers."
+        },
+        {
+          "rating": 5,
+          "text": "Great salmon bagels! The coffee was very good, too. We came back several times during our trip, and everything was great every time. The owner/waiter was really nice! Highly recommend for breakfast and/or coffee while you‘re at the market."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:38.787Z"
+    },
+    "ChIJFRmg1IBLHRUR4yKpBbSx934": {
+      "picks": {
+        "drink": {
+          "name": "Iced Latte",
+          "reason": "Specifically praised in a 5-star review for its fresh, fruity, refreshing flavor; multiple reviews highlight excellent specialty coffee and well-roasted beans that pair well with milk hot or cold.",
+          "quote": "Iced latte with a fresh, fruity flavor",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Scandinavian/Danish Bun (saffron-almond or pistachio)",
+          "reason": "The bun is the most consistently and specifically praised food item, mentioned across three reviews with explicit recommendations for the saffron/almond and pistachio cream versions.",
+          "quote": "get the saffron / almond bun, worth it!",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Best coffee I’ve tasted so far in Tel Aviv.\n\nThe existing crowd outside the coffeeshop did not deter me from walking straight into the shop toward the end of the line. And the cafe turns out to be quite spacious inside.\n\nIced latte with a fresh, fruity flavor. Although I don’t usually like milk coffee on the sour side, this one is really refreshing.\n\nMy Scandinavian bun is made from a springy dough, topped with crispy almond flakes and filled with a perfect amount of pistachio cream."
+        },
+        {
+          "rating": 5,
+          "text": "Delicious coffee and chill atmosphere, totally recommend getting the saffron / almond bun, worth it! Also noticed that regulars have their own cups up on a shelf, that’s such a great idea."
+        },
+        {
+          "rating": 5,
+          "text": "I had a great time here today. I had a great espresso. It was fruity, light, soft, and was barely bitter which I love. I chose to sit both on the inner bar, that looks to the very small courtyard outside, and on the exterior bar, that looks onto the street. Both were beautiful and calm. The staff were generous and sweet, and the cookie I had was alright haha.\nIn general, apart from the fact that a cold espresso cost me 14 NIS, the experience was perfect. Practical, calm, tasty.\n\nThank you!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:46.579Z"
+    },
+    "ChIJf54Q1nxLHRURkUPjg2F4e78": {
+      "picks": {
+        "drink": {
+          "name": "Grey Blend Coffee",
+          "reason": "Specifically praised in a 5-star review for excellent crema, oil, and temperature; general coffee quality is the standout across nearly every review.",
+          "quote": "Best damn coffee in Israel... crema is good, oil is good, temp is good",
+          "confidence": "high",
+          "mention_count": 5
+        },
+        "food": {
+          "name": null,
+          "reason": "No food item received positive reviews. The chocolate chip cookie was called dry and not tasty, and sandwiches were said to need upgrading.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I had a great experience at Wake Up Coffee. The coffee was excellent, fresh, and full of flavor, and the atmosphere was relaxed and comfortable, perfect for starting the day or taking a short break. The staff was friendly and efficient, and everything from the service to the quality of the drinks made it a place I would definitely come back to."
+        },
+        {
+          "rating": 4,
+          "text": "Updating 😁 it’s been a while, I hope that now everybody is welcome as I do like this place.\n\nUnfortunately I had to change my review, i’ve been thrown away after sitting in this coffee shop many times saying that “ you can’t get in if you eating non-kosher food” 😱\nI find it very disturbing when people allow themselves to be racist or homophobic or whatever extreme idea it was.\nThe same way that I would never tell somebody that he cannot get into the place because he only eats kosher food it is not OK to say the opposite if my views are different.\nI decided to put three stars instead of one to allow them to apologize and civilized.\n\nOne of my favorite coffee shops in Tel Aviv, i’d like it because it’s both casual and very chic.\nI love spending time there at my morning and have my luxury coffee :) it’s super tasty and super high-quality.\nThe coffee is deep in flavor and made to perfection.\nThey should definitely upgrade their sandwiches but nothing will stop me from grabbing another cup of coffee at this place.\nI just love it!"
+        },
+        {
+          "rating": 4,
+          "text": "The coffee is very good, and the place is really nice. However, the chocolate chip cookie I tried was quite dry and not so tasty. The price is average to a specialty coffee in Tel Aviv. I had bought some beans which were great, but when I had asked whether it's fare trade the cashier had no idea what I was talking about. So I'm pretty sure it's not fare trade;) Nice place"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:51.533Z"
+    },
+    "ChIJqT1ArXlMHRURc65-yk0QQlA": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Matcha is specifically named multiple times — praised for quality and noted as a regular order, and oat/almond-rice milk options support it.",
+          "quote": "getting a matcha and a baked good multiple times a week",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Salmon bagel/sandwich",
+          "reason": "The salmon sandwich is the most specifically praised food item in a 5-star review, called a favorite. One negative review dislikes the beer-cured style, so expectations matter.",
+          "quote": "the salmon sandwich with added avocado is my fav",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This is my happy place on Ben Yehuda. Every visit feels like a warm hug: The team here genuinely makes you feel at home the moment you arrive. I always end up staying longer than planned.\nFood-wise the salmon sandwich with added avocado is my fav, and the egg & cheese is pure comfort done right. Simple things, done really well.\nIf you’re in Tel Aviv and need a spot that’s got great coffee, honest food, and actual soul — this is it."
+        },
+        {
+          "rating": 1,
+          "text": "Read the most recent reviews and you’ll see a pattern - a handful of good reviews in the middle of a bunch of reviews about rude waiters, poor service, and managers who seem to make things harder for everyone. We are one of those experiences.\n\nUpdate: Service is sincerely lacking. I ordered their salmon bagel, which was listed as a classic salmon bagel with cream cheese, capers, dill, and salmon. I assumed that meant Smoked Salmon as it is everywhere else on earth, and instead they serve “beer-cured salmon” which has the texture of uncooked raw salmon. Not my taste (and I’m honestly surprised this would be enjoyed by anyone, but to each their own.) I asked to have it replaced with something else since it was not what I expected and didn’t taste good and was told they would only give me a 50% discount and I could pay full price for another dish if I wanted.\n\nMy family owned a restaurant for 25 years and this is such a short-sighted decision. I was previously getting a matcha and a baked good multiple times a week and told other people about the quality of the coffee here, and instead of making it right, they have lost a customer for good, all for the price of one dish? 🤷🏼‍♀️\n\nOh and 2 drinks, 2 dishes and kids pancakes cost 187 shekels and then we were told we couldn’t pay in cash unless we waited for “5-7 minutes” because they could not make us change. Overpriced and overrated. What a shame."
+        },
+        {
+          "rating": 1,
+          "text": "Overpriced and condescending – don't bother.\nExtremely disappointing experience. For a place that charges premium prices, the service is incredibly poor and pretentious.\n• Service: The staff is slow and has a very dismissive attitude. It felt like I was a burden just for being there.\n• The \"Sugar\" Incident: When I asked them to add sweetener to my coffee, they flat-out refused and told me to do it myself. In any decent cafe in Tel Aviv—especially at these price points—this is a basic service you’d expect.\n• Value for Money: Between the unfriendly vibe and the high prices, there is absolutely no reason to visit.\nThere are plenty of other spots in the city that actually value their customers. I won’t be coming back."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:44:56.336Z"
+    },
+    "ChIJm4T00olLHRURMIXHaAjtS34": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks are named in the reviews; only general mentions of a coffee shop and alcoholic happy hour.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Roasted Salad",
+          "reason": "Specifically praised in a 4-star review for its surprising, fresh flavors and ginger dressing. Other named dishes (bruschetta, shakshuka) had complaints.",
+          "quote": "I ate the Roasted Salad and it was very special",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "What stood out most to me was the friendly and attentive service by the host.  He was genuinely friendly and caring.\nPlease note that they have a \"happy hour\" on alcoholic beverages as well as a special lunch menu from noon till 4pm.\nWe arrived at 3:45 pm but missed it since it took them till after 4pm to take our order."
+        },
+        {
+          "rating": 3,
+          "text": "Once an easy choice for a filling, enjoyable and affordable meal has now lost all its charm.\nThe service is mediocre, the food portions are small and not filling and pricey for what they deliver. For a small comparison a few years ago at the same cafe you could get double the size of the meal for 50-60nis whereas today you pay 70-80nis for a smaller size of the same dish. Now cafe dizengoff is just a name and has lost its past charm."
+        },
+        {
+          "rating": 5,
+          "text": "What stood out most to me was the friendly and attentive service by the host.  He was genuinely friendly and caring.\nPlease note that they have a \"happy hour\" on alcoholic beverages as well as a special lunch menu from noon till 4pm.\nWe arrived at 3:45 pm but missed it since it took them till after 4pm to take our order."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:00.326Z"
+    },
+    "ChIJyZNcax9NHRURaoGasCiP9cA": {
+      "picks": {
+        "drink": {
+          "name": "Cappuccino",
+          "reason": "Praised across multiple reviews for taste and presentation, though one noted small portion size.",
+          "quote": "cappuccino which were served in beautiful glassware",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Egg sandwich",
+          "reason": "Called 'legendary' and 'simple and delicious' across multiple high-star reviews.",
+          "quote": "the legendary scrambled eggs sandwich - it's simple and delicious",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Fantastic coffee shop in the heart of Tel Aviv. The design is very clean and minimalist based on a Japanese aesthetic. The coffee was superb. We had espresso and cappuccino which were served in beautiful glassware. We also ate the Japanese omelette on milk bread which was fantastic - very tasty."
+        },
+        {
+          "rating": 4,
+          "text": "Overall a good cafe. I cannot give it a 5 star rating due to the customer service. The girl serving was the least friendly person i've come across. The food and coffee were good however the cappuccino was on the small side for the price."
+        },
+        {
+          "rating": 5,
+          "text": "Liked everything we ordered: egg sandwich, cinnamon and chocolate cream patissier pastries. Great vibe and pretty sitting.\nFor me cappuccino was very good. I didn't understand the special black coffee, but I think it is because I'm not a pro."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:03.908Z"
+    },
+    "ChIJK5zFUYdLHRURzLpv8RjKSwc": {
+      "picks": {
+        "drink": {
+          "name": "Pour over coffee",
+          "reason": "Specifically praised in a 5-star review highlighting freshly roasted beans and professional brewing methods including Fellow pour over, flat white, and espresso.",
+          "quote": "freshly roasted coffee is delicious & the barista service professional",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "Pastries and cakes are mentioned but only generically, with one reviewer calling them 'OK but not great' and no specific food item is named or praised.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Slightly expensive but top quality coffee. You pay for quality and atmosphere. This place is a great spot for those who appreciate coffee and desire a refined experience"
+        },
+        {
+          "rating": 5,
+          "text": "Adjacent to Dizengoff Circle, Tel Aviv. Nahat speciality coffee shop offers excellent coffee beverages, cakes, pastries and light snacks.\nThe freshly roasted coffee is delicious & the barista service professional. Choose from the many and varied speciality coffee ☕ freshly roasted beans. All options available in their professional coffee grinders.\nFrom a Fellow pour over, flat white or espresso you will not be disappointed with the brewing method or resulting coffee ☕."
+        },
+        {
+          "rating": 2,
+          "text": "Since they moved from the Disengoff square to a new location, it's been a terrible experience: not cosy, no seats inside, very loud cars, uncomfortable plastic chairs, and it smelled horrible in the back. Coffee is still nice though. But never again"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:08.301Z"
+    },
+    "ChIJ5wPp6XVLHRURrOeCdeyojS4": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Mentioned positively in multiple reviews, praised for quality and preparation. Coffee is also highly praised but no specific drink named.",
+          "quote": "Smooth, vibrant, and not overly sweet",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Shakshuka",
+          "reason": "Mentioned in two reviews with strong praise, including a specific recommendation for the green shakshuka version.",
+          "quote": "So warm, comforting, and clearly made fresh on the spot",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Cozy nice little cafe in the corner street with everything you want. My first ever piccolos in Israel (not very common option at other cafes)\n\nCoffee is super nice, I also only ordered a slice of focaccia but the staffs are so nice to help me warm up and add a little flavor to it.\n\nThe seats are nice, you get to choose the ones  looks like a school chair with a back, good for my weak back 😭"
+        },
+        {
+          "rating": 5,
+          "text": "Came into Cafe Zohar on a rainy, windy winter day just to escape the weather and I’m honestly so glad I did. The atmosphere inside was super chill, the music was perfect, and the people working there were amazing. Service was easily 10/10 from the moment I walked in.\n\nI ordered the shakshuka, and wow… it was exactly what I needed. So warm, comforting, and clearly made fresh on the spot with quality ingredients. Every bite felt homemade and full of flavor.\n\nAnd the coffee? Hands down one of the best I’ve ever had. Rich, smooth, and made perfectly.\n\nI also tried the matcha, and it was excellent. Smooth, vibrant, and not overly sweet you can really taste the quality. It was prepared beautifully and felt just as thoughtful as everything else on the menu.\n\nIf you’re looking for a cozy place to hide from the rain (or just enjoy great food and vibes), Cafe Zohar is definitely the spot. Will 100% be coming back"
+        },
+        {
+          "rating": 5,
+          "text": "My friend and I came to this Cafe Zohar in Tel Aviv near Takana Merkazit  and we ordered cold coffee and cold matcha with cinabbon and cookies with triple chocolates and everything was delicious. Everything they serve there is fresh. Servers are so nice and kind. The place itself is just wow. It has great atmosphere where you can just come sit down and work at peace… 💙"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:12.613Z"
+    },
+    "ChIJFUzql2lLHRUR586y5uj5ros": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Multiple reviewers across high-star reviews praise the coffee as 'damn good' and 'excellent,' though no specific drink is consistently named. Vanilla raf is mentioned once but not tasted.",
+          "quote": "Damn good coffee!",
+          "confidence": "medium",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Coconut Danish",
+          "reason": "Specifically praised in a 5-star review as a surprising, light, and delicious pastry. Syrniki is mentioned but reviewer admits not tasting it, and the omelette croissant got negative feedback.",
+          "quote": "surprised us as it was light and delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "The place is really nice. Coffee tasted great. And they also have syrniki (didn't taste though, but my friend told those were good). Put 4 for the service simply because there was just one barista this morning so you had to wait a bit. Shouldn't stop you from coming though. Oh, one more thing - they do have vanilla raf."
+        },
+        {
+          "rating": 5,
+          "text": "This is the best place in Tel-Aviv, my absolute beloved one. It’s perfect at all:\n1. Damn good coffee!🫡\n2. Polite staff, who always can help and of course doing their job professionally 🤲🏻💖\n3. Equally very comfortable place for coworking or informal meeting with someone\n4. No annoying repetitive music (no music at all and I’m really happy with it, thank you!) that can totally disturb you from whatever you’re doing at the moment 🤩\n\nIn conclusion: if you want to have a good coffee and wonderful time, I’m sure you’ll enjoy “Jera”!\nFor me it will always be the special one. Thank you so much for everything you’ve doing! 🙏🌷"
+        },
+        {
+          "rating": 5,
+          "text": "Cute little coffee shop sandwiched between two other coffee shops. The coffee tastes really good, but the omelette croissant is quite tasteless. Two coffee + two little pastries cost more than 80 shekels which is expensive even for Tel Aviv"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:17.244Z"
+    },
+    "ChIJH8kam1RJHRURoccAKTlvK28": {
+      "picks": {
+        "drink": {
+          "name": "Single Origin Espresso (Ethiopian)",
+          "reason": "Specifically praised in a 5-star review by a self-described coffee nerd; double shot called excellent with second pull even better. Other reviews mention quality coffee and ceremonial-grade matcha but less specifically.",
+          "quote": "Second pull was even better than the first",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "Reviewers mention cakes, sweets, and a vegan cookie favorably but no specific food item is named or repeated with enough detail to justify a pick.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Had a very good specialty coffee experience here. A single origin espresso was available, Ethiopian natural. The double shot was excellent, but the barista decided to make a second one with a different grind and, liking it better, gave it to me to drink. Medium light roast and delicious. Second pull was even better than the first. Overall really fun for a coffee nerd to chat with baristas who share the interest. Vegan cookie was tasty."
+        },
+        {
+          "rating": 4,
+          "text": "Preferred local cafe whenever I am in TLV  working. Possibly one of the vibiest cafes I know anywhere in the world. It’s a local meeting place where you sit on barrel seats hanging over the edge of the pavement with cars and bikes rolling by. Good coffee and cakes."
+        },
+        {
+          "rating": 5,
+          "text": "This coffee shop is a hidden gem! Along with their yummy sweets and delicious coffee, they also offer free water which is a bonus. The great vibe and outdoor seating area make it a perfect spot to relax and catch up with friends or get some work done. The lovely staff adds to the welcoming atmosphere and makes every visit a pleasure. Overall, I highly recommend this coffee shop to anyone in the area."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:21.933Z"
+    },
+    "ChIJnbu3jUZNHRURGGeYOqZsYsE": {
+      "picks": {
+        "drink": {
+          "name": "Espresso (washed Colombian) / Batch Brew",
+          "reason": "Specifically praised in a 5-star review highlighting Nomena's serious coffee program; multiple reviews emphasize coffee quality and variety of single-origin beans.",
+          "quote": "delicious batch brew Ethiopian natural... and an excellent espresso",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Chocolate chip cookies",
+          "reason": "Directly named and praised alongside the scrambled egg sandwich in a 5-star review; one other reviewer noted the bakery is sourced externally but didn't try it.",
+          "quote": "chocolate chip cookies are great",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Great addition to the serious coffee scene in Tel Aviv. I had a delicious batch brew Ethiopian natural (small though), and an excellent espresso (a washed Colombian). Beautiful shop and cafe with lovely outdoor seating and spaces. Great vibe. It was busy!!! Huge variety of beans on sale. Lights roasts and single origins."
+        },
+        {
+          "rating": 3,
+          "text": "This cafe was just OK. I stopped here a handful of times out of convenience on my way to/from my hotel, and I didn't see why it was such a popular place to hang out with your laptop and do work. It was a bit crowded both inside and out on the narrow porch seating.\n\nDecent but pretty small iced matchas, and the guy at the register looked at me like he was always worried about something. Everything here feels small and cramped, from their selection to their seating.\n\nThe Tel-Aviv city metro will be running right outside in front of this cafe. I'm curious how that will work out as it seems potentially dangerous."
+        },
+        {
+          "rating": 5,
+          "text": "The best various and flavors coffee in the city!\nI know a lot of different coffee houses in tlv but this one is my favorite!\nBut I didn’t tried the bakery, I didn’t ask about their kashrut, but they order bakery from another place"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:27.303Z"
+    },
+    "ChIJj-OCGRZLHRURAQ1V97vL0iI": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Matcha is specifically praised in multiple reviews as excellent and a go-to drink for patrons, making it a standout beyond the also-loved coffee.",
+          "quote": "excellent Matcha",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "Reviews mention 'sweet stuff' generally but no specific food item is named, and one reviewer notes the food selection is limited.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "You can choose from 2 types of coffee beans that they grind on the spot. They made me an excellent Americano. Not a huge choice of eats - and nothing savoury, only sweet... but well priced. I was there on a Sunday and people were constantly coming in to buy coffee. . The seating is on short round bins, not very comfy so you don't linger 😉"
+        },
+        {
+          "rating": 5,
+          "text": "Chacho’s is a coffee experience unlike any other. The staff is so friendly and the coffee is prepared in such an experience that makes you feel like part of the Chachos family. I highly recommend this local cafe to anyone visiting Israel"
+        },
+        {
+          "rating": 5,
+          "text": "❤️👌🏻 Laid-back neighborly coffeeshop, right in the heart of Tel Aviv. Variety of tasty roasted coffee beans, hot & cold drinks, excellent Matcha, and delicious sweet stuff. Friendly, experienced Baristas, using a great 'La Marzocco' machine."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:31.299Z"
+    },
+    "ChIJLUxvG4pNHRURoRVUEJD2gZA": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Multiple reviewers praise the coffee as excellent, fresh, and tasty, though no specific drink type is named.",
+          "quote": "the coffee itself was excellent",
+          "confidence": "low",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Carrot cake",
+          "reason": "One enthusiastic reviewer ranked it the best carrot cake in Tel Aviv, beating out well-known competitors.",
+          "quote": "After tasting most of the carrot cakes in Tel Aviv, this one takes the first spot",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Amazing atmosphere, good food and pretty good coffee. One massove downside are the prices, more specifically the prices of the savoury items in the menu. A simple egg sandwich is over 40 shekels, and two egg dish is 60 shekels... Which is just absurd.\nThe atmosphere and location are amazing."
+        },
+        {
+          "rating": 5,
+          "text": "After tasting most of the carrot cakes in Tel Aviv, this one takes the first spot! (Yes before EATS). Service was so friendly. Will definitely be back to try the rest!"
+        },
+        {
+          "rating": 5,
+          "text": "Great neighborhood coffee spot with a lively atmosphere. I was greeted with a smile and handed a coffee even before placing my order — true hospitality. And the coffee itself was excellent."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:34.937Z"
+    },
+    "ChIJ20xnH31LHRURtcRHz2toQYU": {
+      "picks": {
+        "drink": {
+          "name": "Batch brew coffee",
+          "reason": "Specifically praised in a 5-star review for being rich and clean, made from their own roasted single-origin beans. General coffee quality is praised throughout.",
+          "quote": "a batch brew that was rich and clean",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "Only a generic mention of 'pastry options and small sandwiches' with no specific item named or praised.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Great neighborhood coffee shop. Formerly Cafe 51, now under a new name. They roast their own beans. Lots of pastry options and small sandwiches."
+        },
+        {
+          "rating": 5,
+          "text": "Love this place. Been coming here a lot and the great points are:\nLots of tables, kind workers, great coffee, quiet little corner, electrical sockets almost everywhere.\nThe weaker points are:\nNo matter how many fans are turned on outside, it’s hot as hell in the summer. There’s very few inside seating.\n\nThe neighborhood spot - you’re guaranteed to see some locals and get used to them here.\n\nThank you so much!"
+        },
+        {
+          "rating": 5,
+          "text": "This place is all about quality coffee. They specialize in fresh single-origin beans and brew them with care. I had a batch brew that was rich and clean. The café itself has a modern but warm vibe, great for working or just chilling out. It’s not loud or trendy—just a solid coffee spot where you know the beans were chosen and roasted with intention."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:38.751Z"
+    },
+    "ChIJ07wEFwBNHRURfcmJMWAN8KI": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Multiple reviewers praise the coffee generally but no specific drink is named.",
+          "quote": "The best coffee, coffee lovers must try",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Pastries",
+          "reason": "Pastries and bakery items are mentioned positively in multiple high-star reviews, though no specific item is named.",
+          "quote": "tasty coffee and pastries",
+          "confidence": "low",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Love this new place! Perfect location, tasty coffee and pastries, very nice owners. Definitely worth to come"
+        },
+        {
+          "rating": 5,
+          "text": "Amazing cozy spot with good bakery and coffee & tea"
+        },
+        {
+          "rating": 5,
+          "text": "The best coffee, coffee lovers must try ❤️"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:45:46.538Z"
+    }
+  }
+}

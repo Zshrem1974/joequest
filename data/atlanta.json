@@ -1,0 +1,2956 @@
+{
+  "version": 1,
+  "citySlug": "atlanta",
+  "city": "Atlanta, GA",
+  "generatedAt": "2026-06-15T19:34:28.098Z",
+  "count": 19,
+  "cafes": [
+    {
+      "city": "atlanta",
+      "id": "ChIJicBn_aoF9YgRya-jWCHOmB0",
+      "name": "Café Intermezzo - Midtown",
+      "address": "1065 Peachtree St NE, Atlanta, GA 30309, USA",
+      "lat": 33.7832619,
+      "lng": -84.3836706,
+      "rating": 4.5,
+      "reviews": 5988,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "coffee_shop",
+        "dessert_shop",
+        "confectionery",
+        "food_store",
+        "european_restaurant",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 12 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 1,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 1,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 9:00 AM – 12:00 AM",
+        "Tuesday: 9:00 AM – 12:00 AM",
+        "Wednesday: 9:00 AM – 12:00 AM",
+        "Thursday: 9:00 AM – 12:00 AM",
+        "Friday: 9:00 AM – 1:00 AM",
+        "Saturday: 9:00 AM – 1:00 AM",
+        "Sunday: 9:00 AM – 12:00 AM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2132681066176294857&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJicBn_aoF9YgRya-jWCHOmB0%2Fphotos%2FAaVGc3nV0Q9LNVliJv1uXW4U0AMtGY-dbRhI0BdtftjmhP93L5W_Ai4SHgkHjUuuRdCQvTBHIBE74gOeJN7JZqplKHhqw2RMEuptfTw-DNcm-UAD_n2N6MuiVaKTvk4YTmXJXqrmzGjGQgeO1YIpZvrWd_0JB_cIjX_qutVTVLaxDj3argn7EPe20Kr93HPtG_msO7N-F-721jQmWkmnE3OybKED3WWTx36BlJ5pM3NSWwELFH_KhbH5J7tWuaLfOb0xH4v66gUIqVGJLFlGDsnSrzJ1QzogR1a8ort18t_zx7c4mLyppldb2KzRqt8roRRvzovVvEpf-SLEG5Ra0urO93D46ZftTjajdXxX15P5_3nPA0fr_uACz6_6_3hh1IPPvEjzyPxOLJUBU9_IL2Jh-9a7LT49FgBtTBtLZlNUAiJweG6d&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJOfalBUMD9YgRd0hSjtV1Tvk",
+      "name": "Black Coffee Atlanta",
+      "address": "1800 Jonesboro Rd SE Ste C, Atlanta, GA 30315, USA",
+      "lat": 33.7047782,
+      "lng": -84.3775735,
+      "rating": 4.9,
+      "reviews": 1347,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=17964425523703728247&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJOfalBUMD9YgRd0hSjtV1Tvk%2Fphotos%2FAaVGc3mBfLKyzhRNcbkGWskt0_EdkvcYhUILk1gqMY9OeitR4lXCHVYvyJlxm1mn5aajU7n777MAeq91H_nlpVIPdqEo0SDrIdcnvemDA3Bte-fUpU8x4MClSX1O7pp0z8CizAEST1dUa8JH0AtySUJ1QuQ56h4QY68WyrnOJre_bfakPl2vQhGABGoI8b95hXPHlmdL57jH5JIarfm23hEjvycmkYB5iqEuH7lgXxiXXhXvoE4xjeqEJwlP8flZV8KhAjFKrRuKWFtLx_ig1CfSqqE-kjKCI3mNY2UedvBpBWNIQchFWpQrS5mkavJkdh4-PRgiqVdky3b-9jx0R5x48WkGCZjtbVzEotJ5G1qHdybjNqhH_6lwjDen_wDAD4xFklFm4w9b-CXDQczi_ykJ8NXEgXpNRjMSYs91QR4UFwi6Eno&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJr0UeNw8D9YgRasQaJRb5IYM",
+      "name": "Rosie's Cafe",
+      "address": "48 Northside Dr SW, Atlanta, GA 30313, USA",
+      "lat": 33.7535211,
+      "lng": -84.4024515,
+      "rating": 4.5,
+      "reviews": 2493,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 7:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9449107366707119210&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJr0UeNw8D9YgRasQaJRb5IYM%2Fphotos%2FAaVGc3l8yZ9sqSc3F_S9IywkMi5pyFaJ4ILnbbsyMd0q7LwwA6uaKnLo2oScT6aN3fP09cxh5e79URObD_V9Ij6OgjGeVL_sRhcM1THEcJ5iSKytmumqboMaPpjnAnmbyk9r6ARZkB2EvoL1p85QMXaYCFMX4lrWnEEB8soInLHn3FTKwKQbtCB6blGw6nGdcpvQ9TTjBlQXBq0Ln4syNu3Q9cjzw7z4z0I1r0jHUJiYSFw3X3ROoGGeHZ7iPPSKDHfSDWw0dgoxZ_Tl7XH0f_NzgAEt8tZQONMxVpjqtJ3mTvMtvLH-2Ywnqokel4QVz5L2fR4qjaCWflyKzq6astzn1h39KjAJtJLddpCsUHbCHrz0E9VDTrlxLB8s1KnQnO3DnxG2YNJv7mvzdyXHeC5c_WFMczoo1zPYdKI8V4dXXrHkWw&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJ-yzpL4wF9YgR4gopjocMzl4",
+      "name": "Chrome Yellow",
+      "address": "501 Edgewood Ave SE, Atlanta, GA 30312, USA",
+      "lat": 33.7539267,
+      "lng": -84.371011,
+      "rating": 4.7,
+      "reviews": 922,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6831411461112793826&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-yzpL4wF9YgR4gopjocMzl4%2Fphotos%2FAaVGc3mzfK1C4mEKEbBN1VJdx51QXV_Mkgs1QAwZhk0YYoRqGguSRycJZiYJzVPAXJGFRoQqSqOMIDlzJ1LrJjfPgGRZTJj6Ia59oRldWiP8s9nSjo0X3xXY64DtaFsnsxjUwBYAJ8F7KAiE129RhgFKrGwrXHGWECXd7bVVcwnZxDjqO7fJ-PXFhlZh_1ccWq8j0AadtJ0P5ta_JZDZFe7qu5o1yCwSgrlvi2Esve0l9IlzQdj96m8sfdj_81aKcHvvyKDOGVskaJp2QjPZeGeBUSdF3JTuO7c3nAJI-jbG2bIjTZnMFRDj5TaprIx0WAwjGmSg0w2ikIsCSyhj9tA8WXscHRjvIYwET1khtA3Cum_Z2o3u1tlFR7eksiOHaUxhI42EiWE02x_ZDKB8buM-2ZRJcCg8y0J3qUnHxNdXy3aU81S4RBjjjNY5vFW3hg&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJdcJm4BkF9YgRDNpzeiYPJDE",
+      "name": "Foxtail Coffee - Midtown",
+      "address": "1230 W Peachtree St NW Unit 120, Atlanta, GA 30309, USA",
+      "lat": 33.7883783,
+      "lng": -84.3879661,
+      "rating": 4.6,
+      "reviews": 639,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 6:00 PM",
+        "Tuesday: 6:00 AM – 6:00 PM",
+        "Wednesday: 6:00 AM – 6:00 PM",
+        "Thursday: 6:00 AM – 6:00 PM",
+        "Friday: 6:00 AM – 6:00 PM",
+        "Saturday: 6:00 AM – 6:00 PM",
+        "Sunday: 6:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=3540971864957639180&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJdcJm4BkF9YgRDNpzeiYPJDE%2Fphotos%2FAaVGc3nc0DIE3XxCeQw65Gj6ZO4efVmQncF_xbb_aCr4BjDR254yNP3ntrHvyVmJZx0fJLGV6DUoMAwhXcySOBB0WIXmF9C01dHIKzY6iMy61Nl8sCUYAJ83i-mk4lsmNN0f9AffgWy-ZRtgM0z41LWGeFq5gmSiktqueFM5HhvMs4Kmb1ZX_7qTf8cfu25IXeHDHWtx2bnUx8hFT5AL2jeaFSVlqTJycC4pQ9X6mzUlhrRFZkFuX13IEde2B5LYDjTPz_AbI4pTv6F68uibYGnSsAWuI0ek_Im6YgSCq2kNheADbxeIudO8chpgJeeFnWWEhzPmZmIx2W-vo63Nf0uiA2-Wl70hF8oBs7Tc-BN21fLhPHbPk24LEMke0S2vrCmxuLH-G7AlCb7vtxx0QDobDzBEVwqyaQ_3Y-etaJ4Gd_s-sTrXZeQkoH1of28-CIps&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJtzptragG9YgReWnn-xcVttI",
+      "name": "Aurora Coffee",
+      "address": "468 Moreland Ave NE, Atlanta, GA 30307, USA",
+      "lat": 33.766996,
+      "lng": -84.349463,
+      "rating": 4.6,
+      "reviews": 617,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15183346386480884089&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJtzptragG9YgReWnn-xcVttI%2Fphotos%2FAaVGc3l4blczbTAfLYgy_0_l9-7zYFcxMYhiuZ7hqA8HPO31V4igfWCq7YIuRVbG3F2910uWVaiKdNXh9eblpS4HDuBlIuegrzE1C5uWaWCBAT3tTLDB9Cv5nWKgCIbKPiGsN81qGqEiUmB7E5wOug7cwFEkzEYw9t-vsdDAOGIHfa_pF6x8KEhCu9pHDiGPcL3fIjuPiObYQnnD4NG5Mh0cR7YwlsK_lCcOoT_4loaGJrp-d-ec3utU7_RPNkeadcregV9FcJOvCyO6--qR19T6r_CqQQtljjUDaMVjQC_DUnlsK9aPGPzAsby2kqpQIcq0iot3H04YWAR2rk9p9AaXnkY5xrvsTWcxmVv7EINVD2RXHjD0qL6-MBBP847309-G1LTBDcsT0uTxlj5N5WSUY9u-0KBZLihE7JYqiA&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJGQ_foHsD9YgRkojsy7Y2ANs",
+      "name": "Black Coffee ATL - Westside",
+      "address": "1246 Allene Ave SW, Atlanta, GA 30310, USA",
+      "lat": 33.7208999,
+      "lng": -84.41084339999999,
+      "rating": 4.6,
+      "reviews": 591,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 8:00 PM",
+        "Tuesday: 8:00 AM – 8:00 PM",
+        "Wednesday: 8:00 AM – 8:00 PM",
+        "Thursday: 8:00 AM – 8:00 PM",
+        "Friday: 8:00 AM – 8:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15780673253039442066&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJGQ_foHsD9YgRkojsy7Y2ANs%2Fphotos%2FAaVGc3n83c33rT0G0QkddlCYbQC_NiZ7jVwrKn0hGanCqD1yEAXhGplZvwmx5g1f2_I7mBXuHvoOcQW4ynGgQwQZCee731tEbjsTl96_JFyZLBtCZMSC72pZwL1nxyHNUbnVBpy4eF3dq8xTSJoIfJtECkMxdZSzGBymZuuHab8DRIYjVF-HhsqBULAXaaFFuOC5nUQ3TI4scKmsc3mv-w75n9e_tNDhrpFY6bNMI_e5jY9sPSg3ZyZV0VxM7wdLa8PMV1kqDy--ElPgWmzcA3T0uNaYSLMtUB6pslx_WwqO6F8r99H7E5u1vEMbmddUn4YIq2zD65mt4_UQaE06ejSJ7mxg5vrBEhCwvH0zwgIYUyjPpAJxobtQBsUKKiQ_yJO0KOYHpywj_43qyG5MSVawTLfZH9an1Qc1R19uHKD7Ky0&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJmzKErJME9YgRducKeLi6du8",
+      "name": "Urban Grind",
+      "address": "962 Marietta St NW, Atlanta, GA 30318, USA",
+      "lat": 33.7774314,
+      "lng": -84.4088155,
+      "rating": 4.5,
+      "reviews": 698,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "internet_cafe",
+        "breakfast_restaurant",
+        "catering_service",
+        "tea_house",
+        "bakery",
+        "food_delivery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 21,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 6:00 PM",
+        "Tuesday: 7:30 AM – 6:00 PM",
+        "Wednesday: 7:30 AM – 6:00 PM",
+        "Thursday: 7:30 AM – 9:30 PM",
+        "Friday: 7:30 AM – 6:00 PM",
+        "Saturday: 8:30 AM – 6:00 PM",
+        "Sunday: 8:30 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=17255184323767363446&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJmzKErJME9YgRducKeLi6du8%2Fphotos%2FAaVGc3mDcLmjzggLRoMxSxzjt0G1M7pfJbbR8ecxxEwybbg46L124mJhSyLnYhi_2PLWtGNzlxjFQ0ThsuUEETvCdvwFOIVt4kahgo7eg7BtGmbiUqfg5-uh0PeWHtuUypoYnDGaMLbRASDeE2Yj4bjt4CjMyfe2d42J_HA_fY9PeT8IpR_KTHGosjEC7fHVK1gQfK65rRgu2j27UBAW6REdio58d8J_0xG_L5ODewQOqc63pgHlu5uub1snDKNna0RfXA81MMRmxLgvrAXRYe7Gx51EekElYQXIgDBaqOZ4L-Pi-fAVOH7ERYQHd466MsmWnQK5JJvyMqNb8UcgxHM-x-kqLF5hYZnGvK4_B0GXy2bOFJn7C_nn4vWXaKEYA_J-ne7Eji3UoHljFAxsGyAxVGUqvNpYelkHEq_nH7YkmntPROum&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJQ3gvf4od9YgRNgyU4UD0PFs",
+      "name": "Cafe Bartique",
+      "address": "2315 Cascade Rd, Atlanta, GA 30311, USA",
+      "lat": 33.722263399999996,
+      "lng": -84.4644617,
+      "rating": 4.8,
+      "reviews": 227,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 8:00 AM – 7:00 PM",
+        "Sunday: 9:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=6574398115553741878&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJQ3gvf4od9YgRNgyU4UD0PFs%2Fphotos%2FAaVGc3l2s1wHmwPkqXGP-9JIJjNvwVrnYX9zvODtwaZqrUSv8L_i_Ko7sxQQE2zmb2gSthawH92x2GQGxUm4zsPVqK5MiRKLuYJRgv9TBfu78PhPFeHZ8kKGLosz2IbYeTYIg45UI0WHccsYfq2UZGFaFOtcv3PNaPWEgbPibkLgonm3HtLwVWXmFdhtS5cMzJeLIyJ4QkZCgdV4sfJVl_NxYE9ssrOO5TzIOGRb6ghdPJxNNdtVVOPFIEtB2NRub3MRycApH94rtSdNBiFKOTfwA4c6pVAUhxK3VV6PgyWAy3aMnwNBz4MC2_p_o6mqFMnaON5NEe7NYpDm8IqTxoS71mvUmm-8ce2KvA2mlnXHVmv7wDRCSQoYXyLSwe7V8IbgAGzvgL8r5-oQvoesSmFAFhf7SXJ0URY4KnPfI5wyLF5hRg&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJgQyl6r8B9YgRHKDGhjG0k-o",
+      "name": "Bellwood Coffee - EAV",
+      "address": "1336 Glenwood Ave SE, Atlanta, GA 30316, USA",
+      "lat": 33.740386199999996,
+      "lng": -84.3437908,
+      "rating": 4.7,
+      "reviews": 276,
+      "price": "$$",
+      "types": [
+        "restaurant",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16903051951259164700&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJgQyl6r8B9YgRHKDGhjG0k-o%2Fphotos%2FAaVGc3kgb0jetelM_aqSqtUt5MOHpdAKaaCVZ2AJcUjNF_7z3zv-fk1ek5eQCASiXrgbNl3HXtvHG1ih5D-fij592CXF8DIGUwWKmIDh-s8_B-0ifDGG4tH4yttjSqLmPvnoctKWTLpWCh7dA8Mk9e-yx_meJvSsS6P6Cx_QN4V-Py7bOSbHOJc3Q1StHq5X7649OHqfYCIY7mmUEFSDz1qowVDZbQFB4wmY9bQpuOA3zYQNq0oqUckoSj6RJeHSgQ-Kbq17fIwLi_eAVBCry2j_3fUdgbbCQq01bvZyUvD2-uv21KcfKId7RN07C13-cL0XWX3KaE1dI8f-jkhdm8POSXS_CXbTgTR9Zl8prvjjNLOe2fdfY87ilQm_kRdTExngPmQxb5yDD6j0lK525hx_pzXbjfyAFxQH5eJRxkzjPyP-ow&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJpXvJ8AcF9YgR7_JsZCoUVrQ",
+      "name": "Bloom Coffee Co.",
+      "address": "2025 Peachtree Rd NW, Atlanta, GA 30309, USA",
+      "lat": 33.8095955,
+      "lng": -84.3916768,
+      "rating": 4.6,
+      "reviews": 350,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Tue",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 3:30 PM",
+        "Tuesday: 8:00 AM – 3:30 PM",
+        "Wednesday: 8:00 AM – 3:30 PM",
+        "Thursday: 8:00 AM – 3:30 PM",
+        "Friday: 8:00 AM – 3:30 PM",
+        "Saturday: 8:00 AM – 3:30 PM",
+        "Sunday: 8:00 AM – 3:30 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12994595947130188527&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJpXvJ8AcF9YgR7_JsZCoUVrQ%2Fphotos%2FAaVGc3koPrmXWIBw93gNTD1jcpkOYrQIpCE5_NlA62nLNBtaTnnt_iWeiqN19CSTspSUU3bwafYZHwODy9lGcYMCEdA4qEB_4DLucJ5rhe46zJ-dFaV_J0Pz10H8juioKMNnLG2SDazSGUJyoap5A84XPvP0hWJxoQ6q5y6v7j2_TmgabiCW5PVpjIH7b95MeVawoTlwPCD5xJbJSiTEdvjaAkAA4uQocOSRbKgDYpDui2ngyB80NeUrUpZDTq6qA_2U1HjgLxhYxzt-MtSYpdL7vMeC6V9Zq_THR2u5IdYkXILt0Z0jY0kp6_bB03gSCODdhYsoqnMC4j24axAwH0CYQDEtrGS1DnDB1i279tRwsahk-iuwXAHBZSVv_Uvy3tmg-UsslG4y4h0BApG5fVh8RMtCnbi4wyhy34vwiEXvoF9eAMbQ&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJJQJuVNgF9YgRtbcOd_tOr6k",
+      "name": "Harbor Coffee",
+      "address": "331 Elizabeth St NE Ste c, Atlanta, GA 30307, USA",
+      "lat": 33.763517,
+      "lng": -84.3585298,
+      "rating": 4.8,
+      "reviews": 202,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 4 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=12227078355275397045&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJJQJuVNgF9YgRtbcOd_tOr6k%2Fphotos%2FAaVGc3npaOZWIXI6m2KgZyKq3yCexS3mjHioazNZNFgOr8IrrFhlzH_W4kImCUvzQhpSywRpW1b77A1f29iLetgOu4J_IL4ZDsPx7t35-QZa7Xy8ZqX5hQ5bWUfjBaenNnxl9WOfyNpVFvknxm-5ef53w5TeVG4Z02Ruo3bFp2XbmmhudJejuC5exEauEZE_0wIJQyYiBPCt1bPpqjP5Fcyvy1FuPMtiHv0U72dJqZjF2pY0xHNHa7mH5ZrR4To-GqFof2KhswZbJvvomt8XhoRFoQRayK60b74O8ejT37zZ2kNsupnZmhzV7fi2CSUcnZCwc6RGX6b2wDjN6HK6EauKTAkwgnHsnsZwPMx47ewmSEcK30v37j3fLYeShL5DjN45E1ftz1OS79vMcGSNyYVqXTlypi8biV2KZ8Au-dYJhCQ3rp56&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJ2ad4IYcD9YgRtSYRsBsQ9dU",
+      "name": "Café Lucia",
+      "address": "57 Forsyth St NW, Atlanta, GA 30303, USA",
+      "lat": 33.7557672,
+      "lng": -84.38991450000002,
+      "rating": 4.3,
+      "reviews": 688,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15417246610476836533&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ2ad4IYcD9YgRtSYRsBsQ9dU%2Fphotos%2FAaVGc3kv3FJlmG52wSE7X0oW62coHQ08SqtVYEvHEGHOn-xCH9pljYDUprAR3a4nXBxFVXg88Lz2587jl-82fq15f3_qxJ3qntQ78qACVQkUfN3aRg2_DUn-TGoRcjbF1NV-sihukzLN6bRetFt4h1DkRFfjZ-8mTI2iOTYIIBUib-qk7iht6hfS8Vx76RO3YRMC2z8N-Kr2SOl6i_Xb-yZeWOtXf7x9QwgN434wKHPMQJX9GutXYj9BYxej7mC9WULSukGpXYKRsy1uD56sibhPgCmrvorSoQ8GQtZRai_cH7kSwQ9I5-bh11Jem8vzin84FSdlLIzi0QSZQaVwJfeSLWLmQkYXiBuMq6cTYYts8332IjoJdtEzkHoUkQ0XSrGUOadeItlgVuk41xrl3M8mEgmhYf5qcKGY6y9XllN1HcNmeA&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJ8cOFXVAH9YgRfKubBFlCDec",
+      "name": "Ash Coffee",
+      "address": "1189 Virginia Ave NE, Atlanta, GA 30306, USA",
+      "lat": 33.7798835,
+      "lng": -84.3491379,
+      "rating": 4.6,
+      "reviews": 273,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "breakfast_restaurant",
+        "dessert_shop",
+        "gift_shop",
+        "sandwich_shop",
+        "confectionery",
+        "cafe",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16649036347555425148&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ8cOFXVAH9YgRfKubBFlCDec%2Fphotos%2FAaVGc3kT1oDLU9YCycOWRc7tGdpToT1QhOkV6VzaXR7BxOhQYffX65RpPcs62gni9z4gSm6hJUxBHR4e8FhspWUunpYwBBKGUpS_VaLOiPzi3Q_SPDYEIvblRGYb4suQClcK2Od7yT9GA82yINM4Gs-mOybjDhVrpaS0Xrs-ll4vYD_lIpz7PksngkNCoOtZBToYcRIzU_IhDhZBpQAfR5mav7afn3BGjsTtLmQVFyeePvz0aIkob-hSb_GtKu_IIfwQd5nnfm-ZF1CoQKeNkIoWq8fS47djtxNMwzFBOOHXdF2aJoYGobNiaXGrFsQDer0Uf112zsqWICIzFEJNOgGwnXw3MPIFxWYEE7VPP-9lTDq63lJLbPPAc0H-WlBCuDj17kGxiuVxSTdwRGFoar8p23GyksCJ2T9SFwSAySo7S73hFwRKghRnWHpaKkzzyDkP&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJtWWRVnsR9YgRE_zC67k-1Ts",
+      "name": "Cafe Comma",
+      "address": "3621 Vinings Slope SE Ste 4150, Atlanta, GA 30339, USA",
+      "lat": 33.865228699999996,
+      "lng": -84.47162829999999,
+      "rating": 4.3,
+      "reviews": 592,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cake_shop",
+        "brunch_restaurant",
+        "bakery",
+        "cafe",
+        "wholesaler",
+        "manufacturer",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 8:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
+        "Friday: 8:00 AM – 6:00 PM",
+        "Saturday: 9:00 AM – 7:00 PM",
+        "Sunday: 9:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4311421186522414099&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJtWWRVnsR9YgRE_zC67k-1Ts%2Fphotos%2FAaVGc3n2cuaDeqQh5Ms2o55lcGgT8rmnSTpvoTtahWD-4CDRLd39etWoGeyEBnRHpLgBVxUyrNf_GfrIjvQCBbXyhl6qlsl3umjLnxSxrIFIqs8LUm8zkgt3RgUl04-H7tAn4jOKfmWC2lPfrDDW9Npqr5Er2rJdiRUweFN3D6RVt5FGknQQPb59kRmtyYAU8mxN1gRwIM15SXE_qcNu25vdw__6YsoeAvBaIT4Ealtw-J58DRrBBEPpLEORvbQQxcTvAxKC4fqU0j7UqOsPw1EVKT1Dh_HOzuL641s4TMWs4Dfx7YuJIg5jxM8NDF5CAAM1wvTsEghJwcOz9O5Py6IRc1dSY9NmxvACU34F_jFY4g8Ucv0w76JRehKEi_odoD349dcSsO-ypVlCXBELUIfmO40ybJxq8uW5LMxE2arJSdk46PV0yCOshEgAvVwgeA&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJyUl-Ta8P9YgRU-j38rPZdhs",
+      "name": "Foxtail Coffee Co.- Buckhead",
+      "address": "3699 Lenox Rd NE Ste 1, Atlanta, GA 30305, USA",
+      "lat": 33.848873999999995,
+      "lng": -84.3745001,
+      "rating": 4.4,
+      "reviews": 333,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 6:00 PM",
+        "Saturday: 7:00 AM – 6:00 PM",
+        "Sunday: 7:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1979008453174618195&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJyUl-Ta8P9YgRU-j38rPZdhs%2Fphotos%2FAaVGc3m0Vek7i8Boi61avFVv01DwZFNuZejilE0_ibt17mTTTW3G7ouJohG0b0KEOHu5fX_NMquqCufU0bNsIYDEvVpd3eOoOFJ1ktizBhSmDSuY83AP2uNjckfLCMdl5OYT-Sd2XFnqd4G1hpJE_WQylyvzM0GZEIvtzJFjsBhbrcqnx7omS2QUAsGbjDRyps9SaO0OBjC-0NqF_WUpEY7n__z16Cf_Cp83ZDcc2NUFrHujBowuB3qzY8pCcQUt_Ebm-h7_uB4bZngROqlaK2R2Tij0yh3r6okaz610EQ9ceiv61nAv6600SKo-b6Ud4DZAYOiBU4ZpRJIs1aH0j1WxNVkBnW_M3Ok-DoBRi1sVnANWn4DarhERMzqrTRH4Jl3Q4JW5u2nTyEv3h9yf8Oa7cLFyVGEmbViB5Eb6LUXiGZr5GbemZHc7flCia88sIA&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJAcvnz50F9YgRez_cjRE1v2g",
+      "name": "For Five Coffee Atlanta",
+      "address": "1105 W Peachtree St NW, Atlanta, GA 30309, USA",
+      "lat": 33.7846332,
+      "lng": -84.3876815,
+      "rating": 4.3,
+      "reviews": 342,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7547809850006978427&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJAcvnz50F9YgRez_cjRE1v2g%2Fphotos%2FAaVGc3kRydnSVY9KLSscQvwVuNwm3xlFhofsJj16BRgOp-9dL0B_b3KMScHmeYBABpqBTZPSIGbKbFKGu2MeCAtLCTIIeLjaGul3VTNjMpK-N-UAbWMxDa-rGX7oO4_8zdOLm900QxU5BO-U906pLCXMP181EzpxP7IGj81S7Mlb-R-GG_8uIGjaXPvBsLfTtT8kK57F-x9uny24eWsK2qwf23tT6-IHPVz52iRKwFrHhGJez6PxzgGP0SMI6I2MucM4swULJrRU9SJB__1pChB_05tAgNhGELoSYZeJlurom7rHEAdFRjkJcREBC9zedmaZ04eiQNfNvoBSFeV7RByprysqOg5tenvs1VZFKfyUy0liN8cDOLitdU4DtdsVL2BPgcuoiPWxdWLL5OjP69hD16byDVPJxyY078U1i4jYau_Li_uwNjsHF7hRa9QBQA&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJ4aUwh0QF9YgR8uynEos2m9k",
+      "name": "Land of a Thousand Hills Coffee",
+      "address": "1140 Spring St NW Ste 140, Atlanta, GA 30309, USA",
+      "lat": 33.7855631,
+      "lng": -84.38943630000001,
+      "rating": 4.5,
+      "reviews": 144,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 8:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15680186498561862898&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ4aUwh0QF9YgR8uynEos2m9k%2Fphotos%2FAaVGc3nARa87bNsVi_xRs1RnGLy4Ql7sccNdj02cNwYVnwbM2q3SXBUHHzS6jYNQTlox5zzpqDzLZQ7TXVxP020kPYflQSR6uVPiOm-pzdngJqtGn8lF7YCbABswIkqvPdx4rN4Gl_-gdJAqjqCoIThE2BFc0NMbcNz-cC7Uwe7V1abA8iB38xhHBkxbnWgDDOj-WY2b9JXT4w7v4zVJ0zm_uLQX_BJqxlnUvE9k3OjrOfjnmra92elmm2n6sSFMPGM2NKzV1UGSq-QtyuWHlNmt1NjCLfg3RylrvKhEjL_DrXvFezarLUFwmB_mI0wnh2CK9H3aqNpBliHDULtzoFkWdz0y_maqOQRYbwjbskfauRoVNgzDB7N2BcK3jr0LsxClELkdysr2V_xc8JW7EHdoFFJSA-pmuD3iRBiQk-yl8o6hKDor&w=800"
+    },
+    {
+      "city": "atlanta",
+      "id": "ChIJ8dagg5cF9YgRjWHVzroGiCc",
+      "name": "The Postcard",
+      "address": "3145 Peachtree Rd NE Ste 121, Atlanta, GA 30305, USA",
+      "lat": 33.839901399999995,
+      "lng": -84.3771177,
+      "rating": 4.5,
+      "reviews": 135,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2848534163715613069&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ8dagg5cF9YgRjWHVzroGiCc%2Fphotos%2FAaVGc3lLRYp53TJ3RY7MP0n_IdL4n8FAilRLqgkS1Ozqvpu0ilZbjOuJcwNS7o_43z1t5spcOGnXKstcSJ8ziKn_58nXDesdYkJqPVcQYJKgl4gdtgKZVXHQilJVFRI_vygzq09pN_Xbtd86t40UwpWEWkNsgdtJHu8FIV_GKJGkd-dkaOv1zenp_krlkJlnKDtImr-GpCvydsbxJm6zSQNJte5rmcGKp5Vr0yYgZuIw5hPbpI-hpowztny3T8P9wFrenRAx5YXE1_zgSP6YqN8Dy0J_56gh19J98HCqEU1DymDZm1aMmuXUs_Fyp7aIAzbqCJ6CHZ4cxaXonJ7cgWzc_FK7wpLP8oviwUYO4Z6YrYjqBvpCzzTXx4o-AyJK-43BaQ4VWnypUM5pjFqHEV53CCacUK8rno3ZPd9gAkq98F_2W6Itk-iqPKG80Z1xaQ&w=800"
+    }
+  ],
+  "picks": {
+    "ChIJicBn_aoF9YgRya-jWCHOmB0": {
+      "picks": {
+        "drink": {
+          "name": "Hot chocolate",
+          "reason": "Multiple reviewers specifically praised the hot chocolate in various forms (truffle, Mexican, regular), calling it exquisite and excellent.",
+          "quote": "The truffle hot chocolate was excellent as well — rich, smooth",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Cheesecake",
+          "reason": "Desserts, especially cheesecakes, are repeatedly highlighted as a standout, with one reviewer specifically raving about the cookies and cream cheesecake.",
+          "quote": "huge selection of cheesecakes and tortes is often mentioned as a must-try",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Café Intermezzo is a charming European-style café and restaurant right in the heart of Midtown Atlanta — great for coffee, desserts, brunch, lunch, or late-night treats. The atmosphere feels cozy, upscale, and a bit romantic, with rich wood tones, soft lighting, and elegant décor that make it a nice place to relax or catch up with friends.  ￼\n\nHighlights:\n☕ Excellent coffee, cappuccinos, and specialty drinks — perfect any time of day.  ￼\n🍰 Desserts and cakes are a standout — the huge selection of cheesecakes and tortes is often mentioned as a must-try.  ￼\n🍽️ The menu covers breakfast, brunch, lunch, and dinner with options like crepes, salmon pasta, salads, and French classics.  ￼\n🌙 It’s also open late night on weekends, which makes it a fun spot for a post-dinner dessert or drink.  ￼\n\nWhat to Know:\n• Seating is first-come, first-served, and it can get busy during peak brunch and weekend dinner hours.  ￼\n• Paid parking nearby is convenient and often validated by the café.  ￼\n• Some dishes get mixed reviews — desserts and drinks usually shine more than some savory entrees.  ￼\n\nOverall: A go-to Midtown spot for great coffee, decadent desserts, and European café vibes — ideal for brunch dates, dessert outings, or a relaxed nightcap."
+        },
+        {
+          "rating": 5,
+          "text": "This place is top notch and very aesthetic. Lots of coffee and dessert options. The tiramisu and hot chocolate were exquisite. The hostess was very warm and polite. There was a wait time about 15 mins on weekends.  Note - there is no free parking nearby."
+        },
+        {
+          "rating": 5,
+          "text": "Café Intermezzo — Midtown exceeded my expectations. I enjoyed the best brochette I’ve ever had: the bread was fresh and pleasantly crisp, the tomatoes and sauce were absolutely outstanding, and every bite was full of flavor. The truffle hot chocolate was excellent as well — rich, smooth, and a perfect finish. Highly recommended."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:32:56.388Z"
+    },
+    "ChIJOfalBUMD9YgRd0hSjtV1Tvk": {
+      "picks": {
+        "drink": {
+          "name": "Cash Money Matcha",
+          "reason": "Mentioned by name in two 5-star reviews with enthusiastic praise; one reviewer ordered two rounds, another highlighted the cinnamon & vanilla twist.",
+          "quote": "The cinnamon & vanilla twist really set it off!!!",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Red velvet muffin",
+          "reason": "Only specifically named food item, described as one of the best baked goods the reviewer has had.",
+          "quote": "easily one of the best baked goods I've had",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I came here recently for the first time to meet a friend. He had also not been here even though he doesn't live too far away. We were both so impressed with the space and the professional and friendly staff. We met one of the owners and she was credibly generous with her time and sharing about how the business started. Entrepreneurship community and empowerment is a huge theme throughout the coffee shop.  There was a constant stream of customers coming in and out getting coffee and a few of us were sitting and having our breakfast or pastry with our coffee and drinks. The bathroom was clean and the common spaces were kept nice and tidy. There are also spaces to sit outside but not too many. The coffee was delicious and I bought one of their branded coffee beans for home. My wife and I loved brewing it and it tasted delicious. The one we had was from Guatemala."
+        },
+        {
+          "rating": 5,
+          "text": "I knew they would be good, but I didn’t know they would be great. I ordered the Cash Money Matcha and had to get two rounds—one for me and one for my sister. The drinks were amazing, but what really stood out was the atmosphere and music selection, which were absolutely top tier.\n\nThis place is a true example of Black excellence, while also showcasing business excellence overall. It attracts a diverse crowd, and I love how intentional and cultured everything feels—from the product names to the artwork throughout the space. On top of that, the customer service was A1.\n\nIf you’re looking for a go-to coffee or tea spot in Atlanta, be sure to give The Black Coffee Atlanta a try. I highly recommend it and will definitely be back again."
+        },
+        {
+          "rating": 5,
+          "text": "Before heading to church, I decided to explore some local coffee shops and stumbled upon Black Coffee. I was instantly drawn in by its earthy atmosphere, which provided a perfect blend of comfort and inspiration; ideal for working on my laptop or simply unwinding. One feature that particularly caught my eye was a beautifully curated wall celebrating black history, which added a depth to the space.\n\nThe friendly staff at the counter greeted us warmly and inquired about our morning, instantly making us feel appreciated. As for the menu, it boasted some intriguing options, including a latte infused with cinnamon and a rich brown sugar syrup—a delightful twist that piqued my interest.\n\nWhile the prices leaned towards the higher end, the exceptional quality of both the coffee and the service made every cent worthwhile. I left feeling satisfied and inspired, and I will definitely be returning for another visit!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:03.281Z"
+    },
+    "ChIJr0UeNw8D9YgRasQaJRb5IYM": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Only one review specifically mentions coffee, calling it 'epic' but no specific drink is named.",
+          "quote": "still made epic coffee & Breakfast for us",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Fried Chicken",
+          "reason": "Praised as some of the best ever in a 5-star review; chicken also appears in the chicken and waffle dish from another review, showing consistent strength with chicken dishes.",
+          "quote": "the fried chicken was some of the best she had ever had",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I’m visiting from out of town and stopped by Rosie’s Coffee Cafe since it was the closest spot to my hotel  and I’m SO glad I did! The food was absolutely fantastic. I ordered the shrimp and grits, and my sister got the chicken and waffle with the strawberry-flavored waffle. Everything was seasoned perfectly and full of flavor.\nI NEVER finish all my food at restaurants, but this time I cleaned my plate! That says a lot.\nOur waiter, Nitosha, was amazing — attentive, friendly, and made the whole experience even better. 10/10 recommend! I’ll definitely be back next time I’m in ATL."
+        },
+        {
+          "rating": 5,
+          "text": "The food was great and our server Trenise dis a great job.  My wife said the fried chicken was some of the best she had ever had.  Also loved the chicken salad.  I thought it was great also.  Glad we came here."
+        },
+        {
+          "rating": 5,
+          "text": "Everything about the staff & food was over the top awesome! I wish they had better signage for To-go orders. I waited in the host line for 20+ min then 30+ min in the To-go line..\nSo, if you're going for To-go food head to the coffee bar not the host stand. Had to give 5 stars because they were slammed because of the marathon race and still made epic coffee ☕️ & Breakfast 🍳 for us. We will be back to dine in next time."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:08.124Z"
+    },
+    "ChIJ-yzpL4wF9YgR4gopjocMzl4": {
+      "picks": {
+        "drink": {
+          "name": "Flat white",
+          "reason": "Specifically praised in a 5-star review for deep chocolatey flavor and excellent latte art from their house-roasted beans.",
+          "quote": "deep chocolatey flavor - works perfectly with their flat white",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Strawberry rosemary scone",
+          "reason": "The only specifically named food item, described as delicious and not too sweet in a 5-star review. Other reviews mention pastries generally.",
+          "quote": "Strawberry rosemary scone delicious and not too sweet",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Had pretty good coffee here and spent some time working with my sister. The outside area is nice but it could do with some shade. The coffee itself was pretty good but they got the order wrong and we’re enthusiastic to remake it.\n\nNice vibe inside but pretty limited seating, prices were a little steep.\n\nI would come back, and my sister says it’s the best coffee in Atlanta!"
+        },
+        {
+          "rating": 5,
+          "text": "Cozy, social and welcoming atmosphere. Inside quite loud but still able to talk. Instead of being disturbing it contributes to a lively atmosphere. Their coffee beans have a very nice deep chocolatey flavor - works perfectly with their flat white which comes with excellent latte art. Strawberry rosemary scone delicious and not too sweet. They even have free wifi for up to 2 hours. Just ask for it and they had you the access code 😊 P.S. they even roast their specialty coffee themselves. And: they even have some savoury and sweet vegan options"
+        },
+        {
+          "rating": 3,
+          "text": "Super close to the Beltline so it’s easy to hop off and find a place to chill. The parking is kind of tight but it’s again it’s close to the Beltline so you walk over. Just like another reviewer said: it’s hard to focus if you don’t have headphones because whoever is on the aux has is bumping. Get there early for a seat, and you have to try a pastry if you haven’t eaten yet. My friend came and she liked the vegan options. The WiFi is fast for a local coffee shop too. Oh and there is outdoor seating for when the sun is out."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:12.217Z"
+    },
+    "ChIJdcJm4BkF9YgRDNpzeiYPJDE": {
+      "picks": {
+        "drink": {
+          "name": "Iced chai latte",
+          "reason": "Praised in multiple reviews, including the dirty iced chai called 'amazing' and another described as nicely spiced and not overly sweet.",
+          "quote": "I got a dirty iced chai it was amazing!!",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Toasted everything bagel with cream cheese",
+          "reason": "Only specifically named food item in the reviews and described positively.",
+          "quote": "Simple, but really good!",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Foxtail Coffee in Midtown Atlanta is one of those easy go-to spots that just works. I ordered a café latte with oat milk, and it was smooth, well-balanced, and comforting without being heavy. My friend got the iced chai latte, and it was equally good—nicely spiced and not overly sweet.\n\nThe space feels especially cozy right now with their Christmassy touches, including holiday merchandise that adds a festive vibe without being over the top. I also appreciated that they offer some gluten-free snack options, which is a thoughtful bonus.\n\nOverall, Foxtail is a reliable spot for studying or getting work done—good drinks, a comfortable atmosphere, and a calm Midtown energy that makes it easy to settle in for a while."
+        },
+        {
+          "rating": 4,
+          "text": "The vibe here is super cool! Service was also very fast although they were very direct, could see some people saying they are rude but I didn’t get that. I got a dirty iced chai it was amazing!! Not pictured was a toasted everything bagel with cream cheese. Simple, but really good!"
+        },
+        {
+          "rating": 2,
+          "text": "Pretty bummed. I went here for the first time since moving to midtown and was SHOCKED at how expensive it is. I ordered a “regular”, and after a 10% tip it was over $8. I was handed my coffee and was shocked at how light it felt. After walking home and taking the lid off to reheat it, I saw that the cup wasn’t even halfway full, and I hadn’t taken a single sip yet. I understand whipped cream takes up space, but it shouldn’t take up half the cup."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:18.874Z"
+    },
+    "ChIJtzptragG9YgReWnn-xcVttI": {
+      "picks": {
+        "drink": {
+          "name": "Chai Latte",
+          "reason": "Received an enthusiastic 10/10 in a 5-star review for being not too sweet with great cinnamon. Other drinks (macchiato, Brown Bear Coffee, mocha, latte) also praised but each only once.",
+          "quote": "best chai latte i've ever had. not too sweet",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Vegan walnut banana bread",
+          "reason": "Only food item specifically named in the reviews, described as delicious.",
+          "quote": "vegan walnut banana bread which was delicious",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Aurora Coffee was recommended to me by a local to Atlanta. I had ordered the cortado with soy milk without realizing the cortado proportions were different than a standard cortado. I was going to pay for their macchiato (which is half espresso half milk) but the staff gave it to me on the house since I didn’t know the proportions when I ordered the cortado. It was really kind and I would have paid for it.\n\nThe macchiato was exactly what I was looking for. More of that espresso flavor coming through balanced with the milk.\n\nFor food, I got a vegan walnut banana bread which was delicious.\n\nI also bought a bag of bean from Guatemala to enjoy at home. The staff was friendly with explaining the different flavors and tasting notes of the different coffee beans they had which was super helpful.\n\nThe vibe and ambience inside is quite cute. I found it cozy and a little alternative - a perfect mix. There’s space inside and outside to sit and enjoy coffee and snacks. I also saw several people working from their laptops.\n\nI’d definitely recommend Aurora Coffee! Just be sure to double check the proportions if that’s something important to you ☺️"
+        },
+        {
+          "rating": 5,
+          "text": "Visited multiple times w friends: great place to spend some time at while browsing little five points.\nGreat atmosphere and very friendly workers!!"
+        },
+        {
+          "rating": 5,
+          "text": "I had an amazing time stumbling upon Aurora Coffee. I hopped off the bus to go vintage shopping when I saw this graffiti filled piece of art on the corner which was Aurora. I walked in pleasantly greeted by the staff, I had obvious questions that could be answered by reading the menu but the girl at the counter was helpful and kind. I got the Brown Bear Coffee with an extra shop of espresso, I was able to add sweeteners myself with the sugar counter, and stepped outside to enjoy the sun. Would absolutely return and for $6.50 I was very happy.\n\nThanks again!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:23.667Z"
+    },
+    "ChIJGQ_foHsD9YgRkojsy7Y2ANs": {
+      "picks": {
+        "drink": {
+          "name": "Metropolitan",
+          "reason": "Specifically praised in a 5-star review for its sweet and spicy flavor combination. The Lavender & Chill latte was also named positively, but the Metropolitan received the most enthusiastic specific callout.",
+          "quote": "The metropolitan is amazing with a bit of sweet and a bit of spicy",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pastries",
+          "reason": "Only one review specifically names a food item, describing the pastries as fresh and really good. Other food praise is generic.",
+          "quote": "The pastries were fresh and really good too",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I’m from out of town and found this spot via a Google search and OMG! The metropolitan is amazing with a bit of sweet and a bit of spicy, perfect combo. The lavender & chill latte was perfect too, a nice flavor of lavender that’s not too sweet. Definitely worth the visit!"
+        },
+        {
+          "rating": 5,
+          "text": "I stopped by Black Coffee ATL and had a great experience! Mia at the counter was super friendly and helpful. She took the time to walk me and my girlfriend through different coffee options and helped us pick something we ended up loving. The pastries were fresh and really good too. Great vibe, great service, and definitely worth coming back to! Highly recommend."
+        },
+        {
+          "rating": 5,
+          "text": "⭐️⭐️⭐️⭐️⭐️\nBlack Coffee is a whole VIBE.\nFrom the moment you walk in, the energy hits different—warm, welcoming, and unapologetically Black excellence. The atmosphere is stylish yet soulful, the music sets the tone perfectly, and the staff makes you feel genuinely seen and appreciated.\nNow let’s talk about the coffee ☕—bold, smooth, and crafted with intention. Every sip tastes like quality and care. The food? Absolutely top-tier. Fresh, flavorful, and beautifully presented—comfort with a modern twist.\nThis isn’t just a coffee shop, it’s a community hub, a cultural experience, and a reminder of how powerful it is when creativity, culture, and entrepreneurship collide.\nIf you’re in Atlanta and you haven’t been to Black Coffee yet, you’re missing out.\nSupport. Sip. Stay awhile. 🔥"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:28.807Z"
+    },
+    "ChIJmzKErJME9YgRducKeLi6du8": {
+      "picks": {
+        "drink": {
+          "name": "Hot chai latte with oat milk",
+          "reason": "Specifically praised in a 5-star review as warm, creamy, and delicious. Other reviews only mention coffee generically.",
+          "quote": "warm, creamy, and absolutely delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pesto chicken sandwich on ciabatta",
+          "reason": "Detailed praise in a 5-star review highlighting the crisp ciabatta, perfectly seasoned chicken, and fresh pesto.",
+          "quote": "chicken was seasoned to perfection, and the pesto was so fresh",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Surrounded by the loud and busy of the seemingly essential, Urban Grind is a humble piece of strong and sweet nestled in its own buoyant cloud of artistic peace. Obsidian to the noise, It nourishes the potential to neutralize the chaos, and transform any heart and soul that crosses its threshold. I read (prior to my visit) that this place has been considered- for quite some time - to be an institution that holds sanctuary for the creator.\nAny establishment that supports the arts is a gem in my book.\nGo and vibe, Tribe."
+        },
+        {
+          "rating": 5,
+          "text": "I had the most wonderful experience at Urban Grind on Marietta Street in Atlanta! I stopped by today and tried their hot chai latte with oat milk—it was warm, creamy, and absolutely delicious. I also had a pesto chicken sandwich on perfectly crisp ciabatta bread—the chicken was seasoned to perfection, and the pesto was so fresh. For dessert, I had a vegan zucchini walnut loaf, and I couldn’t believe it was vegan—it was so flavorful and moist. The customer service was excellent, truly. They went above and beyond to make sure every need was met, and the atmosphere is so quaint and quiet—perfect for a relaxing visit. I can’t wait to come back—highly recommend this gem!"
+        },
+        {
+          "rating": 4,
+          "text": "Urban Grind is a cozy retreat offering tasty coffee and satisfying, hot foods. The interior’s small space is furnished with comfortable seating in different arrangements ensuring you’ll have a spot that matches the mood whether you are looking to connect with coworkers or silently read in peace. The staff is very helpful and friendly, and will add to your pleasant experience."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:32.904Z"
+    },
+    "ChIJQ3gvf4od9YgRNgyU4UD0PFs": {
+      "picks": {
+        "drink": {
+          "name": "Morehouse Macchiato",
+          "reason": "Specifically named and praised as excellent; latte and chai/matcha also got positive but less specific mentions.",
+          "quote": "I had the Morehouse Macchiato. It was excellent",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Outkast breakfast sandwich",
+          "reason": "Specifically named with pork bacon and described as tasty; grits and pastries also praised but this is the most specific food pick.",
+          "quote": "the breakfast sandwich (outkast w/ pork bacon)... were tasty",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This place is a gem! Excellent drip coffee, the most comforting grits you ever tasted, and a beautiful, creative menu of plates and lattes. I visited every single morning of my short stay in Atlanta… definitely make sure you stop in and try a bite and a sip. The family-owned atmosphere is full of genuine love."
+        },
+        {
+          "rating": 5,
+          "text": "I stopped by this coffee shop on the way to volunteer. It’s beautiful inside with plenty of seating, a parking lot, and street parking. Great customer service, and the coffee and food were amazing. I’ll definitely be back ☕✨"
+        },
+        {
+          "rating": 5,
+          "text": "What a great spot! This Cascade Heights coffee shop is modeled on a French style Brasserie and features, coffee, pastry, and a pleasant vibe. They've a limited sandwich menu as well. The service is friendly and capable and the latte was delicious.\n\nWheelchair access is tight but doable.\n\nThis is a place worth seeking out. It's lovely."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:37.820Z"
+    },
+    "ChIJgQyl6r8B9YgRHKDGhjG0k-o": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Multiple reviewers specifically praise the lattes, with one calling it the best in Atlanta and noting exceptional foam work. Specific variations mentioned include salted butter toffee and iced oat milk vanilla bean.",
+          "quote": "Best latte I've found in Atlanta",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews. Reviewers focus exclusively on drinks, plants, and atmosphere.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Firstly, great location (inside a nursery) with lots of plants. Secondly, the espresso drinks are par excellence! My girlfriend got a salted butter toffee flavored latte that I have never tasted elsewhere. I got a shot and a plain cortado and the great pull of the shot shone through the milk. The plain shot was on the acidic side, with fruity notes, indicating its light roast. Special note about the service: They really went the extra mile and offered me some sparkling water for an interval between the 2 drinks. Highly recommended!"
+        },
+        {
+          "rating": 5,
+          "text": "The best Bellwood location, love the vibe, so unique, some of the employees remember my name and I don't even come in all the time. A neighborhood gem!\n\nThey work some sort of wizardry with their foam. Best latte I've found in Atlanta, even when compared to other Bellwood spots and other top recs from coffee lovers."
+        },
+        {
+          "rating": 5,
+          "text": "I love this shop so much. It is a unique experience to be able to look at hundreds of plants and small-batch candles while having your daily cup of coffee.\n\nMy go-to is an iced latte, with oat milk and their vanilla bean syrup. I believe their syrups are made in-house. Always delicious\nTheir espresso is very smooth and never sharp. The baristas are nice and helpful, making suggestions if you’re unsure of what you want to order.\nThe Victorian employees take good care of their plants as well. Considering the amount of plants inside, it is consistently the cleanest coffee shop I’ve visited.\n\nThey have bar seating at the counter and a few small benches and chairs scattered around. Outside is plenty of seating though. They have a nice small patio and a large table closer to the street."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:43.093Z"
+    },
+    "ChIJpXvJ8AcF9YgR7_JsZCoUVrQ": {
+      "picks": {
+        "drink": {
+          "name": "Matcha",
+          "reason": "Only specifically named drink, praised as 'very yummy' in a 5-star review. Other reviews praise coffee generically.",
+          "quote": "Got a matcha which was very yummy",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Almond croissant",
+          "reason": "Explicitly highly recommended by a 5-star reviewer; the only named food item.",
+          "quote": "HIGHLY recommend the almond croissant",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Super cute coffee shop! Tucked away under the apartment complex but a nice spot. Got a matcha which was very yummy. The baked goods also looked really good. Great service and WiFi was strong. Comfy seating and a lot of space which I always appreciate. Parking is a little tight, but there’s a big lot in the back for a couple minute walk to the shop. They provide coupon for the parking inside once you register your car which is always appreciated. Will definitely be coming back!"
+        },
+        {
+          "rating": 5,
+          "text": "What a cute coffee shop! Drinks were delicious and HIGHLY recommend the almond croissant.\nThe staff was very attentive and kind. Even though they were busy, they made sure to come check in on us and make sure we liked our drinks and had everything we needed."
+        },
+        {
+          "rating": 5,
+          "text": "My favorite coffee shop in Atlanta. I come here a lot to knock out work and the staff is sooo friendly and the vibe is great. Whoever is on the aux as well gets a 5 star as well! The coffee is always consistent no matter who’s working. I have no notes for suggestions/improvements."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:47.604Z"
+    },
+    "ChIJJQJuVNgF9YgRtbcOd_tOr6k": {
+      "picks": {
+        "drink": {
+          "name": "Flat white",
+          "reason": "Specifically praised in a 5-star review as one of the best ever, with mention of the Slayer espresso machine. Other drinks (chai latte, iced vanilla latte) were each mentioned positively only once, but the flat white received the most superlative praise.",
+          "quote": "One of the best flat whites I have ever had!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Chocolate chip cookie",
+          "reason": "Only specific food item named positively in the reviews; another reviewer noted pastries sell out early, suggesting they're popular but no specific pastry was named.",
+          "quote": "an iced vanilla latte and a chocolate chip cookie, both of which were delicious",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Nice place with good coffee. The drip was delicious and the espresso was well done. Baristas were friendly and seemed knowledgeable.\n\nYou only get 2 hours of internet access and then you’re cut off. I also notice how many baristas in the industry make assumptions about people’s coffee knowledge and just tell them things. I understand this kind of conversation as a cultural feature, and I also don’t prefer it. It becomes more of them telling me something that I already know and less a discussion about a mutually enjoyed nerdy topic.\n\nThey had a good selection of whole bean coffee. Nothing is labeled so I had to ask about prices, which I don’t like. It’s a bigger space in a brick building, with plenty of tables, couches, and chairs. You have to get lucky with parking, and the location is not accessible for many people. I had to walk two blocks, some parts of the sidewalk are cracked, and there’s at least one large step to enter the building. The floor is bare concrete inside with a step into another section with additional seating."
+        },
+        {
+          "rating": 4,
+          "text": "Stopped in today to grab a coffee and a pastry to work on so much needed letters.\n\nStaff was super pleasant in the and the place itself is adorable. They were out of pastries (I got here at 12:30 on a Saturday) and they told me that they usually go pretty early in the morning - which I get.\n\nI was recommended a chai latte and it was wonderful. A little pricey, but what is it in the city?\n\nIt’s a little tucked away but a great place to come if you need to get some reading or work done.\n\nI’ll be back if I’m in the area."
+        },
+        {
+          "rating": 5,
+          "text": "One of the best flat whites I have ever had! Beautiful Slayer espresso machine. Cool loft space and on the beltline. Great vibe!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:52.928Z"
+    },
+    "ChIJ2ad4IYcD9YgRtSYRsBsQ9dU": {
+      "picks": {
+        "drink": {
+          "name": "Pistachio Honey Americano",
+          "reason": "Specifically named and praised as 'amazing' in a 5-star review highlighting specialty drinks. Other coffee mentions are generic or negative.",
+          "quote": "pistachio honey americano, which was amazing",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Breakfast croissant sandwich",
+          "reason": "The egg and cheese croissant received detailed praise for freshness and quality in a 5-star review, and breakfast sandwiches are a recurring highlight (Harrison breakfast sandwich also praised).",
+          "quote": "real fresh eggs, buttery croissant, perfectly cooked",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Was in town for work and needed a nice place to work quietly for work while enjoying a nice cup of coffee. This place was only a few minute walk and it was a cool little gem. This cozy little cafe was amazing. I got a pistachio honey americano, which was amazing. I also got the harrison breakfast sandwich was great. Music was not too loud you couldn’t work or take a zoom call. Staff was extremely friendly and helpful answering my million questions. Got to check this place out. Try one of their speciality drinks. The huge bonus is, when getting mixed coffee drinks they tend to be barely hot. This is the first place that I have not had to ask to make their coffee extra hot."
+        },
+        {
+          "rating": 2,
+          "text": "I loved the quirky interior! Very unique and chilled our cafe and that’s where the compliments end.\n\nWe ordered a Latte, Drip Coffee (dark roast) and a Croissant.\n\nI am sorry to say but this place fell short of any expectations I had. The latte was flavourless, the croissant was flat, warm and oily. I’ve never had a croissant like that before so it’s a don’t waste your money moment for anyone reading this review.\n\nThe coffee was uninspiring.\n\nThe service was slow. I was given my latte and then the lady at the till started serving someone else! I had to ask her for the rest of my order.\n\nDidn’t leave me eager to return which is a shame as I loved the interior.\n\nPs…one of your black leather chairs has a broken front leg. I’m glad I don’t weigh much otherwise I would have been on the floor."
+        },
+        {
+          "rating": 5,
+          "text": "Great hidden gem. Since it’s a small place, it was pretty hot, but that’s understandable. Delicious bagel sandwich and I saw a guy drawing another guy without him knowing! This is the type of local cafe you see in movies :)."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:33:57.808Z"
+    },
+    "ChIJ8cOFXVAH9YgRfKubBFlCDec": {
+      "picks": {
+        "drink": {
+          "name": "Matcha latte",
+          "reason": "Specifically praised in a 5-star review for being not too sweet, with confirmation the matcha isn't pre-sweetened. Ube latte also mentioned positively.",
+          "quote": "My matcha was AMAZING! It was not too sweet",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Sausage biscuit sandwich",
+          "reason": "Strongly and specifically praised as homemade-tasting, huge, and worth the price. Other food mentions (cheese danish, pastries) were positive but less emphatic.",
+          "quote": "tastes homemade and it is worth the price! It is huge and delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Thus shop is doing all things right!\n\nLet’s start with how we got here ! A friend sent me a picture of a Tik Tok picture featuring an ube latte! I responded with - when are we going? We decided we would wait until the weekend since we would have to drive from Cobb county to the city.\n\nI started doing some research and did not see ube latte on the menu. I  called the phone number listed on yelp- but it appears it is just a cell number and went directly to voicemail. I went to the website and found an email address. I sent a basic question/ do you have an Ube latte on your menu? To my surprise I received a response! This simple response was exhibit A that they don’t play about customer service\n\nOn Saturday morning I arrived to the shop around 11am! The coffee shop is a neighborhood spot! As such, you will just have to find street parking in the neighborhood. I ended up parking a block away. This place was crowded!  I did have to wait in a line. However, I enjoyed checking out the item for sale while waiting in line. The book titles had me laughing ,  this is your go to spot for a unique gift!\n\nWe ended up ordering the following:\n1. Hot Matcha latte with  ube and oat milk\n2. Hot ube latte with oat milk\n3. Cheese danish\n\nNOTE: I did confirm that the matcha they use is NOT pre- sweetened. This is a huge plus in my book!!\n\nThe item came out quickly. All items weee served in to go containers. I am not sure if this is just standard practice even if you are dining in.\n\nWe were able to grab a table outside! However, this place was crowded and open seating was limited!\n\nMy matcha was AMAZING! It was not too sweet, which is how I like my matcha. The cheese danish was also delightful. My friend said she enjoyed her latte too. I will note that I did not taste the Ube flavor.\n\nThis  coffee shop is a vibe, but also  serves yo tasty drinks and treats! I would highly recommend checking this spot out !"
+        },
+        {
+          "rating": 5,
+          "text": "I absolutely wish I had this place back at my hometown in Florida. You walk in and there is knick knacks everywhere but the employees immediately greet you with a warm welcome. Great selection of food with vegan options that is seperated from everything else and lots of coffee and tea options. The sausage biscuit sandwich tastes homemade and it is worth the price! It is huge and delicious. I had a latte with oat milk and some syrups and it was delicious as well! While waiting for your order there is a lot of eye catching decorations and books and more to buy and plenty of seating! I wish I could take this coffee shop back home with me it was that great and fantastic. I wish I got the employees names that worked there today but they were absolutely super nice and welcoming!"
+        },
+        {
+          "rating": 5,
+          "text": "Ash is relatively new to Virginia Highlands but has most definitely taken the cake for the best coffee place in VaHi! The atmosphere is stunning with a small shop, lots of indoor tables, outdoor seating, and a couch nook in the back! They have nailed the decor! Ash is always full of people so depending on what time you go beware you may not find a table! They not only serve coffee but also delicious breakfast items and desserts! I would say 10/10 make sure to stop in here!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:34:02.496Z"
+    },
+    "ChIJtWWRVnsR9YgRE_zC67k-1Ts": {
+      "picks": {
+        "drink": {
+          "name": "Black sugar latte",
+          "reason": "Mentioned positively in multiple reviews, with one reviewer calling it 'PERFECT & not too sweet.'",
+          "quote": "Black sugar latte is PERFECT & not too sweet",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Glazed donut",
+          "reason": "Specifically called out as delicious, with a tip to order it heated. Avocado toast was also praised but only by one reviewer.",
+          "quote": "The glazed donut was DELISH and make sure to ask for it heated",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I just wanted to take a second and shout out all the kind and amazing baristas that make everyday that I come special and positive! HUGE shoutout to Avery, Hannnah, Lizzie, Zoey, Kathrine, and anyone else whose name I missed! You guys are shining lights and make this place so much more than coffee!\nP.S. I’ve never in my life had anyone spell my name correctly without me telling them. Made my day once again! This place is a must have! Great selection, food quality, pricing, and the coffee blend is to die for! I personally would visit their Sandy Springs location, it’s my favorite!"
+        },
+        {
+          "rating": 4,
+          "text": "Pros: clean/modern aesthetic with outlets at every table.\nEvery single Barista is friendly and polite!\nBlack sugar latte is PERFECT & not too sweet.\n\nCons: They literally only have 2 milk choices, Whole milk or oatmilk. PLEASE CONSIDER CARRYING ALMOND MILK. A lot of people are lactose free and don’t want the high calorie oatmilk option."
+        },
+        {
+          "rating": 5,
+          "text": "A charming little cafe! This is a nice place to get artsy and tasty drinks. There’s a free parking deck and WiFi, so it’s easy to come here to get some work done except for the fact that there is not much seating inside. The interior is filled with gorgeous plants and a simple aesthetic. I got the charcoal coconut latte, which was so refreshing and delicious. I would absolutely recommend checking this place out if you’re looking for a new cafe in Georgia!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:34:08.133Z"
+    },
+    "ChIJyUl-Ta8P9YgRU-j38rPZdhs": {
+      "picks": {
+        "drink": {
+          "name": "Iced Strawberry Matcha",
+          "reason": "Enthusiastically praised in a 5-star review as the best matcha ever, with specific detail about strawberry puree and cold foam. Other drink mentions (chai latte, hazelnut latte) were positive but less standout.",
+          "quote": "the best matcha I have ever had",
+          "confidence": "high",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Warmed croissant",
+          "reason": "Food items received limited praise overall. The croissant was mentioned positively in a 5-star review, while the Fox-Shaped Cookie was called disappointing and the bagel sandwich had service issues.",
+          "quote": "I also got a warmed croissant",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Came here to work for a bit and liked it! I parked in the garage and they validate for 2 hours. It’s cute and cozy inside lots of seating, tables, and outlets. Staff was quick with drinks and the chai latte was good. I also got a warmed croissant. Overall I would definitely come back. There’s outdoor seating as well for a nice day."
+        },
+        {
+          "rating": 5,
+          "text": "I was looking for some new matcha I hadn't tried yet in Buckhead and I decided to try Foxtail Coffee out! I had to park in the deck ($10 for 2 hours) which I didn't like, but it was honestly worth it. I asked for an iced strawberry matcha, and he asked me if I wanted the cold foam or just strawberry puree- I said both. It costed about $9.66 with tip, which although expensive, it is unfortunately reasonable compared to nearby coffee shops. It was BEAUTIFUL and also the best matcha I have ever had!!! I drank the whole thing in maybe 5 minutes. However, it was very sweet (which I love) and I definitely tasted the strawberry flavor more than the matcha flavor. I personally LOVED it but if you aren't a huge fan of sweet drinks it probably won't be for you. The atmosphere is super cute and the staff was nice. If you are looking for a sweet strawberry matcha I DEFINITELY recommend!"
+        },
+        {
+          "rating": 4,
+          "text": "Coffee was very strong, which was a very welcome detail! Interior and exterior are both very aesthetic, and the place is perfect for a quiet work spot or catch-up with friends. Service was also phenomenal - they were so nice and helpful with parking.\n\nSadly, while the coffee itself was great, the Fox-Shaped Cookie ended up being a disappointing shortbread. Nonetheless, I would love to return here one day to get some work done!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:34:13.967Z"
+    },
+    "ChIJAcvnz50F9YgRez_cjRE1v2g": {
+      "picks": {
+        "drink": {
+          "name": "Chai Latte",
+          "reason": "Mentioned positively across multiple reviews, including an iced gingerbread variant praised as 'really, really good' and a chai+white mocha combo called 'great'.",
+          "quote": "iced gingerbread Chai latte. It was really, really good",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Breakfast Sandwich",
+          "reason": "Explicitly called 'excellent' in a 5-star review, and the food overall is rated 5/5 by another reviewer. Stronger named praise than other items.",
+          "quote": "Breakfast Sandwich was excellent",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I really loved this cafe. The chai latte was good, I enjoyed the food, and the whole space had such a great vibe. The high ceilings made it feel bright and airy, the music was trendy, and it felt like a wonderful place to work or study. Just a fabulous atmosphere overall."
+        },
+        {
+          "rating": 5,
+          "text": "A bit on the costly side, I give it $$$ overall. Flat White is a must try. The flavor and the roast blends perfectly; wish was bigger cup. Love the Bread Pudding Loaf. Scone was terrific, not too dry, just the right chewiness. Breakfast Sandwich was excellent. And Med Bowl was my favorite."
+        },
+        {
+          "rating": 5,
+          "text": "A friend told me to try them. So, I stopped in. First, let me say I love the decor & the ambiance. Second, this is a great place to get work done if you need a quiet space. You can sit and linger/work for two hours at a time. I wanted to try their coffee specifically, so I had the iced gingerbread Chai latte. It was really, really good. I will say the prices can be on the higher end, as it was $10 for a medium sized cup. The food menu looked good as well, but I didn't eat. Parking can be a slight bit confusing if you don't know the area, so I parked on the street around the corner. I'll come back though."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:34:18.840Z"
+    },
+    "ChIJ4aUwh0QF9YgR8uynEos2m9k": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Lattes are repeatedly praised across multiple reviews as beautiful, delicious, and consistently good, with specific flavored variants like Cinnamon-Honey and Peach Cobbler also called out.",
+          "quote": "lattes are both beautiful and delicious",
+          "confidence": "high",
+          "mention_count": 5
+        },
+        "food": {
+          "name": "Cinnamon coffee cake",
+          "reason": "Specifically praised in a 5-star review as 'so delicious' and visually appealing, even winning over someone who doesn't typically like cinnamon.",
+          "quote": "cinnamon coffee cake is so delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Edit: best quality control. They never disappoint 💛💛 not to mention they have the best prices out of any 'proper' coffee shops in Midtown!!\n\nUnderrated gem! The barista is super passionate and welcoming. Their lattes are both beautiful and delicious.\nA+ for presentation and ambiance!\n💎😻💎\n\nElegant and relatively quiet ambiance"
+        },
+        {
+          "rating": 5,
+          "text": "The barista was so nice and kind to us - she was amazing! We ordered Vanilla Chai with Cinnamon, Peach Cobbler Latte on the Spring menu and Tiramisu cake. They were delicious. The atmoshere was so nice and clean. They also provided wifi, electrical sockets and restrooms for costumers. They also have many zones to sit like bar, tall tables, outdoor areas and sofa."
+        },
+        {
+          "rating": 5,
+          "text": "I’ve been here twice now since it is walking distance from me and I truly love it. The workers are really nice and talkative just a very inviting environment. They are helpful with recommendations and explain everything really clearly. They offer to warm up pastries even though I forget to ask they ask which is really nice. I haven’t had the chance to try everything so far so I can only speak for the lattes and two pastries. The cinnamon coffee cake is so delicious and I don’t even like cinnamon like that which was surprising. It also looked really appetizing. I’ve tried two different flavors of lattes and they both tasted really good. I will say I get iced lattes and they are about on par with a lot of other places I like, like dancing goats. The chocolate muffin is good too a little too chocolaty for me but definitely good for someone who would inhale chocolate. The environment is nice though it was a little difficult to find the area initially since the since is a little small. The inside is very spacious and has a ton of space for anyone looking to do work, study, or chat with a friend. I learned they have individual work space areas available on a first come first serve basis. It looked really neat and something I haven’t seen before. Definitely will be coming again for a latte and pastry."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:34:23.204Z"
+    },
+    "ChIJ8dagg5cF9YgRjWHVzroGiCc": {
+      "picks": {
+        "drink": {
+          "name": "Matcha latte",
+          "reason": "Matcha is mentioned across nearly every review with high praise for quality. Multiple variants are loved (strawberry matcha, blueberry lavender matcha, matcha strawberry yuzu tonic), but the matcha latte is the foundational standout.",
+          "quote": "delicious and high quality",
+          "confidence": "high",
+          "mention_count": 5
+        },
+        "food": {
+          "name": null,
+          "reason": "Only one review briefly mentions pastries with no specific item named. Not enough data to recommend a specific food item.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Stopped by when I was visiting ATL. My husband and I really enjoyed our matchas. I had a matcha latte with almond milk and he had the same but with a shot of espresso. They were delicious and high quality! Service was nice and fast. Would definitely recommend!"
+        },
+        {
+          "rating": 5,
+          "text": "Wow what a great local coffee and matcha shop. Despite its small size it provides a very warm and personalized experience - for instance - they provide actual glasses for your dine-in drinks upon request rather than the throw-away containers. The quality of the matcha, coffee and pastries is the best and the prices are very fair for the excellence and fair-trade standards. The only thing better than the drinks is the top quality customer service - for instance, Jada and Amira greeted me very warmly indeed - positively beaming with 10000 watt radiant smiles for the entire time I was there. They hung on my every word and commiserated with my mistakes in life. Imagine not rating such a cute and aspirational business 5/5 - COULDN'T BE ME"
+        },
+        {
+          "rating": 5,
+          "text": "Such a good blend of matcha, milk and strawberry! Really quite good place to work at.\n\nI recommend the strawberry matcha and the blueberry lavender matcha"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-06-15T19:34:28.098Z"
+    }
+  }
+}

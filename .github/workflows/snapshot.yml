@@ -55,7 +55,7 @@ jobs:
           if [ -n "${{ inputs.city }}" ]; then
             CITIES="${{ inputs.city }}"
           else
-            CITIES="boca-raton delray-beach boynton-beach deerfield-beach fort-lauderdale miami parkland slidell gulfport biloxi new-york-city"
+            CITIES="boca-raton delray-beach boynton-beach deerfield-beach fort-lauderdale miami parkland slidell gulfport biloxi muncie new-york-city atlanta tel-aviv"
           fi
           FORCE_FLAG=""
           if [ "${{ inputs.force }}" = "true" ]; then
