@@ -5,7 +5,10 @@
   "main": "joequest-engine.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/unit/data.test.js tests/unit/cities.test.js tests/unit/snapshot.test.js",
+    "test:server": "node --test tests/unit/server.test.js",
+    "test:e2e": "npx playwright test",
+    "test:all": "npm test && npm run test:e2e"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +18,8 @@
     "@anthropic-ai/sdk": "^0.98.0",
     "@supabase/supabase-js": "^2.106.1",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
   }
 }
