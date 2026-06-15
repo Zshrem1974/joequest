@@ -283,9 +283,9 @@ describe("POST /api/help", () => {
 });
 
 describe("GET /api/admin/stats", () => {
-  it("returns 401 without admin token", async () => {
+  it("returns 403 without admin auth", async () => {
     const res = await fetch(`${baseUrl}/api/admin/stats`);
-    assert.equal(res.status, 401);
+    assert.equal(res.status, 403);
   });
 });
 

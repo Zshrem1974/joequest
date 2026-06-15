@@ -17,14 +17,16 @@
       --oat: #F5E9DC;
       --cream: #FFF6EC;
       --mint: #3B7D5A;
-      --line: rgba(94, 62, 39, 0.14);
-      --muted: rgba(94, 62, 39, 0.6);
+      --red: #C0451B;
+      --purple: #7C5CFF;
+      --line: #E2D7C5;
+      --muted: rgba(94, 62, 39, 0.55);
       --display: "Poppins", -apple-system, system-ui, sans-serif;
       --body: "Inter", -apple-system, system-ui, sans-serif;
       --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
     }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
     body {
       background: var(--oat);
       color: var(--espresso);
@@ -33,271 +35,640 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 28px 24px 80px;
+    /* ================================================================
+       LOGIN
+       ================================================================ */
+    #login-screen {
+      max-width: 380px;
+      margin: 100px auto;
+      text-align: center;
     }
-
-    header.top {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 28px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--line);
-    }
-    header.top h1 {
+    #login-screen h1 {
       font-family: var(--display);
       font-weight: 600;
       font-size: 26px;
       color: var(--espresso);
-      letter-spacing: -0.3px;
-      margin: 0;
+      margin-bottom: 4px;
     }
-    header.top .sub { color: var(--muted); font-size: 13px; }
-    header.top .controls { display: flex; align-items: center; gap: 12px; }
-    header.top select, header.top button {
-      background: var(--cream);
-      color: var(--espresso);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 6px 14px;
-      font-family: var(--body);
+    #login-screen .sub {
+      color: var(--muted);
       font-size: 13px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    header.top button:hover { background: var(--oat); }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 14px;
       margin-bottom: 28px;
     }
-    .stat {
+    #login-screen form {
       background: var(--cream);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 18px 20px;
-      box-shadow: 0 1px 2px rgba(43,28,18,0.04);
+      border: 0.5px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: left;
     }
-    .stat .v {
-      font-family: var(--display);
-      font-weight: 600;
-      font-size: 32px;
-      color: var(--espresso);
-      letter-spacing: -0.5px;
+    #login-screen label {
+      display: block; font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      color: var(--muted); margin-bottom: 5px;
+    }
+    #login-screen input {
+      width: 100%; padding: 10px 14px;
+      border: 0.5px solid var(--line); border-radius: 8px;
+      font-family: var(--body); font-size: 14px;
+      background: var(--oat); color: var(--espresso);
+      margin-bottom: 14px; outline: none;
+    }
+    #login-screen input:focus { border-color: var(--crema); }
+    #login-screen button {
+      width: 100%; padding: 11px;
+      background: var(--espresso); color: var(--cream);
+      border: none; border-radius: 8px;
+      font-family: var(--display); font-weight: 600;
+      font-size: 14px; cursor: pointer;
+    }
+    #login-screen button:hover { background: var(--espresso-deep); }
+    #login-screen button:disabled { opacity: 0.5; cursor: not-allowed; }
+    #login-err { color: var(--red); font-size: 13px; margin-top: 10px; min-height: 18px; }
+
+    /* ================================================================
+       SHELL — sidebar + main
+       ================================================================ */
+    #shell { display: none; height: 100%; }
+    .shell-layout { display: flex; height: 100%; }
+
+    /* ---- sidebar ---- */
+    .sidebar {
+      width: 220px; min-width: 220px;
+      background: var(--espresso-deep);
+      color: rgba(255,255,255,0.7);
+      display: flex; flex-direction: column;
+      padding: 24px 0;
+      overflow-y: auto;
+    }
+    .sidebar .brand {
+      display: flex; align-items: center; gap: 10px;
+      padding: 0 20px; margin-bottom: 32px;
+    }
+    .sidebar .brand svg { flex-shrink: 0; }
+    .sidebar .brand span {
+      font-family: var(--display); font-weight: 600;
+      font-size: 17px; color: #fff; letter-spacing: -0.3px;
+    }
+    .sidebar nav { flex: 1; }
+    .sidebar .nav-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 20px; font-size: 13px; font-weight: 500;
+      cursor: pointer; border-radius: 0;
+      transition: background 0.15s;
+      color: rgba(255,255,255,0.6);
+    }
+    .sidebar .nav-item:hover { background: rgba(255,255,255,0.06); color: #fff; }
+    .sidebar .nav-item.active {
+      background: rgba(217,131,36,0.15);
+      color: var(--crema); font-weight: 600;
+    }
+    .sidebar .nav-item svg { opacity: 0.6; flex-shrink: 0; }
+    .sidebar .nav-item.active svg { opacity: 1; }
+    .sidebar .divider {
+      height: 1px; background: rgba(255,255,255,0.08);
+      margin: 12px 20px;
+    }
+    .sidebar .bottom-nav { margin-top: auto; }
+
+    /* ---- main content ---- */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      display: flex; flex-direction: column;
+    }
+    .topbar {
+      display: flex; justify-content: space-between;
+      align-items: center;
+      padding: 20px 32px;
+      border-bottom: 0.5px solid var(--line);
+      background: var(--cream);
+    }
+    .topbar h1 {
+      font-family: var(--display); font-weight: 600;
+      font-size: 22px; color: var(--espresso);
+      letter-spacing: -0.3px;
+    }
+    .topbar .subtitle {
+      font-size: 12px; color: var(--muted); margin-top: 2px;
+    }
+    .topbar .admin-chip {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: var(--espresso);
+    }
+    .topbar .avatar {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--purple); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--display); font-weight: 600; font-size: 14px;
+    }
+    .topbar .admin-label {
+      font-size: 11px; color: var(--muted); font-weight: 500;
+    }
+
+    .content { padding: 24px 32px 64px; flex: 1; }
+
+    /* ---- KPI row ---- */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px; margin-bottom: 24px;
+    }
+    .kpi {
+      background: var(--cream);
+      border: 0.5px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .kpi .label {
+      font-size: 11px; text-transform: uppercase;
+      letter-spacing: 0.8px; color: var(--muted);
+      font-weight: 600; margin-bottom: 6px;
+    }
+    .kpi .value {
+      font-family: var(--display); font-weight: 600;
+      font-size: 32px; color: var(--espresso);
+      letter-spacing: -0.5px; line-height: 1.1;
+    }
+    .kpi .delta {
+      font-size: 11px; font-weight: 600; margin-top: 4px;
+    }
+    .kpi .delta.up { color: var(--mint); }
+    .kpi .delta.down { color: var(--red); }
+    .kpi .delta.flat { color: var(--muted); }
+
+    /* ---- cards ---- */
+    .card {
+      background: var(--cream);
+      border: 0.5px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card h2 {
+      font-family: var(--display); font-weight: 600;
+      font-size: 13px; text-transform: uppercase;
+      letter-spacing: 0.8px; color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .mid-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px; margin-bottom: 24px;
+    }
+    .bot-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* ---- funnel bars ---- */
+    .funnel-step {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 10px;
+    }
+    .funnel-step:last-child { margin-bottom: 0; }
+    .funnel-label {
+      width: 110px; font-size: 12px; font-weight: 500;
+      color: var(--espresso); text-align: right; flex-shrink: 0;
+    }
+    .funnel-track {
+      flex: 1; height: 28px; background: var(--oat);
+      border-radius: 6px; overflow: hidden; position: relative;
+    }
+    .funnel-fill {
+      height: 100%; border-radius: 6px;
+      display: flex; align-items: center;
+      padding-left: 10px;
+      font-size: 12px; font-weight: 600; color: #fff;
+      min-width: 36px;
+      transition: width 0.3s ease;
+    }
+    .funnel-conv {
+      width: 52px; text-align: right; flex-shrink: 0;
+      font-size: 11px; font-weight: 600; color: var(--muted);
+    }
+
+    /* ---- sparkline bars ---- */
+    .spark-container {
+      display: flex; align-items: flex-end; gap: 2px;
+      height: 120px; padding-top: 8px;
+    }
+    .spark-bar {
+      flex: 1; background: var(--crema);
+      border-radius: 2px 2px 0 0;
+      min-height: 2px;
+      transition: height 0.2s ease;
+    }
+    .spark-bar:hover { opacity: 0.75; }
+    .spark-labels {
+      display: flex; justify-content: space-between;
+      margin-top: 6px;
+      font-size: 10px; color: var(--muted);
+    }
+
+    /* ---- list rows ---- */
+    .list-row {
+      display: flex; align-items: center; gap: 10px;
+      padding: 5px 0; font-size: 13px;
+    }
+    .list-row .name {
+      flex: 1; font-weight: 500; color: var(--espresso);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .list-row .count {
+      font-weight: 600; font-variant-numeric: tabular-nums;
+      color: var(--espresso); min-width: 36px; text-align: right;
+    }
+    .list-row .mini-bar {
+      width: 60px; height: 6px; background: var(--oat);
+      border-radius: 3px; overflow: hidden; flex-shrink: 0;
+    }
+    .list-row .mini-fill {
+      height: 100%; border-radius: 3px;
+      background: var(--crema-light);
+    }
+
+    /* signals grid */
+    .signals-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .signal-item {
+      background: var(--oat);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .signal-item .sv {
+      font-family: var(--display); font-weight: 600;
+      font-size: 24px; color: var(--espresso);
       line-height: 1.1;
     }
-    .stat .k {
-      font-size: 11px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-top: 4px;
+    .signal-item .sk {
+      font-size: 11px; color: var(--muted);
+      margin-top: 2px;
     }
 
-    section {
-      background: var(--cream);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 20px 22px;
-      margin-bottom: 18px;
-    }
-    section h2 {
-      font-family: var(--display);
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin: 0 0 14px;
-    }
-
-    .bar-row {
-      display: grid;
-      grid-template-columns: 200px 1fr 60px;
-      align-items: center;
-      gap: 12px;
-      padding: 4px 0;
+    .empty { color: var(--muted); font-style: italic; font-size: 13px; padding: 8px 0; }
+    .err-bar {
+      background: rgba(192,69,27,0.10); color: var(--red);
+      border-radius: 8px; padding: 10px 14px; margin-bottom: 16px;
       font-size: 13px;
     }
-    .bar-row .label { color: var(--espresso); font-weight: 500; }
-    .bar-row .label code { font-family: var(--mono); font-size: 12px; }
-    .bar-row .track {
-      height: 14px;
-      background: var(--oat);
-      border-radius: 7px;
-      overflow: hidden;
-      position: relative;
-    }
-    .bar-row .fill {
-      height: 100%;
-      background: var(--crema);
-      border-radius: 7px;
-      min-width: 2px;
-      transition: width 0.2s ease;
-    }
-    .bar-row .fill.funnel { background: var(--espresso); }
-    .bar-row .fill.path   { background: var(--mint); }
-    .bar-row .n {
-      text-align: right;
-      color: var(--espresso);
-      font-variant-numeric: tabular-nums;
-      font-weight: 600;
-    }
-
-    .empty { color: var(--muted); font-style: italic; padding: 8px 0; }
-    .err {
-      background: rgba(195,74,54,0.10);
-      color: #9a3a2a;
-      border-radius: 10px;
-      padding: 12px 14px;
-      margin: 14px 0;
-    }
-    .footer {
-      margin-top: 28px;
-      padding-top: 14px;
-      border-top: 1px dashed var(--line);
-      color: var(--muted);
-      font-size: 12px;
+    #page-coming-soon {
+      display: none;
+      padding: 80px 40px;
       text-align: center;
+      color: var(--muted);
+      font-size: 15px;
     }
-    .footer code { font-family: var(--mono); font-size: 11.5px; }
+    #page-coming-soon h2 {
+      font-family: var(--display);
+      font-size: 20px;
+      color: var(--espresso);
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="top">
-      <div>
-        <h1>JoeQuest · admin</h1>
-        <div class="sub" id="generated">—</div>
+
+<!-- ================================================================
+     LOGIN SCREEN
+     ================================================================ -->
+<div id="login-screen">
+  <h1>JoeQuest admin</h1>
+  <div class="sub">Sign in with your admin account</div>
+  <form id="login-form">
+    <label for="email">Email</label>
+    <input type="email" id="email" autocomplete="email" required />
+    <label for="password">Password</label>
+    <input type="password" id="password" autocomplete="current-password" required />
+    <button type="submit" id="login-btn">Sign in</button>
+    <div id="login-err"></div>
+  </form>
+</div>
+
+<!-- ================================================================
+     SHELL (sidebar + main)
+     ================================================================ -->
+<div id="shell">
+  <div class="shell-layout">
+    <!-- ---- sidebar ---- -->
+    <aside class="sidebar">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <rect width="28" height="28" rx="7" fill="#D98324"/>
+          <path d="M8 10h12v2a6 6 0 01-12 0V10z" fill="#fff"/>
+          <rect x="8" y="8" width="12" height="3" rx="1" fill="#fff"/>
+          <path d="M20 12h2a2 2 0 010 4h-2" stroke="#fff" stroke-width="1.5"/>
+        </svg>
+        <span>JoeQuest</span>
       </div>
-      <div class="controls">
-        <label for="window" class="sub">Window</label>
-        <select id="window" aria-label="Time window">
-          <option value="1">1 day</option>
-          <option value="7" selected>7 days</option>
-          <option value="14">14 days</option>
-          <option value="30">30 days</option>
-        </select>
-        <button id="refresh">Refresh</button>
+      <nav>
+        <div class="nav-item active" data-page="analytics">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15l4-5 3 3 5-7"/><rect x="2" y="2" width="14" height="14" rx="2"/></svg>
+          Analytics
+        </div>
+        <div class="nav-item" data-page="members">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="6" r="3"/><path d="M3 16c0-3 3-5 6-5s6 2 6 5"/></svg>
+          Members
+        </div>
+        <div class="nav-item" data-page="partners">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 9l5-5 5 5M9 4v10"/><rect x="2" y="14" width="14" height="2" rx="1"/></svg>
+          Partners
+        </div>
+        <div class="nav-item" data-page="referrals">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l3 3-3 3M6 15l-3-3 3-3"/><path d="M15 6H8a3 3 0 000 6h2a3 3 0 010 6H3"/></svg>
+          Referrals
+        </div>
+        <div class="nav-item" data-page="data-health">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 2v14M2 9h14"/><circle cx="9" cy="9" r="7"/></svg>
+          Data health
+        </div>
+        <div class="nav-item" data-page="add-cities">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="7" r="4"/><path d="M9 11v5M6 14h6"/></svg>
+          Add cities
+        </div>
+      </nav>
+      <div class="bottom-nav">
+        <div class="divider"></div>
+        <div class="nav-item" data-page="settings">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="2.5"/><path d="M9 2v2m0 10v2M2 9h2m10 0h2M4.2 4.2l1.4 1.4m7 7l1.4 1.4M13.8 4.2l-1.4 1.4m-7 7l-1.4 1.4"/></svg>
+          Settings
+        </div>
+        <div class="nav-item" id="nav-sign-out">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3H4a1 1 0 00-1 1v10a1 1 0 001 1h2M11 12l3-3-3-3M7 9h7"/></svg>
+          Sign out
+        </div>
       </div>
-    </header>
+    </aside>
 
-    <div id="err" class="err" hidden></div>
+    <!-- ---- main ---- -->
+    <div class="main">
+      <div class="topbar">
+        <div>
+          <h1 id="page-title">Engagement</h1>
+          <div class="subtitle" id="subtitle">How JoeQuest is being used</div>
+        </div>
+        <div class="admin-chip">
+          <div>
+            <div style="font-weight:600;font-size:13px" id="admin-name">Admin</div>
+            <div class="admin-label">Admin</div>
+          </div>
+          <div class="avatar" id="admin-avatar">A</div>
+        </div>
+      </div>
 
-    <div class="grid">
-      <div class="stat"><div class="v" id="stat-all">—</div><div class="k">events · all time</div></div>
-      <div class="stat"><div class="v" id="stat-window">—</div><div class="k">events · window</div></div>
-      <div class="stat"><div class="v" id="stat-unique">—</div><div class="k">unique visitors</div></div>
-      <div class="stat"><div class="v" id="stat-funnel-conv">—</div><div class="k">app_open → favourite</div></div>
-    </div>
+      <!-- analytics page -->
+      <div class="content" id="page-analytics">
+        <div id="err" class="err-bar" hidden></div>
 
-    <section>
-      <h2>Funnel (window)</h2>
-      <div id="funnel-rows"></div>
-    </section>
+        <div class="kpi-row">
+          <div class="kpi">
+            <div class="label">Active today</div>
+            <div class="value" id="kpi-today">—</div>
+            <div class="delta flat" id="kpi-today-d">—</div>
+          </div>
+          <div class="kpi">
+            <div class="label">7-day actives</div>
+            <div class="value" id="kpi-7d">—</div>
+            <div class="delta flat" id="kpi-7d-d">—</div>
+          </div>
+          <div class="kpi">
+            <div class="label">Picks revealed</div>
+            <div class="value" id="kpi-picks">—</div>
+            <div class="delta flat" id="kpi-picks-d">—</div>
+          </div>
+          <div class="kpi">
+            <div class="label">Cafes saved</div>
+            <div class="value" id="kpi-favs">—</div>
+            <div class="delta flat" id="kpi-favs-d">—</div>
+          </div>
+        </div>
 
-    <section>
-      <h2>Events by day</h2>
-      <div id="day-rows"></div>
-    </section>
+        <div class="mid-row">
+          <div class="card">
+            <h2>Core funnel</h2>
+            <div id="funnel"></div>
+          </div>
+          <div class="card">
+            <h2>Events per day <span style="font-weight:400;text-transform:none;letter-spacing:0">(30 days)</span></h2>
+            <div class="spark-container" id="spark"></div>
+            <div class="spark-labels" id="spark-labels"></div>
+          </div>
+        </div>
 
-    <section>
-      <h2>Events by name</h2>
-      <div id="name-rows"></div>
-    </section>
+        <div class="bot-row">
+          <div class="card">
+            <h2>Traffic by city</h2>
+            <div id="city-list"></div>
+          </div>
+          <div class="card">
+            <h2>Top cafes opened</h2>
+            <div id="cafe-list"></div>
+          </div>
+          <div class="card">
+            <h2>Other signals</h2>
+            <div id="signals"></div>
+          </div>
+        </div>
+      </div>
 
-    <section>
-      <h2>Events by view (path)</h2>
-      <div id="path-rows"></div>
-    </section>
-
-    <div class="footer">
-      JoeQuest admin · token in URL only · no PII collected · <code>events</code> table on Supabase
+      <!-- coming soon placeholder -->
+      <div id="page-coming-soon">
+        <h2 id="coming-soon-title">Coming soon</h2>
+        <p>This section is being built in a future sprint.</p>
+      </div>
     </div>
   </div>
+</div>
 
-  <script>
-    const params = new URLSearchParams(location.search);
-    const token = params.get("token");
+<script>
+const SESSION_KEY = "jq.admin.token";
+const SESSION_EMAIL = "jq.admin.email";
+let token = sessionStorage.getItem(SESSION_KEY) || "";
+let adminEmail = sessionStorage.getItem(SESSION_EMAIL) || "";
 
-    const fmt = (n) => (n == null ? "—" : n.toLocaleString());
-    const $ = (id) => document.getElementById(id);
+const $ = (id) => document.getElementById(id);
+const fmt = (n) => (n == null ? "—" : n.toLocaleString());
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
-    function bar(label, value, max, kind = "crema") {
-      const pct = max > 0 ? Math.max(0, Math.round((value / max) * 100)) : 0;
-      const safeLabel = String(label).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-      return `
-        <div class="bar-row">
-          <div class="label"><code>${safeLabel}</code></div>
-          <div class="track"><div class="fill ${kind}" style="width:${pct}%"></div></div>
-          <div class="n">${fmt(value)}</div>
-        </div>
-      `;
+function deltaHTML(current, prior, id) {
+  const el = $(id);
+  if (prior === 0 && current === 0) { el.textContent = "—"; el.className = "delta flat"; return; }
+  if (prior === 0) { el.textContent = "new"; el.className = "delta up"; return; }
+  const pct = Math.round(((current - prior) / prior) * 100);
+  if (pct > 0) { el.textContent = "+" + pct + "% vs prior"; el.className = "delta up"; }
+  else if (pct < 0) { el.textContent = pct + "% vs prior"; el.className = "delta down"; }
+  else { el.textContent = "0% vs prior"; el.className = "delta flat"; }
+}
+
+function showShell() {
+  $("login-screen").style.display = "none";
+  $("shell").style.display = "block";
+  const initial = (adminEmail || "A")[0].toUpperCase();
+  $("admin-avatar").textContent = initial;
+  $("admin-name").textContent = adminEmail.split("@")[0] || "Admin";
+  loadStats();
+}
+
+function showLogin() {
+  $("login-screen").style.display = "block";
+  $("shell").style.display = "none";
+  sessionStorage.removeItem(SESSION_KEY);
+  sessionStorage.removeItem(SESSION_EMAIL);
+  token = "";
+  adminEmail = "";
+}
+
+// Nav
+document.querySelectorAll(".nav-item[data-page]").forEach(el => {
+  el.addEventListener("click", () => {
+    document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
+    el.classList.add("active");
+    const page = el.dataset.page;
+    if (page === "analytics") {
+      $("page-analytics").style.display = "block";
+      $("page-coming-soon").style.display = "none";
+      $("page-title").textContent = "Engagement";
+      $("subtitle").textContent = "How JoeQuest is being used";
+    } else {
+      $("page-analytics").style.display = "none";
+      $("page-coming-soon").style.display = "block";
+      $("coming-soon-title").textContent = el.textContent.trim();
+      $("page-title").textContent = el.textContent.trim();
+      $("subtitle").textContent = "Coming in a future sprint";
     }
+  });
+});
+$("nav-sign-out").addEventListener("click", showLogin);
 
-    async function load() {
-      $("err").hidden = true;
-      const days = $("window").value;
-      const url = `/api/admin/stats?days=${encodeURIComponent(days)}&token=${encodeURIComponent(token || "")}`;
-      let s;
-      try {
-        const r = await fetch(url);
-        if (!r.ok) {
-          const j = await r.json().catch(() => ({}));
-          throw new Error(j.error || ("HTTP " + r.status));
-        }
-        s = await r.json();
-      } catch (e) {
-        $("err").hidden = false;
-        $("err").textContent = "Couldn't load stats: " + e.message;
-        return;
-      }
+// Login
+$("login-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const email = $("email").value.trim();
+  const password = $("password").value;
+  $("login-err").textContent = "";
+  $("login-btn").disabled = true;
+  try {
+    const r = await fetch("/api/admin/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || "Login failed");
+    token = j.access_token;
+    adminEmail = j.email || email;
+    sessionStorage.setItem(SESSION_KEY, token);
+    sessionStorage.setItem(SESSION_EMAIL, adminEmail);
+    showShell();
+  } catch (err) {
+    $("login-err").textContent = err.message;
+  } finally {
+    $("login-btn").disabled = false;
+  }
+});
 
-      $("generated").textContent = "Generated " + new Date(s.generatedAt).toLocaleString() + " · last " + s.windowDays + " day" + (s.windowDays === 1 ? "" : "s");
-      $("stat-all").textContent = fmt(s.totalAllTime);
-      $("stat-window").textContent = fmt(s.totalInWindow);
-      $("stat-unique").textContent = fmt(s.uniqueClients);
+// Stats
+async function loadStats() {
+  $("err").hidden = true;
+  let s;
+  try {
+    const r = await fetch("/api/admin/stats?days=30", {
+      headers: { "Authorization": "Bearer " + token },
+    });
+    if (r.status === 403 || r.status === 401) { showLogin(); return; }
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    s = await r.json();
+  } catch (e) {
+    $("err").hidden = false;
+    $("err").textContent = "Couldn't load stats: " + e.message;
+    return;
+  }
 
-      // Funnel
-      const order = ["app_open", "cafe_open", "pick_reveal", "favourite_add"];
-      const fmax = Math.max(1, ...order.map(k => s.funnel?.[k] ?? 0));
-      $("funnel-rows").innerHTML = order.map(k => bar(k, s.funnel?.[k] ?? 0, fmax, "funnel")).join("");
-      const conv = (s.funnel?.app_open || 0) > 0
-        ? Math.round(((s.funnel?.favourite_add || 0) / s.funnel.app_open) * 100) + "%"
-        : "—";
-      $("stat-funnel-conv").textContent = conv;
+  $("subtitle").textContent = "How JoeQuest is being used · last updated " + new Date(s.generatedAt).toLocaleTimeString();
 
-      // Days
-      const dayKeys = s.dayKeys || Object.keys(s.byDay || {}).sort();
-      const dmax = Math.max(1, ...dayKeys.map(d => s.byDay?.[d] ?? 0));
-      $("day-rows").innerHTML = dayKeys.length
-        ? dayKeys.map(d => bar(d, s.byDay?.[d] ?? 0, dmax)).join("")
-        : `<div class="empty">No events in window.</div>`;
+  // KPIs
+  $("kpi-today").textContent = fmt(s.activeUsers?.today);
+  $("kpi-7d").textContent = fmt(s.activeUsers?.last7d);
+  $("kpi-picks").textContent = fmt(s.funnel?.pick_reveal ?? 0);
+  $("kpi-favs").textContent = fmt(s.funnel?.favourite_add ?? 0);
 
-      // Names (sorted desc)
-      const names = Object.entries(s.byName || {}).sort((a, b) => b[1] - a[1]);
-      const nmax = Math.max(1, ...names.map(([, v]) => v));
-      $("name-rows").innerHTML = names.length
-        ? names.map(([k, v]) => bar(k, v, nmax)).join("")
-        : `<div class="empty">No events in window.</div>`;
+  deltaHTML(s.uniqueClients || 0, s.prior?.uniqueClients || 0, "kpi-today-d");
+  deltaHTML(s.activeUsers?.last7d || 0, s.prior?.uniqueClients || 0, "kpi-7d-d");
+  deltaHTML(s.funnel?.pick_reveal || 0, s.prior?.pickReveals || 0, "kpi-picks-d");
+  deltaHTML(s.funnel?.favourite_add || 0, s.prior?.favAdds || 0, "kpi-favs-d");
 
-      // Paths
-      const paths = Object.entries(s.byPath || {}).sort((a, b) => b[1] - a[1]);
-      const pmax = Math.max(1, ...paths.map(([, v]) => v));
-      $("path-rows").innerHTML = paths.length
-        ? paths.map(([k, v]) => bar(k, v, pmax, "path")).join("")
-        : `<div class="empty">No path data yet.</div>`;
-    }
+  // Funnel
+  const steps = [
+    { key: "app_open", label: "App open", color: "#D98324" },
+    { key: "cafe_open", label: "Cafe open", color: "#C47520" },
+    { key: "pick_reveal", label: "Pick reveal", color: "#A8631A" },
+    { key: "favourite_add", label: "Favourite", color: "#8C5115" },
+  ];
+  const fmax = Math.max(1, ...steps.map(st => s.funnel?.[st.key] ?? 0));
+  $("funnel").innerHTML = steps.map((st, i) => {
+    const v = s.funnel?.[st.key] ?? 0;
+    const pct = Math.max(3, Math.round((v / fmax) * 100));
+    const prev = i > 0 ? (s.funnel?.[steps[i - 1].key] ?? 0) : 0;
+    const conv = (i > 0 && prev > 0) ? Math.round((v / prev) * 100) + "%" : "";
+    return `<div class="funnel-step">
+      <div class="funnel-label">${st.label}</div>
+      <div class="funnel-track">
+        <div class="funnel-fill" style="width:${pct}%;background:${st.color}">${fmt(v)}</div>
+      </div>
+      <div class="funnel-conv">${conv}</div>
+    </div>`;
+  }).join("");
 
-    document.getElementById("refresh").addEventListener("click", load);
-    document.getElementById("window").addEventListener("change", load);
-    load();
-  </script>
+  // Sparkline
+  const dayKeys = s.dayKeys || [];
+  const dmax = Math.max(1, ...dayKeys.map(d => s.byDay?.[d] ?? 0));
+  $("spark").innerHTML = dayKeys.map(d => {
+    const v = s.byDay?.[d] ?? 0;
+    const h = Math.max(2, Math.round((v / dmax) * 100));
+    return `<div class="spark-bar" style="height:${h}%" title="${d}: ${v}"></div>`;
+  }).join("");
+  if (dayKeys.length) {
+    $("spark-labels").innerHTML = `<span>${dayKeys[0]}</span><span>${dayKeys[dayKeys.length - 1]}</span>`;
+  }
+
+  // City list
+  const cities = Object.entries(s.byCity || {}).sort((a, b) => b[1] - a[1]);
+  const cmax = Math.max(1, ...cities.map(([, v]) => v));
+  $("city-list").innerHTML = cities.length
+    ? cities.slice(0, 10).map(([k, v]) => `<div class="list-row">
+        <div class="name">${esc(k)}</div>
+        <div class="mini-bar"><div class="mini-fill" style="width:${Math.round((v/cmax)*100)}%"></div></div>
+        <div class="count">${fmt(v)}</div>
+      </div>`).join("")
+    : `<div class="empty">No city data yet. Add city to event props to populate.</div>`;
+
+  // Top cafes
+  const cafes = s.topCafes || [];
+  const cafeMax = Math.max(1, ...cafes.map(c => c.count));
+  $("cafe-list").innerHTML = cafes.length
+    ? cafes.slice(0, 8).map(c => `<div class="list-row">
+        <div class="name">${esc(c.name)}</div>
+        <div class="mini-bar"><div class="mini-fill" style="width:${Math.round((c.count/cafeMax)*100)}%"></div></div>
+        <div class="count">${fmt(c.count)}</div>
+      </div>`).join("")
+    : `<div class="empty">No cafe_open events yet.</div>`;
+
+  // Signals
+  const signupTotal = Object.values(s.signupsByDay || {}).reduce((a, b) => a + b, 0);
+  $("signals").innerHTML = `<div class="signals-grid">
+    <div class="signal-item"><div class="sv">${fmt(s.signals?.tasteProfileCount)}</div><div class="sk">Taste profiles</div></div>
+    <div class="signal-item"><div class="sv">${fmt(s.signals?.offerRevealCount)}</div><div class="sk">Offers revealed</div></div>
+    <div class="signal-item"><div class="sv">${fmt(s.signals?.helpSubmitCount)}</div><div class="sk">Help submissions</div></div>
+    <div class="signal-item"><div class="sv">${fmt(signupTotal)}</div><div class="sk">Signups</div></div>
+  </div>`;
+}
+
+// Auto-restore session
+if (token) showShell();
+</script>
 </body>
 </html>

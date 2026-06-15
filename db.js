@@ -106,6 +106,26 @@ export async function verifyJwt(jwt) {
 }
 
 // ----------------------------------------------------------------------------
+// ADMIN — role check via admin_users table
+// ----------------------------------------------------------------------------
+// admin_users is a simple table: (user_id uuid PK references auth.users).
+// A user is admin iff a row exists. RLS disabled — only service-role reads it.
+export async function isAdmin(userId) {
+  if (!supabase || !userId) return false;
+  try {
+    const { data, error } = await supabase
+      .from("admin_users")
+      .select("user_id")
+      .eq("user_id", userId)
+      .maybeSingle();
+    if (error) { console.warn("isAdmin check failed:", error.message); return false; }
+    return !!data;
+  } catch {
+    return false;
+  }
+}
+
+// ----------------------------------------------------------------------------
 // FAVOURITES — user-keyed (Stage 1)
 // ----------------------------------------------------------------------------
 // Logged-in users: rows live in Supabase, scoped by user_id.
@@ -303,22 +323,24 @@ export function memEventsSnapshot() {
 // For MVP volume we just fetch the rows and tally in JS. At scale this
 // becomes a SQL view or RPC.
 export async function computeEventStats({ days = 7 } = {}) {
-  const sinceIso = new Date(Date.now() - days * 86400000).toISOString();
+  const now = Date.now();
+  const sinceIso = new Date(now - days * 86400000).toISOString();
+  const today = new Date(now).toISOString().slice(0, 10);
+  const since7d = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+  const since30d = new Date(now - 30 * 86400000).toISOString().slice(0, 10);
 
   let rows = [];
   let totalAllTime = 0;
 
   if (supabase) {
-    // Total all-time (cheap COUNT)
     const { count } = await supabase
       .from("events")
       .select("id", { count: "exact", head: true });
     totalAllTime = count ?? 0;
 
-    // Recent window rows (capped to last 5000 to avoid runaway)
     const { data, error } = await supabase
       .from("events")
-      .select("client_id, name, path, created_at")
+      .select("client_id, user_id, name, props, path, created_at")
       .gte("created_at", sinceIso)
       .order("created_at", { ascending: false })
       .limit(5000);
@@ -329,12 +351,10 @@ export async function computeEventStats({ days = 7 } = {}) {
     totalAllTime = memEvents.length;
   }
 
-  // Tallies
   const uniqClients = new Set();
   const byName = {};
   const byDay = {};
   const byPath = {};
-  // Funnel — unique clients hitting each step at least once in the window
   const funnelClients = {
     app_open: new Set(),
     cafe_open: new Set(),
@@ -342,19 +362,55 @@ export async function computeEventStats({ days = 7 } = {}) {
     favourite_add: new Set(),
   };
 
+  const activeToday = new Set();
+  const active7d = new Set();
+  const active30d = new Set();
+  const signedInClients = new Set();
+  const anonClients = new Set();
+
+  const byCity = {};
+  const topCafes = {};
+
+  let tasteProfileCount = 0;
+  let offerRevealCount = 0;
+  let helpSubmitCount = 0;
+  const signupsByDay = {};
+
   for (const r of rows) {
-    uniqClients.add(r.client_id);
+    const cid = r.client_id;
+    const day = (r.created_at || "").slice(0, 10);
+    uniqClients.add(cid);
     byName[r.name] = (byName[r.name] || 0) + 1;
     if (r.path) byPath[r.path] = (byPath[r.path] || 0) + 1;
-    const day = (r.created_at || "").slice(0, 10);
     if (day) byDay[day] = (byDay[day] || 0) + 1;
-    if (funnelClients[r.name]) funnelClients[r.name].add(r.client_id);
+    if (funnelClients[r.name]) funnelClients[r.name].add(cid);
+
+    if (day >= today) activeToday.add(cid);
+    if (day >= since7d) active7d.add(cid);
+    if (day >= since30d) active30d.add(cid);
+
+    if (r.user_id) signedInClients.add(cid);
+    else anonClients.add(cid);
+
+    const props = r.props || {};
+    if ((r.name === "view_change" || r.name === "cafe_open") && props.city) {
+      byCity[props.city] = (byCity[props.city] || 0) + 1;
+    }
+    if (r.name === "cafe_open" && props.place_id) {
+      const key = props.place_id;
+      if (!topCafes[key]) topCafes[key] = { place_id: key, name: props.cafe_name || key, count: 0 };
+      topCafes[key].count++;
+    }
+
+    if (r.name === "taste_profile_complete") tasteProfileCount++;
+    if (r.name === "offer_reveal") offerRevealCount++;
+    if (r.name === "help_submit") helpSubmitCount++;
+    if (r.name === "signup" && day) signupsByDay[day] = (signupsByDay[day] || 0) + 1;
   }
 
-  // Fill missing days with 0
   const dayKeys = [];
   for (let i = days - 1; i >= 0; i--) {
-    const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
+    const d = new Date(now - i * 86400000).toISOString().slice(0, 10);
     dayKeys.push(d);
     if (!(d in byDay)) byDay[d] = 0;
   }
@@ -366,16 +422,54 @@ export async function computeEventStats({ days = 7 } = {}) {
     favourite_add: funnelClients.favourite_add.size,
   };
 
+  const topCafesList = Object.values(topCafes).sort((a, b) => b.count - a.count).slice(0, 15);
+
+  // Prior-period comparison for KPI deltas (e.g. if window=7d, prior = 7d before that)
+  const priorSinceIso = new Date(now - days * 2 * 86400000).toISOString();
+  let priorRows = [];
+  if (supabase) {
+    const { data } = await supabase
+      .from("events")
+      .select("client_id, name, created_at")
+      .gte("created_at", priorSinceIso)
+      .lt("created_at", sinceIso)
+      .order("created_at", { ascending: false })
+      .limit(5000);
+    priorRows = data || [];
+  } else {
+    priorRows = memEvents.filter((e) => e.created_at >= priorSinceIso && e.created_at < sinceIso);
+  }
+  const priorClients = new Set();
+  let priorPickReveals = 0;
+  let priorFavAdds = 0;
+  for (const r of priorRows) {
+    priorClients.add(r.client_id);
+    if (r.name === "pick_reveal") priorPickReveals++;
+    if (r.name === "favourite_add") priorFavAdds++;
+  }
+
   return {
     windowDays: days,
     totalAllTime,
     totalInWindow: rows.length,
     uniqueClients: uniqClients.size,
+    activeUsers: { today: activeToday.size, last7d: active7d.size, last30d: active30d.size },
+    signedIn: signedInClients.size,
+    anonymous: anonClients.size - [...signedInClients].filter(c => anonClients.has(c)).length,
     byName,
     byPath,
     byDay,
     dayKeys,
     funnel,
+    prior: {
+      uniqueClients: priorClients.size,
+      pickReveals: priorPickReveals,
+      favAdds: priorFavAdds,
+    },
+    byCity,
+    topCafes: topCafesList,
+    signals: { tasteProfileCount, offerRevealCount, helpSubmitCount },
+    signupsByDay,
     generatedAt: new Date().toISOString(),
   };
 }

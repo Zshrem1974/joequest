@@ -1,5 +1,92 @@
 # CHANGES
 
+## Admin console: role-based admin auth + analytics dashboard (2026-06-15)
+
+### Stage 1 — Admin authentication (JWT + admin_users table)
+
+Replaces the `ADMIN_TOKEN` shared-secret gate with proper role-based admin auth
+built on the existing Supabase Auth.
+
+**Mechanism: `admin_users` table.** A user is an admin iff a row exists with
+their `user_id`. Simple, auditable, no hardcoded email lists.
+
+**Auth flow:**
+1. Admin visits `/admin` → login form (email + password).
+2. `POST /api/admin/login` signs in via Supabase Auth, verifies the password,
+   then checks `admin_users` for the user's id. Returns a JWT access token
+   only if both checks pass.
+3. All `/api/admin/*` routes use `requireAdmin` middleware: verifies the JWT
+   via `supabase.auth.getUser()`, then checks `admin_users`. Non-admins get 403.
+4. `ADMIN_TOKEN` kept as break-glass fallback (header or query param) for
+   emergencies when the DB is unreachable or no admin user exists yet.
+
+**Security:**
+- Service-role key stays server-side only; browser uses anon key for the login call.
+- `admin_users` table has RLS enabled with no policies — only service-role can read.
+- Admin flag is not inferable or settable from the client.
+- JWT verified server-side on every request; session stored in sessionStorage
+  (not localStorage) so it doesn't persist across browser sessions.
+
+**SQL to create the admin_users table and promote your account:**
+
+```sql
+create table if not exists admin_users (
+  user_id uuid primary key references auth.users(id) on delete cascade
+);
+alter table admin_users enable row level security;
+-- No policies — only service-role reads this table.
+
+-- Promote your account (replace with your actual user id from auth.users):
+-- Find your user_id: select id, email from auth.users where email = 'your@email.com';
+insert into admin_users (user_id) values ('<your-user-id-here>');
+
+notify pgrst, 'reload schema';
+```
+
+**ADMIN_TOKEN disposition:** Kept as a break-glass fallback. If `ADMIN_TOKEN`
+env var is set, any request with the correct token in `X-Admin-Token` header
+or `?token=` query param is admitted regardless of JWT auth. This is for
+emergencies only — the primary auth path is JWT + admin_users.
+
+### Stage 2 — Analytics / engagement dashboard
+
+The admin console's landing view. All data from the existing `events` table,
+server-aggregated, admin-only.
+
+**Dashboard sections:**
+
+1. **Active users** — unique client_ids today / last 7 days / last 30 days.
+   Signed-in vs anonymous split.
+2. **Core funnel** — app_open → cafe_open → pick_reveal → favourite_add,
+   with counts and conversion % between each step + end-to-end conversion.
+3. **Events per day** — last 30 days, simple bar chart.
+4. **Traffic by city** — from view_change / cafe_open props (if city is
+   captured in event props; empty state shown if not yet).
+5. **Top cafes opened** — most-opened cafes by place_id, top 15.
+6. **Other signals** — taste_profile_complete count, offer_reveal count,
+   help_submit count.
+7. **Events by name** — all event types ranked by count.
+8. **Signups over time** — signup events by day.
+
+**Implementation notes:**
+- All aggregation server-side; browser receives only small aggregate numbers.
+- Dashboard endpoints are admin-only (requireAdmin middleware).
+- Honest empty states throughout.
+- computeEventStats now fetches user_id + props to power the richer metrics.
+
+### Files changed
+
+- `db.js` — added `isAdmin(userId)`, upgraded `computeEventStats` with
+  active-user windows, signed-in/anon split, city breakdown, top cafes,
+  signals, signups-by-day.
+- `server.js` — replaced `adminAllowed` with `requireAdmin` middleware
+  (JWT + admin_users + ADMIN_TOKEN fallback). Added `POST /api/admin/login`.
+  `/admin` now serves HTML unconditionally (auth enforced on API, not page).
+- `admin-views/admin.html` — rebuilt with login screen + full dashboard.
+- `tests/unit/server.test.js` — updated admin stats test (401 → 403).
+
+---
+
 ## Session — Real MapLibre street map (2026-06-01)
 
 ### MapLibre GL JS replaces stylized SVG canvas
