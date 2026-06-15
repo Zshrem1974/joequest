@@ -126,6 +126,42 @@ export async function isAdmin(userId) {
 }
 
 // ----------------------------------------------------------------------------
+// MEMBERS — admin user listing + password reset
+// ----------------------------------------------------------------------------
+export async function listMembers() {
+  if (!supabase) return [];
+  const { data, error } = await supabase.auth.admin.listUsers({ perPage: 500 });
+  if (error) throw new Error(`listMembers: ${error.message}`);
+  const users = data?.users || [];
+  // Enrich with favourites count + admin flag
+  const { data: favCounts } = await supabase
+    .from("favourites")
+    .select("user_id");
+  const favMap = {};
+  for (const r of (favCounts || [])) {
+    favMap[r.user_id] = (favMap[r.user_id] || 0) + 1;
+  }
+  const { data: admins } = await supabase.from("admin_users").select("user_id");
+  const adminSet = new Set((admins || []).map(a => a.user_id));
+
+  return users.map(u => ({
+    id: u.id,
+    email: u.email,
+    created_at: u.created_at,
+    last_sign_in_at: u.last_sign_in_at,
+    favourites: favMap[u.id] || 0,
+    is_admin: adminSet.has(u.id),
+  }));
+}
+
+export async function resetMemberPassword(email) {
+  if (!supabase || !email) throw new Error("Missing email");
+  const { error } = await supabase.auth.resetPasswordForEmail(email);
+  if (error) throw new Error(`resetPassword: ${error.message}`);
+  return { ok: true };
+}
+
+// ----------------------------------------------------------------------------
 // FAVOURITES — user-keyed (Stage 1)
 // ----------------------------------------------------------------------------
 // Logged-in users: rows live in Supabase, scoped by user_id.

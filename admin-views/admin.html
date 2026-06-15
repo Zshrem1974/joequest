@@ -329,6 +329,62 @@
       color: var(--espresso);
       margin-bottom: 8px;
     }
+
+    /* ---- members table ---- */
+    #page-members { display: none; }
+    .members-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .members-table th {
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      font-weight: 600;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .members-table td {
+      padding: 10px 12px;
+      border-bottom: 0.5px solid var(--line);
+      vertical-align: middle;
+    }
+    .members-table tr:hover td { background: rgba(217,131,36,0.04); }
+    .badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .badge.admin { background: rgba(124,92,255,0.12); color: var(--purple); }
+    .badge.member { background: rgba(59,125,90,0.10); color: var(--mint); }
+    .btn-sm {
+      font-family: var(--body);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 0.5px solid var(--line);
+      background: var(--oat);
+      color: var(--espresso);
+      cursor: pointer;
+    }
+    .btn-sm:hover { background: var(--cream); }
+    .btn-sm:disabled { opacity: 0.4; cursor: not-allowed; }
+    .toast {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: var(--espresso); color: var(--cream);
+      padding: 10px 20px; border-radius: 8px;
+      font-size: 13px; font-weight: 500;
+      z-index: 999; opacity: 0; transition: opacity 0.2s;
+    }
+    .toast.show { opacity: 1; }
   </style>
 </head>
 <body>
@@ -475,6 +531,29 @@
         </div>
       </div>
 
+      <!-- members page -->
+      <div class="content" id="page-members">
+        <div id="members-err" class="err-bar" hidden></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+          <input type="text" id="members-search" placeholder="Search by email…"
+            style="padding:8px 14px;border:0.5px solid var(--line);border-radius:8px;font-family:var(--body);font-size:13px;background:var(--cream);color:var(--espresso);width:260px;outline:none" />
+          <div style="font-size:13px;color:var(--muted)" id="members-count"></div>
+        </div>
+        <table class="members-table">
+          <thead>
+            <tr>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Joined</th>
+              <th>Last sign-in</th>
+              <th style="text-align:right">Favourites</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="members-tbody"></tbody>
+        </table>
+      </div>
+
       <!-- coming soon placeholder -->
       <div id="page-coming-soon">
         <h2 id="coming-soon-title">Coming soon</h2>
@@ -523,19 +602,25 @@ function showLogin() {
 }
 
 // Nav
+const pages = ["page-analytics", "page-members", "page-coming-soon"];
+function showPage(id) { pages.forEach(p => $(p).style.display = p === id ? "block" : "none"); }
+
 document.querySelectorAll(".nav-item[data-page]").forEach(el => {
   el.addEventListener("click", () => {
     document.querySelectorAll(".nav-item").forEach(n => n.classList.remove("active"));
     el.classList.add("active");
     const page = el.dataset.page;
     if (page === "analytics") {
-      $("page-analytics").style.display = "block";
-      $("page-coming-soon").style.display = "none";
+      showPage("page-analytics");
       $("page-title").textContent = "Engagement";
       $("subtitle").textContent = "How JoeQuest is being used";
+    } else if (page === "members") {
+      showPage("page-members");
+      $("page-title").textContent = "Members";
+      $("subtitle").textContent = "Registered users and account management";
+      loadMembers();
     } else {
-      $("page-analytics").style.display = "none";
-      $("page-coming-soon").style.display = "block";
+      showPage("page-coming-soon");
       $("coming-soon-title").textContent = el.textContent.trim();
       $("page-title").textContent = el.textContent.trim();
       $("subtitle").textContent = "Coming in a future sprint";
@@ -665,6 +750,78 @@ async function loadStats() {
     <div class="signal-item"><div class="sv">${fmt(s.signals?.helpSubmitCount)}</div><div class="sk">Help submissions</div></div>
     <div class="signal-item"><div class="sv">${fmt(signupTotal)}</div><div class="sk">Signups</div></div>
   </div>`;
+}
+
+// Members
+let membersCache = [];
+
+async function loadMembers() {
+  $("members-err").hidden = true;
+  try {
+    const r = await fetch("/api/admin/members", {
+      headers: { "Authorization": "Bearer " + token },
+    });
+    if (r.status === 403 || r.status === 401) { showLogin(); return; }
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const j = await r.json();
+    membersCache = j.members || j;
+    renderMembers(membersCache);
+  } catch (e) {
+    $("members-err").hidden = false;
+    $("members-err").textContent = "Couldn't load members: " + e.message;
+  }
+}
+
+function renderMembers(list) {
+  $("members-count").textContent = list.length + " member" + (list.length !== 1 ? "s" : "");
+  $("members-tbody").innerHTML = list.map(u => {
+    const joined = u.created_at ? new Date(u.created_at).toLocaleDateString() : "—";
+    const lastIn = u.last_sign_in_at ? new Date(u.last_sign_in_at).toLocaleDateString() : "Never";
+    const badge = u.is_admin
+      ? '<span class="badge admin">Admin</span>'
+      : '<span class="badge member">Member</span>';
+    return `<tr>
+      <td>${esc(u.email)}</td>
+      <td>${badge}</td>
+      <td>${joined}</td>
+      <td>${lastIn}</td>
+      <td style="text-align:right">${u.favourites}</td>
+      <td style="text-align:right"><button class="btn-sm" onclick="resetPw('${u.id}','${esc(u.email)}',this)">Reset password</button></td>
+    </tr>`;
+  }).join("");
+}
+
+$("members-search").addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+  renderMembers(q ? membersCache.filter(u => u.email.toLowerCase().includes(q)) : membersCache);
+});
+
+async function resetPw(id, email, btn) {
+  if (!confirm("Send password reset email to " + email + "?")) return;
+  btn.disabled = true;
+  btn.textContent = "Sending…";
+  try {
+    const r = await fetch("/api/admin/members/" + id + "/reset-password", {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + token, "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
+    if (!r.ok) { const j = await r.json(); throw new Error(j.error || "Failed"); }
+    showToast("Reset email sent to " + email);
+  } catch (e) {
+    showToast("Error: " + e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Reset password";
+  }
+}
+
+function showToast(msg) {
+  let t = document.querySelector(".toast");
+  if (!t) { t = document.createElement("div"); t.className = "toast"; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 3000);
 }
 
 // Auto-restore session

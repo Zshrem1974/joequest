@@ -46,6 +46,7 @@ import {
   getUserSettings, saveUserSettings, clearUserData,
   listActiveOffers, revealOffer, saveHelpMessage,
   saveEvent, computeEventStats,
+  listMembers, resetMemberPassword,
 } from "./db.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -515,6 +516,21 @@ app.post("/api/admin/login", async (req, res) => {
       email: data.user.email,
       user_id: data.user.id,
     });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.get("/api/admin/members", requireAdmin, async (req, res) => {
+  try {
+    res.json({ members: await listMembers() });
+  } catch (e) { res.status(500).json({ error: e.message }); }
+});
+
+app.post("/api/admin/members/:id/reset-password", requireAdmin, async (req, res) => {
+  try {
+    const email = req.body?.email;
+    if (!email) return res.status(400).json({ error: "Email required" });
+    await resetMemberPassword(email);
+    res.json({ ok: true });
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
