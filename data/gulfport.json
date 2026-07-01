@@ -2,8 +2,8 @@
   "version": 1,
   "citySlug": "gulfport",
   "city": "Gulfport, MS",
-  "generatedAt": "2026-05-26T19:57:34.421Z",
-  "count": 9,
+  "generatedAt": "2026-07-01T11:53:40.992Z",
+  "count": 12,
   "cafes": [
     {
       "city": "gulfport",
@@ -13,17 +13,17 @@
       "lat": 30.369958,
       "lng": -89.0931768,
       "rating": 4.8,
-      "reviews": 585,
+      "reviews": 592,
       "price": "$",
       "types": [
         "cafe",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 5 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -108,7 +108,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=10589133665332879525&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJRQwHyNgXnIgRpeBLCfco9JI%2Fphotos%2FAb43m-sJj2ouerNVQmneyf_XuWLjyQoYZVISxQK6vF9yxnO-4sm9rLJlcGkL0q6ZJ720ZY6wqQV_WQJ7J6PV3ts2TF5Mu6tP4V6qDgwWpLdFNoPT6Z8tUuvtrCykEJg89umczaC5ZOyXYqQ742jPezNm9TDDJLSLOifsHjkG_jfG79rnyZ6jtztyguFei4sJ0hWisxcnkTONcDmbqfXigVwl9FvSQUzRgyPaBqivsRU5BqJUGGFw3saPkmcIfU396nfsG0t6YkUNqoI7UN64OOO10HHa-GVRJMMXkLYrBcmhQCiu8zDk3qtF0eJ7Mw8e2jphZYl3J3W73Ry8DLMScrrDyY-WxrZAnoxm34CguoIlxq2yJ2nrfQqHpnKzBN2bLjkjMCrQPWwJfemENPHZWJLkJqr94WIsv9r3DwvS4lX_AYMiSg&w=800"
+      "photo": "/api/photo?name=places%2FChIJRQwHyNgXnIgRpeBLCfco9JI%2Fphotos%2FAaVGc3mNf8X_BapUwYAzGZntub4AHeF6VKKNUW603cCBOot6l2_WVaK2XgdymqrkXBaa-nyO5wJE3Rmp-8CaEQT1XRLItwsh7DfcxNYED8CV1VZgSjoWs4P35y90c-Wdeo1Eg47e6vis5-uP6RCLbzc8PjlVtJYaHcXIwsQaMyR4oG-Hzac441T7GP14d16-OG42jeu67bT2jP_vgv69p6B-35_QdjG4yd15H-es85JWJ6eC-Y0x3ItSjma3GY237mRq50DPFNNBbjMMdPZdhjSW7AEYZ2_MQpPa-9NNJcakQaZ3QBKiGHQoWHI9Sx6x421m2Tq_dmZThKX8bhra2aTkdlxYLQlU5AVJZf9PrDlpck1kTaj3rea7I2ECDttaTjy14iwSH3JGX3LhGt8Uibt16UHeEXlqEaDbqPXuQ5UFAp1lAg&w=800"
     },
     {
       "city": "gulfport",
@@ -118,7 +118,7 @@
       "lat": 30.449797,
       "lng": -89.0936729,
       "rating": 4.9,
-      "reviews": 278,
+      "reviews": 284,
       "price": "$",
       "types": [
         "coffee_stand",
@@ -224,7 +224,7 @@
         "Sunday: 7:00 AM – 4:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=16464358893097564648&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJI2nY0QsVnIgR6LmfbS4nfeQ%2Fphotos%2FAb43m-s-RiNWMKaY_X7BPiUO9aME6PfZUvLhkb2o0u06xSipcsjxzW20h-JpYJXgWG-2iCyKftewcy-tOQnBME2sz1Anulyh3piR5W2In82aCzfglm-py7y9_yvjf538OB2fgYdH6w0BXsF1rW0oNJl0SBrxArzFW_-tvomjpPQnRp0gaD-r23PRiu0JH9u2AETMQl1HR58B48ot_0VRQpJ0P-NxNFjl0vbqQPYLeOQIzOB4MoJmXrRNzpJ7RpcD27lncClq7psLsvGAQLhJQKnACz1RGL7OzI1MJKpybavjC75o1-ZNMgnH1yNA49o9-77DsU4ugKUUnrmSXGuGh3VqvKgNCkwwq8HLeWDyQdDx5HkgkRQEnyo5bR76olLLj1uitmR8cQLGiocNXsBH5tcd48lLS2Sz86dJkqzNFMREugKr&w=800"
+      "photo": "/api/photo?name=places%2FChIJI2nY0QsVnIgR6LmfbS4nfeQ%2Fphotos%2FAaVGc3klmwUpjTUfIY3pHAyH-xWFbjN6D1WhmSXQhH0BqQbTMgdxd682aEt-c6f7F2LqKS_6l0V75iGnp7YpAZCOQpeZe37lq4Nh0qm6tlkQyeSAcrCD1OFYbgNApGDybWt2hztBfr8PUE1yUgNxKuVLGzdZA6Bg4eYB7aGikUPR8Qs9HwM4YS-7NzfvS3QO10eMizgC9YilCBPCMJwzlYgltz9TIkm4_iuI8wAEqJsK3-vapBzL8xWWsSbm2KRIrQQlG9Lxwcsd940XNFH91XC4aNxN3q7U2IyW-KjuHVu33dJV-2Q1ijHfzxHgjIriUPCeuD4D5lpudASkEtOyqyG8_TGLHin98BxGfUzKTjXf1r841LgRvt9gu5EH_U1gLhgtvVrqZow6arkt621GwVJxlaXtM5FkC3_FDLWyA_uwLFO2&w=800"
     },
     {
       "city": "gulfport",
@@ -234,20 +234,20 @@
       "lat": 30.3690487,
       "lng": -89.0858082,
       "rating": 4.7,
-      "reviews": 413,
+      "reviews": 419,
       "price": "$$",
       "types": [
         "coffee_shop",
         "cafe",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": false,
-      "hoursLabel": "Opens 6 AM Wed",
+      "openNow": true,
+      "hoursLabel": "Closes 2 PM",
       "periods": [
         {
           "open": {
@@ -332,7 +332,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=6059295971409763966&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJgQ0GdM4XnIgRfp7VHJXxFlQ%2Fphotos%2FAb43m-vW94gvBtex94hvJZhwCeHMmlGAKPjNCmaRcFGPSWTxlAlvWrUfguUf9axnJlMAd-iCyyoGq6rkJ5DbPud-H4GFvkV0QdELy3vAF5o1lTxhYmuW1d8zD10jhkM7qwfMKPMzivcl9js9jyRyTOAThlyOjsPeC2IUOM-E15YF0dUog4KgUWeyNsZ4xPjvvNlheT2tAEkOTqNxQEtusWmGbnAz2NRM1PeJSoRNujpi5D7VDB6aZmcD3ph6wKQo9rvTAcViDj2x0byAilly0T8PxjNeIDBCv7mOjFehchJKc7ZIGt8VToNvRben5KHN0pppuVCBGLiyONWb4N8jkGzwpCSyIMTxnjlhxXot8FvG0NnkaXAxBIYUwwJIu7xPRzzZSHm69xGDCeBTQNu5G2wvQlYfNK31Etoc2XXn_FzZqgLQ2Q&w=800"
+      "photo": "/api/photo?name=places%2FChIJgQ0GdM4XnIgRfp7VHJXxFlQ%2Fphotos%2FAaVGc3ndMbcQMYqSqYJiMaZLC3Xpwgal0zfayl_-OYPKdwTBIKc4FtM8HH7-uE69YTitd73rwGSw1IhomSBLn702wYopbg2ckB_xE9-ZHa_XIEejzElu3LNKWZ015UqSsE5hCvU3VdRbYfqv1Gw3T2EYK7DVcWR3GYyEMMyZdXVCrBEFJGcfy4LYYCG0Q37-5ykJrWN6qH2kG7En6c7gkVCvgM2Ko91HZacVw_0i1DGR2S9HIQ3xMLlJ9BA2sY5_WI7s_brEnFGz-Gp1wRJha_MK9YeEen4rO6D0AN7TKidq-dfUL1mIdk22jNAvDnjet5t37ZMFN5jc-TBAcR1wMJAyI4VaDEMCDmDaIV9rZY_y58Ue1B0yxQxAmWaKFW-3-ooKlQCfARY2eIqVFaaXmcjtAQLnZAKOILjDWtm_XJCQ4kHJWA&w=800"
     },
     {
       "city": "gulfport",
@@ -342,22 +342,22 @@
       "lat": 30.367545099999997,
       "lng": -89.093203,
       "rating": 4.5,
-      "reviews": 678,
+      "reviews": 689,
       "price": "$$",
       "types": [
         "cafe",
         "coffee_shop",
         "breakfast_restaurant",
-        "restaurant",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 3 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -454,7 +454,7 @@
         "Sunday: 8:00 AM – 3:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=9874792077837635287&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJdxB6QN8XnIgR145abhNPCok%2Fphotos%2FAb43m-s7RxIUJb8hFZ0Md4AD2Wyxj8tEsSqG2OmI3GDfe_GE5hLENfR9zr5b0EpDbE4vSoxM-vWV518OoLZXPA6meS-eo7KT3b-Z1GvjHj7fytgVLO5AlBoZrNsYCwQhHCtu7WZ-3ayR0gPTwnUdQawqqLq5jbg8CjRDnhAOHSO4-I4rwNhCktWpPWSt3kwjsRPYwPLhoHtt7XL-UhqiV9d-5vRm4U0F0r3abeF9rmxhcPcuDO261VGVZP2qlJ-7rXcnXwUiOvkjA1oko0jTfr1ES1pyj2VXPQIvXo2by_JCcLPC-A&w=800"
+      "photo": "/api/photo?name=places%2FChIJdxB6QN8XnIgR145abhNPCok%2Fphotos%2FAaVGc3l3ya8m-CPhp5SCaIRmt60XeyUOQKYWJESH9aZQL9qP-4ORjOOsRJ0Lfi9qMrpcV2uL4_0sYUbFb3nFqCNAsS3xmbS0onf-BFsQK0UNEmtLMWl2gSJFOav0DmrlCV94I1EO-G_E5cBEwvQQTfbo90bJWCIae9Y07XbSOH6EUDl23YG9d0ix2_SjuXux9Zcuc_1gk9fOaV9jgvanqX0vJ45k1IuEwVxQcRdOM080PbajQlNvzfMnvhSTwVLn5fThnnk2sSv8lOp2grLnaIkLWKbY-mWKxnoe3kFfQzWV_tYaMADJztW-D8rBIhPM37Nl9eHNpuR5VekIouH4ZFGCehOn3tOZmcEC5b0v8X4AQTmdVAOzTENnfaneUpYT23QT1M8Yk-b3juw5ob3LeSTWEivGNUzi4ltPK67m7wlOZCCq-R7V&w=800"
     },
     {
       "city": "gulfport",
@@ -464,20 +464,20 @@
       "lat": 30.384351499999998,
       "lng": -89.0436101,
       "rating": 4.8,
-      "reviews": 180,
+      "reviews": 189,
       "price": "$$",
       "types": [
         "coffee_shop",
         "cafe",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 3 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -574,7 +574,7 @@
         "Sunday: 7:00 AM – 3:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=12870846509337446613&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJJXKlQ90XnIgR1YiiI7VunrI%2Fphotos%2FAb43m-tDRPEaXZAf_98WJjWjapxTJdoXkHU2yjUF_1Eyu_MFNTuiUJUt72KOFEh9MU8CMJq6bcimGITp0wxr7ok_-kQFy_I-zmLsVnBlkMRGh1NNlRgAwSfbafwz4HyWWELPZhTYH1wHgHYSyOpYrJVTpvh8PctIlBrzuS3Vn6_YJw_LotHraZPLXHZmme9IWTYqno08CrCsC6Q7Vl13UaY_1PME-w6RiSkg_MIh58CLGQzpAiZNkBNLOq0OnTA3n4z0QH-LFaO3OQ_bXCNkDjvnKeErJtXMQXRPg9Nwy6aLHAh3GQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJJXKlQ90XnIgR1YiiI7VunrI%2Fphotos%2FAaVGc3kCWF1REYTYZoK_7L0dJNTynJIjuth_4s2LOA8QfqlQUKCI_y27WRvm62LRVC3xkvXuwJ69L3FKROT2eYSsADP_wIECPs9vaeLUTYR0wpkXGXoGd56irGcyzbvpg96JPL_fw1fPb7DtGvvDfhy6Dq2RLaukPzjfPho0Nkozg1uIIrumjgqPy1_ut7YQMO-ijL8ElWPkG3HVn8TyhxLF9BfUq5JSgubpCbtECpxSS5S2hlBmiAaAVDAfwAR2jXSLC7jL2t7uF_roebMCyYYof3Aw7D32XxqUamXQ1ahS-FYcO7Sna0Y6eVwcyS-btPSLuCeh6LeqF5zd5D6kLzVYNeKWpDAKtXQBFF5iHUpb04vmyiTE2EUVSWWaDJrEcHiKI57Zj7mtGkPMOHWJSOiY3ic2Dqg-xZnLzC_dtuPGmoHhhw&w=800"
     },
     {
       "city": "gulfport",
@@ -584,15 +584,15 @@
       "lat": 30.396912999999998,
       "lng": -89.035377,
       "rating": 4.6,
-      "reviews": 171,
+      "reviews": 176,
       "price": "$$",
       "types": [
         "coffee_shop",
         "cafe",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
@@ -682,7 +682,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=12615831971689254822&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ46vHw-YXnIgRps-NMlZwFK8%2Fphotos%2FAb43m-vopnpe4M_DiZdyY5WR2H261GvAgwITg5V5h9jsJlAmoD9YczdQ-l5Qf8dhQ04Td0GqPclSvyZA5cp58mmirRbvwmTNcNj8O4Gp5NodRbfPiG9H_9IbUp0mEIiM6QRbloByKxRYquw2bGkiEuvxLLl7Ov3m_p52MOBSvXdqMThNdr0xVluH7_T9Y1IUlUfiqJY1x8xVkv1jxtotewy4V0ng0wQcupKTQ-DagFYcxCyl_ANNFfI40GyXbMltOqp4ZFmIIVsjF5Az26V5R7aVhXZzPsnnih7Y2opWyj6VIl2XFlOLLIaF9jrdlllnPOLQqkbXUiVJEh5W6QX7ec5kNDjND5MRNyLw5Tq0Zh9Vwigb-brrOsmJI-dWBSVdaRylOCbcRqUMOqqPY9zgVlGZ6uSCRkix_TpnDQSriECMtkV_CQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJ46vHw-YXnIgRps-NMlZwFK8%2Fphotos%2FAaVGc3lGjAFJDipJWTBlAaMG78SL0opZOtrZTpH0VjXj0tWy2vBPe1FVC_o2AReDrjDYwooRP5I1jan8Eq4LEY6T3mXw994vE9_LdmkupSsAQy3uTZjryWR3c5RQbsT9psmVo8G5VyNQZ55CAzn9kmMyW1xr6R1a23NGkpF74-5HBM9rN2UJPXwQaE9t-Utn2RLHmz97u4ImwjYNU_tsvvRJg4pgg96NDBLByhdfOT5W3ZCes4vg5beqQx9mw5YjIs8ZkGDwPfIv8JaOC2W-hdSs6-bYU8qy1-EN2MC0zgpn9ZdPzXNXwYBzisD52nM2rbXjmFGwuCzxPYCZrVE6pfrtbbmMlOor8aFL558yRRTpCYxv0w2dHSGO1Miy5BHjl-KizTv4yxkSVsIsk1Mlr1HeIrqwMRbi5J3D7dmdypZ6BgGo7A&w=800"
     },
     {
       "city": "gulfport",
@@ -692,20 +692,20 @@
       "lat": 30.400646300000002,
       "lng": -89.00892750000001,
       "rating": 4.6,
-      "reviews": 105,
+      "reviews": 112,
       "price": "$$",
       "types": [
         "cafe",
         "coffee_shop",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -802,124 +802,7 @@
         "Sunday: 8:00 AM – 10:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=8252267452148492334&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJS8GKOwARnIgRLijUfIbxhXI%2Fphotos%2FAb43m-v6J5lnHKsoxQqsMmvlgpF-3TWdT7kQFo6JMw6djnF7T_Ej0DWFVotCKjTATht2-PYXSRHigEVXxghUdtAXmWnvqV_PrDwYuMi1Q7yJ5oggG3gMKLcEn7et3yscziGvmNIgBuTt086JsDxOez055eiPI6dwLBSx071m_GXdIlAaZaU13hfSbP_wUWkDykfqo1Il5PVtrpoRm4hQOoqSH7PJSWFFokOgknBGQv8N9husiAef46nFcznZVB-Vk2Z9eCDp7M31z8PMg_BjGmhyybUfp3eY_rmjn0aNN3Ge-MeagA&w=800"
-    },
-    {
-      "city": "gulfport",
-      "id": "ChIJe6gWdc8XnIgRFz8yFI2iPTk",
-      "name": "Sage Coffee and Books",
-      "address": "1709 19th Ave, Gulfport, MS 39501, USA",
-      "lat": 30.372070399999995,
-      "lng": -89.0851174,
-      "rating": 4.8,
-      "reviews": 38,
-      "price": "$$",
-      "types": [
-        "book_store",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 7 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 19,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 11:00 AM – 7:00 PM",
-        "Tuesday: 11:00 AM – 7:00 PM",
-        "Wednesday: 11:00 AM – 7:00 PM",
-        "Thursday: 11:00 AM – 7:00 PM",
-        "Friday: 11:00 AM – 7:00 PM",
-        "Saturday: 11:00 AM – 7:00 PM",
-        "Sunday: 11:00 AM – 7:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=4124631560554168087&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJe6gWdc8XnIgRFz8yFI2iPTk%2Fphotos%2FAb43m-ui6ZShF2x-urFu8OQRvZ1xCzrxbEnLAfC_IBSEP67WTRgwUtiP8tOy_0kRw67z_eOwyzd_8mIl7h-9q_eVPxd8Z4vwP1DYnSK31Cd4SdPdsifA5HNHlg5twkLcCOsXqfVOSM0HhxmB-8lFIrsQs8e6k4h1b6vnP03ZVIx7Wl10j_DAkVhzsRDwwKOjNi9XfE39bplI8OKdvAUX3ENsURkmokFwELk2hxGlnYU0W-CsXi8uKObzsOYSFDWkWTlld1OtnY9GFB1TQr6ARR9AR7Cg49cD0MX0atDG7Ji_bbYIpSEp1u1a-iqw5_iQNRGmn-uHYshUMRt2ebW_g92aRKmQBj__wdBSvUuRdU5uGHzpNyPrv-hF1YlGO5LIJm0WklOhnmJaxiH4uTycE_PzowyQCq03i0jC2lEmg6JdAXhM9-Oc&w=800"
+      "photo": "/api/photo?name=places%2FChIJS8GKOwARnIgRLijUfIbxhXI%2Fphotos%2FAaVGc3lozpn1Ub4O7NjZINrMzEOjZKUdQlP-GuZxkcuOnfuerdYq5FXdzvFkJe_FnSqV6x8SbPE9QQ5T1H9jRktzIxPo2z9dp_LGhHaalzgBNFjp68rD6Y5vkQKIJnWHo-0TaA7ui1ioWkcvx7TDqONRezkDE7jhs4qjuCi1IpR76Zhc4xm7G_CmMcfvrx1rwbXIh_oaHE3GPn3_5cCPMq0IrJkX7FQ91JUy7oFNFTQyMsooYhlkKzWBWYnaJZ_6NDu7f6fmI3pmBP6VJVl9IRwZVOv48Ce6KK7oHU-sdoHAGYbOYNbdtdlyxpLjBFo00-WdRZqAfH3RZQ6um1-zVbvHtsoI_9YKplqWOJOgpMUL8T4ucUxl9UbG0HZI-7uWpHJZx7XMJD-YXCPChizPz6cFOiXXqRpnKwhdJaVj4AiK4VvCH4gqBSJGXDO5BeVOqWOM&w=800"
     },
     {
       "city": "gulfport",
@@ -928,23 +811,23 @@
       "address": "9347 US 49, Gulfport, MS 39503, USA",
       "lat": 30.4221985,
       "lng": -89.0930489,
-      "rating": 3.9,
-      "reviews": 33,
+      "rating": 4,
+      "reviews": 43,
       "price": "$$",
       "types": [
         "coffee_shop",
         "pastry_shop",
-        "cafe",
         "breakfast_restaurant",
         "dessert_shop",
-        "american_restaurant",
+        "cafe",
         "confectionery",
         "bakery",
-        "restaurant",
-        "point_of_interest",
         "food_store",
-        "food",
+        "american_restaurant",
         "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
@@ -1046,7 +929,386 @@
         "Sunday: 6:00 AM – 6:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=9468424115276664290&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJwVHb-NAXnIgR4s3OJZGZZoM%2Fphotos%2FAb43m-vs1GXCOZQVy7nIjsuU9LVIkX2r0XHlAaoqMW1YSKB_Em7_5szF30FPhPLhGXoQmLFqRJ1Iye1YRPZbovPdADog_DmfwYoDxgNJxP74M5RpRwb9x7Quvhat5GcRxZj_2_37AnKSVVb_c2XtsU7_bsKWvw5qOW8loljItuegILlRO0oad2CE_2Lq38lRN5Vm2-yM1XzKpHdf3rG_kbUyGOMlZ3Z7X10QsnAHDPsfxMVIurB-InW8E452tMYnbKIaZJ7r9Li-lee4dysBiUk63tKTuY37kxoAMeuaOq3LZHcxIQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJwVHb-NAXnIgR4s3OJZGZZoM%2Fphotos%2FAaVGc3nV3lcuq6B4Je_hbl_04_UlfoU4EoEySsF123jFWxSB2rGPz1H-cYZu9axxblzVMwcedcDUPKCfKtwWyE1KPcwlQXPjE9f7ofZ00OdOzQLknkt9Ehpkp92iMGhSJZejpbzDCyrFsU44A3xc0DbJNMLHiIp4DbCYUGum4TemYk3TsAGNw13--qzdOHGsEs3_eREma_2-2RbNvbnQmM7K0kpC5mi0U9U8cvD5tMv-r1IK44vYTmiI_kXU_I1bX_WjyHA5f9R85YY9V_oHbc7wkCEEQL6X45zZuaYCHbjzB4yILG-sjdHX7Cpi7xFvTSGIheEuF8RAP7UX2uvtB5wh-vJIIoM2j0ll3KAhD1YV1KAmIA_2Q82yA6HnoSDqXxLHPHAGKnrzYVptBuBASjIpCVvOadOG3pFMe0dIhYtLw9BiZKD8c6Al0m95wz-kZA&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJN_QLutYXnIgRCEzMcZrUcTo",
+      "name": "Boozer's Brew & a Cafe Too-Creosote",
+      "address": "14349 Creosote Rd, Gulfport, MS 39503, USA",
+      "lat": 30.426886,
+      "lng": -89.08063,
+      "rating": 4.7,
+      "reviews": 6,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 2 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 2:00 PM",
+        "Tuesday: 6:00 AM – 2:00 PM",
+        "Wednesday: 6:00 AM – 2:00 PM",
+        "Thursday: 6:00 AM – 2:00 PM",
+        "Friday: 6:00 AM – 2:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4211380886367390728&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJN_QLutYXnIgRCEzMcZrUcTo%2Fphotos%2FAaVGc3kr75Lro0MYUP1TLyqpS9QIYOqeTr_uy4Af9mxSDGi6PBDT5Y4yFirjUgAPHkJlq13b2N9s7mkVC-9PdpNCBGba1uRAhDJLJiqd7XVIB_F9Z4bKD2ea0vUBtXSqZUSHjfhWZJgR5VBkZRSQ_tCDtN7cwPLc_t3UfdBJCilgkRiPzQW3UsgaXYstnOBedga8lYztU89BxSFwkEePP1L96eXfajW7u6op8mA7EI89FLpBMoCBQJbFJ8y9Hm9aNp6V_uEsjHFVtIuLU7NdqP09odyK96Un8ItI5F3bsyghco949jlA27EPjS3ZhOvFcJW87W6TG3Dt4A08tpLOoZyvlQa9tcIChph1-xE5Crs-8V3irLX2U4PJYSYnn5LFsFVZsdx1u3cup_uZ4b4yZEJBCgrIKcaiOhcektOAjCn8j0K8oR23&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJ6XNbp0cXnIgR3VZrcOg2tgE",
+      "name": "Velvet Bean Coffee and Bakery",
+      "address": "2301 14th St, Gulfport, MS 39501, USA",
+      "lat": 30.367890299999996,
+      "lng": -89.090611,
+      "rating": 5,
+      "reviews": 2,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 2 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 2:00 PM",
+        "Tuesday: 6:00 AM – 2:00 PM",
+        "Wednesday: 6:00 AM – 2:00 PM",
+        "Thursday: 6:00 AM – 2:00 PM",
+        "Friday: 6:00 AM – 2:00 PM",
+        "Saturday: 6:00 AM – 2:00 PM",
+        "Sunday: 6:00 AM – 2:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=123346411745662685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ6XNbp0cXnIgR3VZrcOg2tgE%2Fphotos%2FAaVGc3ljJ0vBX9uQfMR6CQMiCl4C0Nu99eUEidThjjY06pAR22D7cLN9O3Tz9eSmS-ftbqYJO6g8lhav9dQa3dK4UVFvA3Fk0UT0hDV4rCZwfU7vhCP8aHL_g_6IEqBqhqGz1bHBb3eaDaKvdJmElohheRCbyn6Tm3LUVj02loKVf1AG8ky8FxX-gXxGsLyJV7y4H-5XbbgVm2rIuhJ65g6iHXxihoRnTqiF0VTzmjgWM_FBM_q7XV9WtlymCAL9JlYZbx6_0-8Ul1_FW8FkPGo-M4UHUP0mfU8uzMet34IfqG2DtXzpBiem1dfIwPjGaJNCfxUr5Yrcm9ZNt5n8v1klR5AVq-u8idsMrVB6kw2v0MwgONA8iere7WBl55YsVJ1EswOIhH8riwHtbNHqNHC1jMJED0khnp3egkeb2uiTXpMuBl6wwhMVopjhTiA59VW0&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJPyiz8sw9nIgR4Va2341iZi8",
+      "name": "The Coffee Shop",
+      "address": "3300 W Beach Blvd, Gulfport, MS 39501, USA",
+      "lat": 30.363366000000003,
+      "lng": -89.10283489999999,
+      "rating": 3.4,
+      "reviews": 9,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 11:59 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Open 24 hours",
+        "Tuesday: Open 24 hours",
+        "Wednesday: Open 24 hours",
+        "Thursday: Open 24 hours",
+        "Friday: Open 24 hours",
+        "Saturday: Open 24 hours",
+        "Sunday: Open 24 hours"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=3415525728890279649&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJPyiz8sw9nIgR4Va2341iZi8%2Fphotos%2FAaVGc3mNfQH2zcZKLrCwAgJrenVsKcEmhu6Ajlhptliow4Acwm-kWsiNcQq2EoxkEE5Dxc5-J4MP3h-It11n1A_NlJPKSucMm5AbdpvxnHIIgy89U8N0_YqvJDsBCM6tcLdLvBTkL8FqpkCyOCPNuDlkrYsvFmEezUBJimyOzebsmSI2NfykB8031eER4dXKMQsWUFM4gfb4uCqjahVbde-KItZBxHCOoH0E_IknF2NNB7y3oWTrzK341m6W7wq4B_3RsjXo_bQRu_jcZ9rnRsMMem9oRSAcidifsEuSpvS0xYnh1z3Zn73jZnlu7-7xCJpIdvPAJXlFPHIyZdSZVr2XyBeFLtWyS54UHt6XogDL0_QOLuj7AhC-Oz7F_Vw0HoBFOpGu_NYUbcvc2shffsCLcNi4_IhXA_AYjp_FhEuZe51YHPk&w=800"
+    },
+    {
+      "city": "gulfport",
+      "id": "ChIJ7Zhp2Bk9nIgRqKiAqa1l3gc",
+      "name": "Sweet Magnolia's Coffee",
+      "address": "4420 W Railroad St, Gulfport, MS 39501, USA",
+      "lat": 30.362410599999993,
+      "lng": -89.11732289999999,
+      "rating": 4.5,
+      "reviews": 2,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 5:00 PM",
+        "Tuesday: 6:00 AM – 5:00 PM",
+        "Wednesday: 6:00 AM – 5:00 PM",
+        "Thursday: 6:00 AM – 5:00 PM",
+        "Friday: 6:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 3:00 PM",
+        "Sunday: 7:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=567002399642790056&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ7Zhp2Bk9nIgRqKiAqa1l3gc%2Fphotos%2FAaVGc3lIO7X4-HvfrnKhItlxK7UGqnBf3O8QWIjvAdqY1BoZB7uPzEvOHlB9VfHO476tXF1eS-c18aAAqPMnsKKcSMVaEWdJbKyXDELRrQf0i14yK5dDZqfXzEgZkjZ6KNZlK1YnN0t_sHVdRY5tSIzi58A1kjAjAimQ6MY4pxsqUEjKmzMv5smleWKtq4SQs9SQxXuQUCfFN1FRIGV-DZ5IZv4cS6AyWFA_u3xO1i7-lTA_jTSPrBwnAcFI-owuiviMGlK8WtPHr05d1s1QYdInooHta_RbowZefC5F5K-Qoo1uFLRRdt1fTmECS4GChHgPtksdQ5uEKzpqUNMrL-YMHReggCppeW6990kmhgAhR8G9bCMBbpdDgrnqmvgVr2-cPrZeWHKShWrKyNQfqS9HcTAY0N_OlGX9N0scuyubCVWSix4sH8PNGpekzWQJ80Rw&w=800"
     }
   ],
   "picks": {
@@ -1288,40 +1550,6 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:57:26.879Z"
     },
-    "ChIJe6gWdc8XnIgRFz8yFI2iPTk": {
-      "picks": {
-        "drink": {
-          "name": null,
-          "reason": "No specific drinks are mentioned in any review; one reviewer even notes they didn't have time for coffee.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        },
-        "food": {
-          "name": null,
-          "reason": "No food items are mentioned in any of the reviews; the focus is entirely on books.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "I went to a writer's conference at University of Southern Mississippi in Gulfport and left with a hunger for books: \"Google, where's a used bookstore near me?\" Google Maps gave me several suggestions but the one that looked the most promising was Sage Coffee and Books in Gulfport. There are books everywhere in a charming old house - on the floor, on the shelves, on the front porch - and there are treasures to be found! The selections range from first editions to dimestore paperbacks and everything in between. I was on the hunt for vintage cookbooks and found everything I wanted, and more. I left with a big bag full of books and the knowledge that I would be back, again and again, whenever I happen to be in Mississippi. The owner was lovely, knowledgeable and welcoming, and although I didn't have time for coffee, next time I'll plan better! Make this a destination if you are a booklover anywhere on the Mississippi coast."
-        },
-        {
-          "rating": 5,
-          "text": "This is a must visit. I just love the organized chaos of books everywhere you look. The lady is amazing and friendly. She has everything from New all the way to the 19th century."
-        },
-        {
-          "rating": 5,
-          "text": "A used book store in an old house. So many books to chose from and the owner Laura was so friendly. She knew where every book was. I ended up getting a few books to add to my collection. If you are looking for a book that’s inexpensive this is the place."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-26T19:57:30.559Z"
-    },
     "ChIJwVHb-NAXnIgR4s3OJZGZZoM": {
       "picks": {
         "drink": {
@@ -1355,6 +1583,125 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:57:34.421Z"
+    },
+    "ChIJN_QLutYXnIgRCEzMcZrUcTo": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Reviewers mention 'great coffee' and 'pretty good' coffee but no specific drink is named.",
+          "quote": "Great coffee & great staff",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Everything bowl",
+          "reason": "Specifically named and praised in a 5-star review as something the reviewer loves.",
+          "quote": "Love their everything bowl!",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 3,
+          "text": "Pretty good for a drive through coffee shack. Good service, food is ok."
+        },
+        {
+          "rating": 5,
+          "text": "Love their everything bowl!"
+        },
+        {
+          "rating": 5,
+          "text": "Great coffee & great staff. Love the food. Convenient location!"
+        }
+      ],
+      "reviewsAnalysed": 3,
+      "fetched_at": "2026-07-01T11:53:32.731Z"
+    },
+    "ChIJ6XNbp0cXnIgR3VZrcOg2tgE": {
+      "picks": {
+        "drink": {
+          "name": "Specialty coffee drink",
+          "reason": "Reviewer calls it possibly the best coffee in town with all kinds of specialty drinks, but no specific drink is named.",
+          "quote": "This may be the best coffee in town!",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Pastry",
+          "reason": "Only a generic mention of a pastry display with good variety; no specific item named.",
+          "quote": "Pastry display with good variety to choose from.",
+          "confidence": "low",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This may be the best coffee in town!   All kinds of specialty coffee drinks.  Separate side entrance on north side of hotel.  Convenient parking.   Good prices.  Huge seating area with plenty of couches, chairs and tables.  Pastry display with good variety to choose from.  You’ve got to check this place out!"
+        },
+        {
+          "rating": 5,
+          "text": "Upscale coffee house inside the Markham Hotel.  Very nice and worth visiting."
+        }
+      ],
+      "reviewsAnalysed": 2,
+      "fetched_at": "2026-07-01T11:53:36.706Z"
+    },
+    "ChIJPyiz8sw9nIgR4Va2341iZi8": {
+      "picks": {
+        "drink": {
+          "name": "Vanilla Iced Coffee",
+          "reason": "Enthusiastically praised in a 5-star review as the best ever, while other drinks (frappuccino, latte) received negative feedback.",
+          "quote": "The best vanilla iced coffee I've ever had in my life!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Caramel and Sea Salt Cheesecake",
+          "reason": "Called 'AMAZING' in a 5-star review; food items overall received positive mentions while the BLT chopped salad was also recommended, but the cheesecake got the strongest praise.",
+          "quote": "The caramel and sea salt cheesecake is AMAZING!",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "This place has an assortment of sandwiches, desserts and coffee good for on the go. You can use your points which is great! I wanted to recognize the excellent service we received today by Ne Gina. We had a specific request with our sandwiches, and even though they were pre-made, she kindly removed the cheese and toasted them fresh for us. That extra effort did not go unnoticed—she was patient, kind and helpful."
+        },
+        {
+          "rating": 3,
+          "text": "It was a long wait in line for an overblended icy frappuccino!! Like another reviewer stated, the employees could use some customer service training. I did like the look of the mugs and travel cups they had for sale, though, and the baked goods looked pretty tempting. If I'm back to the casino I'd be willing to give them another try, as it'll likely be a long time before I'm back to the coast and that gives them plenty of time to improve."
+        },
+        {
+          "rating": 5,
+          "text": "The best vanilla iced coffee I've ever had in my life! The caramel and sea salt cheesecake is AMAZING! And I highly recommend the BLT chopped salad with the house dressing. The staff is very friendly and the atmosphere is laid back and comfortable."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:53:40.908Z"
+    },
+    "ChIJ7Zhp2Bk9nIgRqKiAqa1l3gc": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "Not enough reviews yet.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": null,
+          "reason": "Not enough reviews yet.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [],
+      "reviewsAnalysed": 0,
+      "fetched_at": "2026-07-01T11:53:40.992Z"
     }
   }
 }

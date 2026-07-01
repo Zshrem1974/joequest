@@ -1,42 +1,43 @@
 {
   "version": 1,
+  "citySlug": "boca-raton",
   "city": "Boca Raton, FL",
-  "generatedAt": "2026-05-24T01:27:48Z",
-  "count": 21,
+  "generatedAt": "2026-07-01T11:49:47.368Z",
+  "count": 20,
   "cafes": [
     {
+      "city": "boca-raton",
       "id": "ChIJT-BRL3cf2YgRAFPb0JSb8R8",
       "name": "La Boulangerie Boul'Mich",
-      "address": "6000 Glades Rd Suite 1048-A, Boca Raton, FL 33431, USA",
+      "address": "6000 Glades Rd Ste 1048-A, Boca Raton, FL 33431, USA",
       "lat": 26.365143,
       "lng": -80.1311281,
       "rating": 4.7,
-      "reviews": 2979,
+      "reviews": 3119,
       "price": "$$",
       "types": [
         "cafe",
-        "wine_bar",
-        "catering_service",
-        "latin_american_restaurant",
         "brunch_restaurant",
+        "catering_service",
+        "wine_bar",
+        "latin_american_restaurant",
+        "food_delivery",
+        "coffee_shop",
         "french_restaurant",
         "breakfast_restaurant",
         "bakery",
-        "food_delivery",
-        "coffee_shop",
-        "bar",
-        "restaurant",
         "food_store",
         "store",
+        "bar",
+        "service",
+        "restaurant",
         "food",
         "point_of_interest",
-        "service",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
       "hoursLabel": "Opens 9 AM",
-      "mapsUri": "https://maps.google.com/?cid=2301791948024533760&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJT-BRL3cf2YgRAFPb0JSb8R8%2Fphotos%2FAb43m-uJQu5G_J5r8G9ovR9wo5NRPCSvp_PLxwXzi7ysXMegWCHALQKOSiZppYVNTl9c3jnA4WAVlgIcvv-8XKeYMqwihuK5_RAa0wk1T4xVOoy6ZGQTaMb3bXKAsoms8G4X31FMZYd_ReUR07wILY68Ow2htagUoYj6d4qg647uMul1DdGaUHgvaF-qEIaOR2dXSHPcHn9diw__9l5RQXN_v8f-_xkqXESZrbk_2RKCDdpiuSQvA9FiL_codZ5CXF6r0ZFn9B3NmLgOqMMZpawUesAiTI8RmUkmBe2mlbPvccEdew&w=800",
       "periods": [
         {
           "open": {
@@ -132,39 +133,40 @@
         "Saturday: 9:00 AM – 10:00 PM",
         "Sunday: 9:00 AM – 7:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=2301791948024533760&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJT-BRL3cf2YgRAFPb0JSb8R8%2Fphotos%2FAaVGc3mluvprNiJynDsrbk9WUPxmgdjbStI3G3DTowXd6nilw_cqm-Y2Ah1MEq9B6peiv5MdYaM_uckGNAzTvKPg-kjTxPs0B1ZuwTUU9QWLCX_EEtt6Dt-WfpKLwmOdzNi5vthJnzcFP3D0S-8MSI_OS8Fo-IOS70KFRcUAWKTT0kP5KulrIK-fdu9FbF9tBHVltPomh6ZR0xE3Sy9CVY49iZcR9sYQFOLoIg7Uu94MoZ-fPd8TUTXQCJavhhQgs15zQAGZfYP0TWGb_7IyYsAtrlcdcAjV_T4yHrK2_36OhFj7qpcztIT0rqlHmcLcxk5n8w9VdT5QzmSF2hActlE-UOJz9LaFgqKh2VjDcgfZ0jR4vUKYM5PELaoPr0rYHl717lR-0vWxpMt3UswuUm26mhYQv0u6wHGBw7gseC_lF_Y9kycT&w=800"
     },
     {
+      "city": "boca-raton",
       "id": "ChIJCcvR1Pbh2IgRc4bpE1pDCEQ",
       "name": "Third Place Coffee Lounge",
       "address": "325 NE Spanish River Blvd, Boca Raton, FL 33431, USA",
       "lat": 26.386841500000003,
       "lng": -80.0804472,
       "rating": 4.9,
-      "reviews": 407,
+      "reviews": 414,
       "price": "$$",
       "types": [
         "coffee_shop",
         "brunch_restaurant",
-        "breakfast_restaurant",
         "internet_cafe",
-        "bakery",
-        "dessert_shop",
-        "confectionery",
-        "cafe",
         "tea_house",
-        "restaurant",
+        "breakfast_restaurant",
+        "dessert_shop",
+        "cafe",
+        "confectionery",
+        "bakery",
         "food_store",
         "store",
+        "service",
+        "restaurant",
         "food",
         "point_of_interest",
-        "service",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM",
-      "mapsUri": "https://maps.google.com/?cid=4902242248552973939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAb43m-sfWm7oikqmdV9FK8PnAB9Yqm4G6U7V2400m2Bk8NX2VqAeK9AK3eYBkI29lHUOCGvKIDvs7KIwkOdLoE07XNRtBmWnnaIMD9XMzc6pFnLIKe7-Q8cqBJcvDiO4kduPt6CBHdBuaqACpLwthylPlAhtpERxR9ezt24r50i4LRYwk1m0nzjIXx98dRPwwPQ40Tx_73YWh7Citg-Y-nmNBl54QyCZtKLNbYeHt66pEgJ8Mq4xGtC1_btZZL9_6i0OYDOpVS0OwpVvxL964rgNAI-GkJvBxGmyJ1FxgFYij1o&w=800",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
       "periods": [
         {
           "open": {
@@ -174,7 +176,7 @@
           },
           "close": {
             "day": 0,
-            "hour": 18,
+            "hour": 17,
             "minute": 0
           }
         },
@@ -186,7 +188,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 18,
+            "hour": 17,
             "minute": 0
           }
         },
@@ -198,7 +200,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 18,
+            "hour": 17,
             "minute": 0
           }
         },
@@ -210,7 +212,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 18,
+            "hour": 17,
             "minute": 0
           }
         },
@@ -222,7 +224,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 18,
+            "hour": 17,
             "minute": 0
           }
         },
@@ -252,45 +254,46 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 6:00 PM",
-        "Tuesday: 7:00 AM – 6:00 PM",
-        "Wednesday: 7:00 AM – 6:00 PM",
-        "Thursday: 7:00 AM – 6:00 PM",
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
         "Friday: 7:00 AM – 6:00 PM",
         "Saturday: 7:00 AM – 6:00 PM",
-        "Sunday: 7:00 AM – 6:00 PM"
+        "Sunday: 7:00 AM – 5:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=4902242248552973939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJCcvR1Pbh2IgRc4bpE1pDCEQ%2Fphotos%2FAaVGc3kPg2ERxZ9tdafisf9YmPg3TGIo6jMleboya_ayzWQtMGJ1tvJ2BOugwvD0fCN1qGtnO8UcgvSOawzTC9KaL48Nx7BJ5pepy5rUhIEvdfKHXdeIRfMxbYxcBjNuUv4sfwkSdzb3dD_7FkB9eYo42lLcABYkxCnhmopFIq3rR9pLgxveMI6rg2xX8uEcOz9crmn_jxI6FaLTnM0MRk4K0Tj0nSLIsQHWkpGAg5Dzy4dOGbRdh96mQjR79tj1bU2tCyYOYHFmBo_9zlQxkhrsqWKI4gippjhMmqH82Puz1DSW24wEC2sR9-Ky-V2j660w02OPJQq1m2QdZt1Mu7ZHqJS-BiituojEMwrmPkYrz-G9hI_AGW2_Wdp5CU0HLPfmYKk-wAWS9epC9c48aas69SjRHw5w6G0wHNZsLaVhDOOdVPJH&w=800"
     },
     {
+      "city": "boca-raton",
       "id": "ChIJaSnqwXXh2IgRgqnB_pH5aE8",
       "name": "Tiki Coffee and Desserts",
       "address": "1501 NW 2nd Ave #4, Boca Raton, FL 33432, USA",
       "lat": 26.364570900000004,
       "lng": -80.0904218,
       "rating": 5,
-      "reviews": 252,
+      "reviews": 277,
       "price": "$$",
       "types": [
         "cafe",
         "brunch_restaurant",
         "ice_cream_shop",
         "dessert_restaurant",
-        "meal_takeaway",
         "coffee_shop",
         "dessert_shop",
         "confectionery",
-        "restaurant",
+        "meal_takeaway",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
       "hoursLabel": "Opens 11 AM",
-      "mapsUri": "https://maps.google.com/?cid=5722097732013894018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAb43m-u1NjG4gvl-KFnU4zxvhHweYtyx1c_cZzvHol8iq8hryXbUMXBPA0SgCdd5lpuN2IIZfIEPK3Ju0CWY1mRZbBt2KLRUqXlxubaLZqM4IyLwYrzXnRAjIJpj-pSqRaRGldBtc3UzLZb5Mz1fx2gGbF0owcs5_iOIm2VteRTuzMU0wJyJjkCWJXj9ZG1GHIIM60hNFfpcxizcpMeA376zuIhJbrZIUXbxqDFyVsfTHdDajyCeetpswZ--FyFTbxyWKzpVcCH7GLep_JpkvH0GmvumiaVjHNednYYUSCHgyhb41I6Mb7CMqHn1mXO6FslkzdDCDWYM-Y_jGnwfnQaM9ppCsN2Y79FePnHQw8j3i4_x6UMRLw3mftxW0Ve4li7hyAOxHbRtiZw4eVyNygfdG5tc5mDRErgOZ5Qrd9xr1DvmW9f9floRbZtLMDD6xLS4&w=800",
       "periods": [
         {
           "open": {
@@ -386,38 +389,39 @@
         "Saturday: 11:00 AM – 12:00 AM",
         "Sunday: 11:00 AM – 12:00 AM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=5722097732013894018&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJaSnqwXXh2IgRgqnB_pH5aE8%2Fphotos%2FAaVGc3nEiy9YSwUD1g4TZWPmemjECruwixT-5HLLr_7Wkm633BUhaRdh-SfYyt2q1qBHvEEKmQkOFR5t39GLZ6f_84UpGC9qw-b0QjYKIWsSe315bZWGVbLtXmuYzZzKoEH2tIL0pviUil_xdUjiptif_8dQRBehQb2Smu54iBQZCpu7duDC_SbZ_bekJKRJL0zxfS0yHmq59MYE-5zWFnkapL9onzl76T1qlnO3kYUQwy6gfPufEe1iKgqTADBscSBfFmM5dWRxtI9-MhtP0bqh6Rpth0NWeOG9Iq8EdfP7R1aUZ5cWkexJKPXW54YeWhQ6axK5d_lklM7Gzlbx_gP4kp2q9oUnJswviKTYPmJBnJJ2OcAVVtKSUNGSds7en3ga8xaTNmqSoPYaZOEkxASo7BP5w5Hi_RgsqMIMu7kmecWYIle1MfBhxfqQ5UdKmVpU&w=800"
     },
     {
+      "city": "boca-raton",
       "id": "ChIJf_20jATi2IgRitMRzhDZ2mw",
       "name": "the seed. Coffee + Juice Bar",
       "address": "199 W Palmetto Park Rd E, Boca Raton, FL 33432, USA",
       "lat": 26.350844,
       "lng": -80.0892075,
       "rating": 4.5,
-      "reviews": 912,
+      "reviews": 935,
       "price": "$$",
       "types": [
         "coffee_shop",
         "brunch_restaurant",
-        "acai_shop",
         "internet_cafe",
-        "bakery",
-        "brazilian_restaurant",
         "juice_shop",
+        "acai_shop",
+        "brazilian_restaurant",
         "cafe",
-        "restaurant",
+        "bakery",
         "food_store",
         "store",
+        "service",
+        "restaurant",
         "food",
         "point_of_interest",
-        "service",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 8 AM",
-      "mapsUri": "https://maps.google.com/?cid=7843820367219118986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJf_20jATi2IgRitMRzhDZ2mw%2Fphotos%2FAb43m-sVYm0ZSAfUHt1R7qrrF_DoXc66xtig6yoekYC8zTbq3JVtxkX-mHt8zbFwBdtE-2nuwBCrUtu5_tuOpmjjP396eSkvsyIaEPxgo-oGoBsK2KtEL08iM3qkxeOnaC-4On7wGPtCSn6MFvlGWRL6XabgEYsUG4xoBSah7ZbtgOWB0JX2MF1C5j0064luOLDzCmokLvDqMKZ1kV-HlKc8tL3bIQUocAWlCvxw2cX_VGwnrdSbFPDEWJ8CBjlvaPf7G6co_IPH160SxPX8ICsYEfn0isuaNOw32ypSPFKNJbxCYQ&w=800",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
       "periods": [
         {
           "open": {
@@ -513,32 +517,33 @@
         "Saturday: 8:00 AM – 5:00 PM",
         "Sunday: 8:00 AM – 5:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=7843820367219118986&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJf_20jATi2IgRitMRzhDZ2mw%2Fphotos%2FAaVGc3nqTkjqyGSdYlQfCcBGAqXjmER4hT4Zx-qt6rp7LdFJsG1j-YAIISqTNsFm92QbkpNbD9NDjZtBQzivJxUawmy9InZwv6Fc99nMx9wrPr2dzqahucIdBbM0uptW3v3uAHfA17wRMaRB4Y8qJ3BHN_TPCfyBVmpCsNB8WkGpDup7H1dKkrpMeEzzNK3esw7yNQQ2bk3_iaZfALOAwfStOdz1XkjsG12xSlsD4FZ-1tBv37jJb_E3X-8OVPWn6CR2aOcu7d3MIQUXnEOeneHOuat4Qa5gk1Hkt865sCv1TWTCpdzV94vMuqbLM42-dbBjj_RXMXQIIIih4vPNpkg-f-BQ4l0cQElw_JCLQ7oNqOZD2ZclRKoEgmVsUxJfyLzGnkdAjupw0Qe_HLonzSevaa-ylwPcdXa-RpmK9a8a_TP-A7p94n0LYZ7NMaHZJw&w=800"
     },
     {
+      "city": "boca-raton",
       "id": "ChIJtdWNvVjj2IgRzWs79x6IHIA",
       "name": "VI Coffee Bar",
       "address": "1159 S Federal Hwy, Boca Raton, FL 33432, USA",
       "lat": 26.3395205,
       "lng": -80.08660239999999,
       "rating": 4.8,
-      "reviews": 355,
+      "reviews": 366,
       "price": "$",
       "types": [
         "coffee_shop",
         "breakfast_restaurant",
         "cafe",
-        "restaurant",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
       "hoursLabel": "Opens 8 AM",
-      "mapsUri": "https://maps.google.com/?cid=9231403002780937165&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAb43m-uVHumksKJw90gDniSlrTTAHf-_08MFgbyrFI-6VY2NV9Y7HK02WvxfGUlAWC6QZ6PEsGibkswc8_1YJhg90aLQaTAbeByNG6OIOMTJbMrdvrad7CTx5lIWTE6VkDIyKgIu_rh1EOF5O8QC9x266asBMaz0O3qtGwHxCLlxAHI9guvkis3qDcoE-AmMH1QBIeNewwBE9j75aevJJDGiMyZ3_1OjkSH7wuysu8KJAWRBKoiyiRO1j88Ze8tUWcyx2AhAI-kUT-dRPz3dzNc0qZCA8nQMOfph4d7TeYIxEsIY9w&w=800",
       "periods": [
         {
           "open": {
@@ -555,8 +560,8 @@
         {
           "open": {
             "day": 1,
-            "hour": 7,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 1,
@@ -567,8 +572,8 @@
         {
           "open": {
             "day": 2,
-            "hour": 7,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 2,
@@ -579,8 +584,8 @@
         {
           "open": {
             "day": 3,
-            "hour": 7,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 3,
@@ -591,8 +596,8 @@
         {
           "open": {
             "day": 4,
-            "hour": 7,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 4,
@@ -603,8 +608,8 @@
         {
           "open": {
             "day": 5,
-            "hour": 7,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 5,
@@ -626,40 +631,41 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:30 AM – 4:00 PM",
-        "Tuesday: 7:30 AM – 4:00 PM",
-        "Wednesday: 7:30 AM – 4:00 PM",
-        "Thursday: 7:30 AM – 4:00 PM",
-        "Friday: 7:30 AM – 4:00 PM",
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
         "Saturday: 8:00 AM – 4:00 PM",
         "Sunday: 8:00 AM – 2:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=9231403002780937165&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJtdWNvVjj2IgRzWs79x6IHIA%2Fphotos%2FAaVGc3mkUzJgviHBZ6Y-EC82M19EuAcD7VtqSo5AtoEkQzS88PTfQbPeamX7Jj2BP767zWZB5eUZe_Zi2hSb_cZqHCBdOZMH5hFZuMG1CooUQ_VsvkyYJtdk7nEBAiHHSarE9Aa-YLnAlENFViCJkSHKBWDPFgQ-g6P7e6hSqAAh8hKTJsRMWIHXPWzCOC258yQ6_ZfFgpjtYr9oXcYahpWYYUTrXuEpPDlxJRG5a3gdH7mubVK8dbN8SJdq28fwfctEGRHYFkxFHWElQzr0a4CXYX9XWg-ZSYf13D4tCh2k-neIta30yz2IQpfBbW6-i9gz5HMGDfpEPLyqEK7M0w3G3nyti4YgPPTipI5MbgEP8ZDxnDtpQsGjpDVGNtK8l27PhMRrmenyo31mIxlpkWyR7mhPMiZC7F_X1F-UWSjzs3stcQ&w=800"
     },
     {
+      "city": "boca-raton",
       "id": "ChIJv3dY3j_h2IgRc1i6aiYU5q4",
       "name": "Mane Coffee",
-      "address": "500 NE Spanish River Blvd Suite 7, Boca Raton, FL 33431, USA",
+      "address": "500 NE Spanish River Blvd Ste 7, Boca Raton, FL 33431, USA",
       "lat": 26.385472699999998,
       "lng": -80.077721,
       "rating": 4.7,
-      "reviews": 427,
+      "reviews": 438,
       "price": "$",
       "types": [
         "coffee_shop",
         "breakfast_restaurant",
         "cafe",
-        "restaurant",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 9 AM",
-      "mapsUri": "https://maps.google.com/?cid=12602782762474821747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAb43m-sgp4UvWn_Js2nZwDXJcFjR9ESz0T50NEzdgvmQo3VQADxc6Yj8NIHBTzaS9JpCgsRvmpV-jVBeJIs6KtWLA2LZ1k-h5TXpAKkR4IEasiA9iwPYbtzbJXaKtUW0ZH6TLW6aNiLVcF5KE3Y8HvfnKmhievu5bWeBQO-eXeLm34Eo_f5xbUYFWTwBxg3wUFCLaX7AjmUi2qMFto5-pS0ZlL2vnybyHnv8PchFA39pPdQzYkNMCLnPKIKODoPp5vNrdNeSXIkFoBwQYiTOhg0uI_HCqFeB9zcTTkK8wP-rtPuONg&w=800",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -755,221 +761,18 @@
         "Saturday: 8:00 AM – 5:00 PM",
         "Sunday: 9:00 AM – 2:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=12602782762474821747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJv3dY3j_h2IgRc1i6aiYU5q4%2Fphotos%2FAaVGc3lSckJkQ_K1GtizjU_FqGb751WVn4MBW8MMtHkk5TNeaoZjl3F4tyzefa27Tl0gzEiWgECSp2C2TFEkFbY1XFNlFDynudkyAf0FHk_kxQG42AQf49cfpevJM4d3g63X-SicxYmbJSvy5Mb6pHDUvFQEKqIral_bAG2TzgdHbaaw1UZ1Azt3hsJHXJMLxAL3WixygnK5U9H4dgCyRn_377FBOFNxdTvrbHZ8_ErY7-U5k1rqh_-SluV0jtw85z7fyVUrZDzlB_proPKkh2K2Hzkk5ebmnLvS3f2iU_aejgVBPkTFY_2Gy_PlFOA2aaRrNgo1tqYT-uhnoFGh68xGwMJ4Y_2AzhQi2N_w5hcNSPGXsYHrsiuokWQrjpbiULxOnrRfeZwDCY9nEaPyK7bLMnFvXhvlOkGYw58yjJRqZOQiCu8b&w=800"
     },
     {
-      "id": "ChIJ99DBn7gf2YgRPO0T1720vQI",
-      "name": "Carmela Coffee - BRiC",
-      "address": "4800 T-Rex Ave Suite # 150, Boca Raton, FL 33431, USA",
-      "lat": 26.3901452,
-      "lng": -80.1077121,
-      "rating": 4.9,
-      "reviews": 238,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": false,
-      "hoursLabel": "Opens 8 AM Tue",
-      "mapsUri": "https://maps.google.com/?cid=197512686124395836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAb43m-uRSHmsVDFVBJfeVre0myxuPuHTp8vpkKiufJCF1Dwdwh3bGVE6wMrn6GWXeIzeotxcd0Bq9wLJWojLnvSzNQZ_buba6CEJ6KZCZiY2p921V2TZf4eZdSf2fMaDOaZCMJMTSUZZlcXXWBnyv63gtGbwS_sn9R0mu5nexPKi55ya6P_19fFwMWdOnmTqPp2B77UFycB72e5qBid8cpjZcrxcS7fbI3BeMQRBIpT4GfSXap4rmy9WOFEiP4adCAnQPdKgRZiHrfo-yHgE04rRWFe4RVLrkUMB4w71ynMynhh_QAx6IevltBRjAogqyj1aYw_0ejQRKSUmAIMnOz1yC1TAv4YgT3O3HN8pQ3fE0H3pvGdxjlBOM8b7CkFKr0SO0Y6nvuKdUxGSn0hgurI4_8LY7yvHCiyFkQFrXB51RdVemg&w=800",
-      "periods": [
-        {
-          "open": {
-            "day": 1,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 17,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 17,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 17,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 17,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 17,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 8:00 AM – 5:00 PM",
-        "Tuesday: 8:00 AM – 5:00 PM",
-        "Wednesday: 8:00 AM – 5:00 PM",
-        "Thursday: 8:00 AM – 5:00 PM",
-        "Friday: 8:00 AM – 5:00 PM",
-        "Saturday: Closed",
-        "Sunday: Closed"
-      ],
-      "city": "boca-raton"
-    },
-    {
-      "id": "ChIJC9ykl6zj2IgRSpCaANux5Wo",
-      "name": "Mercato Italiano Boca Raton",
-      "address": "501 SE Mizner Blvd #80, Boca Raton, FL 33432, USA",
-      "lat": 26.345889399999997,
-      "lng": -80.08542249999999,
-      "rating": 5,
-      "reviews": 181,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "liquor_store",
-        "deli",
-        "grocery_store",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": true,
-      "hoursLabel": "Opens 8:30 AM",
-      "mapsUri": "https://maps.google.com/?cid=7702758291853185098&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJC9ykl6zj2IgRSpCaANux5Wo%2Fphotos%2FAb43m-tDRspBFEnBXKKbeTABHkL2EKccpE4jd853B_TEPXuoCqWuBFBzcjNM0rI51q_aMf2wWsMyRQyR6BHJNijkaAMACcXoax3-3J0mVO4UhrKXClw0AxIn_q1nsRRiCEbSHCt50F_NLgOV5w1vR38M1Wrz5POLdmvOmMs5H-8JSkLC11KVCGT_Lu1NZYz-AAEK-RHfwqmqyyZWCU9qXdV22cAJwWMtJ4S-I3tc44QMQr2AGgOkBUANhMiyczh0wYmWzhe3erXGtI4SaGoyMoSPEylSbR21zCwP10afCqFdtGjKnQ&w=800",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 0,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 16,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 16,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 16,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 16,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 0,
-            "hour": 4,
-            "minute": 30
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: Closed",
-        "Tuesday: 8:30 AM – 4:00 PM",
-        "Wednesday: 8:30 AM – 4:00 PM",
-        "Thursday: 8:30 AM – 4:00 PM",
-        "Friday: 8:30 AM – 4:00 PM",
-        "Saturday: 8:30 AM – 4:30 AM",
-        "Sunday: 8:30 AM – 3:00 PM"
-      ],
-      "city": "boca-raton"
-    },
-    {
+      "city": "boca-raton",
       "id": "ChIJsRpXWwjh2IgRKW93jO6bWY4",
       "name": "Cafe Louis Coffee & Espresso Bar Boca Raton",
       "address": "3581 N Federal Hwy, Boca Raton, FL 33431, USA",
       "lat": 26.382519499999997,
       "lng": -80.0769894,
       "rating": 5,
-      "reviews": 175,
+      "reviews": 201,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -980,10 +783,9 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
       "hoursLabel": "Opens 8 AM",
-      "mapsUri": "https://maps.google.com/?cid=10257401075174174505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAb43m-tdOBSYIsoTh99r3agpkog-58XeCuDOCQyFOTI5IX2rv4JHDNm5ESLgV_1AK77Zl8wtLo6T95JSUdkvFZcztIxsLxKW-RjBxxdMFZ5VnV9g3t5TVwpDtjW-8lURU58EPaqMu4ZEPJeGChiRWW-iVxs-JbL9hq6V50d5lNxV5QswAolkRr-iY7s3hhS-H7x_kDHvkjbKsLQ4cVw3FANwW3huuctj05eldd6_zDNAIEg7sGNTMn-YUJVUprVEpsC5TlY5Yl6W0qBZMBVivb9g6TBraE1eq1s9I6ZX--Dl9r94LlsXxozQIHYz6nx-696qKsh6qpdVPnXLd9JDmVSbfCnYmGGITx0RgtEPVaBYG_D_aD3JSCy8hwa4CDeOSOeL2GMgdQzZiNRxImz0d-oNva9BVoSaNCf_JXL7b9H1FtAwE1h7C6LHCKAHeVP7Fg&w=800",
       "periods": [
         {
           "open": {
@@ -1079,158 +881,243 @@
         "Saturday: 8:00 AM – 10:00 PM",
         "Sunday: 8:00 AM – 6:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=10257401075174174505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJsRpXWwjh2IgRKW93jO6bWY4%2Fphotos%2FAaVGc3lUMsN6pNEKcRkcBnO7q3VDoh3Fc-8SLTrTIlMtAF68i9NFHurT42PLfhXEnA-hQqPiz1-K4Lx1kVbWHW-PePbkvFuL0TB3oaJxtRYDhvKnSg_-L5ik-FKONI86Nii98534f6Wv_aBeLdvM4hqTn440HghWm033DG1PLH0P0-0w6dbIhILewD7cYESJBdD8ezpJSTdt2vAz24vJwwclC2M8GKEVHrAkb7_eVV3fWrJf5gGYt4kwISmpIAF426LQBDSc7YlZDKbDkobqbmzsQLmteC9MmOyLsOyMH-6DdM40u_4KFzMZJM5bzYkbooSaozeSeYo3aJrHRdH2Ci4OfTHC-FQeLQe_ulF-RQY1sccyp0UTxyIwo3NSUOGGfZW3RastWpRKmNH4b_ZeW1Y-mHt45I6CF5lB1YSguK3tM84a6gYraY-kZ1W2HLNNsA&w=800"
     },
     {
-      "id": "ChIJEU0c-T4Z2YgRCezhCft2CyE",
-      "name": "Carmela Coffee - Uptown Boca",
-      "address": "9658 Glades Rd #205, Boca Raton, FL 33434, USA",
-      "lat": 26.366421499999998,
-      "lng": -80.19780349999999,
-      "rating": 4.6,
-      "reviews": 428,
+      "city": "boca-raton",
+      "id": "ChIJC9ykl6zj2IgRSpCaANux5Wo",
+      "name": "Mercato Italiano Boca Raton",
+      "address": "501 SE Mizner Blvd #80, Boca Raton, FL 33432, USA",
+      "lat": 26.345889399999997,
+      "lng": -80.08542249999999,
+      "rating": 5,
+      "reviews": 193,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "brunch_restaurant",
-        "breakfast_restaurant",
-        "bakery",
+        "grocery_store",
+        "liquor_store",
+        "deli",
         "cafe",
-        "restaurant",
         "food_store",
         "store",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 7 AM",
-      "mapsUri": "https://maps.google.com/?cid=2381127648570108937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAb43m-udAY8KbEoXHkfMxjWdHy0OoL-cLtjwpqaX3_8YgDjdrfeP7L0Z_MqvXNfbkviy7PJZ2KuA67IwZLIoFEB4SToCB-i90YOioom1cf8a4sXTKkKeuRn69xSNgvhVbYFdt1WvdVp-NRqdW6IG9G3qsfBmIfkUdeNLpy4w6uExEBMOw6SC5PmYdUAQBdmOMNQlMAhZO71AhPUkhw3hZSb4xTbpwvxstQ1ZuHQ0fJhM6MyTUYhVkl3ub70NGOubDpzaTjXndVUeLuZhboCTHuKQSs7I3B3i1k5vBaUTvn2dQIM3ZF6jRx4B_Qt6VDpPF41ASWa441gBWHMBO9HdeNBeOpZpTtZty6a7_KT6OQcah4ROsGVAcHcDxhzQUD6NIEoRBtKDSmZvnQ-n5NPGecFszfg1yNGM74TxEYr8qvC5WyY&w=800",
+      "hoursLabel": "Opens 8:30 AM",
       "periods": [
         {
           "open": {
             "day": 0,
-            "hour": 7,
-            "minute": 0
+            "hour": 8,
+            "minute": 30
           },
           "close": {
             "day": 0,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 20,
+            "hour": 15,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 2,
-            "hour": 7,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 4,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 8:30 AM – 4:00 PM",
+        "Wednesday: 8:30 AM – 4:00 PM",
+        "Thursday: 8:30 AM – 4:00 PM",
+        "Friday: 8:30 AM – 4:00 PM",
+        "Saturday: 8:30 AM – 4:30 AM",
+        "Sunday: 8:30 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7702758291853185098&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJC9ykl6zj2IgRSpCaANux5Wo%2Fphotos%2FAaVGc3mpfi9GN---uuSPW6S3wWC37BRxP8QhGX7Gisf3vT9BANGXOPE4xvL04DJyEUqRitKpAhcPAsRI5AxmceXWWSeO9IfuULirUBnTv-FLU4PCwbBEhwlzXPynQrrDoulfeCWvGt6kFtyHQvL4V5i4SuQSW0lWZe2x0YLoCICOlD6a_VS65ks-2jE59idSxcFEGS8Lbjcyb2R8DjLC1SAb185c_pW84xn7CJqGxUMR5uTBILBlAK7AU1ZMOsiki2PcdK3BKFth4G397Fzcdw2sXS2h_qmlvQbHOU4W9MvzXH1XyrUagk29Xa4xNtSdtYrcXFtYPANbwhF7z2xcrW2VkiZTlU1IAPaDJzu5pC1kEgrPibJu8eZwwtJ8efmGvdzDFLlrfmVd71c3Sd3aRivrV20rZYo4I_lIpABOFAmv_keYnJpL&w=800"
+    },
+    {
+      "city": "boca-raton",
+      "id": "ChIJ99DBn7gf2YgRPO0T1720vQI",
+      "name": "Carmela Coffee - BRiC",
+      "address": "4800 T-Rex Ave Ste 150, Boca Raton, FL 33431, USA",
+      "lat": 26.3901452,
+      "lng": -80.1077121,
+      "rating": 4.9,
+      "reviews": 240,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
             "minute": 0
           },
           "close": {
             "day": 2,
-            "hour": 20,
+            "hour": 17,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 3,
-            "hour": 7,
+            "hour": 8,
             "minute": 0
           },
           "close": {
             "day": 3,
-            "hour": 20,
+            "hour": 17,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 4,
-            "hour": 7,
+            "hour": 8,
             "minute": 0
           },
           "close": {
             "day": 4,
-            "hour": 20,
+            "hour": 17,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 5,
-            "hour": 7,
+            "hour": 8,
             "minute": 0
           },
           "close": {
             "day": 5,
-            "hour": 21,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 21,
+            "hour": 17,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 8:00 PM",
-        "Tuesday: 7:00 AM – 8:00 PM",
-        "Wednesday: 7:00 AM – 8:00 PM",
-        "Thursday: 7:00 AM – 8:00 PM",
-        "Friday: 7:00 AM – 9:00 PM",
-        "Saturday: 7:00 AM – 9:00 PM",
-        "Sunday: 7:00 AM – 8:00 PM"
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: Closed",
+        "Sunday: Closed"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=197512686124395836&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ99DBn7gf2YgRPO0T1720vQI%2Fphotos%2FAaVGc3nvfVa7ErFEZn01XJ1APDZWzyZEyiONrh-nBsZ4C5_Id9VBKbvSKxyHCjVDH31Br1b6YSyVfhpxYCNUb12aP_TEfY8lsnyknCE3SSPw_tQLtnx1X6hPI5guUK4m4E4WmaJ1zcB9V3f6yUu8uhNgrGr1294BS5fouiQucNEWnCngSvzD99a2uXqz4K9DbQOTEy7r7N9S6uHojOWiet4QsW8YNee5xccl7emxL239bOdas_MGv94fxaY4Rboimi2Fyx6UnnR5u0A1_EUJeiyH31HJJUOQ6bVB-22vMqzAi-BfziIxSViaOho5Ht5doMdBilar90d9rDtQgDHH9mxbDP657zJVDwYmOPXXKoqZHEW4n4rz3urKXbYQxZ1X1JmbiG9uFJfyDJinAJqC8HOqnOK18XPFDxgbXTNI4mcsLq7KDA&w=800"
     },
     {
+      "city": "boca-raton",
       "id": "ChIJHSmlaxLh2IgRzyfVX_Im4ck",
       "name": "Carmela Coffee - East Boca",
       "address": "3200 N Federal Hwy #106, Boca Raton, FL 33431, USA",
       "lat": 26.3803209,
       "lng": -80.0760093,
       "rating": 4.6,
-      "reviews": 422,
+      "reviews": 439,
       "price": "$$",
       "types": [
         "coffee_shop",
         "brunch_restaurant",
-        "breakfast_restaurant",
-        "bakery",
-        "cafe",
         "tea_house",
-        "restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "bakery",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 9 AM",
-      "mapsUri": "https://maps.google.com/?cid=14546951093815158735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAb43m-t4Hq3W7q4Ovsb_ssDIcCC4NqXUorcCYmm1bNu6Fz5H0u22Af-G_ecQ03iKi9uT9ESSBPVjlFp8cRGC7QWV8Q5iHqOAgqDYLALO3xHEFxcqREehA3ZzjDnVGeEb0PvU92h2timt5G5MTAI3gKFLWCylkQYkkTMtsaTIhdLZ3Kiguw23xsYW3LCnhRflF-NbmAmoTFRkuUsz739RfaNBZj-NUvHyDqh-icuu1AEAu88PvOPwVvef0y07t19_HWQlozS2y6sP8CT_29w_DCOk8UoDttEOK7uw1xaJOujTG0AGEg&w=800",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -1326,7 +1213,132 @@
         "Saturday: 8:00 AM – 5:00 PM",
         "Sunday: 9:00 AM – 3:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=14546951093815158735&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJHSmlaxLh2IgRzyfVX_Im4ck%2Fphotos%2FAaVGc3nPKGr46KsWrHSKMBQIGQtMxfYQ9lJbOpFC3sOK61qrFQlKNI3JRxAxAGmw7fqNDjU5rs4W2ka3JSgmLjGq_Cmu9zxolXsLedLEZrCA1veFHrbAJPfqNotim_kf-rfPxez3yotfIgnU2J_DLvKRTwh8-8Xpz2HZkA3KigndGu1EMHqqz0hQ8nDliNRc8doxtIY-jSqq4mDFoGu8UMn07zxW6XjRUXgoazLWzO4JIgskXzmK0W8cr9EAMG1XkpuicX8bouAsi-r8h3M0tOKrmj_ZW6I2L5_TfdvmPj4dB0PQChyGVc2WLTsfYNN1oqdFBg2gqyRjj82yT08BvobyJQz-9_OZbQ82pcfL6CCWoLMSOXbBSjchc9qruSupm8K5_KzOqmeETaW31HdImDpdPsiT9Iphj8vpfC3ms03yo3cUDQ&w=800"
+    },
+    {
+      "city": "boca-raton",
+      "id": "ChIJEU0c-T4Z2YgRCezhCft2CyE",
+      "name": "Carmela Coffee - Uptown Boca",
+      "address": "9658 Glades Rd #205, Boca Raton, FL 33434, USA",
+      "lat": 26.366421499999998,
+      "lng": -80.19780349999999,
+      "rating": 4.6,
+      "reviews": 436,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "bakery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 9:00 PM",
+        "Saturday: 7:00 AM – 9:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=2381127648570108937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJEU0c-T4Z2YgRCezhCft2CyE%2Fphotos%2FAaVGc3l496YO4Pt4jbJc5nmFn81GFdWJglwlC5rUH2GWp4NFhdtyLA3UZ8SyVvm55V4tvBwN1FLBUwRpuFQiJFjiRQwah02jSWQhhO19HXIPLtT9XyrRgKmCpvD63JXCnHzC_hr-aTXf6l93jNhySvFRG19d6gcTlR5H_mKCMqkNq25FFoSkdG6vxJkP8yaXHHLdVItgyikwivHx7WhGnTRmTOFDHXZZxk4PO51b193sfdrR0xgy6LBqu0ny8GmiQbR94TW3AUxLXI864NiP6gjcHPx2pZIV6NdVbmmIywz9CdWyDLXnjcYjOMtXjtICUjwS0ID4PTYW8BmWMmuXXFfEsHiuEpOSyufSzVW6kA1P5oTaGQuWHfreQgkp2djN9rob32_LrV7XGaXr88G4Ey7DaEyKWN3EjAOpUq4Vlwkzx-I&w=800"
     },
     {
       "city": "boca-raton",
@@ -1336,7 +1348,7 @@
       "lat": 26.3472498,
       "lng": -80.08465319999999,
       "rating": 4.8,
-      "reviews": 217,
+      "reviews": 232,
       "price": "$$",
       "types": [
         "restaurant",
@@ -1344,8 +1356,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7:30 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
       "periods": [
         {
           "open": {
@@ -1441,139 +1454,18 @@
         "Saturday: 7:30 AM – 5:00 PM",
         "Sunday: 7:30 AM – 5:00 PM"
       ],
-      "mapsUri": "https://maps.google.com/?cid=13699189488534126429&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJC1VsFw7j2IgRXX_XJkJMHb4%2Fphotos%2FAb43m-vBw8PpuoQtwF2KNmWSo1-hFlpP_30w-HIa3octZEwNKChWrNlALkXlqXpHw7gfzlcj890V88RP5rGx5wiJKSZHgeaQUT9wAPv3Uwda_E87asC7k-yIQfG9W5lPTdqrRP8QKjpdgtbWe7aYFgoj9CVjUg8NhNsHDCvnl6hrHhKAL2Y0sIe0tQyoDzyyD0Ra-NfF1vL-c50EZk3avyzNQXzkv3i1S07-OIvsl31Krg0VkxJX6lx3TJ-V6mwhHhcfXb2O8LMnvGvku7J_RbUa71U0wToNnf499yPLSpmebrhVldMg9Zh2TtwF7R27_DgCKdumEJ7AyAjydQWLM2PAZg30Q0anrgY0UFo9sSg_7YmJgsQQvwxBcDjQezdWQm3bOpJ2DtfIdv94jSFwhA15mG2oChDNe-kRki6dP_2HjsSyWVRYkK0mTekamI-R-Q&w=800"
+      "mapsUri": "https://maps.google.com/?cid=13699189488534126429&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+      "photo": "/api/photo?name=places%2FChIJC1VsFw7j2IgRXX_XJkJMHb4%2Fphotos%2FAaVGc3l6aY4aM0W5OncS9jwY_y1TLH3IUhHrT5Pvbydmr0hfHJT6-SUX0BqlLN6L9yemABT9K4QagMeXQ-jm9uqa_n3Nl4jMskugWAKh3qgWxUwctugrsr3OpyjqZiud6zQlaI_f8b2zi0RM95wGdk0EljFk2GJUNlOTr2H6PW4AJSxRdFfFvar_EV3m3g7x8JLR-wtLxepze_LPzk2ctWGLAwPpauPQnjLvHZhnWg5bzisJQhI52h-ZcuTRJaxCRG2unpDv7pEBfuq_PgsS1MQmee5xbVJfFyxyPg_CYtLblN0SuXo-D3PLzbbtmToyyAfpqVhJHpHP_Nud61dwTLkmJmbgR01cxwdXFsxSaLBGZyNsKmEgv_8l5uwzne5rojZYlZFK9NF6d_rT1h1kw59y4SH5IoR2gyGo0sViIbbBLzAHACHUZ11gP1h0AR8iyA&w=800"
     },
     {
-      "id": "ChIJ-wx9iYvh2IgRBRNg20QB_10",
-      "name": "Colombian Coffee House",
-      "address": "495 NE 20th St, Boca Raton, FL 33431, USA",
-      "lat": 26.368561699999997,
-      "lng": -80.0784683,
-      "rating": 4.6,
-      "reviews": 290,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "colombian_restaurant",
-        "cafe",
-        "wholesaler",
-        "restaurant",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM",
-      "mapsUri": "https://maps.google.com/?cid=6773133759838425861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAb43m-t6Nc7k7avJxRitM2ktk5G2Y4MRbC8-cqnVvZFtYz3mi2BQFtRPR_Ym9GJbIlNdV_dhfqEysHSAhkjV0tIRQ98KDsjntEP-thptFPEzpbgufJUrsb_oo-DTIcg47OpmXLuTO6xU7JxV8HPZRYrviCxDdAoKxfw2v9KCtytc7lT2OqJ6o3-B9guTq7V-vjjPppme-w4xlZyY6HhNJWKTmBJwTNeSBpiUiiZohIcdolg-2wb70qlxFaHMDNWikdmlhI-PYYf3jRRupzTJ5Rk1s5-l5rY80zwReA5YC0YLklR-Ug&w=800",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 19,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 7:00 AM – 7:00 PM",
-        "Tuesday: 7:00 AM – 7:00 PM",
-        "Wednesday: 7:00 AM – 7:00 PM",
-        "Thursday: 7:00 AM – 7:00 PM",
-        "Friday: 7:00 AM – 7:00 PM",
-        "Saturday: 7:00 AM – 7:00 PM",
-        "Sunday: 7:00 AM – 7:00 PM"
-      ],
-      "city": "boca-raton"
-    },
-    {
+      "city": "boca-raton",
       "id": "ChIJ81Ar2sYZ2YgRllhJlMYB_dI",
       "name": "Rosalia's Botanical Cafe",
-      "address": "20423 FL-7 suite f9, Boca Raton, FL 33498, USA",
+      "address": "20423 FL-7 Ste f9, Boca Raton, FL 33498, USA",
       "lat": 26.371603999999998,
       "lng": -80.2067604,
       "rating": 4.9,
-      "reviews": 143,
+      "reviews": 182,
       "price": "$$",
       "types": [
         "cafe",
@@ -1585,6 +1477,7 @@
         "store",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
       "hoursLabel": "Opens 8 AM",
       "periods": [
@@ -1682,379 +1575,34 @@
         "Saturday: 8:00 AM – 6:00 PM",
         "Sunday: 8:00 AM – 6:00 PM"
       ],
-      "mapsUri": "https://maps.google.com/?cid=15203309869475649686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAb43m-t129VxzMo74wWTbMCI0_jr1f2faVej1IO6tLHCPx2850DmhCvAH1-e5hDKm9iqHGsVvrBf37ocvTIhg8Ib_s1mXFSEnXgx85QSTdr6tcZAYRPLmMJTYs8jdS-5muKHpKhD31UMZRewiIyHDSOblqNCNC5mvItYu-YJGMAESqwc5cpIey-trx8tNBaWn5cOGDJoYIoS29c-fM9rpYacemo8wElqUaMhKW5c_iKZYHLf5_8P8BR6oWWZGVDFEnP7qBPzzzYYqO9AnCIy3un6GwyimZM5FQUrH_JXEajDqmidwA&w=800",
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=15203309869475649686&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+      "photo": "/api/photo?name=places%2FChIJ81Ar2sYZ2YgRllhJlMYB_dI%2Fphotos%2FAaVGc3kojhE_DCZeJgrhAa9WaLebBHxBfx5N9oMZJmcKHPHR_TJCe1_A2QuWPH8XAKO3Q7cBr1ETFhQWWZ3F_1D8tIMyNREhuRnpMjLJm-1eUeKv6jaE1sqW6TA63PZp4Ng_mBxDf2-tyOo93feQGvuk93ch5sb_giT4Uy2iuh2Y5wYsBeAIqu9phv82mjE_O8nQPDCNA1bBYzS5veraLfIGYuRiDg9iuPaXKlCG98t9HjXMrIVmimUDR3-pazrSZGXXpHRd1nxDW9NCSKVitkZCXMDuvMy0x__i9ScuCty2rPD9aykQGzNHIOxKpOFTS6XU5JUlO6eykSg5jotlSq-zYwkZCrtIaU1pbuxXB0mYOjSi1xJ2wEBObAotTRCjLvNf8BZPE8wIUdxrfzihwFb-1r7IPSYVyOD6vlzqq7bw4TiKUtDCoMX6AWN9w4tSifpg&w=800"
     },
     {
-      "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
-      "name": "The Pots Cafe",
-      "address": "6000 Glades Rd, Boca Raton, FL 33431, USA",
-      "lat": 26.366045399999997,
-      "lng": -80.1348276,
-      "rating": 4.7,
-      "reviews": 169,
-      "price": "$$",
-      "types": [
-        "cafe",
-        "coffee_shop",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": false,
-      "hoursLabel": "Opens 11 AM",
-      "mapsUri": "https://maps.google.com/?cid=251151556470529797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAb43m-t3rAexGalMWTpxlgseWDZRwVVyrr2YM70urL5L99-d76Rq6nYcQ12eHsr8y_BfvRDlABGz0KOaq8KJ8nObzvUeRZnXHhi4cv9UxQIXE2G70sduJJa7MGc2VL1Y0SsSbuniy_7Yim_kIUuX4uKnt-hQ577NGKX7u6klFrYDyY0ZB_xrJ2DDiDE5uTLm3BAmXrkKfn9cTNSWcHTSnhjWfLEBTGOMU-83kR09SfbdCnYEimlK7ptuhqEipsohJP7AiIgO69UbCK0fkkpeafHaPAygsN_7gN9geOW4kKBohTgNURStpha52w7snqcQhwDy90lFC77vlJ-0vMuXrOV4E60JOqjOKQiUpF472oazza1bQPfvOQuWO4sm6DYEVVCn6BWvTXyOu7diew2lj03nv3tikTBDmNAOjBgj72FvejxR4ss&w=800",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 20,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 10:00 AM – 7:00 PM",
-        "Tuesday: 10:00 AM – 7:00 PM",
-        "Wednesday: 10:00 AM – 7:00 PM",
-        "Thursday: 10:00 AM – 7:00 PM",
-        "Friday: 10:00 AM – 8:00 PM",
-        "Saturday: 10:00 AM – 8:00 PM",
-        "Sunday: 11:00 AM – 7:00 PM"
-      ],
-      "city": "boca-raton"
-    },
-    {
-      "id": "ChIJWenGD5bj2IgRk_IEOgUUy9Y",
-      "name": "Belladukes",
-      "address": "Streetside, 155 E Boca Raton Rd Unit 313, Boca Raton, FL 33432, USA",
-      "lat": 26.351635899999998,
-      "lng": -80.08443749999999,
-      "rating": 4.8,
-      "reviews": 99,
+      "city": "boca-raton",
+      "id": "ChIJ-wx9iYvh2IgRBRNg20QB_10",
+      "name": "Colombian Coffee House",
+      "address": "495 NE 20th St, Boca Raton, FL 33431, USA",
+      "lat": 26.368561699999997,
+      "lng": -80.0784683,
+      "rating": 4.6,
+      "reviews": 317,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "market",
-        "gift_shop",
+        "colombian_restaurant",
         "cafe",
+        "wholesaler",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 8:30 AM Mon",
-      "mapsUri": "https://maps.google.com/?cid=15477486557069636243&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAb43m-tn7p0aZ2ytgLGPgCNMHiiv2hz40WFr6qJbHEzjJv26tua8CEGtL-Jia5uEh83fCyD5GRRLbvDoe9sieIjVnv45e9-p8ASkyw2I9yVC-YJB973oG5izgm3T91VD_Hy-TflR-oCelGdECemVwCLjI6Dda-RynD0DiedDU5pPUoIpGRZvD_axQCpLwSzoXp6L7yCBp86s9O_5S7MucNgX2YoPMTNQjwB0BvpWiDgzBrRuqbNynMxpYPkAKgFhkP0L_3HMhOjar8ji7e4MNqnhwuu4oAilAo7D1RlJJ_LA1kJe1Q&w=800",
-      "periods": [
-        {
-          "open": {
-            "day": 1,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 1,
-            "hour": 16,
-            "minute": 30
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 16,
-            "minute": 30
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 16,
-            "minute": 30
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 16,
-            "minute": 30
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 16,
-            "minute": 30
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 8,
-            "minute": 30
-          },
-          "close": {
-            "day": 6,
-            "hour": 13,
-            "minute": 30
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 8:30 AM – 4:30 PM",
-        "Tuesday: 8:30 AM – 4:30 PM",
-        "Wednesday: 8:30 AM – 4:30 PM",
-        "Thursday: 8:30 AM – 4:30 PM",
-        "Friday: 8:30 AM – 4:30 PM",
-        "Saturday: 8:30 AM – 1:30 PM",
-        "Sunday: Closed"
-      ],
-      "city": "boca-raton"
-    },
-    {
-      "id": "ChIJR_ysn4jj2IgR2kCL-eY_vz8",
-      "name": "Subculture Coffee Mizner",
-      "address": "437 Plaza Real, Boca Raton, FL 33432, USA",
-      "lat": 26.355596199999997,
-      "lng": -80.0857171,
-      "rating": 4.3,
-      "reviews": 213,
-      "price": "$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM",
-      "mapsUri": "https://maps.google.com/?cid=4593460406202876122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAb43m-vhH7XAtzR63MgceNM5mqef68DLLUukP9nxZx9dTSUDP-8AxKgQPz7Y3SLwSzsqoD1kB56RPMnWXudOJd_7lqT7LiYHKCch4o6xC9nA6QR8_NKL5ZMKlo1Vvi1mBW5aGzvnjGLfF4KnVfTyjWqexmA3mTwz6EDZQvSbMYnkELK1y79l2wErZCa35XkihzpmDRrHgszN_74LTqCfQUb66-dDSqFZCrJVnzhft7kj62rBrT93xRC-ZrKlDnF9E_pG342bgL0xNaYo-ygSuAseMxIRmwd2YiBgfRSPbguRXP_2Rw&w=800",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 22,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 7:00 AM – 8:00 PM",
-        "Tuesday: 7:00 AM – 8:00 PM",
-        "Wednesday: 7:00 AM – 8:00 PM",
-        "Thursday: 7:00 AM – 10:00 PM",
-        "Friday: 7:00 AM – 10:00 PM",
-        "Saturday: 7:00 AM – 10:00 PM",
-        "Sunday: 7:00 AM – 8:00 PM"
-      ],
-      "city": "boca-raton"
-    },
-    {
-      "id": "ChIJE9bX5Ewf2YgR0MDqarmOc0k",
-      "name": "Foxtail Coffee - West Boca",
-      "address": "8170 Glades Rd Unit K3, Boca Raton, FL 33434, USA",
-      "lat": 26.3674665,
-      "lng": -80.1737728,
-      "rating": 4.3,
-      "reviews": 183,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM",
-      "mapsUri": "https://maps.google.com/?cid=5292730914104328400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAb43m-uiHvcvFEmnt8qYDt0hf8RtWXrNigCG464tZMIp3KjZr52knSFmFNpIcgov4JPxjyFltl_bWtNZya2r3CjKGQhdiddCq5DOfBIV6fESKg6iaXHmllPsOg5a91PefH9bmsstexF74LQ_GhbvCNs0mv9Ezab-Z9KkXGW7IwkUSv3Et-GivSznaXlCYabo_umXADTasN1x3pFqyOP0FLpHuqYX_SEMQJa1addZZK6Hr_n8Iux3ZJiNoE5XG8UHNLbYoYgqywoPolKQu6NKezHWGd-vltFxuW20rIv21f6zootjBA&w=800",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
       "periods": [
         {
           "open": {
@@ -2150,39 +1698,156 @@
         "Saturday: 7:00 AM – 7:00 PM",
         "Sunday: 7:00 AM – 7:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=6773133759838425861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ-wx9iYvh2IgRBRNg20QB_10%2Fphotos%2FAaVGc3lVbLrP1654stTSKF84leLt95bsO5JknEesAbmyxe5sCnQ6oe9RkAlsR4cM9_7mLdg_y808HpxSfwpmfAHqw0J3XFh6tYXIsUu7bDubtmUyqSm92s8DjhjFFU2H9pp4q3n8GO5aOafBxh7WtP6BpGtM79DkwVckFZhRjXdeoc_9LFT78sLiIOQgc_XD0ek2yWfvqUYv_wYqEDf4HzAA1qzgZ0ETV8xSAVqUFcJ4kCzv7kNk9oUfO3lORLQACqUMuYL0an047oNJuwNNattCqxs_-P63LspjCrkOK8u8ydruEmtVF2FeOi3zaN6_aY3ZRLSszq8EqTaEVzj14OFvGvOSH9_X1XswVYpunqecfgTH9Y8-6AILqQvR698cUsSN4TaMfAgEyAri56lHRy-L-Fj5BRlBfrwLAOu2lPVSGHaOue0o0XqW9xIEhxfgTNXQ&w=800"
     },
     {
-      "id": "ChIJI1et2rzj2IgRmmydvhcsL64",
-      "name": "Long Story Short Cafe",
-      "address": "132 NE 2nd St, Boca Raton, FL 33432, USA",
-      "lat": 26.3520155,
-      "lng": -80.084757,
-      "rating": 4.3,
-      "reviews": 158,
+      "city": "boca-raton",
+      "id": "ChIJ8XzvSw0f2YgRBV82jAJFfAM",
+      "name": "The Pots Cafe",
+      "address": "6000 Glades Rd, Boca Raton, FL 33431, USA",
+      "lat": 26.366045399999997,
+      "lng": -80.1348276,
+      "rating": 4.7,
+      "reviews": 192,
       "price": "$$",
       "types": [
-        "coffee_shop",
-        "health_food_store",
-        "acai_shop",
-        "breakfast_restaurant",
-        "sandwich_shop",
-        "brazilian_restaurant",
-        "gift_shop",
         "cafe",
-        "restaurant",
+        "coffee_shop",
         "food_store",
         "store",
         "food",
         "point_of_interest",
-        "service",
-        "health",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM",
-      "mapsUri": "https://maps.google.com/?cid=12551299166998719642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJI1et2rzj2IgRmmydvhcsL64%2Fphotos%2FAb43m-tAYnWYQ8to_S5O5Phw-HkUDxhkdVFPFg7eeNnG0O4ngPHuy7af27trQX1kWMS6HMGiWnb16TRvWV1u93v5f1BWt1ECOkhbL8MwTgS2hicmD0abBzjBmWiLDKvIdOhwpd7HFYPwnQ7u9nA_mC9xSPpI4uK7iV12Rygxvo4tzOGDjp4BKbzwFZFyc5sZT2rcAVMzL_YOYKP4GZTFU6Q7C_3Z8emD_mXenxV0wWDx4agYo0WAIU5j19ivImNs9unXyzVhfEUr3XtSBSP4uiFqEZ4-41Eff4ycuM3DFNQ9KfwWkwH-Yct3KcO9ENGSvG41vuY3MYndHeDv9rA2UM-VYuQMefBRW-JolLYh0c0BQJnDCf1K_5OWCdl651-a3PGfdN8SGAxX0EJvAA3-o3pqhL1axKTanjOzprSAFD-Yu-c&w=800",
+      "hoursLabel": "Opens 10 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 11,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 20,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 10:00 AM – 7:00 PM",
+        "Tuesday: 10:00 AM – 7:00 PM",
+        "Wednesday: 10:00 AM – 7:00 PM",
+        "Thursday: 10:00 AM – 7:00 PM",
+        "Friday: 10:00 AM – 8:00 PM",
+        "Saturday: 10:00 AM – 8:00 PM",
+        "Sunday: 11:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=251151556470529797&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ8XzvSw0f2YgRBV82jAJFfAM%2Fphotos%2FAaVGc3nj0IWWsS7R9bUWv3OowizsQ4PR5A_IR-p_UOlxRtyGs4WujWB1P2DcnAj42vbJab91qqOFspo0w6Qe7vfNcQnJnaPUEYtpDJGWevOxfv4lAB93qfog0IOr-iYaxiVNcXqhzwwHAAF0A_GNekMEIKMahjPedgWtGTg4tMfhk5Sv7ICB7nC03jtd0eolxBADleEbTvS5DOOCruYQGTjmiDUmK8nMt4l_CnRHiV8DWfol4ab57lk20Glzgmsh2vVco5vzf5NsaF0S0LdWUsktkZmBkrYZB_RG0msYq1phuLiXvLJVpgKocLPKv80wqlHv80vMQB5sRgVYGxhsuc_rsTUJbzGvsq-uBzOYvu9V7QTwlYcJw-kC-JVEqy0IDg13XONRWtjMOcdjm3HmGRQLWsNgAIAC1EvAzZyUy8_wYFD50-s&w=800"
+    },
+    {
+      "city": "boca-raton",
+      "id": "ChIJOzBnm0of2YgR7WPVYh9J4GY",
+      "name": "Carmela Coffee - Park Place",
+      "address": "5560 N Military Trl, Boca Raton, FL 33431, USA",
+      "lat": 26.401036899999998,
+      "lng": -80.1205542,
+      "rating": 4.5,
+      "reviews": 274,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "brunch_restaurant",
+        "tea_house",
+        "breakfast_restaurant",
+        "cafe",
+        "bakery",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
       "periods": [
         {
           "open": {
@@ -2192,105 +1857,109 @@
           },
           "close": {
             "day": 0,
-            "hour": 15,
+            "hour": 17,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 1,
-            "hour": 8,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 1,
-            "hour": 15,
+            "hour": 18,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 2,
-            "hour": 8,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 2,
-            "hour": 15,
+            "hour": 18,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 3,
-            "hour": 8,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 3,
-            "hour": 15,
+            "hour": 18,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 4,
-            "hour": 8,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 4,
-            "hour": 15,
+            "hour": 18,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 5,
-            "hour": 8,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 5,
-            "hour": 15,
+            "hour": 17,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 6,
-            "hour": 8,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 6,
-            "hour": 15,
+            "hour": 17,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 3:00 PM",
-        "Tuesday: 8:00 AM – 3:00 PM",
-        "Wednesday: 8:00 AM – 3:00 PM",
-        "Thursday: 8:00 AM – 3:00 PM",
-        "Friday: 8:00 AM – 3:00 PM",
-        "Saturday: 8:00 AM – 3:00 PM",
-        "Sunday: 8:00 AM – 3:00 PM"
+        "Monday: 7:00 AM – 6:00 PM",
+        "Tuesday: 7:00 AM – 6:00 PM",
+        "Wednesday: 7:00 AM – 6:00 PM",
+        "Thursday: 7:00 AM – 6:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 7:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 5:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=7413005385802802157&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJOzBnm0of2YgR7WPVYh9J4GY%2Fphotos%2FAaVGc3lSldzgAMrB4yP9fLWVywBKsvTun9Wl8TSdoHVBMuydg-QIHlWyFHhgbLCWr-K7RCXALgmcg14qeigZgp2CIj3xcWlK05N1QNkjdwM1_Ml8PydZLSjfTfrLXTQ3LhS2bxmqYXVMdsUhqHv1pHLtUqkUxPuD1S6UuK81f65t2aDNQpeL77W1nYz4uO3aMt5n01cCBwwdWh84j8vAW7jejsJDxQVYdfUhXWxNY_Wb63UhMvf9Mr728IpMYpSR4q57ebZYFRKotYzskU4atYwPISf_YkbQD-dtgX8ClGC5dl3bIck5jmZinpm4YmdUxG4oN5zoVAs6JU08OlDQTYtGca5MO_yJB7sim_TMk6sUTH27lI4tRnfwBfbA14ijtq8xpoAh4j3xhZtlkwOub2b8gSZGFcbJkyZ-UbFyLkCO2VKa4kiO&w=800"
     },
     {
-      "id": "ChIJ-_O-FgDj2IgR0Wr2kH0Rn1I",
-      "name": "Milotino",
-      "address": "281 N Dixie Hwy, Boca Raton, FL 33432, USA",
-      "lat": 26.3532429,
-      "lng": -80.08693,
+      "city": "boca-raton",
+      "id": "ChIJWenGD5bj2IgRk_IEOgUUy9Y",
+      "name": "Belladukes",
+      "address": "Streetside, 155 E Boca Raton Rd Unit 313, Boca Raton, FL 33432, USA",
+      "lat": 26.351635899999998,
+      "lng": -80.08443749999999,
       "rating": 4.8,
-      "reviews": 55,
+      "reviews": 100,
       "price": "$$",
       "types": [
         "coffee_shop",
+        "gift_shop",
+        "market",
         "cafe",
         "food_store",
         "store",
@@ -2298,115 +1967,344 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
       "hoursLabel": "Opens 8:30 AM",
-      "mapsUri": "https://maps.google.com/?cid=5953496463407737553&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ-_O-FgDj2IgR0Wr2kH0Rn1I%2Fphotos%2FAb43m-tznFiIpdUpO9nCUw0lPhIP-yvOD1JXuORtZ7C-1RWvkoHMl6px0d1iKWJsisGL_lAotVDu-MiaLzTRconVcts6nzXL5s9eNePg5tWI9L33TT7glE3iPU_5uhDRTMcawy3-6hSkvTOw-_NCRzB9ABi72Xa4BVgzZuqM0zpmqx4mopZkU6ma9PN7dV9nGnbOsgIJDs0hf09lkIhJB3COwA0-eoZbO9Bwd4TKF8iomwvAJ1oetni4-4q7dVqgq9OZjHGBeGrMhKr3c6j1FukQXE1ET5kjMFShtMSLJLiIWLVwUKP29awpW1uk0FqBGtRlVIi8snCuhDwW_lz8oCAgs-TFzml6Lk51RwjbxkkOiBNd57N0e9OfQ3jE0QtcNgIbh3m1Mxvw0M8eHNcGWRWJvNQl6cHdqOSZnC9pHv6-I-uOQukiW_PjmU3fpL15ILYc&w=800",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 16,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 13,
+            "minute": 30
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:30 AM – 4:30 PM",
+        "Tuesday: 8:30 AM – 4:30 PM",
+        "Wednesday: 8:30 AM – 4:30 PM",
+        "Thursday: 8:30 AM – 4:30 PM",
+        "Friday: 8:30 AM – 4:30 PM",
+        "Saturday: 8:30 AM – 1:30 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15477486557069636243&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJWenGD5bj2IgRk_IEOgUUy9Y%2Fphotos%2FAaVGc3kJOGLZjkdRW-I0AujZBDJp79-IKi4l0u7C9m397izaLsumihS1-NJVV_ULKsaortK0ROZWdWyRG0AbGTQHvC9peV1NeBn3aSASsBKcumwNYIw3IcqewmihaSAO1D1ZWPC_pD-7g2ZW5IcQJ4G8PQk6J62E2LMjd4XIADBOur2G7f2UjgtP5CNetvmNde1IOk2Xm0QhJ1I95NCl2c9kclsvbBMKvm0w0gN-uVYRrI2HkVFn3czYeTGeZ0OmsA70X_ZYQJNrEVMDmkXhO8l-FaYxrlxe384Vce7vzV48sypekANH2tVVyEnBSYSAsfdXzqEjWFHg8-uKZGyhGycnAankxQOZJLa4GtZbKgieSFI9kds7rQ9RLyLHBz7SEZj-WAnlGSmHX0MYmhJD_vEGIDeVb3P59xK6ILiK9k4Brl4&w=800"
+    },
+    {
+      "city": "boca-raton",
+      "id": "ChIJR_ysn4jj2IgR2kCL-eY_vz8",
+      "name": "Subculture Coffee Mizner",
+      "address": "437 Plaza Real, Boca Raton, FL 33432, USA",
+      "lat": 26.355596199999997,
+      "lng": -80.0857171,
+      "rating": 4.3,
+      "reviews": 216,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
       "periods": [
         {
           "open": {
             "day": 0,
-            "hour": 8,
-            "minute": 30
+            "hour": 7,
+            "minute": 0
           },
           "close": {
             "day": 0,
-            "hour": 17,
+            "hour": 20,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 1,
-            "hour": 9,
+            "hour": 7,
             "minute": 0
           },
           "close": {
             "day": 1,
-            "hour": 17,
+            "hour": 20,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 2,
-            "hour": 8,
-            "minute": 30
+            "hour": 7,
+            "minute": 0
           },
           "close": {
             "day": 2,
-            "hour": 17,
+            "hour": 20,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 3,
-            "hour": 8,
-            "minute": 30
+            "hour": 7,
+            "minute": 0
           },
           "close": {
             "day": 3,
-            "hour": 17,
+            "hour": 20,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 4,
-            "hour": 8,
-            "minute": 30
+            "hour": 7,
+            "minute": 0
           },
           "close": {
             "day": 4,
-            "hour": 17,
+            "hour": 22,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 5,
-            "hour": 8,
-            "minute": 30
+            "hour": 7,
+            "minute": 0
           },
           "close": {
             "day": 5,
-            "hour": 17,
+            "hour": 22,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 6,
-            "hour": 8,
-            "minute": 30
+            "hour": 7,
+            "minute": 0
           },
           "close": {
             "day": 6,
-            "hour": 17,
+            "hour": 22,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 9:00 AM – 5:00 PM",
-        "Tuesday: 8:30 AM – 5:00 PM",
-        "Wednesday: 8:30 AM – 5:00 PM",
-        "Thursday: 8:30 AM – 5:00 PM",
-        "Friday: 8:30 AM – 5:00 PM",
-        "Saturday: 8:30 AM – 5:00 PM",
-        "Sunday: 8:30 AM – 5:00 PM"
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 10:00 PM",
+        "Friday: 7:00 AM – 10:00 PM",
+        "Saturday: 7:00 AM – 10:00 PM",
+        "Sunday: 7:00 AM – 8:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=4593460406202876122&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJR_ysn4jj2IgR2kCL-eY_vz8%2Fphotos%2FAaVGc3kjFvHBHn8trPzfHStUZqcGJq_6DulZCjbdn_svPU-4hOC8ZAMSHbTJYCn756pzneZK0Y599ycOYodSEZA0UIAJKQp4zCam7BcYC0WeHteIkZaihOxofYuMTpf1qPVva2VmWhnboGlP6vmr4PRRfq3XgWN1jixral6A6Wh5UyIteLIenA0Kb792VS02MEOiiN7_WPfEgLaU2dhAZcSHdaa7DkbCNuMnGFyDACNgU2CfSOh5MbeKsbItdh8Ysyuy8F5WUkvreCM43zi1vfzzjo3EBKILDG-KtdZhHuR0i01F4sTtyAI5YgxvmqX_WeAedhuSbSZ-qJOETMspLFXbBoyXPn8O9uG8T5USP9ff2jJkxJF8853iejyRQv6w03st6D4lm-_0P0Ywdu4TXt0nmQ5A60yyqAWT0juPfKtdCUyPdglwqdr5dQeDA2GdqA&w=800"
     },
     {
+      "city": "boca-raton",
+      "id": "ChIJE9bX5Ewf2YgR0MDqarmOc0k",
+      "name": "Foxtail Coffee - West Boca",
+      "address": "8170 Glades Rd Unit K3, Boca Raton, FL 33434, USA",
+      "lat": 26.3674665,
+      "lng": -80.1737728,
+      "rating": 4.3,
+      "reviews": 185,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 7:00 AM – 7:00 PM",
+        "Sunday: 7:00 AM – 7:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=5292730914104328400&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJE9bX5Ewf2YgR0MDqarmOc0k%2Fphotos%2FAaVGc3nRfAd6iV9ea2f5PO8zYOoEHoGOLAu3eDJCjj9GXrIF_alBn_Tym5WQ13doraAN8KbHiZCtW5-2nM-2Vz_CcJt1nMmzZV6n7qzAImqnzrMTuJimT5XG5ohGCLuCp2QXNPX3Eo4GUkJCDuf3poPlerTpHabreUvdrzaWkfBJ8xflkjs0nNnFsZPBpx3Ibbu7ewI44PnHLjjFgC8hPAebmdfZSHYjVs9T0c5WccPW9RGuuyyP_i_iS-3_FLx59AF5tHTpwC01sbWOXzWdEL2J-laVsOgWCeMs1kbQseCrpsxjMInacCBv0tSgNBHvuuGAVMoSX3ipqlAEsaRCZX56XXbGnQ5GTV3BvXe2f3c_7Tl_5mIPgAUBFM5WZLXnMVlwBQYure2yZlHIaf6DQT9F2XvNBo7_4RNfLxiiOSxPXJkF4MQ&w=800"
+    },
+    {
+      "city": "boca-raton",
       "id": "ChIJQ98zGMfj2IgRo5LU42SyiqQ",
       "name": "Uptown Market & Café",
       "address": "300 W Camino Real, Boca Raton, FL 33432, USA",
       "lat": 26.3414753,
       "lng": -80.0920165,
-      "rating": 4.8,
-      "reviews": 30,
+      "rating": 4.7,
+      "reviews": 50,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -2417,10 +2315,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 8 AM",
-      "mapsUri": "https://maps.google.com/?cid=11856485115395084963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAb43m-tBeLwQJ-zasALj_RVBik3thVyoPxIBT8ZyVqygLaykkBgu0T0QV4E-8VQLXJ3NaIGL3Hj_M4RDUdCDlJmxgio1dJ9RpKvOo9bD9ixVD6IgvgXE6o9PEpeJ-m-TeTqB4tfrjVDZUS5RBYIXvH5QIlB5TFivM6bp_SL5iQtGogHg6pwjWdDFxQ3hlXvXbyMFsvsJ7L5lvDr2hOA9ttswccypAwboPgfTKC9u2FKix5gE_xqfOwuYmBSs81L2PgQ7tVL9WpV7qsXnUdzMJRgS8aLtRBt13IXZlMXx-52d9udDdQ&w=800",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 8 PM",
       "periods": [
         {
           "open": {
@@ -2430,7 +2327,7 @@
           },
           "close": {
             "day": 0,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         },
@@ -2442,7 +2339,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         },
@@ -2454,7 +2351,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         },
@@ -2466,7 +2363,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         },
@@ -2478,7 +2375,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         },
@@ -2490,7 +2387,7 @@
           },
           "close": {
             "day": 5,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         },
@@ -2502,21 +2399,22 @@
           },
           "close": {
             "day": 6,
-            "hour": 21,
+            "hour": 20,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 7:00 AM – 9:00 PM",
-        "Tuesday: 7:00 AM – 9:00 PM",
-        "Wednesday: 7:00 AM – 9:00 PM",
-        "Thursday: 7:00 AM – 9:00 PM",
-        "Friday: 7:00 AM – 9:00 PM",
-        "Saturday: 7:00 AM – 9:00 PM",
-        "Sunday: 8:00 AM – 9:00 PM"
+        "Monday: 7:00 AM – 8:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 8:00 PM",
+        "Sunday: 8:00 AM – 8:00 PM"
       ],
-      "city": "boca-raton"
+      "mapsUri": "https://maps.google.com/?cid=11856485115395084963&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJQ98zGMfj2IgRo5LU42SyiqQ%2Fphotos%2FAaVGc3lYfkGvdM77s4qlSbJrDQE7ZLDT7RMhze8lYVEcovjGMKqH6WZ_fMUt383SLZ817CPpbSBzcU5blLgxPYHulCC-iJ9fl17apBy56prH4ZQLyqXxPbTxtWXfCkZcpYYoCrWf_KWi0N43XxXDJXGL-VH8HqidM6BXvabQ0nBGhaxH3M0ZLnGKBnPbbF6iP8Pqm-rHhjQklC2uMRLqfYHJUmCO9cecniQ1fqLqNCHWDtulYyUMstlzLtL6JeuAFKxW0J2Ie0UmKmWDu_b5Y7Wt1zNcDvB5zjQGis4vci94NIRoXyuK957lxQJaSX-1pNdtr_-vbfU5HPW1_jI4d8y5wUYh8-5l-E7-96gSLllSqUSGAZZpRlAXiiyqp128_wJ-DXiUl9ZXJGsN0d5kjWuwJImTi1b0NMJYKZJHc-KoEp-RNk7dcdGCjOyez61JTw&w=800"
     }
   ],
   "picks": {
@@ -2724,19 +2622,19 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
     },
-    "ChIJ99DBn7gf2YgRPO0T1720vQI": {
+    "ChIJsRpXWwjh2IgRKW93jO6bWY4": {
       "picks": {
         "drink": {
-          "name": "Cortado",
-          "reason": "Specifically praised as a 'masterpiece' by the barista Sophia in a 5-star review. Other reviews mention custom espresso coffees being perfect, supporting the espresso-based pick.",
-          "quote": "Her Cortado is a true masterpiece, crafted with skill and care",
-          "confidence": "medium",
-          "mention_count": 1
+          "name": "Espresso drinks",
+          "reason": "Multiple reviewers specifically praise the espresso drinks as 'top tier' and 'perfectly brewed,' with cappuccino and lattes also called out positively.",
+          "quote": "The espresso drinks are top tier",
+          "confidence": "high",
+          "mention_count": 4
         },
         "food": {
-          "name": "Nutella strawberry croissant",
-          "reason": "Directly named and enthusiastically praised in a 5-star review as a regular order. Other food items (salad, ciabatta) are mentioned but the croissant has the most vivid endorsement.",
-          "quote": "Nutella strawberry croissant drizzled with chocolate syrup and powdered sugar! Its delicious!!",
+          "name": "Fresh pastries and quiche",
+          "reason": "Only one reviewer names specific food, but they call out the pastries and quiche directly as standouts.",
+          "quote": "the food is just as good, especially the fresh pastries and quiche",
           "confidence": "medium",
           "mention_count": 1
         }
@@ -2744,15 +2642,15 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "The food is amazing. I normally get my Nutella strawberry croissant drizzled with chocolate syrup and powdered sugar! Its delicious!! i love stopping by the cafe because everyone is super nice... Especially Sophie!!! Every morning she greets me \"Millie Bobby Brown Jr\" lol and it makes my day . She is super nice and hilarious.. the energy level in the cafe is insane!!! Highly recommend!! A++++ service"
+          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can’t wait to go back. The cappuccino was excellent!!"
         },
         {
           "rating": 5,
-          "text": "Sophia @ BRIC location and the team are absolutely incredible! The best service, fresh pastries, coffee, and great assortment of breakfast and lunch items that are always customizable! Service always with a smile and love going in there daily for a treat!"
+          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it’s hot coffee, cold brew, or espresso drinks, it’s always on point."
         },
         {
           "rating": 5,
-          "text": "The service here is truly the best. Sophia somehow knows everyone in the building by name and always makes sure every order is perfect and delicious. Going downstairs for my coffee is genuinely the highlight of my day, she makes the whole experience feel personal and welcoming. Highly recommend!"
+          "text": "First time trying this spot! Loved the ice latte, the decor is stunning, beautiful LV coffee table, highly recommend.. will be coming back!"
         }
       ],
       "reviewsAnalysed": 5,
@@ -2792,19 +2690,19 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
     },
-    "ChIJsRpXWwjh2IgRKW93jO6bWY4": {
+    "ChIJ99DBn7gf2YgRPO0T1720vQI": {
       "picks": {
         "drink": {
-          "name": "Espresso drinks",
-          "reason": "Multiple reviewers specifically praise the espresso drinks as 'top tier' and 'perfectly brewed,' with cappuccino and lattes also called out positively.",
-          "quote": "The espresso drinks are top tier",
-          "confidence": "high",
-          "mention_count": 4
+          "name": "Cortado",
+          "reason": "Specifically praised as a 'masterpiece' by the barista Sophia in a 5-star review. Other reviews mention custom espresso coffees being perfect, supporting the espresso-based pick.",
+          "quote": "Her Cortado is a true masterpiece, crafted with skill and care",
+          "confidence": "medium",
+          "mention_count": 1
         },
         "food": {
-          "name": "Fresh pastries and quiche",
-          "reason": "Only one reviewer names specific food, but they call out the pastries and quiche directly as standouts.",
-          "quote": "the food is just as good, especially the fresh pastries and quiche",
+          "name": "Nutella strawberry croissant",
+          "reason": "Directly named and enthusiastically praised in a 5-star review as a regular order. Other food items (salad, ciabatta) are mentioned but the croissant has the most vivid endorsement.",
+          "quote": "Nutella strawberry croissant drizzled with chocolate syrup and powdered sugar! Its delicious!!",
           "confidence": "medium",
           "mention_count": 1
         }
@@ -2812,15 +2710,49 @@
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Awesome coffee and eapresso bar with the best decor in town I mean look at the picture! Amazing can’t wait to go back. The cappuccino was excellent!!"
+          "text": "The food is amazing. I normally get my Nutella strawberry croissant drizzled with chocolate syrup and powdered sugar! Its delicious!! i love stopping by the cafe because everyone is super nice... Especially Sophie!!! Every morning she greets me \"Millie Bobby Brown Jr\" lol and it makes my day . She is super nice and hilarious.. the energy level in the cafe is insane!!! Highly recommend!! A++++ service"
         },
         {
           "rating": 5,
-          "text": "This has become my daily coffee stop. La Colombe Coffee Boca Raton always delivers consistent quality, great-tasting coffee, and friendly service. Whether it’s hot coffee, cold brew, or espresso drinks, it’s always on point."
+          "text": "Sophia @ BRIC location and the team are absolutely incredible! The best service, fresh pastries, coffee, and great assortment of breakfast and lunch items that are always customizable! Service always with a smile and love going in there daily for a treat!"
         },
         {
           "rating": 5,
-          "text": "First time trying this spot! Loved the ice latte, the decor is stunning, beautiful LV coffee table, highly recommend.. will be coming back!"
+          "text": "The service here is truly the best. Sophia somehow knows everyone in the building by name and always makes sure every order is perfect and delicious. Going downstairs for my coffee is genuinely the highlight of my day, she makes the whole experience feel personal and welcoming. Highly recommend!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T01:27:48Z"
+    },
+    "ChIJHSmlaxLh2IgRzyfVX_Im4ck": {
+      "picks": {
+        "drink": {
+          "name": "Iced latte",
+          "reason": "Iced lattes/iced coffee receive multiple specific mentions across high-star reviews, including a praised lavender white mocha iced coffee.",
+          "quote": "the iced lattes are always so good",
+          "confidence": "high",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Shakshuka",
+          "reason": "Shakshuka is specifically named and praised in two separate 5-star reviews, with one reviewer ordering it twice.",
+          "quote": "It was delicious, plenty of feta",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Loved my sandwich which was a culinary delight in taste & presentation, ambience, soft positive vibe music selection that I forgot to take pic of my delicious turkey sandwich and banana bread with my delicious Colombian coffee. Sipping now on my tropical coconut lemonade. #MustGo @ #Carmelas in #BocaRaton #Florida."
+        },
+        {
+          "rating": 5,
+          "text": "Really loved it here! The iced coffee and classic shakshuka were both great. Vegan milk options available such as almond and oat. There is a good amount of seating as well."
+        },
+        {
+          "rating": 5,
+          "text": "Had the Shakshukah for my second time. It was delicious, plenty of feta, heated and ready for me to eat up. Came with a side of 2 pieces of bread (sourdough?). Also, had a hot, vanilla latte that was also delicious with a great flavor profile."
         }
       ],
       "reviewsAnalysed": 5,
@@ -2860,39 +2792,73 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
     },
-    "ChIJHSmlaxLh2IgRzyfVX_Im4ck": {
+    "ChIJC1VsFw7j2IgRXX_XJkJMHb4": {
       "picks": {
         "drink": {
-          "name": "Iced latte",
-          "reason": "Iced lattes/iced coffee receive multiple specific mentions across high-star reviews, including a praised lavender white mocha iced coffee.",
-          "quote": "the iced lattes are always so good",
-          "confidence": "high",
-          "mention_count": 3
-        },
-        "food": {
-          "name": "Shakshuka",
-          "reason": "Shakshuka is specifically named and praised in two separate 5-star reviews, with one reviewer ordering it twice.",
-          "quote": "It was delicious, plenty of feta",
+          "name": "Whipped Honey Latte",
+          "reason": "Named and praised in multiple high-star reviews as 'amazing' and a favorite.",
+          "quote": "Whipped honey latte was amazing",
           "confidence": "high",
           "mention_count": 2
+        },
+        "food": {
+          "name": "Breakfast Croissant",
+          "reason": "Only specific food item mentioned, called 'addicting' with praise for its red pepper aioli.",
+          "quote": "The breakfast croissant is addicting",
+          "confidence": "medium",
+          "mention_count": 1
         }
       },
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Loved my sandwich which was a culinary delight in taste & presentation, ambience, soft positive vibe music selection that I forgot to take pic of my delicious turkey sandwich and banana bread with my delicious Colombian coffee. Sipping now on my tropical coconut lemonade. #MustGo @ #Carmelas in #BocaRaton #Florida."
+          "text": "Maybe I’m biased but this place is so cute and cozy. With indoor and patio seating options, this has easily become my fave coffee shop. It’s also a nice place to bring your laptop to get work done. The espresso is top tier and the baristas have a nice energy. Bring a jacket if you sit inside and get cold easily and have fun with the crafted coffee menu. I also have a fave barista (:"
         },
         {
           "rating": 5,
-          "text": "Really loved it here! The iced coffee and classic shakshuka were both great. Vegan milk options available such as almond and oat. There is a good amount of seating as well."
+          "text": "I tried to place an order mobile order however it didn’t work. I walked in, and the staff apologized and were so welcoming. I understand technology fails sometimes, and it wasn’t their fault. They gave recommendations and were so friendly. The tiramisu latte was delicious. It’s close by work, so i will definitely return!"
         },
         {
           "rating": 5,
-          "text": "Had the Shakshukah for my second time. It was delicious, plenty of feta, heated and ready for me to eat up. Came with a side of 2 pieces of bread (sourdough?). Also, had a hot, vanilla latte that was also delicious with a great flavor profile."
+          "text": "Absolutely love this place. Just opened a few months ago and I keep finding myself coming back. I love their whipped honey latte. Super cute vibes in here and great music when I come in.\nVictoria, Zoey and Josh are very welcoming."
         }
       ],
       "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T01:27:48Z"
+      "fetched_at": "2026-05-24T21:58:58.966Z"
+    },
+    "ChIJ81Ar2sYZ2YgRllhJlMYB_dI": {
+      "picks": {
+        "drink": {
+          "name": "Peach Please smoothie",
+          "reason": "Specifically named with delight; other drink mentions are generic.",
+          "quote": "loved my little bouquet of flowers on my Peach Please smoothie",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Triple berry crumble cake",
+          "reason": "Received the most enthusiastic, specific praise in a 5-star review.",
+          "quote": "out of body experience when eating the triple berry crumble cake",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Words cannot describe how exceptional the cafe is.\n\nUnique drinks, quality products and service that is top notch! The owners understand how important exceptional service is and they execute daily. It is obvious they put a lot of thought into what they serve. Very few cafes can offer this type of experience. Decor is a nice touch of elegance with a cozy atmosphere.\n\nDon’t miss out on this gem! Certainly now one of my favorites and my go to spots."
+        },
+        {
+          "rating": 5,
+          "text": "Love this spot! Great friendly service, beautiful atmosphere, and delicious drinks and food. Absolutely loved my little bouquet of flowers on my Peach Please smoothie! Highly recommend checking this place out!!!"
+        },
+        {
+          "rating": 5,
+          "text": "WOW! Honestly, I was waiting for a place like this to open. Has a twist & fused!!!\nI went first time with my regular latte, it was good. But coffee…\nThen I let the barista choose my coffee for me- WOW!!! I’m blown away!!!\nIt is delicious!! Fresh and the quality of the drinks are amazing!\nDefinitely coming back! A LOT!!!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-24T08:19:14.706Z"
     },
     "ChIJ-wx9iYvh2IgRBRNg20QB_10": {
       "picks": {
@@ -2961,6 +2927,40 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
+    },
+    "ChIJOzBnm0of2YgR7WPVYh9J4GY": {
+      "picks": {
+        "drink": {
+          "name": "Latte",
+          "reason": "Lattes receive repeated specific praise across multiple 5-star reviews, including a Red Velvet special, honey & cinnamon latte, and stunning latte art.",
+          "quote": "The coffee is always amazing in flavor",
+          "confidence": "high",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Blueberry lemon loaf",
+          "reason": "Enthusiastically praised as 'to die for' in a 5-star review. Other food items had mixed reviews (pizza and muffin praised in one review, breakfast items panned in another), making this the safest specific pick.",
+          "quote": "the blueberry lemon loaf is to DiE FOR",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I absolutely loved my visit here.\nThe staff offered suggestions and they gave honest reviews with specific information about their product, which was hugely helpful being that I had no clue what I wanted and had never tried anything there before.\nYes try it -whatever it is they suggest. 😉\nI personally got the chocolate chip muffin and the current special Red Velvet latte. And then left with the goat cheese and caramelized onion pizza to go.\nWhile my pictures, I’m know don’t do them justice. Trust me they were delicious. 😋\nThere were several docs there during my visit and of course I had to stop and pet every one of them.\nThere is seating outside and it is shaded. Inside there is a multitude of seating in various styles for comfort and functional enjoyment.\nFood ranges from breakfast to lunch type eats depending on what you’re hungry for.\nAnd I had no trouble parking in the parking lot next to it.\nEnjoy! ☺️"
+        },
+        {
+          "rating": 5,
+          "text": "Top Quality coffee cafe experience! They are doing everything really well imo. Delicious latte w/honey & cinnamon, my wife Loved her almond milk latte, awesome breakfast burrito and pastries. Great environment,  service, outdoor patio seating,.. everything excellent!"
+        },
+        {
+          "rating": 5,
+          "text": "This is the best Carmela coffee I’ve been to! The coffee is always amazing in flavor. The staff goes above and beyond. This location is able to do latte art on top in the foam. They did seashells in one coffee and sea turtles on another coffee. Very pretty and tasty! Their food is great too!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:49:47.368Z"
     },
     "ChIJWenGD5bj2IgRk_IEOgUUy9Y": {
       "picks": {
@@ -3064,74 +3064,6 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
     },
-    "ChIJI1et2rzj2IgRmmydvhcsL64": {
-      "picks": {
-        "drink": {
-          "name": "Tiramisu latte",
-          "reason": "Specifically recommended by staff and praised in a 5-star review; cold foam lattes also highly praised across multiple reviews but no single named drink dominates.",
-          "quote": "Kylie guided me to try the Tiramisu latte!",
-          "confidence": "medium",
-          "mention_count": 1
-        },
-        "food": {
-          "name": "Turkey sandwich",
-          "reason": "The only named food item in the reviews, described positively in a 5-star review.",
-          "quote": "the turkey sandwich was delicious",
-          "confidence": "medium",
-          "mention_count": 1
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "When I walked in I was greeted by Kylie’s warm welcome! The decoration is so so cute, simple and delicate. I was having trouble deciding what I wanted to drink to be ready for my day. Kylie guided me to try the Tiramisu latte! Thanks to her wonderful recommendation and sweet attitude she made my day! Thanks again!"
-        },
-        {
-          "rating": 5,
-          "text": "⭐️⭐️⭐️⭐️⭐️\n\nLong Story Short Coffee Shop is truly a hidden gem on Second St! The atmosphere is warm and welcoming, and the people there are genuinely pleasant.\n\nI had the nitro cold brew and it was incredibly smooth — rich, bold, and perfectly balanced. My husband ordered a cold foam drink (and he’s very particular about his coffee), and it absolutely met his standards. That alone says a lot!\n\nIf you’re looking for great coffee and kind service, this spot is definitely worth stopping by. We’ll be back."
-        },
-        {
-          "rating": 2,
-          "text": "Lavender latte wasn’t great, took a while, and the woman working the register was noticeably bothered by asking what ingredients were in the coconut milk. “It’s literally just coconut,” she said. The ingredient list on the carton tells a different tale."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T01:27:48Z"
-    },
-    "ChIJ-_O-FgDj2IgR0Wr2kH0Rn1I": {
-      "picks": {
-        "drink": {
-          "name": null,
-          "reason": "No specific drinks mentioned in any review.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        },
-        "food": {
-          "name": "Bolon Milotino with bistec",
-          "reason": "Specifically named and praised in multiple 5-star reviews as a breakfast recommendation.",
-          "quote": "Bolon Milotino with bistec for breakfast",
-          "confidence": "high",
-          "mention_count": 2
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "This is a great place for breakfast or brunch/lunch if you’re looking for authentic Ecuadorian food in Boca Raton. The atmosphere is very cozy and welcoming—perfect for inviting someone to experience Ecuadorian cuisine and traditional desserts for the first time."
-        },
-        {
-          "rating": 5,
-          "text": "So excited to find this place- very few restaurants with good Ecuadorian food specially in palm beach area. My first time here and i loved the food! Prices are very reasonable. Small place and fills up quickly! So worth the wait!! I had the Milotino breakfast- Bolon with beef bistek. Yum!"
-        },
-        {
-          "rating": 5,
-          "text": "This place is a mix of great food, excellent customer service and reasonable pricing. I recommend this place it never disappoints my recommendation are the Bolton Milotino with bistec for breakfast and my favorites for lunch would be: Bandera, encebollado and trío ceviche."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T01:27:48Z"
-    },
     "ChIJQ98zGMfj2IgRo5LU42SyiqQ": {
       "picks": {
         "drink": {
@@ -3165,75 +3097,6 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T01:27:48Z"
-    },
-    "ChIJ81Ar2sYZ2YgRllhJlMYB_dI": {
-      "picks": {
-        "drink": {
-          "name": "Peach Please smoothie",
-          "reason": "Specifically named with delight; other drink mentions are generic.",
-          "quote": "loved my little bouquet of flowers on my Peach Please smoothie",
-          "confidence": "medium",
-          "mention_count": 1
-        },
-        "food": {
-          "name": "Triple berry crumble cake",
-          "reason": "Received the most enthusiastic, specific praise in a 5-star review.",
-          "quote": "out of body experience when eating the triple berry crumble cake",
-          "confidence": "high",
-          "mention_count": 1
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "Words cannot describe how exceptional the cafe is.\n\nUnique drinks, quality products and service that is top notch! The owners understand how important exceptional service is and they execute daily. It is obvious they put a lot of thought into what they serve. Very few cafes can offer this type of experience. Decor is a nice touch of elegance with a cozy atmosphere.\n\nDon’t miss out on this gem! Certainly now one of my favorites and my go to spots."
-        },
-        {
-          "rating": 5,
-          "text": "Love this spot! Great friendly service, beautiful atmosphere, and delicious drinks and food. Absolutely loved my little bouquet of flowers on my Peach Please smoothie! Highly recommend checking this place out!!!"
-        },
-        {
-          "rating": 5,
-          "text": "WOW! Honestly, I was waiting for a place like this to open. Has a twist & fused!!!\nI went first time with my regular latte, it was good. But coffee…\nThen I let the barista choose my coffee for me- WOW!!! I’m blown away!!!\nIt is delicious!! Fresh and the quality of the drinks are amazing!\nDefinitely coming back! A LOT!!!!"
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T08:19:14.706Z"
-    },
-    "ChIJC1VsFw7j2IgRXX_XJkJMHb4": {
-      "picks": {
-        "drink": {
-          "name": "Whipped Honey Latte",
-          "reason": "Named and praised in multiple high-star reviews as 'amazing' and a favorite.",
-          "quote": "Whipped honey latte was amazing",
-          "confidence": "high",
-          "mention_count": 2
-        },
-        "food": {
-          "name": "Breakfast Croissant",
-          "reason": "Only specific food item mentioned, called 'addicting' with praise for its red pepper aioli.",
-          "quote": "The breakfast croissant is addicting",
-          "confidence": "medium",
-          "mention_count": 1
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "Maybe I’m biased but this place is so cute and cozy. With indoor and patio seating options, this has easily become my fave coffee shop. It’s also a nice place to bring your laptop to get work done. The espresso is top tier and the baristas have a nice energy. Bring a jacket if you sit inside and get cold easily and have fun with the crafted coffee menu. I also have a fave barista (:"
-        },
-        {
-          "rating": 5,
-          "text": "I tried to place an order mobile order however it didn’t work. I walked in, and the staff apologized and were so welcoming. I understand technology fails sometimes, and it wasn’t their fault. They gave recommendations and were so friendly. The tiramisu latte was delicious. It’s close by work, so i will definitely return!"
-        },
-        {
-          "rating": 5,
-          "text": "Absolutely love this place. Just opened a few months ago and I keep finding myself coming back. I love their whipped honey latte. Super cute vibes in here and great music when I come in.\nVictoria, Zoey and Josh are very welcoming."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:58:58.966Z"
     }
-  },
-  "citySlug": "boca-raton"
+  }
 }

@@ -2,8 +2,8 @@
   "version": 1,
   "citySlug": "parkland",
   "city": "Parkland, FL",
-  "generatedAt": "2026-05-25T22:42:44.740Z",
-  "count": 2,
+  "generatedAt": "2026-07-01T11:53:16.642Z",
+  "count": 3,
   "cafes": [
     {
       "city": "parkland",
@@ -13,21 +13,22 @@
       "lat": 26.3291354,
       "lng": -80.2530036,
       "rating": 4.8,
-      "reviews": 1742,
+      "reviews": 1801,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "cafe",
-        "breakfast_restaurant",
         "brunch_restaurant",
+        "breakfast_restaurant",
+        "cafe",
         "bakery",
-        "restaurant",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": true,
       "hoursLabel": "Closes 8 PM",
       "periods": [
@@ -126,7 +127,128 @@
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=4309904286288924747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ22CD3V0a2YgRS1AvEB3bzzs%2Fphotos%2FAb43m-srL0_M7W4kk05KTuCd8BAO5DF1hESuwg8jIW2i3l6yW0p_24187A6nl1fRyEG0KjddnTwO_pnAQRbDepyl4dJoq6bHYaC2HEEAaaSf9ngLqujY-EhETiymprLXgXeYJoEOPifgd07-t0AFphOtLOujbrz3xOWVB3hnFJJPMjyvBlvxUtgFkqKQgg-1xOMpbNJbxc3QgSEB3VxJF1Rer5lDTRFv3Sohydxs0wxyiEBkg_XUq2KlcX3ncO8Z6ib2gqO51EoUE_CkBCzuJl4eWvSL3ongW69yPsIt_dILCtF_kQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJ22CD3V0a2YgRS1AvEB3bzzs%2Fphotos%2FAaVGc3mYlbEIOCiVWL9KYwS75-pbL_APR6pNecscFPEH-bOwhU4umz_kopRSyqT3Gwl7xxV9Jcz8P9c38_x84F-pPJ0_UfE-FSII8O8uY2vJdpHL7S8YdCdj9_7Bw-tBb0BQv1-MTZ4K0f1-bB63jKQBouLSFoz3vAERc7h2uYzX2f_fciKqek9LqcB3uMtlq9qMN6z6AkmWp-z-EHZB_iEfx6t7Dut2BrSsmFiQkGnVT2Qt6Hy_nRVgIOA_rSZk_j0eFQAmOLFu3cNVn9gOLGzphcEjI23qrxtid0farEA4554S0Mz59SkQKb_BoRthwy-iphyyCIIMvMxy2wf59XInNNi-dr0kz7HmdRkf4aarqgKSu6O7XGhyn7xOxfp3XlvLZDwHlhwsrFkLfCcTv5A317rqXpQb8AfDfRDkW2G1ZN_RsQ&w=800"
+    },
+    {
+      "city": "parkland",
+      "id": "ChIJZVKLijIb2YgRAqRwhXApnYE",
+      "name": "Dear Olivia - Parkland, FL",
+      "address": "7805 N University Dr #100, Parkland, FL 33076, USA",
+      "lat": 26.328122,
+      "lng": -80.2517618,
+      "rating": 4.6,
+      "reviews": 502,
+      "price": "$$",
+      "types": [
+        "fine_dining_restaurant",
+        "wine_bar",
+        "american_restaurant",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 11:30 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 11,
+            "minute": 30
+          },
+          "close": {
+            "day": 0,
+            "hour": 0,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 11:30 AM – 10:00 PM",
+        "Tuesday: 11:30 AM – 10:00 PM",
+        "Wednesday: 11:30 AM – 10:00 PM",
+        "Thursday: 11:30 AM – 10:00 PM",
+        "Friday: 11:30 AM – 12:00 AM",
+        "Saturday: 11:30 AM – 12:00 AM",
+        "Sunday: 10:30 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=9339666765488104450&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJZVKLijIb2YgRAqRwhXApnYE%2Fphotos%2FAaVGc3mWq3yJa6P7u_LxL-B--NfnwF13GGZELUT7eA-0oybx_1eWpYr2u-dCvrZuNExpeH7TIWMPJL4pqRIwuUyz8w5sChjRlyZJqSWbTPv7d1npqp-HDI5iXa6YKce3171D5JPIey1yw1KWB3KZQKFKwM67D4zxUtibQfHDUj8eHe-mo9BPJ6r09M9RF0yF5HSHUIFq_RW_nH1SglQ68SH0WDo47l6n1_LQVlz4Dm7woALC0emScdUuGFy3elAgd0LFPYivgwMP0d32_C6fYHhomLoMcVwctE5_GcEF0it_5TWdpKGN25j3vTf_0gOIfI8s6ilStaBuxyaz-L8a7zgoGGymw-5GNyDM3uRq9ZPq1s9UKta_wNu03RzbiyB2mQ3-bYhXwynFazwkI1tqURGWhC81mX6Op4ZHe0xXUurw87nUvEdQ2TLOxW4KnDcyuA&w=800"
     },
     {
       "city": "parkland",
@@ -135,26 +257,27 @@
       "address": "6682 Parkside Dr, Parkland, FL 33067, USA",
       "lat": 26.3133783,
       "lng": -80.2218924,
-      "rating": 4.8,
-      "reviews": 68,
+      "rating": 4.7,
+      "reviews": 84,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "juice_shop",
         "wine_bar",
+        "juice_shop",
         "sandwich_shop",
         "cafe",
-        "bar",
         "bakery",
-        "restaurant",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Tue",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -251,7 +374,7 @@
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=17896028174789461432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ2TOnP64b2YgRuEW1yM52W_g%2Fphotos%2FAb43m-vV5uvow4vrf1SzaYFhlrXwOHZ0ijtV7tr2twhPndjTywMneD8Pd8Fn97bP_U0N00vshdOPgvOCO6oSK5KiP3YxjxdN6IWDA8wO9hC2gjtsq3ugyKYWddt8-vHIgI8dGgleOTbTdtJiHWDrvI2iX0qOY5UQaog89jq4h3q0DG_R02-v5vheH1moiJ_t_WMFY7Bc1EBcJth-tg1vtzkXKRAXWtPieOcI7eyG6Cmwvg15JPyaad2eDGsUnjuoWQ6HDsXnS8EPCcqkHIMExvobOcf2R-WRhxyln6m5fZG2VOeQrP4V-c5pnOdg14x564PQ-hMiT3eFzcAT2iCdIKBSB726cFzNXMVDosALb6DFMmRwPQPXZK85itO2DM7VlutqJeqTUsw9DhIHg8uk_sTLcNBcdhwWbxQrJIIiDw23wQYOcZWc3gu7FN2Bp7w4VGao&w=800"
+      "photo": "/api/photo?name=places%2FChIJ2TOnP64b2YgRuEW1yM52W_g%2Fphotos%2FAaVGc3n2jJvr3c2ZZtnx4knefhl-zYcQasBv9saLFzJp1u3wYqjqlYUGxZ6_B_xim4KBmRBsVKHC22GhxW8Qc9dXbXvGaacCv6QbwQE6m_2b6y4r6PQvxWuHUhslNCDrGtvmWIpWrwWnpU49zIuiNxERxPolJoUSKlTUIj1f9ztxee8_LbT07-Jz6UBrjMdpnIZv6ZyQp3uC2lPpeSEpm9pBAWLYj6REqBuPBrJraqjED9jS8i_LYe-Ky_NQFhS8cMiHM2zY0JnZKU4S4yavcXfOw8aj9hBkjNUQDe0evNJsoCE0QMQ6VoamQjPxrsM0n0ExJBWPgZrR6Ry6Hc12vPWAJK8plJhJ38qgW0m5Fdj4A4VALHSqX2YCyxycIaYOTEMXpxmw4QCd-a_HxoTyuxwMjmTpf-6y_yoIamIRU-MtiWI8DFQh__up7NjUdmv1HUEJ&w=800"
     }
   ],
   "picks": {
@@ -288,6 +411,40 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-25T22:42:40.783Z"
+    },
+    "ChIJZVKLijIb2YgRAqRwhXApnYE": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "Reviews mention drinks are excellent but no specific drink is named.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Smashburger",
+          "reason": "The Smashburger is specifically named in two separate reviews with positive praise—described as juicy, classic, and cooked just right.",
+          "quote": "the smash burger was cooked just right—juicy, classic, and delicious",
+          "confidence": "high",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Dinner at Dear Olivia Bar & Kitchen was an enjoyable experience from start to finish. The menu offered an excellent variety, and every dish we tried was prepared beautifully. The coconut shrimp was crisp and flavorful, the Asian chicken wings were perfectly seasoned, and the guacamole and chips were fresh and satisfying. The crab cake stood out as especially well done, and the smash burger was cooked just right—juicy, classic, and delicious. The Branzino was fresh and enjoyable.\n\nThe atmosphere is beautiful yet casual, creating a welcoming, family-friendly environment that works just as well for a laid-back dinner as it does for watching sports or spending time with friends.\n\nService was exceptional, thanks in large part to Maddi, who was attentive, friendly, and professional throughout the evening. Her excellent service truly elevated the experience. Overall, Dear Olivia Bar & Kitchen is a really nice place to eat, drink, and unwind."
+        },
+        {
+          "rating": 5,
+          "text": "First time trying Dear Olivia’s and it did not disappoint. Everything was so yummy and tasty. We started off with the shrimp tacos. I got the Smashburger and my husband got the shrimp and grits. Everything was very good . We sat on the patio  and it was on the lake with a nice water fountain . Our serve John  was great from finish to start . Being in the restaurant industry it’s always nice getting great service. Thank you and we will see you soon."
+        },
+        {
+          "rating": 5,
+          "text": "We visited Dear Olivia for the first time yesterday for lunch. We were greeted as soon as we walked in and sat in the outside tables by the water as per our request. We were quickly greeted by our server Dana who had a big beautiful welcoming smile as she approached our table. Dana was friendly and knowledgeable about the menu and even recommended a couple of drinks for us. She kept checking in on us throughout our lunch and made small talk with my daughter who is pregnant. Thank you Dana, it’s people like you that makes meals enjoyable and keeps customers coming back to an establishment again!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:53:16.642Z"
     },
     "ChIJ2TOnP64b2YgRuEW1yM52W_g": {
       "picks": {

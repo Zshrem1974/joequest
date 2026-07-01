@@ -2,246 +2,136 @@
   "version": 1,
   "citySlug": "boynton-beach",
   "city": "Boynton Beach, FL",
-  "generatedAt": "2026-05-24T21:38:48.609Z",
-  "count": 11,
+  "generatedAt": "2026-07-01T11:50:18.360Z",
+  "count": 9,
   "cafes": [
     {
       "city": "boynton-beach",
-      "id": "ChIJ72dWHu8h2YgRQh7H5rePfks",
-      "name": "Turning Point Boynton Beach",
-      "address": "7375 Boynton Beach Blvd, Boynton Beach, FL 33437, USA",
-      "lat": 26.528498499999998,
-      "lng": -80.162312,
+      "id": "ChIJnwtpLNff2IgRKEK0oPymrr8",
+      "name": "the seed. Coffee + Juice Bar",
+      "address": "1600 N Federal Hwy, Boynton Beach, FL 33435, USA",
+      "lat": 26.541554599999998,
+      "lng": -80.0565047,
       "rating": 4.7,
-      "reviews": 536,
-      "price": "$$",
+      "reviews": 567,
+      "price": "$",
       "types": [
-        "breakfast_restaurant",
+        "coffee_shop",
+        "brunch_restaurant",
+        "internet_cafe",
+        "juice_shop",
+        "acai_shop",
+        "brazilian_restaurant",
+        "cafe",
+        "bakery",
+        "food_store",
+        "store",
+        "service",
         "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7:30 AM Mon",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 0,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 1,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 7,
-            "minute": 30
-          },
-          "close": {
-            "day": 6,
-            "hour": 15,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 7:30 AM – 3:00 PM",
-        "Tuesday: 7:30 AM – 3:00 PM",
-        "Wednesday: 7:30 AM – 3:00 PM",
-        "Thursday: 7:30 AM – 3:00 PM",
-        "Friday: 7:30 AM – 3:00 PM",
-        "Saturday: 7:30 AM – 3:00 PM",
-        "Sunday: 7:30 AM – 3:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=5439943419923734082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ72dWHu8h2YgRQh7H5rePfks%2Fphotos%2FAb43m-vPlZU9Gg79e-NYE8ZIVJOx0i9NFlqNG_3ZbW631jXTBzPsb8--0-tFCMhGqW7kFEIv3VUOxKAhJzshlNaLoGu18C1mPoHJpvKIyW8kt_iKylKZwUd4MlC7VYJDrO79RYrlKkme7ZRLMt1EIh6K5BanTjDBY0KJF-X0VGW-n1ag0mZHyMWW6jlnkAQghNXo9cWvf8XAd-tsItWnV-fuOFL31CR2uSYZJ1PRQdR_jvcSq5WYUdKZ5UwWPdZaGc0o1jPs-jHhFffYvFEtAso045d9oWw8oN2LyITFsK0DDgjHEvayU62J78Tg4UWf-dBhyuzZeokL9LPzG2ytc6RQpaJbSeHhYw-kuPqrWJV-_8uAnCdh8hK7gb09xAUsohSXDEcVhhHJuftz7bBPtU3jqsvcVTwwQyiWafphc2Rv_diioiP7xcjYLyjee-ceLE0D&w=800"
-    },
-    {
-      "city": "boynton-beach",
-      "id": "ChIJxR-AMCLZ2IgR77BAXUeGWng",
-      "name": "Hideout Kava and Tea Boynton Beach",
-      "address": "1035 E Gateway Blvd #204, Boynton Beach, FL 33426, USA",
-      "lat": 26.551429499999998,
-      "lng": -80.0764099,
-      "rating": 4.8,
-      "reviews": 274,
-      "price": "$$",
-      "types": [
-        "tea_house",
-        "coffee_shop",
-        "bar",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
+      "timezone": "America/New_York",
       "openNow": true,
-      "hoursLabel": "Closes 2 AM",
+      "hoursLabel": "Closes 3 PM",
       "periods": [
         {
           "open": {
             "day": 0,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 2,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 2,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 2,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 2,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 2,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 10,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 2,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 10,
+            "hour": 8,
             "minute": 0
           },
           "close": {
             "day": 0,
-            "hour": 2,
+            "hour": 16,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 10:00 AM – 2:00 AM",
-        "Tuesday: 10:00 AM – 2:00 AM",
-        "Wednesday: 10:00 AM – 2:00 AM",
-        "Thursday: 10:00 AM – 2:00 AM",
-        "Friday: 10:00 AM – 2:00 AM",
-        "Saturday: 10:00 AM – 2:00 AM",
-        "Sunday: 10:00 AM – 2:00 AM"
+        "Monday: 7:00 AM – 3:00 PM",
+        "Tuesday: 7:00 AM – 3:00 PM",
+        "Wednesday: 7:00 AM – 3:00 PM",
+        "Thursday: 7:00 AM – 3:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
       ],
-      "mapsUri": "https://maps.google.com/?cid=8672391673520632047&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJxR-AMCLZ2IgR77BAXUeGWng%2Fphotos%2FAb43m-uy6ooxH86smcP5aFIGd32k2vD_COxNWGcgZimg5R6roXePKCw2_c9CDENjPCX3J0ufSOoyBBTre0J33JEs6KlH38iLKoIhDRCfqo0FyqXH392olpGRxwOXR_ijcqM-PYbLG-5ecdE3qSo-fEz4dA44OaQkQBj2G-eUXH50a1Y4FaJ2CFJE8YLtkJQ_6Sm3jYh7SnuQnhf8wDdmQGSs4xjVs8frlc51aee5IAq1vuR-1kd3I-3MSOWA06Wu1j2s1n7uNNJu_-rXqrKxpir0L2t4c3VGEbY2aAWgIQ2miqnP5Q&w=800"
+      "mapsUri": "https://maps.google.com/?cid=13812160711150027304&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJnwtpLNff2IgRKEK0oPymrr8%2Fphotos%2FAaVGc3lLh94fZEx_7hUTYQhz8jYFuOKBWIj6q_mGRTA6ZIphEswwFZC1lTPfbUFcJ-1r1SQ-A1-jjhg6Zt1YBNyyqhGb-T9bPhW-QvrwqxGsqf0LB6GxlYUhLFtThvP5jL0WRRex-I10J0L6xgg65K5xwVETzDIcwOn17uGyM2VntPKOLB3QT8QFMbBoPaf9oMqFF-aRXDOxFaV0ePSj-7ER2diqNYk7zVawV1KSNwZ8zesjt3zaOjFpSzLAJ1diPunzcfZwL7ZKuuoN3Cb0VznmxuHfB97IAEKikZMplCK6uQxWYxjeuSwnWGuIS__Og85tP2eEOxnYVb2wYlCj0wVT5r7bNCNxHA2hlPq7hV3OZ9tVT42NwYJMPz7PncCxyTXqi0lNk3uuoQLArBx7L3Qu_O7bzUK3Wigyy6gpPQjmg2N76-Kv5fKKj5vFNLUhgA&w=800"
     },
     {
       "city": "boynton-beach",
@@ -251,22 +141,23 @@
       "lat": 26.5148968,
       "lng": -80.0655438,
       "rating": 4.7,
-      "reviews": 304,
+      "reviews": 306,
       "price": "$$",
       "types": [
         "cafe",
         "juice_shop",
-        "market",
         "coffee_shop",
-        "restaurant",
+        "market",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7:30 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
       "periods": [
         {
           "open": {
@@ -351,7 +242,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=18437524088489838700&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJrQ85aoPf2IgRbAgl6Hg-3_8%2Fphotos%2FAb43m-v_lz6ryqeFV6-XUHMtqVwbArAzQNt3SfGHAi_ZReyt-KiP6qYnVADqrjbaTYRJL-Ct2BXCxLoWG2Wm1Wo57ikiw7c_3ZR2qEgEgjtViz73pynRRbZzzWHG05fAsQRzMCJEvJgBaR2w8TqcOcKkjj3P-OGAgjUbxIrGJrd5C2MWLwTUQwxbZtFgK78jSoR12RvMgLTwg-RMO-2ohVlykYWkQzJFZ0YF5k96mdrgcKiPHgVDzoxJbJveFP4J14QYPsLtnw4lOTKVfdeHbD0iQ7Jo-c2XWWwPaxcVrEZ1Y6M5fg&w=800"
+      "photo": "/api/photo?name=places%2FChIJrQ85aoPf2IgRbAgl6Hg-3_8%2Fphotos%2FAaVGc3mtKbB51Wz1W--e66fReAlhpfmiD-lJAIxQqMTWE8CIWtzK2g8qUubczrf0uiyflhf9jZI4TLWly7OiM3Tg8SqTSgscmB25vIFACDFnCpa1L2HuMRJd05ibpIUUpfL9M3yJtgaaQL-0tRExGUZHr-ir7G0LzOP2g5e5Qav4f-MbIOukT68XZoHMoijz5tL0Mqv0ewnK2aq4pNVJJlFY7AsPWq3n5IwOie2OYDWUHIAvpVAgfQ6hwyF7wkmFIjyKXGG0v8kBWG1cBwFnrib-7hY6Ybd8tDjlAhalU_Qb75OXXK0dNUegS2-OFDq-wBPs85tAsoIsteO4dyd1kP287YdYTnFMezSvzzK1FQFg1ShWwxHRRQaeYoQeoGCUmtxlztFAq9tu0JP4PLLDZ_IkBlhn7kNL8yttmXjB_3d8JN-0G1TU&w=800"
     },
     {
       "city": "boynton-beach",
@@ -361,7 +252,7 @@
       "lat": 26.515055699999998,
       "lng": -80.0592427,
       "rating": 4.7,
-      "reviews": 290,
+      "reviews": 296,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -372,6 +263,7 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": true,
       "hoursLabel": "Closes 7 PM",
       "periods": [
@@ -470,7 +362,7 @@
         "Sunday: 7:00 AM – 7:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=2368623995425409692&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJFQA8goDf2IgRnErMbfkK3yA%2Fphotos%2FAb43m-vx0g4YnKIZ-ST8eeK_AFfX7lZdYGdAT4p9NO88dJf3xsNPQaukY9wkoX0N8Vs0vfNEZxec5hJkZLSKawRkqEijN3eVGSpmBQd14hTbFYBh0XQE3aqvCvXMq28alHaC2vJBsy8-aII5K8IZIqwYuBIvnFZ1wKH-BydHv9rmmsq0BPXWt91c_yzWGbvVt0t21mNvKYGpyhfs-kOuHPp5IJoAIju7oazS9a2EjuEM-vE2_wCET8XabHYqV6Uu2Dk3ip26Pyrn5Iu3V8clraT3l4gEPfOTm8Kw1WxpNPAD-SNJlP7VznbRafTJOSZ54fNtejAyR9UMzoiNtSNY6x8kxDXHN6S-ixTDDFGhS41BrpBCizhGC06Iuxl9p51RbvNkfATuMpPKs1apK8nkkVkUgAE7P-XdbRIgM7yxorYjiuX_o9oaMPGFnX0YSWu027ib&w=800"
+      "photo": "/api/photo?name=places%2FChIJFQA8goDf2IgRnErMbfkK3yA%2Fphotos%2FAaVGc3lZbenhIJNrjbM0yW-Y6Ntu33iER4HvByU0q76nzGqYGmuF_oeU9MBijpxWS2oNyK84ucPcoZD5EhfOSdv56v3SckhdQGpopNcTLDbn-IisS3SYtSNUEEkC3LeY0Ptrb4-jYuivpUs6KPbpbl8EYqwm06OhW1yIgwXszgpO3igEjZS7zK5ZdJLx6bmak5jvcIrfdgaReIhs-uYv3fUikgjUrboFPrpC-ycH76bow_Ttms3e9yCGOv0M9EwEPn2mCH_zLuQvPK_0BDGYwVeNr_iHugOvpj_gaYfQm1suj-Bmj-jbEvQsH6qSxkZFeK54mm5bQpRBxWLAuN2ca_fGqI0wlH_LXe0Z738YnONxt_6sdXmQJwZC8VmNTWLEo3TVyLmbcOfps6FkFtulIkjWW-kpmb6Cwz7TOX_9alHJy6toaUHoVGMxwO2BEO1Wtzih&w=800"
     },
     {
       "city": "boynton-beach",
@@ -480,27 +372,28 @@
       "lat": 26.529365199999997,
       "lng": -80.0579235,
       "rating": 4.8,
-      "reviews": 198,
+      "reviews": 208,
       "price": "$$",
       "types": [
         "bakery",
-        "turkish_restaurant",
-        "french_restaurant",
         "pastry_shop",
-        "brazilian_restaurant",
         "coffee_shop",
+        "brazilian_restaurant",
+        "french_restaurant",
+        "turkish_restaurant",
         "dessert_shop",
-        "confectionery",
         "cafe",
-        "restaurant",
+        "confectionery",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7:30 AM Tue",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 2 PM",
       "periods": [
         {
           "open": {
@@ -510,7 +403,7 @@
           },
           "close": {
             "day": 0,
-            "hour": 15,
+            "hour": 14,
             "minute": 0
           }
         },
@@ -522,7 +415,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 15,
+            "hour": 14,
             "minute": 0
           }
         },
@@ -534,7 +427,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 15,
+            "hour": 14,
             "minute": 0
           }
         },
@@ -546,7 +439,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 15,
+            "hour": 14,
             "minute": 0
           }
         },
@@ -577,15 +470,15 @@
       ],
       "weekdayDescriptions": [
         "Monday: Closed",
-        "Tuesday: 7:30 AM – 3:00 PM",
-        "Wednesday: 7:30 AM – 3:00 PM",
-        "Thursday: 7:30 AM – 3:00 PM",
+        "Tuesday: 7:30 AM – 2:00 PM",
+        "Wednesday: 7:30 AM – 2:00 PM",
+        "Thursday: 7:30 AM – 2:00 PM",
         "Friday: 7:30 AM – 3:00 PM",
         "Saturday: 7:30 AM – 3:00 PM",
-        "Sunday: 8:00 AM – 3:00 PM"
+        "Sunday: 8:00 AM – 2:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=14973176084292817791&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJpx_Yuijf2IgRf9OlP1Foy88%2Fphotos%2FAb43m-uK68P7N_54l1HdDoCwB6V0_cBps6HD3Ybzs5AT6q_J-Jk9_zqUvnxbGun3icivx-2BwGL91V9nXgZo_5ug9DUmErRrh9Fj-J96euaZXdAdBxj0JfU1_L6r2WBi80pzYQhj0KiYkyMzFxjk9rgosI4ITJsxvY95EPGt5F1XHrHLSpZvSvOstRQhVNyRJwvpM-ORJI3PakZWDE8IDRApigo_JafVD12sVT5O1lOr3l_w0rynAwbXbXWd2KQfQlQ38XH5wKw9pXlDZyjv0wr7xCIdqxnnNDC-iZJHe_mLHak&w=800"
+      "photo": "/api/photo?name=places%2FChIJpx_Yuijf2IgRf9OlP1Foy88%2Fphotos%2FAaVGc3mikDGWQK79l1m86gWfozTjXIVty37sCmcSiFBr6-TbCk916NLsUOXadMVBo7_o_hv7bW-7nTzUeMzyMIjv43-aAwAKbXdCWuGj8ZvzFT639JDnvzHqpc90RPLaZ3SXPfVfXCIQ55sXSl6LrZSxBdyxm81ABAf5npaDuu4rg9zzG6RMt0fZ_P7UR8XIypEeOIwN-ywQtVK4nCGFA8fYlSUH5UWu2--eEZv7LH2S38vuDrF6I5ORT23vqzSFablifbkLbMmpkaGK8gtfN6RegwagvXxc1YYiCJcabFeYzfuXWX9ezDKGEeWEqny6XPB6NpcHurukArNKjn-Y2jN4ENyp_PAnghP54P4j1xi1oQ2fGkyuDWVo1EPTnt-YWqmJKDiQMDAF4446R3OyRpg3yQQ1XoQq79tObmA2IEoNFom8_zuEfjJktNhtJ_4EeleH&w=800"
     },
     {
       "city": "boynton-beach",
@@ -594,8 +487,8 @@
       "address": "1626 S Federal Hwy, Boynton Beach, FL 33435, USA",
       "lat": 26.512983,
       "lng": -80.057918,
-      "rating": 4.3,
-      "reviews": 645,
+      "rating": 4.2,
+      "reviews": 650,
       "price": "$$",
       "types": [
         "restaurant",
@@ -603,8 +496,9 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Mon",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -614,7 +508,7 @@
           },
           "close": {
             "day": 0,
-            "hour": 15,
+            "hour": 21,
             "minute": 0
           }
         },
@@ -626,7 +520,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 15,
+            "hour": 21,
             "minute": 0
           }
         },
@@ -692,130 +586,16 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 3:00 PM",
+        "Monday: 8:00 AM – 9:00 PM",
         "Tuesday: 8:00 AM – 9:00 PM",
         "Wednesday: 8:00 AM – 9:00 PM",
         "Thursday: 8:00 AM – 9:00 PM",
         "Friday: 8:00 AM – 9:00 PM",
         "Saturday: 8:00 AM – 9:00 PM",
-        "Sunday: 8:00 AM – 3:00 PM"
+        "Sunday: 8:00 AM – 9:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=15756195965506480024&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJx8TXc9zf2IgRmOd0L8BAqdo%2Fphotos%2FAb43m-u557AI2KSd2e5iA3p8LaWwza9oaOB6orahwSKb6kZYBHxA3g-F7ZcqBe6qhT4_IYGfghVysoRS-do2HQYJduhcoJwzknrjoWkKpgvAbCxVVLBg1UHT8M5K2J2rc-nLe8avRLtmbzKU_SeF-3P9KEmKbff0vk3ESXYuVZc8jUDv_pNEij0DR2AGmhaOTjpejDZYwsPJsh76iZHVpCWVAWBUfxi8eZr8OX9GbhoPp_Wn1W52Kv1QK8EeA326_w40rBOhbDr7JanVZW8mpHWZ4Z-8BiEd_ED25929gIaoFysFOw&w=800"
-    },
-    {
-      "city": "boynton-beach",
-      "id": "ChIJAQAwDiLg2IgRVDm_OecUcug",
-      "name": "KoCo Café & Bakery",
-      "address": "320D N Congress Ave, Boynton Beach, FL 33426, USA",
-      "lat": 26.528900900000004,
-      "lng": -80.08968879999999,
-      "rating": 4.8,
-      "reviews": 149,
-      "price": "$",
-      "types": [
-        "cafe",
-        "pastry_shop",
-        "breakfast_restaurant",
-        "bakery",
-        "meal_takeaway",
-        "coffee_shop",
-        "dessert_shop",
-        "confectionery",
-        "restaurant",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": true,
-      "hoursLabel": "Closes 6 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 8,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 18,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: Closed",
-        "Tuesday: 8:00 AM – 6:00 PM",
-        "Wednesday: 8:00 AM – 6:00 PM",
-        "Thursday: 8:00 AM – 6:00 PM",
-        "Friday: 8:00 AM – 6:00 PM",
-        "Saturday: 8:00 AM – 6:00 PM",
-        "Sunday: 8:00 AM – 6:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=16749472947483130196&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJAQAwDiLg2IgRVDm_OecUcug%2Fphotos%2FAb43m-tEeNYspsf_Cyj5DOBfoHywCB9yYCtudJuY_CYSzxpXcIjnKdp-1VwIQy11za81gpFljMZExpeD9oMCSOIjsfKmq9zEpW4CuO-7DcgaQh5uMvh-cDLeQorJarVLrAqL2iWCfJGl35FirASkPBoK1B8zVWNXTjQpRCFmlcdIk5I1QKGlcrsOeaxB1TQj8Uwme8sbo1RM8iHGSieMc33ahZMxM8wRPZhMm9rlmHBK0uMXKhddiqL4etN_9b5aOGWFLgvQB07pYZISaaM16u3uGa7oUpH-xmWUQ07gkYF36s19UQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJx8TXc9zf2IgRmOd0L8BAqdo%2Fphotos%2FAaVGc3m0JUvVgS2k8NnHgdDzVlv27OAkvY-2XdYtG50wxfStMY7ZKbLSW9Xq-DM_O1yvXmAOX_l8NXhoNySaHkHiYLcbkKTtg7ntHatdVn7BO7Do_uTsRqzOdrugDaGfa-egMYKUAp1U9FtzI3mnVUAA0F7Xph3tkPU1hxVYWixzuP5VwILaNeLYnRVb9CkDUWDn4ESmWiGaHeSfMdZX9sS2wLatUEI2Cq02s-XOMkBGEOTjCv6FGHMw36jW1hDK5abOADn5qNKZCDNM8MYrhrIZNAQQbLUCr9dz7C7_DaFn-MUsWntnsy80MYZuLGbNVb-pCcbDcvegAG3II7PHOjYrgudgsmGbdR7kiyD68aBFzhpfQ_bhHlgjLwFspGMFrqKjnoVXc8BjwO8e4LhBOqg7rFeqZ42x3iADKLC8R9d92UdxpA&w=800"
     },
     {
       "city": "boynton-beach",
@@ -825,7 +605,7 @@
       "lat": 26.527012,
       "lng": -80.06018010000001,
       "rating": 4.3,
-      "reviews": 465,
+      "reviews": 467,
       "price": "$",
       "types": [
         "cafe",
@@ -833,8 +613,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 7 PM",
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -931,138 +712,17 @@
         "Sunday: 8:00 AM – 7:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=5355390912256311088&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJl6QhPiTf2IgRMH9kHqkrUko%2Fphotos%2FAb43m-tLdueSV9-ByqCwpy91Ws7rDaQ9X5Zkp1W36d7yjjVJYXjHovFFNTuDp1ZbMO8NpfzVJji0dgUBRXejN3PlfwT0lrvTslVrYKQvOM6LNKe8NlZVgyP44IsmiHx9xKQe1990tzpto8Ak8KjCVPyS1BkiY163GeGlufc7FYMXyC6yFsaDNAFGXiggtYM-T6CrL8vTwajtC3mgooDQwszJAyO9hyjPr8DZFQkttSM1ur0H_P_Jfap775FBcJ7iPX0gcFSN3U8sGj73Eo6D1uiIJeTnoeCdqktuC6hJrCeoen8g9ERE26NIsQcXJemp3QbEomcPmCLW87F5RZl3hi_AIzwZ794ovoPljqNEK4GoIzGavvbv2-11D8QiLHEKz-Z2ZBTe_uX8hxPpIAizGka_HSg3MyyoY65V5q7mV1qulDBs720&w=800"
-    },
-    {
-      "city": "boynton-beach",
-      "id": "ChIJCYKKYRMn2YgRMro7qmwD314",
-      "name": "Ohana Coffee & Kava",
-      "address": "4895 Windward Passage Dr Ste 10, Boynton Beach, FL 33436, USA",
-      "lat": 26.549240200000003,
-      "lng": -80.1214853,
-      "rating": 5,
-      "reviews": 89,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "tea_store",
-        "juice_shop",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": true,
-      "hoursLabel": "Closes 12 AM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 0,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 22,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 0,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 0,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 0,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 0,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 0,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 9:00 AM – 10:00 PM",
-        "Tuesday: 9:00 AM – 12:00 AM",
-        "Wednesday: 9:00 AM – 12:00 AM",
-        "Thursday: 9:00 AM – 12:00 AM",
-        "Friday: 9:00 AM – 12:00 AM",
-        "Saturday: 9:00 AM – 12:00 AM",
-        "Sunday: 9:00 AM – 12:00 AM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=6836186524619094578&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJCYKKYRMn2YgRMro7qmwD314%2Fphotos%2FAb43m-vPOY_9tuqUGrJhO4Rqgd-hGhOJ1U3BQXrsPVFk6zTki-at5oxGhY1XEEkWLtL7W2ZUY0AVpjaOQ5gFeC8DQKzed5Zis1bsmuEH8ChUslnwCOERRdbcyI04HSqXkB-r_-X-6YcCZ5P0GmeOmjQ91PwzNtNZriUNObRIC7NSF0xCv2ElI7jn1EKKRJ2bdWL-9s4n8d5zgEI8LlfoXDnSF3w6RbyRMdew21g88uYtSIszPkSElZclQUDslGIY6-Gs3GhKFbMzhnuuMnAlHFSyU954ABL_C26Q1FemeBAua-HPiM6QmheXnCgPz3q06fEXSQprpdq6CRD4jGlXZyI0jH0GxKpJYNxEwf9e_EHD773nA0lpihOiKTyI9alUoqhx_hdZDc4CwRGCXv3d2SirQxv-ZZbSuta52Wakg35MjuS8J5tbOBIjnNm-JsGxOodT&w=800"
+      "photo": "/api/photo?name=places%2FChIJl6QhPiTf2IgRMH9kHqkrUko%2Fphotos%2FAaVGc3mQsI_6VQtCNG6qsrfWfnnnxHEX3rDIdm9jHbEJxaN3tE9thpR92mjTQ2GI6Xdnwu117fVAiN1uRpHV-AAkwBmwYX0Wj60esGwrv1K_0DJXNVUMX-UcVaW8UDhu-HHCx_mEwH58NAevgdNVPVt5ebSZRRZPSDw3_FVqvmz7GCCUL2PnyH9aZjwlo8SPV8e6TY8wdjVeM2X8AVDxCv9x2sW9HGL18cdBGuLesLH1ety849VcSIIl2XcEpDDk3eS8IL35ZBiuh0RrF84zg8Wl8VcWJmyIiprVP8xPBLm2HJWRkd_omvVIdt5D1OG8ShwMjbMSUq_aOA2-lGmtEU9p3yAPCQYCxepvSMDi0EE75Pd5TE8n-EDHc6GpZ3ONZMjZni92RF1fXL7Racdp8GhlHeBWf3RjgPKMMixrWnk3emwcBKI&w=800"
     },
     {
       "city": "boynton-beach",
       "id": "ChIJFR8TTAbf2IgRneX5GoN7f0Q",
       "name": "Marina Café Boynton",
-      "address": "100 NE 6th St #108, Boynton Beach, FL 33435, USA",
+      "address": "100 NE 6th St Unit 108, Boynton Beach, FL 33435, USA",
       "lat": 26.5276806,
       "lng": -80.0561563,
       "rating": 4.6,
-      "reviews": 197,
+      "reviews": 198,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -1073,8 +733,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 2 PM",
       "periods": [
         {
           "open": {
@@ -1171,190 +832,282 @@
         "Sunday: 7:00 AM – 2:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=4935799519644870045&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJFR8TTAbf2IgRneX5GoN7f0Q%2Fphotos%2FAb43m-t9--cSrH-VEfgoTFJCIa3caOTjkITxtwFU2RzOdPF32Tg0-y9QGvC3SUUwuRj0EQVk4oGQiwA1A63nkMF0gNOcHr_TXv3wTwWcyqkPVX0cXGdlmgX_DtALXSgiJKIyGyTOQabYESC4AqOXldByncC3VMQxa6OJpg0BDjPplE_Ylj2-CSG4REHWdF9AaKcFvmaIIMf0oYzBACHUXcvzhuC5iQBfxUcIVabZLwETtwUI4FGSxk5OH2jqk8xSqx6-VT7IGYxvv7SCVlb9jNFU8qTR81M6JakGlSI7oPoiHPwmLw&w=800"
+      "photo": "/api/photo?name=places%2FChIJFR8TTAbf2IgRneX5GoN7f0Q%2Fphotos%2FAaVGc3lhVKUksk7bI_z6qG9_iUuA9H-9dhfkBEppg7pPCL-aax-82RBFWEZha-8SOKiFScK-sI66CwX7KptMk_YFanGfPQM_vUm0cTy2ThyZgbWCDmUeMD7AKxQDoef5g5_E2Y2qpUVWfmqtpTAxtrdlvSR0O7IGQ1SJaKBf4w9oPZ-sanBdrYEOQupiCsp74WkzOBy5eGS7lafByx5xsOWu54AGS_XVegmm5DIk4zEYrjDvAQ_zDqimB8ptUjsfDznu_99Mbg9Pybk7FaqlhjnJfIR23yf-BRu4NQ8dSAeGk76_nyMSH-5bNGVjsMXSJLnS3NNgEOtR7ZF33ERTu43SreyDhv3WfTp4lKhc26ydtiQEgwgiVeyKJmd4f5wECTZO1QdXVe_t824VvL7HDiTy0FCRTihNH5RqwC0S2d19rIg9xQ&w=800"
     },
     {
       "city": "boynton-beach",
-      "id": "ChIJB05xYcXZ2IgRwTKHfj0Kze4",
-      "name": "Aloha Bakery & Cafe",
-      "address": "801 N Congress Ave STE 691, Boynton Beach, FL 33426, USA",
-      "lat": 26.535857,
-      "lng": -80.09550469999999,
-      "rating": 4.3,
-      "reviews": 362,
+      "id": "ChIJCYKKYRMn2YgRMro7qmwD314",
+      "name": "Ohana Coffee & Kava",
+      "address": "4895 Windward Passage Dr Ste 10, Boynton Beach, FL 33436, USA",
+      "lat": 26.549240200000003,
+      "lng": -80.1214853,
+      "rating": 4.9,
+      "reviews": 99,
       "price": "$$",
       "types": [
-        "bakery",
-        "cake_shop",
         "coffee_shop",
-        "dessert_shop",
-        "confectionery",
+        "juice_shop",
         "cafe",
-        "manufacturer",
-        "wholesaler",
+        "tea_store",
         "food_store",
         "store",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 6 PM",
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 9 AM",
       "periods": [
         {
           "open": {
             "day": 0,
-            "hour": 11,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 9,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 0,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 9,
             "minute": 0
           },
           "close": {
             "day": 0,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 20,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 11,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 20,
+            "hour": 0,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 11:00 AM – 7:00 PM",
-        "Tuesday: Closed",
-        "Wednesday: 11:00 AM – 7:00 PM",
-        "Thursday: 11:00 AM – 7:00 PM",
-        "Friday: 11:00 AM – 8:00 PM",
-        "Saturday: 11:00 AM – 8:00 PM",
-        "Sunday: 11:00 AM – 6:00 PM"
+        "Monday: 9:00 AM – 10:00 PM",
+        "Tuesday: 9:00 AM – 12:00 AM",
+        "Wednesday: 9:00 AM – 12:00 AM",
+        "Thursday: 9:00 AM – 12:00 AM",
+        "Friday: 9:00 AM – 12:00 AM",
+        "Saturday: 9:00 AM – 12:00 AM",
+        "Sunday: 9:00 AM – 12:00 AM"
       ],
-      "mapsUri": "https://maps.google.com/?cid=17207421010484605633&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJB05xYcXZ2IgRwTKHfj0Kze4%2Fphotos%2FAb43m-v9kYa6gy9w5Mdu50wl9f7T7U0e1BgTGk0ns9EAzcDS8wGHhiFUbnAPfX-IaAIl27zli8xFk540J3-YOAWxWUjPIG2Sv0tmVONgpkGc66mGpAYvW1BGoO_LY0YjZ6g4fAwS-W0NjgVG1gz6fJni2shOfLHN-KAPJ8Ku3j36sqm0cYZbKNNgHSHfkahZ6anP4aijHCHAkrgR2w5YuqnSHwLe24tlxtuXeghXeGSgarOZhaYnIp7u3uETXQvDvgpPUxUbniBGhBLG0r5H9-bv0tMmSqB-909p-gQk8-W8gQagOHzWjBVPPk7dtqVutrqOu_gynYdcvzURmDw0JA3PmLiEA_uxdBLpBci10D64uEQiUbW0Bdgjf5mJxsNMRdFkEu6KWSVoQ5py6Ll1WJ86fjYOKpHwmX4BtOYqWS9zNtbpwMCl&w=800"
+      "mapsUri": "https://maps.google.com/?cid=6836186524619094578&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJCYKKYRMn2YgRMro7qmwD314%2Fphotos%2FAaVGc3nnQA0f3r86PczFOHsxvKQiue2qNV3w6BNEmndVecVRVn9WcXDVInoZRLejYC4qCM9y_ln2Z4mZH6aI1XAAHBBoCx4redGa6QmNLoXbBqxa47as_NYR5CNUdiHD8LFPgF3IAEuDNZarkjlQulTf7YCIWkbgvi248JhXmM0gZXeayUkKPP83b-4eDjDID8G3PCZNw1AVXNShKnyI-fZw1yTOVJgPHTOB0AxjxyrUusnHnOEVTt9vOe-XSg9oWRa_1asWRLz1sby6wWfHVsS_lqYsZHTjAlt4c2v_9FY0kHZtOcHnRlyY7rQqYhmiMV0JXvFRH0wiR4_GKw-zaEN3w92zV_iHQk2HQi1F3QirAYXsWCWuovsMYJLMjSL_nYAcF5MCPPtDzlalHi-GUyzDqxuWB6jK_KyxI34i17LPMieonS1ch_MWDYs7NuAZTrre&w=800"
+    },
+    {
+      "city": "boynton-beach",
+      "id": "ChIJ37Vrlugh2YgRD-53bqPuxMU",
+      "name": "Ella Cafe _Boynton",
+      "address": "6651 Woolbright Rd #132, Boynton Beach, FL 33437, USA",
+      "lat": 26.514027499999997,
+      "lng": -80.1495264,
+      "rating": 5,
+      "reviews": 9,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 17,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 8:00 AM – 5:00 PM",
+        "Tuesday: 8:00 AM – 5:00 PM",
+        "Wednesday: 8:00 AM – 5:00 PM",
+        "Thursday: 8:00 AM – 5:00 PM",
+        "Friday: 8:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 5:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14250777506607525391&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ37Vrlugh2YgRD-53bqPuxMU%2Fphotos%2FAaVGc3mI4-p8s3yAGyXh9Z-DIulhZjq11qeyjEEvBVnXOx9sI_nFh-J_XLFlAYcmuCM6H3cIiUF_-gg2YlTWZK6_HZ3lWYbf5x4CkgPPT2kfUWqyNgGLlgTybrfqFXckFE3noS8XRN5_5BiOJn8FTyfGwGPT1CKud-kZ5BjDeAv7aR5CgxO8uKrUnoButn0evJE131cfYj7DP5WjGDhJMbxD0hHTVFLlcWCdUaJswYz5_4b1ou3wEG7ABWDfpve5H9oNjpryhOFEXhdErRFEZWnyPXPSzgSWrIAPiUV48dx_hsxEehaBq8IVNnJutgWt9sH57xyadcq5dHoUV7TmnQ7HW3RO1MLxUAbEMojy3fs9zvLxvRMnhUP8ipKylCzWWJWnYD37QaskDCOUy5rkHxf6FK57zDnfuKMl0PZM-fbM15_ZE6j9LZacI6Hzn-7uPS4d&w=800"
     }
   ],
   "picks": {
-    "ChIJ72dWHu8h2YgRQh7H5rePfks": {
+    "ChIJnwtpLNff2IgRKEK0oPymrr8": {
       "picks": {
         "drink": {
-          "name": "Pumpkin cold brew",
-          "reason": "Specifically praised in a 5-star review; other coffee mentions are generic. Iced coffee also mentioned positively but pumpkin cold brew has more specific enthusiasm.",
-          "quote": "The pumpkin cold brew was super yummy!",
-          "confidence": "medium",
-          "mention_count": 1
+          "name": "Matcha (Strawberry Cream Matcha)",
+          "reason": "Matcha is mentioned enthusiastically across multiple 5-star reviews, with one specifically praising the strawberry cream matcha with coconut milk as 'phenomenal.'",
+          "quote": "The matcha was absolutely phenomenal with coconut milk",
+          "confidence": "high",
+          "mention_count": 2
         },
         "food": {
-          "name": "Cinnamon rolls",
-          "reason": "Explicitly recommended with enthusiasm in a 5-star review, with a unique interactive icing feature highlighted.",
-          "quote": "Do order the cinnamon rolls - they're just the right amount of sweet",
-          "confidence": "medium",
+          "name": "Cinnabee Bagel Bomb",
+          "reason": "Only one specific food item is named in the reviews, and it was described as delicious in a 5-star review, though noted as very sweet.",
+          "quote": "The cinnabee was delicious",
+          "confidence": "low",
           "mention_count": 1
         }
       },
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Delicious, fresh and refined food. First time dine in here. We love the iced coffee. It’s not too sweet and perfect blend. My shrimp omelette is so fresh and well cooked. The restaurant is very clean. The staffs are so nice and friendly, definitely be back."
+          "text": "I went to the Boynton Beach location and I was warmly greeted with smiles. I got the strawberry cream matcha and the cinnabee bagel bomb. The matcha was absolutely phenomenal with coconut milk. The cinnabee was delicious, but a bit too sweet for me. I still finished all of it though! ☺️"
+        },
+        {
+          "rating": 2,
+          "text": "Yeah, leave instantly, the food has bugs all over it. Pictures for proof and they left this one worker by herself. Nobody showed up; so I couldn’t order my bowls/smoothies/food. This is apparently what you call, bad management. I won’t be coming back. First bad impression!"
         },
         {
           "rating": 5,
-          "text": "Had a great birthday brunch here yesterday with my best friend. The food was great. Service was great.  Everyone was friendly.  Food came out in a timely manner even though they were busy. It was a Wednesday afternoon and the place was packed.  I had the Ranchero Skillet and it was delicious. The pumpkin cold brew was super yummy! Cant wait to go back and try another specialty coffee."
-        },
-        {
-          "rating": 5,
-          "text": "AWESOME place!! From the moment you walk toward the door you can tell this place is special! Every little detail is obviously so well thought-out and planned. You are immediately transported to a lovely home-like setting, complete with a real fireplace. The food was delicious and the portions were great sizes! I was so excited I at my whole G.O.A.T. omelet, but I definitely should've taken home half of it🙃 Highly recommend!! Do order the cinnamon rolls - they're just the right amount of sweet AND you get to tell the waiter when to stop adding icing to them! 😍🤗 Oh, and there's a reward program!!"
+          "text": "I honestly love The Seed! I live in southwest Florida and every time I come here to visit family, I always look forward to having my matcha here. It’s made so well and the staff is super welcoming and nice. 10/10 recommend!"
         }
       ],
       "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:38:02.073Z"
-    },
-    "ChIJxR-AMCLZ2IgR77BAXUeGWng": {
-      "picks": {
-        "drink": {
-          "name": "Pineapple Coconut Nitro Tea",
-          "reason": "Specifically recommended by a 5-star reviewer; other reviews praise the drinks generally but don't name them.",
-          "quote": "I recommend the pineapple coconut nitro tea",
-          "confidence": "medium",
-          "mention_count": 1
-        },
-        "food": {
-          "name": null,
-          "reason": "No food items are mentioned in any of the reviews.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "Always have a great time here. Fuels my workouts & study sessions. Regardless of what location I choose for the day , I never have had any complaints. Hideout makes sure to take care of anyone like friends/family. The tea is potent and flavorful. Way worth the value. I recommend the pineapple coconut nitro tea . Definitely always recommend others to visit and you can earn points when you purchase something on your next visit :)"
-        },
-        {
-          "rating": 5,
-          "text": "Kate the blonde bartender was so nice and she has such a bright personality that keeps you wanting to come back. She always lifts everyone’s mood and is quick and makes the best drinks. Shoutout to my favorites bartender."
-        },
-        {
-          "rating": 5,
-          "text": "I come here every time I get work contact to south Florida. This place has a great environment and holds awesome events to help you get connected here. The bartenders are absolutely amazing recommending great drinks. I saw the bartender tonight Kate handle an impossible rude customer with grace which reminded me why I choose to come here because they make sure the environment is welcoming to everyone, even if they don’t deserve it! Thanks for being a great place I can decompress after a long work week and feel like I belong when I’m far from home."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:38:05.647Z"
+      "fetched_at": "2026-07-01T11:50:13.534Z"
     },
     "ChIJrQ85aoPf2IgRbAgl6Hg-3_8": {
       "picks": {
@@ -1492,40 +1245,6 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:38:24.438Z"
     },
-    "ChIJAQAwDiLg2IgRVDm_OecUcug": {
-      "picks": {
-        "drink": {
-          "name": "Tamarind lemonade",
-          "reason": "Specifically praised in a 5-star review alongside other standout items; other drink mentions (iced lattes, tres leches coffee) are more generic.",
-          "quote": "the tamarind lemonade was just so good",
-          "confidence": "medium",
-          "mention_count": 1
-        },
-        "food": {
-          "name": "Jerk chicken sandwich (Berta)",
-          "reason": "Jerk chicken preparations get the most enthusiastic, specific praise across multiple 5-star reviews, including the Berta sandwich called 'one of the best things I've eaten in a long time.'",
-          "quote": "jerk chicken sandwich was so tasty and perfect for sharing",
-          "confidence": "high",
-          "mention_count": 3
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 4,
-          "text": "Very cute and comfy cafe. I needed breakfast walking distance from my hotel and found Koco’s on Google maps. The food is consistently delicious, I enjoyed the Caribbean Breafast as both a wrap and a platter. The breakfast potatoes were perfect. I wish I was able to try out the desserts and pastries because they look delectable. I appreciated the professionalism of the staff who accommodated my requests easily. I love to see Caribbean dishes with a modern twist. I would definitely recommend and return if I’m in the area again."
-        },
-        {
-          "rating": 5,
-          "text": "Just visited Koco Cafe for the first time and was immediately in love with all the beautiful decor. The staff was extremely friendly and helpful in helping us choose coffees and meals. The oxtail soup, available when we went, was delicious and super flavorful that we immediately ordered some to go. As well the jerk chicken sandwich was so tasty and perfect for sharing with a partner.\n\nThis has become my new go to place!"
-        },
-        {
-          "rating": 5,
-          "text": "Delicious!!!! Everything was excellent. The cookies, the pastries, the tamarind lemonade was just so good. Tres leches coffee, the Koco’s breakfast burger was one of the best things I have ever had. But my favorite tops down, the Mofongo Bites. Did I also mention the girls were the nicest? A must go."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:38:29.268Z"
-    },
     "ChIJl6QhPiTf2IgRMH9kHqkrUko": {
       "picks": {
         "drink": {
@@ -1559,40 +1278,6 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:38:33.462Z"
-    },
-    "ChIJCYKKYRMn2YgRMro7qmwD314": {
-      "picks": {
-        "drink": {
-          "name": "Kava (classic shell)",
-          "reason": "Kava is the signature offering, repeatedly praised as 'on point' and high quality across multiple reviews.",
-          "quote": "The Kava is on point!",
-          "confidence": "high",
-          "mention_count": 4
-        },
-        "food": {
-          "name": null,
-          "reason": "No food items are mentioned in any of the reviews.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "You can see the love and intention throughout this beautiful shop. Inviting people, cozy chairs, and delicious drinks. I enjoyed their classic kava shells and the lychee kratom iced tea. Take your loved ones, go solo, you'll love it. These are the spaces we deserve. Gracias 💙"
-        },
-        {
-          "rating": 5,
-          "text": "The moment I walked into Ohana, I felt like family. The staff is super friendly and welcoming, taking time to explain the menu in detail and making sure you feel comfortable whether you’re new to kava or just grabbing a coffee. The place is spotless with ample space, a great vibe, and perfect for getting work done or just relaxing. Both the coffee and kava are high quality! definitely a spot I’d recommend."
-        },
-        {
-          "rating": 5,
-          "text": "Had a quick meetup with my GF and a friend we were all there for the first time. Loved it! Cesar was a fantastic barista and server. The atmosphere was amazing. Music was eclectic and chill. We will be going back soon. Fantastic shop. Ohana!!!"
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:38:38.636Z"
     },
     "ChIJFR8TTAbf2IgRneX5GoN7f0Q": {
       "picks": {
@@ -1628,39 +1313,73 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:38:43.858Z"
     },
-    "ChIJB05xYcXZ2IgRwTKHfj0Kze4": {
+    "ChIJCYKKYRMn2YgRMro7qmwD314": {
       "picks": {
         "drink": {
-          "name": "Coffee",
-          "reason": "Only one brief mention of coffee being 'on point'; no specific drink named with detail.",
-          "quote": "coffee was on point",
-          "confidence": "low",
-          "mention_count": 1
+          "name": "Kava (classic shell)",
+          "reason": "Kava is the signature offering, repeatedly praised as 'on point' and high quality across multiple reviews.",
+          "quote": "The Kava is on point!",
+          "confidence": "high",
+          "mention_count": 4
         },
         "food": {
-          "name": "Crepes",
-          "reason": "Highly specific praise in a 5-star review describing both Strawberry Cream and Egg/Spinach/Swiss crepes as delicate, light, and fluffy. Bakery items broadly praised throughout, with the owner called the best baker ever encountered.",
-          "quote": "Strawberry Cream Crepe and Egg, Spinach, & Swiss Crepe were so delicate, light, and fluffy",
-          "confidence": "medium",
-          "mention_count": 1
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
         }
       },
       "reviewSample": [
         {
           "rating": 5,
-          "text": "Aloha was able to create a last-minute cake within a few days of our daughter’s first birthday.\nNicole was very helpful, despite being busy and assisted us in the ordering process/communicating our preferences to the chef.\nThe cake turned out so pretty and tasted wonderful.\nOur guests really enjoyed it.\nThanks again!"
+          "text": "You can see the love and intention throughout this beautiful shop. Inviting people, cozy chairs, and delicious drinks. I enjoyed their classic kava shells and the lychee kratom iced tea. Take your loved ones, go solo, you'll love it. These are the spaces we deserve. Gracias 💙"
         },
         {
           "rating": 5,
-          "text": "This place came highly recommended to me by a friend/professional chef who told me the owner of Aloha Bakery is the best baker he has ever encountered. Boy, my friend wasn’t kidding! Their Strawberry Cream Crepe and their Egg, Spinach, & Swiss Crepe were so delicate, light, and fluffy. Their blueberry muffins are jam-packed with fresh blueberries and have a nice crunch from the large sugar crystal they sprinkle on top (they also offer a crumb topping.) Their apple pie cupcake and coconut custard cupcake… nothing less than perfection… light and airy puffs of heaven filled with fresh apple compote and creamy coconut custard. Simply amazing. Please see attached pictures of everything. Their staff is so friendly and helpful! I also loved their velvety-soft bar-stool chairs with backs at the counter, super comfy! This place has a very welcoming and chill vibe, a nice place to grab a Hawaiian delight and relax! Highly highly recommend!"
+          "text": "The moment I walked into Ohana, I felt like family. The staff is super friendly and welcoming, taking time to explain the menu in detail and making sure you feel comfortable whether you’re new to kava or just grabbing a coffee. The place is spotless with ample space, a great vibe, and perfect for getting work done or just relaxing. Both the coffee and kava are high quality! definitely a spot I’d recommend."
         },
         {
           "rating": 5,
-          "text": "Great food, Great atmosphere. Our server Christie was amazing. The food is really, really, really good. The home fries is delicious. It has bits of onion, and mix with sweet potatoes. The food overall is amazing. I live in the same plaza, literally 2 minutes  walk, i never notice it there. But now I definitely will come more often."
+          "text": "Had a quick meetup with my GF and a friend we were all there for the first time. Loved it! Cesar was a fantastic barista and server. The atmosphere was amazing. Music was eclectic and chill. We will be going back soon. Fantastic shop. Ohana!!!"
         }
       ],
       "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:38:48.609Z"
+      "fetched_at": "2026-05-24T21:38:38.636Z"
+    },
+    "ChIJ37Vrlugh2YgRD-53bqPuxMU": {
+      "picks": {
+        "drink": {
+          "name": "Latte (flavored)",
+          "reason": "Multiple 5-star reviewers rave about flavored lattes—rosemary caramel, sugar-free vanilla, iced hazelnut, and banana all singled out as delicious.",
+          "quote": "my favorite is the rosemary caramel latte",
+          "confidence": "high",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Sandwich",
+          "reason": "Every food mention is a sandwich, all highly praised: the American sandwich called 'best ever,' plus rave reviews for the B.L.T. and Italian pesto.",
+          "quote": "the american sandwich honestly the best ever",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I love it! So cozy! Friendly staff and delicious coffee. My favorite is the rosemary caramel latte😍 I tried the B.L.T. today..OMG😎👌Highly recommend 👌"
+        },
+        {
+          "rating": 5,
+          "text": "My husband ans I stopped in for lunch and were pleasantly surprised! I ordered a sugar free vanilla latte it was so delicious! I also had the american sandwich honestly the best ever with the bacon.\nVery warm and welcoming atmosphere and the staff made us feel at home.\nWe will definitely be back to our new favorite lunch spot."
+        },
+        {
+          "rating": 5,
+          "text": "Great new cafe. Quite different & welcoming than that other place😄 the iced latte was great with a spritz of hazelnut syrup. I had the Italian pesto sandwich. It was amazing. Family run & wonderful friendly staff. I’ll be back"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:50:18.360Z"
     }
   }
 }
