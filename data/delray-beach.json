@@ -2,8 +2,8 @@
   "version": 1,
   "citySlug": "delray-beach",
   "city": "Delray Beach, FL",
-  "generatedAt": "2026-05-24T21:37:57.041Z",
-  "count": 15,
+  "generatedAt": "2026-07-01T11:50:08.221Z",
+  "count": 18,
   "cafes": [
     {
       "city": "delray-beach",
@@ -13,7 +13,7 @@
       "lat": 26.467709,
       "lng": -80.0700373,
       "rating": 4.8,
-      "reviews": 876,
+      "reviews": 896,
       "price": "$$",
       "types": [
         "cafe",
@@ -21,8 +21,9 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Mon",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -44,7 +45,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 17,
+            "hour": 16,
             "minute": 0
           }
         },
@@ -56,7 +57,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 17,
+            "hour": 16,
             "minute": 0
           }
         },
@@ -68,7 +69,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 17,
+            "hour": 16,
             "minute": 0
           }
         },
@@ -80,7 +81,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 17,
+            "hour": 16,
             "minute": 0
           }
         },
@@ -110,16 +111,16 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 5:00 PM",
-        "Tuesday: 8:00 AM – 5:00 PM",
-        "Wednesday: 8:00 AM – 5:00 PM",
-        "Thursday: 8:00 AM – 5:00 PM",
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
         "Friday: 8:00 AM – 5:00 PM",
         "Saturday: 8:00 AM – 5:00 PM",
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=7689118466020585252&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ16jBIFff2IgRJK8Nk4E8tWo%2Fphotos%2FAb43m-umcmRs5tekQT-QGNvk7UkztmGnanfWbseAbTNM75A_oNaGFStpHbcubcyXVMSPzlWilHJWRxJvboI7cAKfLZCAkdwxO7GhBdZ-FmxPehSFYgmf7OxfaEYnBmw4PJm305F_vq8-r3yuD1FKRCcDAP9t7lGYu4Kjezvx9BcrnucaMwHvIJm0L6F8ibdv1EgmPXGouo0FcjNJHGck0Fk3R0QfXYoUAj_nvrJs6LY1FMRC9zYWh-QW8ekPNpXWZg3ZXLaRyrUSrZVpmBevRtYoJgCojrp-oOhIuC8_c7l7yTYKsw&w=800"
+      "photo": "/api/photo?name=places%2FChIJ16jBIFff2IgRJK8Nk4E8tWo%2Fphotos%2FAaVGc3lSq7wLdXDR2F4q_ul8PUuBQ55rDqCM563m8Pfb_S7WLq_nnLo9zE1UHoXL21RufirEt1UUxgkyBME69TMYv-SbsvZsIBGpyBp90e5FejNeOmIEuBJAedeL9h8ee5A4UmVEFKlNN4qwB6lvSI0X9GxD-PJZTUqtUGoE4NxP4AurPR6-q5nemt9I-TlfnC_8rhSdpu-nanQ0RCutxqRkdvBNn3lvkLGbIQkYTa8T82toSWxh8O42xZfAXaPHhXPqUwxzKERlrvkjfRvedYYO07Z8E_othLkR_fvTEYORRSYsXjrJ-U5QiAZloD_6u2x6T_ra_oiI-c_J5chKcvIw_8SiY8dQw_FH01th5kL-l07GnDQOas6hASo8VDByiFdN26y45RqqRvl5GcnJlYji7b0be6-5jySuPr4LUoBOnPk&w=800"
     },
     {
       "city": "delray-beach",
@@ -129,23 +130,24 @@
       "lat": 26.452688,
       "lng": -80.186618,
       "rating": 4.7,
-      "reviews": 618,
+      "reviews": 624,
       "price": "$$",
       "types": [
         "coffee_shop",
         "brunch_restaurant",
         "breakfast_restaurant",
-        "bakery",
         "cafe",
-        "restaurant",
+        "bakery",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Mon",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -242,7 +244,7 @@
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=646783592737309954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJecutcsAf2YgRAoWoM0DW-Qg%2Fphotos%2FAb43m-uC9GQyNVjcbYmOkq3cV9itioYPaKvZfCzVU5o4MgyKqzOJZ1o155d5vd-2URUvmgO1AuZcU5UafNyAavKFO1E4I8Ap_pr-bHKFY_dETKyF6CIKIMr-cu3I4YJmJ2NOwjBv6lbSqWD7cfHb5kKR6zUqMeYxm36rL9PZDEAPbV9yvjD0R94G9R_DYBK1VnrwxMS8X65oaJN5AzA8XkUX4Ybw6NDXPc6oI-o_fJLUGzgUryRoX0IxKCAcv0KycRgFRgPnXQcNf-xrbw5vXD9em11PIUBdErF2Jwun-PELiyEbaDBeCTZQBAKytHPaO6VcER3Db33JlYkgXg1Bmsc5ip84AFDCku4B89LwIIr3EGNMaoHfvn5np26Iy1rjL87AUe1SxD1PzjdVeUp4SPDxcoinBjdOPOAvL-9K7RheB29VGw&w=800"
+      "photo": "/api/photo?name=places%2FChIJecutcsAf2YgRAoWoM0DW-Qg%2Fphotos%2FAaVGc3nfnTc5fg4cHhwnYh9JbreVidroHvkHd7Ax4qEL71_mpU1fWjmRWz_fTlgIaz7L14PVtE6CsiLJIesCouD_vg-KNPYBrK_P5CBfRvFiLcdbtTO_URcSQnn5ujTA-_ol2ClxYT05FJl28yon2qZjspCMadhD3Q1gqP8NJOFzCg8QkjHfWMc7xWXyGCF_G8xnjj0Pbb7vhZ7x_he0rxG-VawSEFn3gTTPTw35rzXEj4f6rPu_ky66d_CWk8OkuwvfCM4FHAzNBpdutQosLuHU694RBlBz21glNIXDkwQ5q6BBjLnPLxHtEpuk8BPYWAerXNijJOQvM38u-cCWTEnh39GZ9lCahmIm-3vh2RbuY-KsvOY7wNvEV6tN2YnDXUk2EnMlwiHVaVwgf_EUam7SIiRChYMeWH3YvPoXSPDVZgdESQ&w=800"
     },
     {
       "city": "delray-beach",
@@ -252,27 +254,28 @@
       "lat": 26.4615409,
       "lng": -80.06732269999999,
       "rating": 4.7,
-      "reviews": 573,
+      "reviews": 588,
       "price": "$",
       "types": [
         "coffee_shop",
         "brunch_restaurant",
-        "acai_shop",
         "internet_cafe",
-        "bakery",
-        "brazilian_restaurant",
         "juice_shop",
+        "acai_shop",
+        "brazilian_restaurant",
         "cafe",
-        "restaurant",
+        "bakery",
         "food_store",
         "store",
+        "service",
+        "restaurant",
         "food",
         "point_of_interest",
-        "service",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 8 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 5 PM",
       "periods": [
         {
           "open": {
@@ -369,34 +372,35 @@
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=18385732829507631576&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJMUOGUt_f2IgR2DkKvpg-J_8%2Fphotos%2FAb43m-vAHvI3zZrD8-BkS7LMBKsF1w1tTBMSKMT3-TDtib-7OXf2HP841HpyDBWKnJ9xdlxV6PXSV-zBp5rEcs6gNrmWT84PrXWUdh1nhwYnT9yGtzu9p9EIcbQ33ffQtPBSK4OHyDxKvJnJwVs3vK3sz_sZuDXuxaIdv54jrMK_pO8-5N13-103Jwf1X-5aBSKnGnYS7Dcx8ec2fIojOWebZg7n59NZ-AsCHurPH872O-4HGBlEYsA8Wd4uyyFN9peawEZ-CxigM_CMhDkCmmpUDn8WzFdyYGD8zuVBr4N1ytY3SA&w=800"
+      "photo": "/api/photo?name=places%2FChIJMUOGUt_f2IgR2DkKvpg-J_8%2Fphotos%2FAaVGc3l-Gxlx7-FZSCIUkhdOUoDstflo-TcNxP0EITu03leJhqcsCybysA4mvdkKqhP9wJ8YEamXH8GXXJ5FhLGfYmDFYEIsDbmsiy3bEZGvBSWReWEw2l5HJP5AoCGzrdXu3rMIY2RqKkfvJWBCd5wMZnQbV93_xOOptPi8-6uUh527BwtJ6a-rHGh8SW4YDhGIy2q-SzWfSMjwSfevcR0DNfnpgPtyV5vbaEXhx4OBcbs2PKZCXVJH-PBTBMAJDz1qUt31RX3HlBCekcHcIhjdUzEig8wcffhsNiEJhoAE2n3TfNYz7Ptik180u9Ww03Le9bYxOq5x6DVbjFHcs_1giLFI9qh2GSVxhqVskBF1fjPsoGSqXz_JfctrjCuD-C76Zi9LwAauKgBHXiRuUjy43jvlE9XmjOB264MMi_zbwodIsX_kxvUOzu5jpDw81Hrk&w=800"
     },
     {
       "city": "delray-beach",
       "id": "ChIJZ3uVgeff2IgRKzB1iPKDTR4",
       "name": "Carmela Coffee - East Delray",
-      "address": "247 SE 6th Ave Suite 1, Delray Beach, FL 33483, USA",
+      "address": "247 SE 6th Ave Ste 1, Delray Beach, FL 33483, USA",
       "lat": 26.4570012,
       "lng": -80.0666107,
       "rating": 4.7,
-      "reviews": 554,
+      "reviews": 563,
       "price": "$$",
       "types": [
         "coffee_shop",
         "brunch_restaurant",
-        "breakfast_restaurant",
-        "bakery",
-        "cafe",
         "tea_house",
-        "restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "bakery",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 4 PM",
       "periods": [
         {
           "open": {
@@ -493,7 +497,130 @@
         "Sunday: 8:00 AM – 4:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=2183546472039264299&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJZ3uVgeff2IgRKzB1iPKDTR4%2Fphotos%2FAb43m-sxfHyidZhHcuCaJZRtSSVId8Jh6ifF7aGcUWFdGcseW6VtUoXzijKkdzCFahyOOf-PpLdWFP77JCcE18p2bgU4Qq-IhSnfSvUi7oo58zR5hZ0wv39gI5-2nNNRqUEoOoLBMSLYpLdWl_FfIP8-F7oP-OG4dvWKtUjw1Dc2ZQicWA0dtS2xNsypCFnKpx_pTDYNHZBthZHQ-WRKyyi3DE2e4AeJljWkzbXzt9YkUGjXFrZz34Z05bC4u-HoM6IvknKkT5lH5yYytNJs7Gp221NAv0lYFsE4QxQ3d2lkVj5Yng&w=800"
+      "photo": "/api/photo?name=places%2FChIJZ3uVgeff2IgRKzB1iPKDTR4%2Fphotos%2FAaVGc3lodjdTy-UpDIWpyVCpb-pMyjoNEJ4ovzV48PHU1AwzFcF4Hdi8RPBGY-8qEsAYPQnjCSGlJpcq-TvKXy-DgyUWwbBhf3wgKA99O0VU23Z0fxnFkh7JvWvweOxoyZiFt1q8zd_99sHRzQdDlaOHGcvvuvJ1O2JBtKLV2iCsfB8Aaa_ZSF-3ZYc3rmM-NuFFzer3_l8lIpjO3O8fZHyQRMo7V0pbbFnbK27as0DUQ0ToDq3a_AEJMF1t4DIMjUsCNyGyVekuLJVl6HkzBOAy3M-2HzSQW-34RjveHwJnaeMnFaEnfl2xGnGkUvqSfQvaBVQTao6JCPLz0_3BunHmjnemH_70K2h_mXmq7NpzZOvBLHZI9nxq66vy9P0oGPoOiLa-Uqo6usRxg5Q5fXc3QlIM0QVfy1ZtA0bN0qSWrbpQXg&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJcW1SYrjf2IgRsZhOboHnudI",
+      "name": "The French Bakery",
+      "address": "814 NE 6th Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.4745386,
+      "lng": -80.06762429999999,
+      "rating": 4.5,
+      "reviews": 994,
+      "price": "$$",
+      "types": [
+        "bakery",
+        "breakfast_restaurant",
+        "cafe",
+        "meal_takeaway",
+        "food_store",
+        "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 3 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 3:00 PM",
+        "Tuesday: 7:30 AM – 3:00 PM",
+        "Wednesday: 7:30 AM – 3:00 PM",
+        "Thursday: 7:30 AM – 3:00 PM",
+        "Friday: 7:30 AM – 3:00 PM",
+        "Saturday: 7:30 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15184422161743780017&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJcW1SYrjf2IgRsZhOboHnudI%2Fphotos%2FAaVGc3lGFlt9IaFsVmXt-JMktb20NJD5GY1Myh5ezJydDnIvufWkVU6OBdf_lMg3rbigaDpYO8dzdnftvgkA1FEVgoWk60lcYNpxkXR5fqaPPqB_24JXyc40aQ39d4rpk94CL5ZLeRKlHUWjtz0il_X4ZeK1wk2ErOwk00-zr5Ue0UvNq2tfK2lzS-gvIPHmoT-BbyGrpmQwWmqd8k4ebQCcPZ3j-sdiH-KuTToOO3HlclBAV7N4UG5GP33BcWmMVsNTP06mD9mh6rlgqUylMu9GgFKDBG8FIW0sKqsbxVw1OlxzEJFDF-ncs4DP_3uBY7n2RZg77IwOFHaCjKPWk6yN7ldq0WOsLqMDdHGJGP80WPsZjblTIIezDY4mThk4VlRevrVvu-2jLSvM9_wXLL_jN6w2PbZFQf8OYTtl4sD-adD5yBc&w=800"
     },
     {
       "city": "delray-beach",
@@ -503,19 +630,20 @@
       "lat": 26.4613668,
       "lng": -80.0682149,
       "rating": 4.5,
-      "reviews": 909,
+      "reviews": 928,
       "price": "$",
       "types": [
         "coffee_shop",
         "breakfast_restaurant",
         "cafe",
-        "restaurant",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": true,
       "hoursLabel": "Closes 7 PM",
       "periods": [
@@ -614,7 +742,7 @@
         "Sunday: 7:00 AM – 7:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=16593670037913134507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJL_cmLtvf2IgRq-XagfuOSOY%2Fphotos%2FAb43m-u8MauapAq42bwLa1yNwjLciyIdKB7Nm7skxDG6DU4CJtCC_fKPcvHXQMtTOmOqyYvmXdASyD8uRrbsoZA7iKLgGd5Cp_8U5l1xd-ow7d58WmQ78tvxjvM8SJAXI3KfdZ1TlOvgDuPPayL-xbUiSPxdl3-lCnWlGXXBQGqYmy1e41979EFGfeUxe07eP7I1kLuH9AQbiEigp3a6GE45q-f5bsY7RT1OAdkL87a3pCFauDFCoHQNuxJyPZYbt8UUz3CYWOYALSM9FzzTYlSU11B3kmTR3iDzl6O55PJb9SghOg&w=800"
+      "photo": "/api/photo?name=places%2FChIJL_cmLtvf2IgRq-XagfuOSOY%2Fphotos%2FAaVGc3mQDejlxDNlK5Tn2AMt6kUThz_oejOD179Nr9jfyI7TdcH4u9NeCLRSoihAUNvYQ7_uSwC6ZCVVIu0oxrf68VCqZyAoTAcYGkBU_u-Q-Pi6bwwIBqpvgZDoe1UFvhM1RmLYnB63XfsLIp7pRCTyQpjEkgwQIS1qrCgrjYjG0-RZXF72FozhN5g8vyWtpLhsWNC8vFM2EucPdJXtyvXwRCMRS_d81FwmvT9O5ChaQjZA_2ZBtY5mwy_PnXiaBGlcXg35ShwCbOg5kxPni9-jFub8bZiDwOGgKXhZbMInLnAkZyGWVq5oRsyXSFEHJcxmzDmViqmwfGBwWLiGtxO4T2xlnMDv8fBxhDJubbDWJqMBDZBdwhq9-dwG5eAVKoHRwV62JsHVqnbMaRiAAG1Ayb7cfJv96XDA7QEVKJHULaIbwA&w=800"
     },
     {
       "city": "delray-beach",
@@ -624,23 +752,24 @@
       "lat": 26.4566019,
       "lng": -80.09239029999999,
       "rating": 4.8,
-      "reviews": 338,
+      "reviews": 348,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "coffee_roastery",
         "brunch_restaurant",
+        "coffee_roastery",
         "breakfast_restaurant",
         "cafe",
-        "restaurant",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Mon",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -737,7 +866,7 @@
         "Sunday: 8:00 AM – 3:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=10409263191754999364&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJz1vg-fPf2IgRRAYb5rghdZA%2Fphotos%2FAb43m-u2hsHFOtxWAZBcsxCt8j6GcuBYIIZLac02XmzQ8FBr6rtRxprglRFXufbC3ZwZSaBH0y32YvqfoSbI21tl7GSLvEP2p90XVT23OncfRWuACiaXLLUDO-xY4qvmDa-uH33lwEHUeSdYyWikj7QjjbhMz3b4-0mQNOlNXUcZFIrb314eID7l0zaA2bHfPa8lfcsVvH4_JvmZzB07q2Zl4547rbUy_hJJSDp2Si5ntmqMTLDbI1ZD-nft3U42pMhmK2TW5cEbQptbZf2tgWecPgAXyT39Lkgx_tr2oqORxC6C3w&w=800"
+      "photo": "/api/photo?name=places%2FChIJz1vg-fPf2IgRRAYb5rghdZA%2Fphotos%2FAaVGc3mrJX0yg5WcaD9bYxM1bjfiU2aKRpTsxXR5srW9wxHtn_z7saz27O5k1yJ67RN5lN1QG4r19ATNHfGjSGi5K3WJzfKJKIRCW69QnBke98bgbgFweTwq_3bzmeFggf5-lIbWSY4UuO7q_cYEy8ZquEQm00Zp49mbljzgwrqu_8vnyrdn21c6OUHJdQr65Wxsa5K9gnUdkJIj_sHUFGcm59KCR72dnYivwgirWLEYePD6GWXC-Ng0_4igunIobmESTPwH5bbhE75hzY3jbDhqA35-Nw6U4vlOp06HCZYA5sEVyJnEBJrXe-BtTty7xvEJ1mohjfxf7HdA07b10LrTyP0w5p0G4tJbswLbwaqUsmvCfoRScbm2rLyHkNf3DIqOQe-yHYEUYSJt0ImsHb6LxM6NP3A0CAjaQWQ4NgnihhOwzzNdf_x3PekJ9Kr85msv&w=800"
     },
     {
       "city": "delray-beach",
@@ -747,7 +876,7 @@
       "lat": 26.467436799999998,
       "lng": -80.06740769999999,
       "rating": 4.4,
-      "reviews": 673,
+      "reviews": 682,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -758,6 +887,7 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": true,
       "hoursLabel": "Closes 10 PM",
       "periods": [
@@ -856,17 +986,17 @@
         "Sunday: 7:00 AM – 10:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=5736726602335545281&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJwYOqtdzf2IgRwWe-SXPynE8%2Fphotos%2FAb43m-tnimzoEzLVtLIO-b_AXnSb5igvbA-qJmvwfMIoWGjfQqQc4WCzL-jRyzakGS1eRF55y7PpQjkybs7Wucw789X20uEghZrnbZ6G2YEroy50Ai6ePVDg5jwTi73aDli43JxjjgmYbnQnyDVWIByd_fPVmOlZjqLTiZyvOJHSbuMDaxB_omAGj4VGBBWZyrzjuepxBRBMn_e_MCiAxjWs4M9MRdxqNGRNIVXCWtte5oQtYFzHsL17nIJTbdzXYkxNL1ZWd1toBP6o5aPNwIIlrHPV9Q0zgxdskDI5PodtEfdwIA&w=800"
+      "photo": "/api/photo?name=places%2FChIJwYOqtdzf2IgRwWe-SXPynE8%2Fphotos%2FAaVGc3mMTAFSEI8_pyqJ2dNnI2uomtplGactQnUyG9vlvwNIE20npqYb9arO0WTvNWBIlqzF12n24ig122z2LUetAgD5HUswA46X_2Bh0lVXEHoBJdTELaI03yZp2GcUqTcmvubajDMR1mPKOywPqla8AxX6a7QRkARrMchRm6oQyLeh_BInTUO602xhon2Y-je-ITBKdw-Ih3xdVIAv_nEiDuwy5m-CglPWUqO0pwenrAoUd-waIz9W1f0Ong5JFqJn0KvMozq1yEgjJedN8qzqNilkt_18bnbWApaI6ZY_F0hJM4fTtpjHn6LG6ruOv_DtCVWh57b8BksjsYTl6jYmU6pkdbnL-xNC5URzfZfpdvbQYJUQgJgzY6hVgL9qsjsE9emBMgKn0GFbes_gZvsbCnkMnRWbtSh27wMMuKxRY8yhDr_5tWn_QSxaBNo5nbl0&w=800"
     },
     {
       "city": "delray-beach",
       "id": "ChIJr6mtW8Hf2IgRMmLiyMwQh-Y",
       "name": "Coffee District",
-      "address": "325 NE 2nd Ave STE 104, Delray Beach, FL 33444, USA",
+      "address": "325 NE 2nd Ave Ste 104, Delray Beach, FL 33444, USA",
       "lat": 26.4682557,
       "lng": -80.0710075,
       "rating": 4.5,
-      "reviews": 457,
+      "reviews": 460,
       "price": "$",
       "types": [
         "coffee_shop",
@@ -877,8 +1007,9 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Mon",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -975,7 +1106,7 @@
         "Sunday: 8:00 AM – 3:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=16611264222309016114&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJr6mtW8Hf2IgRMmLiyMwQh-Y%2Fphotos%2FAb43m-u4Seg0h93aAYmnh1jN1IyXavOhLoHggQbynUuj2j-uoyScuDGiKkzss-eM8A7W_kxGrzo-ekEbVcXNA9m-ajlZLb0awGsePPYQyRQWOrX0EFa2-nIwcmp4Pv55jEetGST67Aec-hivVNm35fsu4hCbTU1tQAxfqlA5XVjdkHISjus-CI8YKtN_YWihzWoF9hwTwiDhXCWD1kNoW7063cl8W9yyg8ufGtb6VlZGLUyh7yjf-LkMHL5_1He9UUT-F65BqG-EvyIpLz2qBU1EB727fx9He5hrc41d76QvSd8wtqOim_vnJg4KH8gKPlzdtTvEMAjYQT_ZAsOTG9BSPY4EducRmVBiScibLSWkc6s4HQAlpJWypZthDilzgy7LupZAcOQtYsqOEwx4B0k3CAp02IIGov0onttgz7PKaV5tPw&w=800"
+      "photo": "/api/photo?name=places%2FChIJr6mtW8Hf2IgRMmLiyMwQh-Y%2Fphotos%2FAaVGc3mc-bK347IhbnksonngA__7c9mkcs0HRj0pza6xyP40Ntk_rQ8aRFOmGrV5chfzK1f2D3SioFalm0hf64wpv0RwOaa3urbPQZya6sC8YtZ_OBcsav_xgLx6VWiBdTgNVPR5wjTPiuGoo51jmCrUi8TddJcSPjwUIl9S0UvqesteApw5nBtH0QanxuaafCko9GSSL7LbtTR7aQI4d6ZOFVoS3FG5smadutNX9OtCArJFS-TGBwnrpXRkfla2wBdaNd1uK7FI_nhVwb3qVxh0jX46tFLEwFahBQpKr4qoKrlvUMasUa4zHrNgN5_ISacsa3YuUVznNOd4zWq3y3BKZjvSk-5OgMXIGG5qXwGu9rxmoM8tyBykLHl4zuW-BuOjQnYurpjBrkTm_H0sOCjd-u334rVYVf5jaVGYGGbOVOMbpA&w=800"
     },
     {
       "city": "delray-beach",
@@ -985,7 +1116,7 @@
       "lat": 26.4329568,
       "lng": -80.0716597,
       "rating": 4.6,
-      "reviews": 330,
+      "reviews": 334,
       "price": "$",
       "types": [
         "coffee_shop",
@@ -996,8 +1127,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 4 PM",
       "periods": [
         {
           "open": {
@@ -1094,7 +1226,7 @@
         "Sunday: 8:00 AM – 3:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=7867840899458781851&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJa18HDWzg2IgRm9KHyZwvMG0%2Fphotos%2FAb43m-vrQ0smj-7ZMYG8pVHeIYx_46ytPSuIqzDQHoh-StNoolGVy1ju4uEzBFkHikZCj-d6X46RVSc-mTnhYspPmj_nGnDPUX0H8DbdLpDXKU4GsNCl4SxAPWlBXa1yILlr4SS3WXC6fvxo-dZkMHblT5-laGMfoBqf4Ym8ojULeU5ECh5_bhIshKDg5uJ4ivN4CzdvnMtnMlteuJg0fcs9i8y_Q_7jS2D0ZxTZQvyRfh1iFgQxLouk9ezsC9yjyl3QUOPOboTOKXnwZF3E_y_kbu5CIDgkT4XbV-lSdKmWzyvSGU0BNM0Q3SflM-aTeixvqyoYhLwB3gMBDpV7MJ5xEPnJc9ABLD7dG-ENq06OOnliigPcQpbfy5yBBuGA4mzLgU2twgX0CohD3rpLzs1BPxeKsL38ptJ62lVrfw5VT9B9Dg&w=800"
+      "photo": "/api/photo?name=places%2FChIJa18HDWzg2IgRm9KHyZwvMG0%2Fphotos%2FAaVGc3muYMfcWGj6kOoqt-abxA4e-8cv_fIR4qUcDOdHxZ2x3G4TbUJ7OzYfopeRG5kVFJwk6jWDV0aHklIQxeiAPk5J_TSseDxZNXi2BiVGC1vpB1VTqfiSeKriQsGnZbacUUV5Ndy0TtgPboZSvaLMOit66Q4Muuxu-efPywklDfsFyVsSpqSmxhK5ENQlIsqo7FspNgGN_FnsPLp38BOIbPzHew1RLbRFca_k8ebVGX4pALb7yaFB2FPiGZrfcq6oQHUnKdiykkepd0Xv8St1EDr3lb8PHaju_dGz8VK7VlUC9d3aoqe9Qf-ylsKahL0SES2Z_7r_JKErytWnurM0oBVz8fjI7h1I31rQpBg0hIPF71MtaLxbny_mAYiDxgufL4JTKp0xg0duBVBVcWSEkDkLjLM0L1tS_WGChEJoFL7HHA&w=800"
     },
     {
       "city": "delray-beach",
@@ -1104,7 +1236,7 @@
       "lat": 26.4589446,
       "lng": -80.0673309,
       "rating": 4.6,
-      "reviews": 307,
+      "reviews": 313,
       "price": "$$",
       "types": [
         "cafe",
@@ -1112,8 +1244,9 @@
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 9 AM Mon",
+      "hoursLabel": "Opens 9 AM",
       "periods": [
         {
           "open": {
@@ -1123,7 +1256,7 @@
           },
           "close": {
             "day": 0,
-            "hour": 16,
+            "hour": 17,
             "minute": 0
           }
         },
@@ -1135,7 +1268,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 17,
+            "hour": 15,
             "minute": 0
           }
         },
@@ -1147,7 +1280,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 17,
+            "hour": 15,
             "minute": 0
           }
         },
@@ -1159,7 +1292,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 17,
+            "hour": 15,
             "minute": 0
           }
         },
@@ -1171,7 +1304,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 17,
+            "hour": 15,
             "minute": 0
           }
         },
@@ -1183,7 +1316,7 @@
           },
           "close": {
             "day": 5,
-            "hour": 17,
+            "hour": 15,
             "minute": 0
           }
         },
@@ -1201,16 +1334,16 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 9:00 AM – 5:00 PM",
-        "Tuesday: 9:00 AM – 5:00 PM",
-        "Wednesday: 9:00 AM – 5:00 PM",
-        "Thursday: 9:00 AM – 5:00 PM",
-        "Friday: 9:00 AM – 5:00 PM",
+        "Monday: 9:00 AM – 3:00 PM",
+        "Tuesday: 9:00 AM – 3:00 PM",
+        "Wednesday: 9:00 AM – 3:00 PM",
+        "Thursday: 9:00 AM – 3:00 PM",
+        "Friday: 9:00 AM – 3:00 PM",
         "Saturday: 8:00 AM – 5:00 PM",
-        "Sunday: 8:00 AM – 4:00 PM"
+        "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=12207751024492532764&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJfzQYE1_f2IgRHNRJmeCkaqk%2Fphotos%2FAb43m-tTcFoI-4egdkszy7B5mKSHXpn6xb1zH49A4sc1b1c-mIDR4QLrNYByT-pDIs8HtWwuhWk_mTTtFFaEdO-1--OZNdD7WpNDC7nbP44o1q2BoXL-45WlvbY6nHUOaChf-2Sg1RFMJJnCahG8fVnQwUn2dIUDWfrEPB3obI0zXT4NR_Ls4Ja8T6ScueybhO5TnfkrifcmC-6uLR0mqF15OchJixx1gUTqEu_2s9rpJfJoQY9ei9qRtdyWAUFiZ5u1-rIyOydyVxZq6Dlk6JHdfRS8hYO5J13d2JHLehgsFwVU1t_Q8gCNuwQw6Haocnj1hSrH3T8DMy2ILfrK0_HV9m2LExkTvscKdTSPxGa3lJeiiXR1lc2tqQUljw-siL21cszP-hXRMNnbOUsuYtAT-d23p6DAIL4Gc5FMEueMxPfIn6hwqa5KagyX84X-fLwB&w=800"
+      "photo": "/api/photo?name=places%2FChIJfzQYE1_f2IgRHNRJmeCkaqk%2Fphotos%2FAaVGc3lHThcXLbr4t18J79fsr3fiS6OmsRAiJiAZ-OvCHn49bUFaIJmn5NheBA5gpevAEcP9KKwerwNV0yyqsFIkciKH9coboZK0CnTmqCvm-SdbZN0UIZUv1PbzP_vIVYsOp-AAcxFATyCwOnbk0ZN0vDEoTSuq1W-x1mXaDSn2DPF4pB_Gv5UpeWM2twr5LIuTShMR5rSNAey9oLI0ed7tF9jI52oeWjyKNnd1a_W7dYTMXulR68dPalvqokYqV_dDxy6k41xmyHODA63KE2V-yN-A7ZxJy9UETjCwuDcnN6Bv6-__X1zpdiPlBL9_R11AR_mCTXPXZq7kSMHdptz1BYgF9SrNHwF32GBW_Ca8fbdLL8CVqPA4n5TEk4P45VCfdPs6ODzr5NZaR9QbIKqv9tAhZ1ncavycJ44ZO1FMlvMtCw&w=800"
     },
     {
       "city": "delray-beach",
@@ -1220,7 +1353,7 @@
       "lat": 26.461972,
       "lng": -80.0682375,
       "rating": 4.7,
-      "reviews": 233,
+      "reviews": 239,
       "price": "$$",
       "types": [
         "coffee_roastery",
@@ -1233,8 +1366,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 7 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 12 PM",
       "periods": [
         {
           "open": {
@@ -1331,7 +1465,112 @@
         "Sunday: 7:00 AM – 2:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=7754986963005170753&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJx7cFXlDf2IgRQWS1H44_n2s%2Fphotos%2FAb43m-uzGEV9c7WKL2KkOAkQFg0hW3xXlp0DcKtUk0O0aPIkR5r2C8YcejdMR0dmZP2bx3B7Nuu2bJXJPzcteVrSNYN2MX1OoFQ-eoN9TMrGTYlVe-SezEsepFNNr8ygrUu4b2VmsA-kT8uljjf-XTP-lETU_nJMKEMGSWiqOtNqnfUj851bPTiKrugKRJfnF2_iINU-yFuYSt6SooGZ49yVbYgh1ce3uErSsIPKtnp3J_CkxmI3vQO_WTvB8vLVvz6Fkgjl0nQORIlQlZB5152yc35h9yZXiZazeVwWbGPcBAGs0Q&w=800"
+      "photo": "/api/photo?name=places%2FChIJx7cFXlDf2IgRQWS1H44_n2s%2Fphotos%2FAaVGc3l8XwZOxE2jS-jhdUjrOtuxr1XZS_0alYw3nPDfrQqjwy_A6z1D4RH_BCR5cXRIXAkN6l8J-T861H5WsixfQDtx671UUUdKFEQDTrwQDWqJepyaJOTD5mcf79768UNM4XGhVML0TiNvMogu6u9Hp_kM_FVUSMT4h-qwsi0e5L1mLgU6eLlUyEeDJUHKnAHaJ1yqNV3DhF17pclJFy0TQ8m9kRI5V7HzF6x9zcSVAsS_FGIEMNx4AslstBpE-kw1OM9Jy9VVUst0aTde_--0lw6bN2Pmiko15pnYIV_dO89cpwmiBtWbK8hsfOLPowGfIULvNwFxVVPbSUXmiDYq9nETbOAXxOVlmt3zDaSnMv71KeSEGH4thExMejxma7QF2XG8f3IKQYOCJuq1tyu5FizRgLKdgY4m2GpmcMp3qGvAbyKM&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJHYI64g3f2IgRpV7cD682Msg",
+      "name": "Beswick's & Co.",
+      "address": "817 NE 6th Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.4744133,
+      "lng": -80.0670908,
+      "rating": 4.8,
+      "reviews": 145,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 3 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 3:00 PM",
+        "Tuesday: Closed",
+        "Wednesday: 7:30 AM – 3:00 PM",
+        "Thursday: 7:30 AM – 3:00 PM",
+        "Friday: 7:30 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 3:00 PM",
+        "Sunday: 8:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14425652681934397093&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJHYI64g3f2IgRpV7cD682Msg%2Fphotos%2FAaVGc3n58I4VcaD4UASbIYxZs4vQ8B7WCtAXF-4HFZ4CrXJ0ru11Q0s5CG71bnb10qoaD9XRHoWfN8vS3nGThSheU-TNBF966P1v4TjilZC8FkqLNmNSFWsnBVjkuADXpRzPXBNeSeG2pYTBnjPnbZGoa4PNgrv_6-MwH5vwHYV4gR1iJ8O0yPfvTWGS8oQLMHOvamutR70ABXu7g55yn9ZQV_lNqw3lI__VBY5YZ58Erg38KoSQHfelXvUNu3DtWRSPKg2H5jl-krZ3zFRTxNJWQtjYKZhaLCjLVfsRBI1_Nyc92bZkLd0OP4cCxfo4duszfzXQr7x5Vb3Y-8JKjGdbQQwtrlX6C4BrT4uHiMD8LRKoFFQrMK_kzq-xgEDVZZWKcWeVIMdAhCxjWx0LwzbnzFkynJHvuHZG3YA4IWS9T73k7WM__Xsxs3gLgvAV33G4&w=800"
     },
     {
       "city": "delray-beach",
@@ -1341,7 +1580,7 @@
       "lat": 26.457034,
       "lng": -80.0681638,
       "rating": 4.6,
-      "reviews": 162,
+      "reviews": 165,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -1352,8 +1591,9 @@
         "point_of_interest",
         "establishment"
       ],
-      "openNow": false,
-      "hoursLabel": "Opens 6 AM Mon",
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 4 PM",
       "periods": [
         {
           "open": {
@@ -1450,7 +1690,129 @@
         "Sunday: 6:00 AM – 4:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=2578380559479960861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJd_TzVeTf2IgRHXWTP3U_yCM%2Fphotos%2FAb43m-ss2UM3Ws8M3IwHWqtJ2L0E7FGA89Qx5kpUBDTl3Hha65j1wW_6u4oCpXTI5_Cs6lQO_fvHmemaFo25SqO9-_j68el8yejGBD_XKNnKxUeco-adpiZLzqg4feaNCuP2n1vmiUENxY5Phf38agv9p7CnhNigiC7MuHQF4-fe7cVr1QrPtRUW6X75RNi-8JBgyRXs0oEV4ESLV8HTy8dRqaVewG32QwjvIMqzcNIdmaCZXuKcj9NWkPNa4se_slV_1gHiqYv4ahe-z7vKfQJDRFvi6fDwcfv8byIHSzWXOq5wRg&w=800"
+      "photo": "/api/photo?name=places%2FChIJd_TzVeTf2IgRHXWTP3U_yCM%2Fphotos%2FAaVGc3m0cEpBiTl3JAzA79m3hjK_jg5uOVpieel1IRuCc4-ac0oFRgNni0WTgCGjzv0huOG8_tL-niqnttGLQY-4cMMUmZKQtkP55XOxYlV-1IxiVG8PtHtBkLbH_pV94PVkfFFQ51vuuFFCK9gNlPWkY2oklMT_VvmGMytzed8pPe0kaM6NTjB3iWvVU1o66QGVXObdYDDEPKTasfff7kEqFS5ggs-aoh3PMgJj39wwT-7N9qK9O3Jfo853-nOgBpMQUqj5QYIB5xm5Qingbw2vNBtbbfPwwmY7Ac81L-2ypgS6RdTPtXekkzAWuopgkf0TiYbdzNno25g4NfDNSmJf0f2htZuqxAGpakPkkI0g4LmLDIM2W2poZHQec-MhrdT8qfDvvUEyi9rhBfeR_AhiKCbcONVXHcyB7wQRZ1A95_g3zz0S&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJyUqoTtvf2IgRW8clk1sBSdQ",
+      "name": "Capital One Café",
+      "address": "330 E Atlantic Ave, Delray Beach, FL 33483, USA",
+      "lat": 26.461395999999997,
+      "lng": -80.0692029,
+      "rating": 4.3,
+      "reviews": 196,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "bank",
+        "cafe",
+        "food_store",
+        "store",
+        "finance",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 7 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 10,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 19,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 19,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 7:00 PM",
+        "Tuesday: 7:00 AM – 7:00 PM",
+        "Wednesday: 7:00 AM – 7:00 PM",
+        "Thursday: 7:00 AM – 7:00 PM",
+        "Friday: 7:00 AM – 7:00 PM",
+        "Saturday: 8:00 AM – 7:00 PM",
+        "Sunday: 10:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15296759102162978651&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJyUqoTtvf2IgRW8clk1sBSdQ%2Fphotos%2FAaVGc3kR7NsLc0ArphHyeA8_vMsyl1_SJ3z5YdZN6r9y5zbR6Re5OLUw-n1p-qJl6_u38cWoxTLELKQB19zyTLg2vKjaCiW6dHhddDkKStAbC-xt_ADqEnKa8U_T0C8ikcW1L-YAvdQca8lXviai9IFbEqZz4nVBslO8Q_vZuRB92ev8FEidUJueFH-PwCWo9sQEp0-PHwUiylb2WLcu3evacfq6V85Gmqq7uPjpohfeiC-mqBcvv27eyUlO2IHz9rmxxMoCGl-RwPGcRyj1CyRp4yrPDfqHHGhfo8PJRSZCgnR1pztbhyWk87NiYU4bdJRMRl-2utnTKzojxZT-zgYFsGAYUuMYnXtQP6dyGnR7q5rRbMwIwjiYx2YRZhpDAeo4JzGaLrm4VXfMgPReNq8KaFtaDrzZw_j_wuy4lpiRydk1DVEL3oSGnNd6v0MjVQ&w=800"
     },
     {
       "city": "delray-beach",
@@ -1464,19 +1826,20 @@
       "price": "$$",
       "types": [
         "coffee_shop",
-        "coffee_stand",
         "ice_cream_shop",
         "dessert_shop",
-        "confectionery",
+        "coffee_stand",
         "cafe",
+        "confectionery",
         "food_store",
         "store",
         "food",
         "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": true,
-      "hoursLabel": "Closes 6 PM",
+      "hoursLabel": "Closes 1 PM",
       "periods": [
         {
           "open": {
@@ -1573,239 +1936,247 @@
         "Sunday: 7:00 AM – 6:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=16320033423672315932&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJQTq2d93f2IgRHJB9fO5nfOI%2Fphotos%2FAb43m-s5OWaRIt7INt2IVFdtvrx6sRuVBFfPy8XXeymnq9MVYBKPfT_Zdv37m5Bq0pKfO1JXCLqOgyfHw7R3KhsBRVZ8QnCGaapMyi0fpJagGIfKyAWifUpNgaqyj2omcje4apAHQsjN9Wr9W6Z9A7qIcvRlW2ne4vI5tViA_2UI9eH8p_0uQ8dUYEP355DxvZujvqSSF9XeH9AIrH_Xg2IWKSznCpS2ue9AXbW0OLT5XpN1e-SYnZaJ0ifpqfjlj-CxxQdB9kUUzKm0Y40XrLgVmQiX7RUHb11iaaA8M75FDQVV-N58lk5ABvxjqQpKlmmsZPZoVIhVMvkaa8RizSHkQIe8rmpZ0mNYFFh8gCN5ugNGuxlnaDvG3R7QAdq6uim6-9vr1Wke_oX54yfAmrCSgVHm4oAimRDKPVXWUZTi9Vm7Cn1HMDqb4C8ZHPLsvCRu&w=800"
+      "photo": "/api/photo?name=places%2FChIJQTq2d93f2IgRHJB9fO5nfOI%2Fphotos%2FAaVGc3lJWZm6ri_QIKEQjTHRAXBHK0_JhXbjhClwBQ2VCFz7OohxPvmGYXpo5wg9NP7g67q36-X_uke_gixKVEU0jLu79yFDehWlpKL_I2C70wGiEGC0Nt8m5PHlbzCtM2dNbRa5Rt_r-Mgw2mYOSNhN5bAPOIl66MkQazwm7eu_fpfVnfTbSrL84Csh91v2WUIbEtOGroxtXIb5bda94SUEu1rSvJ_3uxYMuXiGOTPE273nIEveyktjiJjbdp68iFi5GPcpyACyk8mNPSjp-RHaDFzHnLmQIplHEdVstuTP7d6mRtjstQ1Km5BNADfYsERnrgFGUInv9dj_C45BmnncCBHMa5XYMAaC84acvQqMTTHGAEffpiZ0Ko0UW6w0lJgnuxAkB_XGw7J9pn1hANCM9QJxG1B5P0idgT0DQqzdvH42bvElYVj3K4XXs5aYjMUh&w=800"
     },
     {
       "city": "delray-beach",
-      "id": "ChIJ7zDjtQLf2IgRjGZXkqqyiIA",
-      "name": "Tartelette Frênch Patisserie & Café Delray Beach",
-      "address": "506 E Atlantic Ave, Delray Beach, FL 33483, USA",
-      "lat": 26.461503999999998,
-      "lng": -80.067759,
-      "rating": 4.6,
-      "reviews": 29,
+      "id": "ChIJETifryjf2IgRnFkEbxw0raA",
+      "name": "La Boom Café",
+      "address": "263 NE 2nd Ave, Delray Beach, FL 33444, USA",
+      "lat": 26.466681299999998,
+      "lng": -80.0708339,
+      "rating": 4.7,
+      "reviews": 18,
       "price": "$$",
       "types": [
-        "pastry_shop",
-        "bakery",
-        "dessert_shop",
-        "confectionery",
         "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "openNow": true,
-      "hoursLabel": "Closes 7 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 19,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 19,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 7:00 AM – 12:00 AM",
-        "Tuesday: 12:00 AM – 7:00 PM",
-        "Wednesday: 7:00 AM – 7:00 PM",
-        "Thursday: 7:00 AM – 7:00 PM",
-        "Friday: 7:00 AM – 7:00 PM",
-        "Saturday: 7:00 AM – 7:00 PM",
-        "Sunday: 7:00 AM – 7:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=9261849079356810892&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ7zDjtQLf2IgRjGZXkqqyiIA%2Fphotos%2FAb43m-tsYazE4ksjkMTU8AwQz-v7zXGcGepKbt0U8A7gxg--vp1_qbTx0GYDV-h3SYgt5GmidEEdzVsUklpHwAg3RdhoRsX9eiMEv5Sa0vR_P1IH0RYioOyrJ8ldCQvzXKgE3CF-v_VH_Aupqcri54YkU8rF51-XmR4-u98-fei2Hgjq3XVP2KoSbZ1544B__f4yPyGJ77k-aa48W_9r39No1_H6WmwCYrWG1S6d5ypQ1tdpg1FdZu6wv0XxVE9nZVTf2TrUWA7EoZBAP0yeVa3HDtHKpsNd8jFM6-mqTTe47OPagg&w=800"
-    },
-    {
-      "city": "delray-beach",
-      "id": "ChIJjbLHLHPf2IgRAPdTY0wtXT4",
-      "name": "Beach Market Cafe - Opal Grand Resort & Spa",
-      "address": "10 N Ocean Blvd, Delray Beach, FL 33483, USA",
-      "lat": 26.4625357,
-      "lng": -80.05863889999999,
-      "rating": 4.3,
-      "reviews": 27,
-      "price": "$$",
-      "types": [
         "coffee_shop",
         "breakfast_restaurant",
-        "bistro",
-        "cafe",
-        "restaurant",
+        "bakery",
         "food_store",
         "store",
+        "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 10 PM",
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
             "day": 0,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 0,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 1,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 1,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 2,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 2,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 3,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 3,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 4,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 4,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 5,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 5,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         },
         {
           "open": {
             "day": 6,
-            "hour": 6,
-            "minute": 30
+            "hour": 8,
+            "minute": 0
           },
           "close": {
             "day": 6,
-            "hour": 22,
+            "hour": 16,
             "minute": 0
           }
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 6:30 AM – 10:00 PM",
-        "Tuesday: 6:30 AM – 10:00 PM",
-        "Wednesday: 6:30 AM – 10:00 PM",
-        "Thursday: 6:30 AM – 10:00 PM",
-        "Friday: 6:30 AM – 10:00 PM",
-        "Saturday: 6:30 AM – 10:00 PM",
-        "Sunday: 6:30 AM – 10:00 PM"
+        "Monday: 8:00 AM – 4:00 PM",
+        "Tuesday: 8:00 AM – 4:00 PM",
+        "Wednesday: 8:00 AM – 4:00 PM",
+        "Thursday: 8:00 AM – 4:00 PM",
+        "Friday: 8:00 AM – 4:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: 8:00 AM – 4:00 PM"
       ],
-      "mapsUri": "https://maps.google.com/?cid=4493797809292834560&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJjbLHLHPf2IgRAPdTY0wtXT4%2Fphotos%2FAb43m-un69Vaj7XIzsiTcx76BMFvI5X9K7-FybCi55omtrSeTAD23ZsnW9b8D8I-eZJeNPOnhCECUcnApAhEiOCBSoo0dyPEvRrWpNtFprFxJAXBirRqE5W8e64W6GAC3-eHM501LBZzWdC84npCFUVlQmoGEcwACpWJYSq1BKinR9xbvYDVfynwbzT6rWTuzuMwAd2MDNmKrnfPczX8eOSKQ1I7u4U-fzHzZgKJsUAcxKk0QMr53fgF2xggBaXcGivnUWZjiFTgKBDi-r2DOpM7kSeecLR22UxlNofkywjNsD6DjA&w=800"
+      "mapsUri": "https://maps.google.com/?cid=11577967513765697948&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJETifryjf2IgRnFkEbxw0raA%2Fphotos%2FAaVGc3kq9oTDNvo4qmiCIoRY9uH4Fsixhf_W3OOS7tFiKjroZD8Ld-inhoExOjFq2Y2gTvcVw32iIXQo18vdoFnjc_8Xnm3EOaDrp5-P94urlujTH5gTZc6cZ6DnnluxT6nq9_a7-LvoHj264JUlo0lBJdBjiLQ4z4LEfhDrq-HJfVJ6LLsKT2t74o-mBWuChMpttbvbS6s5ureIFWMjHtx5vEXJcypu5JGdL__muay2qWuqVwXJ8MEP_8h6Epy5OkG02zyKgg5DfPIqd9SjSY1QOMK-IP9Q_cDylqEExOMVp8lN_0A_a2ZV7oJO0I8OgYaTLTUeVWJsXS552iJZUCHOyTxDA7mcaU__Az6HZXghKUxiiV238OXObnwsWKvFG48TJzzuNVsTIYcWls9d8LVGdEzytXxZb3Lg77SrS87OFZQdgAhCNmg371GayWUwNQ&w=800"
+    },
+    {
+      "city": "delray-beach",
+      "id": "ChIJjTy73w7f2IgRiAUq84mwV-o",
+      "name": "Stingers Coffee Shop",
+      "address": "233 NE 2nd Ave, Delray Beach, FL 33444, USA",
+      "lat": 26.4659054,
+      "lng": -80.0710496,
+      "rating": 4.3,
+      "reviews": 15,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/New_York",
+      "openNow": true,
+      "hoursLabel": "Closes 3 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:00 PM",
+        "Tuesday: 7:00 AM – 3:00 PM",
+        "Wednesday: 7:00 AM – 3:00 PM",
+        "Thursday: 7:00 AM – 3:00 PM",
+        "Friday: 7:00 AM – 3:00 PM",
+        "Saturday: 7:00 AM – 3:00 PM",
+        "Sunday: 7:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16886159434385589640&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJjTy73w7f2IgRiAUq84mwV-o%2Fphotos%2FAaVGc3nsW2ImcPQ24_UJZSLva760hSXdA09lx4bflJNFCUd6aSGnJ5lAWpWDJvDeo3XoCR9pjwu61OjWJ-JJy5d162YldgQiv58pXkBgcVAqcrjNlsywcnWTCNdAc_NBdQ3rVwT1INvUiaM5beb6MlFnL5ajLyno9w7knhwu0JwYONgwnrVUraMa2dWfzN-y3dIjmaJ5eXmjMiEzNUZ0-dqmg66XG-lFGHSrPxxbAhU12S0E9vUSr-f1W5cQhU5fXWE0oO0aFcw1k14cJM26b9cfDz7EJjplXXrbsCM-6frmoX8jCX7-prYMTlaBkcw_SF8-P4ybkDaxY6WhSGGLgoVCkeRWLNfOSAT5hlMFp2E6SK8iX06ZqTALwXb9cW6p_a_P8_vys7PY8U-RAj-47FrG9P6Q0n2XkECCsQfQbz7i3LcD98sY&w=800"
     }
   ],
   "picks": {
@@ -1944,6 +2315,40 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:37:05.253Z"
+    },
+    "ChIJcW1SYrjf2IgRsZhOboHnudI": {
+      "picks": {
+        "drink": {
+          "name": "Cappuccino",
+          "reason": "Directly named and praised; one reviewer paired it with a chocolate croissant and called it delicious, another called their coffee 'very good'.",
+          "quote": "Their coffee was very good... a capuccino. Delicious.",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Almond Croissant",
+          "reason": "Received the strongest specific praise in a 5-star review, called quite possibly the best ever. Croissants generally are mentioned across multiple reviews.",
+          "quote": "Quite possibly the best almond croissant I've ever had",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I stopped by The French Bakery in Delray Beach, Boca Raton, on a Monday morning and it was already busy, which says a lot. The place has such a charming and cozy atmosphere, with beautiful décor that makes the whole experience feel special the moment you walk in.\n\nEverything is very well organized, even with the high traffic. You can tell the team knows how to manage the space efficiently. There’s a great flow inside, and I also loved the outdoor seating in the back, it adds a relaxed, European café feel.\n\nThe staff was friendly and welcoming, which always makes a difference. Prices are fair for the quality and overall experience.\n\nDefinitely a great spot to catch up with friends, enjoy good food, and start your day right. I’ll be coming back!"
+        },
+        {
+          "rating": 4,
+          "text": "The The French Bakery and Cafe is a very good bake shop. A friend I do taxes with would stop here and bring us pastries. Very nice selection.\n\nEverything he buys is delicious."
+        },
+        {
+          "rating": 5,
+          "text": "This spot is one of Delray’s best kept secrets!\n\nAuthentic French cafe with outstanding food, service, and vibes. Quite possibly the best almond croissant I’ve ever had. Great place to get your morning coffee fix.\n\nDon’t sleep on their other food as well, the sandwiches are delicious; made on freshly baked bread. Definitely check out their carefully selected packaged products, great for gifts or to take home for yourself/family.\n\nI’ve been a customer for a few years now and they continue to impress, much deserved review. HIGHLY recommended!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:49:52.985Z"
     },
     "ChIJL_cmLtvf2IgRq-XagfuOSOY": {
       "picks": {
@@ -2183,6 +2588,40 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:37:36.579Z"
     },
+    "ChIJHYI64g3f2IgRpV7cD682Msg": {
+      "picks": {
+        "drink": {
+          "name": "Iced Latte",
+          "reason": "Specifically praised in a 5-star review noting the espresso is dialed in; other reviewers generally love the drinks.",
+          "quote": "You can't go wrong with their iced lattes, the espresso is dialed IN",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "B's Club Sandwich",
+          "reason": "Directly named and praised in a 5-star review alongside general love for their sandwiches and fresh ingredients.",
+          "quote": "got the B's Club Sandwhich... everything was great",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The food is so freaking good, i got the B’s Club Sandwhich and Banana Bread and a Matcha and everything was great. priced really well too. such great service and very sweet workers!!! will definitely come back. ingredients are fresh and delicious"
+        },
+        {
+          "rating": 5,
+          "text": "Beswick's & Co has the absolute best drinks and pastries. You can't go wrong with their iced lattes, the espresso is dialed IN, the baristas are kind and personable but speedy, the place is cute, and aesthetically decorated. The baked goods are soft and indulgent, with a larger selection on the weekends. Always look forward to getting a coffee and a sandwich for lunch :)"
+        },
+        {
+          "rating": 5,
+          "text": "🌺💝🌸💕DELIGHTFUL 🌸💓💐💝\nThe vibe is pink and it’s happy you are there. The menu is a no fail experience where flavors, ingredients, colors, and something special come together. It’s quaint, refreshing and unexpected.\nThe staff are nearby with warm acknowledgment of your presence lending authentic genuineness you didn’t know your local lunch spot was missing. And a lunch taken outside alongside the street suddenly feels necessary💗. Enjoy this beautifully delightful little place. I know my head, heart and belly did."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:49:57.026Z"
+    },
     "ChIJd_TzVeTf2IgRHXWTP3U_yCM": {
       "picks": {
         "drink": {
@@ -2216,6 +2655,40 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:37:41.187Z"
+    },
+    "ChIJyUqoTtvf2IgRW8clk1sBSdQ": {
+      "picks": {
+        "drink": {
+          "name": "House coffee",
+          "reason": "Coffee is repeatedly praised as amazing and better than nearby chains, but no specific drink is named.",
+          "quote": "Best coffee spot you can go to on the ave",
+          "confidence": "low",
+          "mention_count": 4
+        },
+        "food": {
+          "name": "Cookie",
+          "reason": "Directly called out as delicious, while the sandwich received mixed feedback.",
+          "quote": "Great coffee and delicious cookie",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "A bank that’s a cafe? A cafe that’s a bank?\nIt seems confusing at first, but it’s pretty amazing. Think of it as a free open community space to relax, meet friends, work, read, grab a coffee, use the restroom, or yes get some banking questions answered.\n\nIt’s a super modern but comfortable space that’s open to use, even if you’re not a capital one customer or even buying a tea or coffee or pastry. There are plenty of chairs, tables, stools, and a couple of cozy couches, along with some little cubicles that you can book for an hour or two for meetings or quiet work.\n\nThe cafe section is run by a fantastic team of baristas that are extremely friendly and personable. They make some amazing drinks, and some delicious baked goods.\n\nThe rest of the place is run by the capital one team of ambassadors who are quick to welcome you in, ask you about your day, get to know you more, and answer any questions you may have about banking and credit cards. The folks who work here have honestly become some of my good friends, and I always pop in just to chat and see them.\n\nThey also offer free Money & Life Mentoring sessions. Brittney’s guidance has helped me tremendously in managing my financial and also personal life. Think of it as a mix of therapy and financial coaching.\n\nOn top of the sessions, they’re constantly hosting community events, financial workshops, and meet and greets to build connection in the neighborhood.\n\nThis is one of my must do’s in any city I go to, and this one in Delray is my absolute favorite."
+        },
+        {
+          "rating": 5,
+          "text": "Awesome place and incredible coffee prices for capital one/discover card holders. There's free rooms you can book to hang out! I could definitely see myself working from here if I ever needed to! Super cool."
+        },
+        {
+          "rating": 4,
+          "text": "Great customer service and very friendly. Great coffee and delicious cookie. Came here for lunch break and the location was great. The sandwich was mostly bread and no arugula, but still good."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:50:00.482Z"
     },
     "ChIJQTq2d93f2IgRHJB9fO5nfOI": {
       "picks": {
@@ -2251,73 +2724,73 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-24T21:37:46.206Z"
     },
-    "ChIJ7zDjtQLf2IgRjGZXkqqyiIA": {
+    "ChIJETifryjf2IgRnFkEbxw0raA": {
       "picks": {
         "drink": {
-          "name": "Hazelnut coffee",
-          "reason": "Specifically praised in a 5-star review for using real hazelnut and natural ingredients; cappuccino also called 'perfect' in another review.",
-          "quote": "Best coffee in Delray Beach. Their hazelnut coffee has real Hazel nut",
+          "name": "Coffee",
+          "reason": "Coffee is mentioned positively across multiple reviews, though no specific drink is named.",
+          "quote": "Excellent coffee, excellent cookies",
+          "confidence": "low",
+          "mention_count": 3
+        },
+        "food": {
+          "name": "Cookies",
+          "reason": "Cookies are specifically named and praised in two separate 5-star reviews, making them the most consistently recommended food item.",
+          "quote": "pleasantly surprised with the quality of the cookies",
+          "confidence": "medium",
+          "mention_count": 2
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Food is OUTSTANDING! The staff was really helpful and friendly. We got the crème brûlée macaroon and tiramisu, and that was phenomenal. The la boom omelette was also very delicious."
+        },
+        {
+          "rating": 5,
+          "text": "Stopped by La Boom Café recently and honestly loved the whole vibe. The place feels clean, welcoming, and thoughtfully designed, and you can tell they care about quality. The food was fresh, flavorful, and beautifully presented — especially the breakfast and coffee.\n\nWhat stood out most was how friendly and genuine everyone was. It didn’t feel like a chain café experience at all — more like one of those neighborhood spots you keep coming back to. The menu has a really nice mix of healthy options, comfort food, desserts, and drinks, so there’s something for everyone.\n\nDefinitely worth checking out if you’re in the area. Excited to come back and try more from the menu"
+        },
+        {
+          "rating": 5,
+          "text": "Absolutely wonderful food, I’ve had a lot of food in this area, but none have felt as authentic as this here. Love the people, very nice and patient staff. You need to try at least once!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-07-01T11:50:04.046Z"
+    },
+    "ChIJjTy73w7f2IgRiAUq84mwV-o": {
+      "picks": {
+        "drink": {
+          "name": "Iced Hazelnut Latte",
+          "reason": "Specifically praised as refreshing and creamy in a positive review; matcha and seasonal mocha latte also received high praise but hazelnut latte had the most concrete descriptive praise.",
+          "quote": "refreshing and creamy",
           "confidence": "medium",
           "mention_count": 1
         },
         "food": {
-          "name": "Pastries",
-          "reason": "Pastries are the most frequently and enthusiastically mentioned food, compared favorably to those in France across multiple 5-star reviews.",
-          "quote": "pastries were as good as we've had in France",
-          "confidence": "high",
-          "mention_count": 3
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "This is a wonderful addition to The Avenue. The cappuccino was perfect, the pastries were as good as we’ve had in France and the little grace note of bringing a carafe of water and two adorable glasses was a bonus. The servers were gracious and helpful. The sandwiches look amazing but we haven’t tried them yet. Next time!"
-        },
-        {
-          "rating": 5,
-          "text": "Great place. Good coffee and pastry! Highly recommended"
-        },
-        {
-          "rating": 5,
-          "text": "Delicious pastry"
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:37:50.992Z"
-    },
-    "ChIJjbLHLHPf2IgRAPdTY0wtXT4": {
-      "picks": {
-        "drink": {
-          "name": null,
-          "reason": "No specific drink is named positively; one reviewer was unimpressed with coffee drinks and no other drink mentions exist.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        },
-        "food": {
-          "name": "Grand Classic Sandwich",
-          "reason": "Singled out with strong specific praise in a 5-star review as one of the best breakfast sandwiches ever, and sandwiches generally are praised as fresh and well-priced.",
-          "quote": "their grand classic sandwich is hands down one of the best breakfast sandwiches",
-          "confidence": "high",
+          "name": "Avocado Toast",
+          "reason": "Called 'most delicious' in a 5-star review alongside matcha; only specifically named food item with direct praise.",
+          "quote": "the most delicious matcha with avocado toast",
+          "confidence": "medium",
           "mention_count": 1
         }
       },
       "reviewSample": [
         {
-          "rating": 5,
-          "text": "Everything’s so wonderful. Check in everyday while my stay. The best blueberry muffin😍😍"
-        },
-        {
           "rating": 4,
-          "text": "Fair prices and the food was excellent.  Great place to eat healthy and quickly - whether staying at The Opal Resort or heading to the beach.  I’m at the resort and would come back again either way.  Unfortunately, I was not as impressed with the coffee drinks I ordered."
+          "text": "There are a number of coffee shops in Del Ray Beach, but a high Yelp rating brought me to this tiny shop inside The Ray Hotel. Walk inside the lobby and go right. The shop is at the very end.\n\nWalking in on a Monday in July around 9am, there was no wait. The barista took me order and within three minutes, I had an iced hazelnut latte in hand. It was refreshing and creamy!\n\nThey sell a few grab-n-go items as well."
+        },
+        {
+          "rating": 3,
+          "text": "Very cute, inside the Ray hotel. But the coffee was not great…ordered a cortado, milk was steamed too hot and espresso was bitter. Also ordered a flat white, came as a full latte so too much milk. Disappointed cause it was very promising! Need to find an authentic coffee shop in the area"
         },
         {
           "rating": 5,
-          "text": "It’s not just for hotel guests. Stroll on it from the beach or your next business meeting."
+          "text": "Located inside the Ray Hotel in Delray Beach, this was a nice quick stop by. The barista was friendly and made great recommendations, I tried the seasonal hot marshmallow moca late which was superb. They also serve a variety of drinks, sodas, snacks, chips, cookies, hot chocolate, latte, cappuccino, croissant, and many more. Definitely try this gem inside one of the nicest hotels in the area!"
         }
       ],
       "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-24T21:37:57.041Z"
+      "fetched_at": "2026-07-01T11:50:08.221Z"
     }
   }
 }

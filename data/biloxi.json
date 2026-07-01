@@ -2,7 +2,7 @@
   "version": 1,
   "citySlug": "biloxi",
   "city": "Biloxi, MS",
-  "generatedAt": "2026-05-26T19:58:20.923Z",
+  "generatedAt": "2026-07-01T11:53:41.606Z",
   "count": 9,
   "cafes": [
     {
@@ -13,7 +13,7 @@
       "lat": 30.3976892,
       "lng": -88.89808269999999,
       "rating": 4.7,
-      "reviews": 1032,
+      "reviews": 1048,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -112,7 +112,7 @@
         "Sunday: 8:00 AM – 6:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=2338722398637939600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ602GPQkPnIgRkFsQZ6HPdCA%2Fphotos%2FAb43m-vdiwCert9AqQfQsSAJ6N1qrw40x5galHORjdUrNfC1ngUiNT_BtR8CrK-UjkiFnmgUJ-yodk1B0RgrFGZGqBJg8n6FiBbi8x_LawauNefd-Vlov74NP4OUwKdzrV_Nmg8vJAl1CeDP9xLwZRUgGYs4BYxjjR5zUifU7WnqBGQjh1LRCTxrRSUU0dQS5bV-duryc8bFxLRbs-hflWW5b7RLdE0cx0TSN9sQBXM9LDVBDemQme0Ja5BDl57hTfgq4Ypeoe7ez2AMS59xGTjaiIwBnb0Sv9CMUvVZItofo2iV_hqXfuXxFmym-Hn9HuMYd7SnpINaApKrBzfFjwR-vcEwLLJhfmqASNWVWbaY96pAfHwu3viWnIIkXCA_lc5jZFFSpjWRj590J7mfDSTVRUzijCusDsIr5Sg4I6DgwYoUo48&w=800"
+      "photo": "/api/photo?name=places%2FChIJ602GPQkPnIgRkFsQZ6HPdCA%2Fphotos%2FAaVGc3mBWuYOSMKcNkkzpfitF_BytQvImpW9y9YTkMti4WbiOucX7Y3WKy_bCxCS1gPVfRGSn1h_oEJu-VJW2ppkjlnv6unVoHbrf4MzrmJ5npV_-R3vCaKaSvkXYwRbTjXPaFtT4LowaRq1bxRXlBUk0S3dqogLwdX1XvwVR10ctwzDKKsas-nlqLZrN2vHtrjANVEr6rnBpdknBMxNDXgBDf33yAKtjs2KCTGdQus52r-PdYHvSOGIzJBBLzKZLpEIdWAfWEwXYWecNtEcfxgYBQNENx1bGPXVwzGZTkUtrNcNXWmUBl6EDUwzcf0O657kylVt0OMKfugWwo_WtS049FqNNAfPYQ-mF7xA5fTVr7PcBadVyj0E8P1nWkxlQd_FFMhnIPXGrwnFXesOqXpCDJgyQsld8zckN_2R3gHNi7XwEZg&w=800"
     },
     {
       "city": "biloxi",
@@ -122,7 +122,7 @@
       "lat": 30.4448352,
       "lng": -88.9337419,
       "rating": 4.6,
-      "reviews": 700,
+      "reviews": 709,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -136,8 +136,8 @@
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": false,
-      "hoursLabel": "Opens 6:30 AM Wed",
+      "openNow": true,
+      "hoursLabel": "Closes 2 PM",
       "periods": [
         {
           "open": {
@@ -234,7 +234,7 @@
         "Sunday: 7:00 AM – 2:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=16728057391782656606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJFX9hW_ANnIgRXnqNm5H_Jeg%2Fphotos%2FAb43m-vOIof_y5VnXOMbhPJFCpVNPxifQn-DGccg9Oo297ZYOj0N3qXy3DPQ6gwGAnucOxQvzDzQicYZ9bx_Fsb9CdKR2LEpp8NwxjSZuRcLNfxK4iHyHxs8X16YWkc0vOV2DLDu73npC34_F2C-jch9TOcTMxMlFxjraB8TJmT66d419JoG1nP_OtMfRnj5fd_DklpLZLlrJkrnYs56IG0soBCcgKEbJLjkC935cNKr8cxdzamXxKj8T3BCqSdHn09gQqK48x5facZF7Bsu4gS2RdatYZPrrVdS195oeaXg0r2rWVLbxr2xPLxus0HGyMq5KEupva45kEIOTvn-ng3Vgd78B5nP_c0BdGvgFniTxHehwh9F4ZXUsn7tvnSHWIA81dyKqGSMmI0kdCVtwsdc5lcVRVsT21dsWlo9TiTB7_obwQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJFX9hW_ANnIgRXnqNm5H_Jeg%2Fphotos%2FAaVGc3lhs20Edh_oJBDAJRLOK1f9mp56DjdLP7f3BVIkVaqGX7tOiNIJiNn_C79zcLN-DKTw1GDPAtyCEtJqWhZUJso1UBITwPeMuypRRIOTh54wOME2iRREITtW4Eq7pJW_zpkEjem59ADEOY6pIMoDwqI0z936lXgBR2KBwmjHnbViL_BlczU1umKJRS9SwEUn_fpzvw8oYXJ1UI4fQyM1ClN7aiKqQGaR_AqB0d55_yi5z70EpnnvcFP7nW78rmHDJq8TEVGk8wQ171yScA5IdikJUn12wtPu4c4YUetuznV971JNWnlZ1KAPjJkz20BPtZUAFRJ9FtY9dzqLhmbu3wL_l4aC-LGwTHeae9XLWJac5DT-TTTWGANmyDxc1HSjtzEAcGOQqcPbRVEOKyZ-ZdzI38s4tLSe8sEOpUiBo7cJLw&w=800"
     },
     {
       "city": "biloxi",
@@ -244,7 +244,7 @@
       "lat": 30.397062599999998,
       "lng": -88.8907574,
       "rating": 4.8,
-      "reviews": 269,
+      "reviews": 284,
       "price": "$$",
       "types": [
         "restaurant",
@@ -258,7 +258,7 @@
       ],
       "timezone": "America/Chicago",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Wed",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -331,7 +331,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=747401644208126420&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJdSXgYhwPnIgR1HmR49VNXwo%2Fphotos%2FAb43m-tKgPB2rk7yT9jfTO3p0ggiDzd90rf_iTi5h06CFtoG5_NftfPr6d5rWd4ZMZkr7_dzeI5gycBo1AYAH-XTTUItC8hwJRfG6dxW1xnFVkBW96YkUaP7uEcaE72CduJUmLkGb7nAP5p3eT85DQrB6dcIOTJJ6Lp9aNwxE_PMVrCD3fmwARwN6FU-pOYDbZwiXXpclob1UMFh9oj2keIM_OQJURHpT0-yRKpREZeRLUumcj_QVhI5BO2e6oxzJBDUXz6D3YNXkCxLHXg_bCVLuHy11t14RgfY-A4KOy8tjxyrAquGf3lavZxClWp2olHykl8gzXJ0rfYY0Lmex4v8E4lQglbZJ9wULwC8XKrEjNUuQwzfqru1ieBrC1P1dCFLRi8tbVeMPilBxPToUecZOAZ9fU2SbxoUnm1QvwIX3RDCNQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJdSXgYhwPnIgR1HmR49VNXwo%2Fphotos%2FAaVGc3mlr75xqoDNP6PxHQvxHtXD2EW7UkWMuXlY_C9Tw1Ba87gPZ1TEE6sDtdDvBNexRo9soMO7UZoGtqwm3Ea3_F2ijQHKdJUmnqa7DjdZzJIYF2K31vSS3joNdAiDSvj6gg80Fsow1aDSmfcv3rwUSsRYxBC3sFkk407ntShY0KHQd9WCgxXMFE9ExS7JWpDzlqJCC01oHe5-x16t9LyJGMUBJefSw9swRGbNEiSHh5MLceIAFw1p-c1jrwXmcEbkAHFsxDroEoQMJa_llCp7ZjtRv8OSLZeEGBXvzEXa7hjxV2wzVrbQWOTtQ9pIbLTUSynCUdHs8M1dh7bVberb_fbMXmcsDFzlwzESh4i38iTo0ehaPt-FSnAdhqlASnEIfwrWG2yYrmCTaEO6HhmyPKM783qGsZyckCMJ7NFIMq3YWw&w=800"
     },
     {
       "city": "biloxi",
@@ -341,7 +341,7 @@
       "lat": 30.3961955,
       "lng": -88.8880909,
       "rating": 4.7,
-      "reviews": 341,
+      "reviews": 347,
       "price": "$$",
       "types": [
         "restaurant",
@@ -351,7 +351,7 @@
       ],
       "timezone": "America/Chicago",
       "openNow": false,
-      "hoursLabel": "Opens 7 AM Wed",
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -424,7 +424,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=8068071341633214993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ7xxcXtYPnIgREZqOhCOM928%2Fphotos%2FAb43m-vt7Ck8CTYQxn18rLbHfCvvlCYsyyB8zR9E1AZw7tPUZkLuXKcPUdnBvclfOVG5a8vecW1lCenWZB4tJgKY0p5lyP-W1PW0anl5Gj01yVeoodkThou4bx8dEhYVMJnaxkLf4mRdGZQ2-1RyyNSOy5yJEBXJIhX9eLT_O0gTYmDWhxj6WfJmWOYzL85GpPz1e-Ave4moDl0dXwmFdBQHdkSkGfibSKATy1OYpBfnI368zN3FjOBcrik5L88-j50usw-QuuyDkOFueFu9jS_h6HHb8W5UmshSXnYFK8yT-ksVUw&w=800"
+      "photo": "/api/photo?name=places%2FChIJ7xxcXtYPnIgREZqOhCOM928%2Fphotos%2FAaVGc3nxEu4fpHgG2gTHvYm_paC3IX_iC6bw7ceiP5931C-qTGrboRmRWcMmQdqTIOAGnP-PNA-MUmb8yRUp4CfaxUS1FC9ovuE1254AYMeEF4mGnrnATdUuKu-1qZDYfYZV2nw8YxYHLtTDMxEubkAmyZbijZNrULsMPUGCl4nDQaXmcrxhj6NJIumBNYktCneQ-VEbFjjVuYQgiyx7wFGpBgxAD2pt-AIpO2Q8kab9q2ftmwG0CJMiay_KbP4ai-KhmNRNl6fBJkQB03lyKmK8_N48F-vKpuMbVOngXDi2CJArsuCFKZPs0nwHw3Vkt00XsLoRvjud_n7sFJ8wKHy-MGwKeKV3JVxi8eAmJNJ680LhqKAiMe0VLr3eBfRsw9dOz2A-R56FC4Muxbv51uQc5e_Qdl4AEzYeHlzPa0KBhZo&w=800"
     },
     {
       "city": "biloxi",
@@ -434,7 +434,7 @@
       "lat": 30.4701095,
       "lng": -88.9751137,
       "rating": 5,
-      "reviews": 103,
+      "reviews": 106,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -446,8 +446,8 @@
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": false,
-      "hoursLabel": "Opens 6 AM Wed",
+      "openNow": true,
+      "hoursLabel": "Closes 1 PM",
       "periods": [
         {
           "open": {
@@ -532,7 +532,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=13193018535270319328&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJq6N3ljEY-isR4ITuTXUEF7c%2Fphotos%2FAb43m-vT5Z8mWsNclxXNf_urFqIXaPrbgn8S5LKzfaGf8m7ik1V0hpx095IWPNX0kIHlotZiQRxC9zrEczQ-R9WbW2MDbjIrLMpYmo6aUO_KHOZVSHfqHuWFdfoECY0YNhtlcC_lWzlzImXGgLKuyXx8E1dmQS81BWQvIk0E9By6U3Tvmp26jr4x0j80TKw2AzzMqU9tX-ji1OuyJ5fnqOq8QlPNZGiKmotbNp7lfZdPXqg_B6fte8RCYdRHn4BmUuD3haX2nfot3T0aSfCNv09ikPlpDeOLMxuMgcKyt5zxyjccCQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJq6N3ljEY-isR4ITuTXUEF7c%2Fphotos%2FAaVGc3kNS490M3RVESOtD5EpRzRS3EsUV7zxvJeMYzP9BsmYNYgqDBDb_DX6aKWZU-ULjjewRGToPaGmDXeXNZzslqVaGUJvIAQs7hzuvhNFTQ9d9lJpLvPhnCAA-y2Xkt9T_pXtj3JXF7rWFfzwAx20cxYlAwq8bLg4hMXos0OkDIGQTImVhx7c0Q266qLx1JDIV1kE2F5P5FOkHoaIUxcMY5yQPfNeA5VdkTqbHDBqW2H1t5jHaDEiVjr6cdqVcNJ6ckZncqGp_P_X0DY89wnahQj_K7xlUnnZ-8q0ahy73bQfJhp2sTOcu2VlS8SHqc8rExzKs0UjPePGKuSitmnEXmeCSaWU0oOxP1vKgVSOZhnlHZmXQMIXvlZP8wedvbLxB94IC_0isBKDci_Hv1CsfGowYWcyJg810fOP67F6mZWtHxYORQCU8tU0q8icEm3S&w=800"
     },
     {
       "city": "biloxi",
@@ -542,7 +542,7 @@
       "lat": 30.4427872,
       "lng": -88.87202219999999,
       "rating": 4.8,
-      "reviews": 139,
+      "reviews": 144,
       "price": "$",
       "types": [
         "coffee_stand",
@@ -648,17 +648,17 @@
         "Sunday: 7:00 AM – 4:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=7259978607843813339&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJR6mdThQNnIgR2yd3LRSgwGQ%2Fphotos%2FAb43m-soEpQ-_Nm-Rxm_kL2mdpcVNl2YLb_oKqsKfyv5G8QDEwRyV30Wq9DHTrz7ZObb1efMk5sArbsgZsZ184nq4VcrtXZ0HgSsutVTopUBiEnlhtiTLElXtHw2z6xHhRpjpEr5uVhJMf4LeFD2Cck6g_FV9RqN5yGfFcAz7oWtoQ_xMhyk9fx56R6qUcjKAyJWW4rp8YAauLsfIoeWVA1zL18-xeO7A_AK9PFr2A8CPxE8LsijFHwJJ1QH0vf6L2cZnkNA0pGRFwjy4Yho6p_ph4WENvLhcbWJGRgqa0S4Wkso2g&w=800"
+      "photo": "/api/photo?name=places%2FChIJR6mdThQNnIgR2yd3LRSgwGQ%2Fphotos%2FAaVGc3nAoQwGqltkNf-25vkgXYXYdVte4qggyBPYNXhHIOGScL5R6pShqLakBXDTZgfU248XJRpm60UWRhBHXw05VqAy6Io0ZeFjFzqExyujbnpM96DeZTwoDGpiPS_uFSfYkPSjHLOSN5lAhA2tqIVdCDMHBLtQjVTG4NgCr0Qyz2xMSflEpoxmZsUdjAH6McbyX390WRIVsINMNjN1Ty69xMQXEN1kxQUk2Hd5JExs6TeAmbJwe9JzxcrDpHTZvh95JaARqc7zXiCZYq6twbHbE-ShxD_6xU3_oi02yRzixaAQFHsuwXgCOK2aoleH1sctEOBToKEFIgr25syjq_irsficKZo_kDWD_bBBlw-jDh9H2hRMEK5knRKDtUeKeqTGYmXfcx0ig6rAJnktjsdpX_LEovuGqNuOdXWnA8v2hGdtvSbO&w=800"
     },
     {
       "city": "biloxi",
       "id": "ChIJmeGNCI0NnIgRBNjiBCSrgd0",
       "name": "Tiger Paw Cafe",
-      "address": "921 Cedar Lake Rd Suite I, Biloxi, MS 39532, USA",
+      "address": "921 Cedar Lake Rd Ste I, Biloxi, MS 39532, USA",
       "lat": 30.4432347,
       "lng": -88.9354752,
       "rating": 4.8,
-      "reviews": 112,
+      "reviews": 124,
       "price": "$$",
       "types": [
         "cafe",
@@ -667,8 +667,8 @@
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 5 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 11 AM",
       "periods": [
         {
           "open": {
@@ -765,7 +765,7 @@
         "Sunday: 11:00 AM – 7:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=15961226725566896132&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJmeGNCI0NnIgRBNjiBCSrgd0%2Fphotos%2FAb43m-vdCLtVt1SRdkvOXtCAoWASpJ-aAAE4iTKCMThOtaQv1XdsToS7HBeVhqtHFwlEZc3LNLFQsrHzp7FCudoHdq11D96HzmDKl_AYRCEe0qv3u5QbIsyY1nr0DhBvgpAIm9SZUNjIcxABZ3VW8wQTNkd1xwnZO0Jc4SzWpjgJoC2d5JS0E6L75iPbr1k1OadGlm7r8IMn4Zti6jBMPj2NcfxuNvfEd6JhzUfSY1PxC6vNwWsNdvJphwDZ4iXJ2HtvWGzPrDVy8vvSIV9oCm0R2wWq4uFUOfEWFxuqmcQDmXxFem5EM2pqynIuIljINBdyz8tgLTZ1w_VhqkTDCkOpNi8lGzOnvq1dBjILvPGWVu0Yesp0KJsxCvNz-pgwm937g-Ue59dcKAYM43BxTgOfNfjmIxhwCp8iHsP02tXSN0DdZFtu3iYwOqByHqXJZvew&w=800"
+      "photo": "/api/photo?name=places%2FChIJmeGNCI0NnIgRBNjiBCSrgd0%2Fphotos%2FAaVGc3nnmVj_GAOF0NOledV1msAXKmsTdIpLVT_jRKak1etBcCKUA6r8vEVUug9j1WGYw4eAxEAPTRUyn6ElZWNT7FxMzvMCRPfrI2HsKNPlrjmTT54nKVNtKDvVWBMVBiIt6OHCeEOrT0_0yy7y5tuNNcr-Lbc-6iq1CbTDxywwnD9fFhALc1t9MVT569bOOv9p9i0TCO6mKNURzSIKDGTLXBuWWDWvNntnQrw1WRlDx4vK2yYNGLp3dStX7AJAhw-RSG7wGGNLvvTDLCY_n3TWyxH8U3bFy9zkxz9CwQtz9t8m1A5vnn7LNYcl3Uqk2eJxx7xuFdA9UjCVn38VtH1qgbVEPFaTFy1lD5fUB1chsvn7ueFYioy-XFm8ECJW4L05BV-pFLNi5dcab-BXIZ7eiNgg1WESO8YE6zGtgdYzeoaKusavD33h9xGJk_YT7dQD&w=800"
     },
     {
       "city": "biloxi",
@@ -775,7 +775,7 @@
       "lat": 30.392832000000002,
       "lng": -88.89197800000001,
       "rating": 4,
-      "reviews": 226,
+      "reviews": 227,
       "price": "$$",
       "types": [
         "bakery",
@@ -886,7 +886,7 @@
         "Sunday: 5:00 AM – 8:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=1801903874289960900&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJc5WY5eQOnIgRxAd02gamARk%2Fphotos%2FAb43m-t1L9mGse6dSyxbiIY9J2bgdz7h_PnMEIKAM8aSGU-ugMYgWxIF-tIbLHDeSQDpws3f5i7fq7hOAXhVIGWUlOcpm-VQDvQAc0l3wosAgsLLBN0h_PNr1Vhxme9zRvivYSoPisgw8DmELW8R4LlqdThtqVpUhrAfce2kLGZMTgRJc63fVIMp7MlZdkStshKv5i5DaC0HWuIvoQBR1yIgp58gpH389AqfLGt56Q9kbZnQpZzBNR6QMJBIo0aNFU5dJIVVYxHzMLG9iuCmhJw-jw_GsojpuP-riYE4C6Z_N1cCElQo-2ggnwwrs2c6kEXgsYp6dUx2DIqDF0kAY_DSSDyA2SEjXuFko2JeSFESeGqweD0cOTRfg704m7ibYHJyPv-sl2jQ1SbZour3RPFtM6L_yllIc9T7zSgTC2ZsUjMovwfe&w=800"
+      "photo": "/api/photo?name=places%2FChIJc5WY5eQOnIgRxAd02gamARk%2Fphotos%2FAaVGc3nWpOT9_JlsFOhUyEx878B3WZNJUCM7wXLi0-CuNONjyFd1pJVd2IsYgJ_IHP33x3Vh_GsdcJPU1mzlD6ne-YWxevNUZBWDkF-LRQpAsG3FEueoz9tkxTkoDKrFKs0We7KdOUHtenkBf_Ph5UBc62E_tdFEmjWXDPShzydEff_PaBD5YFaZim8MLME-JlJd7FyvM91Kwc_uF8XwcUO10cgUMxr-12UhFi98XlxCdyfzxyUFDQzYsyctCHoXDnAPGjUbVgVQsckbFoDfbkVsme_uauuAd_RqeoehjgtjtpH-L3hC5nbG06guspeCTApE3MsaJYWWvKXawE_hmw7EGuXeG5Pa1bGG5qmbQnZ4lvf3_pVxZaI-QH2aBeyuCHzg8WNhQxHHfEzXnyvm74cQg-B3EayecTAunC-rM9QYEUhBSYem&w=800"
     },
     {
       "city": "biloxi",
@@ -896,7 +896,7 @@
       "lat": 30.395644,
       "lng": -88.92017109999999,
       "rating": 4.8,
-      "reviews": 33,
+      "reviews": 38,
       "price": "$$",
       "types": [
         "coffee_shop",
@@ -994,7 +994,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=15139575840797495070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJi8igMgAPnIgRHg_SqAOUGtI%2Fphotos%2FAb43m-vXCJKltxEhCrJ7tJOXWMZG7P-aoVzDnXpEGawrkihe6CX1VLUqhUmLth6YZBTfKp0HSGGOZ3KQWG0FgPkyTgGcB9FOXpZn26ra2iCzokjZYOn4RMx3l53YQ5zSkkU6AH8-IcL6cbXTqCFI2fQhPGlcD35ClZi_imXC0mwRDlMWXrmmeXhjiioU0ysO7yxZPLId0ZHGHSHaBNMZgu7MsUbbVPwe4uSD8ZnNQbXNMKZvdP7O1wdAvu60yefWHSnaRohUpgFrUYxM2imF_m-eUdGvDO4-43cWYI206NlkmaeNcvTRomgu9NXnpOoQAB4MLJcfb8lQGSzpUUUSvIPvNwQmxx8nUMmwylNcdHxXcy_IUDFuYryPmG6XNQjhJIcZWbgiNw0TeYOvghP-HOwiWSalIrcHOiOXyo7yp0nS6m1JolaqlmBsGKHlfgmr_6mo&w=800"
+      "photo": "/api/photo?name=places%2FChIJi8igMgAPnIgRHg_SqAOUGtI%2Fphotos%2FAaVGc3n5XITuEodgRuT0U1mBcO3D1NBMwlgALVdvWxHUrUURy7coGlbeJdIBZ_pX8Itbo4-Yob-huPJC0r63owo-VBlvvKYpEuI57FyDQJs3KbnSg2wtV5QED5YfYlRWsDGLKbeQ-PoDetIIfzoDDu8m_wjeroZL-ygQAXOX2USPkXXGWXnKwUXV5BkBSV-4Wdr6petlCSTmyEykRiKexlzSKeHbZEgiq4GArq1FuJwjCkw3DYaYxhcqPmjaQJdr0R5nxP4FISMPv2hBou710LYH0OFVip2vToKVB8-lfWz6S3Fu6apksyBDVKEvMANxllGo3zAy4YOmQmBbeDYhtQnEihXkfCpKOKDksSOREhYQOIg2MsA4hCpuMD3wuPDD7gzfDclivMbCnv9NFTAeNQ_3cf2Tc02QWpaxxXPoWWw53BUHbaNImWvsitlhxs8JiIHN&w=800"
     }
   ],
   "picks": {
