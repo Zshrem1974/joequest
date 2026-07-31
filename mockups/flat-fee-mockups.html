@@ -1,0 +1,1163 @@
+<title>OpenChair — Marketplace Mockups</title>
+<style>
+:root {
+  --page-bg: #F1F2F5;
+  --page-text: #1C1F23;
+  --page-text-2: #595E67;
+  --page-text-3: #878C96;
+  --page-border: #DCDFEA;
+  --frame-shadow: rgba(0,0,0,0.12);
+  --ann: #C44D36;
+  --ann-bg: #FDF0ED;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #16181B;
+    --page-text: #DFE1E5;
+    --page-text-2: #9CA1AA;
+    --page-text-3: #6B7079;
+    --page-border: #2E3138;
+    --frame-shadow: rgba(0,0,0,0.35);
+    --ann-bg: #2A1F1C;
+  }
+}
+:root[data-theme="dark"] {
+  --page-bg: #16181B;
+  --page-text: #DFE1E5;
+  --page-text-2: #9CA1AA;
+  --page-text-3: #6B7079;
+  --page-border: #2E3138;
+  --frame-shadow: rgba(0,0,0,0.35);
+  --ann-bg: #2A1F1C;
+}
+:root[data-theme="light"] {
+  --page-bg: #F1F2F5;
+  --page-text: #1C1F23;
+  --page-text-2: #595E67;
+  --page-text-3: #878C96;
+  --page-border: #DCDFEA;
+  --frame-shadow: rgba(0,0,0,0.12);
+  --ann-bg: #FDF0ED;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--page-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 56px 48px 80px;
+}
+
+/* ── Page Header ────────────────────────────── */
+.page-header {
+  margin-bottom: 64px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--page-border);
+}
+.page-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--page-text);
+}
+.page-header h1 span { color: #127C71; }
+.page-header p {
+  font-size: 13px;
+  color: var(--page-text-3);
+  margin-top: 6px;
+}
+
+/* ── Screen Section ─────────────────────────── */
+.screen-section {
+  margin-bottom: 80px;
+}
+.screen-section:last-child { margin-bottom: 0; }
+
+.screen-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--page-text-3);
+  margin-bottom: 6px;
+}
+.screen-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--page-text);
+  margin-bottom: 28px;
+}
+
+.screen-row {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+.screen-row--mobile {
+  justify-content: flex-start;
+}
+
+/* ── Annotation Column ──────────────────────── */
+.annotations {
+  flex: 1;
+  max-width: 460px;
+  padding-top: 4px;
+}
+.ann-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  align-items: flex-start;
+}
+.ann-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--ann);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.ann-text {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--page-text-2);
+}
+
+/* ── Marker on Mockup ───────────────────────── */
+.mk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #C44D36;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  vertical-align: middle;
+  margin-left: 4px;
+  position: relative;
+}
+
+/* ── Phone Frame ────────────────────────────── */
+.phone {
+  width: 390px;
+  flex-shrink: 0;
+  background: #111214;
+  border-radius: 44px;
+  padding: 10px;
+  box-shadow: 0 12px 48px var(--frame-shadow), 0 0 0 1px rgba(0,0,0,0.06);
+}
+.phone-inner {
+  background: #F7F8FA;
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+}
+.phone-di {
+  width: 96px;
+  height: 24px;
+  background: #111214;
+  border-radius: 12px;
+  margin: 10px auto 0;
+  position: relative;
+  z-index: 2;
+}
+.phone-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 24px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A1D21;
+}
+.phone-status svg { vertical-align: middle; }
+.phone-status-r { display: flex; gap: 6px; align-items: center; }
+
+.phone-content {
+  padding: 0 20px 12px;
+  min-height: 600px;
+}
+
+.phone-home {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 6px;
+}
+.phone-home-bar {
+  width: 120px;
+  height: 4px;
+  background: #1A1D21;
+  border-radius: 2px;
+  opacity: 0.25;
+}
+
+/* ── Browser Frame ──────────────────────────── */
+.browser {
+  width: 900px;
+  flex-shrink: 0;
+  background: #fff;
+  border: 1px solid #D1D5DB;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px var(--frame-shadow);
+}
+.browser-chrome {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #F3F4F6;
+  border-bottom: 1px solid #D1D5DB;
+}
+.browser-dots {
+  display: flex;
+  gap: 6px;
+}
+.browser-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #D1D5DB;
+}
+.browser-url {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: #6B7280;
+}
+.browser-body {
+  background: #F7F8FA;
+  padding: 32px;
+  min-height: 500px;
+}
+
+/* ── Mockup Content Tokens (always light) ───── */
+.m-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+}
+.m-divider {
+  height: 1px;
+  background: #E5E7EB;
+  margin: 16px 0;
+}
+.m-divider-lg { margin: 20px 0; }
+
+/* ── Phone Nav ──────────────────────────────── */
+.m-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #127C71;
+}
+.m-nav svg { flex-shrink: 0; }
+
+/* ── Appointment Card ───────────────────────── */
+.appt-card { margin-bottom: 20px; }
+.appt-dr {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1A1D21;
+  margin-bottom: 2px;
+}
+.appt-practice {
+  font-size: 13px;
+  color: #6B7280;
+  margin-bottom: 14px;
+}
+.appt-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.appt-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+}
+.appt-row svg { flex-shrink: 0; color: #9CA3AF; }
+.appt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #FDF4E7;
+  color: #92620E;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-left: 4px;
+}
+
+/* ── Price Display ──────────────────────────── */
+.price-hero {
+  padding: 20px 0 4px;
+}
+.price-from {
+  font-size: 13px;
+  color: #6B7280;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.price-amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1A1D21;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.price-disclaimer {
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* ── Summary Lines ──────────────────────────── */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #374151;
+}
+.summary-row-label { flex: 1; }
+.summary-row-value {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.summary-free {
+  color: #127C71;
+  font-weight: 600;
+}
+.summary-total {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A1D21;
+  padding: 12px 0 4px;
+}
+.summary-total .summary-row-value {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ── Payment Attribution ────────────────────── */
+.payment-note {
+  font-size: 12px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* ── Disclosure ──────────────────────────────── */
+.disclosure {
+  background: #F3F4F6;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 20px;
+}
+.disclosure p {
+  font-size: 12px;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* ── CTA Button ─────────────────────────────── */
+.cta-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #127C71;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+}
+
+/* ── Screen 2 Caption ───────────────────────── */
+.screen-caption {
+  margin-top: 24px;
+  padding: 14px 18px;
+  background: var(--ann-bg);
+  border-left: 3px solid var(--ann);
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  color: var(--page-text-2);
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* ── Screen 3: Booking Detail ───────────────── */
+.bk-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.bk-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1D21;
+  letter-spacing: -0.01em;
+}
+.bk-meta {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 20px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+.pill--green {
+  background: #ECFDF3;
+  color: #166534;
+}
+.pill--grey {
+  background: #F3F4F6;
+  color: #4B5563;
+}
+.pill--teal {
+  background: #E6F3F1;
+  color: #0E5F57;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.panel {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+}
+.panel-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1D21;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E5E7EB;
+}
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  font-size: 14px;
+  color: #374151;
+}
+.panel-row-val {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.panel-total {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1A1D21;
+  border-top: 1px solid #E5E7EB;
+  margin-top: 8px;
+  padding-top: 12px;
+}
+.panel-foot {
+  font-size: 12px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ── Tooltip ────────────────────────────────── */
+.tip-wrap {
+  position: relative;
+  display: inline-block;
+}
+.tip-link {
+  font-size: 12px;
+  color: #127C71;
+  font-weight: 500;
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.tip-box {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  background: #1A1D21;
+  color: #E5E7EB;
+  font-size: 12px;
+  line-height: 1.55;
+  padding: 12px 14px;
+  border-radius: 8px;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.tip-box::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1A1D21;
+}
+.tip-box a {
+  color: #5CC8BC;
+  text-decoration: none;
+  font-weight: 500;
+}
+.tip-wrap:hover .tip-box,
+.tip-wrap:focus-within .tip-box { display: block; }
+
+/* ── Audit Line ─────────────────────────────── */
+.audit-line {
+  font-size: 12px;
+  color: #9CA3AF;
+  padding: 16px 0 0;
+  border-top: 1px solid #E5E7EB;
+}
+.audit-line a {
+  color: #127C71;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ── Screen 4: Price Entry ──────────────────── */
+.pe-intro {
+  margin-bottom: 24px;
+}
+.pe-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1D21;
+  margin-bottom: 4px;
+}
+.pe-subtitle {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 0;
+}
+.pe-source {
+  font-size: 12px;
+  color: #9CA3AF;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background: #F9FAFB;
+  border-radius: 8px;
+  border: 1px solid #F3F4F6;
+}
+
+.pe-header {
+  display: grid;
+  grid-template-columns: 1fr 160px 200px 90px;
+  gap: 16px;
+  align-items: center;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #E5E7EB;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pe-row {
+  display: grid;
+  grid-template-columns: 1fr 160px 200px 90px;
+  gap: 16px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #F3F4F6;
+}
+.pe-proc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1A1D21;
+}
+.pe-input {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background: #fff;
+  color: #1A1D21;
+  outline: none;
+  font-family: inherit;
+}
+.pe-input::placeholder { color: #C4C8D0; font-weight: 400; }
+.pe-input--filled { border-color: #D1D5DB; }
+.pe-range {
+  font-size: 13px;
+  color: #9CA3AF;
+  font-variant-numeric: tabular-nums;
+}
+.pe-save-btn {
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background: #fff;
+  color: #9CA3AF;
+  cursor: default;
+  font-family: inherit;
+}
+.pe-saved {
+  font-size: 13px;
+  font-weight: 500;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.pe-saved svg { flex-shrink: 0; }
+
+/* ── Desktop Nav ────────────────────────────── */
+.d-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #127C71;
+}
+.d-nav svg { flex-shrink: 0; }
+</style>
+
+<div class="page">
+  <header class="page-header">
+    <h1><span>OpenChair</span> — Marketplace Mockups</h1>
+    <p>Flat-fee model · Four screens · July 2026</p>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       SCREEN 1: Patient Checkout (Weekday)
+       ═══════════════════════════════════════════ -->
+  <section class="screen-section">
+    <div class="screen-label">Screen 1</div>
+    <div class="screen-title">Patient booking checkout — mobile, 390 px</div>
+
+    <div class="screen-row screen-row--mobile">
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="phone-di"></div>
+          <div class="phone-status">
+            <span>9:41</span>
+            <span class="phone-status-r">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><rect x="0" y="9" width="3" height="3" rx="0.5" fill="#1A1D21"/><rect x="4.5" y="6" width="3" height="6" rx="0.5" fill="#1A1D21"/><rect x="9" y="3" width="3" height="9" rx="0.5" fill="#1A1D21"/><rect x="13.5" y="0" width="2.5" height="12" rx="0.5" fill="#1A1D21"/></svg>
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none"><path d="M7 3C9.1 3 11 3.8 12.4 5.1L14 3.5C12.1 1.7 9.7.5 7 .5S1.9 1.7 0 3.5L1.6 5.1C3 3.8 4.9 3 7 3Z" fill="#1A1D21"/><path d="M7 7C8.2 7 9.3 7.5 10.1 8.2L11.7 6.6C10.4 5.4 8.8 4.7 7 4.7S3.6 5.4 2.3 6.6L3.9 8.2C4.7 7.5 5.8 7 7 7Z" fill="#1A1D21"/><circle cx="7" cy="11" r="1.5" fill="#1A1D21"/></svg>
+              <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="2" stroke="#1A1D21" stroke-opacity="0.35"/><rect x="2" y="2" width="17" height="8" rx="1" fill="#1A1D21"/><path d="M23 4.5C23.8 4.8 24 5.4 24 6s-.2 1.2-1 1.5V4.5Z" fill="#1A1D21" fill-opacity="0.4"/></svg>
+            </span>
+          </div>
+
+          <div class="phone-content">
+            <div class="m-nav">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M7 1L1.5 6.5L7 12" stroke="#127C71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Back to search
+            </div>
+
+            <div class="m-card appt-card">
+              <div class="appt-dr">Dr. Sarah Levine, DMD</div>
+              <div class="appt-practice">Levine Family Dental, P.A.</div>
+              <div class="appt-details">
+                <div class="appt-row">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#9CA3AF" stroke-width="1.2"/><path d="M7 3.5V7.2L9.5 9" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Today · 4:30 PM
+                </div>
+                <div class="appt-row">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5C4 1.5 1.5 4 1.5 7c0 4.2 5.5 5.5 5.5 5.5s5.5-1.3 5.5-5.5c0-3-2.5-5.5-5.5-5.5Z" stroke="#9CA3AF" stroke-width="1.2"/><circle cx="7" cy="7" r="1.5" fill="#9CA3AF"/></svg>
+                  West Palm Beach · 3.2 mi
+                </div>
+                <div class="appt-row">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5h10M4 2v1.5M10 2v1.5M2.5 3h9a1 1 0 011 1v7a1 1 0 01-1 1h-9a1 1 0 01-1-1V4a1 1 0 011-1Z" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Emergency exam &amp; x-ray
+                </div>
+              </div>
+            </div>
+
+            <div class="price-hero">
+              <div class="price-from">from <span class="mk">1</span></div>
+              <div class="price-amount">$95</div>
+              <p class="price-disclaimer">Minimum fee only. Dr. Levine sets the final price after examining you. Anything further will be quoted to you before treatment. <span class="mk">2</span></p>
+            </div>
+
+            <div class="m-divider m-divider-lg"></div>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Emergency exam &amp; x-ray</span>
+              <span class="summary-row-value">from $95</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-row-label">OpenChair booking</span>
+              <span class="summary-row-value summary-free">Free <span class="mk">3</span></span>
+            </div>
+
+            <div class="m-divider"></div>
+
+            <div class="summary-row summary-total">
+              <span class="summary-row-label">Due today <span class="mk">4</span></span>
+              <span class="summary-row-value">$95</span>
+            </div>
+
+            <p class="payment-note">Paid to Levine Family Dental, P.A. OpenChair collects this payment on the practice's behalf. <span class="mk">5</span></p>
+
+            <div class="disclosure">
+              <p>OpenChair is free for patients. Participating dentists pay OpenChair a fee for appointments booked through the platform. OpenChair does not set dentists' prices and receives no payment from you. <span class="mk">6</span></p>
+            </div>
+
+            <button class="cta-btn">Pay $95 and confirm <span class="mk" style="background:#fff;color:#127C71;">7</span></button>
+          </div>
+
+          <div class="phone-home"><div class="phone-home-bar"></div></div>
+        </div>
+      </div>
+
+      <aside class="annotations">
+        <div class="ann-item">
+          <span class="ann-num">1</span>
+          <span class="ann-text">"from" qualifier alerts the patient that $95 is a minimum, not a guaranteed total. Manages expectations before the chair.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">2</span>
+          <span class="ann-text">Explicitly states the dentist — not the platform — determines the final price after examination. Prevents later surprise-billing complaints.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">3</span>
+          <span class="ann-text">"Free" confirms there is no platform fee to the patient, without naming the dollar amount the dentist pays.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">4</span>
+          <span class="ann-text">Single, unambiguous total. No breakdown of platform economics is present anywhere in the order summary.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">5</span>
+          <span class="ann-text">Names the practice as the payee and positions OpenChair as a payment intermediary, not a seller of dental services.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">6</span>
+          <span class="ann-text">Required disclosure: dentists pay fees, patients do not. States the relationship without disclosing fee amounts.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">7</span>
+          <span class="ann-text">CTA repeats the exact dollar amount at the point of commitment. No costs are introduced between the summary and the button.</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SCREEN 2: Patient Checkout (After-Hours)
+       ═══════════════════════════════════════════ -->
+  <section class="screen-section">
+    <div class="screen-label">Screen 2</div>
+    <div class="screen-title">Patient booking checkout, after-hours variant — mobile, 390 px</div>
+
+    <div class="screen-row screen-row--mobile">
+      <div class="phone">
+        <div class="phone-inner">
+          <div class="phone-di"></div>
+          <div class="phone-status">
+            <span>9:41</span>
+            <span class="phone-status-r">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none"><rect x="0" y="9" width="3" height="3" rx="0.5" fill="#1A1D21"/><rect x="4.5" y="6" width="3" height="6" rx="0.5" fill="#1A1D21"/><rect x="9" y="3" width="3" height="9" rx="0.5" fill="#1A1D21"/><rect x="13.5" y="0" width="2.5" height="12" rx="0.5" fill="#1A1D21"/></svg>
+              <svg width="14" height="12" viewBox="0 0 14 12" fill="none"><path d="M7 3C9.1 3 11 3.8 12.4 5.1L14 3.5C12.1 1.7 9.7.5 7 .5S1.9 1.7 0 3.5L1.6 5.1C3 3.8 4.9 3 7 3Z" fill="#1A1D21"/><path d="M7 7C8.2 7 9.3 7.5 10.1 8.2L11.7 6.6C10.4 5.4 8.8 4.7 7 4.7S3.6 5.4 2.3 6.6L3.9 8.2C4.7 7.5 5.8 7 7 7Z" fill="#1A1D21"/><circle cx="7" cy="11" r="1.5" fill="#1A1D21"/></svg>
+              <svg width="24" height="12" viewBox="0 0 24 12" fill="none"><rect x="0.5" y="0.5" width="20" height="11" rx="2" stroke="#1A1D21" stroke-opacity="0.35"/><rect x="2" y="2" width="17" height="8" rx="1" fill="#1A1D21"/><path d="M23 4.5C23.8 4.8 24 5.4 24 6s-.2 1.2-1 1.5V4.5Z" fill="#1A1D21" fill-opacity="0.4"/></svg>
+            </span>
+          </div>
+
+          <div class="phone-content">
+            <div class="m-nav">
+              <svg width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M7 1L1.5 6.5L7 12" stroke="#127C71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Back to search
+            </div>
+
+            <div class="m-card appt-card">
+              <div class="appt-dr">Dr. Sarah Levine, DMD</div>
+              <div class="appt-practice">Levine Family Dental, P.A.</div>
+              <div class="appt-details">
+                <div class="appt-row">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="#9CA3AF" stroke-width="1.2"/><path d="M7 3.5V7.2L9.5 9" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Saturday, Jul 25 · 9:15 AM
+                  <span class="appt-badge"><span class="mk">1</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4.5h8M3.5 2v1M8.5 2v1M2 3.5h8a.5.5 0 01.5.5v5.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5V4a.5.5 0 01.5-.5Z" stroke="#92620E" stroke-width="1"/></svg>
+                    Weekend appointment
+                  </span>
+                </div>
+                <div class="appt-row">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5C4 1.5 1.5 4 1.5 7c0 4.2 5.5 5.5 5.5 5.5s5.5-1.3 5.5-5.5c0-3-2.5-5.5-5.5-5.5Z" stroke="#9CA3AF" stroke-width="1.2"/><circle cx="7" cy="7" r="1.5" fill="#9CA3AF"/></svg>
+                  West Palm Beach · 3.2 mi
+                </div>
+                <div class="appt-row">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 5h10M4 2v1.5M10 2v1.5M2.5 3h9a1 1 0 011 1v7a1 1 0 01-1 1h-9a1 1 0 01-1-1V4a1 1 0 011-1Z" stroke="#9CA3AF" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Emergency exam &amp; x-ray
+                </div>
+              </div>
+            </div>
+
+            <div class="price-hero">
+              <div class="price-from">from</div>
+              <div class="price-amount">$95</div>
+              <p class="price-disclaimer">Minimum fee only. Dr. Levine sets the final price after examining you. Anything further will be quoted to you before treatment.</p>
+            </div>
+
+            <div class="m-divider m-divider-lg"></div>
+
+            <div class="summary-row">
+              <span class="summary-row-label">Emergency exam &amp; x-ray</span>
+              <span class="summary-row-value">from $95</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-row-label">OpenChair booking</span>
+              <span class="summary-row-value summary-free">Free</span>
+            </div>
+
+            <div class="m-divider"></div>
+
+            <div class="summary-row summary-total">
+              <span class="summary-row-label">Due today <span class="mk">2</span></span>
+              <span class="summary-row-value">$95</span>
+            </div>
+
+            <p class="payment-note">Paid to Levine Family Dental, P.A. OpenChair collects this payment on the practice's behalf.</p>
+
+            <div class="disclosure">
+              <p>OpenChair is free for patients. Participating dentists pay OpenChair a fee for appointments booked through the platform. OpenChair does not set dentists' prices and receives no payment from you.</p>
+            </div>
+
+            <button class="cta-btn">Pay $95 and confirm</button>
+          </div>
+
+          <div class="phone-home"><div class="phone-home-bar"></div></div>
+        </div>
+      </div>
+
+      <aside class="annotations">
+        <div class="ann-item">
+          <span class="ann-num">1</span>
+          <span class="ann-text">Informational badge flags weekend scheduling without implying a surcharge. No pricing language is attached to the badge.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">2</span>
+          <span class="ann-text">Total, copy, and layout are identical to the weekday screen. The after-hours booking fee ($75 vs. $45) exists only on the dentist's invoice — it never surfaces to the patient.</span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="screen-caption">
+      After-hours pricing affects the dentist's invoice only. The patient sees no difference.
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SCREEN 3: Dentist Booking Detail
+       ═══════════════════════════════════════════ -->
+  <section class="screen-section">
+    <div class="screen-label">Screen 3</div>
+    <div class="screen-title">Dentist booking detail — desktop, 900 px</div>
+
+    <div class="screen-row">
+      <div class="browser">
+        <div class="browser-chrome">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">openchair.com/practice/bookings/4821</div>
+        </div>
+        <div class="browser-body">
+          <div class="d-nav">
+            <svg width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M7 1L1.5 6.5L7 12" stroke="#127C71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Bookings
+          </div>
+
+          <div class="bk-header">
+            <span class="bk-title">Booking #4821</span>
+            <span class="pill pill--green">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 4" stroke="#166534" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Cash pay — verified <span class="mk">5</span>
+            </span>
+          </div>
+          <div class="bk-meta">
+            Patient: J. M. · Saturday, Jul 25 · 9:15 AM
+          </div>
+
+          <div class="panels">
+            <!-- Panel A: Patient paid you -->
+            <div class="panel">
+              <div class="panel-title">Patient paid you <span class="mk">1</span></div>
+              <div class="panel-row">
+                <span>Emergency exam &amp; x-ray</span>
+                <span class="panel-row-val">$95.00</span>
+              </div>
+              <div class="panel-row">
+                <span>
+                  Surgical extraction
+                  <span class="pill pill--teal" style="margin-left:6px;">You set this price <span class="mk">7</span></span>
+                </span>
+                <span class="panel-row-val">$310.00</span>
+              </div>
+              <div class="panel-row panel-total">
+                <span>To your practice <span class="mk">2</span></span>
+                <span class="panel-row-val">$405.00</span>
+              </div>
+              <div class="panel-foot">
+                Settles to your account in 2 business days. Nothing is deducted from patient payments.
+              </div>
+            </div>
+
+            <!-- Panel B: OpenChair fees -->
+            <div class="panel">
+              <div class="panel-title">OpenChair fees — invoiced separately <span class="mk">3</span></div>
+              <div class="panel-row">
+                <span>
+                  Booking fee (after-hours, flat)
+                  <span class="tip-wrap" style="margin-left:6px;">
+                    <span class="tip-link" tabindex="0">Why $75? <span class="mk">6</span></span>
+                    <span class="tip-box">
+                      This appointment was booked for a Saturday. After-hours and weekend bookings are billed at the after-hours rate. <a href="#">Rate card &rarr;</a>
+                    </span>
+                  </span>
+                </span>
+                <span class="panel-row-val">$75.00</span>
+              </div>
+              <div class="panel-row">
+                <span>Procedure fee &times;1 (flat)</span>
+                <span class="panel-row-val">$85.00</span>
+              </div>
+              <div class="panel-row" style="color:#9CA3AF;">
+                <span>Visit cap <span class="mk">4</span></span>
+                <span class="panel-row-val">$160 max</span>
+              </div>
+              <div class="panel-row panel-total">
+                <span>On your Sep 1 invoice</span>
+                <span class="panel-row-val">$160.00</span>
+              </div>
+              <div class="panel-foot">
+                Flat fees from the published rate card. Same for every practice, same whatever the treatment. Charged even if the patient does not attend.
+              </div>
+            </div>
+          </div>
+
+          <div class="audit-line">
+            Price set by Dr. S. Levine on 14 Jul 2026, 3:12 PM — changed twice since listing — <a href="#">full history in Settings &gt; Pricing log</a> <span class="mk">8</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="annotations">
+        <div class="ann-item">
+          <span class="ann-num">1</span>
+          <span class="ann-text">Two-panel layout separates patient revenue from platform fees. Reinforces that OpenChair fees are never netted from patient payments.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">2</span>
+          <span class="ann-text">"To your practice" confirms the full $405 flows to the dentist with no deduction.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">3</span>
+          <span class="ann-text">Every fee line is labeled "flat" to emphasize it does not scale with the price of the treatment.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">4</span>
+          <span class="ann-text">The $160 visit cap ensures the dentist never pays more per visit regardless of add-on procedures.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">5</span>
+          <span class="ann-text">"Cash pay — verified" confirms the patient's payment method. Medicare and Medicaid patients are blocked at booking.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">6</span>
+          <span class="ann-text">Proactive tooltip explains why this booking triggered the higher after-hours rate, reducing support questions.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">7</span>
+          <span class="ann-text">"You set this price" pill appears on every dentist-controlled line item. Reinforces that OpenChair does not set or influence procedure prices.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">8</span>
+          <span class="ann-text">Audit trail with timestamp, change count, and link to the full pricing log. Supports compliance reviews and dispute resolution.</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SCREEN 4: Dentist Price Entry / Onboarding
+       ═══════════════════════════════════════════ -->
+  <section class="screen-section">
+    <div class="screen-label">Screen 4</div>
+    <div class="screen-title">Dentist price entry / onboarding — desktop, 900 px</div>
+
+    <div class="screen-row">
+      <div class="browser">
+        <div class="browser-chrome">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">openchair.com/practice/onboarding/pricing</div>
+        </div>
+        <div class="browser-body">
+          <div class="d-nav">
+            <svg width="8" height="13" viewBox="0 0 8 13" fill="none"><path d="M7 1L1.5 6.5L7 12" stroke="#127C71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Onboarding
+          </div>
+
+          <div class="pe-intro">
+            <div class="pe-title">Set your prices</div>
+            <p class="pe-subtitle">Enter the price you charge for each procedure. You can change these at any time.</p>
+          </div>
+
+          <div class="pe-source">
+            Ranges reflect independent market data for Palm Beach County, Q2 2026. OpenChair does not recommend, set, or approve prices. You may charge any amount, inside or outside these ranges. <span class="mk">3</span>
+          </div>
+
+          <div class="pe-header">
+            <span>Procedure</span>
+            <span>Your price <span class="mk">1</span></span>
+            <span>Practices within 10 mi <span class="mk">2</span></span>
+            <span></span>
+          </div>
+
+          <!-- Row 1: Empty -->
+          <div class="pe-row">
+            <span class="pe-proc">Emergency exam &amp; x-ray</span>
+            <input class="pe-input" placeholder="$ - -" disabled />
+            <span class="pe-range">$75 – $180</span>
+            <button class="pe-save-btn">Save</button>
+          </div>
+
+          <!-- Row 2: Saved, in range -->
+          <div class="pe-row">
+            <span class="pe-proc">Composite filling (one surface)</span>
+            <input class="pe-input pe-input--filled" value="$225" disabled />
+            <span class="pe-range">$130 – $290</span>
+            <span class="pe-saved">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7L6 10L11 4" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Saved
+            </span>
+          </div>
+
+          <!-- Row 3: Saved, ABOVE range — styled identically -->
+          <div class="pe-row">
+            <span class="pe-proc">Porcelain crown</span>
+            <input class="pe-input pe-input--filled" value="$1,650" disabled />
+            <span class="pe-range">$680 – $1,450 <span class="mk">4</span></span>
+            <span class="pe-saved">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7L6 10L11 4" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Saved
+            </span>
+          </div>
+
+          <!-- Row 4: Empty -->
+          <div class="pe-row">
+            <span class="pe-proc">Root canal (anterior)</span>
+            <input class="pe-input" placeholder="$ - -" disabled />
+            <span class="pe-range">$520 – $1,100</span>
+            <button class="pe-save-btn">Save</button>
+          </div>
+
+          <!-- Row 5: Saved, in range -->
+          <div class="pe-row">
+            <span class="pe-proc">Simple extraction</span>
+            <input class="pe-input pe-input--filled" value="$195" disabled />
+            <span class="pe-range">$120 – $310</span>
+            <span class="pe-saved">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7L6 10L11 4" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Saved
+            </span>
+          </div>
+
+          <!-- Row 6: Empty -->
+          <div class="pe-row">
+            <span class="pe-proc">Surgical extraction</span>
+            <input class="pe-input" placeholder="$ - -" disabled />
+            <span class="pe-range">$180 – $420</span>
+            <button class="pe-save-btn">Save</button>
+          </div>
+
+          <div style="margin-top:20px;font-size:13px;color:#6B7280;">
+            3 of 6 procedures priced · Patients can only book procedures you have priced <span class="mk">5</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="annotations">
+        <div class="ann-item">
+          <span class="ann-num">1</span>
+          <span class="ann-text">Empty input fields with no pre-filled value. The dentist must actively enter a price — there is nothing to passively accept.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">2</span>
+          <span class="ann-text">Market ranges use rounded, asymmetric bounds with varying widths so that no single number reads as a target or midpoint.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">3</span>
+          <span class="ann-text">Source line attributes ranges to independent market data. Explicitly disclaims any OpenChair role in setting, recommending, or approving prices.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">4</span>
+          <span class="ann-text">This price ($1,650) exceeds the stated range ($680 – $1,450). The UI applies no warning, highlight, or friction — styled identically to in-range entries.</span>
+        </div>
+        <div class="ann-item">
+          <span class="ann-num">5</span>
+          <span class="ann-text">Prices save immediately with no approval workflow. OpenChair has no review or gatekeeping function over what the dentist charges.</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+</div>
