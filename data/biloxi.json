@@ -2,8 +2,8 @@
   "version": 1,
   "citySlug": "biloxi",
   "city": "Biloxi, MS",
-  "generatedAt": "2026-05-26T19:58:20.923Z",
-  "count": 9,
+  "generatedAt": "2026-08-01T10:31:34.428Z",
+  "count": 8,
   "cafes": [
     {
       "city": "biloxi",
@@ -13,21 +13,21 @@
       "lat": 30.3976892,
       "lng": -88.89808269999999,
       "rating": 4.7,
-      "reviews": 1032,
+      "reviews": 1058,
       "price": "$$",
       "types": [
         "coffee_shop",
         "cafe",
+        "restaurant",
+        "point_of_interest",
         "food_store",
         "store",
-        "restaurant",
         "food",
-        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 6 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM Sun",
       "periods": [
         {
           "open": {
@@ -112,7 +112,7 @@
         "Sunday: 8:00 AM – 6:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=2338722398637939600&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ602GPQkPnIgRkFsQZ6HPdCA%2Fphotos%2FAb43m-vdiwCert9AqQfQsSAJ6N1qrw40x5galHORjdUrNfC1ngUiNT_BtR8CrK-UjkiFnmgUJ-yodk1B0RgrFGZGqBJg8n6FiBbi8x_LawauNefd-Vlov74NP4OUwKdzrV_Nmg8vJAl1CeDP9xLwZRUgGYs4BYxjjR5zUifU7WnqBGQjh1LRCTxrRSUU0dQS5bV-duryc8bFxLRbs-hflWW5b7RLdE0cx0TSN9sQBXM9LDVBDemQme0Ja5BDl57hTfgq4Ypeoe7ez2AMS59xGTjaiIwBnb0Sv9CMUvVZItofo2iV_hqXfuXxFmym-Hn9HuMYd7SnpINaApKrBzfFjwR-vcEwLLJhfmqASNWVWbaY96pAfHwu3viWnIIkXCA_lc5jZFFSpjWRj590J7mfDSTVRUzijCusDsIr5Sg4I6DgwYoUo48&w=800"
+      "photo": "/api/photo?name=places%2FChIJ602GPQkPnIgRkFsQZ6HPdCA%2Fphotos%2FAWCwydgLkl1QyLsvomxtZIAqSLXuW-BYaTB1F_rvbdR8CWVrzAtETZZSgtxaNgIfFuQ-3LYHlTJbTpAeS3JNuPkHSVVrA2dWT-xp1uaq17g7eT_rXdJuyN58TUunt3Zx40l3xG80aWuwyJfW2YWZ20yDLUQZHFaSiEKZV_xA-ZtS1OVdl9AnaG4wj2eunVhVJFsHea4L18tYmmmZkzbXw8nK-7ZYoVtmTu6zdy0Jdo3RE8uuZ3a6qr3R13YFuP6FvgbcOT-NsH2tRhbRNXEOmiFKRzDEcfV88eMATrv10sMGs4FnsjvLKDY5kO6ubRvndlE3NbS_vicaBKuBGPo_bLk_ptVufIqGYUOPfo2b35BkVVMfGpiZyUFTM6ClARWtCfuXA7YjFQ_zW59GuW35CKSd9mC6g9vWFJIZpB7ngQBTeyNSQYs&w=800"
     },
     {
       "city": "biloxi",
@@ -122,22 +122,22 @@
       "lat": 30.4448352,
       "lng": -88.9337419,
       "rating": 4.6,
-      "reviews": 700,
+      "reviews": 712,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "breakfast_restaurant",
         "cafe",
+        "breakfast_restaurant",
+        "restaurant",
+        "point_of_interest",
         "food_store",
         "store",
-        "restaurant",
         "food",
-        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
       "openNow": false,
-      "hoursLabel": "Opens 6:30 AM Wed",
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -234,7 +234,7 @@
         "Sunday: 7:00 AM – 2:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=16728057391782656606&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJFX9hW_ANnIgRXnqNm5H_Jeg%2Fphotos%2FAb43m-vOIof_y5VnXOMbhPJFCpVNPxifQn-DGccg9Oo297ZYOj0N3qXy3DPQ6gwGAnucOxQvzDzQicYZ9bx_Fsb9CdKR2LEpp8NwxjSZuRcLNfxK4iHyHxs8X16YWkc0vOV2DLDu73npC34_F2C-jch9TOcTMxMlFxjraB8TJmT66d419JoG1nP_OtMfRnj5fd_DklpLZLlrJkrnYs56IG0soBCcgKEbJLjkC935cNKr8cxdzamXxKj8T3BCqSdHn09gQqK48x5facZF7Bsu4gS2RdatYZPrrVdS195oeaXg0r2rWVLbxr2xPLxus0HGyMq5KEupva45kEIOTvn-ng3Vgd78B5nP_c0BdGvgFniTxHehwh9F4ZXUsn7tvnSHWIA81dyKqGSMmI0kdCVtwsdc5lcVRVsT21dsWlo9TiTB7_obwQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJFX9hW_ANnIgRXnqNm5H_Jeg%2Fphotos%2FAWCwydjaKlpA623CjKRhpyOa9hr4bhbJT2emZPoidmFWViKJHDykTnjfTXAe-swizCoAmtkX1XsduKjp6u68DHAyw0bR2iNDBNn5NC9u1CRKzrWTRbjHmYVZg_bMRkUTNVLJ5J9z6eeyXbtNWMdgcDajvjOSqSRXlo-eVJeX5Q6d8136Um0j8n5ykI0YU-WxsRZldcF8w2xD6xrF_NPyjmNkC3OS4tbIK0sSUOcAoOEr_JK8jtv3xwN6XHnVbXJx4ZMb5nDgfhvkj20aUYTng-Nht0zKbJA-CjvcnHVNvsDfuYWn1c2AWde6elHabX-m4D3II0RQZNHCDIPmMnwwL8yyWdwPpmPHiI1qMYVIcVhl6BvzsWtlCQs-4zWZc52UQJJNtMcJvaQ58Go2HQ_3Y8tZ0RMc2vNPGMmg0DvUCQUwaxtOfQ&w=800"
     },
     {
       "city": "biloxi",
@@ -244,21 +244,21 @@
       "lat": 30.397062599999998,
       "lng": -88.8907574,
       "rating": 4.8,
-      "reviews": 269,
+      "reviews": 293,
       "price": "$$",
       "types": [
         "restaurant",
         "coffee_shop",
         "cafe",
+        "point_of_interest",
         "food_store",
         "store",
         "food",
-        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Wed",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -331,7 +331,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=747401644208126420&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJdSXgYhwPnIgR1HmR49VNXwo%2Fphotos%2FAb43m-tKgPB2rk7yT9jfTO3p0ggiDzd90rf_iTi5h06CFtoG5_NftfPr6d5rWd4ZMZkr7_dzeI5gycBo1AYAH-XTTUItC8hwJRfG6dxW1xnFVkBW96YkUaP7uEcaE72CduJUmLkGb7nAP5p3eT85DQrB6dcIOTJJ6Lp9aNwxE_PMVrCD3fmwARwN6FU-pOYDbZwiXXpclob1UMFh9oj2keIM_OQJURHpT0-yRKpREZeRLUumcj_QVhI5BO2e6oxzJBDUXz6D3YNXkCxLHXg_bCVLuHy11t14RgfY-A4KOy8tjxyrAquGf3lavZxClWp2olHykl8gzXJ0rfYY0Lmex4v8E4lQglbZJ9wULwC8XKrEjNUuQwzfqru1ieBrC1P1dCFLRi8tbVeMPilBxPToUecZOAZ9fU2SbxoUnm1QvwIX3RDCNQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJdSXgYhwPnIgR1HmR49VNXwo%2Fphotos%2FAWCwydhWvA-IrE9hVHcCEmzKAmy6HAZ8Ic6L-tap6e2MQANWvId8Wj4rWhGvjVidd87qU20mSkVF24LYGClKDrGMaRc5MfA5HIwKxwG1gHS8EAbD_oohn6aWCuyJVlSSDEXSnhrZ-PHHwWSgaJdA-diNOOXkfiiAMOjasuY5CMG65BlIJhqxaqIdYN1DUqrGdEtQySwK8WXjURYu-tDdFQCx0rd2EnoQwkCorzLpg4xlChkEZ8ojdMWFvRGQegFHXKaoMYK_1Y9QCnh1x7pL8PqXOOYNpABD32FJrJagoR4_LwvL8yqlna1leiRI_HpLAcRrm4C1Cvzc2wOnnNWT6aaZ0hUGFV_605b7-mZG3TmLKy_bMAw1HEvrLznxtnynK47_wbBHNQofqIzqh7PlRDHXyqdkoKIzLkQw4JPUOVKG-VFfew&w=800"
     },
     {
       "city": "biloxi",
@@ -341,17 +341,17 @@
       "lat": 30.3961955,
       "lng": -88.8880909,
       "rating": 4.7,
-      "reviews": 341,
+      "reviews": 351,
       "price": "$$",
       "types": [
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "timezone": "America/Chicago",
       "openNow": false,
-      "hoursLabel": "Opens 7 AM Wed",
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -424,7 +424,7 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=8068071341633214993&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ7xxcXtYPnIgREZqOhCOM928%2Fphotos%2FAb43m-vt7Ck8CTYQxn18rLbHfCvvlCYsyyB8zR9E1AZw7tPUZkLuXKcPUdnBvclfOVG5a8vecW1lCenWZB4tJgKY0p5lyP-W1PW0anl5Gj01yVeoodkThou4bx8dEhYVMJnaxkLf4mRdGZQ2-1RyyNSOy5yJEBXJIhX9eLT_O0gTYmDWhxj6WfJmWOYzL85GpPz1e-Ave4moDl0dXwmFdBQHdkSkGfibSKATy1OYpBfnI368zN3FjOBcrik5L88-j50usw-QuuyDkOFueFu9jS_h6HHb8W5UmshSXnYFK8yT-ksVUw&w=800"
+      "photo": "/api/photo?name=places%2FChIJ7xxcXtYPnIgREZqOhCOM928%2Fphotos%2FAWCwydgDm4BPs5oWP0n2imC_P5V4LqfaOloHBB9vvOm1t8eCbwsigqk38-ZMVzLUo4BX8E3O26KA75XeMx4-ymfRusLZi8DQYaEdZyA9bodFeNC9PMVSYgIXqqG4qSBr_aNhmhnv8zhbHny4GcfrzbjvVK20mQ5uacCcaJU_0JhcBDzhOb5CGq4pzrAhFULENC4l7S2Zerqd-3eC056Gl_-gqOlorLft7IdY26NAcN4AHF8p4ca_Edt5tbmNvFdzS9s-xQlhgiyXr2Y9I4DivaaZmdKI84KXMc9Na3v1h3JPWcwQO6u8cRcyzsec0m2eiTULvXPy2CfqDl4xceJzQKM742DBsBLva8nx-alnj3CVvUNpbLgHfCMS1eF5ydNhI7haIsplVC5eYEgWmlzMF4q7K6GknYtVa8iLSAX78xFc1_g&w=800"
     },
     {
       "city": "biloxi",
@@ -434,20 +434,20 @@
       "lat": 30.4701095,
       "lng": -88.9751137,
       "rating": 5,
-      "reviews": 103,
+      "reviews": 109,
       "price": "$$",
       "types": [
         "coffee_shop",
         "cafe",
+        "point_of_interest",
         "food_store",
         "store",
         "food",
-        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
       "openNow": false,
-      "hoursLabel": "Opens 6 AM Wed",
+      "hoursLabel": "Opens 7 AM",
       "periods": [
         {
           "open": {
@@ -532,143 +532,27 @@
         "Sunday: Closed"
       ],
       "mapsUri": "https://maps.google.com/?cid=13193018535270319328&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJq6N3ljEY-isR4ITuTXUEF7c%2Fphotos%2FAb43m-vT5Z8mWsNclxXNf_urFqIXaPrbgn8S5LKzfaGf8m7ik1V0hpx095IWPNX0kIHlotZiQRxC9zrEczQ-R9WbW2MDbjIrLMpYmo6aUO_KHOZVSHfqHuWFdfoECY0YNhtlcC_lWzlzImXGgLKuyXx8E1dmQS81BWQvIk0E9By6U3Tvmp26jr4x0j80TKw2AzzMqU9tX-ji1OuyJ5fnqOq8QlPNZGiKmotbNp7lfZdPXqg_B6fte8RCYdRHn4BmUuD3haX2nfot3T0aSfCNv09ikPlpDeOLMxuMgcKyt5zxyjccCQ&w=800"
-    },
-    {
-      "city": "biloxi",
-      "id": "ChIJR6mdThQNnIgR2yd3LRSgwGQ",
-      "name": "Coffee Y’all Espresso - St. Martin",
-      "address": "15750 Lemoyne Blvd, Biloxi, MS 39532, USA",
-      "lat": 30.4427872,
-      "lng": -88.87202219999999,
-      "rating": 4.8,
-      "reviews": 139,
-      "price": "$",
-      "types": [
-        "coffee_stand",
-        "point_of_interest",
-        "establishment"
-      ],
-      "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 6 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 0,
-            "hour": 7,
-            "minute": 0
-          },
-          "close": {
-            "day": 0,
-            "hour": 16,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 1,
-            "hour": 5,
-            "minute": 0
-          },
-          "close": {
-            "day": 1,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 5,
-            "minute": 0
-          },
-          "close": {
-            "day": 2,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 5,
-            "minute": 0
-          },
-          "close": {
-            "day": 3,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 5,
-            "minute": 0
-          },
-          "close": {
-            "day": 4,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 5,
-            "minute": 0
-          },
-          "close": {
-            "day": 5,
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 6,
-            "minute": 0
-          },
-          "close": {
-            "day": 6,
-            "hour": 16,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 5:00 AM – 6:00 PM",
-        "Tuesday: 5:00 AM – 6:00 PM",
-        "Wednesday: 5:00 AM – 6:00 PM",
-        "Thursday: 5:00 AM – 6:00 PM",
-        "Friday: 5:00 AM – 6:00 PM",
-        "Saturday: 6:00 AM – 4:00 PM",
-        "Sunday: 7:00 AM – 4:00 PM"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=7259978607843813339&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJR6mdThQNnIgR2yd3LRSgwGQ%2Fphotos%2FAb43m-soEpQ-_Nm-Rxm_kL2mdpcVNl2YLb_oKqsKfyv5G8QDEwRyV30Wq9DHTrz7ZObb1efMk5sArbsgZsZ184nq4VcrtXZ0HgSsutVTopUBiEnlhtiTLElXtHw2z6xHhRpjpEr5uVhJMf4LeFD2Cck6g_FV9RqN5yGfFcAz7oWtoQ_xMhyk9fx56R6qUcjKAyJWW4rp8YAauLsfIoeWVA1zL18-xeO7A_AK9PFr2A8CPxE8LsijFHwJJ1QH0vf6L2cZnkNA0pGRFwjy4Yho6p_ph4WENvLhcbWJGRgqa0S4Wkso2g&w=800"
+      "photo": "/api/photo?name=places%2FChIJq6N3ljEY-isR4ITuTXUEF7c%2Fphotos%2FAWCwydgON7DB6z6SKKHifMoZVZdVwnfim9aJVNrNR-T7VCa7bChHFXuB8_zD3muHY4A6CUbm6QqJ1J4UgrXX5ebMEvrGFKmfqYFXH6voTKPMG3EAt_KEvh0BNv6GRH0FSUpEIRmO6LcmaBklr-rgi_6zi_2q15-YcAXOSLkLhE-nFjW7AFtUvE5fIzQ_nGw2ji6mPjvmKfLRYmaJulZFulE4-jp3Dqwdt56OLSLbS-bnKgQzeLy6Ja2qGK25VlSxRpVFgcN1PAtVSKbt0M0U144dZ0XXHgtf3TKXxTCW7Y6BpsoLS_MnjGCyN0nfPHzpVTHlwpPTsWtFCaYjHHw3C509ksg3V5QYtiMZpFp-2vv3OevFdUfJ4zwsMYFM_WKMpwmDwusQYBGe0CTCcdsYiqTM6oDIMvV9QYpvRMk74qUIi50xdjU3r3TBfYzOBYs0q8vC&w=800"
     },
     {
       "city": "biloxi",
       "id": "ChIJmeGNCI0NnIgRBNjiBCSrgd0",
       "name": "Tiger Paw Cafe",
-      "address": "921 Cedar Lake Rd Suite I, Biloxi, MS 39532, USA",
+      "address": "921 Cedar Lake Rd Ste I, Biloxi, MS 39532, USA",
       "lat": 30.4432347,
       "lng": -88.9354752,
       "rating": 4.8,
-      "reviews": 112,
+      "reviews": 132,
       "price": "$$",
       "types": [
         "cafe",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 5 PM",
+      "openNow": false,
+      "hoursLabel": "Opens 11 AM",
       "periods": [
         {
           "open": {
@@ -765,7 +649,115 @@
         "Sunday: 11:00 AM – 7:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=15961226725566896132&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJmeGNCI0NnIgRBNjiBCSrgd0%2Fphotos%2FAb43m-vdCLtVt1SRdkvOXtCAoWASpJ-aAAE4iTKCMThOtaQv1XdsToS7HBeVhqtHFwlEZc3LNLFQsrHzp7FCudoHdq11D96HzmDKl_AYRCEe0qv3u5QbIsyY1nr0DhBvgpAIm9SZUNjIcxABZ3VW8wQTNkd1xwnZO0Jc4SzWpjgJoC2d5JS0E6L75iPbr1k1OadGlm7r8IMn4Zti6jBMPj2NcfxuNvfEd6JhzUfSY1PxC6vNwWsNdvJphwDZ4iXJ2HtvWGzPrDVy8vvSIV9oCm0R2wWq4uFUOfEWFxuqmcQDmXxFem5EM2pqynIuIljINBdyz8tgLTZ1w_VhqkTDCkOpNi8lGzOnvq1dBjILvPGWVu0Yesp0KJsxCvNz-pgwm937g-Ue59dcKAYM43BxTgOfNfjmIxhwCp8iHsP02tXSN0DdZFtu3iYwOqByHqXJZvew&w=800"
+      "photo": "/api/photo?name=places%2FChIJmeGNCI0NnIgRBNjiBCSrgd0%2Fphotos%2FAWCwydjs-tGqXNDYObbyqW_UwkD4PQJeIbv8PDIqb7m8mr1y-Buc11M1k_EDQqDStKKDU2XQEuwG12kAghKJLN76EYpa1-l5RWbK_QwAzZKETVENdN_SKOcY8Fib3sJGrLyb9LduaJw4GwfMy6Fp7FFcC9JU_DANM5GWlaW34gZYB1ODon4GwdZjj3sy6tsI5964qLusfsJ3ukMnBO0uQjZNhsMnoRY_4khqVqak--dRfnN46Dhg64lX_dEAiH5aUvRXnrDO-_aw_dKzFOD_QUy_FvUCDE-LOKQtwtOVyyLHq8BJP-kSmRWDn-NXyhouHQdFqMPDr-Zk43rORpnNwUCux98PvGme4F3N1ivCXxYXpgmi7Hn_B5ZVhDYZ8quwz4cPotON1aDYaw_sPLS3Jot6tIBSQt6QhRApnLAL2ajH30IDfngvzUXZEiH7BPvwCGzL&w=800"
+    },
+    {
+      "city": "biloxi",
+      "id": "ChIJi8igMgAPnIgRHg_SqAOUGtI",
+      "name": "Cornerstone Cafe",
+      "address": "1400 Leggett Dr, Biloxi, MS 39530, USA",
+      "lat": 30.395644,
+      "lng": -88.92017109999999,
+      "rating": 4.9,
+      "reviews": 43,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "store",
+        "food",
+        "establishment"
+      ],
+      "timezone": "America/Chicago",
+      "openNow": false,
+      "hoursLabel": "Opens 6:30 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 30
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:30 AM – 3:00 PM",
+        "Tuesday: 6:30 AM – 3:00 PM",
+        "Wednesday: 6:30 AM – 3:00 PM",
+        "Thursday: 6:30 AM – 3:00 PM",
+        "Friday: 6:30 AM – 3:00 PM",
+        "Saturday: 6:30 AM – 3:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=15139575840797495070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJi8igMgAPnIgRHg_SqAOUGtI%2Fphotos%2FAWCwydj3nIwo5TPgAHDm2zP1bZvd6SEZLP-30QNVaubr7_xys1HJN7BnIuWIj6VEerHITGXQKN_lwqldKkLWPs0-6zmnADktA63fQKvd81yiFSUpuIpRKLtsdc6wx76_dxck8eOyjTnP0JtIRgPxNyReUzFacaiJod3pM5n2vgD5uGfg3b-T49d1kZs9hxdK50DiZbVMW7ZCuGLNQlhSpHoVxIxw6RwSWtzaXQ_55ko_VABKWngUjX7c6hrwDjXKbavH9Gnzq1seDDMWWMRLr5TJL7wu-jEjv9tv95_DRvYSNpX9So7RroARj7cmba3aLcdzsuALZfmzeruXtRm8TenLRzezk4zyMfMrvlf5A2WXV7D14gTkarC_PGNdoo46oIoJNyL8XBXqjPBJWlIfSA6eVigLsaoair3F9eaMgSwiScg9ioJ4i_qZE9fdTRyekFqn&w=800"
     },
     {
       "city": "biloxi",
@@ -775,21 +767,21 @@
       "lat": 30.392832000000002,
       "lng": -88.89197800000001,
       "rating": 4,
-      "reviews": 226,
+      "reviews": 227,
       "price": "$$",
       "types": [
         "bakery",
         "coffee_shop",
         "cafe",
+        "point_of_interest",
         "food_store",
         "store",
         "food",
-        "point_of_interest",
         "establishment"
       ],
       "timezone": "America/Chicago",
       "openNow": true,
-      "hoursLabel": "Closes 8 PM",
+      "hoursLabel": "Closes 9 PM",
       "periods": [
         {
           "open": {
@@ -886,115 +878,7 @@
         "Sunday: 5:00 AM – 8:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=1801903874289960900&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJc5WY5eQOnIgRxAd02gamARk%2Fphotos%2FAb43m-t1L9mGse6dSyxbiIY9J2bgdz7h_PnMEIKAM8aSGU-ugMYgWxIF-tIbLHDeSQDpws3f5i7fq7hOAXhVIGWUlOcpm-VQDvQAc0l3wosAgsLLBN0h_PNr1Vhxme9zRvivYSoPisgw8DmELW8R4LlqdThtqVpUhrAfce2kLGZMTgRJc63fVIMp7MlZdkStshKv5i5DaC0HWuIvoQBR1yIgp58gpH389AqfLGt56Q9kbZnQpZzBNR6QMJBIo0aNFU5dJIVVYxHzMLG9iuCmhJw-jw_GsojpuP-riYE4C6Z_N1cCElQo-2ggnwwrs2c6kEXgsYp6dUx2DIqDF0kAY_DSSDyA2SEjXuFko2JeSFESeGqweD0cOTRfg704m7ibYHJyPv-sl2jQ1SbZour3RPFtM6L_yllIc9T7zSgTC2ZsUjMovwfe&w=800"
-    },
-    {
-      "city": "biloxi",
-      "id": "ChIJi8igMgAPnIgRHg_SqAOUGtI",
-      "name": "Cornerstone Cafe",
-      "address": "1400 Leggett Dr, Biloxi, MS 39530, USA",
-      "lat": 30.395644,
-      "lng": -88.92017109999999,
-      "rating": 4.8,
-      "reviews": 33,
-      "price": "$$",
-      "types": [
-        "coffee_shop",
-        "cafe",
-        "food_store",
-        "store",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "timezone": "America/Chicago",
-      "openNow": true,
-      "hoursLabel": "Closes 3 PM",
-      "periods": [
-        {
-          "open": {
-            "day": 1,
-            "hour": 6,
-            "minute": 30
-          },
-          "close": {
-            "day": 1,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 2,
-            "hour": 6,
-            "minute": 30
-          },
-          "close": {
-            "day": 2,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 3,
-            "hour": 6,
-            "minute": 30
-          },
-          "close": {
-            "day": 3,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 4,
-            "hour": 6,
-            "minute": 30
-          },
-          "close": {
-            "day": 4,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 5,
-            "hour": 6,
-            "minute": 30
-          },
-          "close": {
-            "day": 5,
-            "hour": 15,
-            "minute": 0
-          }
-        },
-        {
-          "open": {
-            "day": 6,
-            "hour": 6,
-            "minute": 30
-          },
-          "close": {
-            "day": 6,
-            "hour": 15,
-            "minute": 0
-          }
-        }
-      ],
-      "weekdayDescriptions": [
-        "Monday: 6:30 AM – 3:00 PM",
-        "Tuesday: 6:30 AM – 3:00 PM",
-        "Wednesday: 6:30 AM – 3:00 PM",
-        "Thursday: 6:30 AM – 3:00 PM",
-        "Friday: 6:30 AM – 3:00 PM",
-        "Saturday: 6:30 AM – 3:00 PM",
-        "Sunday: Closed"
-      ],
-      "mapsUri": "https://maps.google.com/?cid=15139575840797495070&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJi8igMgAPnIgRHg_SqAOUGtI%2Fphotos%2FAb43m-vXCJKltxEhCrJ7tJOXWMZG7P-aoVzDnXpEGawrkihe6CX1VLUqhUmLth6YZBTfKp0HSGGOZ3KQWG0FgPkyTgGcB9FOXpZn26ra2iCzokjZYOn4RMx3l53YQ5zSkkU6AH8-IcL6cbXTqCFI2fQhPGlcD35ClZi_imXC0mwRDlMWXrmmeXhjiioU0ysO7yxZPLId0ZHGHSHaBNMZgu7MsUbbVPwe4uSD8ZnNQbXNMKZvdP7O1wdAvu60yefWHSnaRohUpgFrUYxM2imF_m-eUdGvDO4-43cWYI206NlkmaeNcvTRomgu9NXnpOoQAB4MLJcfb8lQGSzpUUUSvIPvNwQmxx8nUMmwylNcdHxXcy_IUDFuYryPmG6XNQjhJIcZWbgiNw0TeYOvghP-HOwiWSalIrcHOiOXyo7yp0nS6m1JolaqlmBsGKHlfgmr_6mo&w=800"
+      "photo": "/api/photo?name=places%2FChIJc5WY5eQOnIgRxAd02gamARk%2Fphotos%2FAWCwydgHrRTRjbLnAnNQ5sC8dRIR0l_p5DbrYCKcVTcpmXFaXANw7nrqrGIcgfQuMKuBQaUm_mob9APF_Wg9P6vMsUUtausmtl9itaAYt2opx6ENWn7PrEMY66PXBJpUW2Bt-y1L83YTKRNbTbKGjWJQUCVt6nxnYhOd1evc2JNmuohspTtT202xxUdHdfz7_0_NkBdAQgyfAxOd1CD5TxXDj-jjnSVvL9FM3qMt9ufJin8dmtl0LcZC49iHSsMyBY3-qEmrIS0XqAgezJs4QEPr8xGdAe6HL5tj2QD7AC0ynbVekRRtgciGlnNqEHnxlyYG4KkX695L0xogQ3c4OTYMenYYaza0C8cY08ZMjx4wzngMdFKj9SUtIxyXqE1b_WqhfV0hpeaIcsW6fcDhYAPkEWoZHYrSgTKC2qvRXBxTMnDzkE0X&w=800"
     }
   ],
   "picks": {
@@ -1168,40 +1052,6 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:57:58.080Z"
     },
-    "ChIJR6mdThQNnIgR2yd3LRSgwGQ": {
-      "picks": {
-        "drink": {
-          "name": "Lotus (flavored)",
-          "reason": "Multiple reviewers specifically praise the lotus drinks, with named favorites like Jack Frost Lotus and Blueberry Cobbler Lotus.",
-          "quote": "delicious lotus drinks definitely a hidden gem",
-          "confidence": "high",
-          "mention_count": 4
-        },
-        "food": {
-          "name": "Everything bagel with cream cheese",
-          "reason": "Only specifically named food item with direct praise; other food mentions (Sticky Bun, Oatmeal Cream Pie) were coffee flavors, not food.",
-          "quote": "an everything bagel with cream cheese, and it was so good",
-          "confidence": "medium",
-          "mention_count": 1
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 5,
-          "text": "Coffee Y'all offers a great variety of coffee and delicious lotus drinks definitely a hidden gem where you get so much more than what you pay for. Be sure to ask for the staff’s recommendations they really put so much efforts and won’t steer you wrong. The quality, creativity, and friendly service make every visit worth it!"
-        },
-        {
-          "rating": 5,
-          "text": "Always have to visit my caffeine dealer at least once a week. I love trying their flavors of the week for coffee and lotus. All of the employees, owners included, are always so pleasant and cheerful. What a way to start each day!!"
-        },
-        {
-          "rating": 5,
-          "text": "2nd time visiting in 2 days I've gotten a few different drinks 3 different coffee's, a spritzer, and smoothies. They have all tasted amazing!  The staff has been kind. And they move with a quickness getting your drinks out in a timely manner. The prices are great for the products you are receiving."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-26T19:58:02.333Z"
-    },
     "ChIJmeGNCI0NnIgRBNjiBCSrgd0": {
       "picks": {
         "drink": {
@@ -1236,40 +1086,6 @@
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:58:06.562Z"
     },
-    "ChIJc5WY5eQOnIgRxAd02gamARk": {
-      "picks": {
-        "drink": {
-          "name": "Frozen roasted coffee",
-          "reason": "Explicitly praised in the only 5-star review; chai also mentioned positively. Other drink mentions were negative (latte from machine, frozen coffee tasting like pinesol in one review, though the 5-star reviewer loved the frozen version).",
-          "quote": "always order the beignet and frozen roasted coffee here and its tasted great",
-          "confidence": "low",
-          "mention_count": 2
-        },
-        "food": {
-          "name": null,
-          "reason": "Food is overwhelmingly panned across reviews: frozen sandwiches, fake beignets with black specks tasting like sausage, pathetic sandwiches. The single 5-star mention of beignets is contradicted by multiple detailed negative reviews calling them not real beignets.",
-          "quote": null,
-          "confidence": "none",
-          "mention_count": 0
-        }
-      },
-      "reviewSample": [
-        {
-          "rating": 1,
-          "text": "I’ve never eaten somewhere that made me feel like I was at the DMV. If you would like to eat here, my recommendation would be to not order any heated food. Despite being well staffed, the front counter seemed very unorganized. By its own nature, the restaurant is meant to be a quick service stop. However, this is far from the case. When I asked about my food, the lady asked to review my receipt, then never gave it back. I had to ask three times before seeing it again. Each time I asked for my receipt, I was met with an angry response from the woman that originally took it. Finally, my food came from the kitchen after 35 minutes. Simple turkey sandwiches. Other than the rude service, you can get decent pastries and coffee. Don’t expect much in the way of service beyond that. If I weren’t a local and was visiting the casino from out of town, I would be very put off by the experience. For not too much more you can have a nice, sit down brunch on the other side of the casino. That’s what I’ll be doing from now on."
-        },
-        {
-          "rating": 1,
-          "text": "I am from Texas but have family in Biloxi. We wanted Beignets so we found the Roasted Bean as a suggested option on Google.\n\nI ordered Beignets, A Ham and Swiss Croissant, and a plain hot Latte.\n\nMy beignets were not beignets. I cannot stress enough that they were not beignets but sopapillas passed off as beignets and priced at a premium. In Texas I can get a basket of 7 or 8 sopapillas for the seven dollars I paid for three alleged \"beignets.\" For anyone wondering what the difference is between the two; sopapillas are hollow and typically served with chocolate syrup or honey to be injected inside. Beignets are breadier and more substantial and typically served with powdered sugar dusted on top. These were sopapillas served with powdered sugar on top, thrown in a bag and thrusted dejectedly at us. Disappointing. What's more, they tasted like sausage patty which I can only assume was due to the fact that they were reheated in the same oven they cooked my friend's sandwich in. The last thing I will say about these \"beignets\" is that they had suspicious black specks in them. Weird.\n\nThe ham and Swiss was frozen, never fresh. It was hot which is all the good that can be said about it.\n\nMy latte was fine but I feel it should be stated their coffee is made from a machine where you press a button labeled Latte and it spits out of everything from one dispenser. Ikea charges 4 dollars for the same service they charge 7 dollars for. Don't waste your time."
-        },
-        {
-          "rating": 1,
-          "text": "I live in Biloxi. I have been to the Beau several times but never eaten their. So, when my family from out of town said let's go to the Roasted Bean for Beignets for breakfast I was excited. The place is pricey which is expected inside of a casino. But you would also expect it to be good food. Or at least eatable. It is microwaved frozen food. Maybe a toaster oven is involved I don't know, but I can get better food for cheaper at a gas station. Back to the start of this experience. The customer service is terrible. We asked one of the workers if they had beignets because they were not on the menu. The worker just said yeah with attitude like us asking her a question was inconvenient for her. We all order and the microwaved food was bland. One of our sandwiches was still completely frozen in the middle and could not be eaten. My cousins frozen coffee tasted like pinesol and burned her throat. We all thought she was playing so we tried it and it really did taste like chemicals. The \"Beignets\" if that's what you want to call them were not even Beignets. If you are from the south you know a Beignets. They are not hollow. These were completely hollow with black specs on the inside like what? And some of them even tasted like Sausage for some reason like they were heated up too soon after some sausage was microwaved. The best thing about this place was when we got to leave."
-        }
-      ],
-      "reviewsAnalysed": 5,
-      "fetched_at": "2026-05-26T19:58:17.557Z"
-    },
     "ChIJi8igMgAPnIgRHg_SqAOUGtI": {
       "picks": {
         "drink": {
@@ -1303,6 +1119,40 @@
       ],
       "reviewsAnalysed": 5,
       "fetched_at": "2026-05-26T19:58:20.923Z"
+    },
+    "ChIJc5WY5eQOnIgRxAd02gamARk": {
+      "picks": {
+        "drink": {
+          "name": "Frozen roasted coffee",
+          "reason": "Explicitly praised in the only 5-star review; chai also mentioned positively. Other drink mentions were negative (latte from machine, frozen coffee tasting like pinesol in one review, though the 5-star reviewer loved the frozen version).",
+          "quote": "always order the beignet and frozen roasted coffee here and its tasted great",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "Food is overwhelmingly panned across reviews: frozen sandwiches, fake beignets with black specks tasting like sausage, pathetic sandwiches. The single 5-star mention of beignets is contradicted by multiple detailed negative reviews calling them not real beignets.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 1,
+          "text": "I’ve never eaten somewhere that made me feel like I was at the DMV. If you would like to eat here, my recommendation would be to not order any heated food. Despite being well staffed, the front counter seemed very unorganized. By its own nature, the restaurant is meant to be a quick service stop. However, this is far from the case. When I asked about my food, the lady asked to review my receipt, then never gave it back. I had to ask three times before seeing it again. Each time I asked for my receipt, I was met with an angry response from the woman that originally took it. Finally, my food came from the kitchen after 35 minutes. Simple turkey sandwiches. Other than the rude service, you can get decent pastries and coffee. Don’t expect much in the way of service beyond that. If I weren’t a local and was visiting the casino from out of town, I would be very put off by the experience. For not too much more you can have a nice, sit down brunch on the other side of the casino. That’s what I’ll be doing from now on."
+        },
+        {
+          "rating": 1,
+          "text": "I am from Texas but have family in Biloxi. We wanted Beignets so we found the Roasted Bean as a suggested option on Google.\n\nI ordered Beignets, A Ham and Swiss Croissant, and a plain hot Latte.\n\nMy beignets were not beignets. I cannot stress enough that they were not beignets but sopapillas passed off as beignets and priced at a premium. In Texas I can get a basket of 7 or 8 sopapillas for the seven dollars I paid for three alleged \"beignets.\" For anyone wondering what the difference is between the two; sopapillas are hollow and typically served with chocolate syrup or honey to be injected inside. Beignets are breadier and more substantial and typically served with powdered sugar dusted on top. These were sopapillas served with powdered sugar on top, thrown in a bag and thrusted dejectedly at us. Disappointing. What's more, they tasted like sausage patty which I can only assume was due to the fact that they were reheated in the same oven they cooked my friend's sandwich in. The last thing I will say about these \"beignets\" is that they had suspicious black specks in them. Weird.\n\nThe ham and Swiss was frozen, never fresh. It was hot which is all the good that can be said about it.\n\nMy latte was fine but I feel it should be stated their coffee is made from a machine where you press a button labeled Latte and it spits out of everything from one dispenser. Ikea charges 4 dollars for the same service they charge 7 dollars for. Don't waste your time."
+        },
+        {
+          "rating": 1,
+          "text": "I live in Biloxi. I have been to the Beau several times but never eaten their. So, when my family from out of town said let's go to the Roasted Bean for Beignets for breakfast I was excited. The place is pricey which is expected inside of a casino. But you would also expect it to be good food. Or at least eatable. It is microwaved frozen food. Maybe a toaster oven is involved I don't know, but I can get better food for cheaper at a gas station. Back to the start of this experience. The customer service is terrible. We asked one of the workers if they had beignets because they were not on the menu. The worker just said yeah with attitude like us asking her a question was inconvenient for her. We all order and the microwaved food was bland. One of our sandwiches was still completely frozen in the middle and could not be eaten. My cousins frozen coffee tasted like pinesol and burned her throat. We all thought she was playing so we tried it and it really did taste like chemicals. The \"Beignets\" if that's what you want to call them were not even Beignets. If you are from the south you know a Beignets. They are not hollow. These were completely hollow with black specs on the inside like what? And some of them even tasted like Sausage for some reason like they were heated up too soon after some sausage was microwaved. The best thing about this place was when we got to leave."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-05-26T19:58:17.557Z"
     }
   }
 }

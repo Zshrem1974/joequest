@@ -2,7 +2,7 @@
   "version": 1,
   "citySlug": "parkland",
   "city": "Parkland, FL",
-  "generatedAt": "2026-05-25T22:42:44.740Z",
+  "generatedAt": "2026-08-01T10:31:02.883Z",
   "count": 2,
   "cafes": [
     {
@@ -13,23 +13,24 @@
       "lat": 26.3291354,
       "lng": -80.2530036,
       "rating": 4.8,
-      "reviews": 1742,
+      "reviews": 1820,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "cafe",
-        "breakfast_restaurant",
         "brunch_restaurant",
+        "breakfast_restaurant",
+        "cafe",
         "bakery",
-        "restaurant",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "restaurant",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
-      "openNow": true,
-      "hoursLabel": "Closes 8 PM",
+      "timezone": "America/New_York",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -126,7 +127,7 @@
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=4309904286288924747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ22CD3V0a2YgRS1AvEB3bzzs%2Fphotos%2FAb43m-srL0_M7W4kk05KTuCd8BAO5DF1hESuwg8jIW2i3l6yW0p_24187A6nl1fRyEG0KjddnTwO_pnAQRbDepyl4dJoq6bHYaC2HEEAaaSf9ngLqujY-EhETiymprLXgXeYJoEOPifgd07-t0AFphOtLOujbrz3xOWVB3hnFJJPMjyvBlvxUtgFkqKQgg-1xOMpbNJbxc3QgSEB3VxJF1Rer5lDTRFv3Sohydxs0wxyiEBkg_XUq2KlcX3ncO8Z6ib2gqO51EoUE_CkBCzuJl4eWvSL3ongW69yPsIt_dILCtF_kQ&w=800"
+      "photo": "/api/photo?name=places%2FChIJ22CD3V0a2YgRS1AvEB3bzzs%2Fphotos%2FAWCwydiW2bSoYCD6jkHClS_DH2IxEnBFOt42aL8a0_QpOIu6iXP3AZ6TzXd6_sWtf0PiVTl2g0zH7vSduqbFEAhVwxLx1Cg5zn8OVve-_oHGLI7v18weXZVuOjn7FMhS6K5hZovPV7wSUgLvLzVzS2kl1WUYypnVDWh0OOh1c72hQxXA4yx9iMLLnumKUL6fVH2vxGZH0E0wwcqg3YS8b7jKigVWyJMn5hnNNw-VSxekc7tb4b88EViNfhpJUIsb4OQkV6r6wSApuDGi46IdFuOsNQznuhSuEOBFgiPlV9G-aTJh-MRuBhxHt64mTe_2Du5Su5jn2xBLHWJvhTjbO1xmZp6SG7gQ5vl9ma4ntdlxmiwRmhd8wb2g5LacDLY1-YJvgYjme_kt_rVzltfWq5BjnccnzAjwN26ZrybqeW_4UrerWQ&w=800"
     },
     {
       "city": "parkland",
@@ -135,26 +136,27 @@
       "address": "6682 Parkside Dr, Parkland, FL 33067, USA",
       "lat": 26.3133783,
       "lng": -80.2218924,
-      "rating": 4.8,
-      "reviews": 68,
+      "rating": 4.7,
+      "reviews": 98,
       "price": "$$",
       "types": [
         "coffee_shop",
-        "juice_shop",
         "wine_bar",
+        "juice_shop",
         "sandwich_shop",
         "cafe",
-        "bar",
         "bakery",
-        "restaurant",
-        "point_of_interest",
         "food_store",
-        "food",
         "store",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
         "establishment"
       ],
+      "timezone": "America/New_York",
       "openNow": false,
-      "hoursLabel": "Opens 8 AM Tue",
+      "hoursLabel": "Opens 8 AM",
       "periods": [
         {
           "open": {
@@ -176,7 +178,7 @@
           },
           "close": {
             "day": 1,
-            "hour": 17,
+            "hour": 18,
             "minute": 0
           }
         },
@@ -188,7 +190,7 @@
           },
           "close": {
             "day": 2,
-            "hour": 17,
+            "hour": 18,
             "minute": 0
           }
         },
@@ -200,7 +202,7 @@
           },
           "close": {
             "day": 3,
-            "hour": 17,
+            "hour": 18,
             "minute": 0
           }
         },
@@ -212,7 +214,7 @@
           },
           "close": {
             "day": 4,
-            "hour": 17,
+            "hour": 18,
             "minute": 0
           }
         },
@@ -242,16 +244,16 @@
         }
       ],
       "weekdayDescriptions": [
-        "Monday: 8:00 AM – 5:00 PM",
-        "Tuesday: 8:00 AM – 5:00 PM",
-        "Wednesday: 8:00 AM – 5:00 PM",
-        "Thursday: 8:00 AM – 5:00 PM",
+        "Monday: 8:00 AM – 6:00 PM",
+        "Tuesday: 8:00 AM – 6:00 PM",
+        "Wednesday: 8:00 AM – 6:00 PM",
+        "Thursday: 8:00 AM – 6:00 PM",
         "Friday: 8:00 AM – 9:00 PM",
         "Saturday: 8:00 AM – 9:00 PM",
         "Sunday: 8:00 AM – 5:00 PM"
       ],
       "mapsUri": "https://maps.google.com/?cid=17896028174789461432&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
-      "photo": "/api/photo?name=places%2FChIJ2TOnP64b2YgRuEW1yM52W_g%2Fphotos%2FAb43m-vV5uvow4vrf1SzaYFhlrXwOHZ0ijtV7tr2twhPndjTywMneD8Pd8Fn97bP_U0N00vshdOPgvOCO6oSK5KiP3YxjxdN6IWDA8wO9hC2gjtsq3ugyKYWddt8-vHIgI8dGgleOTbTdtJiHWDrvI2iX0qOY5UQaog89jq4h3q0DG_R02-v5vheH1moiJ_t_WMFY7Bc1EBcJth-tg1vtzkXKRAXWtPieOcI7eyG6Cmwvg15JPyaad2eDGsUnjuoWQ6HDsXnS8EPCcqkHIMExvobOcf2R-WRhxyln6m5fZG2VOeQrP4V-c5pnOdg14x564PQ-hMiT3eFzcAT2iCdIKBSB726cFzNXMVDosALb6DFMmRwPQPXZK85itO2DM7VlutqJeqTUsw9DhIHg8uk_sTLcNBcdhwWbxQrJIIiDw23wQYOcZWc3gu7FN2Bp7w4VGao&w=800"
+      "photo": "/api/photo?name=places%2FChIJ2TOnP64b2YgRuEW1yM52W_g%2Fphotos%2FAWCwydgTd_y_nG-O6Ha_l3-qMw4kywSdzR-bUWxU2AXikip1Y-uYPLohm6OIChKVaPCIoSWMtBKDIyR3umggALh1EoQ7AjKO3_4VtHzl80nBf-FYnon34S6H2tQ8Szdn5vIDhb0XVgV9kN17JjHLzUBc655hi4H9pLRSo_psfHQl--khYiewy15gkz_J2leecwA_VEE-kzhvHaXGfb7C7rgMOfou1OePzJLDYztFmvaBxfyIlexMUeYreYKYY615gDTdlkDcDi8zW6rE26pvt8WROiqcG-v8F7_3kw0TIVT0WP1kwLu15IuhDx_PSLiBqvz0PBqClboEAg12eK51CbvwI9EwuFd-sTanXyauFrWvksnL0Hv1_4PYZTPnKXYt8ZwO1RbrvGY1x_TDO-ofbxVW4K_olRxyb91HspdiK7JFDkLF1EltGCxteqcIaHOJezlP&w=800"
     }
   ],
   "picks": {
