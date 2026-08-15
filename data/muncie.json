@@ -1,0 +1,1464 @@
+{
+  "version": 1,
+  "citySlug": "muncie",
+  "city": "Muncie, IN",
+  "generatedAt": "2026-08-01T10:32:17.934Z",
+  "count": 11,
+  "cafes": [
+    {
+      "city": "muncie",
+      "id": "ChIJ9W1CzwAYFYgRfJf6iekdkDo",
+      "name": "Concannon's Bakery Cafe",
+      "address": "4801 W Baker Ln, Muncie, IN 47304, USA",
+      "lat": 40.2211042,
+      "lng": -85.4422196,
+      "rating": 4.7,
+      "reviews": 2175,
+      "price": "$",
+      "types": [
+        "bakery",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": true,
+      "hoursLabel": "Closes 6 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 30
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 6:00 AM – 5:30 PM",
+        "Wednesday: 6:00 AM – 5:30 PM",
+        "Thursday: 6:00 AM – 6:00 PM",
+        "Friday: 6:00 AM – 6:00 PM",
+        "Saturday: 6:00 AM – 6:00 PM",
+        "Sunday: 7:00 AM – 5:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4219905739725641596&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ9W1CzwAYFYgRfJf6iekdkDo%2Fphotos%2FAWCwydhoY8YKhEwB0h2TMveyCgrgQtGIvc_3HlDFjQyXipIS9sl9Clkx3fplFSWI-xoVvO2O-Z0rXSNgYJB1eW801ctzL842dcjgw9jSuPtJ5jbgmTacGmYzSJ8OrWUWDakhEjd0qD04Aj8oQBKi3PRIUJMzTA9DHYbQ-fDOO7ZaJA8rteFdQyBB27vch-dOceSRphHl1C0pEXmhgCQwl58t0xza_nl2IqfqfkAeCHLF6kDQJcLgrPRbtOrTYpDyDnCV6OXFsrtEPBs-zVc29x02MGGdFfZCGzV1TAnerEZ9cTl9K2wrdyKPKs4jh3RNlib1_SOYVEsK_xMphNsUjTuRlN6cjRGqhitYu5QsWluhHH2rSSLHo8Koia8SYiOqfiBrgSogeZol0vG37WZIwujLJNHOg6NNIN0qe-250hy6UketwFQ&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJLQZQu6Q9FYgRNu6SgXAA5rc",
+      "name": "The Caffeinery",
+      "address": "401 S Walnut St, Muncie, IN 47305, USA",
+      "lat": 40.1910028,
+      "lng": -85.3867278,
+      "rating": 4.8,
+      "reviews": 564,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "cafe",
+        "wholesaler",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 30
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 16,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:30 AM – 3:00 PM",
+        "Tuesday: 7:30 AM – 3:00 PM",
+        "Wednesday: 7:30 AM – 3:00 PM",
+        "Thursday: 7:30 AM – 3:00 PM",
+        "Friday: 7:30 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 4:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13251279436794490422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJLQZQu6Q9FYgRNu6SgXAA5rc%2Fphotos%2FAWCwydjSydhN8uBt4WChMuJBgqAyhI_USgDJPTynlZXokTOCLNjrFszntNZ0pEVyFHHUWJMfEIYXzblfyb_fTx_tosthB1A9Yoa8bjpT35h8aOxbdRSSHZGUUAv4Be72klLpOhIQ8sAlxjBhd0FkvtbMyhqilim-LxYEc8hzog2rJsW-OOjYcMF7SMxgLNsMxHR0344uSNP_G6ibpaaNjavi_hXEMrKI2lAxYEnRqjPbc9U9MUd2KyANUG1Udp_si1X_tCgjmycyMFpwDMHYuuyqA9Q3lMA5syiqPd5VeY7iHnG7sVuhoeSIgF7SoZcbHNf0KVE5OZWwMTzshXXFJMDCRxtubq7brgWleAaVHpXbdNbBAtu4_ydL-M0mBZJAPbkqh9MnVchMMNEzi-MpbgQEqxk_BfkK9XZEmDDQlQJiSpjUdY6AnLoxlFoljoVKgnXr&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJvV8cjqE9FYgRGha3V-BJDPI",
+      "name": "Rosebud Coffee House",
+      "address": "1805 S Hoyt Ave, Muncie, IN 47302, USA",
+      "lat": 40.178736199999996,
+      "lng": -85.39857219999999,
+      "rating": 4.8,
+      "reviews": 285,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 6,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 13,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 6:00 AM – 2:00 PM",
+        "Tuesday: 6:00 AM – 2:00 PM",
+        "Wednesday: 6:00 AM – 2:00 PM",
+        "Thursday: 6:00 AM – 2:00 PM",
+        "Friday: 6:00 AM – 2:00 PM",
+        "Saturday: 8:00 AM – 1:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=17441396684792206874&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJvV8cjqE9FYgRGha3V-BJDPI%2Fphotos%2FAWCwydhOHhpxJPqukYFVU7g81ZFg2P_2cD6oehBECgRlAUwB8CL0GxzgAK8C-gN5nIlTdbxkVEPWuwezKezjlfjaCRNWygVrEJlVpSbXhTO1znRQ5PoV0gt3UHQ0rbVzZgRoNfAh4hf1lc5xEzPQMDwGQFBhI0QvZJ3BrT-1XMJrRrDsNlfzLbleO03Y9YPral_qaUxL59psiPMj8E_L0sicpD5exxYhIJ4v8aRiP_YH0zm1fJGMIE6YOHu6_F4SIAh2nStd1u6lroDIur4vidkzDfo97ol386wgcObw6JZeeOZLuwe4ul4p3A2RZJcQz7K5e0i8b64upsBV5grL6UVKkeHnZaPuc4qoRfmX6XboGMhzihSoAmpgmZUnhRyEtmsTj93leSWnrcOushvcsJl0i0muTQqASnm3jgJ7VmI0Aliji5A&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJR1PiipQ9FYgRGTBmFSfenfw",
+      "name": "Riverside Cafe",
+      "address": "2200 W Kilgore Ave, Muncie, IN 47304, USA",
+      "lat": 40.184640300000005,
+      "lng": -85.4119808,
+      "rating": 4.3,
+      "reviews": 972,
+      "price": "$",
+      "types": [
+        "american_restaurant",
+        "breakfast_restaurant",
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 15,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 3:00 PM",
+        "Tuesday: 7:00 AM – 8:00 PM",
+        "Wednesday: 7:00 AM – 8:00 PM",
+        "Thursday: 7:00 AM – 8:00 PM",
+        "Friday: 7:00 AM – 8:00 PM",
+        "Saturday: 7:00 AM – 3:00 PM",
+        "Sunday: 7:00 AM – 3:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=18202949528345522201&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJR1PiipQ9FYgRGTBmFSfenfw%2Fphotos%2FAWCwydgvQwW9j_ytFk_AXLreCo7Vg6KCeyECZWqXtWQgN7DtCzyI4ZuLsqKHe_zZ_nASg_Ukw4gw_fAq2lua_PhxS2F-beayK-WtPfJuOujr2NwWht3jYUxBW_ZJFERmdBqH2k4KdrsTxOwdjKuAjCw1ZtcDoXSnE4ZPG5nTXOiPoCLT5C25TOQf9ndmFv47VUccpEHU_oZeWj5_ntHL3_3Gdtjd2Abb2S_UulzjMAaH8uixmandu3q6K_KVjU_DeD1wTl6YR1f_HSm6p_ykusg3A3NcT5bjmk1L1vFst4hczD2WP2EMIvq-14PSa3XHDohyYBZT7yp5sv-FnEuzE30w3jC9dEJec1w6213QIqKt81YOymqdHdGX_2si7Au5q2tRH0p1vHSS7wPVgORSzqe7KscLtBuRc8Q4cFl8uY3j0imObQ&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJYYaJO9sXFYgRVNVAExJggbw",
+      "name": "PositiviTea",
+      "address": "102 S Walnut St, Muncie, IN 47305, USA",
+      "lat": 40.193540399999996,
+      "lng": -85.38640819999999,
+      "rating": 4.9,
+      "reviews": 159,
+      "price": "$",
+      "types": [
+        "tea_house",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 12 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 20,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 21,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 12,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 21,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: 12:00 – 8:00 PM",
+        "Thursday: 12:00 – 8:00 PM",
+        "Friday: 12:00 – 9:00 PM",
+        "Saturday: 12:00 – 9:00 PM",
+        "Sunday: 12:00 – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=13583243581874820436&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJYYaJO9sXFYgRVNVAExJggbw%2Fphotos%2FAWCwydjasq_5nTGng7pnvvgsy_R3bhxxrlLWPqadFkMlD7zmy1sEAV6LNlIET832y_08_mbp1VCqu_B1MTmpgcgimTSDr-80wmhHEhZe0fKhot6uCptHMUPm6E0JMOPuroUAfKPIigZoWhmdrhyW9vfquvYTDDYnIeazL3kJTWhUswrSBLNyj6Tt3mh6XWd7YfKdjhRlCQTIV-aP8vHaAE48PIGziJzZDo_gtC0acZhY9etgx7d8cQzWw_uFHPoFSoxulgvksbAqvrsIrcaiOp-OoH_SYr-wQ7OYglxGjduVsfOAupIZMapBSuWxuCjw42Rw7N3cT_qGTLiugcrRcY7v7miPzAEikAAn_ESYdSMdMcVbCehwqbgDp4fDRli2nL7VV7w0T-gVVHmdl0FWosmMoSBLGwxAruRZYxr8cOQdJgw8lQ6_&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJczbCa8E9FYgR-wWxbXKrvso",
+      "name": "Deena’s Coffee House",
+      "address": "417 N Reserve St Unit 1, Muncie, IN 47303, USA",
+      "lat": 40.197193,
+      "lng": -85.394528,
+      "rating": 4.9,
+      "reviews": 76,
+      "price": "$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 2:00 PM",
+        "Tuesday: 7:00 AM – 2:00 PM",
+        "Wednesday: 7:00 AM – 2:00 PM",
+        "Thursday: 7:00 AM – 2:00 PM",
+        "Friday: 7:00 AM – 2:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=14609302749191407099&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJczbCa8E9FYgR-wWxbXKrvso%2Fphotos%2FAWCwydivMJk3OCjFJYp53WPWBCT2alUYe67EqMfR3JgtljirZdT3IUhuf63JYkWbO6wQg-_dsQ8qKsmLg50A6nYtVcvaWv6dw7_9amY9yxjycCTx1SG9DWClecbiR66kQC6uQleQNrv-GjZBZZuhAQISBp5-YP88gW77k8RzvEIaN_Dnu1IpoGYi4tiIYSNfb-j98gH9ikH4_4UU3VCalza-cWm2QG3uT3kpZSjaBmo5avVDmX0zTGeNnGqVo6nrc1hOFQzOoqmAPEbrusz9qo_LOC8ikjSGOCGy7VzMRDAzfxjwUh1zW4qgj18fsCZnbCib6OEgbzwF73vzZBP8qETcE5Gzq6ioDynXifPgpzebH20I8bhdzuC2SpX1peDQwfZdR--qHwbgEUjj8qoaGRUFW-LXAj45GdwduEpscca8xDH1lJpMHJMpPjEv1qH3AqAO&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJDdoYzHI9FYgRvpjFXK4lZ-A",
+      "name": "The Cup",
+      "address": "1606 W University Ave, Muncie, IN 47303, USA",
+      "lat": 40.1977683,
+      "lng": -85.40491759999999,
+      "rating": 4.1,
+      "reviews": 441,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 18,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 17,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 18,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 7:00 AM – 5:00 PM",
+        "Tuesday: 7:00 AM – 5:00 PM",
+        "Wednesday: 7:00 AM – 5:00 PM",
+        "Thursday: 7:00 AM – 5:00 PM",
+        "Friday: 7:00 AM – 5:00 PM",
+        "Saturday: 8:00 AM – 6:00 PM",
+        "Sunday: 8:00 AM – 6:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=16169934417908046014&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJDdoYzHI9FYgRvpjFXK4lZ-A%2Fphotos%2FAWCwydilcn8IccvTo_QjqaDvuihV8Z6XWKfHePGL0dqZSYbhHKmtHHGt8cgWUylbI10gNf35aqZFWv3m41oWIDieOPoFUKvHkDpTIK41T33_-Ild1qv9gWF64Lc_edqBFHEex9aR44L1ukvjRheTv2KN3DyYKpSoQhhgS-3OCotokiaDURrTbPlxX8nqhVa3-IWKRZqHSkCUaqcPqCjpxRXtLcJVjgUvnPqS-8hmlQc3cLunX_d6fCMKMT-mv07VkKPo79URNUEd2RPKtAGxtoFYjhh4Tk5vq9Bx21eyKfV1vwSzkG3KfVfzm0qKpOFssVA5sD1kOgxHDps2PcAk8na5xnahiMHHTxdbrAWlCmrpgsDM4Ns8RiH6yXX1AmnbhHQUjfLxXfBQmg13j6UyJT1_T2_Tj0yYISM0kioPF-RfYcCA4h2G&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJK6SZATo9FYgRzrf2OqGkeG4",
+      "name": "Cafe at The Crossing",
+      "address": "3506 W Jackson St Ste 2 & 3, Muncie, IN 47304, USA",
+      "lat": 40.1932731,
+      "lng": -85.42717979999999,
+      "rating": 4.4,
+      "reviews": 144,
+      "price": "$$",
+      "types": [
+        "cafe",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 8 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 2,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 15,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 8,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: 8:00 AM – 3:00 PM",
+        "Wednesday: 8:00 AM – 3:00 PM",
+        "Thursday: 8:00 AM – 3:00 PM",
+        "Friday: 8:00 AM – 3:00 PM",
+        "Saturday: 8:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=7960293353763289038&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJK6SZATo9FYgRzrf2OqGkeG4%2Fphotos%2FAWCwydjqPMI-jWtkNj6JBTHpLqqPhaBwBcuLUD-tluGVkScYH7ZOJxQ64EyxYiDqkRGPTITPwX61X972aW0XNvVAnhqAZcWR4JlInTCGemyCRRQQCsXiexfy0bd7DYOlZ7hGmOBEa20SzY1hnqY6DVub08SbFqoPSp5GC8uEUixcEth7GQP68zn2PQKiNwx0KZTe9GKsrVO_A-mHLMVZw9mgjNkTBsoomrKUJKFq05y87Ze8-mbXedYKCclQLBNOE9AvnbMMfgdhKzdkD1UlvtWJ6vibe25ZE8mS0JngmVVKaeqqdDlWmQcsxRA0bpX9IljmLDuCk8eU7A-M-FiWGchBhZjopDprkkbmMLLDYFlhI68VExs7_g4gRNVM6Mp-BuvoLyYRi9b3fuqIUzTJ1A2TFmBFd22nQEiORK42-88CaQW_Oxze&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJ54rJdBk9FYgRNmGcp-YHITs",
+      "name": "Haul’n Oats",
+      "address": "3506 W Jackson St #4, Muncie, IN 47304, USA",
+      "lat": 40.19328120000001,
+      "lng": -85.4271797,
+      "rating": 4.9,
+      "reviews": 49,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": false,
+      "hoursLabel": "Opens 7 AM",
+      "periods": [
+        {
+          "open": {
+            "day": 3,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 14,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 7,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 14,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: Closed",
+        "Tuesday: Closed",
+        "Wednesday: 7:00 AM – 2:00 PM",
+        "Thursday: 7:00 AM – 2:00 PM",
+        "Friday: 7:00 AM – 2:00 PM",
+        "Saturday: 7:00 AM – 2:00 PM",
+        "Sunday: Closed"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=4260695409705115958&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJ54rJdBk9FYgRNmGcp-YHITs%2Fphotos%2FAWCwydiGTMq03y8n-GnXb3WO-dyYU70rzI0O1Uq-B7zTlq00D-kDQ0dDwD7hQPkBHOkTvW_n0w5xgNHNC5CcdlkJsCAeGCut_dQHvX3wpdfj12oa1L6mahCTFFYkC29LYRmD3IeZzXk9avlLKsaVhV64A1x3_6ruMq7GGmrJ8m38fjhfiajYB7GtGfrUQDwXN1PeobyjsQE5TV4WOcCCxaj4UajmsRz0SZQk1w5hMY3sloU3MU6lYl7SvS4n0yE5PEEow6RT3bNVIie-_I80MAvFLfc9wp18ywfeoORmqtiNtySSirroUjLtHuBfG4ULRyeTAqZni3_xJ5gT4xhs6NoMoByFF_6kr8DecQeO_FJD4XFZRLpBbrGyI-XIejRc6tisUFtJZb6Od2YUlNJ1JH97NelOAV6FCiikOltkUrYWdRCSEQ&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJDY6CpGcXFYgRwQxBgj8EcBc",
+      "name": "Dutch Bros Coffee",
+      "address": "1111 E McGalliard Rd, Muncie, IN 47303, USA",
+      "lat": 40.2186492,
+      "lng": -85.3753626,
+      "rating": 4.5,
+      "reviews": 76,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "juice_shop",
+        "tea_house",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": true,
+      "hoursLabel": "Closes 11 PM",
+      "periods": [
+        {
+          "open": {
+            "day": 0,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 0,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 1,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 1,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 2,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 2,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 3,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 3,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 4,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 4,
+            "hour": 22,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 5,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 5,
+            "hour": 23,
+            "minute": 0
+          }
+        },
+        {
+          "open": {
+            "day": 6,
+            "hour": 5,
+            "minute": 0
+          },
+          "close": {
+            "day": 6,
+            "hour": 23,
+            "minute": 0
+          }
+        }
+      ],
+      "weekdayDescriptions": [
+        "Monday: 5:00 AM – 10:00 PM",
+        "Tuesday: 5:00 AM – 10:00 PM",
+        "Wednesday: 5:00 AM – 10:00 PM",
+        "Thursday: 5:00 AM – 10:00 PM",
+        "Friday: 5:00 AM – 11:00 PM",
+        "Saturday: 5:00 AM – 11:00 PM",
+        "Sunday: 5:00 AM – 10:00 PM"
+      ],
+      "mapsUri": "https://maps.google.com/?cid=1688854531078687937&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": "/api/photo?name=places%2FChIJDY6CpGcXFYgRwQxBgj8EcBc%2Fphotos%2FAWCwydiyU9UBTB8PfeC9fx3BGbn3w9D7VRGPKk2iI_GjnvWtJ4wjt4PcZ2N3955B0VqfRPyu39F1FYz_HqHZdnaA01f2LfpNAuDZ2p23vtycdyvthOl4t3oX0VEckE3wIT2l1BUnY8ioF_hoLZK0KMhOIgqeaGrStz_LePeH4S4wuud8hoK-mdIVad-hQApf9w_4KOhqWdkg5NPt8Kh9q54oiszIRA-L-pzuSYlP64BaeB02OhCY75pZKVkzkQSVjMEZf9QVFcKO_Gg-6EHAOrdS1JugAyW7xukz6gVcOkmNGKHacOG0oi5Id5vVGlUqg26FwCRoZSrIC-wob0NcO4rHpSFQFMVl2-aPp3jkb51yGoAbVv_IzY1H-HN5ZfzX46W3RYGWp_fnVkvabzcvYcH9ybREw8wF3FsHYDdSYpR3V3CB52KK4UY5fPLejpBzJw&w=800"
+    },
+    {
+      "city": "muncie",
+      "id": "ChIJtYBaUAA9FYgR3n6uuqssXtI",
+      "name": "LA Pittenger Center",
+      "address": "2200 W University Ave, Muncie, IN 47303, USA",
+      "lat": 40.1976103,
+      "lng": -85.41218459999999,
+      "rating": 5,
+      "reviews": 1,
+      "price": "$$",
+      "types": [
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "store",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "timezone": "America/Indiana/Indianapolis",
+      "openNow": null,
+      "hoursLabel": null,
+      "periods": null,
+      "weekdayDescriptions": null,
+      "mapsUri": "https://maps.google.com/?cid=15158602511858695902&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+      "photo": null
+    }
+  ],
+  "picks": {
+    "ChIJ9W1CzwAYFYgRfJf6iekdkDo": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Reviewers mention grabbing coffee to enjoy in the cafe, but no specific drink is named.",
+          "quote": "grab a donut or two, get a cup of coffee",
+          "confidence": "low",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Donuts",
+          "reason": "Donuts are the standout item, praised repeatedly as the best ever, with specific love for chocolate yeast and pretzel twist varieties.",
+          "quote": "It might be the best donut I've ever had",
+          "confidence": "high",
+          "mention_count": 4
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Stumbled on this Bakery on my way to visit one of my Restaurants & wanted a coffee so stopped in. OMG the bakery is amazing with a masterpiece of donuts displayed as soon as you walk in the door! The prices are amazing! If you are close this is a delicious stop you won’t want to miss!"
+        },
+        {
+          "rating": 5,
+          "text": "Wonderful place. Great staff. Huge selection! Kept bringing stuff out at 1:30p when we were there."
+        },
+        {
+          "rating": 5,
+          "text": "So many people stop at Concannon's at the holidays and that is a must see. Consider other times of year as well. Grab a donut or two, get a cup of coffee and sit in the Cafe for a minute. Its a nice place for a quick meet. Plenty of tables for a small group."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:31:38.998Z"
+    },
+    "ChIJLQZQu6Q9FYgRNu6SgXAA5rc": {
+      "picks": {
+        "drink": {
+          "name": "Honey Bee Latte",
+          "reason": "Specifically recommended in a 5-star review from a 10-year regular, and lattes broadly praised as '10/10' by another reviewer. The cortado and miel also received specific positive mentions.",
+          "quote": "I highly recommend the Honey Bee latte",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food item is named in any review. One reviewer vaguely mentions 'decent seasonal ideas and baked goods' but nothing specific enough to recommend.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The Caffeinery is a lovely coffee shop and café in downtown Muncie. I’ve been coming here for over 10 years, and their drinks and service have been consistently great.\n\nThere’s plenty of space to sit, work, or meet with others, and the environment is especially inviting—plants line the windows, with cozy nooks throughout the space.\n\nI also appreciate the thoughtful touches, like a small play area for kids and a current events bulletin board. It really reflects what a strong “third space” should be.\n\nIf you go, I highly recommend the Honey Bee latte.\n\nThey’re doing it right"
+        },
+        {
+          "rating": 5,
+          "text": "Best coffee in town by far. Have had their Americanos and espresso. Both have been top notch every time I’ve been here. If you have never had specialty coffee come here. Let them give you an experience of coffee most places won’t even touch."
+        },
+        {
+          "rating": 5,
+          "text": "amazing lattes! i got an iced latte my gf got a hot one, 10/10! staff so nice"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:31:43.389Z"
+    },
+    "ChIJvV8cjqE9FYgRGha3V-BJDPI": {
+      "picks": {
+        "drink": {
+          "name": "Caramel Macchiato",
+          "reason": "Specifically praised as perfect on a rainy day; other reviews broadly love the coffee but don't name specific drinks.",
+          "quote": "the perfect place for a warm caramel macchiato",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Cinnamon Coffee Cake Muffin",
+          "reason": "Named specifically with detailed praise; muffins mentioned favorably in multiple reviews.",
+          "quote": "Heated just right, and moist to taste",
+          "confidence": "high",
+          "mention_count": 3
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "I challenge you to find a more eclectic  coffee house in Delaware Co. This fun space has a dozen tables (none are the same)  Reserve the sunroof or perhaps the table in the old bank vault. Buy a custom unique cup of coffee and a muffin. Perhaps one of the weekly lunch specials if you arrive later. Free wifi, a drive thru and tables for games and meetings. Find them at the Minnetrista Farmers Market on Saturday Mornings beginning in June. Be sure to get your points for rewards.\n\nOn this rainy day, this was the perfect  place for a warm caramel macchicato while enjoying music while I drew."
+        },
+        {
+          "rating": 5,
+          "text": "Never was there a better case for reclaiming a space than Rosebud Coffee House. Located inside a repurposed bank, the cafe makes great use of every square inch to create a relaxed open community.\n\nAlthough I did not have the coffee, I noticed many people enjoying a cup or two. I had a Cinnamon Coffee cake muffin. Heated just right, and moist to taste, I was pleasantly surprised by the bits of raisin scattered inside. It was a delicious start to my day.\n\nThe service was professional: quick, but not hurried, nice, but not too familiar. I was greeted with a smile, and they gave me time to look at the menu to make up my mind.\n\nA great addition to near downtown.\nI'd take this over the Mermaid any day!"
+        },
+        {
+          "rating": 5,
+          "text": "the barista was hilarious! They also had a great selection of copies and pastries to start your day"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:31:47.803Z"
+    },
+    "ChIJR1PiipQ9FYgRGTBmFSfenfw": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "No specific drinks are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": "Onion rings",
+          "reason": "Specifically praised as the best in Delaware County, hand-breaded and perfectly seasoned, with the reviewer always ordering a double. Other food like the country sausage skillet also got strong praise, but onion rings received the most specific and enthusiastic endorsement.",
+          "quote": "The best onion rings in Delaware County",
+          "confidence": "high",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Our family loves eating at the establishment.  We have 2 servers that we ask for everytime we dine in, Beth & KayLynn. These servers  have wonderful personalities, they are quick, efficient, patient and helpful. We have been dining here for a long time because it is a clean restaurant, where they serve nice size portions and the prices are reasonable.  We feel blessed to be served by this crew of food service handlers.  We highly recommend this Cafe."
+        },
+        {
+          "rating": 5,
+          "text": "My family and I have been coming to riverside since they purchased the restaurant. Over the years everything has only gotten better. All of the staff are wonderful. We are blessed to be served by 2 of the best woman, Beth and Kay-Lynn. I have recently gone completely blind. They always let me know where my drinks and food are located on the table. Today Beth even offered to cut up my food so my niece and mom could eat. It’s exceptional to have waitresses make my dining experiences so accessible. This means more to me than anyone could know."
+        },
+        {
+          "rating": 4,
+          "text": "The service was great, and the staff is very friendly with customers. It seemed like they’re a bunch of regulars, and the staff was wonderful with all of them. The onion rings are the best onion rings in Delaware County. They are hand, breaded and big and are perfectly seasoned that’s why I always get a double order. This was the first time I got a chop steak over the fried chicken and the chopstick was cooked perfectly and I loved it. I would definitely give this place a shot."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:31:52.558Z"
+    },
+    "ChIJYYaJO9sXFYgRVNVAExJggbw": {
+      "picks": {
+        "drink": {
+          "name": "Tiger Milk Tea with Boba",
+          "reason": "Reviewer ordered it three times with consistent quality; boba/tapioca pearls broadly praised across multiple 5-star reviews.",
+          "quote": "tiger coffee milk tea with tapicoa for the 3rd time",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are named in any review; mentions are limited to drinks.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The tiger label is essentially a brown sugar alternative name. It is a good food store for the given limited space. The wall decor and utilization is very smart.\n\nI have gotten the tiger coffee milk tea with tapicoa for the 3rd time. Both of the first two drinks were very consistent. The third drink I did not recieve the syrup, or thick sauce the other two drinks did have.  They have new drinks so the modern touch with current drinks, and catering to customers is wonderful.\n\nI'm hoping to see some new store renovations, or land property increase or change of location in the coming years as their location and store size does not do it justice for their popularity, customer service, and quality of beverages.\n\nThe turn-in lane was a bit sudden so I ended up parking at the oil change nearby. Additionally, the store is a step higher so be careful entering."
+        },
+        {
+          "rating": 5,
+          "text": "Went here a few weeks ago with my fiancé and absolutely loved it! Everyone was super nice and happy to have us there! It’s a small family local business so we were very happy to see them here in Muncie!\n\nThe store is a bit small and I feel like they are definitely going to need to upgrade soon as they get more business! They had lots of great flavors and will have something for everyone! Definitely go give it a try!"
+        },
+        {
+          "rating": 5,
+          "text": "This place is literally so amazing. The workers are always so kind and helpful. And their boba is the best! They’ve ruined me for any other boba places lol definitely recommend!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:31:56.814Z"
+    },
+    "ChIJczbCa8E9FYgR-wWxbXKrvso": {
+      "picks": {
+        "drink": {
+          "name": "Teddy Graham Latte",
+          "reason": "Enthusiastically called delicious in a 5-star review; the only specifically named signature drink with strong praise.",
+          "quote": "the teddy graham latte is delicious!",
+          "confidence": "medium",
+          "mention_count": 1
+        },
+        "food": {
+          "name": null,
+          "reason": "No specific food items are mentioned in any review; one reviewer even wishes for gluten-free options in the future.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 4,
+          "text": "Drink:  The price to size you get is a good deal comparing to other coffee shops and it tastes really good. I got a white mocha cinnamon iced latte\nService: They were very helpful and quick with the order\nAtmosphere: the place is split into 2 main areas (where you order and where you can sit) the place has a lot of natural light in the morning because the windows face east."
+        },
+        {
+          "rating": 5,
+          "text": "10/10 experience. the gals working this morning were SO nice & joyful. the teddy graham latte is delicious!"
+        },
+        {
+          "rating": 5,
+          "text": "We just noticed this quaint coffee shop after our ortho appointment. We were greeted warmly! It’s such a happy place and decorated artsy yet modern and comfortable. The drink offering is unique but still has the usual favorites every coffee shop must have. Looks like a great place to study!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:32:00.608Z"
+    },
+    "ChIJDdoYzHI9FYgRvpjFXK4lZ-A": {
+      "picks": {
+        "drink": {
+          "name": "Iced Latte / Cappuccino",
+          "reason": "Multiple positive drink mentions across 5-star reviews, but no single drink dominates. Iced latte was called 'excellent' and the double cappuccino was highly recommended.",
+          "quote": "a quick bagel and a double Cappuccino!",
+          "confidence": "medium",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Breakfast sandwich",
+          "reason": "Explicitly praised as 'excellent' in a 5-star review; the only specific food item named with direct positive feedback.",
+          "quote": "an iced latte and a breakfast sandwich, both of which were excellent",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Very comfortable coffee shop with a lot of stuff on the walls is very nostalgic I had a dirty hippie with chocolate and it tastes great wife had a mocha with raspberry."
+        },
+        {
+          "rating": 5,
+          "text": "I usually visit Muncie in the summer, so when I come here, it’s usually empty at the cup. This time I had an iced latte and a breakfast sandwich, both of which were excellent. This is always one of my must visit stops when I return to my hometown."
+        },
+        {
+          "rating": 5,
+          "text": "The Cup is one of the best coffee houses I've ever been to in my life!!! I used to live in San Francisco, so I have been to a ton of coffee houses... The Cup is located near the Ball State and is in walking distance from the main campus. I highly recommend The Cup for a quick bagle and a double Cappuccino!!! Enjoy and safe\ntravels!!!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:32:04.644Z"
+    },
+    "ChIJK6SZATo9FYgRzrf2OqGkeG4": {
+      "picks": {
+        "drink": {
+          "name": "Coffee",
+          "reason": "Mentioned positively alongside other food items in one review, but no specific coffee drink named.",
+          "quote": "coffee, chocolate milk, eggs and toast are all so delicious",
+          "confidence": "low",
+          "mention_count": 1
+        },
+        "food": {
+          "name": "Cheesy potatoes",
+          "reason": "Explicitly highlighted as a highly recommended item in a 5-star review, alongside general praise for the scratch kitchen food across multiple reviews.",
+          "quote": "Highly recommend the cheesy potatoes",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "The place is soooo cute! I was blessed with an amazing waitress named Heather ❤️ I tried the breakfast board and it was delicious and refreshing! I wouldn't have enjoyed myself as much if it wasn't for the Heather. Great service is what matters most! This place understands that!"
+        },
+        {
+          "rating": 2,
+          "text": "We’ve had two decent experiences here in the past, but today was completely different. My wife and daughter were treated rudely by the woman at the counter.\n\nThey arrived around 2:10 PM, well before the posted 3:00 PM closing time, but were made to feel like an inconvenience for coming in. The employee mentioned the kitchen closed at 2:20, then—rather than helping—responded with a snarky comment about closing soon and silently stared at my wife until she felt uncomfortable enough to leave.\n\nThat kind of interaction is disappointing, especially considering our prior visits were positive. Respectful communication goes a long way, even close to closing time."
+        },
+        {
+          "rating": 5,
+          "text": "I recently came to Cafe at the Crossing for a photoshoot. The vibe was “breakfast date” and I knew this would be the perfect spot! (And it was!). The simplicity of the cafe + the little details & plants are so picturesque. I’m thankful they allowed me to take photos here!\n\nOh and the food!! AMAZING! Highly recommend the cheesy potatoes, coffee, chocolate milk, eggs and toast are all so delicious.\n\nMeganpontiusphotography on Instagram and facebook "
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:32:09.410Z"
+    },
+    "ChIJ54rJdBk9FYgRNmGcp-YHITs": {
+      "picks": {
+        "drink": {
+          "name": "Brown Sugar Sunshine Latte",
+          "reason": "Mentioned positively in multiple 5-star reviews as a standout specialty drink with brown sugar, cinnamon, and orange flavors.",
+          "quote": "it was fantastic. 10/10, would recommend",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": "Sriracha Olive Biscuit",
+          "reason": "Only food item receiving specific enthusiastic praise; toasts and scones were criticized in a detailed negative review.",
+          "quote": "served toasted with butter and it was delicious",
+          "confidence": "medium",
+          "mention_count": 1
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Upon recommendation, I stopped in Haul'n Oats on a Saturday afternoon. Its a fun little place with about 5 tables and a cozy corner. An eclectic vibe. I ordered the Iced Chai Latte which was a bit pricey but possibly the best Iced Chai in Muncie. The atmosphere was great. I sat for awhile and the place stayed busy with clear regulars. Next door is The Cafe at the Crossing where the people seem nice. I will try their food next. Definitely try Haul'n Oats."
+        },
+        {
+          "rating": 5,
+          "text": "I had some extra time this morning and decided I should spend it trying a local coffee shop, and I couldn't be happier with that decision.\n\nI make a pretty solid latte at the house, so my bar is pretty high when I try a new place. I tried the Brown Sugar Sunshine with oat milk, it's a brown sugar, cinnamon, orange latte (to the best of my recollection), and it was fantastic. 10/10, would recommend.\n\nI also tried the siracha Olive biscuit, which I was hesitant about because I hate olive, and I was once again very pleasantly surprised. I had the biscuit served toasted with butter and it was delicious. They were correct that the olive adds depth of flavor, but is very subtle.\n\nAll in all, I can't recommend this place enough. Service was knowledgeable, friendly, and answered any questions I had. Atmosphere was nice and cozy. Good artwork and local products for sale.Don't hesitate to give this local business a chance."
+        },
+        {
+          "rating": 1,
+          "text": "Absolutely not returning here. My partner and I visited for brunch recently, each getting a specialty toast, scone, and beverage. We decided to do carryout since the space is small and it was a bit crowded. We ordered and sat down to wait, chatting and enjoying the decor and environment.\n\nOur drinks came out first. My partner got a brown sugar mocha and really liked it; I don’t usually drink coffee but I had a sip and liked it, too. I got a chai latte, which was fine; not the worst I’ve had, but certainly not the best or something I’d get again.\n\nAnd then we waited for our food. And waited. There is no dedicated chef or kitchen here, so the employee who was taking people’s orders at the register was also the one making our meals. It took a long time since she kept getting interrupted to help other customers.\n\nWe finally got our food and went home. My partner opened their toast box first, and made a comment along the lines of “no way is this over $10.” Dear reader, before us sat the tiniest piece of toast—think palm-sized—known to humans. I opened my box and saw a similarly tiny toast, which also costed over $10. Boggles my mind that they’re selling $4-sized toast for over $10.\n\nAs for taste, flavor, texture, etc: the sourdough was mushy inside and reminded me of my early, failed baking experiments. I had two bites and some of the crust, and that was it. The avocado was unseasoned, and the eggs were fine. I ended up adding more salt to everything. My partner experienced the same bread texture issues and lack of seasoning. The scones were overly sweet in an odd and unapetizing way, and that’s coming from a sweet tooth.\n\nWasted morning waiting on food that was not worth the money."
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:32:14.193Z"
+    },
+    "ChIJDY6CpGcXFYgRwQxBgj8EcBc": {
+      "picks": {
+        "drink": {
+          "name": "Golden Eagle",
+          "reason": "Named specifically in two 5-star reviews with strong praise, including one calling it 'so good' and another 'as delicious as I hoped.'",
+          "quote": "Had my Golden Eagle... So good!",
+          "confidence": "high",
+          "mention_count": 2
+        },
+        "food": {
+          "name": null,
+          "reason": "No food items are mentioned in any of the reviews.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [
+        {
+          "rating": 5,
+          "text": "Quick and friendly service. The drive thru employee taking my order made recommendations based on my initial request, which turned out to be a great choice. Had my Golden Eagle, light ice, unsweetened almond milk, sugar free, extra shot of espresso.  So good!"
+        },
+        {
+          "rating": 1,
+          "text": "I waited in line for 28 minutes. There was only four cars ahead of me when I finally get to the window and told them what I ordered. I asked her if she could make sure it was two times sweet because I did pay for that she decides to turn around and make fun of me to your coworker because I asked for what I paid for when they hand me out my drink. It is not right."
+        },
+        {
+          "rating": 5,
+          "text": "Zero complaints to Dutch Bros.\n1. Amazing staff\n2. Always clean\n3. Fastest service\n4. Amazing yummy drinks\nI LOVE coming here! Everyone is so nice and sweet and funny. Anderson Indiana location will always be my favorite!"
+        }
+      ],
+      "reviewsAnalysed": 5,
+      "fetched_at": "2026-08-01T10:32:17.838Z"
+    },
+    "ChIJtYBaUAA9FYgR3n6uuqssXtI": {
+      "picks": {
+        "drink": {
+          "name": null,
+          "reason": "Not enough reviews yet.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        },
+        "food": {
+          "name": null,
+          "reason": "Not enough reviews yet.",
+          "quote": null,
+          "confidence": "none",
+          "mention_count": 0
+        }
+      },
+      "reviewSample": [],
+      "reviewsAnalysed": 0,
+      "fetched_at": "2026-08-01T10:32:17.934Z"
+    }
+  }
+}
