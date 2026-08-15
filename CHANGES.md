@@ -1,5 +1,77 @@
 # CHANGES
 
+## Fix: photos not coming through — self-healing photo proxy (2026-08-15)
+
+### Symptom
+
+Every image in the app rendered as the ☕ placeholder — hero card, leaderboard
+thumbnails, map cards, detail sheet. Everything else (names, addresses, hours,
+picks) was fine, because all of that is served straight from the snapshot and
+never touches Google at request time. Photos are the one thing that does.
+
+### Root cause
+
+**Google Places photo resource names expire, and the snapshot caches them.**
+
+Google is explicit about this: "You cannot cache a photo name, as the name can
+expire. You should always get the name from a response to a request to Place
+Details (New), Nearby Search (New), or Text Search (New)."
+
+Each café in `data/<city>.json` ships a pre-baked
+`/api/photo?name=places/X/photos/Y` URL, minted when the snapshot was
+generated. The snapshots on `main` are from 2026-05-24 → 2026-06-15. Google has
+since rotated the names: comparing `main` against the 2026-08-01 refresh,
+**52 of 53 Atlanta cafés present in both have a different photo name**, and the
+name prefix changed wholesale (`AaVGc3…` → `AWCwyd…`) — which is why photos
+didn't degrade gradually, they all died at once.
+
+The dead names made `/api/photo` return the upstream 4xx, the client's
+`onerror` silently swapped in the ☕ fallback, and nothing was logged anywhere.
+The app had no way to notice or recover.
+
+### Fix — the proxy re-resolves expired names at request time
+
+`lib/photos.js` + `streamPhoto` in `server.js`:
+
+1. Request comes in with the snapshot's (possibly dead) photo name.
+2. If the media fetch is rejected with 400/403/404, hit Place Details for that
+   place id (single `photos` field mask, ~$0.005) to get the *current* name.
+3. Retry the media fetch once with the fresh name and stream that.
+4. Remember the resolved name in memory for 6h, so subsequent requests for the
+   same café skip the dead-name hop entirely.
+
+Cost guard rails, since step 2 spends money:
+- one in-flight refresh per place — N cards rendering at once share one call
+- a place that can't be resolved (no photos, or the lookup itself failed) is
+  negative-cached for 30 min, so it can't turn into a per-render Places call
+- refreshed names get a 6h browser cache instead of 7d, since they're volatile
+
+The SSRF guard is unchanged: the name regex still gates every request, and it
+also validates whatever Place Details hands back.
+
+### Diagnosis — `/api/status` now reports photo health
+
+`photos: { served, servedRefreshed, refreshes, failed, lastFailure, … }`.
+`failed` climbing while `served` stays at 0 means a photo outage; read
+`lastFailure.status` to tell the causes apart:
+
+| status | meaning |
+|---|---|
+| 503 | no `GOOGLE_PLACES_API_KEY` on the deploy |
+| 403 | key restricted / billing off / quota exceeded |
+| 400, 404 | snapshot photo names expired (this bug) |
+
+Failures also log server-side instead of vanishing into the client fallback.
+
+### Still recommended: merge the pending snapshot refresh
+
+The monthly workflow has been running fine (2026-06-01, 07-01, 08-01 all
+succeeded) but its PR — **#7, "Snapshot refresh — all cities"** — has been open
+and unmerged since June, so `main` has been serving May/June data the whole
+time. Merging it restores fresh photo names directly and drops the recovery
+path back to idle. The self-heal is the safety net, not a substitute: without a
+current snapshot every café costs one Place Details call after each cold start.
+
 ## Admin console: role-based admin auth + analytics dashboard (2026-06-15)
 
 ### Stage 1 — Admin authentication (JWT + admin_users table)

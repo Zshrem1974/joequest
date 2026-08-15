@@ -33,8 +33,11 @@ import { fileURLToPath } from "url";
 import { Readable } from "node:stream";
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import {
-  searchCafes, getReviews, getPicks, newAnthropic, PLACES_BASE, CITY,
+  searchCafes, getReviews, getPicks, newAnthropic, PLACES_BASE, CITY, fetchPhotoName,
 } from "./lib/data.js";
+import {
+  createPhotoResolver, PHOTO_NAME_RE, placeIdFromPhotoName, isStaleNameStatus,
+} from "./lib/photos.js";
 import { CITIES, DEFAULT_CITY, cityBySlug } from "./lib/cities.js";
 import {
   dbReady, dbStatus, cachedCount,
@@ -151,24 +154,77 @@ async function enrichCafe(cafe) {
 // ----------------------------------------------------------------------------
 // PHOTO PROXY
 // ----------------------------------------------------------------------------
-// Places photo resource names look like "places/XYZ/photos/ABC". Only that
-// pattern is allowed so the proxy can't be coerced into open SSRF.
-const PHOTO_NAME_RE = /^places\/[A-Za-z0-9_-]+\/photos\/[A-Za-z0-9_-]+$/;
+// The snapshot ships a pre-baked photo name per café, but Google expires those
+// names — an old snapshot means every image in the app dies at once. So the
+// proxy self-heals: on an upstream rejection it re-resolves the place's
+// current photo name via Place Details, retries once, and remembers the
+// result in memory. See lib/photos.js for the caching/cooldown rules.
+const photos = createPhotoResolver({
+  fetchPhotoName: (placeId) => fetchPhotoName(placeId, GOOGLE_KEY),
+});
+
+// Fetch the media bytes for one photo name. Returns the upstream response.
+function fetchPhotoMedia(name, w) {
+  return fetch(`${PLACES_BASE}/${name}/media?maxWidthPx=${w}&key=${GOOGLE_KEY}`);
+}
 
 async function streamPhoto(req, res) {
-  if (!GOOGLE_KEY) return res.status(503).send("Missing Google key");
-  const name = String(req.query.name || "");
-  if (!PHOTO_NAME_RE.test(name)) return res.status(400).send("Bad photo name");
+  if (!GOOGLE_KEY) {
+    photos.recordFailure(null, 503);
+    return res.status(503).send("Missing Google key");
+  }
+  const requested = String(req.query.name || "");
+  if (!PHOTO_NAME_RE.test(requested)) return res.status(400).send("Bad photo name");
 
   let w = parseInt(req.query.w, 10);
   if (!Number.isFinite(w) || w < 64 || w > 1600) w = 800;
 
-  const url = `${PLACES_BASE}/${name}/media?maxWidthPx=${w}&key=${GOOGLE_KEY}`;
-  const upstream = await fetch(url);
-  if (!upstream.ok) return res.status(upstream.status).send(`Photo ${upstream.status}`);
+  const placeId = placeIdFromPhotoName(requested);
+  // A name we already re-resolved for this place beats the snapshot's copy —
+  // once we know the cached one is dead, don't keep paying for the 404.
+  const known = placeId ? photos.cachedName(placeId) : null;
+  let name = known || requested;
+  let viaRefresh = Boolean(known);
 
+  let upstream;
+  try {
+    upstream = await fetchPhotoMedia(name, w);
+  } catch (e) {
+    photos.recordFailure(placeId, 502);
+    console.warn(`⚠️   photo fetch failed for ${placeId}: ${e.message}`);
+    return res.status(502).send("Photo upstream unreachable");
+  }
+
+  // Dead name → ask Google for the current one and try that instead.
+  if (!upstream.ok && isStaleNameStatus(upstream.status) && placeId) {
+    photos.forget(placeId, name);
+    const fresh = await photos.refresh(placeId);
+    if (fresh && fresh !== name) {
+      try {
+        const retry = await fetchPhotoMedia(fresh, w);
+        if (retry.ok) {
+          console.log(`🔄  photo name refreshed for ${placeId} (snapshot copy was ${upstream.status})`);
+          upstream = retry;
+          name = fresh;
+          viaRefresh = true;
+        }
+      } catch (e) {
+        console.warn(`⚠️   photo retry failed for ${placeId}: ${e.message}`);
+      }
+    }
+  }
+
+  if (!upstream.ok) {
+    photos.recordFailure(placeId, upstream.status);
+    console.warn(`⚠️   photo ${upstream.status} for ${placeId} (name ${name.slice(0, 40)}…)`);
+    return res.status(upstream.status).send(`Photo ${upstream.status}`);
+  }
+
+  photos.recordServed(viaRefresh);
   res.set("Content-Type", upstream.headers.get("content-type") || "image/jpeg");
-  res.set("Cache-Control", "public, max-age=604800"); // 7d browser cache
+  // Shorter cache when we're serving a re-resolved name: the snapshot is stale
+  // and we'd rather the browser come back than pin a name we don't control.
+  res.set("Cache-Control", viaRefresh ? "public, max-age=21600" : "public, max-age=604800");
   Readable.fromWeb(upstream.body).pipe(res);
 }
 
@@ -595,6 +651,11 @@ app.get("/api/status", async (req, res) => {
     cache: dbStatus(),
     cachedPicks: await cachedCount(),
     listCached: !!(listCache && listCache.expires > Date.now()),
+    // Photo health. `failed` climbing while `served` stays at 0 is the
+    // signature of a photo outage — check `lastFailure.status`: 503 = no
+    // Google key on this deploy, 403 = key/billing/quota, 400/404 = the
+    // snapshot's photo names expired (refresh the snapshot).
+    photos: photos.snapshot(),
     snapshots: Array.from(snapshots.entries()).map(([slug, s]) => ({
       slug,
       cafes: s.cafes?.length ?? 0,
