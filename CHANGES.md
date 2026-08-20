@@ -1,5 +1,69 @@
 # CHANGES
 
+## City #15: Austin, TX (103 cafés, multi-query) (2026-08-20)
+
+### New city: Austin, TX
+
+Slug `austin`. Core-metro bbox (30.13–30.45 N, -97.90 to -97.60 W) —
+Round Rock / Cedar Park / Pflugerville deliberately excluded. Central
+timezone, `addressRegex` anchored on ", TX".
+
+**103 cafés with 103 picks in one snapshot run** (~$4.63) — the largest
+single-city launch yet, via the multi-query pattern (six neighborhood
+queries: Downtown, East Austin, South Congress, South Lamar/Zilker,
+North Loop/Hyde Park, The Domain — deduped by Place ID). Google-side
+spend stays inside the free credit, same as Miami/NYC/Atlanta.
+
+Notable names: Mozart's Coffee Roasters, Epoch Coffee, Fleet Coffee,
+Medici Roasting, Summer Moon Coffee, Cuvée Coffee, Desnudo Coffee.
+
+### Filter hardening (found during the Austin dry run)
+
+- `EXCLUDE_NAMES` additions — in-store counters posing as cafés:
+  **Capital One Café** (bank-branch chain), **Nordstrom Ebar**
+  (department-store counter), **Coach Coffee Shop** (retail-store café).
+- `BAD_TYPES` additions — **`shopping_mall`**, **`department_store`**:
+  Austin's "The Domain" mall itself surfaced as a café candidate.
+
+Both filters are global, so every future snapshot benefits.
+
+### Ops
+
+`austin` appended to the monthly cron's city list in
+`.github/workflows/snapshot.yml`.
+
+---
+
+## Admin console: Members page (2026-06-15)
+
+### Stage 3 — Members management
+
+Admin sidebar → Members now shows a full user-management page.
+
+**Features:**
+- Table listing all registered users: email, role (Admin/Member badge),
+  joined date, last sign-in, favourites count.
+- Live search — filters the table by email as you type.
+- Per-user "Reset password" button — sends a Supabase Auth password-reset
+  email after a confirmation prompt. Toast notification on success/error.
+
+**Backend:**
+- `GET /api/admin/members` — returns all Supabase Auth users enriched with
+  favourites count and admin flag. Requires `requireAdmin`.
+- `POST /api/admin/members/:id/reset-password` — sends a password-reset
+  email via `supabase.auth.resetPasswordForEmail()`. Requires `requireAdmin`.
+
+**Files changed:**
+- `db.js` — added `listMembers()` (auth.admin.listUsers + favourites +
+  admin_users enrichment) and `resetMemberPassword(email)`.
+- `server.js` — added the two new routes, imported the new db functions.
+- `admin-views/admin.html` — added members page HTML (table + search),
+  CSS (members-table, badges, btn-sm, toast), and JavaScript (loadMembers,
+  renderMembers, resetPw, showToast). Updated nav routing to show the
+  members page instead of "coming soon".
+
+---
+
 ## Admin console: role-based admin auth + analytics dashboard (2026-06-15)
 
 ### Stage 1 — Admin authentication (JWT + admin_users table)
